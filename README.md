@@ -41,3 +41,31 @@ before the call `g(5)`, and uses the snapshot to resolve nested method calls.
 But once `g(5)` is done, the new definition of `f` becomes visible,
 so the next call `g(666)` will return 0.
 
+## Repository Organization
+
+* [`src`](src) folder with the implementation of the calculus
+  and related utilities:
+
+  * [`redex`](src/redex) Redex prototype of the calculus;
+
+  * [`jl-transpiler`](src/jl-transpiler) transpiler from a subset of Julia
+    to the surface language of the Redex model;
+
+* [`litmus`](litmus) folder with summaries of litmus tests
+  (files in this folder are not supposed to be executed):
+
+  - [`world-age.jl`](litmus/world-age.jl) short Julia programs demonstrating
+    the interaction of `eval` and world age.
+
+* [`tests`](tests) folder with runnable tests related to
+  the world age semantics:
+
+  - [`litmus-wa`](tests/litmus-wa) world-age litmus tests written in Julia,
+    transpiled and checked with Redex;
+
+## Dependencies
+
+* [Julia](https://julialang.org/)
+
+* [Racket](https://racket-lang.org/)
+  with [Redex](https://redex.racket-lang.org/)
