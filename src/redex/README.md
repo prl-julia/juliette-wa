@@ -12,6 +12,11 @@ Introductory materials:
   by [William J. Bowman](https://williamjbowman.com)
 * [Redex Tutorial](https://docs.racket-lang.org/redex/tutorial.html)
 
+## Dependencies
+
+* [Racket](https://racket-lang.org/)
+  with [Redex](https://redex.racket-lang.org/)
+
 ## Source Code
 
 * [`core`](core) folder with the core operational semantics:
