@@ -74,6 +74,9 @@ end
 struct WAPrimopCall <: WAAST
     callee :: Symbol
     args   :: Vector{WAAST}
+    WAPrimopCall(callee, args) =
+    callee == :(-) && size(args)[1] == 1 ?
+        new(MULT_SYM, [WANumber(-1), args[1]]) : new(callee, args)
 end
 # Represents an if then else statement
 struct WAIfThenElse <: WAAST

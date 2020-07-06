@@ -23,12 +23,14 @@
        (mdef
         "odd"
         ((:: 1_x Int64))
-        (mcall oddp (if (pcall >= 1_x 0) 1_x (pcall - 1_x))))
+        (mcall oddp (if (pcall >= 1_x 0) 1_x (pcall * -1 1_x))))
        (seq
         (mdef
          "even"
          ((:: 1_x Int64))
-         (if (pcall >= 1_x 0) (mcall evenp 1_x) (mcall evenp (pcall - 1_x))))
+         (if (pcall >= 1_x 0)
+           (mcall evenp 1_x)
+           (mcall evenp (pcall * -1 1_x))))
         (seq
          (mdef
           "oddp"
