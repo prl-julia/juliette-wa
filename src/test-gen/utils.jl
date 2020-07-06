@@ -43,13 +43,13 @@ end
 get_methodvalue(value) = string(value)
 
 function REDEX_PROLOG(dir_prefix="../" :: String) :: String
-    "#lang racket
-    (require redex)
+"#lang racket
+(require redex)
 
-    ; import surface language
-    (require \"$(dir_prefix)redex/core/wa-surface.rkt\")
-    ; import full language
-    (require \"$(dir_prefix)redex/core/wa-full.rkt\")
-    ; import optimizations
-    (require \"$(dir_prefix)redex/optimizations/wa-optimized.rkt\")"
+; import surface language
+(require \"$(dir_prefix)redex/core/wa-surface.rkt\")
+; import full language
+(require \"$(dir_prefix)redex/core/wa-full.rkt\")
+; import optimizations
+(require \"$(dir_prefix)redex/optimizations/wa-optimized.rkt\")"
 end

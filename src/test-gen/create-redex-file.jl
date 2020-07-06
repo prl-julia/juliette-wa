@@ -7,14 +7,14 @@ const JULIA_ERR_MAP = Dict{Symbol,String}(
 
 # create_redex_file: creates a redex file that tests in the julia expression
 # run as a juilette program
-function create_redex_file(dirpath :: String)
+function create_redex_file(dirpath :: String, is_opt :: Bool)
     prettified_juliette_expr = transpile_and_prettify("$(dirpath)/source.jl", "../src/test-gen/")
     fd = open("$(dirpath)/expected.jl")
     juliatest = read(fd, String)
     close(fd)
     expected_value = get_expectedvalue(juliatest)
     fd = open("$(dirpath)/redex.rkt", "w+")
-    write(fd, REDEX_FILE_TEMPLATE(dirpath, prettified_juliette_expr, expected_value))
+    write(fd, REDEX_FILE_TEMPLATE(dirpath, prettified_juliette_expr, expected_value, is_opt))
     close(fd)
 end
 
