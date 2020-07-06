@@ -5,7 +5,7 @@ include("utils.jl")
 function juliatojuliette()
     show_methodtable = findlast(x -> x == "-m", ARGS) != nothing
     is_opt = findlast(x -> x == "-o", ARGS) != nothing
-    filename = ARGS[size(ARGS)[1]]
+    filename = ARGS[1]
     prettified_juliette = transpile_and_prettify("$(filename).jl")
     output = JULIETTE_TEMPLATE(prettified_juliette, show_methodtable, is_opt)
     fd = open("$(filename).rkt", "w+")
