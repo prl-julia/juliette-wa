@@ -1,5 +1,7 @@
 # Testing for Julia/Juliette Correspondence
 
+This directory contains the litmus test cases that help validate the logical equivalence of julia and juliette
+
 ## Test Cases
 
 Every folder in the `litmus-wa/` and `litmus-optimizations/` directories represents a single test case. All test cases in `litmus-optimizations/` are run using Juliette optimizations, while all test cases in the `litmus-wa/` are not. Every test case consists of 3 files:
