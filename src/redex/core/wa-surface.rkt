@@ -64,8 +64,9 @@
 ;; -------------------- Aux
   
   ;; primitive operation
-  [op ::= bin-arithop bin-boolop unary-boolop unary-void ==]
+  [op ::= bin-arithop bin-arithop-to-bool bin-boolop unary-boolop unary-void ==]
   [bin-arithop ::= + - * /]
+  [bin-arithop-to-bool ::= > < >= <=]
   [bin-boolop ::= && ||]
   [unary-boolop ::= !]
   [unary-void ::= print @assert]

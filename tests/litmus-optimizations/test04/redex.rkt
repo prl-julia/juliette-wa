@@ -1,12 +1,12 @@
 #lang racket
-    (require redex)
+(require redex)
 
-    ; import surface language
-    (require "../../../src/redex/core/wa-surface.rkt")
-    ; import full language
-    (require "../../../src/redex/core/wa-full.rkt")
-    ; import optimizations
-    (require "../../../src/redex/optimizations/wa-optimized.rkt")
+; import surface language
+(require "../../../src/redex/core/wa-surface.rkt")
+; import full language
+(require "../../../src/redex/core/wa-full.rkt")
+; import optimizations
+(require "../../../src/redex/optimizations/wa-optimized.rkt")
 
 (displayln "Test for litmus-optimizations/test04:")
 
@@ -23,12 +23,12 @@
        (mdef
         "odd"
         ((:: 1_x Int64))
-        (mcall oddp (if (mcall >= 1_x 0) 1_x (pcall - 1_x))))
+        (mcall oddp (if (pcall >= 1_x 0) 1_x (pcall - 1_x))))
        (seq
         (mdef
          "even"
          ((:: 1_x Int64))
-         (if (mcall >= 1_x 0) (mcall evenp 1_x) (mcall evenp (pcall - 1_x))))
+         (if (pcall >= 1_x 0) (mcall evenp 1_x) (mcall evenp (pcall - 1_x))))
         (seq
          (mdef
           "oddp"

@@ -117,16 +117,21 @@
   [(res-type-primop bin-arithop Float64 Int64)   Float64]
   [(res-type-primop bin-arithop Int64   Float64) Float64]
   [(res-type-primop bin-arithop Float64 Float64) Float64]
+  [(res-type-primop bin-arithop-to-bool τ_1 τ_2) Bool
+   (side-condition (judgment-holds (<: τ_1 Number)))
+   (side-condition (judgment-holds (<: τ_2 Number)))]
   [(res-type-primop bin-boolop   Bool Bool) Bool]
   [(res-type-primop unary-boolop Bool)      Bool]
   [(res-type-primop == σ_1 σ_2) Bool]
   [(res-type-primop unary-void σ)  Nothing]
   [(res-type-primop op τ ...) Any])
 
-(test-equal (term (res-type-primop + Int64 Float64)) (term Float64))
-(test-equal (term (res-type-primop + Int64))         (term Any))
-(test-equal (term (res-type-primop + Int64 Bool))    (term Any))
-(test-equal (term (res-type-primop print Bool))      (term Nothing))
+(test-equal (term (res-type-primop + Int64 Float64))  (term Float64))
+(test-equal (term (res-type-primop + Int64))          (term Any))
+(test-equal (term (res-type-primop + Int64 Bool))     (term Any))
+(test-equal (term (res-type-primop print Bool))       (term Nothing))
+(test-equal (term (res-type-primop >= Int64 Float64)) (term Bool))
+(test-equal (term (res-type-primop < Int64 Bool))     (term Any))
 
 ;; ==================================================
 ;; Primops Semantics
@@ -156,6 +161,7 @@
 ;; A map of ops to their repective racket implementations
 (define op-map
   (list (list '! !) (list '&& &&) (list '|| ||)
+        (list '> >) (list '< <) (list '>= >=) (list '<= <=)
         (list '+ +) (list '- -) (list '* *) (list '/ handle-/)))
 
 ;; Given an binop symbol, returns the respective racket procedure
@@ -185,6 +191,9 @@
   [(run-primop == v_1 v_2) (pcall-== v_1 v_2)]
   [(run-primop bin-arithop real_1 real_2)
    ,((get-op (term bin-arithop)) (term real_1) (term real_2))]
+  [(run-primop bin-arithop-to-bool real_1 real_2)
+    ,(bool->sym ((get-op (term bin-arithop-to-bool))
+                 (term real_1) (term real_2)))]
   [(run-primop bin-boolop bool_1 bool_2)
    ,(bool->sym ((get-op (term bin-boolop))
                 (wa-val->racket (term bool_1)) (wa-val->racket (term bool_2))))]
@@ -246,6 +255,14 @@
 (test-equal (term (run-primop @assert 1))                 (term type-err))
 (test-equal (term (run-primop @assert true))              (term nothing))
 (test-equal (term (run-primop @assert false))             (term assert-err))
+(test-equal (term (run-primop > 5 3.5))                   (term true))
+(test-equal (term (run-primop > 5 5))                     (term false))
+(test-equal (term (run-primop < 1 2))                     (term true))
+(test-equal (term (run-primop < 10 10))                   (term false))
+(test-equal (term (run-primop >= 2 2))                    (term true))
+(test-equal (term (run-primop >= 1 2))                    (term false))
+(test-equal (term (run-primop <= -1 -1))                  (term true))
+(test-equal (term (run-primop <= -1 2))                   (term true))
 
 
 ;; ==================================================
