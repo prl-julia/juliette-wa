@@ -72,6 +72,10 @@ jul_call12 = quote true && false end
 jul_call13 = quote false || false end
 jul_call14 = quote !true end
 jul_call15 = quote @assert(1 == 2) end
+jul_call16 = quote 1 > 2 end
+jul_call17 = quote 2 < 3 end
+jul_call18 = quote -1 <= -1 end
+jul_call19 = quote 0 >= 1 end
 jul_if1 = quote
                 if 1 == 2
                     4
@@ -198,6 +202,10 @@ call12 = WAPrimopCall(:&&, [btrue, bfalse])
 call13 = WAPrimopCall(:||, [bfalse, bfalse])
 call14 = WAPrimopCall(:!, [btrue])
 call15 = WAPrimopCall(Symbol("@assert"), [WAPrimopCall(:(==), [WANumber(1), WANumber(2)])])
+call16 = WAPrimopCall(:>, [WANumber(1), WANumber(2)])
+call17 = WAPrimopCall(:<, [WANumber(2), WANumber(3)])
+call18 = WAPrimopCall(:<=, [WANumber(-1), WANumber(-1)])
+call19 = WAPrimopCall(:>=, [WANumber(0), WANumber(1)])
 
 if1 = WAIfThenElse(WAPrimopCall(:(==), [WANumber(1), WANumber(2)]), WANumber(4), WANumber(5))
 if2 = WAIfThenElse(WAPrimopCall(:(==), [WANumber(1), WANumber(2)]), WANumber(4),
@@ -263,6 +271,10 @@ end
     @test juliatoWA_wrap(jul_call13) == call13
     @test juliatoWA_wrap(jul_call14) == call14
     @test juliatoWA_wrap(jul_call15) == call15
+    @test juliatoWA_wrap(jul_call16) == call16
+    @test juliatoWA_wrap(jul_call17) == call17
+    @test juliatoWA_wrap(jul_call18) == call18
+    @test juliatoWA_wrap(jul_call19) == call19
     @test juliatoWA_wrap(jul_if1) == if1
     @test juliatoWA_wrap(jul_if2) == if2
     @test juliatoWA_wrap(jul_if3) == if3

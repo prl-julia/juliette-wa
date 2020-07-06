@@ -107,11 +107,16 @@ const NOT_SYM = :(!)
 const AND_SYM = :(&&)
 const OR_SYM = :(||)
 const EQUAL_SYM = :(==)
+const LT_SYM = :(<)
+const GT_SYM = :(>)
+const LTE_SYM = :(<=)
+const GTE_SYM = :(>=)
 const QUOTE_SYM = :quote
 const PRINT_SYM = :print
 const ASSERT_SYM = Symbol("@assert")
 const PRIMOPS = [ADD_SYM, SUBSTRACT_SYM, MULT_SYM, DIVIDE_SYM, ASSERT_SYM,
-                    PRINT_SYM, NOT_SYM, AND_SYM, OR_SYM, EQUAL_SYM]
+                    PRINT_SYM, NOT_SYM, AND_SYM, OR_SYM, EQUAL_SYM, LT_SYM,
+                    GT_SYM, LTE_SYM, GTE_SYM]
 const INTERPOLATION_SYM = :$
 const MACRO_SYM = :macrocall
 
