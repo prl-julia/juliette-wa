@@ -25,7 +25,8 @@ function juliatoWA(julia_expr :: Expr, env :: Env) :: WAAST
         FUNC_SYM            => transpile_methoddef,
         ASSIGNMENT_SYM      => transpile_methoddef,
         IF_SYM              => transpile_ifthenelse,
-        ELSEIF_SYM          => transpile_ifthenelse
+        ELSEIF_SYM          => transpile_ifthenelse,
+        MACRO_SYM           => transpile_macro
     )
     if haskey(parseMapping, julia_expr.head)
         parseMapping[julia_expr.head](julia_expr, env)
@@ -131,6 +132,16 @@ function transpile_methoddef(julia_expr :: Expr, env :: Env) :: WAAST
     end
     body = juliatoWA(julia_expr.args[2], env)
     return WAMethodDef(methodname, parameters, body)
+end
+
+# transpile_macro: converts the julia_expr that is assumed to be an assert macro
+# call into a world age method definition
+function transpile_macro(julia_expr :: Expr, env :: Env) :: WAAST
+    # Remove any line number nodes from the macro
+    macroArgs = filter((arg) -> typeof(arg) != LineNumberNode, julia_expr.args)
+    if macroArgs[1] == ASSERT_SYM
+        return juliatoWA(Expr(CALL_SYM, ASSERT_SYM, macroArgs[2]), env)
+    end
 end
 
 # get_paraminfo: gets the name and type of an expression that is assumed to be a parameter

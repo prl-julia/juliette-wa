@@ -109,9 +109,11 @@ const OR_SYM = :(||)
 const EQUAL_SYM = :(==)
 const QUOTE_SYM = :quote
 const PRINT_SYM = :print
-const PRIMOPS = [ADD_SYM, SUBSTRACT_SYM, MULT_SYM, DIVIDE_SYM,
+const ASSERT_SYM = Symbol("@assert")
+const PRIMOPS = [ADD_SYM, SUBSTRACT_SYM, MULT_SYM, DIVIDE_SYM, ASSERT_SYM,
                     PRINT_SYM, NOT_SYM, AND_SYM, OR_SYM, EQUAL_SYM]
 const INTERPOLATION_SYM = :$
+const MACRO_SYM = :macrocall
 
 # Following are the symbols in the julia ast that discriminate types
 const EMPTY_UNION_SYM = :curly

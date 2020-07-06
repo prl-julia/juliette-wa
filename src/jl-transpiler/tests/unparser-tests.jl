@@ -41,6 +41,7 @@ call8 = WAPrimopCall(:-, [int1, floatpi])
 call12 = WAPrimopCall(:&&, [btrue, bfalse])
 call13 = WAPrimopCall(:||, [bfalse, bfalse])
 call14 = WAPrimopCall(:!, [btrue])
+call15 = WAPrimopCall(Symbol("@assert"), [WAPrimopCall(:(==), [WANumber(1), WANumber(2)])])
 if1 = WAIfThenElse(call14, int1, call1)
 
 eval1 = WAGlobalEval(strabc)
@@ -77,6 +78,7 @@ using Test
     @test unparser(call12) == "(term (pcall && true false))"
     @test unparser(call13) == "(term (pcall || false false))"
     @test unparser(call14) == "(term (pcall ! true))"
+    @test unparser(call15) == "(term (pcall @assert (pcall == 1 2)))"
     @test unparser(if1) == "(term (if (pcall ! true) 1 (mcall f -1)))"
     @test unparser(eval1) == "(term (evalg \"abc\"))"
     @test unparser(eval2) == "(term (evalg (evalg \"abc\")))"
