@@ -8,11 +8,11 @@ const OPTIMIZATION_ID = "optimizations"
 function runtest()
     if size(ARGS)[1] == 0
         tests = vcat(gettests(false), gettests(true))
-    elseif ARGS[1] == "-select" || ARGS[1] == "-s"
+    elseif ARGS[1] == "--select" || ARGS[1] == "-s"
         tests = map(testdir -> (testdir, occursin(OPTIMIZATION_ID, testdir)), ARGS[2:end])
-    elseif ARGS[1] == "litmus-opt" || ARGS[1] == "-opt"
+    elseif ARGS[1] == "--litmus-opt" || ARGS[1] == "-opt"
         tests = gettests(true)
-    elseif ARGS[1] == "litmus-wa" || ARGS[1] == "-wa"
+    elseif ARGS[1] == "--litmus-wa" || ARGS[1] == "-wa"
         tests = gettests(false)
     else
         println("Invalid format")
