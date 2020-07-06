@@ -1,1 +1,0 @@
-(term (evalg (seq (mdef "h" () (seq (evalg (mdef "j" () 2)) (evalg (mcall j)))) (mcall h))))

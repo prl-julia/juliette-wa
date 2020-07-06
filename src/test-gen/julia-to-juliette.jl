@@ -13,7 +13,7 @@ end
 
 # JULIETTE_TEMPLATE: creates a juliette file
 function JULIETTE_TEMPLATE(prettified_juliette :: String, show_methodtable :: Bool) :: String
-"$(REDEX_PROLOG)
+"$(REDEX_PROLOG())
 
 (define p
     $(prettified_juliette)

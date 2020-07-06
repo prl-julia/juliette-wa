@@ -8,7 +8,7 @@ const JULIA_ERR_MAP = Dict{Symbol,String}(
 # create_redex_file: creates a redex file that tests in the julia expression
 # run as a juilette program
 function create_redex_file(dirpath :: String)
-    prettified_juliette_expr = transpile_and_prettify("$(dirpath)/source.jl")
+    prettified_juliette_expr = transpile_and_prettify("$(dirpath)/source.jl", "../src/test-gen/")
     fd = open("$(dirpath)/expected.jl")
     juliatest = read(fd, String)
     close(fd)
@@ -50,7 +50,7 @@ isa_methodval(identifier :: Symbol) = identifier == :get_methodvalue
 
 # REDEX_FILE_TEMPLATE: creates a redex test file
 function REDEX_FILE_TEMPLATE(testname :: String, juliette_expr :: String, expected_value :: String)
-"$(REDEX_PROLOG)
+"$(REDEX_PROLOG("../../../src/"))
 
 (displayln \"Test for $(testname):\")
 
