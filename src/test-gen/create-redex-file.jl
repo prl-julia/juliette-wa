@@ -49,7 +49,7 @@ isa_methodval(identifier :: Symbol) = identifier == :get_methodvalue
 
 
 # REDEX_FILE_TEMPLATE: creates a redex test file
-function REDEX_FILE_TEMPLATE(testname :: String, juliette_expr :: String, expected_value :: String)
+function REDEX_FILE_TEMPLATE(testname :: String, juliette_expr :: String, expected_value :: String, is_opt :: Bool) :: String
 "$(REDEX_PROLOG("../../../src/"))
 
 (displayln \"Test for $(testname):\")
@@ -57,7 +57,7 @@ function REDEX_FILE_TEMPLATE(testname :: String, juliette_expr :: String, expect
 (define p
     $(juliette_expr))
 
-(test-equal (term (run-to-r ,p)) (term $(expected_value)))
+(test-equal (term (run-to-r$(is_opt ? "-opt" : "") ,p)) (term $(expected_value)))
 
 (test-results)"
 end

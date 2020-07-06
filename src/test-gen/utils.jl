@@ -49,5 +49,7 @@ function REDEX_PROLOG(dir_prefix="../" :: String) :: String
     ; import surface language
     (require \"$(dir_prefix)redex/core/wa-surface.rkt\")
     ; import full language
-    (require \"$(dir_prefix)redex/core/wa-full.rkt\")"
+    (require \"$(dir_prefix)redex/core/wa-full.rkt\")
+    ; import optimizations
+    (require \"$(dir_prefix)redex/optimizations/wa-optimized.rkt\")"
 end

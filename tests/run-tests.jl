@@ -1,12 +1,13 @@
 include("../src/test-gen/create-redex-file.jl")
 
 const LITMUS_WA_DIR = "litmus-wa"
+const LITMUS_OPT_DIR = "litmus-optimizations"
 
 # runtest: all the tests indicated by the command line args are executed
 function runtest()
     if size(ARGS)[1] == 0
         tests = readdir("$(LITMUS_WA_DIR)")
-    elseif ARGS[1] == "-run" || ARGS[1] == "-r"
+    elseif ARGS[1] == "-select" || ARGS[1] == "-s"
         tests = ARGS[2:end]
     elseif ARGS[1] == "-ignore" || ARGS[1] == "-i"
         tests = filter(
