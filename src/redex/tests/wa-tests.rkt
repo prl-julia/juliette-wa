@@ -244,6 +244,15 @@
   ; (| 5 |) -->* 5
   (test-equal (term (run-normal ,p-triv-1))
               (term ((< ∅ 5 >))))
+   ; (| assert(true && true) |)
+  (test-equal (term (run-to-r ,p-assert-t))
+              (term nothing))
+  ; (| assert(1 == 2) |)
+  (test-equal (term (run-to-r ,p-assert-f))
+              (term assert-err))
+  ; (| assert(-3+-4) |)
+  (test-equal (term (run-to-r ,p-assert-n7))
+              (term type-err))
   ; (| skip ; -5 |) -->* -5
   (test-equal (term (run-normal ,p-triv-2))
               (term ((< ∅ -5 >))))

@@ -86,6 +86,12 @@
 (define trueandtrue (term (pcall && ,btrue ,btrue)))
 ; true || false
 (define trueorfalse (term (pcall || ,btrue ,bfalse)))
+; assert(1 == 2)
+(define assertfalse (term (pcall @assert (pcall == 1 2))))
+; assert(true && true)
+(define asserttrue  (term (pcall @assert ,trueandtrue)))
+; assert(-3+-4)
+(define assertn7 (term (pcall @assert ,n3plusn4)))
 
 ;; ------------------- Function calls
 
@@ -287,6 +293,12 @@
 
 ; (| 5 |)
 (define p-triv-1  (term (evalg 5)))
+; (| assert(1 == 2) |)
+(define p-assert-f (term (evalg ,assertfalse)))
+; (| assert(true && true) |)
+(define p-assert-t  (term (evalg ,asserttrue)))
+; (| assert(-3+-4) |)
+(define p-assert-n7 (term (evalg ,assertn7)))
 ; (| skip ; -5 |)
 (define p-triv-2  (term (evalg (seq ,skip -5))))
 ; (| f(x::Int64)="f-int" ; 7 |)

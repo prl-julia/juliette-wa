@@ -49,11 +49,12 @@
 
   ;; error
   [err ::=
-       md-err    ; dispatch error
-       call-err  ; callee is not callable error
-       prim-err  ; primop error
-       var-err   ; undefined variable error
+       md-err      ; dispatch error
+       call-err    ; callee is not callable error
+       prim-err    ; primop error
+       var-err     ; undefined variable error
        type-err    ; expected one type but got another
+       assert-err  ; assertion failed
        ]
   ;; dispatch-related error
   [md-err ::=
@@ -119,12 +120,13 @@
   [(res-type-primop bin-boolop   Bool Bool) Bool]
   [(res-type-primop unary-boolop Bool)      Bool]
   [(res-type-primop == σ_1 σ_2) Bool]
-  [(res-type-primop print σ)  Nothing]
+  [(res-type-primop unary-void σ)  Nothing]
   [(res-type-primop op τ ...) Any])
 
 (test-equal (term (res-type-primop + Int64 Float64)) (term Float64))
 (test-equal (term (res-type-primop + Int64))         (term Any))
 (test-equal (term (res-type-primop + Int64 Bool))    (term Any))
+(test-equal (term (res-type-primop print Bool))      (term Nothing))
 
 ;; ==================================================
 ;; Primops Semantics
@@ -179,6 +181,7 @@
 (define-metafunction WA-full
   run-primop : op v ... -> r
   [(run-primop print v ...) (pcall-print v ...)]
+  [(run-primop @assert v) (pcall-assert v)]
   [(run-primop == v_1 v_2) (pcall-== v_1 v_2)]
   [(run-primop bin-arithop real_1 real_2)
    ,((get-op (term bin-arithop)) (term real_1) (term real_2))]
@@ -196,6 +199,14 @@
   pcall-== : v v -> r
   [(pcall-== v v) true]
   [(pcall-== _ _) false]
+)
+
+;; Assertion primop
+(define-metafunction WA-full
+  pcall-assert : v -> r
+  [(pcall-assert true) nothing]
+  [(pcall-assert false) assert-err]
+  [(pcall-assert _) type-err]
 )
 
 ;; Printing-single-value primop
@@ -232,6 +243,9 @@
 (test-equal (term (run-primop == 1.1 1.1))                (term true))
 (test-equal (term (run-primop == (mval "a") (mval "b")))  (term false))
 (test-equal (term (run-primop == (mval "a") (mval "a")))  (term true))
+(test-equal (term (run-primop @assert 1))                 (term type-err))
+(test-equal (term (run-primop @assert true))              (term nothing))
+(test-equal (term (run-primop @assert false))             (term assert-err))
 
 
 ;; ==================================================
@@ -564,8 +578,8 @@
         E-IfErr]
    ; <MTg, C[op(v...)]> --> <MTg, prim-err>
    [--> (< MT_g (in-hole C (pcall op v ...)) >)
-        (< MT_g prim-err >)
-        (where prim-err (run-primop op v ...))
+        (< MT_g err >)
+        (where err (run-primop op v ...))
         E-PrimopErr]
    ; <MTg, C[(| X[m(v...)] |)_MT]> --> <MTg, md-err>
    [--> (< MT_g (in-hole C (evalt MT (in-hole X (mcall (mval mname) v ...)))) >)

@@ -64,10 +64,11 @@
 ;; -------------------- Aux
   
   ;; primitive operation
-  [op ::= bin-arithop bin-boolop unary-boolop == print]
+  [op ::= bin-arithop bin-boolop unary-boolop unary-void ==]
   [bin-arithop ::= + - * /]
   [bin-boolop ::= && ||]
   [unary-boolop ::= !]
+  [unary-void ::= print @assert]
   ;; boolean value (like in Julia)
   [bool ::= true false]
   
