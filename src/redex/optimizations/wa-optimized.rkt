@@ -653,7 +653,7 @@
   [(increment-inline-count Δ sig)
   (update-inline-count Δ sig ,(+ (term (get-inline-count Δ sig)) 1))])
 
-;; Gets the signature of the current met
+;; Gets the signature and optimized method name of the callee of the given method call
 (define-metafunction WA-opt
   get-opt-name-and-sig : Γ ⋈ MT mc -> (< maybe-mname md >) or nothing
   [(get-opt-name-and-sig Γ ⋈ MT (mcall (mval mname) e ...))
