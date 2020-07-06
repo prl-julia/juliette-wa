@@ -126,6 +126,19 @@ subset of the Julia language in the traspiler.
       value: <SubJulia>
   ```
 
+- Assert expression of the form:
+  ```julia
+  # Julia code:
+  @assert <SubJulia>
+
+  # Julia AST:
+  Expr
+      head: :macrocall
+      args:
+          1: :@assert
+          2: <SubJulia>
+```
+
 - Block expression of the form:
   ```julia
   # Julia code:
