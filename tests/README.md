@@ -19,13 +19,13 @@ Every folder in the `litmus-wa/` and `litmus-optimizations/` directories represe
 The tests can be run in one of the following ways (commands must be run from the
 current directory):
 
-* `julia run-test.jl` — runs all the tests in both test directories
+* `julia run-tests.jl` — runs all the tests in both test directories
 
-* `julia run-test.jl <-s | --select> <list of test cases>` — runs all the tests provided in the args
+* `julia run-tests.jl <-s | --select> <list of test cases>` — runs all the tests provided in the args
   * example: `julia run-test.jl -s litmus-wa/test01 litmus-optimizations/test01`
 
-* `julia run-test.jl <-opt | --litmus-opt>` — runs all the tests in `litmus-optimizations`
+* `julia run-tests.jl <-opt | --litmus-opt>` — runs all the tests in `litmus-optimizations`
   * example: `julia run-test.jl --litmus-opt`
 
-* `julia run-test.jl <-wa | --litmus-wa>` — runs all the tests in `litmus-wa`
+* `julia run-tests.jl <-wa | --litmus-wa>` — runs all the tests in `litmus-wa`
   * example: `julia run-test.jl -wa`
