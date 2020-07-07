@@ -410,17 +410,18 @@
     (~~> Γ (evalt MT (mcall x_mname e ...)) (evalt MT_P e_p))]
   )
 
+(define addxy-intNum (term (mdef "add" ((:: x Int64) (:: y Number)) (pcall + x y))))
+(define MT-addintNum (term (,addxy-intNum • ∅)))
+(define MT-addintint-addintNum (term ((mdef "add_P" ((:: x Int64) (:: y Int64)) (pcall + x y))
+                                          • ,MT-addintNum)))
 (test-equal (judgment-holds (~~> () (evalt (,id-fInt • ∅) y)
                                     (evalt (,id-fInt • ∅) y))) #true)
 (test-equal (judgment-holds (~~> () (evalt ∅ (seq 1 "a")) (evalt ∅ (seq 1 "a")))) #true)
 (test-equal (judgment-holds (~~> () (evalt ((mdef "func" () 3) • ∅) (mcall (mval "func")))
                                     (evalt ((mdef "func" () 3) • ∅) (seq nothing 3)))) #true)
 (test-equal (judgment-holds (~~> ((y Int64))
-                                 (evalt ((mdef "add" ((:: x Int64) (:: y Number)) (pcall + x y)) • ∅)
-                                        (mcall (mval "add") 1 (pcall + y y)))
-                                 (evalt ((mdef "add_P" ((:: x Int64) (:: y Int64)) (pcall + x y))
-                                          • ((mdef "add" ((:: x Int64) (:: y Number))
-                                                   (pcall + x y)) • ∅))
+                                 (evalt ,MT-addintNum (mcall (mval "add") 1 (pcall + y y)))
+                                 (evalt ,MT-addintint-addintNum
                                         (mcall (mval "add_P") 1 (pcall + y y))))) #true)
 
 ;; ==================================================
