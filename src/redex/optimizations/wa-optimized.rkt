@@ -298,8 +298,7 @@
 (test-equal (term (contains-name-MT ((mdef "f" ((:: x Int64)) (evalg var)) • ∅) var)) #t)
 (test-equal (term (contains-name-MT ((mdef "f" () (pcall + 1 x))
                                      • ((mdef "g" () (mcall (mval "g"))) • ∅)) var)) #f)
-(test-equal (term (contains-name-MT (,g-return1
-                                     • ((mdef "tst" ((:: y Bool) (:: test String)) 1)
+(test-equal (term (contains-name-MT (,g-return1 • ((mdef "tst" ((:: y Bool) (:: test String)) 1)
                                            • ((mdef "test" () 1) • ∅))) test)) #t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

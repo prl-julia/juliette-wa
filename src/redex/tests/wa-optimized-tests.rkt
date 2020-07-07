@@ -17,6 +17,7 @@
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   
   ; Type-check tests
+  
   (test-equal (judgment-holds (⊢ () 1 Float64)) #false)
   (test-equal (judgment-holds (⊢ () 1.1 Float64)) #true)
   (test-equal (judgment-holds (⊢ () false Bool)) #true)
@@ -30,7 +31,9 @@
   (test-equal (judgment-holds (⊢ ((x String) (y Float64)) (seq y x) Bool)) #false)
   (test-equal (judgment-holds (⊢ ((y Bool)) (evalg y) Bool)) #true)
   (test-equal (judgment-holds (⊢ ((y Bool)) (evalg 1.1) Bool)) #false)
+  
   ; Type-check primop tests
+  
   (test-equal (judgment-holds (⊢ ((x String) (y Float64)) (pcall + 1 y) Float64)) #true)
   (test-equal (judgment-holds (⊢ ((x String) (y Float64)) (pcall * 1 1) Int64)) #true)
   (test-equal (judgment-holds (⊢ ((y Float64)) (pcall - y y) Float64)) #true)
@@ -42,7 +45,9 @@
   (test-equal (judgment-holds (⊢ ,yfloat-bBool (pcall print b) Nothing)) #true)
   (test-equal (judgment-holds (⊢ ,yfloat-bBool (pcall + b y 1.1) Any)) #true)
   (test-equal (judgment-holds (⊢ ,yfloat-bBool (if b y 1.1) Any)) #true)
+  
   ; Type-check method tests
+  
   (test-equal (judgment-holds (⊢ () (seq (mdef "test" ((:: x Int64)) x) (mcall "test" 1))
                                  Any)) #true)
   (test-equal (judgment-holds (⊢ () (seq (mdef "test" ((:: x Int64)) x) (mcall "test" 1))
@@ -56,6 +61,7 @@
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
   ; Manual optimization judgments
+  
   (test-equal (judgment-holds (~~> () (evalt (,func-return3 • ∅) (mcall func))
                                    (evalt (,func-return3 • ∅) (mcall (mval "func"))))) #true)
   (test-equal (judgment-holds (~~> () (evalt (,func-return3 • ∅) (mcall func))
@@ -68,38 +74,52 @@
                                           (mcall (mval "add_P") 1 (pcall + y 1.1))))) #false)
   
   ; Automatically generated optimization judgements
+  
   ; () ∅ 1 -> true
   (test-equal (term (valid-optimization () ∅ 1)) #t)
+  
   ; () ∅ func(x) undeclared-var -> false
   (test-equal (term (valid-optimization () ∅ ,call-func-with-x)) #t)
+  
   ; ((x Bool)) ∅ 1+x -> true
   (test-equal (term (valid-optimization ,xBool-type-env ∅ ,one-plus-x)) #t)
+  
   ; () ∅ func() err-no-method -> true
   (test-equal (term (valid-optimization () ∅ ,call-func)) #t)
+  
   ; () (f()=1 • ∅) func() -> true
   (test-equal (term (valid-optimization () (,func1 • ∅) ,call-func)) #t)
+  
   ; ((y Int64)) (y()=1 • ∅) y() ->
   (test-equal (term (valid-optimization ,wInt-type-env (,func1 • ∅) (mcall w))) #t)
+  
   ; ((w Int64)) (y()=x • ∅) id(id(w)) -> true
   (test-equal (term (valid-optimization ,wInt-type-env (,idInt • ∅) (mcall id ,call-id-with-w))) #t)
+  
   ; ((w Int64)) (y(x:Int64)=x • ∅) id(w);id(w);id(w) -> true
   (test-equal (term (valid-optimization ,wInt-type-env (,idInt • ∅) seq-id-calls)) #t)
+  
   ; ((var1 Bool) (var2 Int64) (var1 Int64))
   ; (f(x:Int64)=2 • (add(x:Int64,y=Int64)=x+y • (f(x:Bool)=1 • ∅)))
   ; f(var1) -> true
   (test-equal (term (valid-optimization ,var-type-env ,MT_1 ,call-f-with-var1)) #t)
+  
   ; ((var1 Bool) (var2 Int64) (var1 Int64))
   ; (f(x:Int64)=2 • (add(x:Int64,y=Int64)=x+y • (f(x:Bool)=1 • ∅)))
   ; f(var1);add(var1,var2) err-no-method -> true
   (test-equal (term (valid-optimization ,var-type-env ,MT_1 ,seq-f-then-add)) #t)
+  
   ; ((var1 Int64) (var2 Int64) (var1 Bool))
   ; (f(x:Int64)=2 • (add(x:Int64,y=Int64)=x+y • (f(x:Bool)=1 • ∅)))
   ; f(var1);add(var1,var2) -> true
   (test-equal (term (valid-optimization ,var-type-env-2 ,MT_1 ,seq-f-then-add)) #t)
+  
   ; () ((mdef "func" ((:: x Int64)) 2) • ∅) func(1*2) -> true
   (test-equal (term (valid-optimization () (,func3-with-x • ∅) (mcall func (pcall * 1 2)))) #t)
+  
   ; () ((mdef "func" ((:: x Int64)) 2) • ∅) (|func(2)|)
   (test-equal (term (valid-optimization () (,func3-with-x • ∅) (evalg (mcall func 2)))) #t)
+  
   ; ((var1 Int64))
   ; (first()=second() • (second()=1 • ∅))
   ; first() -> true
@@ -115,6 +135,7 @@
   
   ; (| 5 |) -->* 5
   (test-predicate opt-equivalence p-triv-1)
+  
   ; (| print(...); print(...) |) -->* nothing
   (test-predicate opt-equivalence p-primop-5)
   
