@@ -113,8 +113,10 @@
   [(length (_ • MT_rest)) ,(+ 1 (term (length MT_rest)))]
   )
 
+(define id-fInt (term (mdef "func" ((:: x Int64)) x)))
+(define g-return1 (term (mdef "g" () 1)))
 (test-equal (term (length ∅)) 0)
-(test-equal (term (length ((mdef "f" ((:: x Int64)) x) • ((mdef "g" () 1) • ∅)))) 2)
+(test-equal (term (length (,id-fInt • (,g-return1 • ∅)))) 2)
 
 ;; -------------------- Reverse
 
@@ -129,10 +131,13 @@
   reverse-mt : MT -> MT
   [(reverse-mt MT) (reverse-mt-acc MT ∅)])
 
+(define f-return0 (term (mdef "f" () 0)))
+(define g-return0 (term (mdef "g" () 0)))
+(define f-g-table (term (,f-return0 • (,g-return0 • ∅))))
 (test-equal (term (reverse-mt ∅))
             (term ∅))
-(test-equal (term (reverse-mt ((mdef "g" () 0) • ((mdef "f" () 0) • ∅))))
-            (term ((mdef "f" () 0) • ((mdef "g" () 0) • ∅))))
+(test-equal (term (reverse-mt (,g-return0 • (,f-return0 • ∅))))
+            (term ,f-g-table))
 
 ;; -------------------- Append
 
@@ -144,14 +149,12 @@
   [(append (md • MT_rest) MT_2)
    (md • (append MT_rest MT_2))])
 
-(test-equal (term (append ((mdef "f" () 0) • ((mdef "g" () 0) • ∅)) ∅))
-            (term ((mdef "f" () 0) • ((mdef "g" () 0) • ∅))))
-(test-equal (term (append ∅ ((mdef "f" () 0) • ((mdef "g" () 0) • ∅))))
-            (term ((mdef "f" () 0) • ((mdef "g" () 0) • ∅))))
-(test-equal (term (append ∅ ((mdef "f" () 0) • ((mdef "g" () 0) • ((mdef "f" () 0)
-                                                                   • ((mdef "g" () 0) • ∅))))))
-            (term ((mdef "f" () 0) • ((mdef "g" () 0) • ((mdef "f" () 0)
-                                                         • ((mdef "g" () 0) • ∅))))))
+(test-equal (term (append ,f-g-table ∅))
+            (term ,f-g-table))
+(test-equal (term (append ∅ ,f-g-table))
+            (term ,f-g-table))
+(test-equal (term (append ∅ (,f-return0 • (,g-return0 • ,f-g-table))))
+            (term (,f-return0 • (,g-return0 • ,f-g-table))))
 
 ;; -------------------- Cut
 
@@ -165,12 +168,12 @@
   )
 
 (test-equal (term (take 1 ∅)) (term ∅))
-(test-equal (term (take 1 ((mdef "f" ((:: x Int64)) x) • ((mdef "g" () 1) • ∅))))
-            (term ((mdef "f" ((:: x Int64)) x) • ∅)))
-(test-equal (term (take 0 ((mdef "f" ((:: x Int64)) x) • ((mdef "g" () 1) • ∅))))
+(test-equal (term (take 1 (,id-fInt • (,g-return1 • ∅))))
+            (term (,id-fInt • ∅)))
+(test-equal (term (take 0 (,id-fInt • (,g-return1 • ∅))))
             (term ∅))
-(test-equal (term (take 2 ((mdef "f" ((:: x Int64)) x) • ((mdef "g" () 1) • ∅))))
-            (term ((mdef "f" ((:: x Int64)) x) • ((mdef "g" () 1) • ∅))))
+(test-equal (term (take 2 (,id-fInt • (,g-return1 • ∅))))
+            (term (,id-fInt • (,g-return1 • ∅))))
 
 ;; Removes the first N mdefs from the method table
 (define-metafunction WA-opt
@@ -182,11 +185,11 @@
   )
 
 (test-equal (term (drop 1 ∅)) (term ∅))
-(test-equal (term (drop 1 ((mdef "f" ((:: x Int64)) x) • ((mdef "g" () 1) • ∅))))
-            (term ((mdef "g" () 1) • ∅)))
-(test-equal (term (drop 0 ((mdef "f" ((:: x Int64)) x) • ((mdef "g" () 1) • ∅))))
-            (term ((mdef "f" ((:: x Int64)) x) • ((mdef "g" () 1) • ∅))))
-(test-equal (term (drop 2 ((mdef "f" ((:: x Int64)) x) • ((mdef "g" () 1) • ∅)))) (term ∅))
+(test-equal (term (drop 1 (,id-fInt • (,g-return1 • ∅))))
+            (term (,g-return1 • ∅)))
+(test-equal (term (drop 0 (,id-fInt • (,g-return1 • ∅))))
+            (term (,id-fInt • (,g-return1 • ∅))))
+(test-equal (term (drop 2 (,id-fInt • (,g-return1 • ∅)))) (term ∅))
 
 ;; -------------------- Indexing
 
@@ -208,20 +211,20 @@
    (get-element-wrap N (reverse-mt MT))]
   )
 
-(test-equal (term (get-element 0 ((mdef "f" ((:: x Int64)) x) • ((mdef "g" () 1) • ∅))))
-            (term (mdef "g" () 1)))
-(test-equal (term (get-element 2 ((mdef "f" ((:: x Int64)) x) • ((mdef "g" () 1) • ∅))))
+(test-equal (term (get-element 0 (,id-fInt • (,g-return1 • ∅))))
+            (term ,g-return1))
+(test-equal (term (get-element 2 (,id-fInt • (,g-return1 • ∅))))
             (term nothing))
 (test-equal (term (get-element 2 ∅)) (term nothing))
-(test-equal (term (get-element 1 ((mdef "f" ((:: x Int64)) x) • ((mdef "g" () 1) • ∅))))
-            (term (mdef "f" ((:: x Int64)) x)))
+(test-equal (term (get-element 1 (,id-fInt • (,g-return1 • ∅))))
+            (term ,id-fInt))
 
 ;; ==================================================
 ;; Syntax and Bindings Helpers
 ;; ==================================================
 
 ;; Determines if the given local variable has the same name as the given variable
-;; TODO explain why we need this relatively complicated function
+;; The regex match is needed in order to ignore the substitution id of redex vars
 (define (same-varname localvar x_str)
   (let* ((localvar_match
           (first (regexp-match* #rx".*«" (~a localvar))))
@@ -245,6 +248,10 @@
   [(contains-name-e (seq e_1 e_2) x)
    ,(or (term (contains-name-e e_1 x))
         (term (contains-name-e e_2 x)))]
+  [(contains-name-e (if e_1 e_2 e_3) x)
+   ,(or (term (contains-name-e e_1 x))
+        (term (contains-name-e e_2 x))
+        (term (contains-name-e e_3 x)))]
   [(contains-name-e x x)
    #t]
   [(contains-name-e (mval string_var) x)
@@ -262,6 +269,7 @@
 (test-equal (term (contains-name-e test t)) #f)
 (test-equal (term (contains-name-e (seq true func) func)) #t)
 (test-equal (term (contains-name-e (seq (seq nothing "func") 1.1) func)) #f)
+(test-equal (term (contains-name-e (if nothing func 1.1) func)) #t)
 (test-equal (term (contains-name-e (evalg (mval "t")) t)) #t)
 (test-equal (term (contains-name-e (mcall func test) var)) #f)
 (test-equal (term (contains-name-e (mcall add 1 var) var)) #t)
@@ -272,11 +280,11 @@
 (test-equal (term (contains-name-e (mdef "test" () 1) x)) #f)
 (test-equal (term (contains-name-e (mdef "tst" ((:: y Bool) (:: x String)) 1) x)) #t)
 (test-equal (term (contains-name-e (mdef "f" () (pcall + 1 x)) x)) #t)
-(test-equal (term (contains-name-e (mdef "g" () 1) g)) #t)
+(test-equal (term (contains-name-e ,g-return1 g)) #t)
 (test-equal (term (contains-name-e (mdef "g" () (mcall (mval "g"))) g)) #t)
 (test-equal (term (contains-name-e (mdef "g" ((:: f Any) (:: h Any))
                                          (mcall (mval "h") (mcall f))) x)) #f)
-(test-equal (term (contains-name-e (mdef "f" ((:: x Int64)) x) x)) #t)
+(test-equal (term (contains-name-e ,id-fInt x)) #t)
 
 ;; Determines whether the given name is used in the given method table
 (define-metafunction WA-opt
@@ -290,7 +298,7 @@
 (test-equal (term (contains-name-MT ((mdef "f" ((:: x Int64)) (evalg var)) • ∅) var)) #t)
 (test-equal (term (contains-name-MT ((mdef "f" () (pcall + 1 x))
                                      • ((mdef "g" () (mcall (mval "g"))) • ∅)) var)) #f)
-(test-equal (term (contains-name-MT ((mdef "g" () 1)
+(test-equal (term (contains-name-MT (,g-return1
                                      • ((mdef "tst" ((:: y Bool) (:: test String)) 1)
                                            • ((mdef "test" () 1) • ∅))) test)) #t)
 
@@ -340,51 +348,11 @@
    (⊢ Γ (evalg e) τ)]
   )
 
-;; Type-check tests
 (test-equal (judgment-holds (⊢ () 1 Int64)) #true)
-(test-equal (judgment-holds (⊢ () 1 Float64)) #false)
-(test-equal (judgment-holds (⊢ () 1.1 Float64)) #true)
-(test-equal (judgment-holds (⊢ () true Bool)) #true)
-(test-equal (judgment-holds (⊢ () false Bool)) #true)
-(test-equal (judgment-holds (⊢ () "hey" String)) #true)
-(test-equal (judgment-holds (⊢ () (mval "test") (mtag "test"))) #true)
-(test-equal (judgment-holds (⊢ () (mval "test") Bool)) #false)
-(test-equal (judgment-holds (⊢ () nothing Nothing)) #true)
-(test-equal (judgment-holds (⊢ ((y Bool)) y Bool)) #true)
-(test-equal (judgment-holds (⊢ ((x Int64) (y Bool)) z Bool)) #false)
-(test-equal (judgment-holds (⊢ ((y Bool)) y Int64)) #false)
-(test-equal (judgment-holds (⊢ ((y Bool)) (seq y true) Bool)) #true)
 (test-equal (judgment-holds (⊢ ((x String) (y Bool) (y Float64)) (seq 4 y) Bool)) #true)
-(test-equal (judgment-holds (⊢ ((x String) (y Float64)) (seq y x) Bool)) #false)
-(test-equal (judgment-holds (⊢ ((y Bool)) (evalg y) Bool)) #true)
-(test-equal (judgment-holds (⊢ ((y Bool)) (evalg 1.1) Bool)) #false)
-; Type-check primop tests
-(test-equal (judgment-holds (⊢ ((x String) (y Float64)) (pcall + 1 y) Float64)) #true)
-(test-equal (judgment-holds (⊢ ((x String) (y Float64)) (pcall * 1 1) Int64)) #true)
-(test-equal (judgment-holds (⊢ ((y Float64)) (pcall - y y) Float64)) #true)
-(test-equal (judgment-holds (⊢ ((y Float64)) (pcall / y 1) Float64)) #true)
-(test-equal (judgment-holds (⊢ ((x String) (y Float64)) (pcall + x 1) Float64)) #false)
-(test-equal (judgment-holds (⊢ ((b Bool)) (pcall ! b) Bool)) #true)
 (test-equal (judgment-holds (⊢ ((b Bool)) (pcall && b true) Bool)) #true)
-(test-equal (judgment-holds (⊢ ((y Float64) (b Bool)) (pcall && b y) Any)) #true)
-(test-equal (judgment-holds (⊢ ((y Float64) (b Bool)) (pcall == b y) Bool)) #true)
-(test-equal (judgment-holds (⊢ ((y Float64) (b Bool)) (pcall print b y) Any)) #true)
-(test-equal (judgment-holds (⊢ ((y Float64) (b Bool)) (pcall print b) Nothing)) #true)
-(test-equal (judgment-holds (⊢ ((y Float64) (b Bool)) (pcall + b y 1.1) Any)) #true)
-(test-equal (judgment-holds (⊢ ((y Float64) (b Bool)) (if b y 1.1) Any)) #true)
-;; Type-check method tests
+(test-equal (judgment-holds (⊢ ((x String) (y Float64)) (pcall + x 1) Float64)) #false)
 (test-equal (judgment-holds (⊢ () (mdef "test" () 1) (mtag "test"))) #true)
-(test-equal (judgment-holds (⊢ () (seq (mdef "test" ((:: x Int64)) x) (mcall "test" 1))
-                               Any)) #true)
-(test-equal (judgment-holds (⊢ () (seq (mdef "test" ((:: x Int64)) x) (mcall "test" 1))
-                               Int64)) #false)
-(test-equal (judgment-holds (⊢ () (seq (mdef "test" ((:: y Bool) (:: x Int64))
-                                             (evalg (mdef "h" ((:: y Nothing)) y))) (mcall "test" 1))
-                               Any)) #true)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Optimization Judgments
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; ==================================================
 ;; Optimization Judgment for Expression
@@ -443,31 +411,18 @@
     (~~> Γ (evalt MT (mcall x_mname e ...)) (evalt MT_P e_p))]
   )
 
-(test-equal (judgment-holds (~~> () (evalt ((mdef "func" ((:: x Int64)) x) • ∅) y)
-                                    (evalt ((mdef "func" ((:: x Int64)) x) • ∅) y))) #true)
+(test-equal (judgment-holds (~~> () (evalt (,id-fInt • ∅) y)
+                                    (evalt (,id-fInt • ∅) y))) #true)
 (test-equal (judgment-holds (~~> () (evalt ∅ (seq 1 "a")) (evalt ∅ (seq 1 "a")))) #true)
 (test-equal (judgment-holds (~~> () (evalt ((mdef "func" () 3) • ∅) (mcall (mval "func")))
                                     (evalt ((mdef "func" () 3) • ∅) (seq nothing 3)))) #true)
-(test-equal (judgment-holds (~~> () (evalt ((mdef "func" () 3) • ∅) (mcall func))
-                                    (evalt ((mdef "func" () 3) • ∅) (mcall (mval "func"))))) #true)
-(test-equal (judgment-holds (~~> () (evalt ((mdef "func" () 3) • ∅) (mcall func))
-                                    (evalt ((mdef "func" () 3) • ∅) (seq nothing 3)))) #true)
 (test-equal (judgment-holds (~~> ((y Int64))
-                                 (evalt ((mdef "add" ((:: x Int64) (:: y Number)) (pcall + x y))
-                                         • ∅)
+                                 (evalt ((mdef "add" ((:: x Int64) (:: y Number)) (pcall + x y)) • ∅)
                                         (mcall (mval "add") 1 (pcall + y y)))
                                  (evalt ((mdef "add_P" ((:: x Int64) (:: y Int64)) (pcall + x y))
-                                          • ((mdef "add" ((:: x Int64) (:: y Number)) (pcall + x y))
-                                             • ∅))
+                                          • ((mdef "add" ((:: x Int64) (:: y Number))
+                                                   (pcall + x y)) • ∅))
                                         (mcall (mval "add_P") 1 (pcall + y y))))) #true)
-(test-equal (judgment-holds (~~> ((y Int64))
-                                 (evalt ((mdef "add" ((:: x Int64) (:: y Number)) (pcall + x y))
-                                         • ∅)
-                                        (mcall (mval "add") 1 (pcall + y 1.1)))
-                                 (evalt ((mdef "add_P" ((:: x Int64) (:: y Int64)) (pcall + x y))
-                                          • ((mdef "add" ((:: x Int64) (:: y Number)) (pcall + x y))
-                                             • ∅))
-                                        (mcall (mval "add_P") 1 (pcall + y 1.1))))) #false)
 
 ;; ==================================================
 ;; Optimization Judgment for Method Definition
@@ -483,16 +438,14 @@
    (md~~> (evalt MT (mdef mname ((:: x τ) ...) e))
           (evalt MT_P (mdef mname ((:: x_P τ) ...) e_Pbody)))]
   )
-
-(test-equal (judgment-holds (md~~> (evalt ((mdef "func" ((:: x Int64)) x)
-                                           •((mdef "func" () 1) • ∅))
-                                          (mdef "new" ((:: y Int64)) (mcall func y)))
-                                   (evalt ((mdef "func" ((:: x Int64)) x) • ∅)
+(define func-return1 (term (mdef "func" () 1)))
+(define new-call-func-withy (term (mdef "new" ((:: y Int64)) (mcall func y))))
+(test-equal (judgment-holds (md~~> (evalt (,id-fInt • (,func-return1 • ∅)) ,new-call-func-withy)
+                                   (evalt (,id-fInt • ∅)
                                           (mdef "new" ((:: x Int64)) (seq nothing x))))) #true)
-(test-equal (judgment-holds (md~~> (evalt ((mdef "func" ((:: x Int64)) 1)
-                                           •((mdef "func" ((:: x Int64)) x) • ∅))
-                                          (mdef "new" ((:: y Int64)) (mcall func y)))
-                                   (evalt ((mdef "func" ((:: x Int64)) x) • ∅)
+(test-equal (judgment-holds (md~~> (evalt ((mdef "func" ((:: x Int64)) 1) • (,id-fInt • ∅))
+                                          ,new-call-func-withy)
+                                   (evalt (,id-fInt • ∅)
                                           (mdef "new" ((:: x Int64)) (seq nothing x))))) #false)
 
 
@@ -548,14 +501,11 @@
   )
 
 (test-equal (term (related-mt ∅ ∅)) #t)
-(test-equal (term (related-mt ((mdef "new" ((:: y Int64)) (mcall func y)) • ∅) ∅)) #f)
-(test-equal (term (related-mt ∅ ((mdef "new" ((:: y Int64)) (mcall func y)) • ∅))) #t)
-(test-equal (term (related-mt ((mdef "func" ((:: x Int64)) x)
-                               •((mdef "func" () 1)
-                                 • ((mdef "new" ((:: y Int64)) (mcall func y)) • ∅)))
-                              ((mdef "func" ((:: x Int64)) x)
-                               •((mdef "func" () 1)
-                                 • ((mdef "new" ((:: x Int64)) (seq nothing x)) • ∅))))) #t)
+(test-equal (term (related-mt (,new-call-func-withy • ∅) ∅)) #f)
+(test-equal (term (related-mt ∅ (,new-call-func-withy • ∅))) #t)
+(test-equal (term (related-mt (,id-fInt •(,func-return1 • (,new-call-func-withy • ∅)))
+                              (,id-fInt •(,func-return1 • ((mdef "new" ((:: x Int64)) (seq nothing x))
+                                                          • ∅))))) #t)
 
 ;; -------------------- Main Rule
 
@@ -569,18 +519,14 @@
   )
 
 (test-equal (judgment-holds (mt~~> ∅ ∅)) #t)
-(test-equal (judgment-holds (mt~~> ((mdef "new" ((:: y Int64)) (mcall func y)) • ∅) ∅)) #f)
-(test-equal (judgment-holds (mt~~> ∅ ((mdef "new" ((:: y Int64)) (mcall func y)) • ∅))) #t)
-(test-equal (judgment-holds (mt~~> ((mdef "func" ((:: x Int64)) x)
-                               •((mdef "func" () 1)
-                                 • ((mdef "new" ((:: y Int64)) (mcall func y)) • ∅)))
-                              ((mdef "func" ((:: x Int64)) x)
-                               •((mdef "func" () 1)
+(test-equal (judgment-holds (mt~~> (,id-fInt • ∅) ∅)) #f)
+(test-equal (judgment-holds (mt~~> ∅ (,new-call-func-withy • ∅))) #t)
+(test-equal (judgment-holds (mt~~> (,id-fInt
+                               •(,func-return1
+                                 • (,new-call-func-withy • ∅)))
+                              (,id-fInt
+                               •(,func-return1
                                  • ((mdef "new" ((:: x Int64)) (seq nothing x)) • ∅))))) #t)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Optimization Reduction
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; ==================================================
 ;; Optimization Reduction Helpers
@@ -663,7 +609,7 @@
   get-opt-name-and-sig : Γ ⋈ MT mc -> (< maybe-mname md >) or nothing
   [(get-opt-name-and-sig Γ ⋈ MT (mcall (mval mname) e ...))
    (< maybe-mname (mdef mname ((:: x τ) ...) e_body) >)
-   (where #f ,(andmap (lambda (expr) (term (is-nv ,expr))) (term (e ...))))
+   (where #f ,(andmap (λ (expr) (term (is-nv ,expr))) (term (e ...))))
    (where #f (contains-name-⋈ ⋈ ,(~a (term mname))))
    (where (σ ...) (get-types Γ e ...))
    (where (mdef mname ((:: x τ) ...) e_body) (getmd MT mname (σ ...)))
@@ -789,11 +735,6 @@
    (where (< MT_out e_out >) (opt-e Γ MT_in e_in))]
   [(valid-optimization _ _ _) #f])
 
-;; (f(x:Int64)=2 • (add(x:Int64,y=Int64)=x+y • (f(x:Bool)=1 • ∅)))
-(define MT_1 (term ((mdef "f" ((:: x Int64)) 2)
-              •((mdef "add" ((:: x Int64) (:: y Int64)) (pcall + x y))
-                • ((mdef "f" ((:: x Bool)) 1) • ∅)))))
-
 ;;;;;;;;;;;;;;;
 ;; Optimizer
 ;;;;;;;;;;;;;;;
@@ -879,62 +820,3 @@
    r
    (where (( < MT r >)) (run-opt p))]
 )
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Tests of Optimizations
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;; () ∅ 1 -> true
-(test-equal (term (valid-optimization () ∅ 1)) #t)
-;; () ∅ x undeclared-var -> false
-(test-equal (term (valid-optimization () ∅ (mcall func x))) #t)
-;; ((x Bool)) ∅ 1+x -> true
-(test-equal (term (valid-optimization ((x Bool)) ∅ (pcall + 1 x))) #t)
-;; () ∅ func() err-no-method -> true
-(test-equal (term (valid-optimization () ∅ (mcall func))) #t)
-;; () (f()=1 • ∅) func() -> true
-(test-equal (term (valid-optimization () ((mdef "func" () 1) • ∅) (mcall func))) #t)
-;; ((y Int64)) (y()=1 • ∅) y() ->
-(test-equal (term (valid-optimization ((y Int64)) ((mdef "y" () 1) • ∅) (mcall y))) #t)
-;; ((w Int64)) (y()=x • ∅) y(y(w)) -> true
-(test-equal (term (valid-optimization ((w Int64)) ((mdef "y" ((:: x Int64)) x) • ∅)
-                                      (mcall y (mcall y w)))) #t)
-;; ((w Int64)) (y(x:Int64)=x • ∅) y(w);y(w);y(w) -> true
-(test-equal (term (valid-optimization ((w Int64)) ((mdef "y" ((:: x Int64)) x) • ∅)
-                                      (seq (mcall y w) (seq (mcall y w) (mcall y w))))) #t)
-;; ((var1 Bool) (var2 Int64) (var1 Int64))
-;; (f(x:Int64)=2 • (add(x:Int64,y=Int64)=x+y • (f(x:Bool)=1 • ∅)))
-;; f(var1) -> true
-(test-equal (term (valid-optimization ((var1 Bool) (var2 Int64) (var1 Int64))
-                                      ,MT_1 (mcall (mval "f") var1))) #t)
-;; ((var1 Bool) (var2 Int64) (var1 Int64))
-;; (f(x:Int64)=2 • (add(x:Int64,y=Int64)=x+y • (f(x:Bool)=1 • ∅)))
-;; f(var1);add(var1,var2) err-no-method -> true
-(test-equal (term (valid-optimization ((var1 Bool) (var2 Int64) (var1 Int64)) ,MT_1
-                                      (seq (mcall (mval "f") var1)
-                                           (mcall (mval "add") var1 var2)))) #t)
-;; ((var1 Int64) (var2 Int64) (var1 Bool))
-;; (f(x:Int64)=2 • (add(x:Int64,y=Int64)=x+y • (f(x:Bool)=1 • ∅)))
-;; f(var1);add(var1,var2) -> true
-(test-equal (term (valid-optimization ((var1 Int64) (var2 Int64) (var1 Bool)) ,MT_1
-                                      (seq (mcall (mval "f") var1)
-                                           (mcall (mval "add") var1 var2)))) #t)
-;; () ((mdef "func" ((:: x Int64)) 2) • ∅) func(1*2) -> true
-(test-equal (term (valid-optimization () ((mdef "func" ((:: x Int64)) 3) • ∅)
-                                      (mcall func (pcall * 1 2)))) #t)
-;; () ((mdef "func" ((:: x Int64)) 2) • ∅) (|func(2)|)
-(test-equal (term (valid-optimization () ((mdef "func" ((:: x Int64)) 3) • ∅)
-                                      (evalg (mcall func 2)))) #t)
-;; ((var1 Int64))
-;; (first()=second() • (second()=1 • ∅))
-;; first() -> true
-(test-equal (term (valid-optimization ((var1 Int64)) ((mdef "first" () (mcall second))
-                                                      • ((mdef "second" () 1) • ∅))
-                                      (mcall first))) #t)
-
-;(test-equal (term (valid-optimization ((w Int64))
-;                                ((mdef "f" ((:: x Int64)) (mcall (mval "f") (pcall + x x))) • ∅)
-;                                (mcall (mval "f") (pcall + w w)))) #t)
-;(test-equal (term (valid-optimization ((w Int64))
-;                                ((mdef "f" ((:: x Int64)) (mcall (mval "f") x)) • ∅)
-;                                (mcall (mval "f") w))) #t)
