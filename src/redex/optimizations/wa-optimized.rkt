@@ -313,6 +313,10 @@
   ; Γ ⊢ v :: (typeof v)
   [------------------- "T-Val"
    (⊢ Γ v (typeof v))]
+  ; Γ ⊢ if e then e else e  :: Any
+  [(⊢ Γ e_1 τ_1) (⊢ Γ e_2 τ_2) (⊢ Γ e_3 τ_3)
+   ------------------------------------------ "T-IfElse"
+   (⊢ Γ (if e_1 e_2 e_3) Any)]
   ; Γ ⊢ e1;e2 :: τ, where e2 :: τ
   [(⊢ Γ e_1 τ_1) (⊢ Γ e_2 τ_2)
    ---------------------------- "T-Seq"
@@ -367,6 +371,7 @@
 (test-equal (judgment-holds (⊢ ((y Float64) (b Bool)) (pcall print b y) Any)) #true)
 (test-equal (judgment-holds (⊢ ((y Float64) (b Bool)) (pcall print b) Nothing)) #true)
 (test-equal (judgment-holds (⊢ ((y Float64) (b Bool)) (pcall + b y 1.1) Any)) #true)
+(test-equal (judgment-holds (⊢ ((y Float64) (b Bool)) (if b y 1.1) Any)) #true)
 ;; Type-check method tests
 (test-equal (judgment-holds (⊢ () (mdef "test" () 1) (mtag "test"))) #true)
 (test-equal (judgment-holds (⊢ () (seq (mdef "test" ((:: x Int64)) x) (mcall "test" 1))
