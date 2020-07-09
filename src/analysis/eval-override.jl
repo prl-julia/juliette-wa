@@ -1,10 +1,12 @@
 
 const EVAL_PROGRAMS_DIR = "eval-programs"
 
+# Represents the information being analyzed regarding eval calls
 struct EvalInfo
     callCount :: Int64
 end
 
+# Overrides eval and runs each eval program to count the number of times eval is used
 try
     for file = readdir(EVAL_PROGRAMS_DIR)
         evalInfo = EvalInfo(0)

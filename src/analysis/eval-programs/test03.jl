@@ -15,11 +15,9 @@ function fixBuggyList(buggyList :: Vector{Function}) :: Nothing
     eval(:(first() = 1))
     eval(:(second() = 2))
     eval(:(third() = 3))
-    callFunctionList(buggyList)
-    println("Give it a sec, fix pending on world age")
+    println("There, that should be better")
+    eval(:(callFunctionList(funcList)))
 end
 
 # Run bug fixer
 fixBuggyList(funcList)
-println("There, that should be better")
-callFunctionList(funcList)
