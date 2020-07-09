@@ -19,5 +19,8 @@ function fixBuggyList(buggyList :: Vector{Function}) :: Nothing
     eval(:(callFunctionList(funcList)))
 end
 
-# Run bug fixer
-fixBuggyList(funcList)
+using Test
+
+@testset "4 eval calls" begin
+    @test fixBuggyList(funcList) == nothing
+end

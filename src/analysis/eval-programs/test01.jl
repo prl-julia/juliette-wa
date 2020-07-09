@@ -34,6 +34,8 @@ function evenOddDistroOfCollatz(val :: Int64) :: Nothing
     println(outMessage)
 end
 
-evenOddDistroOfCollatz(1)
-evenOddDistroOfCollatz(7)
-evenOddDistroOfCollatz(22)
+using Test
+
+@testset "0 eval calls" begin
+    @test (evenOddDistroOfCollatz(1);evenOddDistroOfCollatz(7);evenOddDistroOfCollatz(22)) == nothing
+end

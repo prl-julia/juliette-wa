@@ -62,6 +62,9 @@ components = [aspen, spider, spider, lily, ant,
                 moose, bush, beatle, bear,deer]
 forest = Forest("white river forest", (142, 443), components)
 
-# Hire the exterminator...
-exterminator(forest)
-println("Bug count after the exterminator did his job: $(bugCounter(forest))")
+using Test
+
+@testset "1 eval call" begin
+    # Hire the exterminator...
+    @test (exterminator(forest); println("Bug count after the exterminator did his job: $(bugCounter(forest))")) == nothing
+end
