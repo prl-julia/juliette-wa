@@ -1,14 +1,19 @@
-function gen_test_code(testfile::String;
+using Pkg
+
+function Pkg.Operations.gen_test_code(testfile::String;
         coverage=false,
         julia_args::Cmd=``,
         test_args::Cmd=``)
     code = """
+        push!(LOAD_PATH, "@")
+		push!(LOAD_PATH, "@v#.#")
+		push!(LOAD_PATH, "@stdlib")
         include("C:/Users/gelin/Documents/computer-science/research/julia/juliette-wa/src/analysis/eval-override.jl")
         $(Base.load_path_setup_code(false))
         cd($(repr(dirname(testfile))))
         append!(empty!(ARGS), $(repr(test_args.exec)))
         include($(repr(testfile)))
-        print(evalInfo)
+        storeEvalInfo(evalInfo)
         """
     return ```
         $(Base.julia_cmd())
@@ -25,7 +30,7 @@ function gen_test_code(testfile::String;
     ```
 end
 
-const TEST_DIR_PREFIX = "C:/Users/gelin/Documents/computer-science/research/julia/juliette-wa/src/analysis/eval-programs/"
-run(gen_test_code(string(TEST_DIR_PREFIX, "test01.jl")))
-run(gen_test_code(string(TEST_DIR_PREFIX, "test02.jl")))
-run(gen_test_code(string(TEST_DIR_PREFIX, "test03.jl")))
+# const TEST_DIR_PREFIX = "C:/Users/gelin/Documents/computer-science/research/julia/juliette-wa/src/analysis/eval-programs/"
+# run(gen_test_code(string(TEST_DIR_PREFIX, "test01.jl")))
+# run(gen_test_code(string(TEST_DIR_PREFIX, "test02.jl")))
+# run(gen_test_code(string(TEST_DIR_PREFIX, "test03.jl")))
