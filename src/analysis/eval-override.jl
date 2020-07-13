@@ -2,21 +2,22 @@ using Pkg
 Pkg.add("JSON")
 using JSON
 
-const EVAL_PROGRAMS_DIR = "eval-programs"
-
 # Represents the information being analyzed regarding eval calls
 struct EvalInfo
     callCount :: Int64
     stackTraces :: Dict{StackTraces.StackTrace, Int}
+    astHeads :: Dict{Symbol, Int}
 end
 
 # Overrides eval and runs each eval program to count the number of times eval is used
-evalInfo = EvalInfo(0, Dict())
+evalInfo = EvalInfo(0, Dict(), Dict())
 function Core.eval(m::Module, @nospecialize(e))
     newTrace = stacktrace()
+    newHead = typeof(e) == Expr ? e.head : :Primitive
     newCallCount = evalInfo.callCount + 1
     evalInfo.stackTraces[newTrace] = get!(evalInfo.stackTraces, newTrace, 0) + 1
-    global evalInfo = EvalInfo(newCallCount, evalInfo.stackTraces)
+    evalInfo.astHeads[newHead] = get!(evalInfo.astHeads, newHead, 0) + 1
+    global evalInfo = EvalInfo(newCallCount, evalInfo.stackTraces, evalInfo.astHeads)
     ccall(:jl_toplevel_eval_in, Any, (Any, Any), m, e)
 end
 
@@ -30,6 +31,7 @@ function evalInfoToJson(info :: EvalInfo)
     json = Dict()
     json["eval_count"] = info.callCount
     json["stack_traces"] = stackTracesToJson(info.stackTraces)
+    json["ast_heads"] = info.astHeads
     json
 end
 
