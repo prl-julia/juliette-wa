@@ -3,7 +3,6 @@
 ######################################
 
 # Represents a counter
-#####################@TODO UInt
 Count = Int64
 
 # Represents the information collected regarding eval function calls
@@ -22,7 +21,7 @@ mutable struct FuncMetadata{T}
     stackTraces :: Dict{StackTraces.StackFrame, Count}
     funcSpecificData :: T
 end
-
+# Initializes a base representation of function metadata
 FuncMetadata(funcSpecificData) = FuncMetadata(0, Dict{StackTraces.StackFrame, Count}(), funcSpecificData)
 
 # Represents the information being analyzed when running packages
@@ -38,8 +37,7 @@ overrideInfo = OverrideInfo(FuncMetadata(EvalInfo(Dict())),
 # Adds one to the value of the key, creates keys with value of 1 if it does not already exist
 updateDictCount(dict :: Dict{T, Count}, key :: T) where {T} = dict[key] = get!(dict, key, 0) + 1
 
-#@TODO look at first frame of trace
-#@TODO Unique environments
+# Updates the information for a new call to a function being analyzed
 function updateFuncMetadata(metadata :: FuncMetadata, updatefuncSpecificData :: Function) :: Nothing
     traceNoCurrentFrame = getindex(stacktrace(), 3)
     updateDictCount(metadata.stackTraces, traceNoCurrentFrame)
@@ -83,15 +81,16 @@ end
 using Pkg
 Pkg.add("JSON")
 using JSON
-
 const OUTPUT_FILE = "$(pwd())/output.json"
 
+# Store the overrideInfo as a JSON file
 function storeOverrideInfo(info :: OverrideInfo) :: Nothing
     fd = open(OUTPUT_FILE, "a")
     JSON.print(fd, overrideInfoToJson(info), 2)
     close(fd)
 end
 
+# Convert an OverrideInfo object to a julia json representation
 function overrideInfoToJson(info :: OverrideInfo)
     json = Dict()
     json["eval_info"] = funcMetadataToJson(info.evalInfo,
@@ -101,6 +100,7 @@ function overrideInfoToJson(info :: OverrideInfo)
     json
 end
 
+# Convert an FuncMetadata object to a julia json representation
 function funcMetadataToJson(funcMetadata :: FuncMetadata, funcSpecificDataToJson :: Function)
     json = Dict()
     json["call_count"] = funcMetadata.callCount
@@ -109,6 +109,7 @@ function funcMetadataToJson(funcMetadata :: FuncMetadata, funcSpecificDataToJson
     json
 end
 
+# Convert a dictionary counting instance occurances to a sorted julia json representation
 function countingDictToJson(dict :: Dict{T, Count}, keyName :: String) where {T}
     sortedDict = sort!(collect(dict), by = pair -> pair.second, rev = true)
     function dictToJson((key, count), acc)
@@ -116,11 +117,3 @@ function countingDictToJson(dict :: Dict{T, Count}, keyName :: String) where {T}
     end
     foldr(dictToJson, sortedDict; init = [])
 end
-
-# function stackTracesToJson(stackTraces :: Dict{StackTraces.StackTrace, Int})
-#     sortedStackTraces = sort!(collect(stackTraces), by = pair -> pair.second, rev = true)
-#     function stacktraceToJson((trace, count), acc)
-#         append!([Dict(["trace_count" => count, "stack_trace" => string(trace)])], acc)
-#     end
-#     foldr(stacktraceToJson, sortedStackTraces; init = [])
-# end
