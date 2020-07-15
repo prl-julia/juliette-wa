@@ -6,14 +6,14 @@ function Pkg.Operations.gen_test_code(testfile::String;
         test_args::Cmd=``)
     code = """
         push!(LOAD_PATH, "@")
-		push!(LOAD_PATH, "@v#.#")
-		push!(LOAD_PATH, "@stdlib")
-        include("C:/Users/gelin/Documents/computer-science/research/julia/juliette-wa/src/analysis/eval-override.jl")
+        push!(LOAD_PATH, "@v#.#")
+        push!(LOAD_PATH, "@stdlib")
+        include("\$(pwd())/func-override.jl")
         $(Base.load_path_setup_code(false))
         cd($(repr(dirname(testfile))))
         append!(empty!(ARGS), $(repr(test_args.exec)))
         include($(repr(testfile)))
-        storeEvalInfo(evalInfo)
+        storeOverrideInfo(overrideInfo)
         """
     return ```
         $(Base.julia_cmd())
@@ -29,8 +29,3 @@ function Pkg.Operations.gen_test_code(testfile::String;
         --eval $(code)
     ```
 end
-
-# const TEST_DIR_PREFIX = "C:/Users/gelin/Documents/computer-science/research/julia/juliette-wa/src/analysis/eval-programs/"
-# run(gen_test_code(string(TEST_DIR_PREFIX, "test01.jl")))
-# run(gen_test_code(string(TEST_DIR_PREFIX, "test02.jl")))
-# run(gen_test_code(string(TEST_DIR_PREFIX, "test03.jl")))
