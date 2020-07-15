@@ -1,0 +1,1294 @@
+[
+{
+  "eval_info": {
+    "call_count": 488,
+    "stack_traces": [
+      {
+        "count": 306,
+        "last_call": "_test_flags(::Float64, ::String, ::String, ::String, ::String) at runtests.jl:97"
+      },
+      {
+        "count": 150,
+        "last_call": "top-level scope at runtests.jl:47"
+      },
+      {
+        "count": 18,
+        "last_call": "top-level scope at runtests.jl:72"
+      },
+      {
+        "count": 14,
+        "last_call": "top-level scope at runtests.jl:174"
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 488,
+          "ast_head": "call"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+},
+{
+  "eval_info": {
+    "call_count": 4611,
+    "stack_traces": [
+      {
+        "count": 2146,
+        "last_call": "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:504"
+      },
+      {
+        "count": 1643,
+        "last_call": "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:490"
+      },
+      {
+        "count": 178,
+        "last_call": "#135 at remotecall.jl:350 [inlined]"
+      },
+      {
+        "count": 130,
+        "last_call": "@enum(::LineNumberNode, ::Module, ::Any, ::Vararg{Any,N} where N) at Enums.jl:152"
+      },
+      {
+        "count": 74,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:331"
+      },
+      {
+        "count": 74,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:360"
+      },
+      {
+        "count": 69,
+        "last_call": "@static(::LineNumberNode, ::Module, ::Any) at osutils.jl:19"
+      },
+      {
+        "count": 36,
+        "last_call": "revise(::Module) at Revise.jl:849"
+      },
+      {
+        "count": 13,
+        "last_call": "eval(::Symbol) at client.jl:449"
+      },
+      {
+        "count": 8,
+        "last_call": "methods_by_execution!(::Any, ::IdDict{Type,LineNumberNode}, ::Dict{Module,Array{Expr,1}}, ::Module, ::Expr; always_rethrow::Bool, define::Bool, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at lowered.jl:81"
+      },
+      {
+        "count": 5,
+        "last_call": "split_expressions!(::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Expr; extract_docexprs::Bool, filename::String) at construct.jl:447"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:558"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:539"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:511"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:515"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at toplevel_script.jl:124"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:513"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:525"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:469"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:544"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:527"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:524"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:559"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:462"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:514"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:547"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:548"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:557"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:536"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:555"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:526"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:512"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:468"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:470"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:516"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:538"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:545"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:528"
+      },
+      {
+        "count": 4,
+        "last_call": "evaluate_call_recurse!(::Any, ::Frame, ::Expr; enter_generated::Bool) at interpret.jl:210"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:471"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:546"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:518"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:554"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:473"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:529"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:549"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:556"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:535"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:474"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:472"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:537"
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at runtests.jl:534"
+      },
+      {
+        "count": 3,
+        "last_call": "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:481"
+      },
+      {
+        "count": 3,
+        "last_call": "initmeta(::Module) at Docs.jl:81"
+      },
+      {
+        "count": 3,
+        "last_call": "top-level scope at aXJqrV2T5n.jl:1"
+      },
+      {
+        "count": 3,
+        "last_call": "top-level scope at MethDel.jl:34"
+      },
+      {
+        "count": 2,
+        "last_call": "top-level scope at toplevel_script.jl:115"
+      },
+      {
+        "count": 2,
+        "last_call": "(::Distributed.var\"#153#154\"{Module,Expr})() at task.jl:358"
+      },
+      {
+        "count": 2,
+        "last_call": "top-level scope at toplevel_script.jl:103"
+      },
+      {
+        "count": 2,
+        "last_call": "top-level scope at toplevel_script.jl:112"
+      },
+      {
+        "count": 2,
+        "last_call": "top-level scope at toplevel_script.jl:109"
+      },
+      {
+        "count": 2,
+        "last_call": "top-level scope at toplevel_script.jl:106"
+      },
+      {
+        "count": 2,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:330"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:839"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2866"
+      },
+      {
+        "count": 1,
+        "last_call": "private_module() at runtests.jl:67"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:1597"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2948"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2928"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2841"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2907"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2836"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:1399"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:1709"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:598"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:1049"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:1623"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:990"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2620"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:792"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2691"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:1898"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2550"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:878"
+      },
+      {
+        "count": 1,
+        "last_call": "(::var\"#338#361\")() at runtests.jl:2858"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:935"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at construct.jl:2701"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2917"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at toplevel_script.jl:119"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:1117"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2717"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:3130"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2017"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2671"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2774"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:3222"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:1503"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2221"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:1276"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:1452"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:3092"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:1596"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:1164"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:1991"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:1431"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:634"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:1212"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2851"
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 2146,
+          "ast_head": "global"
+        },
+        {
+          "count": 1646,
+          "ast_head": "const"
+        },
+        {
+          "count": 320,
+          "ast_head": "call"
+        },
+        {
+          "count": 149,
+          "ast_head": "macrocall"
+        },
+        {
+          "count": 75,
+          "ast_head": "PrimitiveValue"
+        },
+        {
+          "count": 74,
+          "ast_head": "tuple"
+        },
+        {
+          "count": 74,
+          "ast_head": "function"
+        },
+        {
+          "count": 46,
+          "ast_head": "block"
+        },
+        {
+          "count": 42,
+          "ast_head": "using"
+        },
+        {
+          "count": 25,
+          "ast_head": "="
+        },
+        {
+          "count": 7,
+          "ast_head": "module"
+        },
+        {
+          "count": 3,
+          "ast_head": "export"
+        },
+        {
+          "count": 2,
+          "ast_head": "where"
+        },
+        {
+          "count": 1,
+          "ast_head": "+="
+        },
+        {
+          "count": 1,
+          "ast_head": "import"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 176163,
+    "stack_traces": [
+      {
+        "count": 175904,
+        "last_call": "invokelatest(::Any, ::Any) at func-override.jl:63"
+      },
+      {
+        "count": 259,
+        "last_call": "invokelatest at func-override.jl:63 [inlined]"
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "##compiledcall#286",
+          "count": 28761
+        },
+        {
+          "function_name": "##compiledcall#285",
+          "count": 28761
+        },
+        {
+          "function_name": "##compiledcall#287",
+          "count": 28761
+        },
+        {
+          "function_name": "##compiledcall#256",
+          "count": 23741
+        },
+        {
+          "function_name": "unsafe_store!",
+          "count": 12556
+        },
+        {
+          "function_name": "##compiledcall#288",
+          "count": 12254
+        },
+        {
+          "function_name": "##compiledcall#377",
+          "count": 6132
+        },
+        {
+          "function_name": "##compiledcall#261",
+          "count": 5177
+        },
+        {
+          "function_name": "##compiledcall#382",
+          "count": 3672
+        },
+        {
+          "function_name": "##compiledcall#378",
+          "count": 3066
+        },
+        {
+          "function_name": "##compiledcall#376",
+          "count": 2792
+        },
+        {
+          "function_name": "##compiledcall#383",
+          "count": 2721
+        },
+        {
+          "function_name": "##compiledcall#380",
+          "count": 1516
+        },
+        {
+          "function_name": "##compiledcall#379",
+          "count": 1516
+        },
+        {
+          "function_name": "##compiledcall#300",
+          "count": 1408
+        },
+        {
+          "function_name": "##compiledcall#381",
+          "count": 1224
+        },
+        {
+          "function_name": "##compiledcall#257",
+          "count": 1078
+        },
+        {
+          "function_name": "##compiledcall#273",
+          "count": 957
+        },
+        {
+          "function_name": "##compiledcall#253",
+          "count": 796
+        },
+        {
+          "function_name": "##compiledcall#258",
+          "count": 766
+        },
+        {
+          "function_name": "##compiledcall#260",
+          "count": 756
+        },
+        {
+          "function_name": "##compiledcall#255",
+          "count": 754
+        },
+        {
+          "function_name": "##compiledcall#259",
+          "count": 711
+        },
+        {
+          "function_name": "##compiledcall#278",
+          "count": 701
+        },
+        {
+          "function_name": "##compiledcall#271",
+          "count": 657
+        },
+        {
+          "function_name": "##compiledcall#263",
+          "count": 646
+        },
+        {
+          "function_name": "##compiledcall#262",
+          "count": 646
+        },
+        {
+          "function_name": "##compiledcall#384",
+          "count": 618
+        },
+        {
+          "function_name": "##compiledcall#317",
+          "count": 473
+        },
+        {
+          "function_name": "##compiledcall#264",
+          "count": 316
+        },
+        {
+          "function_name": "##compiledcall#265",
+          "count": 316
+        },
+        {
+          "function_name": "##compiledcall#299",
+          "count": 301
+        },
+        {
+          "function_name": "print",
+          "count": 301
+        },
+        {
+          "function_name": "##compiledcall#254",
+          "count": 254
+        },
+        {
+          "function_name": "##compiledcall#332",
+          "count": 194
+        },
+        {
+          "function_name": "objectid",
+          "count": 124
+        },
+        {
+          "function_name": "##compiledcall#282",
+          "count": 74
+        },
+        {
+          "function_name": "watch_package",
+          "count": 58
+        },
+        {
+          "function_name": "serialize_msg",
+          "count": 50
+        },
+        {
+          "function_name": "##compiledcall#297",
+          "count": 45
+        },
+        {
+          "function_name": "#103",
+          "count": 35
+        },
+        {
+          "function_name": "##compiledcall#301",
+          "count": 33
+        },
+        {
+          "function_name": "##compiledcall#276",
+          "count": 32
+        },
+        {
+          "function_name": "##compiledcall#270",
+          "count": 30
+        },
+        {
+          "function_name": "##compiledcall#365",
+          "count": 30
+        },
+        {
+          "function_name": "##compiledcall#324",
+          "count": 30
+        },
+        {
+          "function_name": "##compiledcall#289",
+          "count": 24
+        },
+        {
+          "function_name": "_require_callback",
+          "count": 23
+        },
+        {
+          "function_name": "def_rv_channel",
+          "count": 21
+        },
+        {
+          "function_name": "deserialize_msg",
+          "count": 18
+        },
+        {
+          "function_name": "##compiledcall#293",
+          "count": 18
+        },
+        {
+          "function_name": "loadpkg",
+          "count": 16
+        },
+        {
+          "function_name": "match",
+          "count": 15
+        },
+        {
+          "function_name": "inttype",
+          "count": 14
+        },
+        {
+          "function_name": "##compiledcall#284",
+          "count": 11
+        },
+        {
+          "function_name": "get_def",
+          "count": 11
+        },
+        {
+          "function_name": "##compiledcall#283",
+          "count": 11
+        },
+        {
+          "function_name": "#90",
+          "count": 10
+        },
+        {
+          "function_name": "##compiledcall#389",
+          "count": 10
+        },
+        {
+          "function_name": "get_expressions",
+          "count": 10
+        },
+        {
+          "function_name": "##compiledcall#292",
+          "count": 9
+        },
+        {
+          "function_name": "##compiledcall#280",
+          "count": 9
+        },
+        {
+          "function_name": "##compiledcall#279",
+          "count": 9
+        },
+        {
+          "function_name": "##compiledcall#274",
+          "count": 7
+        },
+        {
+          "function_name": "##compiledcall#290",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#296",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#294",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#295",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#291",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#281",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#385",
+          "count": 5
+        },
+        {
+          "function_name": "method_location",
+          "count": 4
+        },
+        {
+          "function_name": "update_stacktrace_lineno!",
+          "count": 3
+        },
+        {
+          "function_name": "f",
+          "count": 3
+        },
+        {
+          "function_name": "#403",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#367",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#325",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#366",
+          "count": 2
+        },
+        {
+          "function_name": "#401",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#312",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#323",
+          "count": 1
+        },
+        {
+          "function_name": "Base.Threads.SpinLock",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#277",
+          "count": 1
+        },
+        {
+          "function_name": "unlock",
+          "count": 1
+        },
+        {
+          "function_name": "threadid",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#314",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#316",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#319",
+          "count": 1
+        },
+        {
+          "function_name": "lock",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#315",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#321",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#318",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#275",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#322",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#313",
+          "count": 1
+        }
+      ]
+    }
+  }
+},
+{
+  "eval_info": {
+    "call_count": 199,
+    "stack_traces": [
+      {
+        "count": 53,
+        "last_call": "eval_repl(::Documenter.DocTests.MutableMD2CodeBlock, ::Module, ::Dict{Symbol,Any}, ::Documenter.Documents.Document, ::String) at DocTests.jl:222"
+      },
+      {
+        "count": 53,
+        "last_call": "#7 at DocTests.jl:220 [inlined]"
+      },
+      {
+        "count": 27,
+        "last_call": "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:160"
+      },
+      {
+        "count": 22,
+        "last_call": "get_new_sandbox(::Symbol) at Expanders.jl:722"
+      },
+      {
+        "count": 22,
+        "last_call": "get_new_sandbox(::Symbol) at Expanders.jl:724"
+      },
+      {
+        "count": 11,
+        "last_call": "initdocmeta!(::Module) at DocMeta.jl:37"
+      },
+      {
+        "count": 7,
+        "last_call": "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:152"
+      },
+      {
+        "count": 1,
+        "last_call": "define_typeinf_code2() at reflection.jl:9"
+      },
+      {
+        "count": 1,
+        "last_call": "@static(::LineNumberNode, ::Module, ::Any) at osutils.jl:19"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at forwarddiff.jl:44"
+      },
+      {
+        "count": 1,
+        "last_call": "eval at Zygote.jl:1 [inlined]"
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 53,
+          "ast_head": "global"
+        },
+        {
+          "count": 50,
+          "ast_head": "="
+        },
+        {
+          "count": 33,
+          "ast_head": "call"
+        },
+        {
+          "count": 22,
+          "ast_head": "using"
+        },
+        {
+          "count": 15,
+          "ast_head": "toplevel"
+        },
+        {
+          "count": 11,
+          "ast_head": "const"
+        },
+        {
+          "count": 7,
+          "ast_head": "quote"
+        },
+        {
+          "count": 4,
+          "ast_head": "ref"
+        },
+        {
+          "count": 2,
+          "ast_head": "block"
+        },
+        {
+          "count": 1,
+          "ast_head": "macrocall"
+        },
+        {
+          "count": 1,
+          "ast_head": "function"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 99,
+    "stack_traces": [
+      {
+        "count": 99,
+        "last_call": "invokelatest at func-override.jl:63 [inlined]"
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "loadpkg",
+          "count": 57
+        },
+        {
+          "function_name": "show",
+          "count": 40
+        },
+        {
+          "function_name": "do_artifact_str",
+          "count": 2
+        }
+      ]
+    }
+  }
+},
+{
+  "eval_info": {
+    "call_count": 6,
+    "stack_traces": [
+      {
+        "count": 2,
+        "last_call": "docdict(::String) at handlers.jl:191"
+      },
+      {
+        "count": 1,
+        "last_call": "redirect_stdin(::IJulia.IJuliaStdio{IOStream}) at stdio.jl:31"
+      },
+      {
+        "count": 1,
+        "last_call": "redirect_stderr(::IJulia.IJuliaStdio{IOStream}) at stdio.jl:31"
+      },
+      {
+        "count": 1,
+        "last_call": "redirect_stdout(::IJulia.IJuliaStdio{IOStream}) at stdio.jl:31"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at inline.jl:5"
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 3,
+          "ast_head": "="
+        },
+        {
+          "count": 2,
+          "ast_head": "call"
+        },
+        {
+          "count": 1,
+          "ast_head": "struct"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 1,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "invokelatest at func-override.jl:63 [inlined]"
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "showerror_nobt",
+          "count": 1
+        }
+      ]
+    }
+  }
+},
+{
+  "eval_info": {
+    "call_count": 871,
+    "stack_traces": [
+      {
+        "count": 689,
+        "last_call": "superscript(::Rational{Int64}) at display.jl:151"
+      },
+      {
+        "count": 176,
+        "last_call": "evalfile(::String, ::Array{String,1}) at loading.jl:1120"
+      },
+      {
+        "count": 3,
+        "last_call": "top-level scope at cairo_backends.jl:208"
+      },
+      {
+        "count": 3,
+        "last_call": "top-level scope at cairo_backends.jl:209"
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 689,
+          "ast_head": "call"
+        },
+        {
+          "count": 176,
+          "ast_head": "toplevel"
+        },
+        {
+          "count": 3,
+          "ast_head": "="
+        },
+        {
+          "count": 3,
+          "ast_head": "macrocall"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 130,
+    "stack_traces": [
+      {
+        "count": 130,
+        "last_call": "invokelatest at func-override.jl:63 [inlined]"
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "loadpkg",
+          "count": 85
+        },
+        {
+          "function_name": "fileio_load",
+          "count": 39
+        },
+        {
+          "function_name": "do_artifact_str",
+          "count": 6
+        }
+      ]
+    }
+  }
+},
+{
+  "eval_info": {
+    "call_count": 156,
+    "stack_traces": [
+      {
+        "count": 91,
+        "last_call": "load_generated_functions at Gen.jl:15 [inlined]"
+      },
+      {
+        "count": 48,
+        "last_call": "eval(::Symbol) at client.jl:449"
+      },
+      {
+        "count": 7,
+        "last_call": "@load_generated_functions(::LineNumberNode, ::Module) at Gen.jl:27"
+      },
+      {
+        "count": 7,
+        "last_call": "load_generated_functions(::Module) at Gen.jl:15"
+      },
+      {
+        "count": 1,
+        "last_call": "eval(::Expr) at static_dsl.jl:68"
+      },
+      {
+        "count": 1,
+        "last_call": "eval(::Expr) at static_dsl.jl:77"
+      },
+      {
+        "count": 1,
+        "last_call": "initmeta(::Module) at Docs.jl:81"
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 142,
+          "ast_head": "block"
+        },
+        {
+          "count": 11,
+          "ast_head": "PrimitiveValue"
+        },
+        {
+          "count": 2,
+          "ast_head": "curly"
+        },
+        {
+          "count": 1,
+          "ast_head": "const"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+},
+{
+  "eval_info": {
+    "call_count": 8,
+    "stack_traces": [
+      {
+        "count": 8,
+        "last_call": "top-level scope at SafeTestsets.jl:23"
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 8,
+          "ast_head": "module"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 110,
+    "stack_traces": [
+      {
+        "count": 110,
+        "last_call": "invokelatest at func-override.jl:63 [inlined]"
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "loadpkg",
+          "count": 105
+        },
+        {
+          "function_name": "do_artifact_str",
+          "count": 5
+        }
+      ]
+    }
+  }
+}
+]
