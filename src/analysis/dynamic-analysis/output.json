@@ -100,11 +100,11 @@
       },
       {
         "count": 5,
-        "last_call": "eval at TrackRequires.jl:1 [inlined]"
+        "last_call": "split_expressions!(::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Expr; extract_docexprs::Bool, filename::String) at construct.jl:447"
       },
       {
         "count": 5,
-        "last_call": "split_expressions!(::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Expr; extract_docexprs::Bool, filename::String) at construct.jl:447"
+        "last_call": "eval at TrackRequires.jl:1 [inlined]"
       },
       {
         "count": 4,
@@ -280,15 +280,15 @@
       },
       {
         "count": 3,
-        "last_call": "top-level scope at MethDel.jl:34"
-      },
-      {
-        "count": 3,
-        "last_call": "top-level scope at rStJwmPjjZ.jl:1"
-      },
-      {
-        "count": 3,
         "last_call": "initmeta(::Module) at Docs.jl:79"
+      },
+      {
+        "count": 3,
+        "last_call": "top-level scope at KOe9jnNjQV.jl:1"
+      },
+      {
+        "count": 3,
+        "last_call": "top-level scope at MethDel.jl:34"
       },
       {
         "count": 2,
@@ -456,11 +456,11 @@
       },
       {
         "count": 1,
-        "last_call": "(::var\"#336#359\")() at runtests.jl:2858"
+        "last_call": "top-level scope at runtests.jl:1503"
       },
       {
         "count": 1,
-        "last_call": "top-level scope at runtests.jl:1503"
+        "last_call": "(::var\"#336#359\")() at runtests.jl:2858"
       },
       {
         "count": 1,
@@ -584,12 +584,84 @@
     "call_count": 178900,
     "stack_traces": [
       {
-        "count": 178635,
-        "last_call": "invokelatest(::Any, ::Any) at func-override.jl:63"
+        "count": 165480,
+        "last_call": "bypass_builtins(::Frame, ::Expr, ::Int64) at interpret.jl:179"
       },
       {
-        "count": 265,
-        "last_call": "invokelatest at func-override.jl:63 [inlined]"
+        "count": 13148,
+        "last_call": "evaluate_call_recurse!(::Any, ::Frame, ::Expr; enter_generated::Bool) at interpret.jl:229"
+      },
+      {
+        "count": 79,
+        "last_call": "require(::Base.PkgId) at loading.jl:931"
+      },
+      {
+        "count": 50,
+        "last_call": "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.RemoteDoMsg, ::Bool) at messages.jl:185"
+      },
+      {
+        "count": 21,
+        "last_call": "include(::Function, ::Module, ::String) at Base.jl:372"
+      },
+      {
+        "count": 21,
+        "last_call": "(::Distributed.var\"#125#126\"{Distributed.ProcessGroup,Distributed.RRID,typeof(Distributed.def_rv_channel)})() at remotecall.jl:175"
+      },
+      {
+        "count": 18,
+        "last_call": "message_handler_loop(::Sockets.TCPSocket, ::Sockets.TCPSocket, ::Bool) at process_messages.jl:185"
+      },
+      {
+        "count": 18,
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715"
+      },
+      {
+        "count": 14,
+        "last_call": "(::Revise.var\"#66#67\"{var\"#401#408\"{Base.RefValue{Int64}}})() at task.jl:356"
+      },
+      {
+        "count": 14,
+        "last_call": "include(::String) at client.jl:451"
+      },
+      {
+        "count": 10,
+        "last_call": "signatures_at(::Base.PkgId, ::String, ::Int32) at CodeTracking.jl:175"
+      },
+      {
+        "count": 8,
+        "last_call": "definition(::Type{Expr}, ::Method) at CodeTracking.jl:248"
+      },
+      {
+        "count": 6,
+        "last_call": "foreach at abstractarray.jl:2005 [inlined]"
+      },
+      {
+        "count": 4,
+        "last_call": "updated_methodloc(::Method) at methodshow.jl:130"
+      },
+      {
+        "count": 3,
+        "last_call": "whereis(::Method) at CodeTracking.jl:63"
+      },
+      {
+        "count": 2,
+        "last_call": "show_backtrace(::IOStream, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2635"
+      },
+      {
+        "count": 1,
+        "last_call": "show_reduced_backtrace(::IOContext{Base.GenericIOBuffer{Array{UInt8,1}}}, ::Array{Any,1}, ::Bool) at errorshow.jl:616"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2638"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:2622"
       }
     ],
     "func_specific_data": {
@@ -1101,8 +1173,36 @@
     "call_count": 102,
     "stack_traces": [
       {
-        "count": 102,
-        "last_call": "invokelatest at func-override.jl:63 [inlined]"
+        "count": 51,
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715"
+      },
+      {
+        "count": 40,
+        "last_call": "result_to_string at DocTests.jl:322 [inlined]"
+      },
+      {
+        "count": 4,
+        "last_call": "require(::Base.PkgId) at loading.jl:931"
+      },
+      {
+        "count": 2,
+        "last_call": "foreach at abstractarray.jl:2005 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at Artifacts.jl:1068 [inlined]"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:28"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:28"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:69"
       }
     ],
     "func_specific_data": {
@@ -1178,8 +1278,16 @@
     "call_count": 3,
     "stack_traces": [
       {
-        "count": 3,
-        "last_call": "invokelatest at func-override.jl:63 [inlined]"
+        "count": 1,
+        "last_call": "(::IJulia.var\"#35#36\")(::Base.GenericIOBuffer{Array{UInt8,1}}, ::UndefVarError, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at display.jl:156"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32-cxx11.jl:28"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:56"
       }
     ],
     "func_specific_data": {
@@ -1259,8 +1367,120 @@
     "call_count": 162,
     "stack_traces": [
       {
-        "count": 162,
-        "last_call": "invokelatest at func-override.jl:63 [inlined]"
+        "count": 91,
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715"
+      },
+      {
+        "count": 39,
+        "last_call": "load(::FileIO.Formatted; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:176"
+      },
+      {
+        "count": 5,
+        "last_call": "require(::Base.PkgId) at loading.jl:931"
+      },
+      {
+        "count": 2,
+        "last_call": "foreach at abstractarray.jl:2005 [inlined]"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:31"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:28"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:41"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:27"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:27"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:42"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:29"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:27"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:28"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:28"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:30"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:29"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:65"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:62"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:27"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:59"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:28"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:69"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:323"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:61"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:89"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:27"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:28"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:92"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:59"
       }
     ],
     "func_specific_data": {
@@ -1290,3 +1510,1278 @@
   }
 }
 ,
+{
+  "eval_info": {
+    "call_count": 82,
+    "stack_traces": [
+      {
+        "count": 15,
+        "last_call": "loadfromstring!(::MathOptInterface.Utilities.CachingOptimizer{MathOptInterface.AbstractOptimizer,MathOptInterface.Utilities.UniversalFallback{MathOptInterface.Utilities.Model{Float64}}}, ::String) at parser.jl:228"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at constraint.jl:457 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at constraint.jl:287 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at constraint.jl:291 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "test_variables_constrained_on_creation(::Type{T} where T) at variable.jl:478"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at macros.jl:257 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at constraint.jl:289 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at constraint.jl:461 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at macros.jl:363 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at constraint.jl:283 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at constraint.jl:285 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at constraint.jl:462 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at constraint.jl:455 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at constraint.jl:458 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at constraint.jl:460 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "test_variables_constrained_on_creation(::Type{T} where T) at variable.jl:474"
+      },
+      {
+        "count": 2,
+        "last_call": "test_variables_constrained_on_creation(::Type{T} where T) at variable.jl:476"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at constraint.jl:88 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "test_variable_interval(::Type{T} where T) at variable.jl:135"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at constraint.jl:456 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at constraint.jl:459 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "test_variable_interval(::Type{T} where T) at variable.jl:136"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at macros.jl:191 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at constraint.jl:395 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at constraint.jl:397 [inlined]"
+      },
+      {
+        "count": 2,
+        "last_call": "test_variables_constrained_on_creation(::Type{T} where T) at variable.jl:480"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at nlp.jl:148"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at nlp.jl:154"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at macros.jl:563"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at macros.jl:393"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at macros.jl:405"
+      },
+      {
+        "count": 1,
+        "last_call": "@static(::LineNumberNode, ::Module, ::Any) at osutils.jl:19"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at macros.jl:585"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at macros.jl:562"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at macros.jl:561"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at macros.jl:601"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at macros.jl:560"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at nlp.jl:160"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at macros.jl:593"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at macros.jl:609"
+      },
+      {
+        "count": 1,
+        "last_call": "initmeta(::Module) at Docs.jl:79"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at macros.jl:605"
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at macros.jl:597"
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 63,
+          "ast_head": "macrocall"
+        },
+        {
+          "count": 16,
+          "ast_head": "call"
+        },
+        {
+          "count": 2,
+          "ast_head": "block"
+        },
+        {
+          "count": 1,
+          "ast_head": "const"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 5,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:28"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:27"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:28"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:69"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:56"
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "do_artifact_str",
+          "count": 5
+        }
+      ]
+    }
+  }
+}
+,
+{
+  "eval_info": {
+    "call_count": 138,
+    "stack_traces": [
+      {
+        "count": 43,
+        "last_call": "top-level scope at SafeTestsets.jl:23"
+      },
+      {
+        "count": 17,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:331"
+      },
+      {
+        "count": 17,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:360"
+      },
+      {
+        "count": 16,
+        "last_call": "top-level scope at SafeTestsets.jl:23"
+      },
+      {
+        "count": 9,
+        "last_call": "methods_by_execution!(::Any, ::Revise.CodeTrackingMethodInfo, ::Dict{Module,Array{Expr,1}}, ::Module, ::Expr; always_rethrow::Bool, define::Bool, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at lowered.jl:81"
+      },
+      {
+        "count": 3,
+        "last_call": "eval at Base.jl:39 [inlined]"
+      },
+      {
+        "count": 3,
+        "last_call": "top-level scope at Html.jl:817"
+      },
+      {
+        "count": 3,
+        "last_call": "do_assignment!(::JuliaInterpreter.Frame, ::Any, ::Any) at interpret.jl:352"
+      },
+      {
+        "count": 3,
+        "last_call": "step_expr!(::Any, ::JuliaInterpreter.Frame, ::Any, ::Bool) at interpret.jl:504"
+      },
+      {
+        "count": 3,
+        "last_call": "step_expr!(::Any, ::JuliaInterpreter.Frame, ::Any, ::Bool) at interpret.jl:490"
+      },
+      {
+        "count": 2,
+        "last_call": "injectvars(::Module) at Renderer.jl:284"
+      },
+      {
+        "count": 2,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:330"
+      },
+      {
+        "count": 1,
+        "last_call": "loadapp(::String; autostart::Bool) at Genie.jl:186"
+      },
+      {
+        "count": 1,
+        "last_call": "register_normal_element(::String; context::Module) at Html.jl:761"
+      },
+      {
+        "count": 1,
+        "last_call": "(::Genie.Renderer.Html.var\"#478#484\")() at 1afc1d17c3777d4e2cc2f2dbf12cd10584e1c4af.jl:8"
+      },
+      {
+        "count": 1,
+        "last_call": "loadapp(::String; autostart::Bool) at Genie.jl:196"
+      },
+      {
+        "count": 1,
+        "last_call": "loadapp(::String; autostart::Bool) at Genie.jl:193"
+      },
+      {
+        "count": 1,
+        "last_call": "evaluate_methoddef(::JuliaInterpreter.Frame, ::Expr) at interpret.jl:268"
+      },
+      {
+        "count": 1,
+        "last_call": "register_normal_element(::String; context::Module) at Html.jl:743"
+      },
+      {
+        "count": 1,
+        "last_call": "(::Genie.Renderer.Html.var\"#502#508\")() at bd445d77a42af085225d2831c3786033f690b5fa.jl:14"
+      },
+      {
+        "count": 1,
+        "last_call": "loadapp(::String; autostart::Bool) at Genie.jl:194"
+      },
+      {
+        "count": 1,
+        "last_call": "register_normal_element(::String; context::Module) at Html.jl:755"
+      },
+      {
+        "count": 1,
+        "last_call": "loadapp(::String; autostart::Bool) at Genie.jl:197"
+      },
+      {
+        "count": 1,
+        "last_call": "encryption_sauce() at Encryption.jl:58"
+      },
+      {
+        "count": 1,
+        "last_call": "loadapp(::String; autostart::Bool) at Genie.jl:183"
+      },
+      {
+        "count": 1,
+        "last_call": "newresource(::String; path::String, pluralize::Bool, context::Nothing) at genie_module.jl:37"
+      },
+      {
+        "count": 1,
+        "last_call": "(::Main.##261.##265.var\"#3#9\")() at f85e94a36c80bb3762853502bfac086b4364a243.jl:14"
+      },
+      {
+        "count": 1,
+        "last_call": "register_normal_element(::String; context::Module) at Html.jl:749"
+      },
+      {
+        "count": 1,
+        "last_call": "register_normal_element(::String; context::Module) at Html.jl:767"
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 59,
+          "ast_head": "module"
+        },
+        {
+          "count": 22,
+          "ast_head": "function"
+        },
+        {
+          "count": 17,
+          "ast_head": "tuple"
+        },
+        {
+          "count": 10,
+          "ast_head": "block"
+        },
+        {
+          "count": 6,
+          "ast_head": "="
+        },
+        {
+          "count": 6,
+          "ast_head": "PrimitiveValue"
+        },
+        {
+          "count": 5,
+          "ast_head": "const"
+        },
+        {
+          "count": 3,
+          "ast_head": "global"
+        },
+        {
+          "count": 3,
+          "ast_head": "call"
+        },
+        {
+          "count": 2,
+          "ast_head": "where"
+        },
+        {
+          "count": 2,
+          "ast_head": "using"
+        },
+        {
+          "count": 1,
+          "ast_head": "import"
+        },
+        {
+          "count": 1,
+          "ast_head": "export"
+        },
+        {
+          "count": 1,
+          "ast_head": "&&"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 199,
+    "stack_traces": [
+      {
+        "count": 82,
+        "last_call": "include(::Function, ::Module, ::String) at Base.jl:372"
+      },
+      {
+        "count": 51,
+        "last_call": "WebRenderable(::typeof(Genie.Renderer.Html.func_e10c2c6cb1ffac3e10e0466e97390d4e9418dc57)) at Renderer.jl:160"
+      },
+      {
+        "count": 44,
+        "last_call": "bypass_builtins(::JuliaInterpreter.Frame, ::Expr, ::Int64) at interpret.jl:179"
+      },
+      {
+        "count": 11,
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::Nothing) at loading.jl:715"
+      },
+      {
+        "count": 4,
+        "last_call": "evaluate_call_recurse!(::Any, ::JuliaInterpreter.Frame, ::Expr; enter_generated::Bool) at interpret.jl:229"
+      },
+      {
+        "count": 2,
+        "last_call": "include(::String) at client.jl:451"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32-cxx11.jl:41"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:27"
+      },
+      {
+        "count": 1,
+        "last_call": "require(::Base.PkgId) at loading.jl:931"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:56"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:72"
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "#103",
+          "count": 84
+        },
+        {
+          "function_name": "##compiledcall#282",
+          "count": 13
+        },
+        {
+          "function_name": "watch_package",
+          "count": 12
+        },
+        {
+          "function_name": "##compiledcall#279",
+          "count": 7
+        },
+        {
+          "function_name": "do_artifact_str",
+          "count": 4
+        },
+        {
+          "function_name": "##compiledcall#287",
+          "count": 4
+        },
+        {
+          "function_name": "##compiledcall#286",
+          "count": 3
+        },
+        {
+          "function_name": "##compiledcall#284",
+          "count": 3
+        },
+        {
+          "function_name": "unsafe_store!",
+          "count": 3
+        },
+        {
+          "function_name": "##compiledcall#290",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#291",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#281",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#280",
+          "count": 2
+        },
+        {
+          "function_name": "func_5486c755a1a363cbb5da835790e8b3f391aff161",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#289",
+          "count": 1
+        },
+        {
+          "function_name": "func_59a42e5602cb23dbc30eef2b6121add7bea5ace3",
+          "count": 1
+        },
+        {
+          "function_name": "func_5c596fa19d68d4ae18d030a3c2dfa9bf6261c930",
+          "count": 1
+        },
+        {
+          "function_name": "func_ea52beb9bbfe3f85d04b30c896c39c8f5b09ce4a",
+          "count": 1
+        },
+        {
+          "function_name": "func_e693814defb0ff8182d2e07cdbeb8736ff8241f4",
+          "count": 1
+        },
+        {
+          "function_name": "func_1a1a1d5229a0bfcbbc756235cf07ba206943780d",
+          "count": 1
+        },
+        {
+          "function_name": "func_1984cfe5a6f783df9ced68e692d29b8893f045da",
+          "count": 1
+        },
+        {
+          "function_name": "func_20fb989562f5086bdd023c4a055270b5d9ba8d63",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#294",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#295",
+          "count": 1
+        },
+        {
+          "function_name": "func_13e1cc5c460b2931607d85786efb310c4f3ac171",
+          "count": 1
+        },
+        {
+          "function_name": "func_c6c517c34c3366e1d9423eb20bb1e07ca557b7a5",
+          "count": 1
+        },
+        {
+          "function_name": "func_d6493c88ed98cee02a7ee631306f2f988b76f817",
+          "count": 1
+        },
+        {
+          "function_name": "func_bb3fc379913b94ca3f1daba89dc9184902fde52c",
+          "count": 1
+        },
+        {
+          "function_name": "func_3321245c8b359378a8a4130ae08b5ad60430c7eb",
+          "count": 1
+        },
+        {
+          "function_name": "func_5336a1d341129da18bf8c06c1a98f766a962fc76",
+          "count": 1
+        },
+        {
+          "function_name": "func_fdad21ba0b6c0565ceaa6e621acfa2a6a0f18394",
+          "count": 1
+        },
+        {
+          "function_name": "func_cc8ba970d88aaeccb26327abe74e3b2bf5d76ccd",
+          "count": 1
+        },
+        {
+          "function_name": "func_dcc0568d6d78ff33e47fb3e526d955c9d56eeacc",
+          "count": 1
+        },
+        {
+          "function_name": "func_613e124abd6f5ec413abf69482b52cfcb8a49016",
+          "count": 1
+        },
+        {
+          "function_name": "func_70fb371ebc2709797914876608142cbdb1568c7d",
+          "count": 1
+        },
+        {
+          "function_name": "func_f2c6070f4130773471d1a0421e5b48184325ee4a",
+          "count": 1
+        },
+        {
+          "function_name": "func_4424528edec1fea21c833624609a2c8d06dd7a2a",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#292",
+          "count": 1
+        },
+        {
+          "function_name": "func_2e9903a7a689521b0a9d7bf1ab79760bc05a2bd5",
+          "count": 1
+        },
+        {
+          "function_name": "func_4c177e110a0d6f04174a11c81d4198d1a4e16306",
+          "count": 1
+        },
+        {
+          "function_name": "func_dcd8e3f3a7612c5bdf89edb7ba8451a50b4963da",
+          "count": 1
+        },
+        {
+          "function_name": "func_9c6b3a1620858613271d6e43b0f90816c1bd85b1",
+          "count": 1
+        },
+        {
+          "function_name": "func_752969d35f1acabc1d1c1ccbe04ca4d501183db5",
+          "count": 1
+        },
+        {
+          "function_name": "func_d33163b617550a512367e1d18263d011ec476cf3",
+          "count": 1
+        },
+        {
+          "function_name": "func_20b77137ff8df21e133afece566e1f578e625b7a",
+          "count": 1
+        },
+        {
+          "function_name": "func_f89c2c5ec73c81604b1255cad6b8fd042dbc53b2",
+          "count": 1
+        },
+        {
+          "function_name": "func_7f71cb2c9502e884450a7c77aa0766457b1815e9",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#288",
+          "count": 1
+        },
+        {
+          "function_name": "func_6bb076b40d985c999caeaba7e1028fdb297965ce",
+          "count": 1
+        },
+        {
+          "function_name": "func_22a3e56147cd8b0a86ea7e940cffcccc22a2f0eb",
+          "count": 1
+        },
+        {
+          "function_name": "func_7323fcc000473dba758d6cdef1ec9e38bcc6fd27",
+          "count": 1
+        },
+        {
+          "function_name": "func_f4a49864a846ca0df0bc74d45a8841c14affee7f",
+          "count": 1
+        },
+        {
+          "function_name": "func_54412542adfb635356469d53c3d291c86bc8dbb7",
+          "count": 1
+        },
+        {
+          "function_name": "func_dccf67b20a3334e77a45a10550a54e7a86dd50d0",
+          "count": 1
+        },
+        {
+          "function_name": "func_e45fe8839ee7c9e7e3c377618380a4b46500ed7f",
+          "count": 1
+        },
+        {
+          "function_name": "func_e10c2c6cb1ffac3e10e0466e97390d4e9418dc57",
+          "count": 1
+        },
+        {
+          "function_name": "func_95e42abec1075ea80b8624624d9874bc2fab7121",
+          "count": 1
+        },
+        {
+          "function_name": "func_bf2f445d8c6e9a02c36b7f7e4abc4bc9afb8d584",
+          "count": 1
+        },
+        {
+          "function_name": "func_a10faedfcffe1f2459dd242fea81c8a6877b0a07",
+          "count": 1
+        },
+        {
+          "function_name": "func_43bcae291b6109510d6e021563de400951c509b8",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#293",
+          "count": 1
+        },
+        {
+          "function_name": "func_25a98a2c31d1f77059bbaa02cd8e37e85cd18b75",
+          "count": 1
+        },
+        {
+          "function_name": "func_cec8750043439c5963410156f18ec81d7acf1e0e",
+          "count": 1
+        },
+        {
+          "function_name": "func_f524ddb25bcf1357aacc7db9fcc38ce151936673",
+          "count": 1
+        },
+        {
+          "function_name": "objectid",
+          "count": 1
+        },
+        {
+          "function_name": "func_c5149ebfb19a1ce75928544cf7a5f54d647bb7fd",
+          "count": 1
+        },
+        {
+          "function_name": "func_d11523067edfdc1a845f3c449c81e1db75334fac",
+          "count": 1
+        },
+        {
+          "function_name": "func_ec864b0447d588d95c6a63aceedb46cd6aa2f253",
+          "count": 1
+        },
+        {
+          "function_name": "func_69fbc267d2c407c5647bc27a24807e3ff228b813",
+          "count": 1
+        },
+        {
+          "function_name": "func_8dda25c8372edf7e7a95ee7dcbbfc7c33c46afd0",
+          "count": 1
+        },
+        {
+          "function_name": "func_e2e852dffcfc79b74d3b6ccd3f852b6d86515739",
+          "count": 1
+        }
+      ]
+    }
+  }
+}
+,
+{
+  "eval_info": {
+    "call_count": 138,
+    "stack_traces": [
+      {
+        "count": 43,
+        "last_call": "top-level scope at SafeTestsets.jl:23"
+      },
+      {
+        "count": 17,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:331"
+      },
+      {
+        "count": 17,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:360"
+      },
+      {
+        "count": 16,
+        "last_call": "top-level scope at SafeTestsets.jl:23"
+      },
+      {
+        "count": 9,
+        "last_call": "methods_by_execution!(::Any, ::Revise.CodeTrackingMethodInfo, ::Dict{Module,Array{Expr,1}}, ::Module, ::Expr; always_rethrow::Bool, define::Bool, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at lowered.jl:81"
+      },
+      {
+        "count": 3,
+        "last_call": "eval at Base.jl:39 [inlined]"
+      },
+      {
+        "count": 3,
+        "last_call": "top-level scope at Html.jl:817"
+      },
+      {
+        "count": 3,
+        "last_call": "do_assignment!(::JuliaInterpreter.Frame, ::Any, ::Any) at interpret.jl:352"
+      },
+      {
+        "count": 3,
+        "last_call": "step_expr!(::Any, ::JuliaInterpreter.Frame, ::Any, ::Bool) at interpret.jl:504"
+      },
+      {
+        "count": 3,
+        "last_call": "step_expr!(::Any, ::JuliaInterpreter.Frame, ::Any, ::Bool) at interpret.jl:490"
+      },
+      {
+        "count": 2,
+        "last_call": "injectvars(::Module) at Renderer.jl:284"
+      },
+      {
+        "count": 2,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:330"
+      },
+      {
+        "count": 1,
+        "last_call": "loadapp(::String; autostart::Bool) at Genie.jl:186"
+      },
+      {
+        "count": 1,
+        "last_call": "register_normal_element(::String; context::Module) at Html.jl:761"
+      },
+      {
+        "count": 1,
+        "last_call": "(::Genie.Renderer.Html.var\"#478#484\")() at 1afc1d17c3777d4e2cc2f2dbf12cd10584e1c4af.jl:8"
+      },
+      {
+        "count": 1,
+        "last_call": "loadapp(::String; autostart::Bool) at Genie.jl:196"
+      },
+      {
+        "count": 1,
+        "last_call": "loadapp(::String; autostart::Bool) at Genie.jl:193"
+      },
+      {
+        "count": 1,
+        "last_call": "evaluate_methoddef(::JuliaInterpreter.Frame, ::Expr) at interpret.jl:268"
+      },
+      {
+        "count": 1,
+        "last_call": "register_normal_element(::String; context::Module) at Html.jl:743"
+      },
+      {
+        "count": 1,
+        "last_call": "(::Genie.Renderer.Html.var\"#502#508\")() at bd445d77a42af085225d2831c3786033f690b5fa.jl:14"
+      },
+      {
+        "count": 1,
+        "last_call": "loadapp(::String; autostart::Bool) at Genie.jl:194"
+      },
+      {
+        "count": 1,
+        "last_call": "register_normal_element(::String; context::Module) at Html.jl:755"
+      },
+      {
+        "count": 1,
+        "last_call": "loadapp(::String; autostart::Bool) at Genie.jl:197"
+      },
+      {
+        "count": 1,
+        "last_call": "encryption_sauce() at Encryption.jl:58"
+      },
+      {
+        "count": 1,
+        "last_call": "loadapp(::String; autostart::Bool) at Genie.jl:183"
+      },
+      {
+        "count": 1,
+        "last_call": "newresource(::String; path::String, pluralize::Bool, context::Nothing) at genie_module.jl:37"
+      },
+      {
+        "count": 1,
+        "last_call": "(::Main.##261.##265.var\"#3#9\")() at f85e94a36c80bb3762853502bfac086b4364a243.jl:14"
+      },
+      {
+        "count": 1,
+        "last_call": "register_normal_element(::String; context::Module) at Html.jl:749"
+      },
+      {
+        "count": 1,
+        "last_call": "register_normal_element(::String; context::Module) at Html.jl:767"
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 59,
+          "ast_head": "module"
+        },
+        {
+          "count": 22,
+          "ast_head": "function"
+        },
+        {
+          "count": 17,
+          "ast_head": "tuple"
+        },
+        {
+          "count": 10,
+          "ast_head": "block"
+        },
+        {
+          "count": 6,
+          "ast_head": "="
+        },
+        {
+          "count": 6,
+          "ast_head": "PrimitiveValue"
+        },
+        {
+          "count": 5,
+          "ast_head": "const"
+        },
+        {
+          "count": 3,
+          "ast_head": "global"
+        },
+        {
+          "count": 3,
+          "ast_head": "call"
+        },
+        {
+          "count": 2,
+          "ast_head": "where"
+        },
+        {
+          "count": 2,
+          "ast_head": "using"
+        },
+        {
+          "count": 1,
+          "ast_head": "import"
+        },
+        {
+          "count": 1,
+          "ast_head": "export"
+        },
+        {
+          "count": 1,
+          "ast_head": "&&"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 199,
+    "stack_traces": [
+      {
+        "count": 82,
+        "last_call": "include(::Function, ::Module, ::String) at Base.jl:372"
+      },
+      {
+        "count": 51,
+        "last_call": "WebRenderable(::typeof(Genie.Renderer.Html.func_e10c2c6cb1ffac3e10e0466e97390d4e9418dc57)) at Renderer.jl:160"
+      },
+      {
+        "count": 44,
+        "last_call": "bypass_builtins(::JuliaInterpreter.Frame, ::Expr, ::Int64) at interpret.jl:179"
+      },
+      {
+        "count": 11,
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715"
+      },
+      {
+        "count": 4,
+        "last_call": "evaluate_call_recurse!(::Any, ::JuliaInterpreter.Frame, ::Expr; enter_generated::Bool) at interpret.jl:229"
+      },
+      {
+        "count": 2,
+        "last_call": "include(::String) at client.jl:451"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32-cxx11.jl:41"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:27"
+      },
+      {
+        "count": 1,
+        "last_call": "require(::Base.PkgId) at loading.jl:931"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:56"
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:72"
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "#103",
+          "count": 84
+        },
+        {
+          "function_name": "##compiledcall#282",
+          "count": 13
+        },
+        {
+          "function_name": "watch_package",
+          "count": 12
+        },
+        {
+          "function_name": "##compiledcall#279",
+          "count": 7
+        },
+        {
+          "function_name": "do_artifact_str",
+          "count": 4
+        },
+        {
+          "function_name": "##compiledcall#287",
+          "count": 4
+        },
+        {
+          "function_name": "##compiledcall#286",
+          "count": 3
+        },
+        {
+          "function_name": "##compiledcall#284",
+          "count": 3
+        },
+        {
+          "function_name": "unsafe_store!",
+          "count": 3
+        },
+        {
+          "function_name": "##compiledcall#290",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#291",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#281",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#280",
+          "count": 2
+        },
+        {
+          "function_name": "func_5486c755a1a363cbb5da835790e8b3f391aff161",
+          "count": 1
+        },
+        {
+          "function_name": "func_0856d6c0a248986a7d93b1199ccdf445c1154de4",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#289",
+          "count": 1
+        },
+        {
+          "function_name": "func_59a42e5602cb23dbc30eef2b6121add7bea5ace3",
+          "count": 1
+        },
+        {
+          "function_name": "func_5c596fa19d68d4ae18d030a3c2dfa9bf6261c930",
+          "count": 1
+        },
+        {
+          "function_name": "func_ea52beb9bbfe3f85d04b30c896c39c8f5b09ce4a",
+          "count": 1
+        },
+        {
+          "function_name": "func_e693814defb0ff8182d2e07cdbeb8736ff8241f4",
+          "count": 1
+        },
+        {
+          "function_name": "func_1a1a1d5229a0bfcbbc756235cf07ba206943780d",
+          "count": 1
+        },
+        {
+          "function_name": "func_1984cfe5a6f783df9ced68e692d29b8893f045da",
+          "count": 1
+        },
+        {
+          "function_name": "func_20fb989562f5086bdd023c4a055270b5d9ba8d63",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#294",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#295",
+          "count": 1
+        },
+        {
+          "function_name": "func_13e1cc5c460b2931607d85786efb310c4f3ac171",
+          "count": 1
+        },
+        {
+          "function_name": "func_c6c517c34c3366e1d9423eb20bb1e07ca557b7a5",
+          "count": 1
+        },
+        {
+          "function_name": "func_d6493c88ed98cee02a7ee631306f2f988b76f817",
+          "count": 1
+        },
+        {
+          "function_name": "func_bb3fc379913b94ca3f1daba89dc9184902fde52c",
+          "count": 1
+        },
+        {
+          "function_name": "func_3321245c8b359378a8a4130ae08b5ad60430c7eb",
+          "count": 1
+        },
+        {
+          "function_name": "func_5336a1d341129da18bf8c06c1a98f766a962fc76",
+          "count": 1
+        },
+        {
+          "function_name": "func_fdad21ba0b6c0565ceaa6e621acfa2a6a0f18394",
+          "count": 1
+        },
+        {
+          "function_name": "func_cc8ba970d88aaeccb26327abe74e3b2bf5d76ccd",
+          "count": 1
+        },
+        {
+          "function_name": "func_dcc0568d6d78ff33e47fb3e526d955c9d56eeacc",
+          "count": 1
+        },
+        {
+          "function_name": "func_613e124abd6f5ec413abf69482b52cfcb8a49016",
+          "count": 1
+        },
+        {
+          "function_name": "func_70fb371ebc2709797914876608142cbdb1568c7d",
+          "count": 1
+        },
+        {
+          "function_name": "func_f2c6070f4130773471d1a0421e5b48184325ee4a",
+          "count": 1
+        },
+        {
+          "function_name": "func_4424528edec1fea21c833624609a2c8d06dd7a2a",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#292",
+          "count": 1
+        },
+        {
+          "function_name": "func_2e9903a7a689521b0a9d7bf1ab79760bc05a2bd5",
+          "count": 1
+        },
+        {
+          "function_name": "func_4c177e110a0d6f04174a11c81d4198d1a4e16306",
+          "count": 1
+        },
+        {
+          "function_name": "func_5494a73609ece8cf8099da53c451a7a84341b1a3",
+          "count": 1
+        },
+        {
+          "function_name": "func_dcd8e3f3a7612c5bdf89edb7ba8451a50b4963da",
+          "count": 1
+        },
+        {
+          "function_name": "func_9c6b3a1620858613271d6e43b0f90816c1bd85b1",
+          "count": 1
+        },
+        {
+          "function_name": "func_752969d35f1acabc1d1c1ccbe04ca4d501183db5",
+          "count": 1
+        },
+        {
+          "function_name": "func_d33163b617550a512367e1d18263d011ec476cf3",
+          "count": 1
+        },
+        {
+          "function_name": "func_20b77137ff8df21e133afece566e1f578e625b7a",
+          "count": 1
+        },
+        {
+          "function_name": "func_f89c2c5ec73c81604b1255cad6b8fd042dbc53b2",
+          "count": 1
+        },
+        {
+          "function_name": "func_7f71cb2c9502e884450a7c77aa0766457b1815e9",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#288",
+          "count": 1
+        },
+        {
+          "function_name": "func_6bb076b40d985c999caeaba7e1028fdb297965ce",
+          "count": 1
+        },
+        {
+          "function_name": "func_22a3e56147cd8b0a86ea7e940cffcccc22a2f0eb",
+          "count": 1
+        },
+        {
+          "function_name": "func_f4a49864a846ca0df0bc74d45a8841c14affee7f",
+          "count": 1
+        },
+        {
+          "function_name": "func_54412542adfb635356469d53c3d291c86bc8dbb7",
+          "count": 1
+        },
+        {
+          "function_name": "func_dccf67b20a3334e77a45a10550a54e7a86dd50d0",
+          "count": 1
+        },
+        {
+          "function_name": "func_e45fe8839ee7c9e7e3c377618380a4b46500ed7f",
+          "count": 1
+        },
+        {
+          "function_name": "func_e10c2c6cb1ffac3e10e0466e97390d4e9418dc57",
+          "count": 1
+        },
+        {
+          "function_name": "func_95e42abec1075ea80b8624624d9874bc2fab7121",
+          "count": 1
+        },
+        {
+          "function_name": "func_bf2f445d8c6e9a02c36b7f7e4abc4bc9afb8d584",
+          "count": 1
+        },
+        {
+          "function_name": "func_a10faedfcffe1f2459dd242fea81c8a6877b0a07",
+          "count": 1
+        },
+        {
+          "function_name": "func_43bcae291b6109510d6e021563de400951c509b8",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#293",
+          "count": 1
+        },
+        {
+          "function_name": "func_25a98a2c31d1f77059bbaa02cd8e37e85cd18b75",
+          "count": 1
+        },
+        {
+          "function_name": "func_f524ddb25bcf1357aacc7db9fcc38ce151936673",
+          "count": 1
+        },
+        {
+          "function_name": "objectid",
+          "count": 1
+        },
+        {
+          "function_name": "func_c5149ebfb19a1ce75928544cf7a5f54d647bb7fd",
+          "count": 1
+        },
+        {
+          "function_name": "func_d11523067edfdc1a845f3c449c81e1db75334fac",
+          "count": 1
+        },
+        {
+          "function_name": "func_ec864b0447d588d95c6a63aceedb46cd6aa2f253",
+          "count": 1
+        },
+        {
+          "function_name": "func_69fbc267d2c407c5647bc27a24807e3ff228b813",
+          "count": 1
+        },
+        {
+          "function_name": "func_8dda25c8372edf7e7a95ee7dcbbfc7c33c46afd0",
+          "count": 1
+        },
+        {
+          "function_name": "func_e2e852dffcfc79b74d3b6ccd3f852b6d86515739",
+          "count": 1
+        }
+      ]
+    }
+  }
+}
+]

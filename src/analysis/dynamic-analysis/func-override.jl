@@ -38,8 +38,8 @@ overrideInfo = OverrideInfo(FuncMetadata(EvalInfo(Dict())),
 updateDictCount(dict :: Dict{T, Count}, key :: T) where {T} = dict[key] = get!(dict, key, 0) + 1
 
 # Updates the information for a new call to a function being analyzed
-function updateFuncMetadata(metadata :: FuncMetadata, updatefuncSpecificData :: Function) :: Nothing
-    traceNoCurrentFrame = getindex(stacktrace(), 3)
+function updateFuncMetadata(metadata :: FuncMetadata, stackFrameIndex :: Int64, updatefuncSpecificData :: Function) :: Nothing
+    traceNoCurrentFrame = getindex(stacktrace(), stackFrameIndex)
     updateDictCount(metadata.stackTraces, traceNoCurrentFrame)
     metadata.callCount += 1
     updatefuncSpecificData(metadata.funcSpecificData)
@@ -52,7 +52,7 @@ function Core.eval(m::Module, @nospecialize(e))
         currAstHead = typeof(e) == Expr ? e.head : :PrimitiveValue
         updateDictCount(evalInfo.astHeads, currAstHead)
     end
-    updateFuncMetadata(overrideInfo.evalInfo, updateEvalInfo)
+    updateFuncMetadata(overrideInfo.evalInfo, 3, updateEvalInfo)
 
     # Original eval code
     ccall(:jl_toplevel_eval_in, Any, (Any, Any), m, e)
@@ -63,7 +63,7 @@ function Base.invokelatest(@nospecialize(f), @nospecialize args...; kwargs...)
     function updateInvokeLatestInfo(invokeLatestInfo :: InvokeLatestInfo)
         updateDictCount(invokeLatestInfo.funcNames, string(f))
     end
-    updateFuncMetadata(overrideInfo.invokeLatestInfo, updateInvokeLatestInfo)
+    updateFuncMetadata(overrideInfo.invokeLatestInfo, 4, updateInvokeLatestInfo)
 
     # Original invokelatest code
     if isempty(kwargs)
