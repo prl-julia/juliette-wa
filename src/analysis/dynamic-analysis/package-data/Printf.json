@@ -4,19 +4,51 @@
     "stack_traces": [
       {
         "count": 306,
-        "last_call": "_test_flags(::Float64, ::String, ::String, ::String, ::String) at runtests.jl:100"
+        "last_call": "_test_flags(::Int64, ::String, ::String, ::String, ::String) at runtests.jl:100",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 306,
+              "ast_head": "call"
+            }
+          ]
+        }
       },
       {
         "count": 162,
-        "last_call": "top-level scope at runtests.jl:46"
+        "last_call": "top-level scope at runtests.jl:46",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 162,
+              "ast_head": "call"
+            }
+          ]
+        }
       },
       {
         "count": 18,
-        "last_call": "top-level scope at runtests.jl:75"
+        "last_call": "top-level scope at runtests.jl:75",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 18,
+              "ast_head": "call"
+            }
+          ]
+        }
       },
       {
         "count": 14,
-        "last_call": "top-level scope at runtests.jl:177"
+        "last_call": "top-level scope at runtests.jl:177",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 14,
+              "ast_head": "call"
+            }
+          ]
+        }
       }
     ],
     "func_specific_data": {

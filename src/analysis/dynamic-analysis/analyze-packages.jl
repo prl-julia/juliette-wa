@@ -4,7 +4,7 @@ PKGS_TO_ANALYZE =
         # "Revise",
         # # Top packages
         # "Flux",
-        # "IJulia",
+        "IJulia"
         # "Gadfly",
         # # "Gen", # Has issue in Pkg.test(...)
         # # "DifferentialEquations", # Has issue in Pkg.test(...)
@@ -22,7 +22,7 @@ PKGS_TO_ANALYZE =
         # "PackageCompiler",
         # "Makie",
         # "Cxx"
-        "Documenter"
+        # "Documenter"
     ]
 
 function analyzePkg(pkg :: String)
