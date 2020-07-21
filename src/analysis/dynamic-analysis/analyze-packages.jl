@@ -1,6 +1,6 @@
 PKGS_TO_ANALYZE =
     [
-        # "Printf",
+        # "Printf"
         # "Revise",
         # # Top packages
         # "Flux",
@@ -14,33 +14,25 @@ PKGS_TO_ANALYZE =
         # "Genie",
         # # "Turing", # Has issue in Pkg.test(...)
         # # "PyCall", # Has issue in Pkg.test(...)
-        "DataFrames",
-        "Zygote",
-        "TensorFlow",
-        "MLJ",
-        "UnicodePlots",
-        "PackageCompiler",
-        "Makie",
-        "Cxx"
+        # "DataFrames",
+        # "Zygote",
+        # "TensorFlow",
+        # "MLJ",
+        # "UnicodePlots",
+        # "PackageCompiler",
+        # "Makie",
+        # "Cxx"
+        "Documenter"
     ]
 
 function analyzePkg(pkg :: String)
+    ENV["DYNAMIC_ANALYSIS_PACKAGE_NAME"] = pkg
     Pkg.add(pkg)
     Pkg.test(pkg)
-    fd = open(OUTPUT_FILE, "a")
-    write(fd, ",\n")
-    close(fd)
 end
 
-# Truncate file in the case it already exists
-const OUTPUT_FILE = "$(pwd())/output.json"
-# fd = open(OUTPUT_FILE; truncate=true)
-# write(fd, "[\n")
-# close(fd)
 # Override test method to include the overriden eval and invokeLatest
 include("test-override.jl")
 using Pkg
+ENV["DYNAMIC_ANALYSIS_DIR"] = pwd()
 map(analyzePkg, PKGS_TO_ANALYZE)
-fd = open(OUTPUT_FILE, "a")
-write(fd, "]\n")
-close(fd)

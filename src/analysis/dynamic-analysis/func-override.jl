@@ -81,11 +81,11 @@ end
 using Pkg
 Pkg.add("JSON")
 using JSON
-const OUTPUT_FILE = "$(pwd())/output.json"
 
 # Store the overrideInfo as a JSON file
-function storeOverrideInfo(info :: OverrideInfo) :: Nothing
-    fd = open(OUTPUT_FILE, "a")
+function storeOverrideInfo(info :: OverrideInfo, filename :: String) :: Nothing
+    OUTPUT_FILE = "$(ENV["DYNAMIC_ANALYSIS_DIR"])/package-data/$(filename).json"
+    fd = open(OUTPUT_FILE, "w+")
     JSON.print(fd, overrideInfoToJson(info), 2)
     close(fd)
 end
