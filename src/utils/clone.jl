@@ -1,8 +1,23 @@
 #!/usr/bin/env julia
-using ArgParse
-include("clone.jl")
 
-# Parses the arguments to a clone command (run with -h flag for more details)
+#**********************************************************************
+# Script for cloning git repositories
+#**********************************************************************
+# Clones git repositories listed in the given file
+#   to the given directory.
+# Default values: repos.txt and . (current directory)
+# 
+# Usage:
+#
+#   $ julia clone.jl [-d <folder>] [-s <fname>]
+#
+# File <fname> should list git addresses one per line.
+#**********************************************************************
+
+using ArgParse
+include("lib.jl")
+
+# Parses arguments to [clone] routine (run with -h flag for more details)
 function parse_clone_cmd()
     s = ArgParseSettings()
     @add_arg_table! s begin
@@ -20,4 +35,5 @@ function parse_clone_cmd()
 end
 
 # Runs the clone command
-clone(parse_clone_cmd()...)
+(cloned, total) = gitclone(parse_clone_cmd()...)
+infoMsg("Successfully cloned $(cloned)/$(total)")

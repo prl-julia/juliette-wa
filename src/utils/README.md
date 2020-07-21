@@ -1,6 +1,6 @@
 # Utilities
 
-## Executables
+## Executable scripts
 
 ### Cloning git repositories
 
@@ -23,7 +23,7 @@ $ clone.sh [<folder>] [<fname>]
 
 Julia packages (`import Pkg; Pkg.add("<pkgname>")`):
 
-* ArgParse
+* `ArgParse`
 
 ## Source Code
 
