@@ -4,11 +4,11 @@ A dynamic analysis tool that analyzes the use of eval and invokeLatest in the Ju
 
 ## Analyze Packages
 
-1. Simply populate the `PKGS_TO_ANALYZE` array in the `analyze-packages.jl` file with the names of the packages you'd like to analyze.
+1. Simply populate the `PKGS_TO_ANALYZE` array in the `run-analysis.sh` file with the names of the packages you'd like to analyze.
 
-2. Run the following command `julia analyze-packages.jl` (NOTE: your julia version must be >= `1.5.0`).
+2. Run the following command `./run-analysis.sh` (NOTE: your julia version must be >= `1.5.0`).
 
-3. The analyzed data of each package will be written to the `output.json` file in the form:
+3. The analyzed data of each package will be written to a `package-data/<package_name>.json` file in the form:
 
 ```
 {
@@ -18,6 +18,14 @@ A dynamic analysis tool that analyzes the use of eval and invokeLatest in the Ju
       {
         "count": Int,
         "last_call": String
+        "auxillary": {
+            "ast_heads": [
+              {
+                "count": Int,
+                "ast_head": String
+              }
+            ]
+        }
       }
     ],
     "func_specific_data": {
@@ -35,6 +43,7 @@ A dynamic analysis tool that analyzes the use of eval and invokeLatest in the Ju
       {
         "count": Int,
         "last_call": String
+        "auxillary": {}
       }
     ],
     "func_specific_data": {
