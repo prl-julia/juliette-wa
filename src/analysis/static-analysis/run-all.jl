@@ -30,6 +30,10 @@ const pkgsListFile = "data/pkgs-list/top-$(pkgsNum).txt"
 const pkgsDir      = "data/pkgs/$(pkgsNum)"
 const reportFile   = "data/reports/$(pkgsNum).txt"
 
+for d in ["data", "data/pkgs-list", "data/pkgs", "data/reports"]
+    isdir(d) || mkdir(d)
+end
+
 if !isfile(pkgsListFile) || length(ARGS) > 1
     println("Packages list generation\n$(SEP)")
     run(`julia gen-pkgs-list.jl $(pkgsNum) -o $(pkgsListFile)`)
