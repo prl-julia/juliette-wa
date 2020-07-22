@@ -29,8 +29,10 @@ function Base.show(io::IO, stat::Dict{String, FileStat})
     end
 end
 
-const PATTERN_EVAL = "eval("
-const PATTERN_INVOKELATEST = "invokelatest("
+# function call where \W means non-word character
+# (to exclude cases such as "my_eval(")
+const PATTERN_EVAL = r"\Weval\(" #"eval("
+const PATTERN_INVOKELATEST = r"\Winvokelatest\(" #"invokelatest("
 
 # Computes statistics for source code [text]
 computeStat(text :: String) :: FileStat =
@@ -72,21 +74,3 @@ function processPkgsDir(path :: String)
     end
     stats
 end
-
-result = processPkgsDir(ARGS[1]) 
-pkgsCount = length((result))
-println(pkgsCount)
-println()
-#println(result)
-
-interestingPkgsCount = 0
-for pkgInfo in result
-    if (pkgInfo[2].interestingFiles > 0)
-        println("$(pkgInfo[1]): $(pkgInfo[2].interestingFiles)/$(pkgInfo[2].totalFiles)")
-        global interestingPkgsCount += 1
-        println(pkgInfo[2].filesStat)
-    end
-    #println()
-end
-
-println("Interesting packages: $(interestingPkgsCount)/$(pkgsCount)")

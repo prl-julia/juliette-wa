@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # **************************************************
-# Clones repositories listed in the given file
+# Clones git repositories listed in the given file
 #   to the given directory.
 # Default values: repos.txt and . (current directory)
 # 
@@ -61,7 +61,7 @@ if [ ! -f "${fname}" ]; then
   echo "!ERROR: File ${fname} does not exist" 1>&2
   exit 2
 fi
-# we better have a new line ath the end of the file
+# we better have a new line at the end of the file
 lastline=$(tail -1 ${fname})
 if [ "${lastline}" != "" ]; then
   echo "!ERROR: File ${fname} does not have an empty line at the end" 1>&2
