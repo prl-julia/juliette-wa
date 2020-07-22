@@ -1,0 +1,300 @@
+{
+  "eval_info": {
+    "call_count": 227,
+    "stack_traces": [
+      {
+        "count": 53,
+        "last_call": "eval_repl(::Documenter.DocTests.MutableMD2CodeBlock, ::Module, ::Dict{Symbol,Any}, ::Documenter.Documents.Document, ::String) at DocTests.jl:222",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 53,
+              "ast_head": "global"
+            }
+          ]
+        }
+      },
+      {
+        "count": 53,
+        "last_call": "#7 at DocTests.jl:220 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 41,
+              "ast_head": "block"
+            },
+            {
+              "count": 11,
+              "ast_head": "toplevel"
+            },
+            {
+              "count": 1,
+              "ast_head": "using"
+            }
+          ]
+        }
+      },
+      {
+        "count": 27,
+        "last_call": "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:160",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 21,
+              "ast_head": "using"
+            },
+            {
+              "count": 4,
+              "ast_head": "toplevel"
+            },
+            {
+              "count": 2,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 25,
+        "last_call": "eval(::Expr) at CUDA.jl:1",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 25,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 22,
+        "last_call": "get_new_sandbox(::Symbol) at Expanders.jl:722",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 22,
+              "ast_head": "="
+            }
+          ]
+        }
+      },
+      {
+        "count": 22,
+        "last_call": "get_new_sandbox(::Symbol) at Expanders.jl:724",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 22,
+              "ast_head": "="
+            }
+          ]
+        }
+      },
+      {
+        "count": 11,
+        "last_call": "initdocmeta!(::Module) at DocMeta.jl:37",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 11,
+              "ast_head": "const"
+            }
+          ]
+        }
+      },
+      {
+        "count": 7,
+        "last_call": "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:152",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 7,
+              "ast_head": "quote"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "eval at ChainRules.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "define_typeinf_code2() at reflection.jl:9",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "eval at CUDA.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "@static(::LineNumberNode, ::Module, ::Any) at osutils.jl:19",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "eval at Zygote.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at forwarddiff.jl:44",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "block"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 71,
+          "ast_head": "block"
+        },
+        {
+          "count": 53,
+          "ast_head": "global"
+        },
+        {
+          "count": 44,
+          "ast_head": "="
+        },
+        {
+          "count": 22,
+          "ast_head": "using"
+        },
+        {
+          "count": 15,
+          "ast_head": "toplevel"
+        },
+        {
+          "count": 11,
+          "ast_head": "const"
+        },
+        {
+          "count": 7,
+          "ast_head": "quote"
+        },
+        {
+          "count": 3,
+          "ast_head": "call"
+        },
+        {
+          "count": 1,
+          "ast_head": "function"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 102,
+    "stack_traces": [
+      {
+        "count": 51,
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+        "auxillary": {}
+      },
+      {
+        "count": 40,
+        "last_call": "result_to_string at DocTests.jl:322 [inlined]",
+        "auxillary": {}
+      },
+      {
+        "count": 4,
+        "last_call": "require(::Base.PkgId) at loading.jl:931",
+        "auxillary": {}
+      },
+      {
+        "count": 2,
+        "last_call": "foreach at abstractarray.jl:2005 [inlined]",
+        "auxillary": {}
+      },
+      {
+        "count": 2,
+        "last_call": "macro expansion at Artifacts.jl:1068 [inlined]",
+        "auxillary": {}
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:28",
+        "auxillary": {}
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:28",
+        "auxillary": {}
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:69",
+        "auxillary": {}
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "loadpkg",
+          "count": 55
+        },
+        {
+          "function_name": "show",
+          "count": 40
+        },
+        {
+          "function_name": "do_artifact_str",
+          "count": 5
+        },
+        {
+          "function_name": "#1194",
+          "count": 1
+        },
+        {
+          "function_name": "#457",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

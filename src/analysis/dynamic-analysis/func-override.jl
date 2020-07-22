@@ -55,6 +55,7 @@ overrideInfo = OverrideInfo(FuncMetadata(EvalInfo(Dict());
 # Adds one to the value of the key, creates keys with value of 1 if it does not already exist
 updateDictCount(dict :: Dict{T, Count}, key :: T) where {T} = dict[key] = get!(dict, key, 0) + 1
 
+# Updates the ast information to increment the ast type of the given expression
 function updateAstInfo(astHeads :: AstInfo, e)
     currAstHead = typeof(e) == Expr ? e.head : :PrimitiveValue
     updateDictCount(astHeads, currAstHead)
@@ -73,8 +74,7 @@ end
 
 # Updates the information for a new call to a function being analyzed
 function updateFuncMetadata(metadata :: FuncMetadata, stackFrameIndex :: Count, updateFuncSpecificData :: Function;
-        auxTuple=((() -> nothing), ((aux) -> nothing)) :: Tuple{Function, Function}
-    )
+        auxTuple=((() -> nothing), ((aux) -> nothing)) :: Tuple{Function, Function})
     (defaultTraceAuxillary, updateTraceAuxillary) = auxTuple
     # Update stack traces
     updateStackTraces(metadata.stackTraces, stackFrameIndex + 1, defaultTraceAuxillary, updateTraceAuxillary)
@@ -140,6 +140,7 @@ function overrideInfoToJson(info :: OverrideInfo)
     json
 end
 
+# Convert an astInfo object to a julia json representation
 astInfoToJson(astHeads :: AstInfo) = Dict(["ast_heads" => countingDictToJson(astHeads, "ast_head")])
 
 # Convert an FuncMetadata object to a julia json representation
@@ -152,6 +153,7 @@ function funcMetadataToJson(funcMetadata :: FuncMetadata,
     json
 end
 
+# Convert a dictionary of stack traces to its respective julia json representation
 function stackTracesToJson(stackTraces :: Dict{StackTraces.StackFrame, StackTraceInfo{U}},
         traceAuxillaryToJson :: Function
     ) where {U}
