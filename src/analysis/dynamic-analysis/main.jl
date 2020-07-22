@@ -1,5 +1,7 @@
+# Test package with overriden functions
 function analyzePkg(pkg :: String)
     ENV["DYNAMIC_ANALYSIS_PACKAGE_NAME"] = pkg
+    Pkg.activate("package-envs/$(pkg)")
     Pkg.add(pkg)
     Pkg.test(pkg)
 end
