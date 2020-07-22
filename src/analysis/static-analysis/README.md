@@ -4,6 +4,14 @@ Grep a file, and if there is `eval`/`invokelatest`, output info.
 
 ## Usage
 
+### Do-all script
+
+`$julia run-all.jl 10`
+
+To download and analyze 10 most starred packages.
+
+### More details
+
 ```julia
 # generate list of 100 most starred packages
 $ julia gen-pkgs-list.jl 100 -o data/pkgs-list/top-100.txt
