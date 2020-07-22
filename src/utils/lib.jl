@@ -39,7 +39,13 @@ function gitclone(source :: String, destination :: String)
     cloneEachRepo() = map(
         (link) -> isempty(link) ? 
             nothing : 
-            try ; run(`git clone $(link)`) ; cloned += 1 ; catch e ; end, 
+            isdir(joinpath(BASE_DIR, destination, 
+                               basename(link)[begin:end-length(".git")])) ||
+                try 
+                    run(`git clone $(link)`)
+                    cloned += 1 
+                catch e
+                end, 
         repoLinks
     )
     isdir(destination) || mkdir(destination)

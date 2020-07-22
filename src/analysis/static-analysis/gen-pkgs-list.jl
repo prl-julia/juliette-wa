@@ -43,6 +43,12 @@ const PKGS_INFO_FILE = "data/julia-pkgs-info.json"
 # Default file for output packages list
 const PKGS_LIST_FILE = "data/pkgs-list/top-pkgs-list.txt"
 
+# Repositories of bad packages that might be in the list
+const BAD_PKGS = [
+    "https://github.com/JuliaLang/julia.git", # Julia repo itself
+    "https://github.com/Lonero-Team/Decentralized-Internet.git", # Decentralized-Internet
+]
+
 #--------------------------------------------------
 # Command line arguments
 #--------------------------------------------------
@@ -105,25 +111,9 @@ pkgsInfo =
 if !haskey(pkgsInfo, PKGS_KEY)
     exitErrWithMsg("Wrong JSON: packages field is expected")
 end
-
 # Retrieve list of packages information
 pkgsList = pkgsInfo[PKGS_KEY]
-# Remove Julia itself
-pkgsList = filter(
-    pkg -> !(pkg["name"] == "julia" &&
-             pkg["metadata"]["repo"] == "https://github.com/JuliaLang/julia.git"),
-    pkgsList
-)
 infoMsg("Loading completed")
-
-# Check and possibly fix the number of packages
-if pkgsNum < 0
-    pkgsNum = 1
-    warnMsg("requested number of packages cannot be negative -- set to $(pkgsNum)")
-elseif pkgsNum > length(pkgsList)
-    pkgsNum = length(pkgsList)
-    warnMsg("requested number of packages is too big -- set to $(pkgsNum)")
-end
 
 ###################################################
 # Process list of packages
@@ -160,6 +150,20 @@ getName(pkgInfo :: Dict) = haskey(pkgInfo, "name") ? pkgInfo["name"] : "<NA-name
 # Processing
 #--------------------------------------------------
 
+# Remove Julia itself and other blacklisted packages
+infoMsg("Cleaning packages...")
+pkgsList = filter(pkg -> !in(getRepo(pkg), BAD_PKGS), pkgsList)
+infoMsg("Cleaning completed")
+
+# Check and possibly fix the number of packages
+if pkgsNum < 0
+    pkgsNum = 1
+    warnMsg("requested number of packages cannot be negative -- set to $(pkgsNum)")
+elseif pkgsNum > length(pkgsList)
+    pkgsNum = length(pkgsList)
+    warnMsg("requested number of packages is too big -- set to $(pkgsNum)")
+end
+
 # Sort packages from most to least starred
 infoMsg("Sorting packages...")
 pkgsList = sort(pkgsList, by=getStarCount, rev=true)
@@ -171,12 +175,16 @@ infoMsg("Sorting completed")
 
 infoMsg("Ready to output the result")
 
-# Get required information about the top pkgsNum packages
+# Required information depends on the parameters
 getInfo = PARAMS["name"] ? getName : getRepo
-topPkgsList = map(getInfo, pkgsList[1:pkgsNum])
+
+# Get required information about the top pkgsNum packages
+# Note. We use unique because the package list sometimes has duplicates,
+#       e.g. https://github.com/JuliaPlots/StatsPlots.jl.git
+topPkgsInfoList = unique(map(getInfo, pkgsList))[1:pkgsNum]
 
 # Prepare output
-output = join(topPkgsList, "\n")
+output = join(topPkgsInfoList, "\n")
 
 # Output
 if PARAMS["show"]
