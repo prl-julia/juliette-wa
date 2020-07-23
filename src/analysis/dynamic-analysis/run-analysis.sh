@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PACKAGES_TO_ANALYZE=("IJulia")
+PACKAGES_TO_ANALYZE=("Flux" "GadFly" "IJulia" "JuMP" "Printf" "Revise")
 
 for pkg in ${PACKAGES_TO_ANALYZE[@]}
 do
@@ -24,3 +24,4 @@ done
 # - "PackageCompiler"
 # - "Makie"
 # - "Cxx"
+# - "CUDA"

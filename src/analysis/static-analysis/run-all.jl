@@ -4,11 +4,11 @@
 # Script for running lightweight static analysis of
 # eval/invokelatest usage for N packages
 #**********************************************************************
-# 
+#
 # Usage:
 #
 #   $ [julia] run-all.jl N [*]
-# 
+#
 #**********************************************************************
 
 include("../../utils/lib.jl")
@@ -39,6 +39,6 @@ if !isfile(pkgsListFile) || length(ARGS) > 1
     run(`julia gen-pkgs-list.jl $(pkgsNum) -o $(pkgsListFile)`)
 end
 println("\nCloning\n$(SEP)")
-run(` ../../utils/clone.jl -s $(pkgsListFile) -d $(pkgsDir)`)
+run(`julia ../../utils/clone.jl -s $(pkgsListFile) -d $(pkgsDir)`)
 println("\nAnalysis\n$(SEP)")
 run(pipeline(`julia run-analysis.jl $(pkgsDir)`, stdout=reportFile))

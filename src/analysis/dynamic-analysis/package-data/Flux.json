@@ -140,18 +140,6 @@
       },
       {
         "count": 1,
-        "last_call": "eval at CUDA.jl:1 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 1,
-              "ast_head": "block"
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
         "last_call": "@static(::LineNumberNode, ::Module, ::Any) at osutils.jl:19",
         "auxillary": {
           "ast_heads": [
@@ -164,7 +152,7 @@
       },
       {
         "count": 1,
-        "last_call": "eval at Zygote.jl:1 [inlined]",
+        "last_call": "eval at CUDA.jl:1 [inlined]",
         "auxillary": {
           "ast_heads": [
             {
@@ -177,6 +165,18 @@
       {
         "count": 1,
         "last_call": "top-level scope at forwarddiff.jl:44",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "eval at Zygote.jl:1 [inlined]",
         "auxillary": {
           "ast_heads": [
             {
@@ -287,11 +287,11 @@
           "count": 5
         },
         {
-          "function_name": "#1194",
+          "function_name": "#402",
           "count": 1
         },
         {
-          "function_name": "#457",
+          "function_name": "#1194",
           "count": 1
         }
       ]
