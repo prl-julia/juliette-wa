@@ -1,0 +1,250 @@
+{
+  "eval_info": {
+    "call_count": 1532,
+    "stack_traces": [
+      {
+        "count": 653,
+        "last_call": "(::Distributed.var\"#155#156\"{Module,Expr})() at task.jl:356",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 330,
+              "ast_head": "call"
+            },
+            {
+              "count": 210,
+              "ast_head": "block"
+            },
+            {
+              "count": 113,
+              "ast_head": "module"
+            }
+          ]
+        }
+      },
+      {
+        "count": 242,
+        "last_call": "move_vars(::Symbol, ::Symbol, ::Set{Symbol}, ::Set{Array{Symbol,1}}, ::Set{Expr}) at PlutoRunner.jl:60",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 242,
+              "ast_head": "import"
+            }
+          ]
+        }
+      },
+      {
+        "count": 221,
+        "last_call": "#137 at remotecall.jl:354 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 210,
+              "ast_head": "call"
+            },
+            {
+              "count": 11,
+              "ast_head": "&&"
+            }
+          ]
+        }
+      },
+      {
+        "count": 210,
+        "last_call": "top-level scope at Parse.jl:93",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 210,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 102,
+        "last_call": "move_vars(::Symbol, ::Symbol, ::Set{Symbol}, ::Set{Array{Symbol,1}}, ::Set{Expr}) at PlutoRunner.jl:48",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 102,
+              "ast_head": "import"
+            }
+          ]
+        }
+      },
+      {
+        "count": 58,
+        "last_call": "move_vars(::Symbol, ::Symbol, ::Set{Symbol}, ::Set{Array{Symbol,1}}, ::Set{Expr}) at PlutoRunner.jl:80",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 58,
+              "ast_head": "="
+            }
+          ]
+        }
+      },
+      {
+        "count": 19,
+        "last_call": "move_vars(::Symbol, ::Symbol, ::Set{Symbol}, ::Set{Array{Symbol,1}}, ::Set{Expr}) at PlutoRunner.jl:43",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 19,
+              "ast_head": "using"
+            }
+          ]
+        }
+      },
+      {
+        "count": 11,
+        "last_call": "top-level scope at none:1",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 11,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 6,
+        "last_call": "jl_is_runnable(::String; only_undefvar::Bool) at helpers.jl:96",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 6,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 6,
+        "last_call": "jl_is_runnable(::String; only_undefvar::Bool) at helpers.jl:94",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 6,
+              "ast_head": "module"
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": "initmeta(::Module) at Docs.jl:79",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 4,
+              "ast_head": "const"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 557,
+          "ast_head": "call"
+        },
+        {
+          "count": 420,
+          "ast_head": "block"
+        },
+        {
+          "count": 344,
+          "ast_head": "import"
+        },
+        {
+          "count": 119,
+          "ast_head": "module"
+        },
+        {
+          "count": 58,
+          "ast_head": "="
+        },
+        {
+          "count": 19,
+          "ast_head": "using"
+        },
+        {
+          "count": 11,
+          "ast_head": "&&"
+        },
+        {
+          "count": 4,
+          "ast_head": "const"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 3358,
+    "stack_traces": [
+      {
+        "count": 2006,
+        "last_call": "#17 at PlutoRunner.jl:274 [inlined]",
+        "auxillary": {}
+      },
+      {
+        "count": 678,
+        "last_call": "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.JoinPGRPMsg, ::Bool) at messages.jl:185",
+        "auxillary": {}
+      },
+      {
+        "count": 344,
+        "last_call": "(::Distributed.var\"#125#126\"{Distributed.ProcessGroup,Distributed.RRID,typeof(Distributed.def_rv_channel)})() at remotecall.jl:175",
+        "auxillary": {}
+      },
+      {
+        "count": 322,
+        "last_call": "message_handler_loop(::Sockets.TCPSocket, ::Sockets.TCPSocket, ::Bool) at process_messages.jl:185",
+        "auxillary": {}
+      },
+      {
+        "count": 7,
+        "last_call": "show_backtrace(::Base.TTY, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
+        "auxillary": {}
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:56",
+        "auxillary": {}
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "showable",
+          "count": 2006
+        },
+        {
+          "function_name": "serialize_msg",
+          "count": 678
+        },
+        {
+          "function_name": "def_rv_channel",
+          "count": 344
+        },
+        {
+          "function_name": "deserialize_msg",
+          "count": 322
+        },
+        {
+          "function_name": "identity",
+          "count": 7
+        },
+        {
+          "function_name": "do_artifact_str",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

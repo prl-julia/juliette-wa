@@ -91,6 +91,7 @@ function Core.eval(m::Module, @nospecialize(e))
     frameToGet = 3
     updateFuncMetadata(overrideInfo.evalInfo, frameToGet,
         updateEvalInfo; auxTuple=((() -> Dict{Symbol,Count}()), updateTraceAuxillary))
+    storeOverrideInfo()
 
     # Original eval code
     ccall(:jl_toplevel_eval_in, Any, (Any, Any), m, e)
@@ -103,6 +104,7 @@ function Base.invokelatest(@nospecialize(f), @nospecialize args...; kwargs...)
     end
     frameToGet = 4
     updateFuncMetadata(overrideInfo.invokeLatestInfo, frameToGet, updateInvokeLatestInfo)
+    storeOverrideInfo()
 
     # Original invokelatest code
     if isempty(kwargs)
@@ -122,11 +124,11 @@ Pkg.add("JSON")
 using JSON
 
 # Store the overrideInfo as a JSON file
-function storeOverrideInfo(info :: OverrideInfo, filename :: String) :: Nothing
-    OUTPUT_FILE = "$(ENV["DYNAMIC_ANALYSIS_DIR"])/package-data/$(filename).json"
+function storeOverrideInfo() :: Nothing
+    OUTPUT_FILE = "$(ENV["DYNAMIC_ANALYSIS_DIR"])/package-data/$(ENV["DYNAMIC_ANALYSIS_PACKAGE_NAME"]).json"
     fd = open(OUTPUT_FILE, "w+")
     INDENT_SIZE = 2
-    JSON.print(fd, overrideInfoToJson(info), INDENT_SIZE)
+    JSON.print(fd, overrideInfoToJson(overrideInfo), INDENT_SIZE)
     close(fd)
 end
 

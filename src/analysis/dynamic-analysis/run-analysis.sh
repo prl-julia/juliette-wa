@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PACKAGES_TO_ANALYZE=("Flux" "GadFly" "IJulia" "JuMP" "Printf" "Revise")
+PACKAGES_TO_ANALYZE=("IJulia")
 
 for pkg in ${PACKAGES_TO_ANALYZE[@]}
 do
@@ -9,14 +9,17 @@ done
 
 # Packages with issues when run:
 # - "Documenter"
+# - "Genie"
+# - "Plots"
+
+
+
 # - "Gen"
 # - "DifferentialEquations"
 # - "Knet"
-# - "Plots"
 # - "Turing"
 # - "PyCall"
 # - "DataFrames"
-# - "Genie"
 # - "Zygote"
 # - "TensorFlow"
 # - "MLJ"

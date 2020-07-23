@@ -1,0 +1,86 @@
+{
+  "eval_info": {
+    "call_count": 1,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "get_type(::String) at compute.jl:59",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "PrimitiveValue"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 1,
+          "ast_head": "PrimitiveValue"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 38,
+    "stack_traces": [
+      {
+        "count": 15,
+        "last_call": "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.JoinPGRPMsg, ::Bool) at messages.jl:185",
+        "auxillary": {}
+      },
+      {
+        "count": 9,
+        "last_call": "(::Distributed.var\"#125#126\"{Distributed.ProcessGroup,Distributed.RRID,typeof(Distributed.def_rv_channel)})() at remotecall.jl:175",
+        "auxillary": {}
+      },
+      {
+        "count": 7,
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+        "auxillary": {}
+      },
+      {
+        "count": 5,
+        "last_call": "message_handler_loop(::Sockets.TCPSocket, ::Sockets.TCPSocket, ::Bool) at process_messages.jl:185",
+        "auxillary": {}
+      },
+      {
+        "count": 1,
+        "last_call": "show_backtrace(::Base.TTY, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
+        "auxillary": {}
+      },
+      {
+        "count": 1,
+        "last_call": "require(::Base.PkgId) at loading.jl:931",
+        "auxillary": {}
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "serialize_msg",
+          "count": 15
+        },
+        {
+          "function_name": "def_rv_channel",
+          "count": 9
+        },
+        {
+          "function_name": "_require_callback",
+          "count": 8
+        },
+        {
+          "function_name": "deserialize_msg",
+          "count": 5
+        },
+        {
+          "function_name": "identity",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

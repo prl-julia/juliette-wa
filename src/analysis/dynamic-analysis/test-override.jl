@@ -13,7 +13,6 @@ function Pkg.Operations.gen_test_code(testfile::String;
         cd($(repr(dirname(testfile))))
         append!(empty!(ARGS), $(repr(test_args.exec)))
         include($(repr(testfile)))
-        storeOverrideInfo(overrideInfo, "$(ENV["DYNAMIC_ANALYSIS_PACKAGE_NAME"])")
         """
     return ```
         $(Base.julia_cmd())

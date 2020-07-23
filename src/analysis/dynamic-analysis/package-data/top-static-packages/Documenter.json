@@ -1,0 +1,656 @@
+{
+  "eval_info": {
+    "call_count": 2102,
+    "stack_traces": [
+      {
+        "count": 263,
+        "last_call": "docsxref(::Markdown.Link, ::String, ::Dict{Symbol,Any}, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at CrossReferences.jl:143",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 263,
+              "ast_head": "curly"
+            }
+          ]
+        }
+      },
+      {
+        "count": 228,
+        "last_call": "get_new_sandbox(::Symbol) at Expanders.jl:722",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 228,
+              "ast_head": "="
+            }
+          ]
+        }
+      },
+      {
+        "count": 228,
+        "last_call": "get_new_sandbox(::Symbol) at Expanders.jl:724",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 228,
+              "ast_head": "="
+            }
+          ]
+        }
+      },
+      {
+        "count": 195,
+        "last_call": "#15 at Expanders.jl:555 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 60,
+              "ast_head": "="
+            },
+            {
+              "count": 57,
+              "ast_head": "call"
+            },
+            {
+              "count": 24,
+              "ast_head": "macrocall"
+            },
+            {
+              "count": 21,
+              "ast_head": "using"
+            },
+            {
+              "count": 6,
+              "ast_head": "||"
+            },
+            {
+              "count": 6,
+              "ast_head": "struct"
+            },
+            {
+              "count": 6,
+              "ast_head": "tuple"
+            },
+            {
+              "count": 6,
+              "ast_head": "PrimitiveValue"
+            },
+            {
+              "count": 3,
+              "ast_head": "for"
+            },
+            {
+              "count": 3,
+              "ast_head": "do"
+            },
+            {
+              "count": 3,
+              "ast_head": "quote"
+            }
+          ]
+        }
+      },
+      {
+        "count": 195,
+        "last_call": "runner(::Type{Documenter.Expanders.ExampleBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:558",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 195,
+              "ast_head": "global"
+            }
+          ]
+        }
+      },
+      {
+        "count": 188,
+        "last_call": "eval_repl(::Documenter.DocTests.MutableMD2CodeBlock, ::Module, ::Dict{Symbol,Any}, ::Documenter.Documents.Document, ::String) at DocTests.jl:222",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 188,
+              "ast_head": "global"
+            }
+          ]
+        }
+      },
+      {
+        "count": 188,
+        "last_call": "#7 at DocTests.jl:220 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 145,
+              "ast_head": "block"
+            },
+            {
+              "count": 23,
+              "ast_head": "PrimitiveValue"
+            },
+            {
+              "count": 14,
+              "ast_head": "toplevel"
+            },
+            {
+              "count": 3,
+              "ast_head": "error"
+            },
+            {
+              "count": 2,
+              "ast_head": "using"
+            },
+            {
+              "count": 1,
+              "ast_head": "import"
+            }
+          ]
+        }
+      },
+      {
+        "count": 95,
+        "last_call": "runner(::Type{Documenter.Expanders.AutoDocsBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:413",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 95,
+              "ast_head": "PrimitiveValue"
+            }
+          ]
+        }
+      },
+      {
+        "count": 90,
+        "last_call": "#21 at Expanders.jl:617 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 78,
+              "ast_head": "block"
+            },
+            {
+              "count": 6,
+              "ast_head": "PrimitiveValue"
+            },
+            {
+              "count": 3,
+              "ast_head": "using"
+            },
+            {
+              "count": 3,
+              "ast_head": "toplevel"
+            }
+          ]
+        }
+      },
+      {
+        "count": 90,
+        "last_call": "runner(::Type{Documenter.Expanders.REPLBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:620",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 90,
+              "ast_head": "global"
+            }
+          ]
+        }
+      },
+      {
+        "count": 60,
+        "last_call": "runner(::Type{Documenter.Expanders.AutoDocsBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:380",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 54,
+              "ast_head": "vect"
+            },
+            {
+              "count": 6,
+              "ast_head": "PrimitiveValue"
+            }
+          ]
+        }
+      },
+      {
+        "count": 50,
+        "last_call": "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:160",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 32,
+              "ast_head": "toplevel"
+            },
+            {
+              "count": 9,
+              "ast_head": "="
+            },
+            {
+              "count": 9,
+              "ast_head": "PrimitiveValue"
+            }
+          ]
+        }
+      },
+      {
+        "count": 45,
+        "last_call": "runner(::Type{Documenter.Expanders.MetaBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:256",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 16,
+              "ast_head": "vect"
+            },
+            {
+              "count": 14,
+              "ast_head": "PrimitiveValue"
+            },
+            {
+              "count": 9,
+              "ast_head": "quote"
+            },
+            {
+              "count": 3,
+              "ast_head": "."
+            },
+            {
+              "count": 3,
+              "ast_head": "macrocall"
+            }
+          ]
+        }
+      },
+      {
+        "count": 30,
+        "last_call": "(::Documenter.Documents.var\"#13#14\"{Module,Dict{Symbol,Any},Expr})() at Documents.jl:477",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 21,
+              "ast_head": "vect"
+            },
+            {
+              "count": 9,
+              "ast_head": "PrimitiveValue"
+            }
+          ]
+        }
+      },
+      {
+        "count": 29,
+        "last_call": "#9 at DocTests.jl:247 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 13,
+              "ast_head": "="
+            },
+            {
+              "count": 12,
+              "ast_head": "call"
+            },
+            {
+              "count": 2,
+              "ast_head": "error"
+            },
+            {
+              "count": 1,
+              "ast_head": "for"
+            },
+            {
+              "count": 1,
+              "ast_head": "toplevel"
+            }
+          ]
+        }
+      },
+      {
+        "count": 27,
+        "last_call": "initmeta(::Module) at Docs.jl:79",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 27,
+              "ast_head": "const"
+            }
+          ]
+        }
+      },
+      {
+        "count": 26,
+        "last_call": "runner(::Type{Documenter.Expanders.DocsBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:307",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 26,
+              "ast_head": "curly"
+            }
+          ]
+        }
+      },
+      {
+        "count": 22,
+        "last_call": "parse_metablock(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:97",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 9,
+              "ast_head": "PrimitiveValue"
+            },
+            {
+              "count": 6,
+              "ast_head": "vect"
+            },
+            {
+              "count": 5,
+              "ast_head": "quote"
+            },
+            {
+              "count": 1,
+              "ast_head": "."
+            },
+            {
+              "count": 1,
+              "ast_head": "macrocall"
+            }
+          ]
+        }
+      },
+      {
+        "count": 16,
+        "last_call": "(::Documenter.Expanders.var\"#11#12\"{Markdown.Code,Documenter.Documents.Page,Documenter.Documents.Document,Module})() at Expanders.jl:496",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 6,
+              "ast_head": "call"
+            },
+            {
+              "count": 4,
+              "ast_head": "PrimitiveValue"
+            },
+            {
+              "count": 3,
+              "ast_head": "="
+            },
+            {
+              "count": 3,
+              "ast_head": "import"
+            }
+          ]
+        }
+      },
+      {
+        "count": 16,
+        "last_call": "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:152",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 6,
+              "ast_head": "macrocall"
+            },
+            {
+              "count": 5,
+              "ast_head": "PrimitiveValue"
+            },
+            {
+              "count": 3,
+              "ast_head": "quote"
+            },
+            {
+              "count": 2,
+              "ast_head": "vect"
+            }
+          ]
+        }
+      },
+      {
+        "count": 8,
+        "last_call": "initdocmeta!(::Module) at DocMeta.jl:37",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 8,
+              "ast_head": "const"
+            }
+          ]
+        }
+      },
+      {
+        "count": 7,
+        "last_call": "eval(::Expr) at Expanders.jl:722",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 7,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "runner(::Type{Documenter.Expanders.AutoDocsBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:378",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 3,
+              "ast_head": "->"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "@static(::LineNumberNode, ::Module, ::Any) at osutils.jl:19",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "test_doctest_fix(::String) at tests.jl:19",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "import"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "test_doctest_fix(::String) at tests.jl:24",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "import"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 541,
+          "ast_head": "="
+        },
+        {
+          "count": 473,
+          "ast_head": "global"
+        },
+        {
+          "count": 289,
+          "ast_head": "curly"
+        },
+        {
+          "count": 223,
+          "ast_head": "block"
+        },
+        {
+          "count": 186,
+          "ast_head": "PrimitiveValue"
+        },
+        {
+          "count": 99,
+          "ast_head": "vect"
+        },
+        {
+          "count": 83,
+          "ast_head": "call"
+        },
+        {
+          "count": 50,
+          "ast_head": "toplevel"
+        },
+        {
+          "count": 35,
+          "ast_head": "const"
+        },
+        {
+          "count": 34,
+          "ast_head": "macrocall"
+        },
+        {
+          "count": 26,
+          "ast_head": "using"
+        },
+        {
+          "count": 20,
+          "ast_head": "quote"
+        },
+        {
+          "count": 6,
+          "ast_head": "||"
+        },
+        {
+          "count": 6,
+          "ast_head": "struct"
+        },
+        {
+          "count": 6,
+          "ast_head": "tuple"
+        },
+        {
+          "count": 6,
+          "ast_head": "import"
+        },
+        {
+          "count": 5,
+          "ast_head": "error"
+        },
+        {
+          "count": 4,
+          "ast_head": "for"
+        },
+        {
+          "count": 4,
+          "ast_head": "."
+        },
+        {
+          "count": 3,
+          "ast_head": "do"
+        },
+        {
+          "count": 3,
+          "ast_head": "->"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 609,
+    "stack_traces": [
+      {
+        "count": 190,
+        "last_call": "result_to_string at DocTests.jl:322 [inlined]",
+        "auxillary": {}
+      },
+      {
+        "count": 108,
+        "last_call": "runner(::Type{Documenter.Expanders.ExampleBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:582",
+        "auxillary": {}
+      },
+      {
+        "count": 95,
+        "last_call": "runner(::Type{Documenter.Expanders.AutoDocsBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:413",
+        "auxillary": {}
+      },
+      {
+        "count": 72,
+        "last_call": "#mdconvert#110 at HTMLWriter.jl:1661 [inlined]",
+        "auxillary": {}
+      },
+      {
+        "count": 67,
+        "last_call": "#3 at MarkdownWriter.jl:149 [inlined]",
+        "auxillary": {}
+      },
+      {
+        "count": 36,
+        "last_call": "error_to_string(::Base.GenericIOBuffer{Array{UInt8,1}}, ::DivideError, ::Array{Any,1}) at DocTests.jl:335",
+        "auxillary": {}
+      },
+      {
+        "count": 35,
+        "last_call": "show_backtrace(::IOContext{Base.GenericIOBuffer{Array{UInt8,1}}}, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
+        "auxillary": {}
+      },
+      {
+        "count": 6,
+        "last_call": "show_backtrace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Any,1}) at errorshow.jl:670",
+        "auxillary": {}
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "show",
+          "count": 190
+        },
+        {
+          "function_name": "display_dict",
+          "count": 108
+        },
+        {
+          "function_name": "#7",
+          "count": 86
+        },
+        {
+          "function_name": "mdconvert",
+          "count": 72
+        },
+        {
+          "function_name": "render",
+          "count": 67
+        },
+        {
+          "function_name": "identity",
+          "count": 41
+        },
+        {
+          "function_name": "showerror",
+          "count": 36
+        },
+        {
+          "function_name": "#41",
+          "count": 3
+        },
+        {
+          "function_name": "#45",
+          "count": 3
+        },
+        {
+          "function_name": "#49",
+          "count": 3
+        }
+      ]
+    }
+  }
+}
