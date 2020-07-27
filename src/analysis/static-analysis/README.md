@@ -1,6 +1,9 @@
-# Lightweight Static Analysis of `eval` Usage
+# Lightweight Static Analysis of `eval` and `invokelatest` Usage
 
-Grep a file, and if there is `eval`/`invokelatest`, output info.
+Uses simple regular expressions to count the occurrences of
+`eval(`, `@eval `, and `invokelatest(` in Julia files.  
+*Note.* The analysis prunes incorrect calls such as `myeval(`
+but does count calls in comments.
 
 ## Usage
 
@@ -8,7 +11,15 @@ Grep a file, and if there is `eval`/`invokelatest`, output info.
 
 `$julia run-all.jl 10`
 
-To download and analyze 10 most starred packages.
+To download and analyze 10 most starred Julia packages.
+
+This will create the following files and folders in `static-analysis`:
+
+* `data` folder with the analysis information
+* `data/julia-pkgs-info.json` JSON file with information about registered
+  Julia packages (repository address, number of stars on GitHub)
+* `data/pkgs/10` folder with sources of the 10 most starred Julia packages
+* `data/reports/10.txt` text file with the analysis report
 
 ### More details
 
@@ -53,7 +64,7 @@ Decentralized-Internet
 MXNet.jl
 ```
 
-`Decentralized-Internet` isn't even Julia package.
+`Decentralized-Internet` isn't even a Julia package.
 
 ### Load Path
 

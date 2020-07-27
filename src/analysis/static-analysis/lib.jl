@@ -29,6 +29,7 @@
 CALL_PATTERN(name :: String) = Regex("(\\W|^)$(name)\\(") # r"(\W|^)eval\("
 const PATTERN_EVAL = CALL_PATTERN("eval")
 const PATTERN_INVOKELATEST = CALL_PATTERN("invokelatest")
+const PATTERN_EVAL_MACRO = r"@eval "
 
 #--------------------------------------------------
 # Data Types
@@ -107,7 +108,10 @@ end
 
 # Computes statistics for source code [text]
 computeStat(text :: String) :: Stat =
-    Stat(count(PATTERN_EVAL, text), count(PATTERN_INVOKELATEST, text))
+    Stat(
+        count(PATTERN_EVAL, text) + count(PATTERN_EVAL_MACRO, text),
+        count(PATTERN_INVOKELATEST, text)
+    )
 
 #--------------------------------------------------
 # Single Package
