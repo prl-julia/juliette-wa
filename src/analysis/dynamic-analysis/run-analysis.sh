@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PACKAGES_TO_ANALYZE=("IJulia")
+PACKAGES_TO_ANALYZE=("Symata")
 
 for pkg in ${PACKAGES_TO_ANALYZE[@]}
 do
