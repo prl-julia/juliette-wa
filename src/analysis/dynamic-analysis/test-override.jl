@@ -1,6 +1,7 @@
 using Pkg
 
 function Pkg.Operations.gen_test_code(testfile::String;
+# function gen_test_code(testfile::String;
         coverage=false,
         julia_args::Cmd=``,
         test_args::Cmd=``)
@@ -28,3 +29,8 @@ function Pkg.Operations.gen_test_code(testfile::String;
         --eval $(code)
     ```
 end
+
+# ENV["DYNAMIC_ANALYSIS_DIR"] = pwd()
+# ENV["DYNAMIC_ANALYSIS_PACKAGE_NAME"] = "testpkg"
+# const TEST_DIR_PREFIX = "C:/Users/gelin/Documents/computer-science/research/julia/juliette-wa/src/analysis/eval-programs/"
+# run(gen_test_code(string(TEST_DIR_PREFIX, "test02.jl")))

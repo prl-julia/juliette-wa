@@ -1,6 +1,8 @@
 #!/bin/bash
 
-PACKAGES_TO_ANALYZE=("Symata")
+# NOTE: at the moment this form of running the tests in parallel
+# causes environment issues
+PACKAGES_TO_ANALYZE=("Symata", "DataFrames")
 
 for pkg in ${PACKAGES_TO_ANALYZE[@]}
 do
@@ -11,9 +13,6 @@ done
 # - "Documenter"
 # - "Genie"
 # - "Plots"
-
-
-
 # - "Gen"
 # - "DifferentialEquations"
 # - "Knet"
