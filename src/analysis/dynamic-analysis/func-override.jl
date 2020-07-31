@@ -42,19 +42,53 @@ FuncMetadata(funcSpecificData;
 
 # Represents the information being analyzed when running packages
 mutable struct OverrideInfo
+    identifier :: String
+    stackFramePredicate :: Function
     evalInfo :: FuncMetadata{EvalInfo}
     invokeLatestInfo :: FuncMetadata{InvokeLatestInfo}
 end
-
-# Initialize empty overrideInfo
-overrideInfo = OverrideInfo(FuncMetadata(EvalInfo(Dict());
-                                initialTrace=Dict{StackTraces.StackFrame,StackTraceInfo{AstInfo}}()),
-                            FuncMetadata(InvokeLatestInfo(Dict());
-                                initialTrace=Dict{StackTraces.StackFrame,StackTraceInfo{FunctionInfo}}()))
+# Initializes a base representation of override information
+OverrideInfo(identifier :: String, functionDataFilter :: Function) =
+    OverrideInfo(identifier, functionDataFilter,
+        FuncMetadata(EvalInfo(Dict());
+            initialTrace=Dict{StackTraces.StackFrame,StackTraceInfo{AstInfo}}()),
+        FuncMetadata(InvokeLatestInfo(Dict());
+            initialTrace=Dict{StackTraces.StackFrame,StackTraceInfo{FunctionInfo}}())
+    )
 
 #######################
 # Function Override
 #######################
+
+# All file names in the base julia language source code
+INTERNAL_LIB_FILES = readlines("$(ENV["DYNAMIC_ANALYSIS_DIR"])/internal-lib-filenames.txt")
+INTERNAL_LIB_KW = ["GenericIOBuffer", "__init__()"]
+
+# ormap: retruns true is there exits an item for which the predicate is true
+ormap(predicate, iterator) :: Bool =
+    foldr((item, hastrue) -> predicate(item) || hastrue, iterator; init=false)
+
+# Determines if given stack frame is from internal julia library code
+function isInternalLibCode(stackFrame)
+    frameInFile = (filename) -> occursin(filename, string(stackFrame.file))
+    frameHasKw = (keyword) -> occursin(keyword, string(stackFrame.linfo))
+    ormap(frameInFile, INTERNAL_LIB_FILES) || ormap(frameHasKw, INTERNAL_LIB_KW)
+end
+
+# Determines if given stack frame is from package source code
+function isSourceCode(stackFrame)
+    false
+end
+
+# Determines if given stack frame is from external library code
+isExternalLibCode(stackFrame) = !(isSourceCode(stackFrame) || isInternalLibCode(stackFrame))
+
+# Initialize empty dataCollection
+overrideCollection = [
+    OverrideInfo("source", isSourceCode),
+    OverrideInfo("internal-lib", isInternalLibCode),
+    OverrideInfo("external-lib", isExternalLibCode)
+]
 
 # Adds one to the value of the key, creates keys with value of 1 if it does not already exist
 updateDictCount(dict :: Dict{T, Count}, key :: T) where {T} = dict[key] = get!(dict, key, 0) + 1
@@ -89,14 +123,17 @@ end
 
 # Updates the information for a new call to a function being analyzed
 function updateFuncMetadata(metadata :: FuncMetadata, stackFrameIndex :: Count, updateFuncSpecificData :: Function;
+        stackFramePredicate=((frame) -> true) :: Function,
         auxTuple=((() -> nothing), ((aux) -> nothing)) :: Tuple{Function, Function})
-    (defaultTraceAuxillary, updateTraceAuxillary) = auxTuple
-    # Update stack traces
-    updateStackTraces(metadata.stackTraces, stackFrameIndex + 1, defaultTraceAuxillary, updateTraceAuxillary)
-    # Update call counter
-    metadata.callCount += 1
-    # Update function specific data
-    updateFuncSpecificData(metadata.funcSpecificData)
+    if stackFramePredicate(getindex(stacktrace(), stackFrameIndex + 1))
+        (defaultTraceAuxillary, updateTraceAuxillary) = auxTuple
+        # Update stack traces
+        updateStackTraces(metadata.stackTraces, stackFrameIndex + 1, defaultTraceAuxillary, updateTraceAuxillary)
+        # Update call counter
+        metadata.callCount += 1
+        # Update function specific data
+        updateFuncSpecificData(metadata.funcSpecificData)
+    end
 end
 
 # Overrides eval to store metadata about calls to the function
@@ -104,9 +141,12 @@ function Core.eval(m::Module, @nospecialize(e))
     updateEvalInfo(evalInfo :: EvalInfo) = updateAstInfo(evalInfo.astHeads, e)
     updateTraceAuxillary(astHeads :: AstInfo) = updateAstInfo(astHeads, e)
     frameToGet = 3
-    updateFuncMetadata(overrideInfo.evalInfo, frameToGet,
-        updateEvalInfo; auxTuple=((() -> Dict{Symbol,Count}()), updateTraceAuxillary))
-    storeOverrideInfo()
+    for overrideInfo = overrideCollection
+        updateFuncMetadata(overrideInfo.evalInfo, frameToGet,
+            updateEvalInfo; stackFramePredicate=overrideInfo.stackFramePredicate,
+            auxTuple=((() -> Dict{Symbol,Count}()), updateTraceAuxillary))
+        storeOverrideInfo(overrideInfo)
+    end
 
     # Original eval code
     ccall(:jl_toplevel_eval_in, Any, (Any, Any), m, e)
@@ -114,14 +154,16 @@ end
 
 # Overrides invokelatest to store metadata about calls to the function
 function Base.invokelatest(@nospecialize(f), @nospecialize args...; kwargs...)
-    function updateInvokeLatestInfo(invokeLatestInfo :: InvokeLatestInfo)
-        updateDictCount(invokeLatestInfo.funcNames, string(f))
-    end
+    updateInvokeLatestInfo(invokeLatestInfo :: InvokeLatestInfo) = updateDictCount(invokeLatestInfo.funcNames, string(f))
     updateTraceAuxillary(funcNames :: FunctionInfo) = updateDictCount(funcNames, string(f))
     frameToGet = 4
-    updateFuncMetadata(overrideInfo.invokeLatestInfo, frameToGet,
-        updateInvokeLatestInfo; auxTuple=((() -> Dict{String,Count}()), updateTraceAuxillary))
-    storeOverrideInfo()
+    for overrideInfo = overrideCollection
+        updateFuncMetadata(overrideInfo.invokeLatestInfo, frameToGet,
+            updateInvokeLatestInfo; stackFramePredicate=overrideInfo.stackFramePredicate,
+            auxTuple=((() -> Dict{String,Count}()), updateTraceAuxillary))
+        storeOverrideInfo(overrideInfo)
+    end
+
 
     # Original invokelatest code
     if isempty(kwargs)
@@ -141,8 +183,11 @@ Pkg.add("JSON")
 using JSON
 
 # Store the overrideInfo as a JSON file
-function storeOverrideInfo() :: Nothing
-    OUTPUT_FILE = "$(ENV["DYNAMIC_ANALYSIS_DIR"])/package-data/$(ENV["DYNAMIC_ANALYSIS_PACKAGE_NAME"]).json"
+function storeOverrideInfo(overrideInfo :: OverrideInfo) :: Nothing
+    try
+        mkdir("$(ENV["DYNAMIC_ANALYSIS_DIR"])/package-data/$(ENV["DYNAMIC_ANALYSIS_PACKAGE_NAME"])")
+    catch e end
+    OUTPUT_FILE = "$(ENV["DYNAMIC_ANALYSIS_DIR"])/package-data/$(ENV["DYNAMIC_ANALYSIS_PACKAGE_NAME"])/$(overrideInfo.identifier).json"
     fd = open(OUTPUT_FILE, "w+")
     INDENT_SIZE = 2
     JSON.print(fd, overrideInfoToJson(overrideInfo), INDENT_SIZE)
