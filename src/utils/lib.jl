@@ -52,3 +52,19 @@ function gitclone(source :: String, destination :: String)
     cd(cloneEachRepo, destination)
     (cloned, length(repoLinks))
 end
+
+###################################################
+# Parsing Julia Files
+###################################################
+
+# https://discourse.julialang.org/t/parsing-a-julia-file/32622
+#=
+parsefile(file) = parse(join(["quote", readstring(file), "end"], ";"))
+
+parsecode(code::String)::Vector =
+    # https://discourse.julialang.org/t/parsing-a-julia-file/32622
+    filter(x->!(x isa LineNumberNode),
+           Meta.parse(join(["quote", code, "end"], ";")).args[1].args)
+=#
+parseJuliaFile(filePath :: String) =
+    Meta.parse(join(["quote", read(filePath, String), "end"], ";"))
