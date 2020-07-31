@@ -1,3 +1,5 @@
+include("C:\\Users\\gelin\\Documents\\computer-science\\research\\julia\\juliette-wa\\src\\jl-transpiler\\auxiliary\\utils.jl")
+
 #######################################
 # Function Override Data Structures
 #######################################
@@ -62,23 +64,25 @@ OverrideInfo(identifier :: String, functionDataFilter :: Function) =
 
 # All file names in the base julia language source code
 INTERNAL_LIB_FILES = readlines("$(ENV["DYNAMIC_ANALYSIS_DIR"])/internal-lib-filenames.txt")
+# All keywords associated with the base julia language source code
 INTERNAL_LIB_KW = ["GenericIOBuffer", "__init__()"]
+# All file names in the base julia language source code
+SOURCE_FILES = readlines("$(ENV["DYNAMIC_ANALYSIS_DIR"])/source-filenames.txt")
+# All keywords associated with the base julia language source code
+SOURCE_KW = []
 
-# ormap: retruns true is there exits an item for which the predicate is true
-ormap(predicate, iterator) :: Bool =
-    foldr((item, hastrue) -> predicate(item) || hastrue, iterator; init=false)
-
-# Determines if given stack frame is from internal julia library code
-function isInternalLibCode(stackFrame)
+# Determines if given stack frame is from the given code base
+function isInCode(stackFrame, codeFilenames, codeKw)
     frameInFile = (filename) -> occursin(filename, string(stackFrame.file))
     frameHasKw = (keyword) -> occursin(keyword, string(stackFrame.linfo))
-    ormap(frameInFile, INTERNAL_LIB_FILES) || ormap(frameHasKw, INTERNAL_LIB_KW)
+    ormap(frameInFile, codeFilenames) || ormap(frameHasKw, codeKw)
 end
 
 # Determines if given stack frame is from package source code
-function isSourceCode(stackFrame)
-    false
-end
+isSourceCode(stackFrame) = isInCode(stackFrame, SOURCE_FILES, SOURCE_KW)
+
+# Determines if given stack frame is from internal julia library code
+isInternalLibCode(stackFrame) = !isSourceCode(stackFrame) && isInCode(stackFrame, INTERNAL_LIB_FILES, INTERNAL_LIB_KW)
 
 # Determines if given stack frame is from external library code
 isExternalLibCode(stackFrame) = !(isSourceCode(stackFrame) || isInternalLibCode(stackFrame))
