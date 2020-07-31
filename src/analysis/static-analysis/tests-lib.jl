@@ -38,3 +38,21 @@ end
     # from Genie.jl (reduced src/renderers/Html.jl)
     @test countEval(parseJuliaFile("test/test-4.jl")) == 9
 end
+
+@testset "argDescr" begin
+    @test argDescr(5) == :value
+    @test argDescr(:(const F = 1)) == :const
+    @test argDescr(:(f() = 0)) == :function
+    @test argDescr(:(x = 666)) == :(=)
+    @test argDescr(:(eval(:( f() = 0 ))).args[2]) == :function
+end
+
+@testset "getEvalInfo" begin
+    @test getEvalInfo(:(eval(:( f() = 0 )))) == EvalCallInfo(:function)
+    @test getEvalInfo(:(eval(:( y = 1 )))) == EvalCallInfo(:(=))
+    @test getEvalInfo(:(eval())) == EvalCallInfo(:nothing)
+    @test getEvalInfo(:(eval(3))) == EvalCallInfo(:value)
+    @test getEvalInfo(:(Core.eval(Main, 3))) == EvalCallInfo(:value)
+    @test getEvalInfo(:(@eval y = 1)) == EvalCallInfo(:(=))
+    @test getEvalInfo(:(@eval(Main, y = 1))) == EvalCallInfo(:(=))
+end

@@ -81,3 +81,4 @@ Julia packages (`import Pkg; Pkg.add("<pkgname>")`):
 
 * `ArgParse`
 * `JSON`
+* `ImmutableList`
