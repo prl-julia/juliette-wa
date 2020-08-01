@@ -735,8 +735,8 @@ TensorOperations.jl: {ev: 1, il: 0}
 Interesting packages: 66/99
 Super Interesting packages: 59/99
 
-Eval func and invokelatest: 11
-["CUDAnative.jl", "Documenter.jl", "Genie.jl", "Plots.jl", "IJulia.jl", "Weave.jl", "PyCall.jl", "Pluto.jl", "BenchmarkTools.jl", "Literate.jl", "Revise.jl"]
+Eval func and invokelatest: 40
+["CUDAnative.jl", "Documenter.jl", "Plots.jl", "IJulia.jl", "PyCall.jl", "BenchmarkTools.jl", "Literate.jl", "CuArrays.jl", "Grassmann.jl", "Unitful.jl", "Knet.jl", "TensorFlow.jl", "ForwardDiff.jl", "Oceananigans.jl", "ApproxFun.jl", "Cxx.jl", "ModelingToolkit.jl", "DSGE.jl", "PyPlot.jl", "Zygote.jl", "HDF5.jl", "Measurements.jl", "Turing.jl", "LoopVectorization.jl", "ScikitLearn.jl", "JuMP.jl", "Mamba.jl", "Flux.jl", "Distances.jl", "Distributions.jl", "Cassette.jl", "LightGraphs.jl", "PlotlyJS.jl", "QuantEcon.jl", "StatsBase.jl", "Traceur.jl", "DataStructures.jl", "DrWatson.jl", "GR.jl", "Interpolations.jl"]
 
 Total Stat:
 * macro => 2

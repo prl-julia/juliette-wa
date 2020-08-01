@@ -49,6 +49,11 @@ maybeDefineFunction(stat :: Stat) =
         keys(stat.evalArgStat),
         [:function, :macro, :block,])
     ) > 0
+maybeCallFunction(stat :: Stat) =
+    length(intersect(
+        keys(stat.evalArgStat),
+        [:call, :macrocall, :block,])
+    ) > 0
 
 println("# Ok folders: $(goodPkgsCount)\n")
 
@@ -67,7 +72,8 @@ for pkgInfo in goodPkgs
         global totalStat += pkgInfo.pkgStat
         if superInteresting(pkgInfo.pkgStat)
             global superInterestingPkgsCount += 1
-            if pkgInfo.pkgStat.invokelatest > 0
+            if maybeDefineFunction(pkgInfo.pkgStat) &&
+               (maybeCallFunction(pkgInfo.pkgStat) || pkgInfo.pkgStat.invokelatest > 0)
                 global evalFunAndIL += 1
                 push!(superInterestingPkgs, pkgInfo.pkgName)
             end

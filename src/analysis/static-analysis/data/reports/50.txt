@@ -410,8 +410,8 @@ Optim.jl: {ev: 1, il: 0}
 Interesting packages: 33/49
 Super Interesting packages: 31/49
 
-Eval func and invokelatest: 9
-["CUDAnative.jl", "Documenter.jl", "Genie.jl", "Plots.jl", "IJulia.jl", "Weave.jl", "PyCall.jl", "Pluto.jl", "Revise.jl"]
+Eval func and invokelatest: 20
+["CUDAnative.jl", "Documenter.jl", "Plots.jl", "IJulia.jl", "PyCall.jl", "Knet.jl", "TensorFlow.jl", "ForwardDiff.jl", "Cxx.jl", "DSGE.jl", "PyPlot.jl", "Zygote.jl", "Turing.jl", "ScikitLearn.jl", "JuMP.jl", "Flux.jl", "Distributions.jl", "LightGraphs.jl", "QuantEcon.jl", "DataStructures.jl"]
 
 Total Stat:
 * macro => 1
