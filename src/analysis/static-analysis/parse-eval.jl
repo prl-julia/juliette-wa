@@ -6,21 +6,23 @@
 # 
 #**********************************************************************
 
-using ImmutableList
-
+# other includes, e.g., && operator in Genie
 const EVAL_ARG_DESCRIPTIONS = [
-        :value, :symbol, :block, :curly,
-        :export, :using,
+        :value, :symbol, :block, :curly, :let, :., :ref,
+        :struct, :module,
+        :export, :import, :using,
         :const, :(=),
-        :function, :call,
+        :function, :macro, :call, :macrocall,
+        :($),
         :nothing, :other, :error
     ]
 
-struct EvalCallInfo
-    astHead :: Symbol
-end
+#struct EvalCallInfo
+#    astHead :: Symbol
+#end
+EvalCallInfo = Symbol
 
-EvalCallsSummary = List{EvalCallInfo}
+EvalCallsSummary = Vector{EvalCallInfo}
 
 const SYM_EVAL   = :eval
 const SYM_EVALM  = Symbol("@eval")
@@ -63,7 +65,7 @@ isCall(e :: Any)  = false
 # Maps [arg] (argument of eval) to a symbol describing its kind
 # (one of EVAL_ARG_DESCRIPTIONS)
 argDescrUnsafe(arg :: Nothing) = :nothing
-argDescrUnsafe(arg :: QuoteNode) = evalArgDescription(arg.value)
+argDescrUnsafe(arg :: QuoteNode) = argDescrUnsafe(arg.value)
 argDescrUnsafe(arg :: Symbol) = :symbol
 argDescrUnsafe(arg :: Expr) =
     if arg.head == :quote
@@ -71,6 +73,13 @@ argDescrUnsafe(arg :: Expr) =
     # it's either function or assignment
     elseif arg.head == :(=)
         isCall(arg.args[1]) ? :function : :(=)
+    # anonymous function
+    elseif arg.head == :(->)
+        :function
+    # sometimes block has just one thing in it
+    elseif arg.head == :block
+        args = filter(e -> !isa(e, LineNumberNode), arg.args)
+        length(args) == 1 ? argDescrUnsafe(args[1]) : :block
     elseif in(arg.head, EVAL_ARG_DESCRIPTIONS)
         arg.head
     else
@@ -86,9 +95,11 @@ argDescr(arg :: Any) = try argDescrUnsafe(arg) catch ; :error end
 getEvalInfo(e :: Expr) :: EvalCallInfo = 
     EvalCallInfo(length(e.args) > 1 ? argDescr(e.args[end]) : :nothing)
 
-#=
 gatherEvalInfo(e :: Expr) :: EvalCallsSummary =
     isEvalCall(e) ?
-        1 : #(@show e ; 1) :
-        sum(map(countEval, e.args))
-=#
+        [getEvalInfo(e)] :
+        foldl(
+            (acc, e) -> vcat(acc, gatherEvalInfo(e)), e.args;
+            init=EvalCallInfo[]
+        )
+gatherEvalInfo(e) :: EvalCallsSummary = EvalCallInfo[]

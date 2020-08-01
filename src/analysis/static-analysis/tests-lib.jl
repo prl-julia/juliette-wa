@@ -56,3 +56,9 @@ end
     @test getEvalInfo(:(@eval y = 1)) == EvalCallInfo(:(=))
     @test getEvalInfo(:(@eval(Main, y = 1))) == EvalCallInfo(:(=))
 end
+
+@testset "gatherEvalInfo" begin
+    @test gatherEvalInfo(:(eval())) == [EvalCallInfo(:nothing)]
+    @test gatherEvalInfo(:((eval(); @eval 1))) ==
+            [EvalCallInfo(:nothing), EvalCallInfo(:value)]
+end

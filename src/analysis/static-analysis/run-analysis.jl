@@ -39,15 +39,56 @@ for pkgInfo in badPkgs
 end
 println(SEP)
 
+superInteresting(stat :: Stat) =
+    length(intersect(
+        keys(stat.evalArgStat),
+        [:function, :macro, :call, :macrocall, :block, :module,])
+    ) > 0
+maybeDefineFunction(stat :: Stat) =
+    length(intersect(
+        keys(stat.evalArgStat),
+        [:function, :macro, :block,])
+    ) > 0
+
 println("# Ok folders: $(goodPkgsCount)\n")
+
 interestingPkgsCount = 0
+superInterestingPkgsCount = 0
+totalStat = Stat()
+evalFunAndIL = 0
+superInterestingPkgs = String[]
+
 for pkgInfo in goodPkgs
     if (pkgInfo.interestingFiles > 0)
         println("$(pkgInfo.pkgName): $(pkgInfo.pkgStat)")
         println("# interesting files: $(pkgInfo.interestingFiles)/$(pkgInfo.totalFiles)")
         global interestingPkgsCount += 1
         println(pkgInfo.filesStat)
+        global totalStat += pkgInfo.pkgStat
+        if superInteresting(pkgInfo.pkgStat)
+            global superInterestingPkgsCount += 1
+            if pkgInfo.pkgStat.invokelatest > 0
+                global evalFunAndIL += 1
+                push!(superInterestingPkgs, pkgInfo.pkgName)
+            end
+        end
+        #=
+        if pkgInfo.pkgStat.invokelatest > 0 &&
+                maybeDefineFunction(pkgInfo.pkgStat)
+                #in(:function, keys(pkgInfo.pkgStat.evalArgStat))
+            global evalFunAndIL += 1
+        end
+        =#
     end
     #println()
 end
 println("Interesting packages: $(interestingPkgsCount)/$(goodPkgsCount)")
+println("Super Interesting packages: $(superInterestingPkgsCount)/$(goodPkgsCount)")
+println()
+println("Eval func and invokelatest: $(evalFunAndIL)")
+println(superInterestingPkgs)
+println()
+println("Total Stat:")
+for info in totalStat.evalArgStat
+    println("* $(info[1]) => $(info[2])")
+end

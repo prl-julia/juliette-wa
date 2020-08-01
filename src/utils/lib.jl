@@ -66,5 +66,9 @@ parsecode(code::String)::Vector =
     filter(x->!(x isa LineNumberNode),
            Meta.parse(join(["quote", code, "end"], ";")).args[1].args)
 =#
+
+parseJuliaCode(text :: String) =
+    Meta.parse(join(["quote", text, "end"], ";"))
+
 parseJuliaFile(filePath :: String) =
-    Meta.parse(join(["quote", read(filePath, String), "end"], ";"))
+    parseJuliaCode(read(filePath, String))

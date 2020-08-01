@@ -16,6 +16,10 @@ include("../../utils/lib.jl")
 if length(ARGS) == 0
     exitErrWithMsg("1 argument is expected -- number of packages")
 end
+doCloning = true
+if length(ARGS) > 1
+    global doCloning = false
+end
 
 pkgsNum = 0
 try
@@ -34,11 +38,14 @@ for d in ["data", "data/pkgs-list", "data/pkgs", "data/reports"]
     isdir(d) || mkdir(d)
 end
 
-if !isfile(pkgsListFile) || length(ARGS) > 1
+if !isfile(pkgsListFile) #|| length(ARGS) > 1
     println("Packages list generation\n$(SEP)")
     run(`julia gen-pkgs-list.jl $(pkgsNum) -o $(pkgsListFile)`)
 end
-println("\nCloning\n$(SEP)")
-run(`julia ../../utils/clone.jl -s $(pkgsListFile) -d $(pkgsDir)`)
-println("\nAnalysis\n$(SEP)")
+if doCloning
+    println("\nCloning\n$(SEP)")
+    run(`julia ../../utils/clone.jl -s $(pkgsListFile) -d $(pkgsDir)`)
+    println()
+end
+println("Analysis\n$(SEP)")
 run(pipeline(`julia run-analysis.jl $(pkgsDir)`, stdout=reportFile))
