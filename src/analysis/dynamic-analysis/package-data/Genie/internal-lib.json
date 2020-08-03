@@ -1,0 +1,244 @@
+{
+  "eval_info": {
+    "call_count": 98,
+    "stack_traces": [
+      {
+        "count": 43,
+        "last_call": "top-level scope at SafeTestsets.jl:23",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 43,
+              "ast_head": "module"
+            }
+          ]
+        }
+      },
+      {
+        "count": 17,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:331",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 17,
+              "ast_head": "tuple"
+            }
+          ]
+        }
+      },
+      {
+        "count": 17,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:360",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 17,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 16,
+        "last_call": "top-level scope at SafeTestsets.jl:23",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 16,
+              "ast_head": "module"
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "eval at Base.jl:39 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "const"
+            },
+            {
+              "count": 1,
+              "ast_head": "using"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:330",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "where"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 59,
+          "ast_head": "module"
+        },
+        {
+          "count": 17,
+          "ast_head": "tuple"
+        },
+        {
+          "count": 17,
+          "ast_head": "function"
+        },
+        {
+          "count": 2,
+          "ast_head": "const"
+        },
+        {
+          "count": 2,
+          "ast_head": "where"
+        },
+        {
+          "count": 1,
+          "ast_head": "using"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 102,
+    "stack_traces": [
+      {
+        "count": 82,
+        "last_call": "include(::Function, ::Module, ::String) at Base.jl:372",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#103",
+              "count": 82
+            }
+          ]
+        }
+      },
+      {
+        "count": 11,
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "watch_package",
+              "count": 11
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "include(::String) at client.jl:451",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#103",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "show_backtrace(::Base.TTY, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "update_stacktrace_lineno!",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:27",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32-cxx11.jl:41",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:72",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "require(::Base.PkgId) at loading.jl:931",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "watch_package",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32.jl:56",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "#103",
+          "count": 84
+        },
+        {
+          "function_name": "watch_package",
+          "count": 12
+        },
+        {
+          "function_name": "do_artifact_str",
+          "count": 4
+        },
+        {
+          "function_name": "update_stacktrace_lineno!",
+          "count": 2
+        }
+      ]
+    }
+  }
+}

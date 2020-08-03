@@ -1,0 +1,34 @@
+{
+  "eval_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "ast_heads": []
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 1,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "show_backtrace(::IOContext{Base.TTY}, ::Array{Base.StackTraces.StackFrame,1}) at errorshow.jl:655",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "identity",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "identity",
+          "count": 1
+        }
+      ]
+    }
+  }
+}
