@@ -1,0 +1,64 @@
+{
+  "eval_info": {
+    "call_count": 1,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "top-level scope at setup.jl:228",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "block"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 1,
+          "ast_head": "block"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 2,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "(::CUDA.var\"#664#670\")() at bindeps.jl:242",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "macro expansion at Artifacts.jl:1068 [inlined]",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "do_artifact_str",
+          "count": 2
+        }
+      ]
+    }
+  }
+}

@@ -1,322 +1,10 @@
 {
   "eval_info": {
-    "call_count": 82,
+    "call_count": 44,
     "stack_traces": [
       {
-        "count": 15,
-        "last_call": "loadfromstring!(::MathOptInterface.Utilities.Model{Float64}, ::String) at parser.jl:228",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 15,
-              "ast_head": "call"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at constraint.jl:457 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at constraint.jl:287 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at constraint.jl:291 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "test_variables_constrained_on_creation(::Type{T} where T) at variable.jl:478",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at macros.jl:257 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at constraint.jl:289 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at constraint.jl:461 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at macros.jl:363 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at constraint.jl:283 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at constraint.jl:285 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at constraint.jl:462 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at constraint.jl:455 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at constraint.jl:458 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at constraint.jl:460 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "test_variables_constrained_on_creation(::Type{T} where T) at variable.jl:474",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "test_variables_constrained_on_creation(::Type{T} where T) at variable.jl:476",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at constraint.jl:88 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "block"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "test_variable_interval(::Type{T} where T) at variable.jl:135",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at constraint.jl:456 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at constraint.jl:459 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "test_variable_interval(::Type{T} where T) at variable.jl:136",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at macros.jl:191 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at constraint.jl:395 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "macro expansion at constraint.jl:397 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "test_variables_constrained_on_creation(::Type{T} where T) at variable.jl:480",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
         "count": 1,
-        "last_call": "top-level scope at nlp.jl:148",
+        "last_call": "top-level scope at codegen.jl:262",
         "auxillary": {
           "ast_heads": [
             {
@@ -328,7 +16,7 @@
       },
       {
         "count": 1,
-        "last_call": "top-level scope at nlp.jl:154",
+        "last_call": "top-level scope at codegen.jl:284",
         "auxillary": {
           "ast_heads": [
             {
@@ -340,7 +28,19 @@
       },
       {
         "count": 1,
-        "last_call": "top-level scope at macros.jl:563",
+        "last_call": "top-level scope at codegen.jl:285",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:215",
         "auxillary": {
           "ast_heads": [
             {
@@ -352,7 +52,91 @@
       },
       {
         "count": 1,
-        "last_call": "top-level scope at macros.jl:393",
+        "last_call": "top-level scope at codegen.jl:122",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:56",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:216",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:304",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:8",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:319",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:150",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:204",
         "auxillary": {
           "ast_heads": [
             {
@@ -364,7 +148,43 @@
       },
       {
         "count": 1,
-        "last_call": "top-level scope at macros.jl:405",
+        "last_call": "top-level scope at codegen.jl:384",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:117",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "struct"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:193",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at util.jl:72",
         "auxillary": {
           "ast_heads": [
             {
@@ -376,19 +196,79 @@
       },
       {
         "count": 1,
-        "last_call": "@static(::LineNumberNode, ::Module, ::Any) at osutils.jl:19",
+        "last_call": "top-level scope at codegen.jl:421",
         "auxillary": {
           "ast_heads": [
             {
               "count": 1,
-              "ast_head": "call"
+              "ast_head": "function"
             }
           ]
         }
       },
       {
         "count": 1,
-        "last_call": "top-level scope at macros.jl:585",
+        "last_call": "top-level scope at codegen.jl:25",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:194",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:176",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:253",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:430",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:283",
         "auxillary": {
           "ast_heads": [
             {
@@ -400,7 +280,31 @@
       },
       {
         "count": 1,
-        "last_call": "top-level scope at macros.jl:562",
+        "last_call": "top-level scope at codegen.jl:323",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:334",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:385",
         "auxillary": {
           "ast_heads": [
             {
@@ -412,7 +316,7 @@
       },
       {
         "count": 1,
-        "last_call": "top-level scope at macros.jl:561",
+        "last_call": "top-level scope at util.jl:67",
         "auxillary": {
           "ast_heads": [
             {
@@ -424,7 +328,7 @@
       },
       {
         "count": 1,
-        "last_call": "top-level scope at macros.jl:601",
+        "last_call": "top-level scope at codegen.jl:317",
         "auxillary": {
           "ast_heads": [
             {
@@ -436,7 +340,151 @@
       },
       {
         "count": 1,
-        "last_call": "top-level scope at macros.jl:560",
+        "last_call": "top-level scope at codegen.jl:128",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:342",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:151",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:343",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "="
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:398",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:364",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:129",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "="
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:71",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "struct"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:205",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:9",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:441",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:49",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at codegen.jl:48",
         "auxillary": {
           "ast_heads": [
             {
@@ -448,72 +496,36 @@
       },
       {
         "count": 1,
-        "last_call": "top-level scope at nlp.jl:160",
+        "last_call": "top-level scope at codegen.jl:38",
         "auxillary": {
           "ast_heads": [
             {
               "count": 1,
-              "ast_head": "macrocall"
+              "ast_head": "function"
             }
           ]
         }
       },
       {
         "count": 1,
-        "last_call": "top-level scope at macros.jl:593",
+        "last_call": "top-level scope at codegen.jl:69",
         "auxillary": {
           "ast_heads": [
             {
               "count": 1,
-              "ast_head": "macrocall"
+              "ast_head": "function"
             }
           ]
         }
       },
       {
         "count": 1,
-        "last_call": "top-level scope at macros.jl:609",
+        "last_call": "top-level scope at codegen.jl:263",
         "auxillary": {
           "ast_heads": [
             {
               "count": 1,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "initmeta(::Module) at Docs.jl:79",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 1,
-              "ast_head": "const"
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "top-level scope at macros.jl:605",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 1,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "top-level scope at macros.jl:597",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 1,
-              "ast_head": "macrocall"
+              "ast_head": "function"
             }
           ]
         }
@@ -522,58 +534,45 @@
     "func_specific_data": {
       "ast_heads": [
         {
-          "count": 63,
+          "count": 30,
+          "ast_head": "function"
+        },
+        {
+          "count": 10,
           "ast_head": "macrocall"
         },
         {
-          "count": 16,
-          "ast_head": "call"
+          "count": 2,
+          "ast_head": "struct"
         },
         {
           "count": 2,
-          "ast_head": "block"
-        },
-        {
-          "count": 1,
-          "ast_head": "const"
+          "ast_head": "="
         }
       ]
     }
   },
   "invokelatest_info": {
-    "call_count": 5,
+    "call_count": 33,
     "stack_traces": [
       {
-        "count": 1,
-        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:28",
-        "auxillary": {}
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-w64-mingw32.jl:27",
-        "auxillary": {}
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-w64-mingw32.jl:28",
-        "auxillary": {}
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:69",
-        "auxillary": {}
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-w64-mingw32.jl:56",
-        "auxillary": {}
+        "count": 33,
+        "last_call": "show_backtrace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "identity",
+              "count": 33
+            }
+          ]
+        }
       }
     ],
     "func_specific_data": {
       "function_names": [
         {
-          "function_name": "do_artifact_str",
-          "count": 5
+          "function_name": "identity",
+          "count": 33
         }
       ]
     }

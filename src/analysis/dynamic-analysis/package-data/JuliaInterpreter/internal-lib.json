@@ -1,0 +1,108 @@
+{
+  "eval_info": {
+    "call_count": 8,
+    "stack_traces": [
+      {
+        "count": 4,
+        "last_call": "eval(::Expr) at client.jl:467",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "="
+            },
+            {
+              "count": 1,
+              "ast_head": "function"
+            },
+            {
+              "count": 1,
+              "ast_head": "macrocall"
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "initmeta(::Module) at Docs.jl:79",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 3,
+              "ast_head": "const"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at runtests.jl:10",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 3,
+          "ast_head": "const"
+        },
+        {
+          "count": 2,
+          "ast_head": "function"
+        },
+        {
+          "count": 2,
+          "ast_head": "="
+        },
+        {
+          "count": 1,
+          "ast_head": "macrocall"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 2,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:69",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "do_artifact_str",
+          "count": 2
+        }
+      ]
+    }
+  }
+}

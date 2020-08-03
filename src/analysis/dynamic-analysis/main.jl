@@ -1,5 +1,6 @@
 include("../../jl-transpiler/auxiliary/utils.jl")
 
+# Gets the directory path of the given package
 function getPkgSrcDir(pkg :: String)
     for (root, dirs, files) in walkdir("../../../../../../../../.julia/packages/$(pkg)")
         srcDirIndex = findfirst(isequal("src"), dirs)
@@ -18,13 +19,12 @@ function collectSourceFilenames(pkg :: String)
     close(io)
 end
 
-
 # Test package with overriden functions
 function analyzePkg(pkg :: String)
-    collectSourceFilenames(pkg)
     ENV["DYNAMIC_ANALYSIS_PACKAGE_NAME"] = pkg
     #Pkg.activate("package-envs/$(pkg)")
     Pkg.add(pkg)
+    collectSourceFilenames(pkg)
     Pkg.test(pkg)
 end
 

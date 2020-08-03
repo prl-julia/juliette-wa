@@ -1,6 +1,6 @@
 {
   "eval_info": {
-    "call_count": 376,
+    "call_count": 370,
     "stack_traces": [
       {
         "count": 350,
@@ -9,7 +9,7 @@
           "ast_heads": [
             {
               "count": 297,
-              "ast_head": "PrimitiveValue"
+              "ast_head": "Symbol"
             },
             {
               "count": 29,
@@ -36,7 +36,7 @@
       },
       {
         "count": 12,
-        "last_call": "init_sympy() at sympy.jl:859",
+        "last_call": "init_sympy() at sympy.jl:858",
         "auxillary": {
           "ast_heads": [
             {
@@ -59,49 +59,13 @@
         }
       },
       {
-        "count": 4,
-        "last_call": "eval at Formatting.jl:1 [inlined]",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 4,
-              "ast_head": "call"
-            }
-          ]
-        }
-      },
-      {
         "count": 3,
-        "last_call": "do_Compile(::Mxpr{:Compile}, ::Mxpr{:List}, ::Mxpr{:Power}) at symata_julia_interface.jl:297",
+        "last_call": "do_Compile(::Mxpr{:Compile}, ::Mxpr{:List}, ::Mxpr{:Power}) at symata_julia_interface.jl:295",
         "auxillary": {
           "ast_heads": [
             {
               "count": 3,
               "ast_head": "function"
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "eval(::Expr) at client.jl:467",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 1,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "generate_formatter(::String) at cformat.jl:18",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 1,
-              "ast_head": "->"
             }
           ]
         }
@@ -111,18 +75,18 @@
       "ast_heads": [
         {
           "count": 297,
-          "ast_head": "PrimitiveValue"
+          "ast_head": "Symbol"
         },
         {
-          "count": 45,
+          "count": 41,
           "ast_head": "call"
         },
         {
-          "count": 16,
+          "count": 15,
           "ast_head": "->"
         },
         {
-          "count": 7,
+          "count": 6,
           "ast_head": "macrocall"
         },
         {
@@ -145,138 +109,201 @@
     }
   },
   "invokelatest_info": {
-    "call_count": 251,
+    "call_count": 243,
     "stack_traces": [
       {
         "count": 112,
         "last_call": "do_GenHead(::Mxpr{Symata.GenHead}, ::Function) at apprules_core.jl:286",
-        "auxillary": {}
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#194",
+              "count": 100
+            },
+            {
+              "function_name": "#192",
+              "count": 4
+            },
+            {
+              "function_name": "#188",
+              "count": 2
+            },
+            {
+              "function_name": "#190",
+              "count": 2
+            },
+            {
+              "function_name": "#210",
+              "count": 1
+            },
+            {
+              "function_name": "#55",
+              "count": 1
+            },
+            {
+              "function_name": "#51",
+              "count": 1
+            },
+            {
+              "function_name": "#53",
+              "count": 1
+            }
+          ]
+        }
       },
       {
         "count": 103,
         "last_call": "invokelatest at sjcompat.jl:81 [inlined]",
-        "auxillary": {}
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#212",
+              "count": 99
+            },
+            {
+              "function_name": "#214",
+              "count": 4
+            }
+          ]
+        }
       },
       {
         "count": 23,
         "last_call": "do_Map(::Mxpr{:Map}, ::Function, ::Mxpr{:f}) at expressions.jl:199",
-        "auxillary": {}
-      },
-      {
-        "count": 4,
-        "last_call": "(::Formatting.var\"#1#4\")(::Rational{Int64}) at cformat.jl:19",
-        "auxillary": {}
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#208",
+              "count": 5
+            },
+            {
+              "function_name": "#198",
+              "count": 3
+            },
+            {
+              "function_name": "#200",
+              "count": 3
+            },
+            {
+              "function_name": "#204",
+              "count": 3
+            },
+            {
+              "function_name": "#202",
+              "count": 3
+            },
+            {
+              "function_name": "#196",
+              "count": 3
+            },
+            {
+              "function_name": "#206",
+              "count": 3
+            }
+          ]
+        }
       },
       {
         "count": 3,
         "last_call": "do_Map(::Mxpr{:Map}, ::Function, ::Array{Int64,1}) at expressions.jl:208",
-        "auxillary": {}
-      },
-      {
-        "count": 2,
-        "last_call": "show_backtrace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
-        "auxillary": {}
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#216",
+              "count": 3
+            }
+          ]
+        }
       },
       {
         "count": 2,
         "last_call": "do_Nest(::Mxpr{:Nest}, ::Function, ::Symbol, ::Int64) at lists.jl:163",
-        "auxillary": {}
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:28",
-        "auxillary": {}
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:69",
-        "auxillary": {}
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#212",
+              "count": 1
+            },
+            {
+              "function_name": "#214",
+              "count": 1
+            }
+          ]
+        }
       }
     ],
     "func_specific_data": {
       "function_names": [
         {
-          "function_name": "#215",
+          "function_name": "#194",
           "count": 100
         },
         {
-          "function_name": "#197",
+          "function_name": "#212",
           "count": 100
         },
         {
-          "function_name": "#211",
+          "function_name": "#208",
           "count": 5
         },
         {
-          "function_name": "#217",
+          "function_name": "#214",
           "count": 5
         },
         {
-          "function_name": "#11",
+          "function_name": "#192",
           "count": 4
         },
         {
-          "function_name": "#195",
-          "count": 4
-        },
-        {
-          "function_name": "#199",
+          "function_name": "#198",
           "count": 3
         },
         {
-          "function_name": "#205",
+          "function_name": "#206",
           "count": 3
         },
         {
-          "function_name": "#201",
+          "function_name": "#216",
           "count": 3
         },
         {
-          "function_name": "#209",
+          "function_name": "#200",
           "count": 3
         },
         {
-          "function_name": "#203",
+          "function_name": "#196",
           "count": 3
         },
         {
-          "function_name": "#207",
+          "function_name": "#202",
           "count": 3
         },
         {
-          "function_name": "#219",
+          "function_name": "#204",
           "count": 3
         },
         {
-          "function_name": "#191",
+          "function_name": "#188",
           "count": 2
         },
         {
-          "function_name": "#193",
+          "function_name": "#190",
           "count": 2
         },
         {
-          "function_name": "do_artifact_str",
-          "count": 2
-        },
-        {
-          "function_name": "identity",
-          "count": 2
-        },
-        {
-          "function_name": "#213",
+          "function_name": "#53",
           "count": 1
         },
         {
-          "function_name": "#37",
+          "function_name": "#210",
           "count": 1
         },
         {
-          "function_name": "#35",
+          "function_name": "#55",
           "count": 1
         },
         {
-          "function_name": "#33",
+          "function_name": "#51",
           "count": 1
         }
       ]

@@ -1,0 +1,16 @@
+{
+  "eval_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "ast_heads": []
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}
