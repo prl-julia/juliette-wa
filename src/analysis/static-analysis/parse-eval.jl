@@ -6,12 +6,23 @@
 # 
 #**********************************************************************
 
-using Test
+# other includes, e.g., && operator in Genie
+const EVAL_ARG_DESCRIPTIONS = [
+        :value, :symbol, :block, :curly, :let, :., :ref,
+        :struct, :module,
+        :export, :import, :using,
+        :const, :(=),
+        :function, :macro, :call, :macrocall,
+        :($),
+        :nothing, :other, :error
+    ]
 
-struct EvalCallInfo
-    isEval :: Bool
-    expr   :: Any
-end
+#struct EvalCallInfo
+#    astHead :: Symbol
+#end
+EvalCallInfo = Symbol
+
+EvalCallsSummary = Vector{EvalCallInfo}
 
 const SYM_EVAL   = :eval
 const SYM_EVALM  = Symbol("@eval")
@@ -40,12 +51,55 @@ isEvalCall(e :: Expr) =
     # @eval
     e.head == SYM_CALLM && isEvalMacroName(e.args[1])
 
-
 # Note. It does not go into quote, e.g. inner eval in
 #       eval(:(eval(...))) is ignored
-
 countEval(e :: Expr) :: UInt =
     isEvalCall(e) ?
         1 : #(@show e ; 1) :
         sum(map(countEval, e.args))
 countEval(e) :: UInt = 0
+
+isCall(e :: Expr) = e.head == :call
+isCall(e :: Any)  = false
+
+# Maps [arg] (argument of eval) to a symbol describing its kind
+# (one of EVAL_ARG_DESCRIPTIONS)
+argDescrUnsafe(arg :: Nothing) = :nothing
+argDescrUnsafe(arg :: QuoteNode) = argDescrUnsafe(arg.value)
+argDescrUnsafe(arg :: Symbol) = :symbol
+argDescrUnsafe(arg :: Expr) =
+    if arg.head == :quote
+        argDescrUnsafe(arg.args[1])
+    # it's either function or assignment
+    elseif arg.head == :(=)
+        isCall(arg.args[1]) ? :function : :(=)
+    # anonymous function
+    elseif arg.head == :(->)
+        :function
+    # sometimes block has just one thing in it
+    elseif arg.head == :block
+        args = filter(e -> !isa(e, LineNumberNode), arg.args)
+        length(args) == 1 ? argDescrUnsafe(args[1]) : :block
+    elseif in(arg.head, EVAL_ARG_DESCRIPTIONS)
+        arg.head
+    else
+        :other
+    end
+# if it's something like Int, consider it a value
+argDescrUnsafe(arg :: Any) = :value
+
+argDescr(arg :: Any) = try argDescrUnsafe(arg) catch ; :error end
+
+# Collects information about eval call [e]
+# assuming [e] IS an eval call
+getEvalInfo(e :: Expr) :: EvalCallInfo = 
+    EvalCallInfo(length(e.args) > 1 ? argDescr(e.args[end]) : :nothing)
+
+gatherEvalInfo(e :: Expr) :: EvalCallsSummary =
+    isEvalCall(e) ?
+        [getEvalInfo(e)] :
+        foldl(
+            (acc, e) -> vcat(acc, gatherEvalInfo(e)), e.args;
+            init=EvalCallInfo[]
+        )
+gatherEvalInfo(e) :: EvalCallsSummary = EvalCallInfo[]

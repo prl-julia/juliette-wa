@@ -34,12 +34,18 @@ const PATTERN_EVAL_MACRO = r"@eval "
 # Data Types
 #--------------------------------------------------
 
+EvalArgStat = Dict{EvalCallInfo, UInt}
+
 # Single file statistics
 struct Stat
     eval         :: UInt # number of calls to eval
     invokelatest :: UInt # number of calls to invokelatest
+    evalArgStat  :: EvalArgStat # stat of AST heads of evaled expressions
 end
-Stat() = Stat(0, 0)
+Stat() = Stat(0, 0, EvalArgStat())
+Stat(ev :: Int, il :: Int) = Stat(ev, il, EvalArgStat())
+
+FilesStat = Dict{String, Stat}
 
 # Single package statistics
 mutable struct PackageStat
@@ -48,23 +54,28 @@ mutable struct PackageStat
     totalFiles       :: UInt # number of source files
     failedFiles      :: UInt # number of files that failed to process
     interestingFiles :: UInt # number of files with eval/invokelatest
-    filesStat        :: Dict{String, Stat} # fileName => statistics
+    filesStat        :: FilesStat # fileName => statistics
     pkgStat          :: Stat # package summary statistics
 end
 # default constructor
 PackageStat(pkgName :: String, hasSrc :: Bool) = 
-    PackageStat(pkgName, hasSrc, 0, 0, 0, Dict{String, Stat}(), Stat())
+    PackageStat(pkgName, hasSrc, 0, 0, 0, FilesStat(), Stat())
 
 #--------------------------------------------------
 # Show
 #--------------------------------------------------
 
+#Base.show(io :: IO, evalInfo :: EvalCallInfo) = print(io, evalInfo.astHead)
+
 string10(x :: UInt) = string(x, base=10)
 
-Base.show(io :: IO, stat :: Stat) = print(io,
-    "{ev: $(string10(stat.eval)), il: $(string10(stat.invokelatest))}")
+Base.show(io :: IO, un :: UInt) = print(io, string10(un))
 
-function Base.show(io :: IO, stat :: Dict{String, Stat})
+Base.show(io :: IO, stat :: Stat) = print(io,
+    "{ev: $(stat.eval), il: $(stat.invokelatest)}\n" *
+    "[evalArgs: $(stat.evalArgStat)]")
+
+function Base.show(io :: IO, stat :: FilesStat)
     for info in stat
         println(io, "* $(info[1]) => $(info[2])")
     end
@@ -74,10 +85,13 @@ end
 # Stat Arithmetic
 #--------------------------------------------------
 
+Base.:+(x :: EvalArgStat, y :: EvalArgStat) = merge(+, x, y)
+
 Base.zero(::Type{Stat}) = Stat()
 
 Base.:+(x :: Stat, y :: Stat) =
-    Stat(x.eval + y.eval, x.invokelatest + y.invokelatest)
+    Stat(x.eval + y.eval, x.invokelatest + y.invokelatest,
+         x.evalArgStat + y.evalArgStat)
 
 ###################################################
 # Algorithms
@@ -105,12 +119,31 @@ interestFactor(stat :: Stat) :: UInt = let
         (hasEval || hasInvoke ? 1000+val : Z)
 end
 
-# Computes statistics for source code [text]
-computeStat(text :: String) :: Stat =
-    Stat(
-        count(PATTERN_EVAL, text) + count(PATTERN_EVAL_MACRO, text),
-        count(PATTERN_INVOKELATEST, text)
+function mkOccurDict(data :: Vector{T}) :: Dict{T, UInt} where T
+    foldl(
+        (dict, elem) -> 
+            (haskey(dict, elem) ? dict[elem] += 1 : dict[elem] = 1; dict),
+        data; init=Dict{T, UInt}()
     )
+end
+
+# Computes statistics for source code [text]
+function computeStat(text :: String) :: Stat
+    ev = count(PATTERN_EVAL, text) + count(PATTERN_EVAL_MACRO, text)
+    il = count(PATTERN_INVOKELATEST, text)
+    # get more details about eval if possible
+    if ev > 0
+        try
+            evalInfos = gatherEvalInfo(parseJuliaCode(text))
+            evArgStat = mkOccurDict(evalInfos)
+            Stat(sum((values(evArgStat))), il, evArgStat) # parsing is more precise
+        catch
+            Stat(ev, il)
+        end
+    else
+        Stat(ev, il)
+    end
+end
 
 #--------------------------------------------------
 # Single Package
