@@ -1,0 +1,76 @@
+{
+  "eval_info": {
+    "call_count": 1,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "__init__() at _module.jl:61",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "block"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 1,
+          "ast_head": "block"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 3,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "eventIteration!(::ModiaMath.Variables.SimulationModel, ::ModiaMath.DAE.SimulationState, ::Float64) at simulationState.jl:770",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "getModelResidues!",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "computeAndStoreResult!(::ModiaMath.Variables.SimulationModel, ::ModiaMath.DAE.SimulationState, ::Float64, ::Array{Float64,1}, ::Array{Float64,1}) at simulationState.jl:867",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "getModelResidues!",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "reinitialize!(::ModiaMath.Variables.SimulationModel, ::ModiaMath.DAE.SimulationState, ::Float64) at simulationState.jl:699",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "getModelResidues!",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "getModelResidues!",
+          "count": 3
+        }
+      ]
+    }
+  }
+}
