@@ -1,0 +1,256 @@
+{
+  "eval_info": {
+    "call_count": 473,
+    "stack_traces": [
+      {
+        "count": 287,
+        "last_call": "capture_output(::Expr, ::Module, ::Bool, ::Bool, ::Bool, ::Bool) at run.jl:243",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 128,
+              "ast_head": "call"
+            },
+            {
+              "count": 73,
+              "ast_head": "="
+            },
+            {
+              "count": 27,
+              "ast_head": "Symbol"
+            },
+            {
+              "count": 23,
+              "ast_head": "function"
+            },
+            {
+              "count": 20,
+              "ast_head": "using"
+            },
+            {
+              "count": 7,
+              "ast_head": "struct"
+            },
+            {
+              "count": 4,
+              "ast_head": "import"
+            },
+            {
+              "count": 2,
+              "ast_head": "incomplete"
+            },
+            {
+              "count": 2,
+              "ast_head": "macrocall"
+            },
+            {
+              "count": 1,
+              "ast_head": "Int64"
+            }
+          ]
+        }
+      },
+      {
+        "count": 93,
+        "last_call": "clear_module!(::Module) at run.jl:331",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 93,
+              "ast_head": "="
+            }
+          ]
+        }
+      },
+      {
+        "count": 43,
+        "last_call": "run_doc(::WeaveDoc; doctype::Nothing, out_path::Symbol, args::Dict{Any,Any}, mod::Nothing, fig_path::String, fig_ext::Nothing, cache_path::String, cache::Symbol, throw_errors::Bool) at run.jl:66",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 43,
+              "ast_head": "="
+            }
+          ]
+        }
+      },
+      {
+        "count": 40,
+        "last_call": "run_doc(::WeaveDoc; doctype::Nothing, out_path::Symbol, args::Dict{Any,Any}, mod::Nothing, fig_path::String, fig_ext::Nothing, cache_path::String, cache::Symbol, throw_errors::Bool) at run.jl:65",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 40,
+              "ast_head": "module"
+            }
+          ]
+        }
+      },
+      {
+        "count": 8,
+        "last_call": "run_doc(::WeaveDoc; doctype::Nothing, out_path::Symbol, args::Dict{Any,Any}, mod::Nothing, fig_path::String, fig_ext::Nothing, cache_path::String, cache::Symbol, throw_errors::Bool) at run.jl:56",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 8,
+              "ast_head": "import"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "eval at Weave.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "block"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 209,
+          "ast_head": "="
+        },
+        {
+          "count": 128,
+          "ast_head": "call"
+        },
+        {
+          "count": 40,
+          "ast_head": "module"
+        },
+        {
+          "count": 27,
+          "ast_head": "Symbol"
+        },
+        {
+          "count": 23,
+          "ast_head": "function"
+        },
+        {
+          "count": 20,
+          "ast_head": "using"
+        },
+        {
+          "count": 12,
+          "ast_head": "import"
+        },
+        {
+          "count": 7,
+          "ast_head": "struct"
+        },
+        {
+          "count": 2,
+          "ast_head": "incomplete"
+        },
+        {
+          "count": 2,
+          "ast_head": "macrocall"
+        },
+        {
+          "count": 2,
+          "ast_head": "block"
+        },
+        {
+          "count": 1,
+          "ast_head": "Int64"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 609,
+    "stack_traces": [
+      {
+        "count": 401,
+        "last_call": "display(::Weave.Report, ::Array{Int64,1}) at display_methods.jl:61",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "showable",
+              "count": 401
+            }
+          ]
+        }
+      },
+      {
+        "count": 93,
+        "last_call": "eval_chunk(::Weave.CodeChunk, ::Weave.Report, ::Module) at run.jl:281",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "plots_set_size",
+              "count": 83
+            },
+            {
+              "function_name": "identity",
+              "count": 10
+            }
+          ]
+        }
+      },
+      {
+        "count": 56,
+        "last_call": "display(::Weave.Report, ::Module) at display_methods.jl:68",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "display",
+              "count": 56
+            }
+          ]
+        }
+      },
+      {
+        "count": 32,
+        "last_call": "display(::Weave.Report, ::Array{Int64,1}) at display_methods.jl:66",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "display",
+              "count": 32
+            }
+          ]
+        }
+      },
+      {
+        "count": 27,
+        "last_call": "display(::Weave.Report, ::Plots.Plot{Plots.GRBackend}) at display_methods.jl:64",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "display",
+              "count": 27
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "showable",
+          "count": 401
+        },
+        {
+          "function_name": "display",
+          "count": 115
+        },
+        {
+          "function_name": "plots_set_size",
+          "count": 83
+        },
+        {
+          "function_name": "identity",
+          "count": 10
+        }
+      ]
+    }
+  }
+}

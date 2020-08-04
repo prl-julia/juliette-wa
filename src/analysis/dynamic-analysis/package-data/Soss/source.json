@@ -1,0 +1,58 @@
+{
+  "eval_info": {
+    "call_count": 116,
+    "stack_traces": [
+      {
+        "count": 110,
+        "last_call": "import_from(::PyCall.PyObject, ::Nothing; Ms::Tuple{}, typ::Symbol, exclude::Nothing) at utils.jl:282",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 110,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": "__init__() at symbolic.jl:25",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 5,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at symbolic.jl:19",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "block"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 116,
+          "ast_head": "block"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

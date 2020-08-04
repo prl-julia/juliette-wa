@@ -1,0 +1,228 @@
+{
+  "eval_info": {
+    "call_count": 20,
+    "stack_traces": [
+      {
+        "count": 3,
+        "last_call": "top-level scope at cairo_backends.jl:209",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 3,
+              "ast_head": "macrocall"
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "eval at ArrayInterface.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 3,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "top-level scope at cairo_backends.jl:208",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 3,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "eval at Compose.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at test_module_evaluation.jl:41",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "module"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at test_module_evaluation.jl:32",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "module"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at test_module_evaluation.jl:26",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "="
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "eval at Gadfly.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at test_header.jl:76",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "="
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at test_header.jl:67",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "="
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at test_module_evaluation.jl:31",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "module"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at test_module_evaluation.jl:25",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "module"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at test_module_evaluation.jl:42",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "const"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at test_header.jl:64",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "module"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 5,
+          "ast_head": "module"
+        },
+        {
+          "count": 5,
+          "ast_head": "block"
+        },
+        {
+          "count": 3,
+          "ast_head": "="
+        },
+        {
+          "count": 3,
+          "ast_head": "function"
+        },
+        {
+          "count": 3,
+          "ast_head": "macrocall"
+        },
+        {
+          "count": 1,
+          "ast_head": "const"
+        }
+      ]
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 12,
+    "stack_traces": [
+      {
+        "count": 12,
+        "last_call": "_plot_setup(::Plots.Plot{Plots.GRBackend}, ::Dict{Symbol,Any}, ::Array{Dict{Symbol,Any},1}) at pipeline.jl:185",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "_create_backend_figure",
+              "count": 12
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "_create_backend_figure",
+          "count": 12
+        }
+      ]
+    }
+  }
+}
