@@ -1,32 +1,50 @@
-# folders: 101
-******************************
-
-# failed folders (without src): 2
-Decentralized-Internet
+# processed package folders: 101
+# failed (no [src]): 1/101
 MXNet.jl
-******************************
 
-# Ok folders: 99
+# successfully processed folders: 100
 
-CUDAnative.jl: {ev: 36, il: 2}
-[evalArgs: Dict{Symbol,UInt64}(:struct => 1,:block => 1,:function => 4,:(=) => 7,:macrocall => 19,:export => 4)]
-# interesting files: 6/39
+CUDAnative.jl: {ev: 37, il: 2}
+[evalArgs: Dict{Symbol,UInt64}(Symbol("@doc") => 3,:struct => 1,:function => 23,:(=) => 6,:export => 4)]
+# non vacuous files: 6/39
 * /src/device/cuda/indexing.jl => {ev: 4, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 4)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 4)]
 * /src/device/cuda/warp_shuffle.jl => {ev: 3, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 2,:export => 1)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 2,:export => 1)]
 * /src/device/cuda/wmma.jl => {ev: 13, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:struct => 1,:function => 4,:(=) => 1,:macrocall => 4,:export => 3)]
+[evalArgs: Dict{Symbol,UInt64}(Symbol("@doc") => 3,:struct => 1,:function => 6,:export => 3)]
 * /src/init.jl => {ev: 0, il: 2}
 [evalArgs: Dict{Symbol,UInt64}()]
-* /src/reflection.jl => {ev: 7, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1,:(=) => 6)]
+* /src/reflection.jl => {ev: 8, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 2,:(=) => 6)]
 * /src/device/cuda/atomics.jl => {ev: 9, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 9)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 9)]
+
+Genie.jl: {ev: 23, il: 6}
+[evalArgs: Dict{Symbol,UInt64}(:call => 15,:const => 2,:(=) => 1,:using => 2,:import => 1,:other => 1,:$ => 1)]
+# non vacuous files: 9/38
+* /src/Router.jl => {ev: 0, il: 2}
+[evalArgs: Dict{Symbol,UInt64}()]
+* /src/Sessions.jl => {ev: 1, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:const => 1)]
+* /src/Toolbox.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 1,:using => 1)]
+* /src/renderers/Html.jl => {ev: 10, il: 1}
+[evalArgs: Dict{Symbol,UInt64}(:call => 9,:$ => 1)]
+* /src/Renderer.jl => {ev: 1, il: 1}
+[evalArgs: Dict{Symbol,UInt64}(:call => 1)]
+* /src/Encryption.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:const => 1,:(=) => 1)]
+* /src/genie_module.jl => {ev: 1, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 1)]
+* /src/Commands.jl => {ev: 0, il: 2}
+[evalArgs: Dict{Symbol,UInt64}()]
+* /src/Genie.jl => {ev: 6, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 3,:using => 1,:import => 1,:other => 1)]
 
 Documenter.jl: {ev: 21, il: 7}
 [evalArgs: Dict{Symbol,UInt64}(:call => 5,:symbol => 6,:function => 2,:. => 1,:const => 1,:ref => 6)]
-# interesting files: 8/23
+# non vacuous files: 8/23
 * /src/Expanders.jl => {ev: 12, il: 2}
 [evalArgs: Dict{Symbol,UInt64}(:call => 3,:symbol => 3,:function => 2,:. => 1,:ref => 3)]
 * /src/DocTests.jl => {ev: 6, il: 2}
@@ -44,33 +62,11 @@ Documenter.jl: {ev: 21, il: 7}
 * /src/Documents.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:ref => 1)]
 
-Genie.jl: {ev: 22, il: 6}
-[evalArgs: Dict{Symbol,UInt64}(:call => 14,:const => 2,:(=) => 1,:using => 2,:import => 1,:other => 1,:$ => 1)]
-# interesting files: 9/38
-* /src/Router.jl => {ev: 0, il: 2}
-[evalArgs: Dict{Symbol,UInt64}()]
-* /src/Sessions.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:const => 1)]
-* /src/Toolbox.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 1,:using => 1)]
-* /src/renderers/Html.jl => {ev: 9, il: 1}
-[evalArgs: Dict{Symbol,UInt64}(:call => 8,:$ => 1)]
-* /src/Renderer.jl => {ev: 1, il: 1}
-[evalArgs: Dict{Symbol,UInt64}(:call => 1)]
-* /src/Encryption.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:const => 1,:(=) => 1)]
-* /src/genie_module.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 1)]
-* /src/Commands.jl => {ev: 0, il: 2}
-[evalArgs: Dict{Symbol,UInt64}()]
-* /src/Genie.jl => {ev: 6, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 3,:using => 1,:import => 1,:other => 1)]
-
-Plots.jl: {ev: 16, il: 1}
-[evalArgs: Dict{Symbol,UInt64}(:block => 6,:function => 8,:import => 1,:macrocall => 1)]
-# interesting files: 11/34
-* /src/utils.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1,:function => 1)]
+Plots.jl: {ev: 27, il: 1}
+[evalArgs: Dict{Symbol,UInt64}(:call => 1,:function => 18,:import => 4,:macrocall => 1,:export => 3)]
+# non vacuous files: 11/34
+* /src/utils.jl => {ev: 5, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 5)]
 * /src/backends/orca.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 * /src/backends/inspectdr.jl => {ev: 1, il: 0}
@@ -87,16 +83,22 @@ Plots.jl: {ev: 16, il: 1}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 * /src/backends/gr.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
-* /src/backends.jl => {ev: 6, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 5,:import => 1)]
+* /src/backends.jl => {ev: 14, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 1,:function => 6,:import => 4,:export => 3)]
 * /src/backends/pyplot.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 
-IJulia.jl: {ev: 6, il: 8}
-[evalArgs: Dict{Symbol,UInt64}(:call => 3,:block => 1,:function => 1,:(=) => 1)]
-# interesting files: 7/15
-* /src/inline.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
+CxxWrap.jl: {ev: 21, il: 5}
+[evalArgs: Dict{Symbol,UInt64}(:symbol => 3,:call => 1,:struct => 1,:function => 9,:const => 6,:$ => 1)]
+# non vacuous files: 1/2
+* /src/CxxWrap.jl => {ev: 21, il: 5}
+[evalArgs: Dict{Symbol,UInt64}(:symbol => 3,:call => 1,:struct => 1,:function => 9,:const => 6,:$ => 1)]
+
+IJulia.jl: {ev: 7, il: 8}
+[evalArgs: Dict{Symbol,UInt64}(:call => 3,:function => 3,:(=) => 1)]
+# non vacuous files: 7/15
+* /src/inline.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 2)]
 * /src/execute_request.jl => {ev: 1, il: 6}
 [evalArgs: Dict{Symbol,UInt64}(:call => 1)]
 * /src/display.jl => {ev: 0, il: 1}
@@ -110,9 +112,19 @@ IJulia.jl: {ev: 6, il: 8}
 * /src/stdio.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 
+PyCall.jl: {ev: 12, il: 1}
+[evalArgs: Dict{Symbol,UInt64}(:call => 1,:function => 10,:macrocall => 1)]
+# non vacuous files: 3/20
+* /src/pyoperators.jl => {ev: 8, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 8)]
+* /src/callback.jl => {ev: 0, il: 1}
+[evalArgs: Dict{Symbol,UInt64}()]
+* /src/PyCall.jl => {ev: 4, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 1,:function => 2,:macrocall => 1)]
+
 Weave.jl: {ev: 6, il: 6}
 [evalArgs: Dict{Symbol,UInt64}(:call => 2,:module => 1,:(=) => 2,:import => 1)]
-# interesting files: 3/25
+# non vacuous files: 3/25
 * /src/reader/reader.jl => {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 2)]
 * /src/display_methods.jl => {ev: 0, il: 4}
@@ -120,43 +132,33 @@ Weave.jl: {ev: 6, il: 6}
 * /src/run.jl => {ev: 4, il: 2}
 [evalArgs: Dict{Symbol,UInt64}(:module => 1,:(=) => 2,:import => 1)]
 
-PyCall.jl: {ev: 8, il: 1}
-[evalArgs: Dict{Symbol,UInt64}(:call => 1,:block => 3,:function => 3,:macrocall => 1)]
-# interesting files: 3/20
-* /src/pyoperators.jl => {ev: 5, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 2,:function => 3)]
-* /src/callback.jl => {ev: 0, il: 1}
-[evalArgs: Dict{Symbol,UInt64}()]
-* /src/PyCall.jl => {ev: 3, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 1,:block => 1,:macrocall => 1)]
+BenchmarkTools.jl: {ev: 7, il: 2}
+[evalArgs: Dict{Symbol,UInt64}(:call => 2,:function => 4,:macrocall => 1)]
+# non vacuous files: 2/6
+* /src/serialization.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 1,:function => 1)]
+* /src/execution.jl => {ev: 5, il: 2}
+[evalArgs: Dict{Symbol,UInt64}(:call => 1,:function => 3,:macrocall => 1)]
 
 Pluto.jl: {ev: 7, il: 1}
-[evalArgs: Dict{Symbol,UInt64}(:symbol => 1,:call => 1,:(=) => 1,:import => 2,:$ => 2)]
-# interesting files: 3/18
+[evalArgs: Dict{Symbol,UInt64}(:symbol => 1,:(=) => 1,:ref => 1,:import => 2,:$ => 2)]
+# non vacuous files: 3/18
 * /src/runner/PlutoRunner.jl => {ev: 5, il: 1}
-[evalArgs: Dict{Symbol,UInt64}(:symbol => 1,:call => 1,:(=) => 1,:import => 2)]
+[evalArgs: Dict{Symbol,UInt64}(:symbol => 1,:(=) => 1,:ref => 1,:import => 2)]
 * /src/evaluation/WorkspaceManager.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:$ => 1)]
 * /src/analysis/Parse.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:$ => 1)]
 
-BenchmarkTools.jl: {ev: 3, il: 2}
-[evalArgs: Dict{Symbol,UInt64}(:call => 1,:block => 1,:function => 1)]
-# interesting files: 2/6
-* /src/serialization.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 1,:function => 1)]
-* /src/execution.jl => {ev: 1, il: 2}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-
 Literate.jl: {ev: 2, il: 3}
 [evalArgs: Dict{Symbol,UInt64}(:function => 2)]
-# interesting files: 1/3
+# non vacuous files: 1/3
 * /src/Literate.jl => {ev: 2, il: 3}
 [evalArgs: Dict{Symbol,UInt64}(:function => 2)]
 
 Revise.jl: {ev: 3, il: 1}
 [evalArgs: Dict{Symbol,UInt64}(:symbol => 2,:macrocall => 1)]
-# interesting files: 2/13
+# non vacuous files: 2/13
 * /src/Revise.jl => {ev: 2, il: 1}
 [evalArgs: Dict{Symbol,UInt64}(:symbol => 1,:macrocall => 1)]
 * /src/lowered.jl => {ev: 1, il: 0}
@@ -164,119 +166,171 @@ Revise.jl: {ev: 3, il: 1}
 
 Dagger.jl: {ev: 1, il: 1}
 [evalArgs: Dict{Symbol,UInt64}(:symbol => 1)]
-# interesting files: 2/22
+# non vacuous files: 2/22
 * /src/processor.jl => {ev: 0, il: 1}
 [evalArgs: Dict{Symbol,UInt64}()]
 * /src/compute.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:symbol => 1)]
 
-CuArrays.jl: {ev: 136, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 6,:block => 60,:function => 69,:macrocall => 1)]
-# interesting files: 9/80
-* /src/sparse/wrappers.jl => {ev: 52, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 30,:function => 22)]
+CuArrays.jl: {ev: 249, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 6,:function => 242,:macrocall => 1)]
+# non vacuous files: 9/80
+* /src/sparse/wrappers.jl => {ev: 110, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 110)]
 * /src/blas/linalg.jl => {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 2)]
 * /src/forwarddiff.jl => {ev: 7, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 6,:macrocall => 1)]
 * /src/nnlib.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
-* /src/blas/wrappers.jl => {ev: 50, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 29,:function => 21)]
+* /src/blas/wrappers.jl => {ev: 102, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 102)]
 * /src/array.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 * /src/solver/wrappers.jl => {ev: 21, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 21)]
 * /src/broadcast.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
-* /src/fft/fft.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
+* /src/fft/fft.jl => {ev: 4, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 4)]
 
-Grassmann.jl: {ev: 64, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:symbol => 2,:block => 34,:function => 8,:(=) => 9,:macrocall => 11)]
-# interesting files: 7/7
-* /src/parity.jl => {ev: 3, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 2,:macrocall => 1)]
-* /src/composite.jl => {ev: 9, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 4,:function => 1,:macrocall => 4)]
-* /src/multivectors.jl => {ev: 8, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 4,:function => 3,:macrocall => 1)]
-* /src/forms.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1,:function => 1)]
-* /src/products.jl => {ev: 6, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 5,:function => 1)]
-* /src/algebra.jl => {ev: 31, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:symbol => 2,:block => 15,:function => 1,:(=) => 8,:macrocall => 5)]
-* /src/Grassmann.jl => {ev: 5, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 3,:function => 1,:(=) => 1)]
+Grassmann.jl: {ev: 194, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:symbol => 2,:const => 2,:function => 187,:local => 2,:export => 1)]
+# non vacuous files: 7/7
+* /src/parity.jl => {ev: 7, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:const => 2,:function => 5)]
+* /src/composite.jl => {ev: 17, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 16,:export => 1)]
+* /src/multivectors.jl => {ev: 12, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 12)]
+* /src/forms.jl => {ev: 8, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 8)]
+* /src/products.jl => {ev: 31, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 31)]
+* /src/algebra.jl => {ev: 109, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:symbol => 2,:function => 107)]
+* /src/Grassmann.jl => {ev: 10, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 8,:local => 2)]
 
-Unitful.jl: {ev: 58, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 10,:block => 5,:function => 16,:(=) => 12,:const => 1,:macrocall => 14)]
-# interesting files: 8/15
-* /src/dimensions.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 1)]
-* /src/display.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 1)]
-* /src/quantities.jl => {ev: 31, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 3,:function => 14,:(=) => 4,:macrocall => 10)]
-* /src/user.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 1)]
-* /src/fastmath.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1,:(=) => 1)]
-* /src/pkgdefaults.jl => {ev: 12, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 8,:block => 1,:const => 1,:(=) => 2)]
-* /src/logarithm.jl => {ev: 7, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:function => 2,:(=) => 5)]
-* /src/units.jl => {ev: 3, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 3)]
-
-Knet.jl: {ev: 22, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 4,:block => 12,:function => 6)]
-# interesting files: 11/32
-* /src/unary.jl => {ev: 5, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 5)]
+Knet.jl: {ev: 87, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 86,:macrocall => 1)]
+# non vacuous files: 11/50
+* /src/cuarrays/dropout.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 2)]
+* /src/unary.jl => {ev: 15, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 14,:macrocall => 1)]
 * /src/bmm.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
-* /src/cuarrays/autograd.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-* /src/binary.jl => {ev: 3, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 3)]
+* /src/cuarrays/autograd.jl => {ev: 9, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 9)]
+* /src/binary.jl => {ev: 38, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 38)]
 * /src/cuarrays/getindex.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
-* /src/karray.jl => {ev: 3, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 2,:function => 1)]
+* /src/karray.jl => {ev: 16, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 16)]
 * /src/linalg.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
-* /src/gpu.jl => {ev: 4, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 4)]
-* /src/dropout.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
+* /src/dropout.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 2)]
 * /src/cuarrays/reduction.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 * /src/reduction.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 
+Unitful.jl: {ev: 76, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 10,:function => 65,:const => 1)]
+# non vacuous files: 8/15
+* /src/dimensions.jl => {ev: 1, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
+* /src/display.jl => {ev: 1, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 1)]
+* /src/quantities.jl => {ev: 37, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 37)]
+* /src/user.jl => {ev: 1, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 1)]
+* /src/fastmath.jl => {ev: 3, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 3)]
+* /src/pkgdefaults.jl => {ev: 23, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 8,:function => 14,:const => 1)]
+* /src/logarithm.jl => {ev: 7, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 7)]
+* /src/units.jl => {ev: 3, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 3)]
+
+ApproxFun.jl: {ev: 22, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 22)]
+# non vacuous files: 8/16
+* /src/Extras/sample.jl => {ev: 1, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
+* /src/Extras/show.jl => {ev: 1, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
+* /src/Extras/ReImSpace.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 2)]
+* /src/Extras/fftGeneric.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 2)]
+* /src/Extras/dualnumbers.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 2)]
+* /src/Extras/fractional.jl => {ev: 6, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 6)]
+* /src/Extras/poetry.jl => {ev: 4, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 4)]
+* /src/Extras/autodifferentiation.jl => {ev: 4, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 4)]
+
 TensorFlow.jl: {ev: 21, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:function => 2,:(=) => 3,:. => 1,:macrocall => 15)]
-# interesting files: 7/93
+[evalArgs: Dict{Symbol,UInt64}(Symbol("@doc") => 1,:function => 18,:. => 1,:macrocall => 1)]
+# non vacuous files: 7/93
 * /src/ops/comparison.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 2)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 2)]
 * /src/ops/logical.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 1)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 * /src/ops/math.jl => {ev: 10, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:function => 1,:macrocall => 9)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 9,:macrocall => 1)]
 * /src/ops/sequences.jl => {ev: 4, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:function => 1,:(=) => 3)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 4)]
 * /src/ops/debugging.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 1)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 * /src/ops/summaries.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 2)]
+[evalArgs: Dict{Symbol,UInt64}(Symbol("@doc") => 1,:function => 1)]
 * /src/generate_ops.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:. => 1)]
 
+DataStructures.jl: {ev: 19, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:struct => 1,:function => 17,:macrocall => 1)]
+# non vacuous files: 1/34
+* /src/default_dict.jl => {ev: 19, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:struct => 1,:function => 17,:macrocall => 1)]
+
+Measurements.jl: {ev: 19, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 19)]
+# non vacuous files: 4/12
+* /src/utils.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 2)]
+* /src/special-functions.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 2)]
+* /src/math.jl => {ev: 9, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 9)]
+* /src/comparisons-tests.jl => {ev: 6, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 6)]
+
+Turing.jl: {ev: 19, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 1,:struct => 1,:function => 14,:if => 1,:import => 1,:export => 1)]
+# non vacuous files: 5/27
+* /src/core/compat/reversediff.jl => {ev: 10, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:struct => 1,:function => 9)]
+* /src/inference/Inference.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 2)]
+* /src/inference/hmc.jl => {ev: 1, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
+* /src/core/ad.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 2)]
+* /src/Turing.jl => {ev: 4, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 1,:if => 1,:import => 1,:export => 1)]
+
 StaticArrays.jl: {ev: 17, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:ref => 16,:macrocall => 1)]
-# interesting files: 7/43
+[evalArgs: Dict{Symbol,UInt64}(:function => 1,:ref => 16)]
+# non vacuous files: 7/43
 * /src/MMatrix.jl => {ev: 4, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:ref => 4)]
 * /src/MVector.jl => {ev: 2, il: 0}
@@ -288,67 +342,59 @@ StaticArrays.jl: {ev: 17, il: 0}
 * /src/SVector.jl => {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:ref => 2)]
 * /src/solve.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 1)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 * /src/SArray.jl => {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:ref => 2)]
 
-ForwardDiff.jl: {ev: 14, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 2,:block => 2,:function => 7,:macrocall => 3)]
-# interesting files: 3/10
-* /src/dual.jl => {ev: 8, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 2,:block => 2,:function => 1,:macrocall => 3)]
+ForwardDiff.jl: {ev: 16, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 2,:function => 14)]
+# non vacuous files: 3/10
+* /src/dual.jl => {ev: 10, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 2,:function => 8)]
 * /src/jacobian.jl => {ev: 4, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 4)]
 * /src/gradient.jl => {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 2)]
 
-Oceananigans.jl: {ev: 14, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 8,:block => 1,:const => 1,:function => 1,:macrocall => 3)]
-# interesting files: 9/125
+ModelingToolkit.jl: {ev: 16, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 4,:function => 9,:macrocall => 3)]
+# non vacuous files: 4/29
+* /src/differentials.jl => {ev: 1, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
+* /src/systems/jumps/jumpsystem.jl => {ev: 4, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 4)]
+* /src/linearity.jl => {ev: 8, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 8)]
+* /src/function_registration.jl => {ev: 3, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:macrocall => 3)]
+
+Oceananigans.jl: {ev: 16, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 8,:const => 1,:function => 7)]
+# non vacuous files: 9/127
 * /src/TurbulenceClosures/turbulence_closure_implementations/verstappen_anisotropic_minimum_dissipation.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:const => 1)]
-* /src/AbstractOperations/interpolation_utils.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 1,:block => 1)]
+* /src/AbstractOperations/interpolation_utils.jl => {ev: 4, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 1,:function => 3)]
 * /src/AbstractOperations/derivatives.jl => {ev: 3, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 3)]
 * /src/TimeSteppers/TimeSteppers.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 1)]
 * /src/BoundaryConditions/fill_halo_regions.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 1)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 * /src/AbstractOperations/AbstractOperations.jl => {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 2)]
 * /src/TurbulenceClosures/closure_tuples.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 1)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 * /src/TurbulenceClosures/TurbulenceClosures.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 1)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 * /src/AbstractOperations/show_abstract_operations.jl => {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 1,:function => 1)]
 
-ApproxFun.jl: {ev: 13, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 7,:function => 4,:(=) => 2)]
-# interesting files: 8/16
-* /src/Extras/sample.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:(=) => 1)]
-* /src/Extras/show.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
-* /src/Extras/ReImSpace.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-* /src/Extras/fftGeneric.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-* /src/Extras/dualnumbers.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-* /src/Extras/fractional.jl => {ev: 4, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 2,:function => 1,:(=) => 1)]
-* /src/Extras/poetry.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1,:function => 1)]
-* /src/Extras/autodifferentiation.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1,:function => 1)]
-
 Cxx.jl: {ev: 13, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 2,:symbol => 1,:let => 1,:function => 8,:macrocall => 1)]
-# interesting files: 8/15
+[evalArgs: Dict{Symbol,UInt64}(:call => 2,:symbol => 1,:let => 1,:function => 9)]
+# non vacuous files: 8/15
 * /src/std.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 1)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 * /src/Cxx.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 1)]
 * /src/utils.jl => {ev: 1, il: 0}
@@ -364,21 +410,9 @@ Cxx.jl: {ev: 13, il: 0}
 * /src/typetranslation.jl => {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 2)]
 
-ModelingToolkit.jl: {ev: 13, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 4,:block => 3,:function => 3,:macrocall => 3)]
-# interesting files: 4/28
-* /src/differentials.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
-* /src/systems/jumps/jumpsystem.jl => {ev: 4, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 4)]
-* /src/linearity.jl => {ev: 5, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 3,:function => 2)]
-* /src/function_registration.jl => {ev: 3, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 3)]
-
-DSGE.jl: {ev: 12, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 3,:function => 8,:$ => 1)]
-# interesting files: 5/276
+DSGE.jl: {ev: 13, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 4,:function => 8,:$ => 1)]
+# non vacuous files: 5/287
 * /src/util.jl => {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 1,:function => 1)]
 * /src/estimate/smc/particle.jl => {ev: 7, il: 0}
@@ -387,12 +421,26 @@ DSGE.jl: {ev: 12, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:$ => 1)]
 * /src/analysis/util.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 1)]
-* /src/forecast/smooth.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 1)]
+* /src/forecast/smooth.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:call => 2)]
+
+HDF5.jl: {ev: 11, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 8,:$ => 3)]
+# non vacuous files: 1/3
+* /src/HDF5.jl => {ev: 11, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 8,:$ => 3)]
+
+PyPlot.jl: {ev: 11, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(Symbol("@doc") => 3,:function => 8)]
+# non vacuous files: 2/4
+* /src/plot3d.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(Symbol("@doc") => 2)]
+* /src/PyPlot.jl => {ev: 9, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(Symbol("@doc") => 1,:function => 8)]
 
 DataFrames.jl: {ev: 8, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 8)]
-# interesting files: 4/23
+# non vacuous files: 4/23
 * /src/dataframe/dataframe.jl => {ev: 5, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 5)]
 * /src/dataframerow/dataframerow.jl => {ev: 1, il: 0}
@@ -404,7 +452,7 @@ DataFrames.jl: {ev: 8, il: 0}
 
 Franklin.jl: {ev: 8, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 4,:symbol => 3,:ref => 1)]
-# interesting files: 6/42
+# non vacuous files: 6/42
 * /src/eval/codeblock.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 1)]
 * /src/converter/latex/latex.jl => {ev: 2, il: 0}
@@ -420,7 +468,7 @@ Franklin.jl: {ev: 8, il: 0}
 
 JuDoc.jl: {ev: 8, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 4,:symbol => 3,:ref => 1)]
-# interesting files: 6/42
+# non vacuous files: 6/42
 * /src/eval/codeblock.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 1)]
 * /src/converter/latex/latex.jl => {ev: 2, il: 0}
@@ -434,59 +482,27 @@ JuDoc.jl: {ev: 8, il: 0}
 * /src/converter/html/functions.jl => {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:symbol => 2)]
 
-PyPlot.jl: {ev: 8, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 2,:function => 3,:macrocall => 3)]
-# interesting files: 2/4
-* /src/plot3d.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 2)]
-* /src/PyPlot.jl => {ev: 6, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 2,:function => 3,:macrocall => 1)]
+QuantEcon.jl: {ev: 8, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 8)]
+# non vacuous files: 2/27
+* /src/quad.jl => {ev: 7, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 7)]
+* /src/markov/mc_tools.jl => {ev: 1, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 
 Zygote.jl: {ev: 8, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:function => 2,:macrocall => 6)]
-# interesting files: 3/33
+[evalArgs: Dict{Symbol,UInt64}(:function => 8)]
+# non vacuous files: 3/33
 * /src/compiler/chainrules.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 1)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 * /src/lib/array.jl => {ev: 4, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:function => 2,:macrocall => 2)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 4)]
 * /src/forward/number.jl => {ev: 3, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 3)]
-
-HDF5.jl: {ev: 7, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 2,:function => 2,:$ => 3)]
-# interesting files: 1/3
-* /src/HDF5.jl => {ev: 7, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 2,:function => 2,:$ => 3)]
-
-Measurements.jl: {ev: 7, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 4,:function => 3)]
-# interesting files: 4/12
-* /src/utils.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-* /src/special-functions.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-* /src/math.jl => {ev: 3, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1,:function => 2)]
-* /src/comparisons-tests.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1,:function => 1)]
-
-Turing.jl: {ev: 7, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 4,:(=) => 3)]
-# interesting files: 5/27
-* /src/core/compat/reversediff.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-* /src/inference/Inference.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:(=) => 2)]
-* /src/inference/hmc.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:(=) => 1)]
-* /src/core/ad.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-* /src/Turing.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 2)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 3)]
 
 JuliaDB.jl: {ev: 6, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 6)]
-# interesting files: 2/20
+# non vacuous files: 2/20
 * /src/dcolumns.jl => {ev: 4, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 4)]
 * /src/iteration.jl => {ev: 2, il: 0}
@@ -494,7 +510,7 @@ JuliaDB.jl: {ev: 6, il: 0}
 
 LoopVectorization.jl: {ev: 6, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 3,:const => 2,:macrocall => 1)]
-# interesting files: 3/32
+# non vacuous files: 3/32
 * /src/mapreduce.jl => {ev: 3, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 3)]
 * /src/user_api_conveniences.jl => {ev: 2, il: 0}
@@ -504,7 +520,7 @@ LoopVectorization.jl: {ev: 6, il: 0}
 
 ScikitLearn.jl: {ev: 6, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 2,:import => 1,:macrocall => 2,:export => 1)]
-# interesting files: 3/15
+# non vacuous files: 3/15
 * /src/Skcore.jl => {ev: 3, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1,:import => 1,:export => 1)]
 * /src/ScikitLearn.jl => {ev: 2, il: 0}
@@ -514,7 +530,7 @@ ScikitLearn.jl: {ev: 6, il: 0}
 
 DSP.jl: {ev: 5, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 5)]
-# interesting files: 3/17
+# non vacuous files: 3/17
 * /src/Filters/design.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 * /src/dspbase.jl => {ev: 2, il: 0}
@@ -522,11 +538,21 @@ DSP.jl: {ev: 5, il: 0}
 * /src/windows.jl => {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 2)]
 
+Distributions.jl: {ev: 5, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:symbol => 1,:function => 1,:macrocall => 3)]
+# non vacuous files: 3/114
+* /src/deprecates.jl => {ev: 3, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:macrocall => 3)]
+* /src/univariates.jl => {ev: 1, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:symbol => 1)]
+* /src/common.jl => {ev: 1, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
+
 JuMP.jl: {ev: 5, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macro => 1,:function => 1,:macrocall => 2,:export => 1)]
-# interesting files: 4/42
+[evalArgs: Dict{Symbol,UInt64}(:macro => 1,:function => 3,:export => 1)]
+# non vacuous files: 4/42
 * /src/_Derivatives/forward.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 2)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 2)]
 * /src/JuMP.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:export => 1)]
 * /src/macros.jl => {ev: 1, il: 0}
@@ -535,24 +561,30 @@ JuMP.jl: {ev: 5, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 
 Mamba.jl: {ev: 5, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:call => 1,:function => 3,:(=) => 1)]
-# interesting files: 2/46
+[evalArgs: Dict{Symbol,UInt64}(:call => 1,:function => 4)]
+# non vacuous files: 2/46
 * /src/utils.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 1)]
 * /src/variate.jl => {ev: 4, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:function => 3,:(=) => 1)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 4)]
 
 Flux.jl: {ev: 4, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:function => 2,:macrocall => 2)]
-# interesting files: 2/29
+[evalArgs: Dict{Symbol,UInt64}(:function => 4)]
+# non vacuous files: 2/29
 * /src/zeros.jl => {ev: 3, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:function => 2,:macrocall => 1)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 3)]
 * /src/cuda/curnn.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 1)]
+[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
+
+GR.jl: {ev: 4, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:import => 4)]
+# non vacuous files: 1/4
+* /src/js.jl => {ev: 4, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:import => 4)]
 
 Lazy.jl: {ev: 4, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 4)]
-# interesting files: 3/6
+# non vacuous files: 3/6
 * /src/Lazy.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 * /src/liblazy.jl => {ev: 2, il: 0}
@@ -560,71 +592,95 @@ Lazy.jl: {ev: 4, il: 0}
 * /src/collections.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 
-Distances.jl: {ev: 3, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:function => 1,:macrocall => 2)]
-# interesting files: 1/8
-* /src/metrics.jl => {ev: 3, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:function => 1,:macrocall => 2)]
+PlotlyJS.jl: {ev: 4, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 4)]
+# non vacuous files: 1/4
+* /src/display.jl => {ev: 4, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 4)]
 
-Distributions.jl: {ev: 3, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:symbol => 1,:block => 1,:function => 1)]
-# interesting files: 3/114
-* /src/deprecates.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-* /src/univariates.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:symbol => 1)]
-* /src/common.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
+Distances.jl: {ev: 3, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 3)]
+# non vacuous files: 1/8
+* /src/metrics.jl => {ev: 3, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 3)]
 
 Latexify.jl: {ev: 3, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:symbol => 1,:macrocall => 2)]
-# interesting files: 2/24
+# non vacuous files: 2/24
 * /src/numberformatters.jl => {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:macrocall => 2)]
 * /src/latexraw.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:symbol => 1)]
 
+StatsBase.jl: {ev: 3, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 3)]
+# non vacuous files: 2/21
+* /src/ranking.jl => {ev: 1, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
+* /src/weights.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 2)]
+
 TimerOutputs.jl: {ev: 3, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 3)]
-# interesting files: 1/4
+# non vacuous files: 1/4
 * /src/TimerOutput.jl => {ev: 3, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 3)]
 
+Traceur.jl: {ev: 3, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:macro => 3)]
+# non vacuous files: 2/6
+* /src/util.jl => {ev: 1, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:macro => 1)]
+* /src/trace_static.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:macro => 2)]
+
 Cassette.jl: {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 1,:function => 1)]
-# interesting files: 1/6
+# non vacuous files: 1/6
 * /src/overdub.jl => {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 1,:function => 1)]
 
 Debugger.jl: {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:symbol => 2)]
-# interesting files: 2/9
+# non vacuous files: 2/9
 * /src/breakpoints.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:symbol => 1)]
 * /src/watches.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:symbol => 1)]
 
+DrWatson.jl: {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 2)]
+# non vacuous files: 1/9
+* /src/project_setup.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 2)]
+
 Gadfly.jl: {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 2)]
-# interesting files: 1/39
+[evalArgs: Dict{Symbol,UInt64}(Symbol("@doc") => 2)]
+# non vacuous files: 1/39
 * /src/scale.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macrocall => 2)]
+[evalArgs: Dict{Symbol,UInt64}(Symbol("@doc") => 2)]
 
 Gen.jl: {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:symbol => 2)]
-# interesting files: 1/89
+# non vacuous files: 1/89
 * /src/Gen.jl => {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:symbol => 2)]
 
 HTTP.jl: {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 2)]
-# interesting files: 1/37
+# non vacuous files: 1/37
 * /src/Handlers.jl => {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 2)]
+
+Interpolations.jl: {ev: 2, il: 0}
+[evalArgs: Dict{Symbol,UInt64}(:function => 2)]
+# non vacuous files: 1/21
+* /src/deprecations.jl => {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 2)]
 
 LightGraphs.jl: {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 1,:function => 1)]
-# interesting files: 2/200
+# non vacuous files: 2/202
 * /src/linalg13/graphmatrices.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 * /src/persistence13/lg.jl => {ev: 1, il: 0}
@@ -632,128 +688,75 @@ LightGraphs.jl: {ev: 2, il: 0}
 
 Makie.jl: {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:import => 1,:export => 1)]
-# interesting files: 1/1
+# non vacuous files: 1/1
 * /src/Makie.jl => {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:import => 1,:export => 1)]
 
-PlotlyJS.jl: {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1,:function => 1)]
-# interesting files: 1/4
-* /src/display.jl => {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1,:function => 1)]
-
-QuantEcon.jl: {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1,:function => 1)]
-# interesting files: 2/27
-* /src/quad.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-* /src/markov/mc_tools.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
-
-StatsBase.jl: {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1,:function => 1)]
-# interesting files: 2/21
-* /src/ranking.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:function => 1)]
-* /src/weights.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-
 TextAnalysis.jl: {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 2)]
-# interesting files: 1/40
+# non vacuous files: 1/40
 * /src/tagging_schemes.jl => {ev: 2, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 2)]
 
-Traceur.jl: {ev: 2, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1,:macro => 1)]
-# interesting files: 2/6
-* /src/util.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:macro => 1)]
-* /src/trace_static.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-
 AutoMLPipeline.jl: {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:symbol => 1)]
-# interesting files: 1/14
+# non vacuous files: 1/14
 * /src/pipelines.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:symbol => 1)]
 
 Blink.jl: {ev: 0, il: 1}
 [evalArgs: Dict{Symbol,UInt64}()]
-# interesting files: 1/12
+# non vacuous files: 1/12
 * /src/rpc/callbacks.jl => {ev: 0, il: 1}
 [evalArgs: Dict{Symbol,UInt64}()]
 
-DataStructures.jl: {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-# interesting files: 1/35
-* /src/default_dict.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-
-DrWatson.jl: {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-# interesting files: 1/9
-* /src/project_setup.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-
-GR.jl: {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-# interesting files: 1/4
-* /src/js.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-
-Interpolations.jl: {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-# interesting files: 1/21
-* /src/deprecations.jl => {ev: 1, il: 0}
-[evalArgs: Dict{Symbol,UInt64}(:block => 1)]
-
 MixedModels.jl: {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
-# interesting files: 1/23
+# non vacuous files: 1/23
 * /src/generalizedlinearmixedmodel.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 
 Optim.jl: {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
-# interesting files: 1/45
+# non vacuous files: 1/45
 * /src/maximize.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:function => 1)]
 
 Query.jl: {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 1)]
-# interesting files: 1/5
+# non vacuous files: 1/5
 * /src/table_query_macros.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:call => 1)]
 
 TensorOperations.jl: {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:const => 1)]
-# interesting files: 1/22
+# non vacuous files: 1/22
 * /src/TensorOperations.jl => {ev: 1, il: 0}
 [evalArgs: Dict{Symbol,UInt64}(:const => 1)]
 
-Interesting packages: 66/99
-Super Interesting packages: 59/99
-
-Eval func and invokelatest: 40
-["CUDAnative.jl", "Documenter.jl", "Plots.jl", "IJulia.jl", "PyCall.jl", "BenchmarkTools.jl", "Literate.jl", "CuArrays.jl", "Grassmann.jl", "Unitful.jl", "Knet.jl", "TensorFlow.jl", "ForwardDiff.jl", "Oceananigans.jl", "ApproxFun.jl", "Cxx.jl", "ModelingToolkit.jl", "DSGE.jl", "PyPlot.jl", "Zygote.jl", "HDF5.jl", "Measurements.jl", "Turing.jl", "LoopVectorization.jl", "ScikitLearn.jl", "JuMP.jl", "Mamba.jl", "Flux.jl", "Distances.jl", "Distributions.jl", "Cassette.jl", "LightGraphs.jl", "PlotlyJS.jl", "QuantEcon.jl", "StatsBase.jl", "Traceur.jl", "DataStructures.jl", "DrWatson.jl", "GR.jl", "Interpolations.jl"]
+Non vacuous packages: 67/100
+With function calls: 36/100
+With invokelatest: 14/100
 
 Total Stat:
-* macro => 2
-* macrocall => 96
-* let => 1
-* struct => 1
-* block => 157
-* other => 1
-* module => 1
-* . => 2
-* ref => 24
-* import => 7
-* export => 7
-* $ => 7
-* call => 80
-* symbol => 26
-* function => 211
-* = => 42
-* const => 8
-* using => 2
+* @doc       => 9 in 4
+* macro      => 4 in 2
+* macrocall  => 19 in 13
+* let        => 1 in 1
+* struct     => 4 in 4
+* other      => 1 in 1
+* module     => 1 in 1
+* .          => 2 in 2
+* ref        => 25 in 5
+* import     => 15 in 8
+* export     => 12 in 7
+* $          => 8 in 5
+* call       => 81 in 23
+* symbol     => 29 in 14
+* function   => 884 in 48
+* =          => 11 in 5
+* const      => 16 in 8
+* if         => 1 in 1
+* using      => 2 in 1
+* local      => 2 in 1
+

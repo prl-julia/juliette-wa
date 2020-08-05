@@ -31,6 +31,8 @@ const BAD_PKGS = [
     "https://github.com/JuliaLang/julia.git",
     # Decentralized-Internet isn't a Julia package
     "https://github.com/Lonero-Team/Decentralized-Internet.git",
+    # Empty package, it was merged somewhere
+    "https://github.com/dmlc/MXNet.jl.git",
     # Packages below aren't publicly accessible for some reason
     "https://github.com/JuliaComputing/Blpapi.jl.git",
     "https://github.com/bcbi/CountdownLetters.jl.git",

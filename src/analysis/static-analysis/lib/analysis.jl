@@ -45,12 +45,12 @@ const PATTERN_EVAL_MACRO = r"@eval( |\()"
 # Symbol representation of AST heads that we count
 # Note. [:other] includes, e.g., [&&] operator used in [Genie] package
 const EVAL_ARG_DESCRIPTIONS = [
-        :value, :symbol, :block, :curly, :let, :., :ref,
+        :value, :symbol, :block, :curly, :let, :., :ref, :if,
         :struct, :module,
         :export, :import, :using,
-        :const, :(=),
-        :function, :macro, :call, :macrocall,
-        :($),
+        :const, :(=), :local,
+        :function, :macro, :call, :macrocall, :(->),
+        :($), Symbol("@doc"),
         :nothing, :other, :error
     ]
 
@@ -138,6 +138,8 @@ Base.:+(x :: EvalArgStat, y :: EvalArgStat) = merge(+, x, y)
 
 Base.zero(::Type{Stat}) = Stat()
 
+Base.sum(stat :: Stat) :: UInt = stat.eval + stat.invokelatest
+
 Base.:+(x :: Stat, y :: Stat) =
     Stat(x.eval + y.eval, x.invokelatest + y.invokelatest,
          x.evalArgStat + y.evalArgStat)
@@ -169,6 +171,22 @@ isEvalMacroName(@nospecialize e) = false        # everything else is not
 # Checks if [e] represents a call
 isCall(e :: Expr) = e.head == :call
 isCall(@nospecialize e) = false
+
+# AST → Bool
+# Checks if [e] represents a where-expression
+isWhere(e :: Expr) = e.head == :where
+isWhere(@nospecialize e) = false
+
+# AST → Bool
+# Checks if [e] represents a function definition
+isFunDef(e :: Expr) = e.head == :function || e.head == :(->) ||
+    e.head == :(=) && isCall(e.args[1]) || isWhere(e.args[1])
+isFunDef(@nospecialize e) = false
+
+# AST → Bool
+# Checks if [e] represents a block
+isBlock(e :: Expr) = e.head == :block
+isBlock(@nospecialize e) = false
 
 # AST → Bool
 # Checks if [e] represents a call to eval (either normal or macro)
@@ -203,18 +221,42 @@ argDescrUnsafe(arg :: Symbol) = [:symbol]
 argDescrUnsafe(arg :: Expr) =
     if arg.head == :quote
         argDescrUnsafe(arg.args[1])
-    # [=] means either function or assignment
-    elseif arg.head == :(=)
-        isCall(arg.args[1]) ? [:function] : [:(=)]
-    # anonymous function
+    # let's count anonymous functions
     elseif arg.head == :(->)
+    #    [:function]
+        [:(->)]
+    # captures the case where [=] means function definition
+    elseif isFunDef(arg)
         [:function]
-    # sometimes block has just one thing in it
+    # sometimes function definition is annotated with a macro,
+    # or macro @delegate actually defines a function
+    elseif arg.head == :macrocall
+        args = filter(e -> !isa(e, LineNumberNode), arg.args)
+        if in(args[1], map(Symbol, 
+              ["@delegate", "@define_unary", "@define_binary",
+               "@define_broadcast", "@define_broadcast_unary",
+               "@define_binary_dual_op"]))
+            [:function]
+        elseif args[1] == Symbol("@doc")
+            [Symbol("@doc")]
+        elseif length(args) == 2
+            isFunDef(args[2]) ? 
+                [:function] :
+                isBlock(args[2]) ? argDescrUnsafe(args[2]) : [:macrocall]
+        elseif count(isFunDef, args) > 0
+            [:function]
+        else
+            #@warn arg
+            [:macrocall]
+        end
+    # sometimes block has just one thing in it,
+    # otherwise, process every element inside
     elseif arg.head == :block
         args = filter(e -> !isa(e, LineNumberNode), arg.args)
         len = length(args)
         len == 0 ? [:nothing] : len == 1 ? argDescrUnsafe(args[1]) : 
             foldl(vcat, map(argDescrUnsafe, args))
+    #elseif arg.head ==
     elseif in(arg.head, EVAL_ARG_DESCRIPTIONS)
         [arg.head]
     else
@@ -226,7 +268,13 @@ argDescrUnsafe(@nospecialize arg) = [:value]
 # AST → [Symbol]
 # Maps [arg] (argument of eval) to symbol(s) describing its kind
 # (one of EVAL_ARG_DESCRIPTIONS).
-argDescr(arg :: Any) = try argDescrUnsafe(arg) catch ; [:error] end
+argDescr(arg :: Any) =
+    try 
+        argDescrUnsafe(arg) 
+    catch e
+        @error e
+        [:error]
+    end
 
 # AST → [Symbol] (Note that Symbol ~ EvalCallInfo at the moment)
 # Collects information about eval call [e]
@@ -245,8 +293,6 @@ gatherEvalInfo(@nospecialize e) :: EvalCallsSummary = EvalCallInfo[]
 #--------------------------------------------------
 # Single File Statistics
 #--------------------------------------------------
-
-Base.sum(stat :: Stat) :: UInt = stat.eval + stat.invokelatest
 
 # Checks if statistics is not useless, i.e. there is at least one call
 # to eval or invokelatest
@@ -312,7 +358,7 @@ end
 # String, String → PackageStat
 # Walks [src] directory of package [pkgName] located at [pkgPath]
 # and collects eval/invokelatest statistics
-function processPkg(pkgPath :: String, pkgName :: String)
+function processPkg(pkgPath :: String, pkgName :: String) :: PackageStat
     # we assume that correct Julia packages have [src] folder
     srcPath = joinpath(pkgPath, "src")
     # init statistics
@@ -358,16 +404,105 @@ function processPkgsDir(path :: String)
     (badPkgs, sort(goodPkgs, by=getInterestFactor, rev=true))
 end
 
+###################################################
+# Main
+###################################################
 
 #--------------------------------------------------
-# Aux
+# Aux output
 #--------------------------------------------------
 
-# Creates frequency dictionary from a vector
-function mkOccurDict(data :: Vector{T}) :: Dict{T, UInt} where T
-    foldl(
-        (dict, elem) -> 
-            (haskey(dict, elem) ? dict[elem] += 1 : dict[elem] = 1; dict),
-        data; init=Dict{T, UInt}()
-    )
+function outputPkgsProcessingSummary(io :: IO,
+    goodPkgsCnt, badPkgs :: Vector
+)
+    badPkgsCnt = length(badPkgs)
+    totalCnt = goodPkgsCnt + badPkgsCnt
+    println(io, "# processed package folders: $(totalCnt)")
+    println(io, "# failed (no [src]): $(badPkgsCnt)/$(totalCnt)")
+    badPkgsCnt == 0 ||
+        for pkgInfo in badPkgs
+            println(io, pkgInfo.pkgName)
+        end
+    println(io)
+    println(io, "# successfully processed folders: $(goodPkgsCnt)\n")
 end
+
+#--------------------------------------------------
+# Computing total metrics
+#--------------------------------------------------
+
+function incrementPkgsEvalStat!(
+    totPkgsEvalStat :: EvalArgStat, evalStat :: EvalArgStat
+) :: EvalArgStat
+    for kv in evalStat
+        if kv[2] > 0
+            incrementDict!(totPkgsEvalStat, kv[1])
+        end
+    end
+    totPkgsEvalStat
+end
+
+maybeDefineFunction(stat :: Stat) =
+    !isempty(intersect(keys(stat.evalArgStat),
+        [:function, :macro, :block,])
+    )
+    
+maybeCallFunction(stat :: Stat) =
+    !isempty(intersect(keys(stat.evalArgStat), 
+        [:call, :macrocall, :block,])
+    ) || stat.invokelatest > 0
+
+#--------------------------------------------------
+# Running analysis on packages
+#--------------------------------------------------
+
+const derivedConditions = Dict(
+    "fun_call" => maybeCallFunction,
+    "il"      => stat -> stat.invokelatest > 0
+)
+
+# Runs analysis on all packages from [pkgsDir]
+function analyzePackages(pkgsDir :: String, io :: IO)
+    isdir(pkgsDir) ||
+        exitErrWithMsg("$(pkgsDir) must be a folder")
+    # processing summary
+    (badPkgs, goodPkgs) = processPkgsDir(pkgsDir)
+    goodPkgsCnt = length(goodPkgs)
+    outputPkgsProcessingSummary(io, goodPkgsCnt, badPkgs)
+    # analyze packages
+    totalStat    :: Stat        = Stat()
+    pkgsEvalStat :: EvalArgStat = EvalArgStat()
+    pkgsDerivedStat = Dict{String, Int}(map(param -> param=>0,
+        ["non_vacuous", "fun_def", "fun_call", "il"]))
+    for pkgInfo in goodPkgs
+        # we don't output information about packages without eval/invokelatest
+        pkgInfo.interestingFiles > 0 || continue
+        println(io, "$(pkgInfo.pkgName): $(pkgInfo.pkgStat)")
+        println(io, "# non vacuous files: $(pkgInfo.interestingFiles)/$(pkgInfo.totalFiles)")
+        println(io, pkgInfo.filesStat)
+        # compute summary stats
+        pkgsDerivedStat["non_vacuous"] += 1
+        totalStat += pkgInfo.pkgStat
+        incrementPkgsEvalStat!(pkgsEvalStat, pkgInfo.pkgStat.evalArgStat)
+        # ask more specific questions
+        #maybeDefineFunction(pkgInfo.pkgStat) &&
+        #    pkgsDerivedStat["fun_def"] += 1
+        for propCond in derivedConditions
+            if propCond[2](pkgInfo.pkgStat)
+                pkgsDerivedStat[propCond[1]] += 1
+            end
+        end
+    end
+    # output derived stats
+    println(io, "Non vacuous packages: $(pkgsDerivedStat["non_vacuous"])/$(goodPkgsCnt)")
+    println(io, "With function calls: $(pkgsDerivedStat["fun_call"])/$(goodPkgsCnt)")
+    println(io, "With invokelatest: $(pkgsDerivedStat["il"])/$(goodPkgsCnt)")
+    println(io)
+    println(io, "Total Stat:")
+    for info in totalStat.evalArgStat
+        println(io, "* $(rpad(info[1], 10)) => $(info[2]) in $(pkgsEvalStat[info[1]])")
+    end
+    println(io)
+end
+
+

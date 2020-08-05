@@ -120,3 +120,20 @@ parseJuliaCode(text :: String) =
 # Parses file [filePath] as Julia code
 parseJuliaFile(filePath :: String) =
     parseJuliaCode(read(filePath, String))
+
+###################################################
+# Misc
+###################################################
+
+function incrementDict!(dict :: Dict{K, UInt}, key :: K) where K
+    haskey(dict, key) ? dict[key] += 1 : dict[key] = 1
+    dict
+end
+
+# Creates frequency dictionary from a vector
+function mkOccurDict(data :: Vector{K}) :: Dict{K, UInt} where K
+    foldl(
+        incrementDict!, data; 
+        init=Dict{K, UInt}()
+    )
+end

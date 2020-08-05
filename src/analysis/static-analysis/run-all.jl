@@ -88,5 +88,7 @@ if !PARAMS["noclone"]
 end
 
 # run analysis
-#println("Analysis\n$(SEP)")
-#run(pipeline(`julia run-analysis.jl $(pkgsDir)`, stdout=reportFile))
+println("Analysis\n$(SEP)")
+open(reportFile, "w") do io
+    analyzePackages(pkgsDir, io)
+end
