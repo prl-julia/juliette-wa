@@ -75,7 +75,7 @@ end
 # load packages
 if !isfile(pkgsListFile) || PARAMS["reload"]
     println("Packages list generation\n$(SEP)")
-    generatePackagesList(pkgsInfoFile, true, pkgsNum, pkgsListFile)
+    generatePackagesList(pkgsInfoFile, PARAMS["reload"], pkgsNum, pkgsListFile)
     println()
 end
 
