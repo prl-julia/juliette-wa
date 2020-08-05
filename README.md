@@ -65,7 +65,48 @@ so the next call `g(666)` will return 0.
 
 ## Dependencies
 
-* [Julia](https://julialang.org/)
+* [Julia](https://julialang.org/) with the following packages:
+  - `ArgParse`
+  - `JSON`
+
+  We used Julia [1.4.2](https://julialang.org/downloads/oldreleases/#v142_may_23_2020),
+  but the version should not make a big difference.
 
 * [Racket](https://racket-lang.org/)
   with [Redex](https://redex.racket-lang.org/)
+
+### Installing Julia dependencies and running Julia
+
+Since we are using pretty basic Julia packages, we don't expect any problems
+with their versions. Thus, most likely, Option 1 will work just fine,
+but if not, try Option 2.
+
+#### Option 1 (easiest)
+
+Run this from the main directory (`jl-wa`):
+
+```
+jl-wa$ julia install-julia-deps.jl
+```
+
+After that, run Julia code with `julia` command.
+
+#### Option 2
+
+To use the same versions of the packages that we did,
+run this from the main directory (`jl-wa`):
+
+```
+jl-wa$ julia -e 'using Pkg; Pkg.activate("."); Pkg.instantiate()'
+```
+
+After that, to run Julia code anywhere in `jl-wa`,
+use `julia --project=@.` command instead of `julia`.
+
+## Notes on running Julia
+
+Small scripts (for IO) are much faster if run with:
+
+```
+$ julia -O 0 --compile=min <script.jl>
+```

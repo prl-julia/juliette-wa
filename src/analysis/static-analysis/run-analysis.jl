@@ -13,8 +13,7 @@
 # 
 #**********************************************************************
 
-include("../../utils/lib.jl")
-include("lib.jl")
+include("lib/analysis.jl")
 
 if length(ARGS) == 0
     exitErrWithMsg("1 argument is expected -- packages folder")

@@ -2,7 +2,7 @@
 
 #**********************************************************************
 # Script for running lightweight static analysis of
-# eval/invokelatest usage for N packages
+# eval/invokelatest usage for N most starred packages
 #**********************************************************************
 #
 # Usage:
@@ -11,41 +11,82 @@
 #
 #**********************************************************************
 
+#--------------------------------------------------
+# Imports
+#--------------------------------------------------
+
+using ArgParse
+
 include("../../utils/lib.jl")
+include("lib/pkgs-generation.jl")
+include("lib/analysis.jl")
 
-if length(ARGS) == 0
-    exitErrWithMsg("1 argument is expected -- number of packages")
-end
-doCloning = true
-if length(ARGS) > 1
-    global doCloning = false
-end
-
-pkgsNum = 0
-try
-    global pkgsNum = parse(Int, ARGS[1])
-catch
-    exitErrWithMsg("argument $(ARGS[1]) must be a number")
-end
+###################################################
+# Constants and Parameters
+###################################################
 
 const SEP = "##############################"
+
+const pkgsInfoFile = "data/julia-pkgs-info.json"
+
+#--------------------------------------------------
+# Command line arguments
+#--------------------------------------------------
+
+# → Dict (arguments)
+function parse_command_line_args()
+    argsStr = ArgParseSettings()
+    @add_arg_table! argsStr begin
+        "--reload", "-r"
+            help = "flag specifying if packages information must be reloaded"
+            action = :store_true
+        "--noclone", "-n"
+            help = "flag specifying if cloning should be skipped"
+            action = :store_true
+        "--overwrite", "-w"
+            help = "flag specifying if repositories must be overwritten"
+            action = :store_true
+        "pkgnum"
+            help = "number of packages of interest"
+            arg_type = Int
+            required = true
+    end
+    parse_args(argsStr)
+end
+
+# All script parameters
+const PARAMS = parse_command_line_args()
+
+const pkgsNum = PARAMS["pkgnum"]
 
 const pkgsListFile = "data/pkgs-list/top-$(pkgsNum).txt"
 const pkgsDir      = "data/pkgs/$(pkgsNum)"
 const reportFile   = "data/reports/$(pkgsNum).txt"
 
+###################################################
+# Processing
+###################################################
+
+# create folders if necessary
 for d in ["data", "data/pkgs-list", "data/pkgs", "data/reports"]
     isdir(d) || mkdir(d)
 end
 
-if !isfile(pkgsListFile) #|| length(ARGS) > 1
+# load packages
+if !isfile(pkgsListFile) || PARAMS["reload"]
     println("Packages list generation\n$(SEP)")
-    run(`julia gen-pkgs-list.jl $(pkgsNum) -o $(pkgsListFile)`)
-end
-if doCloning
-    println("\nCloning\n$(SEP)")
-    run(`julia ../../utils/clone.jl -s $(pkgsListFile) -d $(pkgsDir)`)
+    generatePackagesList(pkgsInfoFile, true, pkgsNum, pkgsListFile)
     println()
 end
-println("Analysis\n$(SEP)")
-run(pipeline(`julia run-analysis.jl $(pkgsDir)`, stdout=reportFile))
+
+# clone if necessary
+if !PARAMS["noclone"]
+    println("Cloning\n$(SEP)")
+    (cloned, total) = gitcloneAll(pkgsListFile, pkgsDir, PARAMS["overwrite"])
+    @info "Successfully processed $(cloned)/$(total) git repos"
+    println()
+end
+
+# run analysis
+#println("Analysis\n$(SEP)")
+#run(pipeline(`julia run-analysis.jl $(pkgsDir)`, stdout=reportFile))

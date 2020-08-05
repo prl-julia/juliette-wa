@@ -2,8 +2,11 @@
 # Lightweight static analysis of eval/invokelatest
 #**********************************************************************
 # 
-# Read files in [src] directory and counts the number of occuences
-#   of "eval(" and "invokelatest("
+# 1) Reads files in [src] directory and counts the number of occurences
+#    of "eval(", "@eval(", "@eval ", and "invokelatest("
+#
+# 2) For calls to eval, uses Julia parser to collect information about
+#    AST heads of expressions passed to eval.
 # 
 #**********************************************************************
 
@@ -11,8 +14,11 @@
 # Imports
 #--------------------------------------------------
 
-include("../../utils/lib.jl")
-include("parse-eval.jl")
+# Just in case, we don't want to include code repeatedly
+Core.isdefined(Main, :UTILS_DEFINED) ||
+    include("../../../utils/lib.jl")
+
+import Base.show
 
 ###################################################
 # Data
@@ -22,21 +28,63 @@ include("parse-eval.jl")
 # Constants
 #--------------------------------------------------
 
+# Text-based analysis
+#------------------------------
+
 # regex-patterns for calls to eval/invokelatest
 #   (\W means non-word character and ^ means beginning of input --
 #    to exclude cases such as "my_eval(")
 CALL_PATTERN(name :: String) = Regex("(\\W|^)$(name)\\(") # r"(\W|^)eval\("
 const PATTERN_EVAL = CALL_PATTERN("eval")
 const PATTERN_INVOKELATEST = CALL_PATTERN("invokelatest")
-const PATTERN_EVAL_MACRO = r"@eval "
+const PATTERN_EVAL_MACRO = r"@eval( |\()"
+
+# AST-based analysis
+#------------------------------
+
+# Symbol representation of AST heads that we count
+# Note. [:other] includes, e.g., [&&] operator used in [Genie] package
+const EVAL_ARG_DESCRIPTIONS = [
+        :value, :symbol, :block, :curly, :let, :., :ref,
+        :struct, :module,
+        :export, :import, :using,
+        :const, :(=),
+        :function, :macro, :call, :macrocall,
+        :($),
+        :nothing, :other, :error
+    ]
+
+# Useful symbols for parsing
+const SYM_EVAL   = :eval
+const SYM_EVALM  = Symbol("@eval")
+const SYM_CORE   = :Core
+const SYM_DOT    = :.
+const QUOTE_EVAL = :(:eval)
+const SYM_CALL   = :call
+const SYM_MCALL  = :macrocall
 
 #--------------------------------------------------
 # Data Types
 #--------------------------------------------------
 
+# Eval argument statistics
+#------------------------------
+
+# Information about eval argument
+#struct EvalCallInfo
+#    astHead :: Symbol
+#end
+EvalCallInfo = Symbol
+
+EvalCallsSummary = Vector{EvalCallInfo}
+
+# Frequency of eval arguments
 EvalArgStat = Dict{EvalCallInfo, UInt}
 
-# Single file statistics
+# Overall statistics
+#------------------------------
+
+# Eval/invokelatest usage statistics
 struct Stat
     eval         :: UInt # number of calls to eval
     invokelatest :: UInt # number of calls to invokelatest
@@ -45,6 +93,7 @@ end
 Stat() = Stat(0, 0, EvalArgStat())
 Stat(ev :: Int, il :: Int) = Stat(ev, il, EvalArgStat())
 
+# Files statistics (fileName => statistics)
 FilesStat = Dict{String, Stat}
 
 # Single package statistics
@@ -98,17 +147,114 @@ Base.:+(x :: Stat, y :: Stat) =
 ###################################################
 
 #--------------------------------------------------
-# Single File
+# Eval Arguments Statistics
+#--------------------------------------------------
+
+# Parsing eval
+#------------------------------
+
+# AST → Bool
+# Checks if [e] represents standard name of [eval]
+isEvalName(e :: Symbol) = e == SYM_EVAL # eval
+isEvalName(e :: Expr) =                 # Core.eval
+    e.head == SYM_DOT && e.args[1] == SYM_CORE && e.args[2] == QUOTE_EVAL
+isEvalName(@nospecialize e) = false     # everything else is not
+
+# AST → Bool
+# Checks if [e] represents standard name of [@eval]
+isEvalMacroName(e :: Symbol) = e == SYM_EVALM   # @eval
+isEvalMacroName(@nospecialize e) = false        # everything else is not
+
+# AST → Bool
+# Checks if [e] represents a call
+isCall(e :: Expr) = e.head == :call
+isCall(@nospecialize e) = false
+
+# AST → Bool
+# Checks if [e] represents a call to eval (either normal or macro)
+isEvalCall(e :: Expr) =
+    # eval/Core.eval
+    e.head == SYM_CALL && isEvalName(e.args[1]) ||
+    # @eval
+    e.head == SYM_MCALL && isEvalMacroName(e.args[1])
+isEvalCall(@nospecialize e) = false
+
+# Collecting eval statistics
+#------------------------------
+
+# AST → UInt
+# Counts the number of calls to eval in [e]
+# Note. It does not go into quote, e.g. inner eval in
+#       [eval(:(eval(...)))] is ignored
+countEval(e :: Expr) :: UInt =
+    isEvalCall(e) ?
+        1 : #(@show e ; 1) :
+        sum(map(countEval, e.args))
+countEval(@nospecialize e) :: UInt = 0
+
+# AST → [Symbol]
+# Maps [arg] (argument of eval) to symbol(s) describing its kind
+# (one of EVAL_ARG_DESCRIPTIONS).
+# Usually the result will be just one symbol, but if it's a block,
+# we want to count all subcompponents.
+argDescrUnsafe(arg :: Nothing) = [:nothing]
+argDescrUnsafe(arg :: QuoteNode) = argDescrUnsafe(arg.value)
+argDescrUnsafe(arg :: Symbol) = [:symbol]
+argDescrUnsafe(arg :: Expr) =
+    if arg.head == :quote
+        argDescrUnsafe(arg.args[1])
+    # [=] means either function or assignment
+    elseif arg.head == :(=)
+        isCall(arg.args[1]) ? [:function] : [:(=)]
+    # anonymous function
+    elseif arg.head == :(->)
+        [:function]
+    # sometimes block has just one thing in it
+    elseif arg.head == :block
+        args = filter(e -> !isa(e, LineNumberNode), arg.args)
+        len = length(args)
+        len == 0 ? [:nothing] : len == 1 ? argDescrUnsafe(args[1]) : 
+            foldl(vcat, map(argDescrUnsafe, args))
+    elseif in(arg.head, EVAL_ARG_DESCRIPTIONS)
+        [arg.head]
+    else
+        [:other]
+    end
+# if it's something like Int, consider it a value
+argDescrUnsafe(@nospecialize arg) = [:value]
+
+# AST → [Symbol]
+# Maps [arg] (argument of eval) to symbol(s) describing its kind
+# (one of EVAL_ARG_DESCRIPTIONS).
+argDescr(arg :: Any) = try argDescrUnsafe(arg) catch ; [:error] end
+
+# AST → [Symbol] (Note that Symbol ~ EvalCallInfo at the moment)
+# Collects information about eval call [e]
+# assuming [e] IS an eval call (eval can be callen with no arguments)
+getEvalInfo(e :: Expr) :: Vector{EvalCallInfo} = 
+    length(e.args) > 1 ? argDescr(e.args[end]) : [:nothing]
+
+# AST → EvalCallsSummary
+# Collects information about arguments of all eval calls in [e]
+gatherEvalInfo(e :: Expr) :: EvalCallsSummary =
+    isEvalCall(e) ?
+        getEvalInfo(e) :
+        foldl(vcat, map(gatherEvalInfo, e.args); init=EvalCallInfo[])
+gatherEvalInfo(@nospecialize e) :: EvalCallsSummary = EvalCallInfo[]
+
+#--------------------------------------------------
+# Single File Statistics
 #--------------------------------------------------
 
 Base.sum(stat :: Stat) :: UInt = stat.eval + stat.invokelatest
 
-# Checks if statistics is "interesting", i.e. non-zero
+# Checks if statistics is not useless, i.e. there is at least one call
+# to eval or invokelatest
 nonVacuous(stat :: Stat) :: Bool = sum(stat) > 0
     #stat.invokelatest > 0
 
-# Some measure of interest (most interesting if there are
-#   both eval and invokelatest)
+# Some measure of interest (we consider [stat] the most interesting
+# if there are both eval and invokelatest calls)
 interestFactor(stat :: Stat) :: UInt = let
     Z = zero(UInt)
     hasEval   = stat.eval > Z
@@ -119,15 +265,7 @@ interestFactor(stat :: Stat) :: UInt = let
         (hasEval || hasInvoke ? 1000+val : Z)
 end
 
-function mkOccurDict(data :: Vector{T}) :: Dict{T, UInt} where T
-    foldl(
-        (dict, elem) -> 
-            (haskey(dict, elem) ? dict[elem] += 1 : dict[elem] = 1; dict),
-        data; init=Dict{T, UInt}()
-    )
-end
-
-# Computes statistics for source code [text]
+# Computes eval/invokelatest statistics for source code [text]
 function computeStat(text :: String) :: Stat
     ev = count(PATTERN_EVAL, text) + count(PATTERN_EVAL_MACRO, text)
     il = count(PATTERN_INVOKELATEST, text)
@@ -136,8 +274,10 @@ function computeStat(text :: String) :: Stat
         try
             evalInfos = gatherEvalInfo(parseJuliaCode(text))
             evArgStat = mkOccurDict(evalInfos)
-            Stat(sum((values(evArgStat))), il, evArgStat) # parsing is more precise
-        catch
+            # parsing gives more precise results
+            Stat(sum(values(evArgStat)), il, evArgStat)
+        catch e
+            @error e
             Stat(ev, il)
         end
     else
@@ -146,7 +286,7 @@ function computeStat(text :: String) :: Stat
 end
 
 #--------------------------------------------------
-# Single Package
+# Single Package Statistics
 #--------------------------------------------------
 
 # String → Bool
@@ -171,6 +311,7 @@ end
 
 # String, String → PackageStat
 # Walks [src] directory of package [pkgName] located at [pkgPath]
+# and collects eval/invokelatest statistics
 function processPkg(pkgPath :: String, pkgName :: String)
     # we assume that correct Julia packages have [src] folder
     srcPath = joinpath(pkgPath, "src")
@@ -215,4 +356,18 @@ function processPkgsDir(path :: String)
     badPkgs   = filter(!isGoodPackage, pkgsStats)
     # sort packages information from most interesting to less interesting
     (badPkgs, sort(goodPkgs, by=getInterestFactor, rev=true))
+end
+
+
+#--------------------------------------------------
+# Aux
+#--------------------------------------------------
+
+# Creates frequency dictionary from a vector
+function mkOccurDict(data :: Vector{T}) :: Dict{T, UInt} where T
+    foldl(
+        (dict, elem) -> 
+            (haskey(dict, elem) ? dict[elem] += 1 : dict[elem] = 1; dict),
+        data; init=Dict{T, UInt}()
+    )
 end
