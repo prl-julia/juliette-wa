@@ -68,11 +68,11 @@ MXNet.jl
 
 ### Load Path
 
-To set a custom package directory, use `JULIA_LOAD_PATH` environment variable
+To set a custom package directory, use `JULIA_DEPOT_PATH` environment variable
 (old Julia versions used `JULIA_PKG_DIR`):
 
 ```julia
-JULIA_LOAD_PATH=... julia
+JULIA_DEPOT_PATH=... julia
 ```
 
 ## Dependencies

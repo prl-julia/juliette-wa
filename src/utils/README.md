@@ -1,5 +1,16 @@
 # Utilities
 
+## Source Code
+
+* [`lib.jl`](lib.jl) implementation of utilities
+* [`clone.jl`](clone.jl) executable Julia script for cloning git repositories
+* [`clone.sh`](clone.sh) executable bash script for cloning git repositories
+
+## Library ([`lib.jl`](lib.jl))
+
+* cloning git repositories;
+* parsing Julia code.
+
 ## Executable scripts
 
 ### Cloning git repositories
@@ -45,15 +56,12 @@ reduces the start-up time of the script.
   $ julia -O 0 --compile=min clone.jl [-d <folder>] [-s <file>]
   ```
 
+The script downloads only one branch of a repository.
+This is controlled by `--single-branch` parameter to `git clone`
+(see `const GIT_CLONE_COMMAND` in [`lib.jl`](lib.jl)).
+
 ## Dependencies
 
 Julia packages (`import Pkg; Pkg.add("<pkgname>")`):
 
 * `ArgParse`
-
-## Source Code
-
-* [`lib.jl`](lib.jl) implementation of utilities functions
-
-* [`clone.jl`](clone.jl) julia-script executable
-* [`clone.sh`](clone.sh) bash-script executable

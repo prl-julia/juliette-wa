@@ -2,6 +2,8 @@
 # Utilities
 #**********************************************************************
 
+const UTILS_DEFINED = true
+
 #--------------------------------------------------
 # Imports
 #--------------------------------------------------
@@ -16,7 +18,8 @@ using Distributed # for cloning
 # String → Nothing
 # Prints error message and terminates execution
 function exitErrWithMsg(msg :: String)
-    println(stderr, "ERROR: $(msg)")
+    #println(stderr, "ERROR: $(msg)")
+    @error(msg)
     exit(1)
 end
 

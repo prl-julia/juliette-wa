@@ -21,7 +21,10 @@
 #--------------------------------------------------
 
 using ArgParse
-include("lib.jl")
+
+# Just in case, we don't want to include code repeatedly
+Core.isdefined(Main, :UTILS_DEFINED) ||
+    include("lib.jl")
 
 #--------------------------------------------------
 # Command Line Arguments
