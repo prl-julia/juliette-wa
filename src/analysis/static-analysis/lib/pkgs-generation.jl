@@ -33,6 +33,8 @@ const BAD_PKGS = [
     "https://github.com/Lonero-Team/Decentralized-Internet.git",
     # Empty package, it was merged somewhere
     "https://github.com/dmlc/MXNet.jl.git",
+    # Renamed to Franklin.jl
+    "https://github.com/tlienart/JuDoc.jl.git",
     # Packages below aren't publicly accessible for some reason
     "https://github.com/JuliaComputing/Blpapi.jl.git",
     "https://github.com/bcbi/CountdownLetters.jl.git",

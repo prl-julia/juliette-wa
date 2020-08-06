@@ -76,3 +76,78 @@
 1. `TensorOperations.jl` -- a single call to eval with `const`.
 
 1. `GasModels.jl` -- 3 calls to `eval` with export/import.
+
+
+
+## Processed Packages
+
+
+
+**Note.** There is a difference between
+
+```julia
+julia> function foo(s)
+         eval(:(bar() = 0))
+         eval(Symbol(s))()
+       end
+foo (generic function with 1 method)
+
+julia> foo("bar")
+ERROR: MethodError: no method matching bar()
+The applicable method may be too new: running in world age 27232, while current world is 27233.
+```
+
+and
+
+```julia
+julia> function zoo(s)
+         eval(:(zar() = 0))
+         eval(Symbol(s)())
+       end
+zoo (generic function with 1 method)
+
+julia> zoo("zar")
+ERROR: MethodError: objects of type Symbol are not callable
+```
+
+* `Genie.jl` other (`&&`), call (`Revise.revise()`x2 and resource generator),
+   parse (include, export, and multiple function definitions)
+* `Documenter.jl` call (type and probably function call), expr (`=`)
+   symbol (most likely function)
+* `Plots.jl` call (function call)
+* `CxxWrap.jl` symbol (struct)
+* `IJulia.jl` call (function calls, something related to help mode)
+* `PyCall.jl` expr (const and function definitions)
+* `Weave.jl` expr (tuple value)
+* `BenchmarkTools.jl` macrocall (function definition), parse (type),
+  call (function call)
+* `Pluto.jl` symbol (import)
+* `Revise.jl` symbol (function definition)
+* `Dagger.jl` symbol (type)
+* `CuArrays.jl`: `/src/forwarddiff.jl` call and macrocall (function definition)
+* `Knet.jl` macrocall (`@primitive`)
+* `Unitful.jl` expr (import/export), call (function call and environment)
+* `TensorFlow.jl` macrocall (probably function call, `@op`)
+* `ForwardDiff.jl` call (function call, which defines a function)
+* `ModelingToolkit.jl` call (function call)
+* `Oceananigans.jl` expr (function call), call (function definition),
+   symbol (function call, function)
+* `Cxx.jl` symbol (function definition), call (function call)
+* `DSGE.jl` symbol (function), expr (`=`)
+* `Franklin.jl` parse (module), call (function call), symbol (function call, `=`)
+* `ScikitLearn.jl` macrocall (`@reexportsk` exports names)
+* `Distributions.jl` symbol (function definition)
+* `Distributions.jl` expr (function definition)
+* `Latexify.jl` symbol (function call)
+* `Cassette.jl` call (overdub function call)
+* `Debugger.jl` symbol (function, `let`)
+* `Gen.jl` symbol (function definition):
+  ```julia
+  for function_defn in generated_functions
+      Core.eval(__module__, function_defn)
+  end
+  ```
+* `LightGraphs.jl` symbol (type)
+* `TextAnalysis.jl` symbol (function)
+* `AutoMLPipeline.jl` symbol (tuple to vector conversion)
+* `Query.jl` symbol (types or tuples)

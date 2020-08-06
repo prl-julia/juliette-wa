@@ -114,7 +114,7 @@ parsecode(code::String)::Vector =
 # String → AST
 # Parses [text] as Julia code
 parseJuliaCode(text :: String) =
-    Meta.parse(join(["quote", text, "end"], ";"))
+    Meta.parse(join(["quote", text, "end"], "\n"))
 
 # String → AST
 # Parses file [filePath] as Julia code
