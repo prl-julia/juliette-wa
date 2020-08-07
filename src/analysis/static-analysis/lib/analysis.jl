@@ -84,9 +84,10 @@ mutable struct PackagesTotalStat
     totalStat   :: Stat
     evalStat    :: EvalArgStat
     derivedStat :: Dict{String, Int}
+    trackedPkgs :: Dict{String, Vector{String}}
 end
-PackagesTotalStat(ds :: Dict{String, Int}) =
-    PackagesTotalStat(Stat(), EvalArgStat(), ds)
+PackagesTotalStat(ds :: Dict{String, Int}, tps :: Dict{String, Vector{String}}) =
+    PackagesTotalStat(Stat(), EvalArgStat(), ds, tps)
 
 #--------------------------------------------------
 # Show
@@ -100,7 +101,8 @@ Base.show(io :: IO, un :: UInt) = print(io, string10(un))
 
 Base.show(io :: IO, evStat :: EvalArgStat) = print(io, 
     "(" * 
-    join(map(kv -> "$(kv[1]) => $(kv[2])", collect(pairs(evStat))), ", ") *
+    join(map(kv -> "$(kv[1]) => $(kv[2])",
+         sort(collect(pairs(evStat)); by=kv->kv[2], rev=true)), ", ") *
     ")")
 
 Base.show(io :: IO, stat :: Stat) = print(io,
@@ -226,7 +228,7 @@ function computeStat(text :: String, filePath :: String) :: Stat
             Stat(sum(values(evArgStat)), il, evArgStat)
         catch e
             @error filePath e
-            Stat(ev, il, EvalArgStat(EvalCallInfo(:ERROR) => ev))
+            Stat(ev, il, EvalArgStat(EvalCallInfo(:EvPrsERR) => ev))
         end
     else
         Stat(ev, il)
@@ -336,19 +338,20 @@ end
 
 maybeInFunDefFunction(stat :: Stat) =
     !isempty(intersect(map(head -> EvalCallInfo(head, true),
-        [SYM_FUNC, SYM_MCALL, :symbol, :expr, :parse, :include]),
+        [SYM_FUNC, :macro, SYM_MCALL, SYM_LAM, :variable, :expr, :parse, :($),
+        :include, :useimport, :toplevel]),
         keys(stat.evalArgStat)
     ))
 
 maybeInFunCallFunction(stat :: Stat) =
     !isempty(intersect(map(head -> EvalCallInfo(head, true),
-        [SYM_CALL, SYM_MCALL, :(->), :symbol, :expr, :parse, :include]),
+        [SYM_CALL, :variable, :($), :expr, :parse]),
         keys(stat.evalArgStat)
     )) ||
     stat.invokelatest > 0
 
 likelyInFunCallFunction(stat :: Stat) =
-    in(EvalCallInfo(:call, true), keys(stat.evalArgStat)) ||
+    in(EvalCallInfo(SYM_CALL, true), keys(stat.evalArgStat)) ||
     stat.invokelatest > 0
 
 likelyInFunCallFunctionButNotDef(stat :: Stat) =
@@ -364,31 +367,70 @@ allEvalsAreTopLevelAndNoIL(stat :: Stat) =
     all(evalInfo -> !evalInfo.inFunDef, keys(stat.evalArgStat)) &&
     stat.invokelatest == 0
 
+const BORING_EVAL_ARGS = [
+        :export, :const, :(=), :global, :local, :struct, 
+        SYM_NFUNC_M, SYM_S_PRINT, 
+    ]
+
+evalIsBoring(evalInfo :: EvalCallInfo) :: Bool = 
+    !evalInfo.inFunDef ||
+    in(evalInfo.astHead, BORING_EVAL_ARGS)
+allEvalsAreBoringAndNoIL(stat :: Stat) =
+    all(evalIsBoring, keys(stat.evalArgStat)) &&
+    stat.invokelatest == 0
+
 singleTopLevelEvalAndNoIL(stat :: Stat) =
     stat.eval == 1 && !first(keys(stat.evalArgStat)).inFunDef &&
     stat.invokelatest == 0
 
+likelyImpactWorldAge(stat :: Stat) = begin
+    # if totally boring, then not interesting
+    if allEvalsAreBoringAndNoIL(stat)
+        return false
+    end
+    # leave only inFun elements that are not boring
+    inFunArgs = filter(
+        evalInfo -> evalInfo.inFunDef && 
+            !in(evalInfo.astHead, BORING_EVAL_ARGS), 
+        keys(stat.evalArgStat)
+    )
+    # if most things are top-level and boring,
+    # and there is just one non-boring thing, it might be misclassified
+    !(length(inFunArgs) == 0 ||
+      length(inFunArgs) == 1 && length(stat.evalArgStat) > 3)
+end
+
+
 const derivedConditions = Dict(
-    "allEvalTop"        => allEvalsAreTopLevel,
+    #"allEvalTop"        => allEvalsAreTopLevel,
     "allEvalTopNoIL"    => allEvalsAreTopLevelAndNoIL,
+    "allEvalBoringNoIL" => allEvalsAreBoringAndNoIL,
     "1TopEvalNoIL"      => singleTopLevelEvalAndNoIL,
     "fundef?"           => maybeInFunDefFunction,
     "onlyfundef?"       => maybeInFunDefFunButNotCall,
     "funcall?"          => maybeInFunCallFunction,
-    "funcall!"          => likelyInFunCallFunction,
     "onlyfuncall!"      => likelyInFunCallFunctionButNotDef,
-    "il"                => stat -> stat.invokelatest > 0
+    "il"                => stat -> stat.invokelatest > 0,
+    "likelyBypassWA"    => likelyInFunCallFunction,
+    "likelyImpactWA"    => likelyImpactWorldAge,
+    "likelyBoth"        => stat -> likelyInFunCallFunction(stat) && likelyImpactWorldAge(stat),
 )
 
 function computeDerivedMetrics(
     pkgInfos :: Vector{PackageStat}, io :: IO
 ) :: PackagesTotalStat
     pkgsStat :: PackagesTotalStat = PackagesTotalStat(
-        Dict{String, Int}(map(param -> param=>0,
-        ["non_vacuous", "allEvalTop", "allEvalTopNoIL", "1TopEvalNoIL",
-         "fundef?", "onlyfundef?",
-         "funcall?", "funcall!", "onlyfuncall!", "il"]))
+        Dict{String, Int}(map(param -> param=>0, [
+            "non_vacuous", "allEvalTop",
+            "allEvalBoringNoIL", "allEvalTopNoIL", "1TopEvalNoIL",
+            "fundef?", "onlyfundef?",
+            "funcall?", "onlyfuncall!", "il",
+            "likelyImpactWA", "likelyBypassWA", "likelyBoth",
+            ])),
+        Dict{String, Vector{String}}(map(param -> param=>String[], [
+            "likelyBypassWA", "likelyImpactWA", "likelyBoth"]))
     )
+    toTrackPkgs = 
     for pkgInfo in pkgInfos
         # we don't output information about packages without eval/invokelatest
         pkgInfo.interestingFiles > 0 || continue
@@ -404,6 +446,9 @@ function computeDerivedMetrics(
         for propCond in derivedConditions
             if propCond[2](pkgInfo.pkgStat)
                 pkgsStat.derivedStat[propCond[1]] += 1
+                if haskey(pkgsStat.trackedPkgs, propCond[1])
+                    push!(pkgsStat.trackedPkgs[propCond[1]], pkgInfo.pkgName)
+                end
             end
         end
     end
@@ -429,15 +474,18 @@ function analyzePackages(pkgsDir :: String, io :: IO)
     println(io, "==============================\n")
     println(io,
         "Non vacuous packages: $(derivedStat["non_vacuous"])/$(goodPkgsCnt)")
-    println(io, "* all evals are top-level: $(derivedStat["allEvalTop"])/$(goodPkgsCnt)")
     println(io, "* all evals are top-level and no invokelatest: $(derivedStat["allEvalTopNoIL"])/$(goodPkgsCnt)")
+    println(io, "* all evals are boring and no invokelatest: $(derivedStat["allEvalBoringNoIL"])/$(goodPkgsCnt)")
+    #println(io, "* all evals are top-level: $(derivedStat["allEvalTop"])/$(goodPkgsCnt)")
     println(io, "* single top-level eval and no invokelatest: $(derivedStat["1TopEvalNoIL"])/$(goodPkgsCnt)")
     println(io, "* maybe function defs in fun: $(derivedStat["fundef?"])/$(goodPkgsCnt)")
     println(io, "* maybe function defs in fun but not likely calls: $(derivedStat["onlyfundef?"])/$(goodPkgsCnt)")
-    println(io, "* maybe function calls in fun: $(derivedStat["funcall?"])/$(goodPkgsCnt)")
-    println(io, "* likely function calls in fun: $(derivedStat["funcall!"])/$(goodPkgsCnt)")
     println(io, "* likely function calls in fun but not defs: $(derivedStat["onlyfuncall!"])/$(goodPkgsCnt)")
+    println(io, "* maybe function calls in fun: $(derivedStat["funcall?"])/$(goodPkgsCnt)")
     println(io, "* invokelatest: $(derivedStat["il"])/$(goodPkgsCnt)")
+    println(io, "* !!! likely function calls in fun (bypass world age?): $(derivedStat["likelyBypassWA"])/$(goodPkgsCnt)")
+    println(io, "* !!! likely impact world age: $(derivedStat["likelyImpactWA"])/$(goodPkgsCnt)")
+    println(io, "* !!! likely both: $(derivedStat["likelyBoth"])/$(goodPkgsCnt)")
     println(io)
     println(io, "Total Stat:")
     for info in sort(collect(pkgsStat.totalStat.evalArgStat);
@@ -447,6 +495,8 @@ function analyzePackages(pkgsDir :: String, io :: IO)
             " => $(lpad(info[2], 4))" *
             " in $(lpad(pkgsStat.evalStat[info[1]], 3)) pkgs")
     end
+    println(io)
+    println(io, join(pairs(pkgsStat.trackedPkgs), "\n\n"))
     println(io)
 end
 

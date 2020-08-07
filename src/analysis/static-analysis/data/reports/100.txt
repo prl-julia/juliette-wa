@@ -6,14 +6,14 @@ MXNet.jl
 ==============================
 
 CUDAnative.jl: {ev: 37, il: 2}
-  [evalArgs: (struct [top] => 1, = [top] => 6, @doc [top] => 3, function [top] => 23, export [top] => 4)]
+  [evalArgs: (function [top] => 23, = [top] => 6, export [top] => 4, @doc [top] => 3, struct [top] => 1)]
 # non vacuous files: 6/39
 * /src/device/cuda/indexing.jl => {ev: 4, il: 0}
   [evalArgs: (function [top] => 4)]
 * /src/device/cuda/warp_shuffle.jl => {ev: 3, il: 0}
   [evalArgs: (function [top] => 2, export [top] => 1)]
 * /src/device/cuda/wmma.jl => {ev: 13, il: 0}
-  [evalArgs: (struct [top] => 1, @doc [top] => 3, function [top] => 6, export [top] => 3)]
+  [evalArgs: (function [top] => 6, @doc [top] => 3, export [top] => 3, struct [top] => 1)]
 * /src/init.jl => {ev: 0, il: 2}
   [evalArgs: ()]
 * /src/reflection.jl => {ev: 8, il: 0}
@@ -22,7 +22,7 @@ CUDAnative.jl: {ev: 37, il: 2}
   [evalArgs: (function [top] => 9)]
 
 Genie.jl: {ev: 24, il: 6}
-  [evalArgs: (import [fun] => 1, = [fun] => 1, using [fun] => 2, other [fun] => 1, call [fun] => 3, const [fun] => 2, parse [fun] => 11, $ [top] => 1, include [fun] => 2)]
+  [evalArgs: (parse [fun] => 11, useimport [fun] => 3, call [fun] => 3, const [fun] => 2, include [fun] => 2, = [fun] => 1, other [fun] => 1, $ [top] => 1)]
 # non vacuous files: 10/38
 * /src/App.jl => {ev: 1, il: 0}
   [evalArgs: (parse [fun] => 1)]
@@ -31,7 +31,7 @@ Genie.jl: {ev: 24, il: 6}
 * /src/Sessions.jl => {ev: 1, il: 0}
   [evalArgs: (const [fun] => 1)]
 * /src/Toolbox.jl => {ev: 2, il: 0}
-  [evalArgs: (using [fun] => 1, include [fun] => 1)]
+  [evalArgs: (useimport [fun] => 1, include [fun] => 1)]
 * /src/renderers/Html.jl => {ev: 10, il: 1}
   [evalArgs: (parse [fun] => 9, $ [top] => 1)]
 * /src/Renderer.jl => {ev: 1, il: 1}
@@ -43,15 +43,15 @@ Genie.jl: {ev: 24, il: 6}
 * /src/Commands.jl => {ev: 0, il: 2}
   [evalArgs: ()]
 * /src/Genie.jl => {ev: 6, il: 0}
-  [evalArgs: (include [fun] => 1, other [fun] => 1, using [fun] => 1, call [fun] => 2, import [fun] => 1)]
+  [evalArgs: (useimport [fun] => 2, call [fun] => 2, other [fun] => 1, include [fun] => 1)]
 
 Documenter.jl: {ev: 21, il: 7}
-  [evalArgs: (ref [fun] => 6, . [fun] => 1, call [fun] => 2, const [fun] => 1, expr [fun] => 3, symbol [fun] => 6, function [fun] => 2)]
+  [evalArgs: (variable [fun] => 13, global [fun] => 3, call [fun] => 2, function [fun] => 2, const [fun] => 1)]
 # non vacuous files: 8/23
 * /src/Expanders.jl => {ev: 12, il: 2}
-  [evalArgs: (ref [fun] => 3, . [fun] => 1, call [fun] => 1, expr [fun] => 2, symbol [fun] => 3, function [fun] => 2)]
+  [evalArgs: (variable [fun] => 7, global [fun] => 2, function [fun] => 2, call [fun] => 1)]
 * /src/DocTests.jl => {ev: 6, il: 2}
-  [evalArgs: (ref [fun] => 2, expr [fun] => 1, symbol [fun] => 3)]
+  [evalArgs: (variable [fun] => 5, global [fun] => 1)]
 * /src/Writers/HTMLWriter.jl => {ev: 0, il: 1}
   [evalArgs: ()]
 * /src/DocMeta.jl => {ev: 1, il: 0}
@@ -63,10 +63,10 @@ Documenter.jl: {ev: 21, il: 7}
 * /src/CrossReferences.jl => {ev: 1, il: 0}
   [evalArgs: (call [fun] => 1)]
 * /src/Documents.jl => {ev: 1, il: 0}
-  [evalArgs: (ref [fun] => 1)]
+  [evalArgs: (variable [fun] => 1)]
 
 Plots.jl: {ev: 27, il: 1}
-  [evalArgs: (export [fun] => 3, call [fun] => 1, function [top] => 18, @optlevel [top] => 1, import [fun] => 4)]
+  [evalArgs: (function [top] => 18, useimport [fun] => 4, export [fun] => 3, @!WAmacro [top] => 1, call [fun] => 1)]
 # non vacuous files: 11/34
 * /src/utils.jl => {ev: 5, il: 0}
   [evalArgs: (function [top] => 5)]
@@ -77,7 +77,7 @@ Plots.jl: {ev: 27, il: 1}
 * /src/pipeline.jl => {ev: 0, il: 1}
   [evalArgs: ()]
 * /src/Plots.jl => {ev: 1, il: 0}
-  [evalArgs: (@optlevel [top] => 1)]
+  [evalArgs: (@!WAmacro [top] => 1)]
 * /src/backends/plotlyjs.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 * /src/backends/pgfplotsx.jl => {ev: 1, il: 0}
@@ -87,18 +87,18 @@ Plots.jl: {ev: 27, il: 1}
 * /src/backends/gr.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 * /src/backends.jl => {ev: 14, il: 0}
-  [evalArgs: (export [fun] => 3, call [fun] => 1, function [top] => 6, import [fun] => 4)]
+  [evalArgs: (function [top] => 6, useimport [fun] => 4, export [fun] => 3, call [fun] => 1)]
 * /src/backends/pyplot.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 
 CxxWrap.jl: {ev: 21, il: 5}
-  [evalArgs: (struct [fun] => 1, $ [fun] => 1, call [fun] => 1, function [top] => 1, const [fun] => 6, symbol [fun] => 3, function [fun] => 8)]
+  [evalArgs: (function [fun] => 8, const [fun] => 6, variable [fun] => 3, struct [fun] => 1, $ [fun] => 1, call [fun] => 1, function [top] => 1)]
 # non vacuous files: 1/2
 * /src/CxxWrap.jl => {ev: 21, il: 5}
-  [evalArgs: (struct [fun] => 1, $ [fun] => 1, call [fun] => 1, function [top] => 1, const [fun] => 6, symbol [fun] => 3, function [fun] => 8)]
+  [evalArgs: (function [fun] => 8, const [fun] => 6, variable [fun] => 3, struct [fun] => 1, $ [fun] => 1, call [fun] => 1, function [top] => 1)]
 
 IJulia.jl: {ev: 7, il: 8}
-  [evalArgs: (= [top] => 1, call [fun] => 3, function [top] => 3)]
+  [evalArgs: (call [fun] => 3, function [top] => 3, = [top] => 1)]
 # non vacuous files: 7/15
 * /src/inline.jl => {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
@@ -116,38 +116,38 @@ IJulia.jl: {ev: 7, il: 8}
   [evalArgs: (function [top] => 1)]
 
 PyCall.jl: {ev: 12, il: 1}
-  [evalArgs: (function [top] => 10, @optlevel [top] => 1, expr [fun] => 1)]
+  [evalArgs: (function [top] => 10, @!WAmacro [top] => 1, toplevel [fun] => 1)]
 # non vacuous files: 3/20
 * /src/pyoperators.jl => {ev: 8, il: 0}
   [evalArgs: (function [top] => 8)]
 * /src/callback.jl => {ev: 0, il: 1}
   [evalArgs: ()]
 * /src/PyCall.jl => {ev: 4, il: 0}
-  [evalArgs: (function [top] => 2, @optlevel [top] => 1, expr [fun] => 1)]
+  [evalArgs: (function [top] => 2, @!WAmacro [top] => 1, toplevel [fun] => 1)]
 
 Weave.jl: {ev: 6, il: 6}
-  [evalArgs: (= [fun] => 2, expr [fun] => 2, module [fun] => 1, import [fun] => 1)]
+  [evalArgs: (= [fun] => 2, expr [fun] => 2, useimport [fun] => 1, module [fun] => 1)]
 # non vacuous files: 3/25
 * /src/reader/reader.jl => {ev: 2, il: 0}
   [evalArgs: (expr [fun] => 2)]
 * /src/display_methods.jl => {ev: 0, il: 4}
   [evalArgs: ()]
 * /src/run.jl => {ev: 4, il: 2}
-  [evalArgs: (= [fun] => 2, module [fun] => 1, import [fun] => 1)]
+  [evalArgs: (= [fun] => 2, useimport [fun] => 1, module [fun] => 1)]
 
 BenchmarkTools.jl: {ev: 7, il: 2}
-  [evalArgs: (call [fun] => 1, macrocall [fun] => 1, parse [fun] => 1, function [top] => 1, function [fun] => 3)]
+  [evalArgs: (function [fun] => 4, call [fun] => 1, parse [fun] => 1, function [top] => 1)]
 # non vacuous files: 2/6
 * /src/serialization.jl => {ev: 2, il: 0}
   [evalArgs: (parse [fun] => 1, function [top] => 1)]
 * /src/execution.jl => {ev: 5, il: 2}
-  [evalArgs: (call [fun] => 1, macrocall [fun] => 1, function [fun] => 3)]
+  [evalArgs: (function [fun] => 4, call [fun] => 1)]
 
 Pluto.jl: {ev: 7, il: 1}
-  [evalArgs: (ref [fun] => 1, = [fun] => 1, $ [fun] => 2, symbol [fun] => 1, import [fun] => 2)]
+  [evalArgs: (variable [fun] => 2, useimport [fun] => 2, $ [fun] => 2, = [fun] => 1)]
 # non vacuous files: 3/18
 * /src/runner/PlutoRunner.jl => {ev: 5, il: 1}
-  [evalArgs: (ref [fun] => 1, = [fun] => 1, symbol [fun] => 1, import [fun] => 2)]
+  [evalArgs: (variable [fun] => 2, useimport [fun] => 2, = [fun] => 1)]
 * /src/evaluation/WorkspaceManager.jl => {ev: 1, il: 0}
   [evalArgs: ($ [fun] => 1)]
 * /src/analysis/Parse.jl => {ev: 1, il: 0}
@@ -160,30 +160,30 @@ Literate.jl: {ev: 2, il: 3}
   [evalArgs: (function [fun] => 2)]
 
 Revise.jl: {ev: 3, il: 1}
-  [evalArgs: (@optlevel [top] => 1, symbol [fun] => 2)]
+  [evalArgs: (variable [fun] => 2, @!WAmacro [top] => 1)]
 # non vacuous files: 2/13
 * /src/Revise.jl => {ev: 2, il: 1}
-  [evalArgs: (@optlevel [top] => 1, symbol [fun] => 1)]
+  [evalArgs: (variable [fun] => 1, @!WAmacro [top] => 1)]
 * /src/lowered.jl => {ev: 1, il: 0}
-  [evalArgs: (symbol [fun] => 1)]
+  [evalArgs: (variable [fun] => 1)]
 
 Dagger.jl: {ev: 1, il: 1}
-  [evalArgs: (symbol [fun] => 1)]
+  [evalArgs: (variable [fun] => 1)]
 # non vacuous files: 2/22
 * /src/processor.jl => {ev: 0, il: 1}
   [evalArgs: ()]
 * /src/compute.jl => {ev: 1, il: 0}
-  [evalArgs: (symbol [fun] => 1)]
+  [evalArgs: (variable [fun] => 1)]
 
 CuArrays.jl: {ev: 249, il: 0}
-  [evalArgs: (macrocall [top] => 1, call [top] => 6, function [top] => 242)]
+  [evalArgs: (function [top] => 242, call [top] => 6, macrocall [top] => 1)]
 # non vacuous files: 9/80
 * /src/sparse/wrappers.jl => {ev: 110, il: 0}
   [evalArgs: (function [top] => 110)]
 * /src/blas/linalg.jl => {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
 * /src/forwarddiff.jl => {ev: 7, il: 0}
-  [evalArgs: (macrocall [top] => 1, call [top] => 6)]
+  [evalArgs: (call [top] => 6, macrocall [top] => 1)]
 * /src/nnlib.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 * /src/blas/wrappers.jl => {ev: 102, il: 0}
@@ -198,10 +198,10 @@ CuArrays.jl: {ev: 249, il: 0}
   [evalArgs: (function [top] => 4)]
 
 Grassmann.jl: {ev: 194, il: 0}
-  [evalArgs: (local [fun] => 2, const [top] => 2, function [top] => 88, export [top] => 1, function [fun] => 99, symbol [fun] => 2)]
+  [evalArgs: (function [fun] => 99, function [top] => 88, variable [fun] => 2, const [top] => 2, local [fun] => 2, export [top] => 1)]
 # non vacuous files: 7/7
 * /src/parity.jl => {ev: 7, il: 0}
-  [evalArgs: (const [top] => 2, function [top] => 5)]
+  [evalArgs: (function [top] => 5, const [top] => 2)]
 * /src/composite.jl => {ev: 17, il: 0}
   [evalArgs: (function [top] => 16, export [top] => 1)]
 * /src/multivectors.jl => {ev: 12, il: 0}
@@ -209,25 +209,25 @@ Grassmann.jl: {ev: 194, il: 0}
 * /src/forms.jl => {ev: 8, il: 0}
   [evalArgs: (function [top] => 8)]
 * /src/products.jl => {ev: 31, il: 0}
-  [evalArgs: (function [top] => 1, function [fun] => 30)]
+  [evalArgs: (function [fun] => 30, function [top] => 1)]
 * /src/algebra.jl => {ev: 109, il: 0}
-  [evalArgs: (function [top] => 43, function [fun] => 64, symbol [fun] => 2)]
+  [evalArgs: (function [fun] => 64, function [top] => 43, variable [fun] => 2)]
 * /src/Grassmann.jl => {ev: 10, il: 0}
-  [evalArgs: (local [fun] => 2, function [top] => 3, function [fun] => 5)]
+  [evalArgs: (function [fun] => 5, function [top] => 3, local [fun] => 2)]
 
 Knet.jl: {ev: 87, il: 0}
-  [evalArgs: (macrocall [top] => 1, function [top] => 48, function [fun] => 38)]
+  [evalArgs: (function [top] => 48, function [fun] => 38, macrocall [top] => 1)]
 # non vacuous files: 11/50
 * /src/cuarrays/dropout.jl => {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
 * /src/unary.jl => {ev: 15, il: 0}
-  [evalArgs: (macrocall [top] => 1, function [top] => 4, function [fun] => 10)]
+  [evalArgs: (function [fun] => 10, function [top] => 4, macrocall [top] => 1)]
 * /src/bmm.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 * /src/cuarrays/autograd.jl => {ev: 9, il: 0}
   [evalArgs: (function [top] => 9)]
 * /src/binary.jl => {ev: 38, il: 0}
-  [evalArgs: (function [top] => 12, function [fun] => 26)]
+  [evalArgs: (function [fun] => 26, function [top] => 12)]
 * /src/cuarrays/getindex.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 * /src/karray.jl => {ev: 16, il: 0}
@@ -242,7 +242,7 @@ Knet.jl: {ev: 87, il: 0}
   [evalArgs: (function [fun] => 1)]
 
 Unitful.jl: {ev: 76, il: 0}
-  [evalArgs: (const [top] => 1, expr [top] => 8, call [fun] => 2, function [top] => 53, function [fun] => 12)]
+  [evalArgs: (function [top] => 53, function [fun] => 12, import [top] => 4, export [top] => 4, call [fun] => 2, const [top] => 1)]
 # non vacuous files: 8/15
 * /src/dimensions.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
@@ -255,7 +255,7 @@ Unitful.jl: {ev: 76, il: 0}
 * /src/fastmath.jl => {ev: 3, il: 0}
   [evalArgs: (function [top] => 3)]
 * /src/pkgdefaults.jl => {ev: 23, il: 0}
-  [evalArgs: (const [top] => 1, expr [top] => 8, function [top] => 2, function [fun] => 12)]
+  [evalArgs: (function [fun] => 12, import [top] => 4, export [top] => 4, function [top] => 2, const [top] => 1)]
 * /src/logarithm.jl => {ev: 7, il: 0}
   [evalArgs: (function [top] => 7)]
 * /src/units.jl => {ev: 3, il: 0}
@@ -282,14 +282,14 @@ ApproxFun.jl: {ev: 22, il: 0}
   [evalArgs: (function [top] => 4)]
 
 TensorFlow.jl: {ev: 21, il: 0}
-  [evalArgs: (macrocall [top] => 1, @doc [top] => 1, . [fun] => 1, function [top] => 18)]
+  [evalArgs: (function [top] => 18, macrocall [top] => 1, variable [fun] => 1, @doc [top] => 1)]
 # non vacuous files: 7/93
 * /src/ops/comparison.jl => {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
 * /src/ops/logical.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 * /src/ops/math.jl => {ev: 10, il: 0}
-  [evalArgs: (macrocall [top] => 1, function [top] => 9)]
+  [evalArgs: (function [top] => 9, macrocall [top] => 1)]
 * /src/ops/sequences.jl => {ev: 4, il: 0}
   [evalArgs: (function [top] => 4)]
 * /src/ops/debugging.jl => {ev: 1, il: 0}
@@ -297,13 +297,13 @@ TensorFlow.jl: {ev: 21, il: 0}
 * /src/ops/summaries.jl => {ev: 2, il: 0}
   [evalArgs: (@doc [top] => 1, function [top] => 1)]
 * /src/generate_ops.jl => {ev: 1, il: 0}
-  [evalArgs: (. [fun] => 1)]
+  [evalArgs: (variable [fun] => 1)]
 
 DataStructures.jl: {ev: 19, il: 0}
-  [evalArgs: (struct [top] => 1, function [top] => 18)]
+  [evalArgs: (function [top] => 18, struct [top] => 1)]
 # non vacuous files: 1/34
 * /src/default_dict.jl => {ev: 19, il: 0}
-  [evalArgs: (struct [top] => 1, function [top] => 18)]
+  [evalArgs: (function [top] => 18, struct [top] => 1)]
 
 Measurements.jl: {ev: 19, il: 0}
   [evalArgs: (function [top] => 19)]
@@ -318,10 +318,10 @@ Measurements.jl: {ev: 19, il: 0}
   [evalArgs: (function [top] => 6)]
 
 Turing.jl: {ev: 19, il: 0}
-  [evalArgs: (import [top] => 1, struct [top] => 1, include [top] => 1, function [top] => 14, if [top] => 1, export [top] => 1)]
+  [evalArgs: (function [top] => 14, useimport [top] => 1, struct [top] => 1, include [top] => 1, if [top] => 1, export [top] => 1)]
 # non vacuous files: 5/27
 * /src/core/compat/reversediff.jl => {ev: 10, il: 0}
-  [evalArgs: (struct [top] => 1, function [top] => 9)]
+  [evalArgs: (function [top] => 9, struct [top] => 1)]
 * /src/inference/Inference.jl => {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
 * /src/inference/hmc.jl => {ev: 1, il: 0}
@@ -329,38 +329,38 @@ Turing.jl: {ev: 19, il: 0}
 * /src/core/ad.jl => {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
 * /src/Turing.jl => {ev: 4, il: 0}
-  [evalArgs: (import [top] => 1, include [top] => 1, if [top] => 1, export [top] => 1)]
+  [evalArgs: (useimport [top] => 1, include [top] => 1, if [top] => 1, export [top] => 1)]
 
 StaticArrays.jl: {ev: 17, il: 0}
-  [evalArgs: (function [top] => 1, ref [top] => 16)]
+  [evalArgs: (variable [top] => 16, function [top] => 1)]
 # non vacuous files: 7/43
 * /src/MMatrix.jl => {ev: 4, il: 0}
-  [evalArgs: (ref [top] => 4)]
+  [evalArgs: (variable [top] => 4)]
 * /src/MVector.jl => {ev: 2, il: 0}
-  [evalArgs: (ref [top] => 2)]
+  [evalArgs: (variable [top] => 2)]
 * /src/MArray.jl => {ev: 2, il: 0}
-  [evalArgs: (ref [top] => 2)]
+  [evalArgs: (variable [top] => 2)]
 * /src/SMatrix.jl => {ev: 4, il: 0}
-  [evalArgs: (ref [top] => 4)]
+  [evalArgs: (variable [top] => 4)]
 * /src/SVector.jl => {ev: 2, il: 0}
-  [evalArgs: (ref [top] => 2)]
+  [evalArgs: (variable [top] => 2)]
 * /src/solve.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 * /src/SArray.jl => {ev: 2, il: 0}
-  [evalArgs: (ref [top] => 2)]
+  [evalArgs: (variable [top] => 2)]
 
 ForwardDiff.jl: {ev: 16, il: 0}
-  [evalArgs: (call [top] => 2, function [top] => 14)]
+  [evalArgs: (function [top] => 14, call [top] => 2)]
 # non vacuous files: 3/10
 * /src/dual.jl => {ev: 10, il: 0}
-  [evalArgs: (call [top] => 2, function [top] => 8)]
+  [evalArgs: (function [top] => 8, call [top] => 2)]
 * /src/jacobian.jl => {ev: 4, il: 0}
   [evalArgs: (function [top] => 4)]
 * /src/gradient.jl => {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
 
 ModelingToolkit.jl: {ev: 16, il: 0}
-  [evalArgs: (call [fun] => 4, function [top] => 12)]
+  [evalArgs: (function [top] => 12, call [fun] => 4)]
 # non vacuous files: 4/29
 * /src/differentials.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
@@ -372,14 +372,14 @@ ModelingToolkit.jl: {ev: 16, il: 0}
   [evalArgs: (function [top] => 3)]
 
 Oceananigans.jl: {ev: 16, il: 0}
-  [evalArgs: (const [top] => 1, call [top] => 2, symbol [top] => 1, function [top] => 7, expr [fun] => 1, symbol [fun] => 4)]
+  [evalArgs: (function [top] => 7, variable [fun] => 4, call [top] => 2, const [top] => 1, expr [fun] => 1, variable [top] => 1)]
 # non vacuous files: 9/127
 * /src/TurbulenceClosures/turbulence_closure_implementations/verstappen_anisotropic_minimum_dissipation.jl => {ev: 1, il: 0}
   [evalArgs: (const [top] => 1)]
 * /src/AbstractOperations/interpolation_utils.jl => {ev: 4, il: 0}
-  [evalArgs: (function [top] => 3, symbol [fun] => 1)]
+  [evalArgs: (function [top] => 3, variable [fun] => 1)]
 * /src/AbstractOperations/derivatives.jl => {ev: 3, il: 0}
-  [evalArgs: (symbol [fun] => 3)]
+  [evalArgs: (variable [fun] => 3)]
 * /src/TimeSteppers/TimeSteppers.jl => {ev: 1, il: 0}
   [evalArgs: (expr [fun] => 1)]
 * /src/BoundaryConditions/fill_halo_regions.jl => {ev: 1, il: 0}
@@ -391,10 +391,10 @@ Oceananigans.jl: {ev: 16, il: 0}
 * /src/TurbulenceClosures/TurbulenceClosures.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 * /src/AbstractOperations/show_abstract_operations.jl => {ev: 2, il: 0}
-  [evalArgs: (symbol [top] => 1, function [top] => 1)]
+  [evalArgs: (variable [top] => 1, function [top] => 1)]
 
 Cxx.jl: {ev: 13, il: 0}
-  [evalArgs: (let [fun] => 1, call [fun] => 2, symbol [top] => 1, function [top] => 9)]
+  [evalArgs: (function [top] => 9, call [fun] => 2, let [fun] => 1, variable [top] => 1)]
 # non vacuous files: 8/15
 * /src/std.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
@@ -407,25 +407,25 @@ Cxx.jl: {ev: 13, il: 0}
 * /src/autowrap.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 * /src/cxxmacro.jl => {ev: 1, il: 0}
-  [evalArgs: (symbol [top] => 1)]
+  [evalArgs: (variable [top] => 1)]
 * /src/initialization.jl => {ev: 1, il: 0}
   [evalArgs: (let [fun] => 1)]
 * /src/typetranslation.jl => {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
 
 DSGE.jl: {ev: 13, il: 0}
-  [evalArgs: ($ [fun] => 1, function [top] => 8, expr [fun] => 1, symbol [fun] => 3)]
+  [evalArgs: (function [top] => 8, variable [fun] => 3, = [fun] => 1, $ [fun] => 1)]
 # non vacuous files: 5/287
 * /src/util.jl => {ev: 2, il: 0}
-  [evalArgs: (function [top] => 1, expr [fun] => 1)]
+  [evalArgs: (= [fun] => 1, function [top] => 1)]
 * /src/estimate/smc/particle.jl => {ev: 7, il: 0}
   [evalArgs: (function [top] => 7)]
 * /src/models/heterogeneous/two_asset_hank/test_against_matlab.jl => {ev: 1, il: 0}
   [evalArgs: ($ [fun] => 1)]
 * /src/analysis/util.jl => {ev: 1, il: 0}
-  [evalArgs: (symbol [fun] => 1)]
+  [evalArgs: (variable [fun] => 1)]
 * /src/forecast/smooth.jl => {ev: 2, il: 0}
-  [evalArgs: (symbol [fun] => 2)]
+  [evalArgs: (variable [fun] => 2)]
 
 HDF5.jl: {ev: 11, il: 0}
   [evalArgs: (function [top] => 8, $ [top] => 3)]
@@ -434,12 +434,12 @@ HDF5.jl: {ev: 11, il: 0}
   [evalArgs: (function [top] => 8, $ [top] => 3)]
 
 PyPlot.jl: {ev: 11, il: 0}
-  [evalArgs: (@doc [top] => 3, function [top] => 8)]
+  [evalArgs: (function [top] => 8, @doc [top] => 3)]
 # non vacuous files: 2/4
 * /src/plot3d.jl => {ev: 2, il: 0}
   [evalArgs: (@doc [top] => 2)]
 * /src/PyPlot.jl => {ev: 9, il: 0}
-  [evalArgs: (@doc [top] => 1, function [top] => 8)]
+  [evalArgs: (function [top] => 8, @doc [top] => 1)]
 
 DataFrames.jl: {ev: 8, il: 0}
   [evalArgs: (function [top] => 8)]
@@ -454,20 +454,20 @@ DataFrames.jl: {ev: 8, il: 0}
   [evalArgs: (function [top] => 1)]
 
 Franklin.jl: {ev: 8, il: 0}
-  [evalArgs: (ref [fun] => 1, call [fun] => 3, parse [fun] => 1, symbol [fun] => 3)]
+  [evalArgs: (variable [fun] => 4, call [fun] => 3, parse [fun] => 1)]
 # non vacuous files: 6/42
 * /src/eval/codeblock.jl => {ev: 1, il: 0}
   [evalArgs: (call [fun] => 1)]
 * /src/converter/latex/latex.jl => {ev: 2, il: 0}
   [evalArgs: (call [fun] => 2)]
 * /src/utils/vars.jl => {ev: 1, il: 0}
-  [evalArgs: (symbol [fun] => 1)]
+  [evalArgs: (variable [fun] => 1)]
 * /src/eval/module.jl => {ev: 1, il: 0}
   [evalArgs: (parse [fun] => 1)]
 * /src/eval/run.jl => {ev: 1, il: 0}
-  [evalArgs: (ref [fun] => 1)]
+  [evalArgs: (variable [fun] => 1)]
 * /src/converter/html/functions.jl => {ev: 2, il: 0}
-  [evalArgs: (symbol [fun] => 2)]
+  [evalArgs: (variable [fun] => 2)]
 
 QuantEcon.jl: {ev: 8, il: 0}
   [evalArgs: (function [top] => 8)]
@@ -496,20 +496,20 @@ JuliaDB.jl: {ev: 6, il: 0}
   [evalArgs: (function [top] => 2)]
 
 LoopVectorization.jl: {ev: 6, il: 0}
-  [evalArgs: (const [top] => 2, function [top] => 3, @optlevel [top] => 1)]
+  [evalArgs: (function [top] => 3, const [top] => 2, @!WAmacro [top] => 1)]
 # non vacuous files: 3/32
 * /src/mapreduce.jl => {ev: 3, il: 0}
   [evalArgs: (function [top] => 3)]
 * /src/user_api_conveniences.jl => {ev: 2, il: 0}
   [evalArgs: (const [top] => 2)]
 * /src/LoopVectorization.jl => {ev: 1, il: 0}
-  [evalArgs: (@optlevel [top] => 1)]
+  [evalArgs: (@!WAmacro [top] => 1)]
 
 ScikitLearn.jl: {ev: 6, il: 0}
-  [evalArgs: (macrocall [top] => 2, import [top] => 1, function [top] => 2, export [top] => 1)]
+  [evalArgs: (macrocall [top] => 2, function [top] => 2, useimport [top] => 1, export [top] => 1)]
 # non vacuous files: 3/15
 * /src/Skcore.jl => {ev: 3, il: 0}
-  [evalArgs: (import [top] => 1, function [top] => 1, export [top] => 1)]
+  [evalArgs: (useimport [top] => 1, function [top] => 1, export [top] => 1)]
 * /src/ScikitLearn.jl => {ev: 2, il: 0}
   [evalArgs: (macrocall [top] => 2)]
 * /src/cross_validation.jl => {ev: 1, il: 0}
@@ -526,17 +526,17 @@ DSP.jl: {ev: 5, il: 0}
   [evalArgs: (function [top] => 2)]
 
 Distributions.jl: {ev: 5, il: 0}
-  [evalArgs: (@deprecate [top] => 3, symbol [top] => 1, function [top] => 1)]
+  [evalArgs: (@deprecate [top] => 3, variable [top] => 1, function [top] => 1)]
 # non vacuous files: 3/114
 * /src/deprecates.jl => {ev: 3, il: 0}
   [evalArgs: (@deprecate [top] => 3)]
 * /src/univariates.jl => {ev: 1, il: 0}
-  [evalArgs: (symbol [top] => 1)]
+  [evalArgs: (variable [top] => 1)]
 * /src/common.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 
 JuMP.jl: {ev: 5, il: 0}
-  [evalArgs: (macro [top] => 1, function [top] => 3, export [top] => 1)]
+  [evalArgs: (function [top] => 3, macro [top] => 1, export [top] => 1)]
 # non vacuous files: 4/42
 * /src/_Derivatives/forward.jl => {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
@@ -548,10 +548,10 @@ JuMP.jl: {ev: 5, il: 0}
   [evalArgs: (function [top] => 1)]
 
 Mamba.jl: {ev: 5, il: 0}
-  [evalArgs: (function [top] => 4, expr [fun] => 1)]
+  [evalArgs: (function [top] => 4, function [fun] => 1)]
 # non vacuous files: 2/46
 * /src/utils.jl => {ev: 1, il: 0}
-  [evalArgs: (expr [fun] => 1)]
+  [evalArgs: (function [fun] => 1)]
 * /src/variate.jl => {ev: 4, il: 0}
   [evalArgs: (function [top] => 4)]
 
@@ -564,10 +564,10 @@ Flux.jl: {ev: 4, il: 0}
   [evalArgs: (function [top] => 1)]
 
 GR.jl: {ev: 4, il: 0}
-  [evalArgs: (import [fun] => 4)]
+  [evalArgs: (useimport [fun] => 4)]
 # non vacuous files: 1/4
 * /src/js.jl => {ev: 4, il: 0}
-  [evalArgs: (import [fun] => 4)]
+  [evalArgs: (useimport [fun] => 4)]
 
 JSON.jl: {ev: 4, il: 0}
   [evalArgs: (function [top] => 4)]
@@ -598,12 +598,12 @@ Distances.jl: {ev: 3, il: 0}
   [evalArgs: (function [top] => 3)]
 
 Latexify.jl: {ev: 3, il: 0}
-  [evalArgs: (@sprintf [fun] => 2, symbol [fun] => 1)]
+  [evalArgs: (@(s)printf [fun] => 2, variable [fun] => 1)]
 # non vacuous files: 2/24
 * /src/numberformatters.jl => {ev: 2, il: 0}
-  [evalArgs: (@sprintf [fun] => 2)]
+  [evalArgs: (@(s)printf [fun] => 2)]
 * /src/latexraw.jl => {ev: 1, il: 0}
-  [evalArgs: (symbol [fun] => 1)]
+  [evalArgs: (variable [fun] => 1)]
 
 StatsBase.jl: {ev: 3, il: 0}
   [evalArgs: (function [top] => 3)]
@@ -614,10 +614,10 @@ StatsBase.jl: {ev: 3, il: 0}
   [evalArgs: (function [top] => 2)]
 
 TimerOutputs.jl: {ev: 3, il: 0}
-  [evalArgs: (function [top] => 1, function [fun] => 2)]
+  [evalArgs: (function [fun] => 2, function [top] => 1)]
 # non vacuous files: 1/4
 * /src/TimerOutput.jl => {ev: 3, il: 0}
-  [evalArgs: (function [top] => 1, function [fun] => 2)]
+  [evalArgs: (function [fun] => 2, function [top] => 1)]
 
 Traceur.jl: {ev: 3, il: 0}
   [evalArgs: (macro [top] => 3)]
@@ -634,12 +634,12 @@ Cassette.jl: {ev: 2, il: 0}
   [evalArgs: (call [top] => 1, function [top] => 1)]
 
 Debugger.jl: {ev: 2, il: 0}
-  [evalArgs: (symbol [fun] => 2)]
+  [evalArgs: (variable [fun] => 2)]
 # non vacuous files: 2/9
 * /src/breakpoints.jl => {ev: 1, il: 0}
-  [evalArgs: (symbol [fun] => 1)]
+  [evalArgs: (variable [fun] => 1)]
 * /src/watches.jl => {ev: 1, il: 0}
-  [evalArgs: (symbol [fun] => 1)]
+  [evalArgs: (variable [fun] => 1)]
 
 DrWatson.jl: {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
@@ -654,10 +654,10 @@ Gadfly.jl: {ev: 2, il: 0}
   [evalArgs: (@doc [top] => 2)]
 
 Gen.jl: {ev: 2, il: 0}
-  [evalArgs: (symbol [top] => 1, symbol [fun] => 1)]
+  [evalArgs: (variable [fun] => 1, variable [top] => 1)]
 # non vacuous files: 1/89
 * /src/Gen.jl => {ev: 2, il: 0}
-  [evalArgs: (symbol [top] => 1, symbol [fun] => 1)]
+  [evalArgs: (variable [fun] => 1, variable [top] => 1)]
 
 HTTP.jl: {ev: 2, il: 0}
   [evalArgs: (function [fun] => 2)]
@@ -672,30 +672,30 @@ Interpolations.jl: {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
 
 LightGraphs.jl: {ev: 2, il: 0}
-  [evalArgs: (function [top] => 1, symbol [fun] => 1)]
+  [evalArgs: (variable [fun] => 1, function [top] => 1)]
 # non vacuous files: 2/202
 * /src/linalg13/graphmatrices.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 * /src/persistence13/lg.jl => {ev: 1, il: 0}
-  [evalArgs: (symbol [fun] => 1)]
+  [evalArgs: (variable [fun] => 1)]
 
 Makie.jl: {ev: 2, il: 0}
-  [evalArgs: (import [top] => 1, export [top] => 1)]
+  [evalArgs: (useimport [top] => 1, export [top] => 1)]
 # non vacuous files: 1/1
 * /src/Makie.jl => {ev: 2, il: 0}
-  [evalArgs: (import [top] => 1, export [top] => 1)]
+  [evalArgs: (useimport [top] => 1, export [top] => 1)]
 
 TextAnalysis.jl: {ev: 2, il: 0}
-  [evalArgs: (symbol [fun] => 2)]
+  [evalArgs: (variable [fun] => 2)]
 # non vacuous files: 1/40
 * /src/tagging_schemes.jl => {ev: 2, il: 0}
-  [evalArgs: (symbol [fun] => 2)]
+  [evalArgs: (variable [fun] => 2)]
 
 AutoMLPipeline.jl: {ev: 1, il: 0}
-  [evalArgs: (symbol [fun] => 1)]
+  [evalArgs: (variable [fun] => 1)]
 # non vacuous files: 1/14
 * /src/pipelines.jl => {ev: 1, il: 0}
-  [evalArgs: (symbol [fun] => 1)]
+  [evalArgs: (variable [fun] => 1)]
 
 Blink.jl: {ev: 0, il: 1}
   [evalArgs: ()]
@@ -716,10 +716,10 @@ Optim.jl: {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 
 Query.jl: {ev: 1, il: 0}
-  [evalArgs: (symbol [top] => 1)]
+  [evalArgs: (variable [top] => 1)]
 # non vacuous files: 1/5
 * /src/table_query_macros.jl => {ev: 1, il: 0}
-  [evalArgs: (symbol [top] => 1)]
+  [evalArgs: (variable [top] => 1)]
 
 TensorOperations.jl: {ev: 1, il: 0}
   [evalArgs: (const [fun] => 1)]
@@ -730,54 +730,59 @@ TensorOperations.jl: {ev: 1, il: 0}
 ==============================
 
 Non vacuous packages: 67/100
-* all evals are top-level: 35/100
 * all evals are top-level and no invokelatest: 33/100
+* all evals are boring and no invokelatest: 34/100
 * single top-level eval and no invokelatest: 3/100
-* maybe function defs in fun: 25/100
-* maybe function defs in fun but not likely calls: 13/100
+* maybe function defs in fun: 28/100
+* maybe function defs in fun but not likely calls: 15/100
+* likely function calls in fun but not defs: 5/100
 * maybe function calls in fun: 28/100
-* likely function calls in fun: 18/100
-* likely function calls in fun but not defs: 6/100
 * invokelatest: 14/100
+* !!! likely function calls in fun (bypass world age?): 18/100
+* !!! likely impact world age: 30/100
+* !!! likely both: 16/100
 
 Total Stat:
 * function   [top] =>  724 in  46 pkgs
-* function   [fun] =>  168 in   9 pkgs
-* symbol     [fun] =>   33 in  15 pkgs
+* function   [fun] =>  170 in  10 pkgs
+* variable   [fun] =>   43 in  16 pkgs
 * call       [fun] =>   22 in  10 pkgs
-* ref        [top] =>   16 in   1 pkgs
+* variable   [top] =>   21 in   6 pkgs
+* useimport  [fun] =>   14 in   5 pkgs
+* export     [top] =>   13 in   7 pkgs
 * parse      [fun] =>   13 in   3 pkgs
-* import     [fun] =>   12 in   5 pkgs
 * call       [top] =>   11 in   4 pkgs
 * const      [fun] =>   10 in   4 pkgs
 * @doc       [top] =>    9 in   4 pkgs
-* expr       [fun] =>    9 in   6 pkgs
-* export     [top] =>    9 in   6 pkgs
-* ref        [fun] =>    8 in   3 pkgs
-* expr       [top] =>    8 in   1 pkgs
 * =          [top] =>    7 in   2 pkgs
 * const      [top] =>    6 in   4 pkgs
 * macrocall  [top] =>    5 in   4 pkgs
-* symbol     [top] =>    5 in   5 pkgs
-* $          [fun] =>    4 in   3 pkgs
-* =          [fun] =>    4 in   3 pkgs
-* macro      [top] =>    4 in   2 pkgs
+* =          [fun] =>    5 in   4 pkgs
+* import     [top] =>    4 in   1 pkgs
 * $          [top] =>    4 in   2 pkgs
-* @optlevel  [top] =>    4 in   4 pkgs
+* @!WAmacro  [top] =>    4 in   4 pkgs
+* $          [fun] =>    4 in   3 pkgs
+* macro      [top] =>    4 in   2 pkgs
+* useimport  [top] =>    3 in   3 pkgs
 * export     [fun] =>    3 in   1 pkgs
-* @deprecate [top] =>    3 in   1 pkgs
-* import     [top] =>    3 in   3 pkgs
 * struct     [top] =>    3 in   3 pkgs
-* @sprintf   [fun] =>    2 in   1 pkgs
-* include    [fun] =>    2 in   1 pkgs
-* .          [fun] =>    2 in   2 pkgs
+* expr       [fun] =>    3 in   2 pkgs
+* global     [fun] =>    3 in   1 pkgs
+* @deprecate [top] =>    3 in   1 pkgs
 * local      [fun] =>    2 in   1 pkgs
-* using      [fun] =>    2 in   1 pkgs
-* module     [fun] =>    1 in   1 pkgs
+* include    [fun] =>    2 in   1 pkgs
+* @(s)printf [fun] =>    2 in   1 pkgs
 * include    [top] =>    1 in   1 pkgs
+* toplevel   [fun] =>    1 in   1 pkgs
 * let        [fun] =>    1 in   1 pkgs
+* module     [fun] =>    1 in   1 pkgs
 * if         [top] =>    1 in   1 pkgs
 * other      [fun] =>    1 in   1 pkgs
 * struct     [fun] =>    1 in   1 pkgs
-* macrocall  [fun] =>    1 in   1 pkgs
+
+"likelyBoth" => ["Genie.jl", "Documenter.jl", "Plots.jl", "CxxWrap.jl", "IJulia.jl", "PyCall.jl", "Weave.jl", "BenchmarkTools.jl", "Pluto.jl", "Literate.jl", "Revise.jl", "Dagger.jl", "Unitful.jl", "ModelingToolkit.jl", "Cxx.jl", "Franklin.jl"]
+
+"likelyBypassWA" => ["CUDAnative.jl", "Genie.jl", "Documenter.jl", "Plots.jl", "CxxWrap.jl", "IJulia.jl", "PyCall.jl", "Weave.jl", "BenchmarkTools.jl", "Pluto.jl", "Literate.jl", "Revise.jl", "Dagger.jl", "Unitful.jl", "ModelingToolkit.jl", "Cxx.jl", "Franklin.jl", "Blink.jl"]
+
+"likelyImpactWA" => ["Genie.jl", "Documenter.jl", "Plots.jl", "CxxWrap.jl", "IJulia.jl", "PyCall.jl", "Weave.jl", "BenchmarkTools.jl", "Pluto.jl", "Literate.jl", "Revise.jl", "Dagger.jl", "Grassmann.jl", "Knet.jl", "Unitful.jl", "ModelingToolkit.jl", "Oceananigans.jl", "Cxx.jl", "DSGE.jl", "Franklin.jl", "Mamba.jl", "GR.jl", "Latexify.jl", "TimerOutputs.jl", "Debugger.jl", "Gen.jl", "HTTP.jl", "LightGraphs.jl", "TextAnalysis.jl", "AutoMLPipeline.jl"]
 

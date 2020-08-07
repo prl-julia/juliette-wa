@@ -97,5 +97,5 @@ end
 println("Analysis\n$(SEP)")
 open(reportFile, "w") do io
     analyzePackages(pkgsDir, io)
-    @info "Analysis completed; results are in $(pkgsDir)"
+    @info "Analysis completed; results are in $(reportFile)"
 end
