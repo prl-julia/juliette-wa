@@ -1,0 +1,184 @@
+# processed package folders: 10
+# failed (no [src]): 0/10
+# successfully processed folders: 10
+
+==============================
+
+Genie.jl: {ev: 24, il: 6}
+  [evalArgs: (import [fun] => 1, = [fun] => 1, using [fun] => 2, other [fun] => 1, call [fun] => 3, const [fun] => 2, parse [fun] => 11, $ [top] => 1, include [fun] => 2)]
+# non vacuous files: 10/38
+* /src/App.jl => {ev: 1, il: 0}
+  [evalArgs: (parse [fun] => 1)]
+* /src/Router.jl => {ev: 0, il: 2}
+  [evalArgs: ()]
+* /src/Sessions.jl => {ev: 1, il: 0}
+  [evalArgs: (const [fun] => 1)]
+* /src/Toolbox.jl => {ev: 2, il: 0}
+  [evalArgs: (using [fun] => 1, include [fun] => 1)]
+* /src/renderers/Html.jl => {ev: 10, il: 1}
+  [evalArgs: (parse [fun] => 9, $ [top] => 1)]
+* /src/Renderer.jl => {ev: 1, il: 1}
+  [evalArgs: (parse [fun] => 1)]
+* /src/Encryption.jl => {ev: 2, il: 0}
+  [evalArgs: (= [fun] => 1, const [fun] => 1)]
+* /src/genie_module.jl => {ev: 1, il: 0}
+  [evalArgs: (call [fun] => 1)]
+* /src/Commands.jl => {ev: 0, il: 2}
+  [evalArgs: ()]
+* /src/Genie.jl => {ev: 6, il: 0}
+  [evalArgs: (include [fun] => 1, other [fun] => 1, using [fun] => 1, call [fun] => 2, import [fun] => 1)]
+
+Plots.jl: {ev: 27, il: 1}
+  [evalArgs: (export [fun] => 3, call [fun] => 1, function [top] => 18, @optlevel [top] => 1, import [fun] => 4)]
+# non vacuous files: 11/34
+* /src/utils.jl => {ev: 5, il: 0}
+  [evalArgs: (function [top] => 5)]
+* /src/backends/orca.jl => {ev: 1, il: 0}
+  [evalArgs: (function [top] => 1)]
+* /src/backends/inspectdr.jl => {ev: 1, il: 0}
+  [evalArgs: (function [top] => 1)]
+* /src/pipeline.jl => {ev: 0, il: 1}
+  [evalArgs: ()]
+* /src/Plots.jl => {ev: 1, il: 0}
+  [evalArgs: (@optlevel [top] => 1)]
+* /src/backends/plotlyjs.jl => {ev: 1, il: 0}
+  [evalArgs: (function [top] => 1)]
+* /src/backends/pgfplotsx.jl => {ev: 1, il: 0}
+  [evalArgs: (function [top] => 1)]
+* /src/output.jl => {ev: 1, il: 0}
+  [evalArgs: (function [top] => 1)]
+* /src/backends/gr.jl => {ev: 1, il: 0}
+  [evalArgs: (function [top] => 1)]
+* /src/backends.jl => {ev: 14, il: 0}
+  [evalArgs: (export [fun] => 3, call [fun] => 1, function [top] => 6, import [fun] => 4)]
+* /src/backends/pyplot.jl => {ev: 1, il: 0}
+  [evalArgs: (function [top] => 1)]
+
+IJulia.jl: {ev: 7, il: 8}
+  [evalArgs: (= [top] => 1, call [fun] => 3, function [top] => 3)]
+# non vacuous files: 7/15
+* /src/inline.jl => {ev: 2, il: 0}
+  [evalArgs: (function [top] => 2)]
+* /src/execute_request.jl => {ev: 1, il: 6}
+  [evalArgs: (call [fun] => 1)]
+* /src/display.jl => {ev: 0, il: 1}
+  [evalArgs: ()]
+* /src/handlers.jl => {ev: 2, il: 0}
+  [evalArgs: (call [fun] => 2)]
+* /src/kernel.jl => {ev: 1, il: 0}
+  [evalArgs: (= [top] => 1)]
+* /src/eventloop.jl => {ev: 0, il: 1}
+  [evalArgs: ()]
+* /src/stdio.jl => {ev: 1, il: 0}
+  [evalArgs: (function [top] => 1)]
+
+Knet.jl: {ev: 87, il: 0}
+  [evalArgs: (macrocall [top] => 1, function [top] => 48, function [fun] => 38)]
+# non vacuous files: 11/50
+* /src/cuarrays/dropout.jl => {ev: 2, il: 0}
+  [evalArgs: (function [top] => 2)]
+* /src/unary.jl => {ev: 15, il: 0}
+  [evalArgs: (macrocall [top] => 1, function [top] => 4, function [fun] => 10)]
+* /src/bmm.jl => {ev: 1, il: 0}
+  [evalArgs: (function [top] => 1)]
+* /src/cuarrays/autograd.jl => {ev: 9, il: 0}
+  [evalArgs: (function [top] => 9)]
+* /src/binary.jl => {ev: 38, il: 0}
+  [evalArgs: (function [top] => 12, function [fun] => 26)]
+* /src/cuarrays/getindex.jl => {ev: 1, il: 0}
+  [evalArgs: (function [top] => 1)]
+* /src/karray.jl => {ev: 16, il: 0}
+  [evalArgs: (function [top] => 16)]
+* /src/linalg.jl => {ev: 1, il: 0}
+  [evalArgs: (function [top] => 1)]
+* /src/dropout.jl => {ev: 2, il: 0}
+  [evalArgs: (function [top] => 2)]
+* /src/cuarrays/reduction.jl => {ev: 1, il: 0}
+  [evalArgs: (function [fun] => 1)]
+* /src/reduction.jl => {ev: 1, il: 0}
+  [evalArgs: (function [fun] => 1)]
+
+Turing.jl: {ev: 19, il: 0}
+  [evalArgs: (import [top] => 1, struct [top] => 1, include [top] => 1, function [top] => 14, if [top] => 1, export [top] => 1)]
+# non vacuous files: 5/27
+* /src/core/compat/reversediff.jl => {ev: 10, il: 0}
+  [evalArgs: (struct [top] => 1, function [top] => 9)]
+* /src/inference/Inference.jl => {ev: 2, il: 0}
+  [evalArgs: (function [top] => 2)]
+* /src/inference/hmc.jl => {ev: 1, il: 0}
+  [evalArgs: (function [top] => 1)]
+* /src/core/ad.jl => {ev: 2, il: 0}
+  [evalArgs: (function [top] => 2)]
+* /src/Turing.jl => {ev: 4, il: 0}
+  [evalArgs: (import [top] => 1, include [top] => 1, if [top] => 1, export [top] => 1)]
+
+JuMP.jl: {ev: 5, il: 0}
+  [evalArgs: (macro [top] => 1, function [top] => 3, export [top] => 1)]
+# non vacuous files: 4/42
+* /src/_Derivatives/forward.jl => {ev: 2, il: 0}
+  [evalArgs: (function [top] => 2)]
+* /src/JuMP.jl => {ev: 1, il: 0}
+  [evalArgs: (export [top] => 1)]
+* /src/macros.jl => {ev: 1, il: 0}
+  [evalArgs: (macro [top] => 1)]
+* /src/operators.jl => {ev: 1, il: 0}
+  [evalArgs: (function [top] => 1)]
+
+Flux.jl: {ev: 4, il: 0}
+  [evalArgs: (function [top] => 4)]
+# non vacuous files: 2/29
+* /src/zeros.jl => {ev: 3, il: 0}
+  [evalArgs: (function [top] => 3)]
+* /src/cuda/curnn.jl => {ev: 1, il: 0}
+  [evalArgs: (function [top] => 1)]
+
+Gadfly.jl: {ev: 2, il: 0}
+  [evalArgs: (@doc [top] => 2)]
+# non vacuous files: 1/39
+* /src/scale.jl => {ev: 2, il: 0}
+  [evalArgs: (@doc [top] => 2)]
+
+Gen.jl: {ev: 2, il: 0}
+  [evalArgs: (symbol [top] => 1, symbol [fun] => 1)]
+# non vacuous files: 1/89
+* /src/Gen.jl => {ev: 2, il: 0}
+  [evalArgs: (symbol [top] => 1, symbol [fun] => 1)]
+
+==============================
+
+Non vacuous packages: 9/10
+* all evals are top-level: 4/10
+* all evals are top-level and no invokelatest: 4/10
+* single top-level eval and no invokelatest: 0/10
+* maybe function defs in fun: 3/10
+* maybe function defs in fun but not likely calls: 2/10
+* maybe function calls in fun: 4/10
+* likely function calls in fun: 3/10
+* invokelatest: 3/10
+
+Total Stat:
+* function   [top] =>   90 in   6 pkgs
+* function   [fun] =>   38 in   1 pkgs
+* parse      [fun] =>   11 in   1 pkgs
+* call       [fun] =>    7 in   3 pkgs
+* import     [fun] =>    5 in   2 pkgs
+* export     [fun] =>    3 in   1 pkgs
+* export     [top] =>    2 in   2 pkgs
+* @doc       [top] =>    2 in   1 pkgs
+* const      [fun] =>    2 in   1 pkgs
+* include    [fun] =>    2 in   1 pkgs
+* using      [fun] =>    2 in   1 pkgs
+* macrocall  [top] =>    1 in   1 pkgs
+* include    [top] =>    1 in   1 pkgs
+* import     [top] =>    1 in   1 pkgs
+* struct     [top] =>    1 in   1 pkgs
+* $          [top] =>    1 in   1 pkgs
+* if         [top] =>    1 in   1 pkgs
+* macro      [top] =>    1 in   1 pkgs
+* =          [top] =>    1 in   1 pkgs
+* =          [fun] =>    1 in   1 pkgs
+* other      [fun] =>    1 in   1 pkgs
+* symbol     [top] =>    1 in   1 pkgs
+* @optlevel  [top] =>    1 in   1 pkgs
+* symbol     [fun] =>    1 in   1 pkgs
+

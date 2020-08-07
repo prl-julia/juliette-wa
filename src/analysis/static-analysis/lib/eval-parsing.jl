@@ -2,6 +2,9 @@
 # Utilities for parsing eval and counting its arguments
 #**********************************************************************
 
+import Base.==
+import Base.show
+
 ###################################################
 # Data
 ###################################################
@@ -18,6 +21,7 @@ const SYM_DEPREC  = Symbol("@deprecate")
 const SYM_DOC     = Symbol("@doc")
 const SYM_SPRINT  = Symbol("@sprintf")
 const SYM_PRINT   = Symbol("@printf")
+const SYM_FUNC    = :function
 const SYM_DOT     = :.
 const SYM_PIPE    = :(|>)
 const QUOTE_EVAL  = :(:eval)
@@ -54,13 +58,24 @@ const EVAL_ARG_DESCRIPTIONS = [
 #------------------------------
 
 # Information about eval argument
-#struct EvalCallInfo
-#    astHead :: Symbol
-#end
-EvalCallInfo = Symbol
+struct EvalCallInfo
+    astHead  :: Symbol
+    inFunDef :: Bool
+end
+EvalCallInfo(astHead :: Symbol) = EvalCallInfo(astHead, false)
+#EvalCallInfo = Symbol
 
 # List of eval infos
 EvalCallsVec = Vector{EvalCallInfo}
+
+==(evalInfo1 :: EvalCallInfo, evalInfo2 :: EvalCallInfo) =
+    evalInfo1.astHead  == evalInfo2.astHead &&
+    evalInfo1.inFunDef == evalInfo2.inFunDef
+
+Base.show(io :: IO, evalInfo :: EvalCallInfo) = print(io,
+    "$(evalInfo.astHead) $(showEvalLevel(evalInfo.inFunDef))")
+
+showEvalLevel(inFunDef :: Bool) = "[" * (inFunDef ? "fun" : "top") * "]"
 
 ###################################################
 # Algorithms
@@ -110,7 +125,10 @@ isWhere(@nospecialize e) = false
 
 # AST → Bool
 # Checks if [e] represents a function definition
-isFunDef(e :: Expr) = e.head == :function || e.head == :(->) ||
+isFunDef(e :: Expr) =
+    # explicit function definition
+    e.head == SYM_FUNC || e.head == :(->) ||
+    # short form f(...) = ...
     e.head == :(=) && isCall(e.args[1]) || isWhere(e.args[1])
 isFunDef(@nospecialize e) = false
 
@@ -151,80 +169,91 @@ isIncludeCall(@nospecialize e) = false
 # (one of EVAL_ARG_DESCRIPTIONS).
 # Usually the result will be just one symbol, but if it's a block,
 # we want to count all subcompponents.
-argDescrUnsafe(arg :: Nothing) = [:nothing]
-argDescrUnsafe(arg :: QuoteNode) = argDescrUnsafe(arg.value)
-argDescrUnsafe(arg :: Symbol) = [:symbol]
-argDescrUnsafe(arg :: Expr) =
+argDescrUnsafe(arg :: Nothing,    inFunDef::Bool=false) =
+    [EvalCallInfo(:nothing, inFunDef)]
+argDescrUnsafe(arg :: QuoteNode,  inFunDef::Bool=false) =
+    argDescrUnsafe(arg.value, inFunDef)
+argDescrUnsafe(arg :: Symbol,     inFunDef::Bool=false) =
+    [EvalCallInfo(:symbol, inFunDef)]
+argDescrUnsafe(arg :: Expr,       inFunDef::Bool=false) =
     if arg.head == :quote
-        argDescrUnsafe(arg.args[1])
+        argDescrUnsafe(arg.args[1], inFunDef)
     # let's count anonymous functions
     elseif arg.head == :(->)
-    #    [:function]
-        [:(->)]
+    #    [SYM_FUNC]
+        [EvalCallInfo(:(->), inFunDef)]
     # captures the case where [=] means function definition
     elseif isFunDef(arg)
-        [:function]
+        [EvalCallInfo(SYM_FUNC, inFunDef)]
     # sometimes function definition is annotated with a macro,
     # or macro @delegate actually defines a function
-    elseif arg.head == :macrocall
+    elseif arg.head == SYM_MCALL
         args = filter(e -> !isa(e, LineNumberNode), arg.args)
         #@info args[1]
         if in(args[1], FUN_DEF_MACROS)
-            [:function]
+            [EvalCallInfo(SYM_FUNC, inFunDef)]
+        elseif in(args[1], [Symbol("@tryimport")])
+            [EvalCallInfo(:import, inFunDef)]
         elseif any(isOptLevelMacroName, args)
-            [SYM_OPTLE]
+            [EvalCallInfo(SYM_OPTLE, inFunDef)]
         elseif in(args[1], [SYM_DOC, SYM_DEPREC, SYM_PRINT, SYM_SPRINT])
-            [args[1]]
+            [EvalCallInfo(args[1], inFunDef)]
         elseif length(args) == 2
             isFunDef(args[2]) ? 
-                [:function] :
-                isBlock(args[2]) ? argDescrUnsafe(args[2]) : [:macrocall]
+                [EvalCallInfo(SYM_FUNC, inFunDef)] :
+                isBlock(args[2]) ? 
+                    argDescrUnsafe(args[2], inFunDef) : 
+                    [EvalCallInfo(SYM_MCALL, inFunDef)]
         elseif count(isFunDef, args) > 0
-            [:function]
+            [EvalCallInfo(SYM_FUNC, inFunDef)]
         else
             #@warn arg
-            [:macrocall]
+            [EvalCallInfo(SYM_MCALL, inFunDef)]
         end
     # sometimes block has just one thing in it,
     # otherwise, process every element inside
     elseif arg.head == :block
         args = filter(e -> !isa(e, LineNumberNode), arg.args)
         len = length(args)
-        len == 0 ? [:nothing] : len == 1 ? argDescrUnsafe(args[1]) : 
-            foldl(vcat, map(argDescrUnsafe, args))
+        len == 0 ? 
+            [EvalCallInfo(:nothing, inFunDef)] : 
+            len == 1 ? 
+                argDescrUnsafe(args[1], inFunDef) : 
+                foldl(vcat, map(e -> argDescrUnsafe(e, inFunDef), args))
     # eval(:(inlcude(...)))
     elseif isIncludeCall(arg)
-        [:include]
+        [EvalCallInfo(:include, inFunDef)]
     # eval(Meta.parse(...)) we want to treat specially
     elseif isParseCall(arg)
-        [:parse]
+        [EvalCallInfo(:parse, inFunDef)]
     # as well as eval(.. |> Meta.parse)
     elseif arg.head == SYM_CALL
         #@info arg in(SYM_PIPE, arg.args) any(isParseName, arg.args)
         if in(SYM_PIPE, arg.args)
-            any(isParseName, arg.args) ? [:parse] : [SYM_PIPE]
+            [EvalCallInfo(any(isParseName, arg.args) ? :parse : SYM_PIPE, inFunDef)]
         elseif in(:Symbol, arg.args)
-            [:symbol]
+            [EvalCallInfo(:symbol, inFunDef)]
         elseif in(:Expr, arg.args)
-            [:expr]
+            [EvalCallInfo(:expr, inFunDef)]
         else
-            [SYM_CALL]
+            [EvalCallInfo(SYM_CALL, inFunDef)]
         end
     elseif in(arg.head, EVAL_ARG_DESCRIPTIONS)
-        [arg.head]
+        [EvalCallInfo(arg.head, inFunDef)]
     else
-        [:other]
+        [EvalCallInfo(:other, inFunDef)]
     end
 # if it's something like Int, consider it a value
-argDescrUnsafe(@nospecialize arg) = [:value]
+argDescrUnsafe(@nospecialize(arg), inFunDef::Bool=false) = 
+    [EvalCallInfo(:value, inFunDef)]
 
 # AST → EvalCallsVec
 # Maps [arg] (argument of eval) to symbol(s) describing its kind
 # (one of EVAL_ARG_DESCRIPTIONS).
-argDescr(arg :: Any) :: EvalCallsVec =
+argDescr(arg :: Any, inFunDef::Bool=false) :: EvalCallsVec =
     try 
-        argDescrUnsafe(arg) 
+        argDescrUnsafe(arg, inFunDef) 
     catch e
         @error e
-        [:error]
+        [EvalCallInfo(:error, inFunDef)]
     end

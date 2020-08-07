@@ -82,6 +82,9 @@ if !isfile(pkgsListFile) || PARAMS["reload"] || PARAMS["generate"]
     println()
 end
 
+@info "Processing packages from $(pkgsListFile)"
+println()
+
 # clone if necessary
 if !PARAMS["noclone"]
     println("Cloning\n$(SEP)")
@@ -94,5 +97,5 @@ end
 println("Analysis\n$(SEP)")
 open(reportFile, "w") do io
     analyzePackages(pkgsDir, io)
-    @info "Analysis completed"
+    @info "Analysis completed; results are in $(pkgsDir)"
 end

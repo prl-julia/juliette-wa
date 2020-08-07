@@ -103,8 +103,6 @@ Base.show(io :: IO, evStat :: EvalArgStat) = print(io,
     join(map(kv -> "$(kv[1]) => $(kv[2])", collect(pairs(evStat))), ", ") *
     ")")
 
-
-
 Base.show(io :: IO, stat :: Stat) = print(io,
     "{ev: $(stat.eval), il: $(stat.invokelatest)}\n" *
     "  [evalArgs: $(stat.evalArgStat)]")
@@ -169,16 +167,29 @@ countEval(@nospecialize e) :: UInt = 0
 # AST → [Symbol] (Note that Symbol ~ EvalCallInfo at the moment)
 # Collects information about eval call [e]
 # assuming [e] IS an eval call (eval can be callen with no arguments)
-getEvalInfo(e :: Expr) :: Vector{EvalCallInfo} = 
-    length(e.args) > 1 ? argDescr(e.args[end]) : [:nothing]
+getEvalInfo(e :: Expr, inFunDef::Bool=false) :: Vector{EvalCallInfo} = 
+    length(e.args) > 1 ? 
+        argDescr(e.args[end], inFunDef) : 
+        [EvalCallInfo(:nothing, inFunDef)]
 
 # AST → EvalCallsVec
 # Collects information about arguments of all eval calls in [e]
-gatherEvalInfo(e :: Expr, inFun :: Bool = false) :: EvalCallsVec =
+gatherEvalInfo(e :: Expr, inFunDef::Bool=false) :: EvalCallsVec = begin
+    #@info isFunDef(e) inFunDef
     isEvalCall(e) ?
-        getEvalInfo(e) :
-        foldl(vcat, map(gatherEvalInfo, e.args); init=EvalCallInfo[])
-gatherEvalInfo(@nospecialize e) :: EvalCallsVec = EvalCallInfo[]
+        getEvalInfo(e, inFunDef) :
+        foldl(
+            vcat,
+            # if [e] is fun definition, we will consider its subexpressions
+            # to be inside function definition;
+            # of course, this would mean that function parameters are also
+            # inside function, but eval can't be used for parameters
+            map(arg -> gatherEvalInfo(arg, inFunDef || isFunDef(e)), e.args);
+            init=EvalCallInfo[]
+        )
+end
+gatherEvalInfo(@nospecialize(e), inFunDef::Bool=false) :: EvalCallsVec =
+    EvalCallInfo[]
 
 #--------------------------------------------------
 # Single File Statistics
@@ -202,7 +213,8 @@ interestFactor(stat :: Stat) :: UInt = let
 end
 
 # Computes eval/invokelatest statistics for source code [text]
-function computeStat(text :: String) :: Stat
+# We use [filePath] for error reporting
+function computeStat(text :: String, filePath :: String) :: Stat
     ev = count(PATTERN_EVAL, text) + count(PATTERN_EVAL_MACRO, text)
     il = count(PATTERN_INVOKELATEST, text)
     # get more details about eval if possible
@@ -213,8 +225,8 @@ function computeStat(text :: String) :: Stat
             # parsing gives more precise results
             Stat(sum(values(evArgStat)), il, evArgStat)
         catch e
-            @error e
-            Stat(ev, il)
+            @error filePath e
+            Stat(ev, il, EvalArgStat(EvalCallInfo(:ERROR) => ev))
         end
     else
         Stat(ev, il)
@@ -233,7 +245,7 @@ isJuliaFile(fname :: String) :: Bool = endswith(fname, ".jl")
 #   and updates [pkgStat] accordingly with eval/invokelatest stats
 function processFile(pkgPath::String, pkgStat::PackageStat, filePath::String)
     try
-        stat = computeStat(read(filePath, String))
+        stat = computeStat(read(filePath, String), filePath)
         #@info filePath stat
         if nonVacuous(stat)
             pkgStat.interestingFiles += 1
@@ -322,19 +334,50 @@ end
 # Computing derived metrics
 #--------------------------------------------------
 
-maybeDefineFunction(stat :: Stat) =
-    !isempty(intersect(keys(stat.evalArgStat),
-        [:function, :macro, :block,])
-    )
-    
-maybeCallFunction(stat :: Stat) =
-    !isempty(intersect(keys(stat.evalArgStat), 
-        [:call, :macrocall, :block,])
-    ) || stat.invokelatest > 0
+maybeInFunDefFunction(stat :: Stat) =
+    !isempty(intersect(map(head -> EvalCallInfo(head, true),
+        [SYM_FUNC, SYM_MCALL, :symbol, :expr, :parse, :include]),
+        keys(stat.evalArgStat)
+    ))
+
+maybeInFunCallFunction(stat :: Stat) =
+    !isempty(intersect(map(head -> EvalCallInfo(head, true),
+        [SYM_CALL, SYM_MCALL, :(->), :symbol, :expr, :parse, :include]),
+        keys(stat.evalArgStat)
+    )) ||
+    stat.invokelatest > 0
+
+likelyInFunCallFunction(stat :: Stat) =
+    in(EvalCallInfo(:call, true), keys(stat.evalArgStat)) ||
+    stat.invokelatest > 0
+
+likelyInFunCallFunctionButNotDef(stat :: Stat) =
+    likelyInFunCallFunction(stat) && !maybeInFunDefFunction(stat)
+
+maybeInFunDefFunButNotCall(stat :: Stat) =
+    maybeInFunDefFunction(stat) && !likelyInFunCallFunction(stat)
+
+allEvalsAreTopLevel(stat :: Stat) =
+    all(evalInfo -> !evalInfo.inFunDef, keys(stat.evalArgStat))
+
+allEvalsAreTopLevelAndNoIL(stat :: Stat) =
+    all(evalInfo -> !evalInfo.inFunDef, keys(stat.evalArgStat)) &&
+    stat.invokelatest == 0
+
+singleTopLevelEvalAndNoIL(stat :: Stat) =
+    stat.eval == 1 && !first(keys(stat.evalArgStat)).inFunDef &&
+    stat.invokelatest == 0
 
 const derivedConditions = Dict(
-    "fun_call" => maybeCallFunction,
-    "il"      => stat -> stat.invokelatest > 0
+    "allEvalTop"        => allEvalsAreTopLevel,
+    "allEvalTopNoIL"    => allEvalsAreTopLevelAndNoIL,
+    "1TopEvalNoIL"      => singleTopLevelEvalAndNoIL,
+    "fundef?"           => maybeInFunDefFunction,
+    "onlyfundef?"       => maybeInFunDefFunButNotCall,
+    "funcall?"          => maybeInFunCallFunction,
+    "funcall!"          => likelyInFunCallFunction,
+    "onlyfuncall!"      => likelyInFunCallFunctionButNotDef,
+    "il"                => stat -> stat.invokelatest > 0
 )
 
 function computeDerivedMetrics(
@@ -342,7 +385,9 @@ function computeDerivedMetrics(
 ) :: PackagesTotalStat
     pkgsStat :: PackagesTotalStat = PackagesTotalStat(
         Dict{String, Int}(map(param -> param=>0,
-        ["non_vacuous", "fun_def", "fun_call", "il"]))
+        ["non_vacuous", "allEvalTop", "allEvalTopNoIL", "1TopEvalNoIL",
+         "fundef?", "onlyfundef?",
+         "funcall?", "funcall!", "onlyfuncall!", "il"]))
     )
     for pkgInfo in pkgInfos
         # we don't output information about packages without eval/invokelatest
@@ -384,13 +429,22 @@ function analyzePackages(pkgsDir :: String, io :: IO)
     println(io, "==============================\n")
     println(io,
         "Non vacuous packages: $(derivedStat["non_vacuous"])/$(goodPkgsCnt)")
-    println(io, "With function calls: $(derivedStat["fun_call"])/$(goodPkgsCnt)")
-    println(io, "With invokelatest: $(derivedStat["il"])/$(goodPkgsCnt)")
+    println(io, "* all evals are top-level: $(derivedStat["allEvalTop"])/$(goodPkgsCnt)")
+    println(io, "* all evals are top-level and no invokelatest: $(derivedStat["allEvalTopNoIL"])/$(goodPkgsCnt)")
+    println(io, "* single top-level eval and no invokelatest: $(derivedStat["1TopEvalNoIL"])/$(goodPkgsCnt)")
+    println(io, "* maybe function defs in fun: $(derivedStat["fundef?"])/$(goodPkgsCnt)")
+    println(io, "* maybe function defs in fun but not likely calls: $(derivedStat["onlyfundef?"])/$(goodPkgsCnt)")
+    println(io, "* maybe function calls in fun: $(derivedStat["funcall?"])/$(goodPkgsCnt)")
+    println(io, "* likely function calls in fun: $(derivedStat["funcall!"])/$(goodPkgsCnt)")
+    println(io, "* likely function calls in fun but not defs: $(derivedStat["onlyfuncall!"])/$(goodPkgsCnt)")
+    println(io, "* invokelatest: $(derivedStat["il"])/$(goodPkgsCnt)")
     println(io)
     println(io, "Total Stat:")
-    for info in pkgsStat.totalStat.evalArgStat
+    for info in sort(collect(pkgsStat.totalStat.evalArgStat);
+                     by=kv->kv[2], rev=true)
         println(io,
-            "* $(rpad(info[1], 10)) => $(lpad(info[2], 4))" *
+            "* $(rpad(info[1].astHead, 10)) $(showEvalLevel(info[1].inFunDef))" *
+            " => $(lpad(info[2], 4))" *
             " in $(lpad(pkgsStat.evalStat[info[1]], 3)) pkgs")
     end
     println(io)

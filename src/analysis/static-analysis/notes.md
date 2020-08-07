@@ -151,3 +151,6 @@ ERROR: MethodError: objects of type Symbol are not callable
 * `TextAnalysis.jl` symbol (function)
 * `AutoMLPipeline.jl` symbol (tuple to vector conversion)
 * `Query.jl` symbol (types or tuples)
+
+* `Symata.jl` `@mkapprule` defines functions
+* `NTFk.jl` parse (function name), symbol (symbol or module)

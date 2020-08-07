@@ -1,25 +1,8 @@
-# processed package folders: 51
-# failed (no [src]): 1/51
-MXNet.jl
-# successfully processed folders: 50
+# processed package folders: 20
+# failed (no [src]): 0/20
+# successfully processed folders: 20
 
 ==============================
-
-CUDAnative.jl: {ev: 37, il: 2}
-  [evalArgs: (struct [top] => 1, = [top] => 6, @doc [top] => 3, function [top] => 23, export [top] => 4)]
-# non vacuous files: 6/39
-* /src/device/cuda/indexing.jl => {ev: 4, il: 0}
-  [evalArgs: (function [top] => 4)]
-* /src/device/cuda/warp_shuffle.jl => {ev: 3, il: 0}
-  [evalArgs: (function [top] => 2, export [top] => 1)]
-* /src/device/cuda/wmma.jl => {ev: 13, il: 0}
-  [evalArgs: (struct [top] => 1, @doc [top] => 3, function [top] => 6, export [top] => 3)]
-* /src/init.jl => {ev: 0, il: 2}
-  [evalArgs: ()]
-* /src/reflection.jl => {ev: 8, il: 0}
-  [evalArgs: (= [top] => 6, function [top] => 2)]
-* /src/device/cuda/atomics.jl => {ev: 9, il: 0}
-  [evalArgs: (function [top] => 9)]
 
 Genie.jl: {ev: 24, il: 6}
   [evalArgs: (import [fun] => 1, = [fun] => 1, using [fun] => 2, other [fun] => 1, call [fun] => 3, const [fun] => 2, parse [fun] => 11, $ [top] => 1, include [fun] => 2)]
@@ -44,26 +27,6 @@ Genie.jl: {ev: 24, il: 6}
   [evalArgs: ()]
 * /src/Genie.jl => {ev: 6, il: 0}
   [evalArgs: (include [fun] => 1, other [fun] => 1, using [fun] => 1, call [fun] => 2, import [fun] => 1)]
-
-Documenter.jl: {ev: 21, il: 7}
-  [evalArgs: (ref [fun] => 6, . [fun] => 1, call [fun] => 2, const [fun] => 1, expr [fun] => 3, symbol [fun] => 6, function [fun] => 2)]
-# non vacuous files: 8/23
-* /src/Expanders.jl => {ev: 12, il: 2}
-  [evalArgs: (ref [fun] => 3, . [fun] => 1, call [fun] => 1, expr [fun] => 2, symbol [fun] => 3, function [fun] => 2)]
-* /src/DocTests.jl => {ev: 6, il: 2}
-  [evalArgs: (ref [fun] => 2, expr [fun] => 1, symbol [fun] => 3)]
-* /src/Writers/HTMLWriter.jl => {ev: 0, il: 1}
-  [evalArgs: ()]
-* /src/DocMeta.jl => {ev: 1, il: 0}
-  [evalArgs: (const [fun] => 1)]
-* /src/Writers/LaTeXWriter.jl => {ev: 0, il: 1}
-  [evalArgs: ()]
-* /src/Writers/MarkdownWriter.jl => {ev: 0, il: 1}
-  [evalArgs: ()]
-* /src/CrossReferences.jl => {ev: 1, il: 0}
-  [evalArgs: (call [fun] => 1)]
-* /src/Documents.jl => {ev: 1, il: 0}
-  [evalArgs: (ref [fun] => 1)]
 
 Plots.jl: {ev: 27, il: 1}
   [evalArgs: (export [fun] => 3, call [fun] => 1, function [top] => 18, @optlevel [top] => 1, import [fun] => 4)]
@@ -119,34 +82,6 @@ PyCall.jl: {ev: 12, il: 1}
 * /src/PyCall.jl => {ev: 4, il: 0}
   [evalArgs: (function [top] => 2, @optlevel [top] => 1, expr [fun] => 1)]
 
-Weave.jl: {ev: 6, il: 6}
-  [evalArgs: (= [fun] => 2, expr [fun] => 2, module [fun] => 1, import [fun] => 1)]
-# non vacuous files: 3/25
-* /src/reader/reader.jl => {ev: 2, il: 0}
-  [evalArgs: (expr [fun] => 2)]
-* /src/display_methods.jl => {ev: 0, il: 4}
-  [evalArgs: ()]
-* /src/run.jl => {ev: 4, il: 2}
-  [evalArgs: (= [fun] => 2, module [fun] => 1, import [fun] => 1)]
-
-Pluto.jl: {ev: 7, il: 1}
-  [evalArgs: (ref [fun] => 1, = [fun] => 1, $ [fun] => 2, symbol [fun] => 1, import [fun] => 2)]
-# non vacuous files: 3/18
-* /src/runner/PlutoRunner.jl => {ev: 5, il: 1}
-  [evalArgs: (ref [fun] => 1, = [fun] => 1, symbol [fun] => 1, import [fun] => 2)]
-* /src/evaluation/WorkspaceManager.jl => {ev: 1, il: 0}
-  [evalArgs: ($ [fun] => 1)]
-* /src/analysis/Parse.jl => {ev: 1, il: 0}
-  [evalArgs: ($ [fun] => 1)]
-
-Revise.jl: {ev: 3, il: 1}
-  [evalArgs: (@optlevel [top] => 1, symbol [fun] => 2)]
-# non vacuous files: 2/13
-* /src/Revise.jl => {ev: 2, il: 1}
-  [evalArgs: (@optlevel [top] => 1, symbol [fun] => 1)]
-* /src/lowered.jl => {ev: 1, il: 0}
-  [evalArgs: (symbol [fun] => 1)]
-
 Knet.jl: {ev: 87, il: 0}
   [evalArgs: (macrocall [top] => 1, function [top] => 48, function [fun] => 38)]
 # non vacuous files: 11/50
@@ -191,12 +126,6 @@ TensorFlow.jl: {ev: 21, il: 0}
 * /src/generate_ops.jl => {ev: 1, il: 0}
   [evalArgs: (. [fun] => 1)]
 
-DataStructures.jl: {ev: 19, il: 0}
-  [evalArgs: (struct [top] => 1, function [top] => 18)]
-# non vacuous files: 1/34
-* /src/default_dict.jl => {ev: 19, il: 0}
-  [evalArgs: (struct [top] => 1, function [top] => 18)]
-
 Turing.jl: {ev: 19, il: 0}
   [evalArgs: (import [top] => 1, struct [top] => 1, include [top] => 1, function [top] => 14, if [top] => 1, export [top] => 1)]
 # non vacuous files: 5/27
@@ -210,34 +139,6 @@ Turing.jl: {ev: 19, il: 0}
   [evalArgs: (function [top] => 2)]
 * /src/Turing.jl => {ev: 4, il: 0}
   [evalArgs: (import [top] => 1, include [top] => 1, if [top] => 1, export [top] => 1)]
-
-StaticArrays.jl: {ev: 17, il: 0}
-  [evalArgs: (function [top] => 1, ref [top] => 16)]
-# non vacuous files: 7/43
-* /src/MMatrix.jl => {ev: 4, il: 0}
-  [evalArgs: (ref [top] => 4)]
-* /src/MVector.jl => {ev: 2, il: 0}
-  [evalArgs: (ref [top] => 2)]
-* /src/MArray.jl => {ev: 2, il: 0}
-  [evalArgs: (ref [top] => 2)]
-* /src/SMatrix.jl => {ev: 4, il: 0}
-  [evalArgs: (ref [top] => 4)]
-* /src/SVector.jl => {ev: 2, il: 0}
-  [evalArgs: (ref [top] => 2)]
-* /src/solve.jl => {ev: 1, il: 0}
-  [evalArgs: (function [top] => 1)]
-* /src/SArray.jl => {ev: 2, il: 0}
-  [evalArgs: (ref [top] => 2)]
-
-ForwardDiff.jl: {ev: 16, il: 0}
-  [evalArgs: (call [top] => 2, function [top] => 14)]
-# non vacuous files: 3/10
-* /src/dual.jl => {ev: 10, il: 0}
-  [evalArgs: (call [top] => 2, function [top] => 8)]
-* /src/jacobian.jl => {ev: 4, il: 0}
-  [evalArgs: (function [top] => 4)]
-* /src/gradient.jl => {ev: 2, il: 0}
-  [evalArgs: (function [top] => 2)]
 
 Cxx.jl: {ev: 13, il: 0}
   [evalArgs: (let [fun] => 1, call [fun] => 2, symbol [top] => 1, function [top] => 9)]
@@ -259,28 +160,6 @@ Cxx.jl: {ev: 13, il: 0}
 * /src/typetranslation.jl => {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
 
-DSGE.jl: {ev: 13, il: 0}
-  [evalArgs: ($ [fun] => 1, function [top] => 8, expr [fun] => 1, symbol [fun] => 3)]
-# non vacuous files: 5/287
-* /src/util.jl => {ev: 2, il: 0}
-  [evalArgs: (function [top] => 1, expr [fun] => 1)]
-* /src/estimate/smc/particle.jl => {ev: 7, il: 0}
-  [evalArgs: (function [top] => 7)]
-* /src/models/heterogeneous/two_asset_hank/test_against_matlab.jl => {ev: 1, il: 0}
-  [evalArgs: ($ [fun] => 1)]
-* /src/analysis/util.jl => {ev: 1, il: 0}
-  [evalArgs: (symbol [fun] => 1)]
-* /src/forecast/smooth.jl => {ev: 2, il: 0}
-  [evalArgs: (symbol [fun] => 2)]
-
-PyPlot.jl: {ev: 11, il: 0}
-  [evalArgs: (@doc [top] => 3, function [top] => 8)]
-# non vacuous files: 2/4
-* /src/plot3d.jl => {ev: 2, il: 0}
-  [evalArgs: (@doc [top] => 2)]
-* /src/PyPlot.jl => {ev: 9, il: 0}
-  [evalArgs: (@doc [top] => 1, function [top] => 8)]
-
 DataFrames.jl: {ev: 8, il: 0}
   [evalArgs: (function [top] => 8)]
 # non vacuous files: 4/23
@@ -293,14 +172,6 @@ DataFrames.jl: {ev: 8, il: 0}
 * /src/groupeddataframe/splitapplycombine.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 
-QuantEcon.jl: {ev: 8, il: 0}
-  [evalArgs: (function [top] => 8)]
-# non vacuous files: 2/27
-* /src/quad.jl => {ev: 7, il: 0}
-  [evalArgs: (function [top] => 7)]
-* /src/markov/mc_tools.jl => {ev: 1, il: 0}
-  [evalArgs: (function [top] => 1)]
-
 Zygote.jl: {ev: 8, il: 0}
   [evalArgs: (function [top] => 8)]
 # non vacuous files: 3/33
@@ -310,34 +181,6 @@ Zygote.jl: {ev: 8, il: 0}
   [evalArgs: (function [top] => 4)]
 * /src/forward/number.jl => {ev: 3, il: 0}
   [evalArgs: (function [top] => 3)]
-
-JuliaDB.jl: {ev: 6, il: 0}
-  [evalArgs: (function [top] => 6)]
-# non vacuous files: 2/20
-* /src/dcolumns.jl => {ev: 4, il: 0}
-  [evalArgs: (function [top] => 4)]
-* /src/iteration.jl => {ev: 2, il: 0}
-  [evalArgs: (function [top] => 2)]
-
-ScikitLearn.jl: {ev: 6, il: 0}
-  [evalArgs: (macrocall [top] => 2, import [top] => 1, function [top] => 2, export [top] => 1)]
-# non vacuous files: 3/15
-* /src/Skcore.jl => {ev: 3, il: 0}
-  [evalArgs: (import [top] => 1, function [top] => 1, export [top] => 1)]
-* /src/ScikitLearn.jl => {ev: 2, il: 0}
-  [evalArgs: (macrocall [top] => 2)]
-* /src/cross_validation.jl => {ev: 1, il: 0}
-  [evalArgs: (function [top] => 1)]
-
-Distributions.jl: {ev: 5, il: 0}
-  [evalArgs: (@deprecate [top] => 3, symbol [top] => 1, function [top] => 1)]
-# non vacuous files: 3/114
-* /src/deprecates.jl => {ev: 3, il: 0}
-  [evalArgs: (@deprecate [top] => 3)]
-* /src/univariates.jl => {ev: 1, il: 0}
-  [evalArgs: (symbol [top] => 1)]
-* /src/common.jl => {ev: 1, il: 0}
-  [evalArgs: (function [top] => 1)]
 
 JuMP.jl: {ev: 5, il: 0}
   [evalArgs: (macro [top] => 1, function [top] => 3, export [top] => 1)]
@@ -359,16 +202,6 @@ Flux.jl: {ev: 4, il: 0}
 * /src/cuda/curnn.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 
-Lazy.jl: {ev: 4, il: 0}
-  [evalArgs: (function [top] => 4)]
-# non vacuous files: 3/6
-* /src/Lazy.jl => {ev: 1, il: 0}
-  [evalArgs: (function [top] => 1)]
-* /src/liblazy.jl => {ev: 2, il: 0}
-  [evalArgs: (function [top] => 2)]
-* /src/collections.jl => {ev: 1, il: 0}
-  [evalArgs: (function [top] => 1)]
-
 Gadfly.jl: {ev: 2, il: 0}
   [evalArgs: (@doc [top] => 2)]
 # non vacuous files: 1/39
@@ -380,20 +213,6 @@ Gen.jl: {ev: 2, il: 0}
 # non vacuous files: 1/89
 * /src/Gen.jl => {ev: 2, il: 0}
   [evalArgs: (symbol [top] => 1, symbol [fun] => 1)]
-
-HTTP.jl: {ev: 2, il: 0}
-  [evalArgs: (function [fun] => 2)]
-# non vacuous files: 1/37
-* /src/Handlers.jl => {ev: 2, il: 0}
-  [evalArgs: (function [fun] => 2)]
-
-LightGraphs.jl: {ev: 2, il: 0}
-  [evalArgs: (function [top] => 1, symbol [fun] => 1)]
-# non vacuous files: 2/202
-* /src/linalg13/graphmatrices.jl => {ev: 1, il: 0}
-  [evalArgs: (function [top] => 1)]
-* /src/persistence13/lg.jl => {ev: 1, il: 0}
-  [evalArgs: (symbol [fun] => 1)]
 
 Makie.jl: {ev: 2, il: 0}
   [evalArgs: (import [top] => 1, export [top] => 1)]
@@ -409,49 +228,43 @@ Optim.jl: {ev: 1, il: 0}
 
 ==============================
 
-Non vacuous packages: 33/50
-* all evals are top-level: 18/50
-* all evals are top-level and no invokelatest: 17/50
-* single top-level eval and no invokelatest: 1/50
-* maybe function defs in fun: 11/50
-* maybe function defs in fun but not likely calls: 5/50
-* maybe function calls in fun: 13/50
-* likely function calls in fun: 10/50
-* likely function calls in fun but not defs: 4/50
-* invokelatest: 9/50
+Non vacuous packages: 16/20
+* all evals are top-level: 8/20
+* all evals are top-level and no invokelatest: 8/20
+* single top-level eval and no invokelatest: 1/20
+* maybe function defs in fun: 4/20
+* maybe function defs in fun but not likely calls: 2/20
+* maybe function calls in fun: 6/20
+* likely function calls in fun: 5/20
+* likely function calls in fun but not defs: 3/20
+* invokelatest: 4/20
 
 Total Stat:
-* function   [top] =>  238 in  24 pkgs
-* function   [fun] =>   42 in   3 pkgs
-* ref        [top] =>   16 in   1 pkgs
-* symbol     [fun] =>   14 in   6 pkgs
-* call       [fun] =>   11 in   5 pkgs
+* function   [top] =>  144 in  12 pkgs
+* function   [fun] =>   38 in   1 pkgs
 * parse      [fun] =>   11 in   1 pkgs
-* @doc       [top] =>    9 in   4 pkgs
-* export     [top] =>    8 in   5 pkgs
-* import     [fun] =>    8 in   4 pkgs
-* ref        [fun] =>    7 in   2 pkgs
-* =          [top] =>    7 in   2 pkgs
-* expr       [fun] =>    7 in   4 pkgs
-* macrocall  [top] =>    4 in   3 pkgs
-* =          [fun] =>    4 in   3 pkgs
+* call       [fun] =>    9 in   4 pkgs
+* import     [fun] =>    5 in   2 pkgs
 * export     [fun] =>    3 in   1 pkgs
-* import     [top] =>    3 in   3 pkgs
-* struct     [top] =>    3 in   3 pkgs
-* const      [fun] =>    3 in   2 pkgs
-* $          [fun] =>    3 in   2 pkgs
-* @deprecate [top] =>    3 in   1 pkgs
-* symbol     [top] =>    3 in   3 pkgs
-* @optlevel  [top] =>    3 in   3 pkgs
-* .          [fun] =>    2 in   2 pkgs
-* call       [top] =>    2 in   1 pkgs
+* export     [top] =>    3 in   3 pkgs
+* @doc       [top] =>    3 in   2 pkgs
+* macrocall  [top] =>    2 in   2 pkgs
+* import     [top] =>    2 in   2 pkgs
+* const      [fun] =>    2 in   1 pkgs
 * include    [fun] =>    2 in   1 pkgs
 * using      [fun] =>    2 in   1 pkgs
+* symbol     [top] =>    2 in   2 pkgs
+* @optlevel  [top] =>    2 in   2 pkgs
 * include    [top] =>    1 in   1 pkgs
 * let        [fun] =>    1 in   1 pkgs
+* struct     [top] =>    1 in   1 pkgs
 * $          [top] =>    1 in   1 pkgs
-* module     [fun] =>    1 in   1 pkgs
+* .          [fun] =>    1 in   1 pkgs
 * if         [top] =>    1 in   1 pkgs
 * macro      [top] =>    1 in   1 pkgs
+* =          [top] =>    1 in   1 pkgs
+* expr       [fun] =>    1 in   1 pkgs
+* =          [fun] =>    1 in   1 pkgs
 * other      [fun] =>    1 in   1 pkgs
+* symbol     [fun] =>    1 in   1 pkgs
 
