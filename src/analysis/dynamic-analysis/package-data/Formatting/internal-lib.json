@@ -3,13 +3,7 @@
     "call_count": 0,
     "stack_traces": [],
     "func_specific_data": {
-      "ast_heads": [],
-      "func_def_types": {
-        "newFuncCount": 0,
-        "bodylessFuncCount": 0,
-        "funcRedefCount": 0,
-        "miscCount": 0
-      }
+      "ast_heads": []
     }
   },
   "invokelatest_info": {

@@ -1,34 +1,14 @@
 {
   "eval_info": {
-    "call_count": 8,
+    "call_count": 2,
     "stack_traces": [
       {
-        "count": 4,
-        "last_call": "eval(::Expr) at client.jl:467",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "="
-            },
-            {
-              "count": 1,
-              "ast_head": "function"
-            },
-            {
-              "count": 1,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 3,
+        "count": 1,
         "last_call": "initmeta(::Module) at Docs.jl:79",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 3,
+              "count": 1,
               "ast_head": "const"
             }
           ]
@@ -50,47 +30,45 @@
     "func_specific_data": {
       "ast_heads": [
         {
-          "count": 3,
+          "count": 1,
           "ast_head": "const"
         },
         {
-          "count": 2,
-          "ast_head": "function"
-        },
-        {
-          "count": 2,
-          "ast_head": "="
-        },
-        {
           "count": 1,
-          "ast_head": "macrocall"
+          "ast_head": "function"
         }
-      ]
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 1,
+        "miscCount": 0
+      }
     }
   },
   "invokelatest_info": {
-    "call_count": 2,
+    "call_count": 6,
     "stack_traces": [
       {
-        "count": 1,
-        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:28",
+        "count": 4,
+        "last_call": "show_backtrace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
         "auxillary": {
           "function_names": [
             {
-              "function_name": "do_artifact_str",
-              "count": 1
+              "function_name": "identity",
+              "count": 4
             }
           ]
         }
       },
       {
-        "count": 1,
-        "last_call": "__init__() at x86_64-w64-mingw32-libgfortran5.jl:69",
+        "count": 2,
+        "last_call": "show_reduced_backtrace(::IOContext{Base.GenericIOBuffer{Array{UInt8,1}}}, ::Array{Any,1}, ::Bool) at errorshow.jl:616",
         "auxillary": {
           "function_names": [
             {
-              "function_name": "do_artifact_str",
-              "count": 1
+              "function_name": "identity",
+              "count": 2
             }
           ]
         }
@@ -99,8 +77,8 @@
     "func_specific_data": {
       "function_names": [
         {
-          "function_name": "do_artifact_str",
-          "count": 2
+          "function_name": "identity",
+          "count": 6
         }
       ]
     }

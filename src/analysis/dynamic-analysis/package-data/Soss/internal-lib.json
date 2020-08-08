@@ -37,7 +37,13 @@
           "count": 2,
           "ast_head": "block"
         }
-      ]
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 8,
+        "miscCount": 0
+      }
     }
   },
   "invokelatest_info": {

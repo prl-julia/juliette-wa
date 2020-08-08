@@ -25,16 +25,16 @@
     }
   },
   "invokelatest_info": {
-    "call_count": 437,
+    "call_count": 438,
     "stack_traces": [
       {
-        "count": 218,
+        "count": 222,
         "last_call": "message_handler_loop(::Sockets.TCPSocket, ::Sockets.TCPSocket, ::Bool) at process_messages.jl:185",
         "auxillary": {
           "function_names": [
             {
               "function_name": "deserialize_msg",
-              "count": 218
+              "count": 222
             }
           ]
         }
@@ -76,13 +76,13 @@
         }
       },
       {
-        "count": 7,
+        "count": 4,
         "last_call": "show_backtrace(::Base.TTY, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
         "auxillary": {
           "function_names": [
             {
               "function_name": "identity",
-              "count": 7
+              "count": 4
             }
           ]
         }
@@ -116,7 +116,7 @@
       "function_names": [
         {
           "function_name": "deserialize_msg",
-          "count": 218
+          "count": 222
         },
         {
           "function_name": "serialize_msg",
@@ -132,7 +132,7 @@
         },
         {
           "function_name": "identity",
-          "count": 7
+          "count": 4
         },
         {
           "function_name": "do_artifact_str",
