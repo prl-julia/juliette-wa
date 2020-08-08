@@ -1,0 +1,72 @@
+{
+  "eval_info": {
+    "call_count": 13321,
+    "stack_traces": [
+      {
+        "count": 13279,
+        "last_call": "eval at ProtoBuf.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 13279,
+              "ast_head": "Symbol"
+            }
+          ]
+        }
+      },
+      {
+        "count": 40,
+        "last_call": "call_method(::ProtoService, ::MethodDescriptor, ::TestRpcController, ::BinaryOpReq) at svc.jl:74",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 40,
+              "ast_head": "Symbol"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "meta(::Type{T} where T, ::Array{Symbol,1}, ::Array{Int64,1}, ::Dict{Symbol,Any}, ::Bool, ::Array{Symbol,1}, ::Dict{Symbol,Symbol}, ::Array{Int64,1}, ::Array{Symbol,1}, ::Dict{Symbol,String}) at codec.jl:569",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "Symbol"
+            },
+            {
+              "count": 1,
+              "ast_head": "curly"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 13320,
+          "ast_head": "Symbol"
+        },
+        {
+          "count": 1,
+          "ast_head": "curly"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}
