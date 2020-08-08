@@ -127,12 +127,12 @@ isLambdaFunc(e) = isAstWithBody(e, :(->))
 isIrregularFunction(e) = isAbreviatedFunc(e) || isLambdaBinding(e) || isLambdaFunc(e)
 
 # Updates the ast information to increment the ast type of the given expression
-function updateAstInfo(astHeads :: AstInfo, astIdentifier :: Symbol)
+function updateAstInfoHelp(astHeads :: AstInfo, astIdentifier :: Symbol)
     updateDictCount(astHeads, astIdentifier)
     astIdentifier
 end
-updateAstInfo(astHeads :: AstInfo, e :: Expr) = updateAstInfo(astHeads, isIrregularFunction(e) ? :function : e.head)
-updateAstInfo(astHeads :: AstInfo, e) = updateAstInfo(astHeads, Symbol(typeof(e)))
+updateAstInfo(astHeads :: AstInfo, e :: Expr) = updateAstInfoHelp(astHeads, isIrregularFunction(e) ? :function : e.head)
+updateAstInfo(astHeads :: AstInfo, e) = updateAstInfoHelp(astHeads, Symbol(typeof(e)))
 
 function getFuncNameAndModule(e :: Expr, m :: Module)
     maybeCallExpr = e.args[1]
