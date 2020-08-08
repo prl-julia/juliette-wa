@@ -21,7 +21,7 @@
           "ast_heads": [
             {
               "count": 1,
-              "ast_head": "->"
+              "ast_head": "function"
             }
           ]
         }
@@ -35,9 +35,15 @@
         },
         {
           "count": 1,
-          "ast_head": "->"
+          "ast_head": "function"
         }
-      ]
+      ],
+      "func_def_types": {
+        "newFuncCount": 1,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
     }
   },
   "invokelatest_info": {

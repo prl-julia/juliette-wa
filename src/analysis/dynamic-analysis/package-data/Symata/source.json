@@ -8,7 +8,11 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 297,
+              "count": 225,
+              "ast_head": "Integer"
+            },
+            {
+              "count": 40,
               "ast_head": "Symbol"
             },
             {
@@ -16,8 +20,16 @@
               "ast_head": "call"
             },
             {
+              "count": 16,
+              "ast_head": "List"
+            },
+            {
               "count": 15,
-              "ast_head": "->"
+              "ast_head": "function"
+            },
+            {
+              "count": 9,
+              "ast_head": "AbstractString"
             },
             {
               "count": 6,
@@ -28,8 +40,32 @@
               "ast_head": "const"
             },
             {
+              "count": 2,
+              "ast_head": "AbstractFloat"
+            },
+            {
               "count": 1,
               "ast_head": "vect"
+            },
+            {
+              "count": 1,
+              "ast_head": "sympy_GreaterThan"
+            },
+            {
+              "count": 1,
+              "ast_head": "sympy_StrictGreaterThan"
+            },
+            {
+              "count": 1,
+              "ast_head": "sympy_LessThan"
+            },
+            {
+              "count": 1,
+              "ast_head": "sympy_Unequality"
+            },
+            {
+              "count": 1,
+              "ast_head": "sympy_StrictLessThan"
             }
           ]
         }
@@ -74,16 +110,28 @@
     "func_specific_data": {
       "ast_heads": [
         {
-          "count": 297,
-          "ast_head": "Symbol"
+          "count": 225,
+          "ast_head": "Integer"
         },
         {
           "count": 41,
           "ast_head": "call"
         },
         {
-          "count": 15,
-          "ast_head": "->"
+          "count": 40,
+          "ast_head": "Symbol"
+        },
+        {
+          "count": 18,
+          "ast_head": "function"
+        },
+        {
+          "count": 16,
+          "ast_head": "List"
+        },
+        {
+          "count": 9,
+          "ast_head": "AbstractString"
         },
         {
           "count": 6,
@@ -94,18 +142,44 @@
           "ast_head": "block"
         },
         {
-          "count": 3,
-          "ast_head": "function"
-        },
-        {
           "count": 2,
           "ast_head": "const"
         },
         {
+          "count": 2,
+          "ast_head": "AbstractFloat"
+        },
+        {
           "count": 1,
           "ast_head": "vect"
+        },
+        {
+          "count": 1,
+          "ast_head": "sympy_GreaterThan"
+        },
+        {
+          "count": 1,
+          "ast_head": "sympy_StrictGreaterThan"
+        },
+        {
+          "count": 1,
+          "ast_head": "sympy_LessThan"
+        },
+        {
+          "count": 1,
+          "ast_head": "sympy_Unequality"
+        },
+        {
+          "count": 1,
+          "ast_head": "sympy_StrictLessThan"
         }
-      ]
+      ],
+      "func_def_types": {
+        "newFuncCount": 15,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 3
+      }
     }
   },
   "invokelatest_info": {
@@ -137,15 +211,15 @@
               "count": 1
             },
             {
-              "function_name": "#55",
-              "count": 1
-            },
-            {
               "function_name": "#51",
               "count": 1
             },
             {
               "function_name": "#53",
+              "count": 1
+            },
+            {
+              "function_name": "#49",
               "count": 1
             }
           ]
@@ -299,11 +373,11 @@
           "count": 1
         },
         {
-          "function_name": "#55",
+          "function_name": "#51",
           "count": 1
         },
         {
-          "function_name": "#51",
+          "function_name": "#49",
           "count": 1
         }
       ]

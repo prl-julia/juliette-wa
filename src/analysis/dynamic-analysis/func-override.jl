@@ -163,7 +163,7 @@ function updateEvalInfo(evalInfo :: EvalInfo, e, m :: Module)
         elseif isLambdaBinding(e)
             dump(e)
             evalInfo.funcDefTypes.miscCount += 1
-        elseif isAstWithBody(e, :function) && isa(maybeCallExpr, Symbol)
+        elseif isAstWithBody(e, :function) && isa(e.args[1], Symbol)
             evalInfo.funcDefTypes.bodylessFuncCount += 1
         else
             try
