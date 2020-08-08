@@ -114,9 +114,26 @@ parsecode(code::String)::Vector =
 # String → AST
 # Parses [text] as Julia code
 parseJuliaCode(text :: String) =
-    Meta.parse(join(["quote", text, "end"], ";"))
+    Meta.parse(join(["quote", text, "end"], "\n"))
 
 # String → AST
 # Parses file [filePath] as Julia code
 parseJuliaFile(filePath :: String) =
     parseJuliaCode(read(filePath, String))
+
+###################################################
+# Misc
+###################################################
+
+function incrementDict!(dict :: Dict{K, UInt}, key :: K) where K
+    haskey(dict, key) ? dict[key] += 1 : dict[key] = 1
+    dict
+end
+
+# Creates frequency dictionary from a vector
+function mkOccurDict(data :: Vector{K}) :: Dict{K, UInt} where K
+    foldl(
+        incrementDict!, data; 
+        init=Dict{K, UInt}()
+    )
+end

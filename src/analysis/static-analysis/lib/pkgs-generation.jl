@@ -25,9 +25,37 @@ const PKGS_INFO_URL = "https://juliahub.com/app/packages/info"
 const PKGS_KEY = "packages"
 
 # Repositories of bad packages that might be in the list
+# (submitted an issue: https://github.com/JuliaComputing/JuliaHub/issues/67)
 const BAD_PKGS = [
-    "https://github.com/JuliaLang/julia.git", # Julia repo itself
-    "https://github.com/Lonero-Team/Decentralized-Internet.git", # Decentralized-Internet
+    # Julia repo itself we don't check
+    "https://github.com/JuliaLang/julia.git",
+    # Decentralized-Internet isn't a Julia package
+    "https://github.com/Lonero-Team/Decentralized-Internet.git",
+    # Empty package, it was merged somewhere
+    "https://github.com/dmlc/MXNet.jl.git",
+    # Renamed to Franklin.jl
+    "https://github.com/tlienart/JuDoc.jl.git",
+    # Packages below aren't publicly accessible for some reason
+    "https://github.com/JuliaComputing/Blpapi.jl.git",
+    "https://github.com/bcbi/CountdownLetters.jl.git",
+    "https://github.com/JuliaComputing/MiletusPro.jl.git",
+    "https://github.com/aramirezreyes/SAMtools.jl.git",
+    "https://github.com/bcbi/CountdownNumbers.jl.git",
+    "https://github.com/JuliaComputing/JuliaInXL.jl.git",
+    "https://github.com/tlienart/MLJScikitLearn.jl.git",
+    "https://github.com/PetrKryslUCSD/MeshKeeper.jl.git",
+    "https://github.com/PetrKryslUCSD/MeshPorter.jl.git",
+    "https://github.com/PetrKryslUCSD/MeshFinder.jl.git",
+    "https://github.com/PetrKryslUCSD/MeshMaker.jl.git",
+    "https://github.com/rjdverbeek-tud/Atmosphere.jl.git",
+    "https://github.com/PumasAI/Bioequivalence.jl.git",
+    "https://github.com/mrtkp9993/Bioinformatics.jl.git",
+    "https://github.com/anders-dc/Granular.jl.git",
+    "https://github.com/rbalexan/InfrastructureSensing.jl.git",
+    "https://github.com/slmcbane/MirroredArrayViews.jl.git",
+    "https://github.com/oscar-system/GAPTypes.jl.git",
+    "https://github.com/StanJulia/StanMCMCChain.jl.git",
+    "https://github.com/markushhh/YahooFinance.jl.git",
 ]
 
 ###################################################

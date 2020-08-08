@@ -40,6 +40,9 @@ function parse_command_line_args()
         "--reload", "-r"
             help = "flag specifying if packages information must be reloaded"
             action = :store_true
+        "--generate", "-g"
+            help = "flag specifying if packages list must be regenerated"
+            action = :store_true
         "--noclone", "-n"
             help = "flag specifying if cloning should be skipped"
             action = :store_true
@@ -73,11 +76,14 @@ for d in ["data", "data/pkgs-list", "data/pkgs", "data/reports"]
 end
 
 # load packages
-if !isfile(pkgsListFile) || PARAMS["reload"]
+if !isfile(pkgsListFile) || PARAMS["reload"] || PARAMS["generate"]
     println("Packages list generation\n$(SEP)")
-    generatePackagesList(pkgsInfoFile, true, pkgsNum, pkgsListFile)
+    generatePackagesList(pkgsInfoFile, PARAMS["reload"], pkgsNum, pkgsListFile)
     println()
 end
+
+@info "Processing packages from $(pkgsListFile)"
+println()
 
 # clone if necessary
 if !PARAMS["noclone"]
@@ -88,5 +94,8 @@ if !PARAMS["noclone"]
 end
 
 # run analysis
-#println("Analysis\n$(SEP)")
-#run(pipeline(`julia run-analysis.jl $(pkgsDir)`, stdout=reportFile))
+println("Analysis\n$(SEP)")
+open(reportFile, "w") do io
+    analyzePackages(pkgsDir, io)
+    @info "Analysis completed; results are in $(reportFile)"
+end
