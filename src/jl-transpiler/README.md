@@ -1,4 +1,4 @@
-# Julia to Redex transpiler
+# Julia to Redex Transpiler
 
 This transpiler converts a subset of the Julia language into
 the Redex defined world age language (can be found [here](../redex)).
@@ -24,7 +24,7 @@ by writing examples in a more familiar language like Julia.
 - [`transpiler.jl`](transpiler.jl): string-to-string transpiler from
   Julia syntax to the Redex-model syntax;
 
-- [`auxiliary`](auxiliary): folder with auxiliary definitions.
+- [`auxiliary/`](auxiliary): folder with auxiliary definitions.
 
 ## Notes on design
 
@@ -137,9 +137,10 @@ subset of the Julia language in the traspiler.
       args:
           1: :@assert
           2: <SubJulia>
-```
+  ```
 
 - Block expression of the form:
+
   ```julia
   # Julia code:
   begin
