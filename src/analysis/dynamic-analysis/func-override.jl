@@ -13,9 +13,18 @@ AstInfo = Dict{Symbol, Count}
 # Represents the a function name distribution
 FunctionInfo = Dict{String, Count}
 
+mutable struct FuncDefTracker
+    newFuncCount :: Count
+    funcRedefCount :: Count
+    miscCount :: Count
+end
+# Initializes a base representation of function type tracker
+FuncDefTracker() = FuncDefTracker(0,0,0)
+
 # Represents the information collected regarding eval function calls
 mutable struct EvalInfo
     astHeads :: AstInfo
+    funcDefTypes :: FuncDefTracker
 end
 
 # Represents the information collected regarding eval function calls
@@ -52,7 +61,7 @@ end
 # Initializes a base representation of override information
 OverrideInfo(identifier :: String, functionDataFilter :: Function) =
     OverrideInfo(identifier, functionDataFilter,
-        FuncMetadata(EvalInfo(Dict());
+        FuncMetadata(EvalInfo(Dict(), FuncDefTracker());
             initialTrace=Dict{StackTraces.StackFrame,StackTraceInfo{AstInfo}}()),
         FuncMetadata(InvokeLatestInfo(Dict());
             initialTrace=Dict{StackTraces.StackFrame,StackTraceInfo{FunctionInfo}}())
@@ -80,10 +89,8 @@ end
 
 # Determines if given stack frame is from package source code
 isSourceCode(stackFrame) = isInCode(stackFrame, SOURCE_FILES, SOURCE_KW)
-
 # Determines if given stack frame is from internal julia library code
 isInternalLibCode(stackFrame) = !isSourceCode(stackFrame) && isInCode(stackFrame, INTERNAL_LIB_FILES, INTERNAL_LIB_KW)
-
 # Determines if given stack frame is from external library code
 isExternalLibCode(stackFrame) = !(isSourceCode(stackFrame) || isInternalLibCode(stackFrame))
 
@@ -101,18 +108,68 @@ updateDictCount(dict :: Dict{T, Count}, key :: T) where {T} = dict[key] = get!(d
 isAstWithBody(e :: Expr, head :: Symbol) = e.head == head && size(e.args)[1] > 0
 isAstWithBody(e, head :: Symbol) = false
 
-# Determines if the given expression is an abreviated function
-isAbreviatedFunc(e :: Expr) = isAstWithBody(e, :(=)) &&
-                                (isAstWithBody(e.args[1], :call) ||
-                                (isAstWithBody(e.args[1], :(::)) &&
-                                    isAstWithBody(e.args[1].args[1], :call)))
+# Determines if the given expression is an abreviated function definition
+isAbreviatedFunc(e :: Expr) =
+    isAstWithBody(e, :(=)) &&
+        (isAstWithBody(e.args[1], :call) ||
+            (isAstWithBody(e.args[1], :(::)) &&
+                isAstWithBody(e.args[1].args[1], :call)))
+# Determines if the given expression is an abreviated function definition
+isLambdaBinding(e :: Expr) =
+    isAstWithBody(e, :(=)) &&
+        (size(e.args)[1] > 1 &&
+            isAstWithBody(e.args[2], :(->)))
+# Determines if the given expression is an lambda function
+isLambdaFunc(e) = isAstWithBody(e, :(->))
+# Determines if the given expression is a irregularly defined function
+isIrregularFunction(e) = isAbreviatedFunc(e) || isLambdaBinding(e) || isLambdaFunc(e)
 
 # Updates the ast information to increment the ast type of the given expression
-function updateAstInfo(astHeads :: AstInfo, e :: Expr)
-    astIdentifier = isAbreviatedFunc(e) ? :function : e.head
+function updateAstInfo(astHeads :: AstInfo, astIdentifier :: Symbol)
     updateDictCount(astHeads, astIdentifier)
+    astIdentifier
 end
-updateAstInfo(astHeads :: AstInfo, e) = updateDictCount(astHeads, Symbol(typeof(e)))
+updateAstInfo(astHeads :: AstInfo, e :: Expr) = updateAstInfo(astHeads, isIrregularFunction(e) ? :function : e.head)
+updateAstInfo(astHeads :: AstInfo, e) = updateAstInfo(astHeads, Symbol(typeof(e)))
+
+function getFuncNameAndModule(e :: Expr, m :: Module)
+    maybeCallExpr = e.args[1]
+    if isAstWithBody(maybeCallExpr, :call)
+        funcDef = maybeCallExpr.args[1]
+        if isa(funcDef, Symbol)
+            return (m, funcDef)
+        elseif isAstWithBody(funcDef, :(.)) &&
+                isa(funcDef.args[2], QuoteNode)
+            m = isa(funcDef.args[1], Module) ? funcDef.args[1] : eval(funcDef.args[1])
+            return (m, funcDef.args[2].value)
+        end
+    elseif isa(e, Expr) && (size(e.args)[1] > 0)
+        return getFuncNameAndModule(maybeCallExpr, m)
+    end
+    throw(DomainError(e))
+end
+
+# Updates the ast information to increment the ast type of the given expression
+function updateEvalInfo(evalInfo :: EvalInfo, e, m :: Module)
+    astIdentifier = updateAstInfo(evalInfo.astHeads, e)
+    if astIdentifier == :function
+        if isLambdaFunc(e)
+            evalInfo.funcDefTypes.newFuncCount += 1
+        elseif isLambdaBinding(e)
+            dump(e)
+            evalInfo.funcDefTypes.miscCount += 1
+        else
+            try
+                Core.isdefined(getFuncNameAndModule(e, m)...) ?
+                    evalInfo.funcDefTypes.funcRedefCount += 1 :
+                    evalInfo.funcDefTypes.newFuncCount += 1
+            catch err
+                dump(e)
+                evalInfo.funcDefTypes.miscCount += 1
+            end
+        end
+    end
+end
 
 # Updates the information for a stack trace
 function updateStackTraces(stackTraces :: Dict{StackTraces.StackFrame, StackTraceInfo{U}},
@@ -142,12 +199,12 @@ end
 
 # Overrides eval to store metadata about calls to the function
 function Core.eval(m::Module, @nospecialize(e))
-    updateEvalInfo(evalInfo :: EvalInfo) = updateAstInfo(evalInfo.astHeads, e)
+    updateEvalInfoWrap(evalInfo :: EvalInfo) = updateEvalInfo(evalInfo, e, m)
     updateTraceAuxillary(astHeads :: AstInfo) = updateAstInfo(astHeads, e)
     frameToGet = 3
     for overrideInfo = overrideCollection
         updateFuncMetadata(overrideInfo.evalInfo, frameToGet,
-            updateEvalInfo; stackFramePredicate=overrideInfo.stackFramePredicate,
+            updateEvalInfoWrap; stackFramePredicate=overrideInfo.stackFramePredicate,
             auxTuple=((() -> Dict{Symbol,Count}()), updateTraceAuxillary))
         storeOverrideInfo(overrideInfo)
     end
@@ -202,7 +259,7 @@ end
 function overrideInfoToJson(info :: OverrideInfo)
     json = Dict()
     json["eval_info"] = funcMetadataToJson(info.evalInfo,
-        (evalInfo) -> astInfoToJson(evalInfo.astHeads);
+        evalInfoToJson;
         traceAuxillaryToJson=astInfoToJson)
     json["invokelatest_info"] = funcMetadataToJson(info.invokeLatestInfo,
         (invokeLatestInfo) -> Dict(["function_names" => countingDictToJson(invokeLatestInfo.funcNames, "function_name")]);
@@ -210,11 +267,27 @@ function overrideInfoToJson(info :: OverrideInfo)
     json
 end
 
-# Convert an astInfo object to a julia json representation
-astInfoToJson(astHeads :: AstInfo) = Dict(["ast_heads" => countingDictToJson(astHeads, "ast_head")])
+# Convert an evalInfo object to a julia json representation
+function evalInfoToJson(evalInfo :: EvalInfo)
+    json = astInfoToJson(evalInfo.astHeads)
+    json["func_def_types"] = funcDefTrackerToJson(evalInfo.funcDefTypes)
+    json
+end
 
 # Convert an functionInfo object to a julia json representation
 funcInfoToJson(funcNames :: FunctionInfo) = Dict(["function_names" => countingDictToJson(funcNames, "function_name")])
+
+# Convert an astInfo object to a julia json representation
+astInfoToJson(astHeads :: AstInfo) = Dict{Any, Any}(["ast_heads" => countingDictToJson(astHeads, "ast_head")])
+
+# Convert an functionDefTracker object to a julia json representation
+function funcDefTrackerToJson(funcDefTypes :: FuncDefTracker)
+    json = Dict()
+    json["newFuncCount"] = funcDefTypes.newFuncCount
+    json["funcRedefCount"] = funcDefTypes.funcRedefCount
+    json["miscCount"] = funcDefTypes.miscCount
+    json
+end
 
 # Convert an FuncMetadata object to a julia json representation
 function funcMetadataToJson(funcMetadata :: FuncMetadata,
