@@ -13,6 +13,7 @@ AstInfo = Dict{Symbol, Count}
 # Represents the a function name distribution
 FunctionInfo = Dict{String, Count}
 
+# Represents the distribution of function definition types
 mutable struct FuncDefTracker
     newFuncCount :: Count
     funcRedefCount :: Count
