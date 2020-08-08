@@ -430,7 +430,6 @@ function computeDerivedMetrics(
         Dict{String, Vector{String}}(map(param -> param=>String[], [
             "likelyBypassWA", "likelyImpactWA", "likelyBoth"]))
     )
-    toTrackPkgs = 
     for pkgInfo in pkgInfos
         # we don't output information about packages without eval/invokelatest
         pkgInfo.interestingFiles > 0 || continue
@@ -441,8 +440,6 @@ function computeDerivedMetrics(
         pkgsStat.derivedStat["non_vacuous"] += 1
         addStats!(pkgsStat, pkgInfo.pkgStat, pkgInfo.pkgStat.evalArgStat)
         # ask more specific questions
-        #maybeDefineFunction(pkgInfo.pkgStat) &&
-        #    pkgsDerivedStat["fun_def"] += 1
         for propCond in derivedConditions
             if propCond[2](pkgInfo.pkgStat)
                 pkgsStat.derivedStat[propCond[1]] += 1

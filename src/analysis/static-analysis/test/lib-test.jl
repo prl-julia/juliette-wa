@@ -1,7 +1,6 @@
 using Test
 
 include("../lib/analysis.jl")
-include("../lib/pkgs-generation.jl")
 
 @testset "nonVacuous" begin
     @test nonVacuous(Stat(0, 0)) == false
@@ -27,25 +26,27 @@ end
     @test isEvalCall(Meta.parse("@eval"))
 end
 
+parseTestFile(fname :: String) = parseJuliaFile(joinpath(@__DIR__, fname))
+
 @testset "countEval" begin
     # hand-written
-    @test countEval(parseJuliaFile("test/test-0.jl")) == 5
+    @test countEval(parseTestFile("test-0.jl")) == 5
     # from GasModels.jl (reduced src/core/export.jl)
-    @test countEval(parseJuliaFile("test/test-1.jl")) == 3
+    @test countEval(parseTestFile("test-1.jl")) == 3
     # from Symata.jl (reduced src/math_functions.jl)
-    @test countEval(parseJuliaFile("test/test-2.jl")) == 18
+    @test countEval(parseTestFile("test-2.jl")) == 18
     # from CUDA.jl (reduced src/device/intrinsics/atomics.jl)
-    @test countEval(parseJuliaFile("test/test-3.jl")) == 9
+    @test countEval(parseTestFile("test-3.jl")) == 9
     # from Genie.jl (reduced src/renderers/Html.jl)
-    @test countEval(parseJuliaFile("test/test-4.jl")) == 9
+    @test countEval(parseTestFile("test-4.jl")) == 9
 end
 
 @testset "argDescr" begin
-    @test argDescr(5) == [:value]
-    @test argDescr(:(const F = 1)) == [:const]
-    @test argDescr(:(f() = 0)) == [:function]
-    @test argDescr(:(x = 666)) == [:(=)]
-    @test argDescr(:(eval(:( f() = 0 ))).args[2]) == [:function]
+    @test argDescr(5) == [EvalCallInfo(:value, false)]
+    @test argDescr(:(const F = 1), true) == [EvalCallInfo(:const, true)]
+    @test argDescr(:(f() = 0)) == [EvalCallInfo(:function, false)]
+    @test argDescr(:(x = 666)) == [EvalCallInfo(:(=), false)]
+    @test argDescr(:(eval(:( f() = 0 ))).args[2], true) == [EvalCallInfo(:function, true)]
 end
 
 @testset "getEvalInfo" begin
@@ -59,7 +60,7 @@ end
 end
 
 @testset "gatherEvalInfo" begin
-    @test gatherEvalInfo(:(eval())) == [EvalCallInfo(:nothing)]
+    @test gatherEvalInfo(:(eval()), true) == [EvalCallInfo(:nothing, true)]
     @test gatherEvalInfo(:((eval(); @eval 1))) ==
             [EvalCallInfo(:nothing), EvalCallInfo(:value)]
 end
