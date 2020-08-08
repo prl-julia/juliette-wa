@@ -3,10 +3,10 @@ using Test
 include("../lib/analysis.jl")
 
 @testset "nonVacuous" begin
-    @test nonVacuous(Stat(0, 0)) == false
-    @test nonVacuous(Stat(1, 0)) == true
-    @test nonVacuous(Stat(0, 1)) == true
-    @test nonVacuous(Stat(5, 2)) == true
+    @test !nonVacuous(Stat(0, 0))
+    @test nonVacuous(Stat(1, 0))
+    @test nonVacuous(Stat(0, 1))
+    @test nonVacuous(Stat(5, 2))
 end
 
 @testset "evalName" begin

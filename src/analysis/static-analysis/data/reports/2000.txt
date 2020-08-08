@@ -359,8 +359,8 @@ RHEOS.jl: {ev: 7, il: 12}
 * /src/definitions.jl => {ev: 6, il: 0}
   [evalArgs: (other [fun] => 3, variable [fun] => 3)]
 
-Atom.jl: {ev: 6, il: 11}
-  [evalArgs: (function [top] => 2, variable [fun] => 1, const [top] => 1, module [fun] => 1, @doc [fun] => 1)]
+Atom.jl: {ev: 7, il: 11}
+  [evalArgs: (function [top] => 2, variable [fun] => 1, const [top] => 1, EvalDef [top] => 1, module [fun] => 1, @doc [fun] => 1)]
 # non vacuous files: 8/43
 * /src/completions.jl => {ev: 1, il: 0}
   [evalArgs: (const [top] => 1)]
@@ -372,8 +372,8 @@ Atom.jl: {ev: 6, il: 11}
   [evalArgs: (function [top] => 2)]
 * /src/progress.jl => {ev: 0, il: 3}
   [evalArgs: ()]
-* /src/eval.jl => {ev: 0, il: 7}
-  [evalArgs: ()]
+* /src/eval.jl => {ev: 1, il: 7}
+  [evalArgs: (EvalDef [top] => 1)]
 * /src/misc.jl => {ev: 1, il: 0}
   [evalArgs: (module [fun] => 1)]
 * /src/debugger/stepper.jl => {ev: 0, il: 1}
@@ -649,6 +649,14 @@ Revise.jl: {ev: 3, il: 1}
 * /src/lowered.jl => {ev: 1, il: 0}
   [evalArgs: (variable [fun] => 1)]
 
+SemanticModels.jl: {ev: 3, il: 1}
+  [evalArgs: (variable [fun] => 2, EvalDef [top] => 1)]
+# non vacuous files: 2/19
+* /src/exprmodels/ExprModels.jl => {ev: 1, il: 1}
+  [evalArgs: (variable [fun] => 1)]
+* /src/exprmodels/MonomialRegressionModels.jl => {ev: 2, il: 0}
+  [evalArgs: (variable [fun] => 1, EvalDef [top] => 1)]
+
 Simulate.jl: {ev: 2, il: 2}
   [evalArgs: (variable [fun] => 1, function [fun] => 1)]
 # non vacuous files: 2/12
@@ -672,14 +680,6 @@ PredictMD.jl: {ev: 2, il: 1}
   [evalArgs: (parse [fun] => 2)]
 * /src/toplevel/always-loaded/utils/openbrowserwindow.jl => {ev: 0, il: 1}
   [evalArgs: ()]
-
-SemanticModels.jl: {ev: 2, il: 1}
-  [evalArgs: (variable [fun] => 2)]
-# non vacuous files: 2/19
-* /src/exprmodels/ExprModels.jl => {ev: 1, il: 1}
-  [evalArgs: (variable [fun] => 1)]
-* /src/exprmodels/MonomialRegressionModels.jl => {ev: 1, il: 0}
-  [evalArgs: (variable [fun] => 1)]
 
 Dagger.jl: {ev: 1, il: 1}
   [evalArgs: (variable [fun] => 1)]
@@ -3243,28 +3243,6 @@ NIDAQ.jl: {ev: 27, il: 0}
 * /src/digital.jl => {ev: 4, il: 0}
   [evalArgs: (function [top] => 4)]
 
-NTFk.jl: {ev: 27, il: 0}
-  [evalArgs: (parse [fun] => 16, variable [fun] => 5, import [fun] => 2, other [fun] => 1, parse [top] => 1, variable [top] => 1, @(s)printf [fun] => 1)]
-# non vacuous files: 9/25
-* /src/NTFkDistributed.jl => {ev: 1, il: 0}
-  [evalArgs: (other [fun] => 1)]
-* /src/NTFkHelpers.jl => {ev: 3, il: 0}
-  [evalArgs: (parse [fun] => 2, @(s)printf [fun] => 1)]
-* /src/NTFkTD-helpers.jl => {ev: 1, il: 0}
-  [evalArgs: (parse [fun] => 1)]
-* /src/NTFkTensorly.jl => {ev: 3, il: 0}
-  [evalArgs: (variable [fun] => 3)]
-* /src/NTFkPlotProgressBar.jl => {ev: 2, il: 0}
-  [evalArgs: (parse [fun] => 2)]
-* /src/NTFkHelp.jl => {ev: 6, il: 0}
-  [evalArgs: (variable [fun] => 2, import [fun] => 2, parse [top] => 1, variable [top] => 1)]
-* /src/NTFkPlot.jl => {ev: 2, il: 0}
-  [evalArgs: (parse [fun] => 2)]
-* /src/NTFkPlot2d.jl => {ev: 7, il: 0}
-  [evalArgs: (parse [fun] => 7)]
-* /src/NTFkPlotComponents.jl => {ev: 2, il: 0}
-  [evalArgs: (parse [fun] => 2)]
-
 EAGO.jl: {ev: 26, il: 0}
   [evalArgs: (function [top] => 26)]
 # non vacuous files: 3/36
@@ -3344,6 +3322,24 @@ MatLang: {ev: 23, il: 0}
   [evalArgs: (function [top] => 2, @doc [top] => 1, export [top] => 1)]
 * /src/Language_Fundamentals/Matrices_and_Arrays.jl => {ev: 19, il: 0}
   [evalArgs: (function [top] => 14, @doc [top] => 3, const [top] => 1, export [top] => 1)]
+
+NTFk.jl: {ev: 23, il: 0}
+  [evalArgs: (parse [fun] => 12, variable [fun] => 5, import [fun] => 2, other [fun] => 1, parse [top] => 1, variable [top] => 1, @(s)printf [fun] => 1)]
+# non vacuous files: 7/25
+* /src/NTFkDistributed.jl => {ev: 1, il: 0}
+  [evalArgs: (other [fun] => 1)]
+* /src/NTFkHelpers.jl => {ev: 3, il: 0}
+  [evalArgs: (parse [fun] => 2, @(s)printf [fun] => 1)]
+* /src/NTFkTD-helpers.jl => {ev: 1, il: 0}
+  [evalArgs: (parse [fun] => 1)]
+* /src/NTFkTensorly.jl => {ev: 3, il: 0}
+  [evalArgs: (variable [fun] => 3)]
+* /src/NTFkPlotProgressBar.jl => {ev: 2, il: 0}
+  [evalArgs: (parse [fun] => 2)]
+* /src/NTFkHelp.jl => {ev: 6, il: 0}
+  [evalArgs: (variable [fun] => 2, import [fun] => 2, parse [top] => 1, variable [top] => 1)]
+* /src/NTFkPlot2d.jl => {ev: 7, il: 0}
+  [evalArgs: (parse [fun] => 7)]
 
 RCall.jl: {ev: 23, il: 0}
   [evalArgs: (function [top] => 19, call [fun] => 1, using [top] => 1, toplevel [fun] => 1, @!WAmacro [fun] => 1)]
@@ -4107,6 +4103,16 @@ SymbolicUtils.jl: {ev: 12, il: 0}
 * /src/methods.jl => {ev: 12, il: 0}
   [evalArgs: (function [top] => 12)]
 
+AmplNLWriter.jl: {ev: 11, il: 0}
+  [evalArgs: (function [top] => 6, variable [fun] => 2, call [fun] => 2, EvalDef [top] => 1)]
+# non vacuous files: 3/6
+* /src/nl_write.jl => {ev: 1, il: 0}
+  [evalArgs: (variable [fun] => 1)]
+* /src/nl_linearity.jl => {ev: 3, il: 0}
+  [evalArgs: (variable [fun] => 1, call [fun] => 1, EvalDef [top] => 1)]
+* /src/AmplNLWriter.jl => {ev: 7, il: 0}
+  [evalArgs: (function [top] => 6, call [fun] => 1)]
+
 BlockArrays.jl: {ev: 11, il: 0}
   [evalArgs: (function [top] => 11)]
 # non vacuous files: 5/15
@@ -4282,16 +4288,6 @@ Winston.jl: {ev: 11, il: 0}
   [evalArgs: (function [top] => 9)]
 * /src/canvas3d.jl => {ev: 2, il: 0}
   [evalArgs: (toplevel [top] => 2)]
-
-AmplNLWriter.jl: {ev: 10, il: 0}
-  [evalArgs: (function [top] => 6, variable [fun] => 2, call [fun] => 2)]
-# non vacuous files: 3/6
-* /src/nl_write.jl => {ev: 1, il: 0}
-  [evalArgs: (variable [fun] => 1)]
-* /src/nl_linearity.jl => {ev: 2, il: 0}
-  [evalArgs: (variable [fun] => 1, call [fun] => 1)]
-* /src/AmplNLWriter.jl => {ev: 7, il: 0}
-  [evalArgs: (function [top] => 6, call [fun] => 1)]
 
 AstroTime.jl: {ev: 10, il: 0}
   [evalArgs: (macrocall [top] => 5, function [top] => 2, export [top] => 2, const [top] => 1)]
@@ -4586,6 +4582,14 @@ DiffEqProblemLibrary.jl: {ev: 8, il: 0}
   [evalArgs: (parse [top] => 1, parse [fun] => 1)]
 * /src/dde/dde_premade_problems.jl => {ev: 6, il: 0}
   [evalArgs: (macrocall [top] => 6)]
+
+ExprRules.jl: {ev: 8, il: 0}
+  [evalArgs: (variable [fun] => 4, EvalDef [top] => 3, call [fun] => 1)]
+# non vacuous files: 2/3
+* /src/interpreter.jl => {ev: 1, il: 0}
+  [evalArgs: (variable [fun] => 1)]
+* /src/ExprRules.jl => {ev: 7, il: 0}
+  [evalArgs: (variable [fun] => 3, EvalDef [top] => 3, call [fun] => 1)]
 
 FFTViews.jl: {ev: 8, il: 0}
   [evalArgs: (function [top] => 8)]
@@ -5207,6 +5211,12 @@ Xsum.jl: {ev: 6, il: 0}
 * /src/xsum_h.jl => {ev: 6, il: 0}
   [evalArgs: (function [top] => 6)]
 
+Z3.jl: {ev: 6, il: 0}
+  [evalArgs: (variable [fun] => 2, function [top] => 2, EvalDef [top] => 1, export [top] => 1)]
+# non vacuous files: 1/1
+* /src/Z3.jl => {ev: 6, il: 0}
+  [evalArgs: (variable [fun] => 2, function [top] => 2, EvalDef [top] => 1, export [top] => 1)]
+
 BFloat16s.jl: {ev: 5, il: 0}
   [evalArgs: (function [top] => 5)]
 # non vacuous files: 1/4
@@ -5279,14 +5289,6 @@ DualNumbers.jl: {ev: 5, il: 0}
 * /src/dual.jl => {ev: 5, il: 0}
   [evalArgs: (function [top] => 5)]
 
-ExprRules.jl: {ev: 5, il: 0}
-  [evalArgs: (variable [fun] => 4, call [fun] => 1)]
-# non vacuous files: 2/3
-* /src/interpreter.jl => {ev: 1, il: 0}
-  [evalArgs: (variable [fun] => 1)]
-* /src/ExprRules.jl => {ev: 4, il: 0}
-  [evalArgs: (variable [fun] => 3, call [fun] => 1)]
-
 FLAC.jl: {ev: 5, il: 0}
   [evalArgs: (function [top] => 5)]
 # non vacuous files: 3/7
@@ -5298,10 +5300,10 @@ FLAC.jl: {ev: 5, il: 0}
   [evalArgs: (function [top] => 2)]
 
 Fuzzy.jl: {ev: 5, il: 0}
-  [evalArgs: (variable [fun] => 5)]
+  [evalArgs: (EvalDef [fun] => 5)]
 # non vacuous files: 1/6
 * /src/MF.jl => {ev: 5, il: 0}
-  [evalArgs: (variable [fun] => 5)]
+  [evalArgs: (EvalDef [fun] => 5)]
 
 GPUCompiler.jl: {ev: 5, il: 0}
   [evalArgs: (call [top] => 2, function [top] => 2, function [fun] => 1)]
@@ -5546,12 +5548,6 @@ UncertainData.jl: {ev: 5, il: 0}
   [evalArgs: (variable [top] => 1)]
 * /src/mathematics/uncertainvalues/trig_functions_uncertainvalues.jl => {ev: 2, il: 0}
   [evalArgs: (variable [top] => 2)]
-
-Z3.jl: {ev: 5, il: 0}
-  [evalArgs: (variable [fun] => 2, function [top] => 2, export [top] => 1)]
-# non vacuous files: 1/1
-* /src/Z3.jl => {ev: 5, il: 0}
-  [evalArgs: (variable [fun] => 2, function [top] => 2, export [top] => 1)]
 
 ACME.jl: {ev: 4, il: 0}
   [evalArgs: (function [top] => 3, function [fun] => 1)]
@@ -8039,25 +8035,25 @@ Non vacuous packages: 754/2002
 * all evals are top-level and no invokelatest: 455/2002
 * all evals are boring and no invokelatest: 478/2002
 * single top-level eval and no invokelatest: 99/2002
-* maybe function defs in fun: 223/2002
-* maybe function defs in fun but not likely calls: 155/2002
+* maybe function defs in fun: 222/2002
+* maybe function defs in fun but not likely calls: 154/2002
 * likely function calls in fun but not defs: 50/2002
-* maybe function calls in fun: 223/2002
+* maybe function calls in fun: 222/2002
 * invokelatest: 63/2002
 * !!! likely function calls in fun (bypass world age?): 118/2002
-* !!! likely impact world age: 244/2002
+* !!! likely impact world age: 243/2002
 * !!! likely both: 95/2002
 
 Total Stat:
 * function   [top] => 6213 in 469 pkgs
 * call       [fun] =>  836 in  64 pkgs
-* variable   [fun] =>  351 in 106 pkgs
+* variable   [fun] =>  346 in 105 pkgs
 * function   [fun] =>  329 in  58 pkgs
 * macrocall  [top] =>  141 in  33 pkgs
 * export     [top] =>  141 in  64 pkgs
 * variable   [top] =>  136 in  44 pkgs
 * struct     [top] =>  101 in  42 pkgs
-* parse      [fun] =>   97 in  37 pkgs
+* parse      [fun] =>   93 in  37 pkgs
 * =          [top] =>   73 in  21 pkgs
 * call       [top] =>   73 in  22 pkgs
 * const      [top] =>   69 in  40 pkgs
@@ -8082,11 +8078,13 @@ Total Stat:
 * other      [fun] =>    9 in   7 pkgs
 * @(s)printf [fun] =>    9 in   8 pkgs
 * include    [fun] =>    8 in   7 pkgs
+* EvalDef    [top] =>    7 in   5 pkgs
 * import     [fun] =>    7 in   4 pkgs
 * struct     [fun] =>    6 in   5 pkgs
 * import     [top] =>    6 in   2 pkgs
 * if         [fun] =>    5 in   3 pkgs
 * expr       [top] =>    5 in   4 pkgs
+* EvalDef    [fun] =>    5 in   1 pkgs
 * toplevel   [top] =>    5 in   3 pkgs
 * toplevel   [fun] =>    4 in   4 pkgs
 * module     [fun] =>    4 in   4 pkgs
@@ -8102,9 +8100,9 @@ Total Stat:
 * using      [top] =>    1 in   1 pkgs
 * using      [fun] =>    1 in   1 pkgs
 
-"likelyBoth" => ["Symata.jl", "MonteCarloMeasurements.jl", "CMBLensing.jl", "Genie.jl", "JuliaInterpreter.jl", "Documenter.jl", "Plots.jl", "CxxWrap.jl", "ModiaMath.jl", "Mads.jl", "SyntaxTree.jl", "Modia.jl", "RHEOS.jl", "Atom.jl", "DebugAdapter.jl", "FileIO.jl", "IJulia.jl", "SymEngine.jl", "Soss.jl", "PyCall.jl", "Weave.jl", "ImageIO.jl", "BenchmarkTools.jl", "Formatting.jl", "SymPy.jl", "UrlDownload.jl", "Pluto.jl", "Rebugger.jl", "Format.jl", "SimpleMock.jl", "Yota.jl", "IRTools.jl", "Bukdu.jl", "Jute.jl", "Literate.jl", "SpikeSorting.jl", "Revise.jl", "Simulate.jl", "FluxJS.jl", "PredictMD.jl", "SemanticModels.jl", "Dagger.jl", "Kuber.jl", "SaferIntegers.jl", "Unitful.jl", "IntervalArithmetic.jl", "Reduce.jl", "YaoBlocks.jl", "ChangePrecision.jl", "ADCME.jl", "RCall.jl", "JLD.jl", "InteractiveFixedEffectModels.jl", "ModelingToolkit.jl", "MLJBase.jl", "StaticNumbers.jl", "Cxx.jl", "Gtk.jl", "HDF5Utils.jl", "AmplNLWriter.jl", "Franklin.jl", "ImageMorphology.jl", "JuDoc.jl", "DataStreams.jl", "DocumentationGenerator.jl", "Jive.jl", "ProtoBuf.jl", "Schemata.jl", "ExprRules.jl", "MLJScientificTypes.jl", "NNFEM.jl", "SPICE.jl", "SQLite.jl", "DiffEqOperators.jl", "FixedEffectModels.jl", "Pukeko.jl", "TriangleMesh.jl", "ConicBenchmarkUtilities.jl", "DistributedFactorGraphs.jl", "NamedTupleTools.jl", "ResumableFunctions.jl", "GLFixedEffectModels.jl", "Omega.jl", "TimeseriesPrediction.jl", "ClustForOpt.jl", "CodeTools.jl", "FEMBasis.jl", "GCP.jl", "HackerNews.jl", "Juno.jl", "Maxima.jl", "NeuralNetDiffEq.jl", "NeuralPDE.jl", "PowerSystems.jl", "TimeSeriesClustering.jl"]
+"likelyBoth" => ["Symata.jl", "MonteCarloMeasurements.jl", "CMBLensing.jl", "Genie.jl", "JuliaInterpreter.jl", "Documenter.jl", "Plots.jl", "CxxWrap.jl", "ModiaMath.jl", "Mads.jl", "SyntaxTree.jl", "Modia.jl", "RHEOS.jl", "Atom.jl", "DebugAdapter.jl", "FileIO.jl", "IJulia.jl", "SymEngine.jl", "Soss.jl", "PyCall.jl", "Weave.jl", "ImageIO.jl", "BenchmarkTools.jl", "Formatting.jl", "SymPy.jl", "UrlDownload.jl", "Pluto.jl", "Rebugger.jl", "Format.jl", "SimpleMock.jl", "Yota.jl", "IRTools.jl", "Bukdu.jl", "Jute.jl", "Literate.jl", "SpikeSorting.jl", "Revise.jl", "SemanticModels.jl", "Simulate.jl", "FluxJS.jl", "PredictMD.jl", "Dagger.jl", "Kuber.jl", "SaferIntegers.jl", "Unitful.jl", "IntervalArithmetic.jl", "Reduce.jl", "YaoBlocks.jl", "ChangePrecision.jl", "ADCME.jl", "RCall.jl", "JLD.jl", "InteractiveFixedEffectModels.jl", "ModelingToolkit.jl", "MLJBase.jl", "StaticNumbers.jl", "Cxx.jl", "Gtk.jl", "AmplNLWriter.jl", "HDF5Utils.jl", "ExprRules.jl", "Franklin.jl", "ImageMorphology.jl", "JuDoc.jl", "DataStreams.jl", "DocumentationGenerator.jl", "Jive.jl", "ProtoBuf.jl", "Schemata.jl", "MLJScientificTypes.jl", "NNFEM.jl", "SPICE.jl", "SQLite.jl", "DiffEqOperators.jl", "FixedEffectModels.jl", "Pukeko.jl", "TriangleMesh.jl", "ConicBenchmarkUtilities.jl", "DistributedFactorGraphs.jl", "NamedTupleTools.jl", "ResumableFunctions.jl", "GLFixedEffectModels.jl", "Omega.jl", "TimeseriesPrediction.jl", "ClustForOpt.jl", "CodeTools.jl", "FEMBasis.jl", "GCP.jl", "HackerNews.jl", "Juno.jl", "Maxima.jl", "NeuralNetDiffEq.jl", "NeuralPDE.jl", "PowerSystems.jl", "TimeSeriesClustering.jl"]
 
-"likelyBypassWA" => ["Symata.jl", "MonteCarloMeasurements.jl", "CMBLensing.jl", "CUDA.jl", "CUDAnative.jl", "Genie.jl", "JuliaInterpreter.jl", "Documenter.jl", "Plots.jl", "CxxWrap.jl", "DiffEqBase.jl", "ModiaMath.jl", "GAP.jl", "Mads.jl", "SyntaxTree.jl", "Modia.jl", "RHEOS.jl", "Atom.jl", "DebugAdapter.jl", "FileIO.jl", "IJulia.jl", "SymEngine.jl", "Soss.jl", "PyCall.jl", "Weave.jl", "ImageIO.jl", "JSServe.jl", "BenchmarkTools.jl", "Formatting.jl", "SymPy.jl", "UrlDownload.jl", "FluxUtils.jl", "Pluto.jl", "Rebugger.jl", "TimeZones.jl", "AbstractPlotting.jl", "Format.jl", "SimpleMock.jl", "Yota.jl", "IRTools.jl", "Octo.jl", "Bukdu.jl", "Jute.jl", "Literate.jl", "SpikeSorting.jl", "Revise.jl", "Simulate.jl", "FluxJS.jl", "PredictMD.jl", "SemanticModels.jl", "Dagger.jl", "Kuber.jl", "SaferIntegers.jl", "Nemo.jl", "Unitful.jl", "IntervalArithmetic.jl", "Reduce.jl", "YaoBlocks.jl", "ChangePrecision.jl", "ADCME.jl", "NIDAQ.jl", "RCall.jl", "JLD.jl", "InteractiveFixedEffectModels.jl", "ModelingToolkit.jl", "MLJBase.jl", "StaticNumbers.jl", "Cxx.jl", "Gtk.jl", "HDF5Utils.jl", "Spark.jl", "AmplNLWriter.jl", "GameZero.jl", "Franklin.jl", "ImageMorphology.jl", "JuDoc.jl", "DataStreams.jl", "DocumentationGenerator.jl", "Jive.jl", "ProtoBuf.jl", "Schemata.jl", "ExprRules.jl", "MLJScientificTypes.jl", "NNFEM.jl", "SPICE.jl", "SQLite.jl", "DiffEqOperators.jl", "FixedEffectModels.jl", "Pukeko.jl", "TriangleMesh.jl", "CodeTracking.jl", "ConicBenchmarkUtilities.jl", "DistributedFactorGraphs.jl", "NamedTupleTools.jl", "ResumableFunctions.jl", "VerTeX.jl", "GLFixedEffectModels.jl", "HAML.jl", "Omega.jl", "TimeseriesPrediction.jl", "Blink.jl", "ClustForOpt.jl", "CodeTools.jl", "FEMBasis.jl", "FlameGraphs.jl", "GCP.jl", "HackerNews.jl", "Juno.jl", "MCAnalyzer.jl", "Maxima.jl", "NeuralNetDiffEq.jl", "NeuralPDE.jl", "Observables.jl", "PowerSystems.jl", "SearchLight.jl", "Stipple.jl", "TensorBoardLogger.jl", "TimeSeriesClustering.jl"]
+"likelyBypassWA" => ["Symata.jl", "MonteCarloMeasurements.jl", "CMBLensing.jl", "CUDA.jl", "CUDAnative.jl", "Genie.jl", "JuliaInterpreter.jl", "Documenter.jl", "Plots.jl", "CxxWrap.jl", "DiffEqBase.jl", "ModiaMath.jl", "GAP.jl", "Mads.jl", "SyntaxTree.jl", "Modia.jl", "RHEOS.jl", "Atom.jl", "DebugAdapter.jl", "FileIO.jl", "IJulia.jl", "SymEngine.jl", "Soss.jl", "PyCall.jl", "Weave.jl", "ImageIO.jl", "JSServe.jl", "BenchmarkTools.jl", "Formatting.jl", "SymPy.jl", "UrlDownload.jl", "FluxUtils.jl", "Pluto.jl", "Rebugger.jl", "TimeZones.jl", "AbstractPlotting.jl", "Format.jl", "SimpleMock.jl", "Yota.jl", "IRTools.jl", "Octo.jl", "Bukdu.jl", "Jute.jl", "Literate.jl", "SpikeSorting.jl", "Revise.jl", "SemanticModels.jl", "Simulate.jl", "FluxJS.jl", "PredictMD.jl", "Dagger.jl", "Kuber.jl", "SaferIntegers.jl", "Nemo.jl", "Unitful.jl", "IntervalArithmetic.jl", "Reduce.jl", "YaoBlocks.jl", "ChangePrecision.jl", "ADCME.jl", "NIDAQ.jl", "RCall.jl", "JLD.jl", "InteractiveFixedEffectModels.jl", "ModelingToolkit.jl", "MLJBase.jl", "StaticNumbers.jl", "Cxx.jl", "Gtk.jl", "AmplNLWriter.jl", "HDF5Utils.jl", "Spark.jl", "GameZero.jl", "ExprRules.jl", "Franklin.jl", "ImageMorphology.jl", "JuDoc.jl", "DataStreams.jl", "DocumentationGenerator.jl", "Jive.jl", "ProtoBuf.jl", "Schemata.jl", "MLJScientificTypes.jl", "NNFEM.jl", "SPICE.jl", "SQLite.jl", "DiffEqOperators.jl", "FixedEffectModels.jl", "Pukeko.jl", "TriangleMesh.jl", "CodeTracking.jl", "ConicBenchmarkUtilities.jl", "DistributedFactorGraphs.jl", "NamedTupleTools.jl", "ResumableFunctions.jl", "VerTeX.jl", "GLFixedEffectModels.jl", "HAML.jl", "Omega.jl", "TimeseriesPrediction.jl", "Blink.jl", "ClustForOpt.jl", "CodeTools.jl", "FEMBasis.jl", "FlameGraphs.jl", "GCP.jl", "HackerNews.jl", "Juno.jl", "MCAnalyzer.jl", "Maxima.jl", "NeuralNetDiffEq.jl", "NeuralPDE.jl", "Observables.jl", "PowerSystems.jl", "SearchLight.jl", "Stipple.jl", "TensorBoardLogger.jl", "TimeSeriesClustering.jl"]
 
-"likelyImpactWA" => ["Symata.jl", "MonteCarloMeasurements.jl", "CMBLensing.jl", "Genie.jl", "JuliaInterpreter.jl", "Documenter.jl", "Plots.jl", "CxxWrap.jl", "ModiaMath.jl", "Mads.jl", "SyntaxTree.jl", "Modia.jl", "RHEOS.jl", "Atom.jl", "DebugAdapter.jl", "FileIO.jl", "IJulia.jl", "SymEngine.jl", "Soss.jl", "PyCall.jl", "Weave.jl", "ImageIO.jl", "BenchmarkTools.jl", "Formatting.jl", "SymPy.jl", "UrlDownload.jl", "Pluto.jl", "Rebugger.jl", "Format.jl", "SimpleMock.jl", "Yota.jl", "IRTools.jl", "Bukdu.jl", "Jute.jl", "Literate.jl", "SpikeSorting.jl", "Revise.jl", "Simulate.jl", "FluxJS.jl", "PredictMD.jl", "SemanticModels.jl", "Dagger.jl", "Kuber.jl", "Grassmann.jl", "SaferIntegers.jl", "Knet.jl", "Unitful.jl", "IntervalArithmetic.jl", "Reduce.jl", "YaoBlocks.jl", "ChangePrecision.jl", "ADCME.jl", "Hecke.jl", "SLEEFPirates.jl", "RandomExtensions.jl", "NTFk.jl", "RCall.jl", "Alpine.jl", "JLD.jl", "ITensors.jl", "InteractiveFixedEffectModels.jl", "ModelingToolkit.jl", "Oceananigans.jl", "MLJBase.jl", "Espresso.jl", "StaticNumbers.jl", "Cxx.jl", "DSGE.jl", "PencilFFTs.jl", "Gtk.jl", "KernelAbstractions.jl", "HDF5Utils.jl", "JLD2.jl", "Transformers.jl", "AmplNLWriter.jl", "SpectralDistances.jl", "Dolo.jl", "FlatBuffers.jl", "Microeconometrics.jl", "Pandas.jl", "ReinforcementLearningBase.jl", "CRlibm.jl", "DiffEqProblemLibrary.jl", "Franklin.jl", "ImageMorphology.jl", "JuDoc.jl", "KNITRO.jl", "MLStyle.jl", "NMFk.jl", "RandomMatrices.jl", "DataStreams.jl", "DocumentationGenerator.jl", "IntelVectorMath.jl", "TSML.jl", "BinDeps.jl", "BusinessDays.jl", "ExprOptimization.jl", "Jive.jl", "LookingGlass.jl", "ParallelDataTransfer.jl", "ProtoBuf.jl", "Purses.jl", "Schemata.jl", "SolveDSGE.jl", "TensorKit.jl", "WordTokenizers.jl", "Caching.jl", "DPMMSubClusters.jl", "ExprRules.jl", "Fuzzy.jl", "GPUCompiler.jl", "IVFADC.jl", "IntervalConstraintProgramming.jl", "MLJScientificTypes.jl", "Mamba.jl", "Miletus.jl", "MolecularGraph.jl", "NNFEM.jl", "OptimizingIR.jl", "SPICE.jl", "SQLite.jl", "SolverTools.jl", "ThArrays.jl", "Z3.jl", "ACME.jl", "AsyPlots.jl", "CompScienceMeshes.jl", "Diana.jl", "DiffEqOperators.jl", "Dolang.jl", "FinancialToolbox.jl", "FixedEffectModels.jl", "GR.jl", "Jusdl.jl", "Khepri.jl", "Laplacians.jl", "Mill.jl", "OceanTurb.jl", "Photon.jl", "Pukeko.jl", "Reproduce.jl", "ThreadsX.jl", "TriangleMesh.jl", "AutomotiveSimulator.jl", "ConicBenchmarkUtilities.jl", "DifferentialDynamicProgramming.jl", "DistributedFactorGraphs.jl", "GenerativeModels.jl", "Highlights.jl", "Latexify.jl", "MatchCore.jl", "MathOptInterface.jl", "MatrixDepot.jl", "NamedTupleTools.jl", "ReactionMechanismSimulator.jl", "ResumableFunctions.jl", "Rocket.jl", "ScikitLearnBase.jl", "TimerOutputs.jl", "WebIO.jl", "AbstractAlgebra.jl", "AsmMacro.jl", "Caesar.jl", "Debugger.jl", "DemoCards.jl", "FlashWeave.jl", "GLFixedEffectModels.jl", "Gen.jl", "HTTP.jl", "Julog.jl", "LasIO.jl", "Lathe.jl", "LightGraphs.jl", "LinearAlgebraicRepresentation.jl", "MLJModels.jl", "MakieGallery.jl", "Mocking.jl", "NIfTI.jl", "OMETIFF.jl", "Omega.jl", "OmniSci.jl", "OpenStreetMapPlotter.jl", "PDFIO.jl", "PkgMirrors.jl", "PkgPage.jl", "PorousMaterials.jl", "PtFEM.jl", "SimpleWeightedGraphs.jl", "StableDQMC.jl", "Strategems.jl", "TextAnalysis.jl", "TimeseriesPrediction.jl", "Twitter.jl", "UnROOT.jl", "AbstractLogic.jl", "ArgParse.jl", "AutoMLPipeline.jl", "BARON.jl", "CBinding.jl", "COBRA.jl", "CausalityTools.jl", "Circuitscape.jl", "ClassImbalance.jl", "ClimateMachine.jl", "ClustForOpt.jl", "CodeTools.jl", "FEMBasis.jl", "Faker.jl", "FinEtools.jl", "FourierFlows.jl", "Functors.jl", "GCP.jl", "HackerNews.jl", "IPython.jl", "IncrementalInference.jl", "Infiltrator.jl", "JSON2.jl", "Jags.jl", "Joseki.jl", "Juno.jl", "LazyGroupBy.jl", "MCMCBenchmarks.jl", "MLInterpret.jl", "MLJModelInterface.jl", "MPIClusterManagers.jl", "Maxima.jl", "ModuleInterfaceTools.jl", "NODAL.jl", "NaiveNASflux.jl", "NamedTuples.jl", "NeuralNetDiffEq.jl", "NeuralPDE.jl", "OMJulia.jl", "ParquetFiles.jl", "PowerSystems.jl", "Requires.jl", "SoftGlobalScope.jl", "StructTypes.jl", "SubpixelRegistration.jl", "SurrealNumbers.jl", "TimeSeriesClustering.jl", "TimeSeriesEcon.jl", "ToggleableAsserts.jl", "Web3.jl"]
+"likelyImpactWA" => ["Symata.jl", "MonteCarloMeasurements.jl", "CMBLensing.jl", "Genie.jl", "JuliaInterpreter.jl", "Documenter.jl", "Plots.jl", "CxxWrap.jl", "ModiaMath.jl", "Mads.jl", "SyntaxTree.jl", "Modia.jl", "RHEOS.jl", "Atom.jl", "DebugAdapter.jl", "FileIO.jl", "IJulia.jl", "SymEngine.jl", "Soss.jl", "PyCall.jl", "Weave.jl", "ImageIO.jl", "BenchmarkTools.jl", "Formatting.jl", "SymPy.jl", "UrlDownload.jl", "Pluto.jl", "Rebugger.jl", "Format.jl", "SimpleMock.jl", "Yota.jl", "IRTools.jl", "Bukdu.jl", "Jute.jl", "Literate.jl", "SpikeSorting.jl", "Revise.jl", "SemanticModels.jl", "Simulate.jl", "FluxJS.jl", "PredictMD.jl", "Dagger.jl", "Kuber.jl", "Grassmann.jl", "SaferIntegers.jl", "Knet.jl", "Unitful.jl", "IntervalArithmetic.jl", "Reduce.jl", "YaoBlocks.jl", "ChangePrecision.jl", "ADCME.jl", "Hecke.jl", "SLEEFPirates.jl", "RandomExtensions.jl", "NTFk.jl", "RCall.jl", "Alpine.jl", "JLD.jl", "ITensors.jl", "InteractiveFixedEffectModels.jl", "ModelingToolkit.jl", "Oceananigans.jl", "MLJBase.jl", "Espresso.jl", "StaticNumbers.jl", "Cxx.jl", "DSGE.jl", "PencilFFTs.jl", "Gtk.jl", "KernelAbstractions.jl", "AmplNLWriter.jl", "HDF5Utils.jl", "JLD2.jl", "Transformers.jl", "SpectralDistances.jl", "Dolo.jl", "FlatBuffers.jl", "Microeconometrics.jl", "Pandas.jl", "ReinforcementLearningBase.jl", "CRlibm.jl", "DiffEqProblemLibrary.jl", "ExprRules.jl", "Franklin.jl", "ImageMorphology.jl", "JuDoc.jl", "KNITRO.jl", "MLStyle.jl", "NMFk.jl", "RandomMatrices.jl", "DataStreams.jl", "DocumentationGenerator.jl", "IntelVectorMath.jl", "TSML.jl", "BinDeps.jl", "BusinessDays.jl", "ExprOptimization.jl", "Jive.jl", "LookingGlass.jl", "ParallelDataTransfer.jl", "ProtoBuf.jl", "Purses.jl", "Schemata.jl", "SolveDSGE.jl", "TensorKit.jl", "WordTokenizers.jl", "Caching.jl", "DPMMSubClusters.jl", "Fuzzy.jl", "GPUCompiler.jl", "IVFADC.jl", "IntervalConstraintProgramming.jl", "MLJScientificTypes.jl", "Mamba.jl", "Miletus.jl", "MolecularGraph.jl", "NNFEM.jl", "OptimizingIR.jl", "SPICE.jl", "SQLite.jl", "SolverTools.jl", "ThArrays.jl", "ACME.jl", "AsyPlots.jl", "CompScienceMeshes.jl", "Diana.jl", "DiffEqOperators.jl", "Dolang.jl", "FinancialToolbox.jl", "FixedEffectModels.jl", "GR.jl", "Jusdl.jl", "Khepri.jl", "Laplacians.jl", "Mill.jl", "OceanTurb.jl", "Photon.jl", "Pukeko.jl", "Reproduce.jl", "ThreadsX.jl", "TriangleMesh.jl", "AutomotiveSimulator.jl", "ConicBenchmarkUtilities.jl", "DifferentialDynamicProgramming.jl", "DistributedFactorGraphs.jl", "GenerativeModels.jl", "Highlights.jl", "Latexify.jl", "MatchCore.jl", "MathOptInterface.jl", "MatrixDepot.jl", "NamedTupleTools.jl", "ReactionMechanismSimulator.jl", "ResumableFunctions.jl", "Rocket.jl", "ScikitLearnBase.jl", "TimerOutputs.jl", "WebIO.jl", "AbstractAlgebra.jl", "AsmMacro.jl", "Caesar.jl", "Debugger.jl", "DemoCards.jl", "FlashWeave.jl", "GLFixedEffectModels.jl", "Gen.jl", "HTTP.jl", "Julog.jl", "LasIO.jl", "Lathe.jl", "LightGraphs.jl", "LinearAlgebraicRepresentation.jl", "MLJModels.jl", "MakieGallery.jl", "Mocking.jl", "NIfTI.jl", "OMETIFF.jl", "Omega.jl", "OmniSci.jl", "OpenStreetMapPlotter.jl", "PDFIO.jl", "PkgMirrors.jl", "PkgPage.jl", "PorousMaterials.jl", "PtFEM.jl", "SimpleWeightedGraphs.jl", "StableDQMC.jl", "Strategems.jl", "TextAnalysis.jl", "TimeseriesPrediction.jl", "Twitter.jl", "UnROOT.jl", "AbstractLogic.jl", "ArgParse.jl", "AutoMLPipeline.jl", "BARON.jl", "CBinding.jl", "COBRA.jl", "CausalityTools.jl", "Circuitscape.jl", "ClassImbalance.jl", "ClimateMachine.jl", "ClustForOpt.jl", "CodeTools.jl", "FEMBasis.jl", "Faker.jl", "FinEtools.jl", "FourierFlows.jl", "Functors.jl", "GCP.jl", "HackerNews.jl", "IPython.jl", "IncrementalInference.jl", "Infiltrator.jl", "JSON2.jl", "Jags.jl", "Joseki.jl", "Juno.jl", "LazyGroupBy.jl", "MCMCBenchmarks.jl", "MLInterpret.jl", "MLJModelInterface.jl", "MPIClusterManagers.jl", "Maxima.jl", "ModuleInterfaceTools.jl", "NODAL.jl", "NaiveNASflux.jl", "NamedTuples.jl", "NeuralNetDiffEq.jl", "NeuralPDE.jl", "OMJulia.jl", "ParquetFiles.jl", "PowerSystems.jl", "Requires.jl", "SoftGlobalScope.jl", "StructTypes.jl", "SubpixelRegistration.jl", "SurrealNumbers.jl", "TimeSeriesClustering.jl", "TimeSeriesEcon.jl", "ToggleableAsserts.jl", "Web3.jl"]
 

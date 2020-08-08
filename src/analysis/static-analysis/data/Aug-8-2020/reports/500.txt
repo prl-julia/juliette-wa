@@ -285,8 +285,8 @@ Modia.jl: {ev: 11, il: 8}
 * /src/language/Execution.jl => {ev: 5, il: 7}
   [evalArgs: (variable [fun] => 5)]
 
-Atom.jl: {ev: 6, il: 11}
-  [evalArgs: (function [top] => 2, variable [fun] => 1, const [top] => 1, module [fun] => 1, @doc [fun] => 1)]
+Atom.jl: {ev: 7, il: 11}
+  [evalArgs: (function [top] => 2, variable [fun] => 1, const [top] => 1, EvalDef [top] => 1, module [fun] => 1, @doc [fun] => 1)]
 # non vacuous files: 8/43
 * /src/completions.jl => {ev: 1, il: 0}
   [evalArgs: (const [top] => 1)]
@@ -298,8 +298,8 @@ Atom.jl: {ev: 6, il: 11}
   [evalArgs: (function [top] => 2)]
 * /src/progress.jl => {ev: 0, il: 3}
   [evalArgs: ()]
-* /src/eval.jl => {ev: 0, il: 7}
-  [evalArgs: ()]
+* /src/eval.jl => {ev: 1, il: 7}
+  [evalArgs: (EvalDef [top] => 1)]
 * /src/misc.jl => {ev: 1, il: 0}
   [evalArgs: (module [fun] => 1)]
 * /src/debugger/stepper.jl => {ev: 0, il: 1}
@@ -475,13 +475,13 @@ Revise.jl: {ev: 3, il: 1}
 * /src/lowered.jl => {ev: 1, il: 0}
   [evalArgs: (variable [fun] => 1)]
 
-SemanticModels.jl: {ev: 2, il: 1}
-  [evalArgs: (variable [fun] => 2)]
+SemanticModels.jl: {ev: 3, il: 1}
+  [evalArgs: (variable [fun] => 2, EvalDef [top] => 1)]
 # non vacuous files: 2/19
 * /src/exprmodels/ExprModels.jl => {ev: 1, il: 1}
   [evalArgs: (variable [fun] => 1)]
-* /src/exprmodels/MonomialRegressionModels.jl => {ev: 1, il: 0}
-  [evalArgs: (variable [fun] => 1)]
+* /src/exprmodels/MonomialRegressionModels.jl => {ev: 2, il: 0}
+  [evalArgs: (variable [fun] => 1, EvalDef [top] => 1)]
 
 Dagger.jl: {ev: 1, il: 1}
   [evalArgs: (variable [fun] => 1)]
@@ -2846,6 +2846,7 @@ Total Stat:
 * other      [fun] =>    3 in   3 pkgs
 * struct     [fun] =>    3 in   2 pkgs
 * import     [fun] =>    3 in   2 pkgs
+* EvalDef    [top] =>    2 in   2 pkgs
 * local      [fun] =>    2 in   1 pkgs
 * include    [top] =>    1 in   1 pkgs
 * @doc       [fun] =>    1 in   1 pkgs

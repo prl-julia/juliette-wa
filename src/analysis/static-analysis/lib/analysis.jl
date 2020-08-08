@@ -176,20 +176,28 @@ getEvalInfo(e :: Expr, inFunDef::Bool=false) :: Vector{EvalCallInfo} =
 
 # AST → EvalCallsVec
 # Collects information about arguments of all eval calls in [e]
-gatherEvalInfo(e :: Expr, inFunDef::Bool=false) :: EvalCallsVec = begin
-    #@info isFunDef(e) inFunDef
-    isEvalCall(e) ?
-        getEvalInfo(e, inFunDef) :
+gatherEvalInfo(e :: Expr, inFunDef::Bool=false) :: EvalCallsVec =
+    if isFunDef(e)
+        # function definition should have exactly 2 arguments
+        # gather info about function body
+        result = length(e.args) > 1 ? 
+            gatherEvalInfo(e.args[2], true) :
+            EvalCallInfo[]
+        # if our function is [function eval] or [eval(...) =],
+        # we want to record that we saw an eval definition
+        if isCall(e.args[1]) && isEvalName(e.args[1].args[1])
+            push!(result, EvalCallInfo(:EvalDef, inFunDef))
+        end
+        result
+    elseif isEvalCall(e)
+        getEvalInfo(e, inFunDef)
+    else
         foldl(
             vcat,
-            # if [e] is fun definition, we will consider its subexpressions
-            # to be inside function definition;
-            # of course, this would mean that function parameters are also
-            # inside function, but eval can't be used for parameters
-            map(arg -> gatherEvalInfo(arg, inFunDef || isFunDef(e)), e.args);
+            map(arg -> gatherEvalInfo(arg, inFunDef), e.args);
             init=EvalCallInfo[]
         )
-end
+    end
 gatherEvalInfo(@nospecialize(e), inFunDef::Bool=false) :: EvalCallsVec =
     EvalCallInfo[]
 
@@ -227,7 +235,11 @@ function computeStat(text :: String, filePath :: String) :: Stat
             # parsing gives more precise results
             Stat(sum(values(evArgStat)), il, evArgStat)
         catch e
-            @error filePath e
+            if isa(e, Base.Meta.ParseError)
+                @warn filePath e
+            else
+                @error filePath e
+            end
             Stat(ev, il, EvalArgStat(EvalCallInfo(:EvPrsERR) => ev))
         end
     else
@@ -368,7 +380,7 @@ allEvalsAreTopLevelAndNoIL(stat :: Stat) =
     stat.invokelatest == 0
 
 const BORING_EVAL_ARGS = [
-        :export, :const, :(=), :global, :local, :struct, 
+        :export, :const, :(=), :global, :local, :struct, :EvalDef,
         SYM_NFUNC_M, SYM_S_PRINT, 
     ]
 

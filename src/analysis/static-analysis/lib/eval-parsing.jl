@@ -195,25 +195,31 @@ isFunDef(e :: Expr) =
     # explicit function definition
     e.head == SYM_FUNC || e.head == SYM_LAM ||
     # short form f(...) = ...
-    e.head == :(=) && isCall(e.args[1]) || isWhere(e.args[1])
+    e.head == :(=) && (isCall(e.args[1]) || isWhere(e.args[1]))
 isFunDef(@nospecialize e) = false
 
 # AST → Bool
-# Checks if [e] represents a call to eval (either normal or macro)
-isEvalCall(e :: Expr) = begin
+# Checks if [e] looks like eval def with parameters rather than a call to eval.
+# Real eval should at least have no more than 2 arguments
+#   (plus eval name, which gives us 3)
+# and not contain [::] (this would mean function definition)
+maybeEvalDef(e :: Expr) = e.head == SYM_CALL && (length(e.args) > 3 ||
+    any(a -> isa(a, Expr) && a.head == :(::), e.args))
+maybeEvalDef(@nospecialize e) = false
+
+# AST → Bool
+# Checks if call [e] looks like a call to eval
+callHasEvalName(e :: Expr) = begin
     args = filter(e -> !isa(e, LineNumberNode), e.args)
-    evalName =
-        # eval/Core.eval
-        e.head == SYM_CALL && isEvalName(args[1]) ||
-        # @eval
-        e.head == SYM_MCALL && isEvalMacroName(args[1])
-    # sometimes packages define theire own "eval" functions;
-    # real eval should at least have no more than 2 arguments
-    #   (plus eval name, which gives us 3)
-    # and not contain :: (this would mean function definition)
-    evalName && length(args) <= 3 &&
-        !any(a -> isa(a, Expr) && a.head == :(::), args)
+    length(args) > 0 &&
+        (e.head == SYM_CALL  && isEvalName(args[1]) ||      # eval/Core.eval
+         e.head == SYM_MCALL && isEvalMacroName(args[1]))   # @eval
 end
+callHasEvalName(@nospecialize e) = false
+
+# AST → Bool
+# Checks if [e] represents a call to eval (either normal or macro)
+isEvalCall(e :: Expr) = callHasEvalName(e) && !maybeEvalDef(e)
 isEvalCall(@nospecialize e) = false
 
 # AST → Bool
