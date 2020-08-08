@@ -221,7 +221,13 @@
           "count": 1,
           "ast_head": "export"
         }
-      ]
+      ],
+      "func_def_types": {
+        "newFuncCount": 1,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 3,
+        "miscCount": 0
+      }
     }
   },
   "invokelatest_info": {
@@ -246,10 +252,6 @@
             },
             {
               "function_name": "func_ea52beb9bbfe3f85d04b30c896c39c8f5b09ce4a",
-              "count": 1
-            },
-            {
-              "function_name": "func_e8728eb1126978784529c95d8341743a8b7c01c2",
               "count": 1
             },
             {
@@ -285,15 +287,11 @@
               "count": 1
             },
             {
-              "function_name": "func_b77c2ebe8d4497ca91a61176a50f1d7135f9d101",
+              "function_name": "func_3321245c8b359378a8a4130ae08b5ad60430c7eb",
               "count": 1
             },
             {
               "function_name": "func_5336a1d341129da18bf8c06c1a98f766a962fc76",
-              "count": 1
-            },
-            {
-              "function_name": "func_3321245c8b359378a8a4130ae08b5ad60430c7eb",
               "count": 1
             },
             {
@@ -369,6 +367,10 @@
               "count": 1
             },
             {
+              "function_name": "func_ffa1e0817133499b2799df3ceff776e9923b1991",
+              "count": 1
+            },
+            {
               "function_name": "func_f4a49864a846ca0df0bc74d45a8841c14affee7f",
               "count": 1
             },
@@ -386,6 +388,10 @@
             },
             {
               "function_name": "func_e10c2c6cb1ffac3e10e0466e97390d4e9418dc57",
+              "count": 1
+            },
+            {
+              "function_name": "func_d80ac507db4abaa5648909720291433eef4ea374",
               "count": 1
             },
             {
@@ -459,10 +465,6 @@
           "count": 1
         },
         {
-          "function_name": "func_e8728eb1126978784529c95d8341743a8b7c01c2",
-          "count": 1
-        },
-        {
           "function_name": "func_e693814defb0ff8182d2e07cdbeb8736ff8241f4",
           "count": 1
         },
@@ -495,15 +497,11 @@
           "count": 1
         },
         {
-          "function_name": "func_b77c2ebe8d4497ca91a61176a50f1d7135f9d101",
+          "function_name": "func_3321245c8b359378a8a4130ae08b5ad60430c7eb",
           "count": 1
         },
         {
           "function_name": "func_5336a1d341129da18bf8c06c1a98f766a962fc76",
-          "count": 1
-        },
-        {
-          "function_name": "func_3321245c8b359378a8a4130ae08b5ad60430c7eb",
           "count": 1
         },
         {
@@ -579,6 +577,10 @@
           "count": 1
         },
         {
+          "function_name": "func_ffa1e0817133499b2799df3ceff776e9923b1991",
+          "count": 1
+        },
+        {
           "function_name": "func_f4a49864a846ca0df0bc74d45a8841c14affee7f",
           "count": 1
         },
@@ -596,6 +598,10 @@
         },
         {
           "function_name": "func_e10c2c6cb1ffac3e10e0466e97390d4e9418dc57",
+          "count": 1
+        },
+        {
+          "function_name": "func_d80ac507db4abaa5648909720291433eef4ea374",
           "count": 1
         },
         {

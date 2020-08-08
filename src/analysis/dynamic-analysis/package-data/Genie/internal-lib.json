@@ -105,7 +105,13 @@
           "count": 1,
           "ast_head": "using"
         }
-      ]
+      ],
+      "func_def_types": {
+        "newFuncCount": 17,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
     }
   },
   "invokelatest_info": {
