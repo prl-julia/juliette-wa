@@ -2,7 +2,7 @@ include("../../jl-transpiler/auxiliary/utils.jl")
 
 # Gets the directory path of the given package
 function getPkgSrcDir(pkg :: String)
-    for (root, dirs, files) in walkdir("../../../../../../../../.julia/packages/$(pkg)")
+    for (root, dirs, files) in walkdir(joinpath(DEPOT_PATH[1], "packages", pkg))
         srcDirIndex = findfirst(isequal("src"), dirs)
         srcDirIndex != nothing && return joinpath(root, dirs[srcDirIndex])
     end
