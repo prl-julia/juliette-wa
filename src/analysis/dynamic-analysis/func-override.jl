@@ -1,4 +1,4 @@
-include("C:\\Users\\gelin\\Documents\\computer-science\\research\\julia\\juliette-wa\\src\\jl-transpiler\\auxiliary\\utils.jl")
+include("../../jl-transpiler/auxiliary/utils.jl")
 
 #######################################
 # Function Override Data Structures
@@ -17,9 +17,10 @@ mutable struct FuncDefTracker
     newFuncCount :: Count
     funcRedefCount :: Count
     miscCount :: Count
+    bodylessFuncCount :: Count
 end
 # Initializes a base representation of function type tracker
-FuncDefTracker() = FuncDefTracker(0,0,0)
+FuncDefTracker() = FuncDefTracker(0,0,0,0)
 
 # Represents the information collected regarding eval function calls
 mutable struct EvalInfo
@@ -139,9 +140,13 @@ function getFuncNameAndModule(e :: Expr, m :: Module)
         if isa(funcDef, Symbol)
             return (m, funcDef)
         elseif isAstWithBody(funcDef, :(.)) &&
-                isa(funcDef.args[2], QuoteNode)
-            m = isa(funcDef.args[1], Module) ? funcDef.args[1] : eval(funcDef.args[1])
-            return (m, funcDef.args[2].value)
+                isa(funcDef.args[2], QuoteNode) &&
+                isa(funcDef.args[1], Module)
+            return (funcDef.args[1], funcDef.args[2].value)
+        elseif isAstWithBody(funcDef, :(.)) &&
+                isa(funcDef.args[2], QuoteNode) &&
+                isa(funcDef.args[1], Symbol)
+            return (eval(funcDef.args[1]), funcDef.args[2].value)
         end
     elseif isa(e, Expr) && (size(e.args)[1] > 0)
         return getFuncNameAndModule(maybeCallExpr, m)
@@ -158,6 +163,8 @@ function updateEvalInfo(evalInfo :: EvalInfo, e, m :: Module)
         elseif isLambdaBinding(e)
             dump(e)
             evalInfo.funcDefTypes.miscCount += 1
+        elseif isAstWithBody(e, :function) && isa(maybeCallExpr, Symbol)
+            evalInfo.funcDefTypes.bodylessFuncCount += 1
         else
             try
                 Core.isdefined(getFuncNameAndModule(e, m)...) ?
@@ -286,6 +293,7 @@ function funcDefTrackerToJson(funcDefTypes :: FuncDefTracker)
     json["newFuncCount"] = funcDefTypes.newFuncCount
     json["funcRedefCount"] = funcDefTypes.funcRedefCount
     json["miscCount"] = funcDefTypes.miscCount
+    json["bodylessFuncCount"] = funcDefTypes.bodylessFuncCount
     json
 end
 
