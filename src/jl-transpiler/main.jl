@@ -1,4 +1,4 @@
-include("auxiliary/utils.jl")
+include("../utils/lib.jl")
 include("auxiliary/immutable-stack.jl")
 include("world-age-ast.jl")
 include("auxiliary/environment.jl")

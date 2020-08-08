@@ -28,12 +28,11 @@ More concretely, we do the following:
    for world age, we distinguish top-level calls to `eval`
    and the ones inside functions (macro definitions are treated as top-level).
 
-
 ## Usage
 
 ### Do-all script
 
-`$julia run-all.jl 10`
+`$julia [-p N] run-all.jl 10`
 
 To download and analyze 10 most starred Julia packages.
 
@@ -46,7 +45,16 @@ This will create the following files and folders in `static-analysis`:
 * `data/pkgs/10` folder with sources of the 10 most starred Julia packages;
 * `data/reports/10.txt` text file with the analysis report.
 
+The script has a bunch of parameters, for example:
+
+* to re-download JSON file, add `-r`;
+* to skip cloning/checking a folder with packages, add `-n`.
+
+Cloning can be done in parallel, so we recommend running `julia` with `-p N`.
+
 ### More details
+
+All scripts below have help messages (run them with `-h` to see help).
 
 ```julia
 # generate list of 100 most starred packages
