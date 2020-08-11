@@ -70,15 +70,17 @@ so the next call `g(666)` will return 0.
   * [`test-gen`](src/test-gen) Julia scripts for generating Juliette programs
     in Redex based on Julia test programs;
 
+* [`analysis/`](analysis) folder with static and dynamic analysis of
+  `eval`/`invokelatest` usage in Julia:
+
+  - [`static-analysis/`](analysis/static-analysis) text- and parse-based
+    static analysis of source code of registered Julia packages;
+
+  - [`dynamic-analysis/`](analysis/dynamic-analysis) dynamic analysis of
+  `eval`/`invokelatest` calls in tests of some Julia packages.
+
 * [`tests/`](tests) folder with runnable tests related to
   the world age semantics:
-
-  - [`litmus-wa/`](tests/litmus-wa) world-age litmus tests written in Julia,
-    transpiled to and checked with Redex.
-
-  - [`litmus-optimizations/`](tests/litmus-optimizations) litmus tests written
-    in Julia, transpiled to Redex, and run with Juliette optimizations;
-    test that optimizations do not change the semantics of programs.
 
 * [`litmus/`](litmus) folder with summaries of litmus tests
   (files in this folder are not supposed to be executed):
