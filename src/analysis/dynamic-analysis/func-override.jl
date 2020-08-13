@@ -74,28 +74,19 @@ OverrideInfo(identifier :: String, functionDataFilter :: Function) =
 # Function Override
 #######################
 
-# All file names in the base julia language source code
-INTERNAL_LIB_FILES = readlines("$(ENV["DYNAMIC_ANALYSIS_DIR"])/internal-lib-filenames.txt")
-# All keywords associated with the base julia language source code
-INTERNAL_LIB_KW = ["GenericIOBuffer", "__init__()"]
-# All file names in the base julia language source code
-SOURCE_FILES = readlines("$(ENV["DYNAMIC_ANALYSIS_DIR"])/source-filenames.txt")
-# All keywords associated with the base julia language source code
-SOURCE_KW = []
+# Location of julia packages
+PACKAGE_DIR = joinpath(DEPOT_PATH[1], "packages")
+# Location of dynamic analysis package
+DYNAMIC_ANALYSIS_PACKAGE_DIR = joinpath(PACKAGE_DIR, ENV["DYNAMIC_ANALYSIS_PACKAGE_NAME"])
 
-# Determines if given stack frame is from the given code base
-function isInCode(stackFrame, codeFilenames, codeKw)
-    frameInFile = (filename) -> occursin(filename, string(stackFrame.file))
-    frameHasKw = (keyword) -> occursin(keyword, string(stackFrame.linfo))
-    ormap(frameInFile, codeFilenames) || ormap(frameHasKw, codeKw)
-end
-
+# Determines if the given stack frame occurs in the given directory
+frameInDirectory(dir, frame) = findfirst(dir, string(frame.file)) != nothing
 # Determines if given stack frame is from package source code
-isSourceCode(stackFrame) = isInCode(stackFrame, SOURCE_FILES, SOURCE_KW)
-# Determines if given stack frame is from internal julia library code
-isInternalLibCode(stackFrame) = !isSourceCode(stackFrame) && isInCode(stackFrame, INTERNAL_LIB_FILES, INTERNAL_LIB_KW)
+isSourceCode(stackFrame) = frameInDirectory(DYNAMIC_ANALYSIS_PACKAGE_DIR, stackFrame)
 # Determines if given stack frame is from external library code
-isExternalLibCode(stackFrame) = !(isSourceCode(stackFrame) || isInternalLibCode(stackFrame))
+isExternalLibCode(stackFrame) = !isSourceCode(stackFrame) && frameInDirectory(PACKAGE_DIR, stackFrame)
+# Determines if given stack frame is from internal julia library code
+isInternalLibCode(stackFrame) = !(isSourceCode(stackFrame) || isExternalLibCode(stackFrame))
 
 # Initialize empty dataCollection
 overrideCollection = [
@@ -238,7 +229,6 @@ end
 
 # Overrides eval to store metadata about calls to the function
 function Core.eval(m::Module, @nospecialize(e))
-    println(stacktrace()[1:3])
     exprs = extractExprs(e)
     for expr = exprs
         updateEvalOverrideInfo(expr, m)
