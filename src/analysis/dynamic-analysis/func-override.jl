@@ -56,6 +56,7 @@ FuncMetadata(funcSpecificData;
 # Represents the information being analyzed when running packages
 mutable struct OverrideInfo
     identifier :: String
+    # Determines if frame particular classification (ie. source-file, internal-file, external-file)
     stackFramePredicate :: Function
     evalInfo :: FuncMetadata{EvalInfo}
     invokeLatestInfo :: FuncMetadata{InvokeLatestInfo}
@@ -111,17 +112,20 @@ isAstWithBody(e :: Expr, head :: Symbol) = e.head == head && size(e.args)[1] > 0
 isAstWithBody(e, head :: Symbol) = false
 
 # Determines if the given expression is an abreviated function definition
+# eg: f() = 1
 isAbreviatedFunc(e :: Expr) =
     isAstWithBody(e, :(=)) &&
         (isAstWithBody(e.args[1], :call) ||
             (isAstWithBody(e.args[1], :(::)) &&
                 isAstWithBody(e.args[1].args[1], :call)))
 # Determines if the given expression is an abreviated function definition
+# eg: f = () -> 1
 isLambdaBinding(e :: Expr) =
     isAstWithBody(e, :(=)) &&
         (size(e.args)[1] > 1 &&
             isAstWithBody(e.args[2], :(->)))
 # Determines if the given expression is an lambda function
+# eg: () -> 1
 isLambdaFunc(e) = isAstWithBody(e, :(->))
 # Determines if the given expression is a irregularly defined function
 isIrregularFunction(e) = isAbreviatedFunc(e) || isLambdaBinding(e) || isLambdaFunc(e)
@@ -132,7 +136,8 @@ function updateAstInfoHelp(astHeads :: AstInfo, astIdentifier :: Symbol)
     astIdentifier
 end
 updateAstInfo(astHeads :: AstInfo, e :: Expr) = updateAstInfoHelp(astHeads, isIrregularFunction(e) ? :function : e.head)
-updateAstInfo(astHeads :: AstInfo, e) = updateAstInfoHelp(astHeads, Symbol(typeof(e)))
+updateAstInfo(astHeads :: AstInfo, e :: Symbol) = updateAstInfoHelp(astHeads, Symbol(string("Symbol-", e)))
+updateAstInfo(astHeads :: AstInfo, e) = updateAstInfoHelp(astHeads, String(typeof(e)))
 
 function getFuncNameAndModule(e :: Expr, m :: Module)
     maybeCallExpr = e.args[1]
@@ -159,11 +164,15 @@ end
 function updateEvalInfo(evalInfo :: EvalInfo, e, m :: Module)
     astIdentifier = updateAstInfo(evalInfo.astHeads, e)
     if astIdentifier == :function
+        # a lambda function (()->1)
         if isLambdaFunc(e)
             evalInfo.funcDefTypes.newFuncCount += 1
+        # a variable bound to a lambda function (f=()->1)
         elseif isLambdaBinding(e)
+            @info "Dumping the AST of an expression classified as a lambda binding"
             dump(e)
             evalInfo.funcDefTypes.miscCount += 1
+        # function without body (function f end)
         elseif isAstWithBody(e, :function) && isa(e.args[1], Symbol)
             evalInfo.funcDefTypes.bodylessFuncCount += 1
         else
@@ -172,6 +181,7 @@ function updateEvalInfo(evalInfo :: EvalInfo, e, m :: Module)
                     evalInfo.funcDefTypes.funcRedefCount += 1 :
                     evalInfo.funcDefTypes.newFuncCount += 1
             catch err
+                @info "Dumping the AST of an expression classified as func but unknown structure"
                 dump(e)
                 evalInfo.funcDefTypes.miscCount += 1
             end
@@ -205,16 +215,33 @@ function updateFuncMetadata(metadata :: FuncMetadata, stackFrameIndex :: Count, 
     end
 end
 
-# Overrides eval to store metadata about calls to the function
-function Core.eval(m::Module, @nospecialize(e))
+function extractExprs(e)
+    if isAstWithBody(e, :block)
+        foldr(((expr, exprs) -> vcat(extractExprs(expr), exprs)),
+            filter(e -> !isa(e, LineNumberNode), e.args); init=[])
+    else
+        [e]
+    end
+end
+
+function updateEvalOverrideInfo(e, m)
     updateEvalInfoWrap(evalInfo :: EvalInfo) = updateEvalInfo(evalInfo, e, m)
     updateTraceAuxillary(astHeads :: AstInfo) = updateAstInfo(astHeads, e)
-    frameToGet = 3
+    frameToGet = 4
     for overrideInfo = overrideCollection
         updateFuncMetadata(overrideInfo.evalInfo, frameToGet,
             updateEvalInfoWrap; stackFramePredicate=overrideInfo.stackFramePredicate,
             auxTuple=((() -> Dict{Symbol,Count}()), updateTraceAuxillary))
         storeOverrideInfo(overrideInfo)
+    end
+end
+
+# Overrides eval to store metadata about calls to the function
+function Core.eval(m::Module, @nospecialize(e))
+    println(stacktrace()[1:3])
+    exprs = extractExprs(e)
+    for expr = exprs
+        updateEvalOverrideInfo(expr, m)
     end
 
     # Original eval code
@@ -232,7 +259,6 @@ function Base.invokelatest(@nospecialize(f), @nospecialize args...; kwargs...)
             auxTuple=((() -> Dict{String,Count}()), updateTraceAuxillary))
         storeOverrideInfo(overrideInfo)
     end
-
 
     # Original invokelatest code
     if isempty(kwargs)
