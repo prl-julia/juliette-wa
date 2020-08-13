@@ -6,6 +6,7 @@
       "ast_heads": [],
       "func_def_types": {
         "newFuncCount": 0,
+        "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       }
