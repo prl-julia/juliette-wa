@@ -1,6 +1,5 @@
 include("../../utils/lib.jl")
 include("ast-parse-helpers.jl")
-include("overrideinfo-to-json.jl")
 
 ##############################
 # Domain Object Definitions
@@ -80,10 +79,6 @@ OverrideInfo(identifier :: String, functionDataFilter :: Function) =
 PACKAGE_DIR = joinpath(DEPOT_PATH[1], "packages")
 # Location of package being analyzed
 DYNAMIC_ANALYSIS_PACKAGE_DIR = joinpath(PACKAGE_DIR, ENV["DYNAMIC_ANALYSIS_PACKAGE_NAME"])
-# Location of directory where output-data/environment will be stored
-OUTPUT_DIR = "$(ENV["DYNAMIC_ANALYSIS_DIR"])/package-data/$(ENV["DYNAMIC_ANALYSIS_PACKAGE_NAME"])"
-# Make the directory if it does not exist
-try mkdir(OUTPUT_DIR) catch e end
 
 # Determines if the given stack frame occurs in the given directory
 frameInDirectory(dir, frame) = findfirst(dir, string(frame.file)) != nothing
@@ -153,7 +148,7 @@ function updateFuncMetadata(overrideCollection :: Vector{OverrideInfo}, getFuncM
             metadata.callCount += 1
             updateFuncSpecificData(metadata.funcSpecificData)
         end
-        storeOverrideInfo(overrideInfo, "$(OUTPUT_DIR)/$(overrideInfo.identifier).json")
+        storeOverrideInfo(overrideInfo, "$(ENV["OUTPUT_DIR"])/$(overrideInfo.identifier).json")
     end
 end
 

@@ -1,7 +1,6 @@
 using Pkg
 Pkg.add("JSON")
 using JSON
-include("overrideinfo.jl")
 
 # Store the overrideInfo as a JSON file
 function storeOverrideInfo(overrideInfo :: OverrideInfo, outputFile :: String)

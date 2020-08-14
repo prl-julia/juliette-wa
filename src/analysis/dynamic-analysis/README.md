@@ -5,7 +5,7 @@ A dynamic analysis tool that analyzes the use of eval and invokeLatest in the Ju
 ## File Overview
 * `package-data` - directory containing all the dynamic analysis results
 * `ast-parse-helpers.jl` - contains parsing julia-ast related functions
-* `func-override.jl` - overrides the eval and invokelatest methods to track usage
+* `function-override.jl` - overrides the eval and invokelatest methods to track usage
 * `main.jl` - the entry point to run dynamic analysis on a package
 * `overrideInfo-to-json.jl` - converts the domain object to a json and writes it to a file
 * `test-override.jl` - overrides the package tester function to allow for dynamic analysis to be run
