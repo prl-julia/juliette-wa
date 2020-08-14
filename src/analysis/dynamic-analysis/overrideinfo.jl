@@ -1,7 +1,3 @@
-#######################################
-# Function Override Data Structures
-#######################################
-
 # Represents a counter
 Count = Int64
 

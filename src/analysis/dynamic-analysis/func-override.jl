@@ -10,6 +10,8 @@ include("overrideinfo-to-json.jl")
 PACKAGE_DIR = joinpath(DEPOT_PATH[1], "packages")
 # Location of dynamic analysis package
 DYNAMIC_ANALYSIS_PACKAGE_DIR = joinpath(PACKAGE_DIR, ENV["DYNAMIC_ANALYSIS_PACKAGE_NAME"])
+OUTPUT_DIR = "$(ENV["DYNAMIC_ANALYSIS_DIR"])/package-data/$(ENV["DYNAMIC_ANALYSIS_PACKAGE_NAME"])"
+try mkdir(OUTPUT_DIR) catch e end
 
 # Determines if the given stack frame occurs in the given directory
 frameInDirectory(dir, frame) = findfirst(dir, string(frame.file)) != nothing
@@ -26,8 +28,6 @@ overrideCollection = [
     OverrideInfo("internal-lib", isInternalLibCode),
     OverrideInfo("external-lib", isExternalLibCode)
 ]
-
-OUTPUT_DIR = "$(ENV["DYNAMIC_ANALYSIS_DIR"])/package-data/$(ENV["DYNAMIC_ANALYSIS_PACKAGE_NAME"])"
 
 # Adds one to the value of the key, creates keys with value of 1 if it does not already exist
 updateDictCount(dict :: Dict{T, Count}, key :: T) where {T} = dict[key] = get!(dict, key, 0) + 1
@@ -127,17 +127,20 @@ function updateStackTraces(stackTraces :: Dict{StackTraces.StackFrame, StackTrac
 end
 
 # Updates the information for a new call to a function being analyzed
-function updateFuncMetadata(metadata :: FuncMetadata, stackFrameIndex :: Count, updateFuncSpecificData :: Function;
-        stackFramePredicate=((frame) -> true) :: Function,
+function updateFuncMetadata(getFuncMetadata :: Function, stackFrameIndex :: Count, updateFuncSpecificData :: Function;
         auxTuple=((() -> nothing), ((aux) -> nothing)) :: Tuple{Function, Function})
-    if stackFramePredicate(getindex(stacktrace(), stackFrameIndex + 1))
-        (defaultTraceAuxillary, updateTraceAuxillary) = auxTuple
-        # Update stack traces
-        updateStackTraces(metadata.stackTraces, stackFrameIndex + 1, defaultTraceAuxillary, updateTraceAuxillary)
-        # Update call counter
-        metadata.callCount += 1
-        # Update function specific data
-        updateFuncSpecificData(metadata.funcSpecificData)
+    for overrideInfo = overrideCollection
+        metadata = getFuncMetadata(overrideInfo)
+        if overrideInfo.stackFramePredicate(getindex(stacktrace(), stackFrameIndex + 1))
+            (defaultTraceAuxillary, updateTraceAuxillary) = auxTuple
+            # Update stack traces
+            updateStackTraces(metadata.stackTraces, stackFrameIndex + 1, defaultTraceAuxillary, updateTraceAuxillary)
+            # Update call counter
+            metadata.callCount += 1
+            # Update function specific data
+            updateFuncSpecificData(metadata.funcSpecificData)
+        end
+        storeOverrideInfo(overrideInfo, "$(OUTPUT_DIR)/$(overrideInfo.identifier).json")
     end
 end
 
@@ -145,28 +148,17 @@ function extractExprs(e)
     if isAstWithBody(e, :block)
         foldr(((expr, exprs) -> vcat(extractExprs(expr), exprs)),
             filter(e -> !isa(e, LineNumberNode), e.args); init=[])
-    else
-        [e]
-    end
-end
-
-function updateEvalOverrideInfo(e, m)
-    updateEvalInfoWrap(evalInfo :: EvalInfo) = updateEvalInfo(evalInfo, e, m)
-    updateTraceAuxillary(astHeads :: AstInfo) = updateAstInfo(astHeads, e)
-    frameToGet = 4
-    for overrideInfo = overrideCollection
-        updateFuncMetadata(overrideInfo.evalInfo, frameToGet,
-            updateEvalInfoWrap; stackFramePredicate=overrideInfo.stackFramePredicate,
-            auxTuple=((() -> Dict{Symbol,Count}()), updateTraceAuxillary))
-        storeOverrideInfo(overrideInfo, OUTPUT_DIR, "$(overrideInfo.identifier).json")
-    end
+    else [e] end
 end
 
 # Overrides eval to store metadata about calls to the function
 function Core.eval(m::Module, @nospecialize(e))
     exprs = extractExprs(e)
     for expr = exprs
-        updateEvalOverrideInfo(expr, m)
+        updateEvalInfoWrap(evalInfo :: EvalInfo) = updateEvalInfo(evalInfo, e, m)
+        updateTraceAuxillary(astHeads :: AstInfo) = updateAstInfo(astHeads, e)
+        updateFuncMetadata(((overrideInfo) -> overrideInfo.evalInfo), 3,
+            updateEvalInfoWrap; auxTuple=((() -> Dict{Symbol,Count}()), updateTraceAuxillary))
     end
 
     # Original eval code
@@ -177,13 +169,8 @@ end
 function Base.invokelatest(@nospecialize(f), @nospecialize args...; kwargs...)
     updateInvokeLatestInfo(invokeLatestInfo :: InvokeLatestInfo) = updateDictCount(invokeLatestInfo.funcNames, string(f))
     updateTraceAuxillary(funcNames :: FunctionInfo) = updateDictCount(funcNames, string(f))
-    frameToGet = 4
-    for overrideInfo = overrideCollection
-        updateFuncMetadata(overrideInfo.invokeLatestInfo, frameToGet,
-            updateInvokeLatestInfo; stackFramePredicate=overrideInfo.stackFramePredicate,
-            auxTuple=((() -> Dict{String,Count}()), updateTraceAuxillary))
-        storeOverrideInfo(overrideInfo, OUTPUT_DIR, "$(overrideInfo.identifier).json")
-    end
+    updateFuncMetadata(((overrideInfo) -> overrideInfo.invokeLatestInfo), 4,
+        updateInvokeLatestInfo; auxTuple=((() -> Dict{String,Count}()), updateTraceAuxillary))
 
     # Original invokelatest code
     if isempty(kwargs)

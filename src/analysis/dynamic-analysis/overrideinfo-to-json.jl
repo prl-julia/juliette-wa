@@ -4,10 +4,8 @@ using JSON
 include("overrideinfo.jl")
 
 # Store the overrideInfo as a JSON file
-function storeOverrideInfo(overrideInfo :: OverrideInfo, dirName :: String, fileName :: String)
-    try mkdir(dirName) catch e end
-    OUTPUT_FILE = "$(dirName)/$(fileName)"
-    fd = open(OUTPUT_FILE, "w+")
+function storeOverrideInfo(overrideInfo :: OverrideInfo, outputFile :: String)
+    fd = open(outputFile, "w+")
     INDENT_SIZE = 2
     JSON.print(fd, overrideInfoToJson(overrideInfo), INDENT_SIZE)
     close(fd)
