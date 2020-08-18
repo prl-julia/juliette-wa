@@ -749,12 +749,12 @@ Oceananigans.jl: {ev: 16, il: 0}
   [evalArgs: (variable [top] => 1, function [top] => 1)]
 
 GPUArrays.jl: {ev: 15, il: 0}
-  [evalArgs: (function [top] => 13, = [top] => 1, export [top] => 1)]
+  [evalArgs: (function [top] => 14, export [top] => 1)]
 # non vacuous files: 5/19
 * /src/host/abstractarray.jl => {ev: 3, il: 0}
   [evalArgs: (function [top] => 3)]
 * /src/device/indexing.jl => {ev: 2, il: 0}
-  [evalArgs: (= [top] => 1, export [top] => 1)]
+  [evalArgs: (function [top] => 1, export [top] => 1)]
 * /src/reference.jl => {ev: 4, il: 0}
   [evalArgs: (function [top] => 4)]
 * /src/host/uniformscaling.jl => {ev: 4, il: 0}
@@ -1400,7 +1400,7 @@ Non vacuous packages: 127/200
 * !!! likely both: 33/200
 
 Total Stat:
-* function   [top] => 1479 in  87 pkgs
+* function   [top] => 1480 in  87 pkgs
 * function   [fun] =>  232 in  18 pkgs
 * variable   [fun] =>  112 in  30 pkgs
 * call       [fun] =>   67 in  21 pkgs
@@ -1409,8 +1409,8 @@ Total Stat:
 * export     [top] =>   27 in  14 pkgs
 * struct     [top] =>   26 in  11 pkgs
 * call       [top] =>   23 in   7 pkgs
-* =          [top] =>   18 in   6 pkgs
 * useimport  [fun] =>   17 in   7 pkgs
+* =          [top] =>   17 in   5 pkgs
 * @doc       [top] =>   14 in   6 pkgs
 * const      [top] =>   12 in   9 pkgs
 * $          [fun] =>   11 in   7 pkgs

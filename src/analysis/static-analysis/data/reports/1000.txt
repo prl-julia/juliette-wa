@@ -77,14 +77,14 @@ Symata.jl: {ev: 137, il: 26}
   [evalArgs: (function [top] => 3, variable [top] => 1)]
 
 MonteCarloMeasurements.jl: {ev: 81, il: 4}
-  [evalArgs: (function [top] => 69, function [fun] => 9, = [fun] => 2, $ [fun] => 1)]
+  [evalArgs: (function [top] => 69, function [fun] => 9, -> [fun] => 2, $ [fun] => 1)]
 # non vacuous files: 9/18
 * /src/register_primitive.jl => {ev: 9, il: 0}
   [evalArgs: (function [fun] => 9)]
 * /src/unitful.jl => {ev: 6, il: 0}
   [evalArgs: (function [top] => 6)]
 * /src/deconstruct.jl => {ev: 2, il: 4}
-  [evalArgs: (= [fun] => 2)]
+  [evalArgs: (-> [fun] => 2)]
 * /src/forwarddiff.jl => {ev: 5, il: 0}
   [evalArgs: (function [top] => 5)]
 * /src/sleefpirates.jl => {ev: 4, il: 0}
@@ -1923,12 +1923,12 @@ Oceananigans.jl: {ev: 16, il: 0}
   [evalArgs: (variable [top] => 1, function [top] => 1)]
 
 GPUArrays.jl: {ev: 15, il: 0}
-  [evalArgs: (function [top] => 13, = [top] => 1, export [top] => 1)]
+  [evalArgs: (function [top] => 14, export [top] => 1)]
 # non vacuous files: 5/19
 * /src/host/abstractarray.jl => {ev: 3, il: 0}
   [evalArgs: (function [top] => 3)]
 * /src/device/indexing.jl => {ev: 2, il: 0}
-  [evalArgs: (= [top] => 1, export [top] => 1)]
+  [evalArgs: (function [top] => 1, export [top] => 1)]
 * /src/reference.jl => {ev: 4, il: 0}
   [evalArgs: (function [top] => 4)]
 * /src/host/uniformscaling.jl => {ev: 4, il: 0}
@@ -4462,7 +4462,7 @@ Non vacuous packages: 465/1000
 * !!! likely both: 64/1000
 
 Total Stat:
-* function   [top] => 4904 in 295 pkgs
+* function   [top] => 4905 in 295 pkgs
 * function   [fun] =>  281 in  37 pkgs
 * variable   [fun] =>  266 in  75 pkgs
 * export     [top] =>  107 in  43 pkgs
@@ -4472,13 +4472,13 @@ Total Stat:
 * struct     [top] =>   93 in  35 pkgs
 * parse      [fun] =>   73 in  24 pkgs
 * call       [top] =>   65 in  17 pkgs
-* =          [top] =>   56 in  17 pkgs
+* =          [top] =>   55 in  16 pkgs
 * const      [top] =>   44 in  29 pkgs
 * @doc       [top] =>   32 in  17 pkgs
 * useimport  [fun] =>   29 in  16 pkgs
 * useimport  [top] =>   28 in  14 pkgs
-* =          [fun] =>   28 in  18 pkgs
 * $          [top] =>   27 in  11 pkgs
+* =          [fun] =>   26 in  17 pkgs
 * $          [fun] =>   23 in  16 pkgs
 * EvPrsERR   [top] =>   17 in   3 pkgs
 * expr       [fun] =>   15 in   8 pkgs
@@ -4490,9 +4490,9 @@ Total Stat:
 * export     [fun] =>   10 in   7 pkgs
 * parse      [top] =>    8 in   6 pkgs
 * @!WAmacro  [top] =>    8 in   8 pkgs
+* ->         [fun] =>    8 in   4 pkgs
 * @(s)printf [fun] =>    7 in   6 pkgs
 * include    [fun] =>    6 in   5 pkgs
-* ->         [fun] =>    6 in   3 pkgs
 * other      [fun] =>    5 in   5 pkgs
 * import     [fun] =>    5 in   3 pkgs
 * toplevel   [top] =>    5 in   3 pkgs
