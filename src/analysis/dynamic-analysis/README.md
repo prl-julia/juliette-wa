@@ -5,8 +5,11 @@ in the Julia language.
 
 ## File Overview
 
-* [`package-data`](package-data)
+* [`package-data/`](package-data)
   directory with all the dynamic analysis results
+
+* [`tests/`](package-data)
+  directory containing the julia test files
 
 * [`main.jl`](main.jl)
   the entry point to run dynamic analysis on a package
@@ -26,14 +29,14 @@ in the Julia language.
 ## Analyze Package
 
 To analyze a package run the following command:
-   
+
 ```
 $ julia main.jl <PACKAGE_NAME>
 ```
 
 (NOTE: your Julia version must be >= `1.4.2`).
 
-The analyzed data of each package will be written to 
+The analyzed data of each package will be written to
 a `package-data/<package_name>` directory.
 The directory will contain 3 files:
 

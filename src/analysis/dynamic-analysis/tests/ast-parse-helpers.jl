@@ -1,13 +1,6 @@
 include("../ast-parse-helpers.jl")
+include("utils.jl")
 using Test
-
-#################
-# Test Helpers
-#################
-
-macro parse(ast)
-    return :(Meta.parse($ast))
-end
 
 #############
 # Examples
