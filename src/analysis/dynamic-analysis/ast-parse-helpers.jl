@@ -33,7 +33,7 @@ isLambdaBinding(e :: Expr) =
 
 # AST → Bool
 # Determines if the given expression is an irregularly defined function
-isIrregularFunction(e) = 
+isIrregularFunction(e) =
     isAbreviatedFunc(e) || isLambdaBinding(e) || isLambdaFunc(e)
 
 # AST, Module → Module, Symbol
@@ -51,10 +51,10 @@ function getFuncNameAndModule(e :: Expr, m :: Module)
                 isa(funcDef.args[1], Symbol)
             return (eval(funcDef.args[1]), funcDef.args[2].value)
         end
-    elseif isa(e, Expr) && (length(e.args) > 0)
+        throw(DomainError(e))
+    else
         return getFuncNameAndModule(maybeCallExpr, m)
     end
-    throw(DomainError(e))
 end
 
 # Extracts all expressions from a block, returns the expression if not a block
@@ -62,9 +62,9 @@ extractExprs(e) =
     if isAstWithBody(e, :block)
         foldr(
             (expr, exprs) -> vcat(extractExprs(expr), exprs),
-            filter(e -> !isa(e, LineNumberNode), e.args); 
+            filter(e -> !isa(e, LineNumberNode), e.args);
             init=[]
         )
-    else 
-        [e] 
+    else
+        [e]
     end

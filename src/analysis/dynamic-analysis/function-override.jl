@@ -45,8 +45,8 @@ StackTraceInfo(funcSpecificData) = StackTraceInfo(0, funcSpecificData)
 
 # Represents the information collected regarding overriden function calls
 mutable struct FuncMetadata{T, U}
-    callCount   :: Count
-    stackTraces :: Dict{StackTraces.StackFrame, StackTraceInfo{U}}
+    callCount        :: Count
+    stackTraces      :: Dict{StackTraces.StackFrame, StackTraceInfo{U}}
     funcSpecificData :: T
 end
 # Initializes a base representation of function metadata
@@ -56,7 +56,7 @@ FuncMetadata(funcSpecificData;
 
 # Represents the information being analyzed when running packages
 mutable struct OverrideInfo
-    identifier :: String
+    identifier          :: String
     # Determines if frame particular classification
     # (ie. source-file, internal-file, external-file)
     stackFramePredicate :: Function
@@ -147,7 +147,7 @@ end
 ##############################
 
 # Adds one to the value of the key, creates keys with value of 1 if it does not already exist
-updateDictCount(dict :: Dict{T, Count}, key :: T) where {T} = 
+updateDictCount(dict :: Dict{T, Count}, key :: T) where {T} =
     dict[key] = get!(dict, key, 0) + 1
 
 # Updates the information for a new call to a function being analyzed
@@ -161,7 +161,7 @@ function updateFuncMetadata(
         if overrideInfo.stackFramePredicate(getindex(stacktrace(), stackFrameIndex + 1))
             (defaultTraceAuxillary, updateTraceAuxillary) = auxTuple
             updateStackTraces(
-                metadata.stackTraces, stackFrameIndex + 1, 
+                metadata.stackTraces, stackFrameIndex + 1,
                 defaultTraceAuxillary, updateTraceAuxillary
             )
             metadata.callCount += 1
@@ -174,7 +174,7 @@ end
 # Updates the metadata information for a stack trace
 function updateStackTraces(
         stackTraces :: Dict{StackTraces.StackFrame, StackTraceInfo{U}},
-        stackFrameIndex :: Count, 
+        stackFrameIndex :: Count,
         defaultTraceAuxillary :: Function, updateTraceAuxillary :: Function
     ) where {U}
     stackFrame = getindex(stacktrace(), stackFrameIndex + 1)
@@ -217,7 +217,7 @@ function updateAstInfoHelp(astHeads :: AstInfo, astIdentifier :: Symbol)
 end
 updateAstInfo(astHeads :: AstInfo, e :: Expr) =
     updateAstInfoHelp(astHeads, isIrregularFunction(e) ? :function : e.head)
-updateAstInfo(astHeads :: AstInfo, e :: Symbol) = 
+updateAstInfo(astHeads :: AstInfo, e :: Symbol) =
     updateAstInfoHelp(astHeads, Symbol(string("Symbol-", e)))
 updateAstInfo(astHeads :: AstInfo, e) =
     updateAstInfoHelp(astHeads, String(typeof(e)))
