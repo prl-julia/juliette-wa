@@ -56,3 +56,15 @@ function getFuncNameAndModule(e :: Expr, m :: Module)
     end
     throw(DomainError(e))
 end
+
+# Extracts all expressions from a block, returns the expression if not a block
+extractExprs(e) =
+    if isAstWithBody(e, :block)
+        foldr(
+            (expr, exprs) -> vcat(extractExprs(expr), exprs),
+            filter(e -> !isa(e, LineNumberNode), e.args); 
+            init=[]
+        )
+    else 
+        [e] 
+    end

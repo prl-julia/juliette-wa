@@ -30,17 +30,19 @@ function evalInfoToJson(evalInfo :: EvalInfo)
 end
 
 # Convert an functionInfo object to a julia json representation
-funcInfoToJson(funcNames :: FunctionInfo) = Dict(["function_names" => countingDictToJson(funcNames, "function_name")])
+funcInfoToJson(funcNames :: FunctionInfo) =
+    Dict(["function_names" => countingDictToJson(funcNames, "function_name")])
 
 # Convert an astInfo object to a julia json representation
-astInfoToJson(astHeads :: AstInfo) = Dict{Any, Any}(["ast_heads" => countingDictToJson(astHeads, "ast_head")])
+astInfoToJson(astHeads :: AstInfo) =
+    Dict{Any, Any}(["ast_heads" => countingDictToJson(astHeads, "ast_head")])
 
 # Convert an functionDefTracker object to a julia json representation
 function funcDefTrackerToJson(funcDefTypes :: FuncDefTracker)
     json = Dict()
-    json["newFuncCount"] = funcDefTypes.newFuncCount
-    json["funcRedefCount"] = funcDefTypes.funcRedefCount
-    json["miscCount"] = funcDefTypes.miscCount
+    json["newFuncCount"]      = funcDefTypes.newFuncCount
+    json["funcRedefCount"]    = funcDefTypes.funcRedefCount
+    json["miscCount"]         = funcDefTypes.miscCount
     json["bodylessFuncCount"] = funcDefTypes.bodylessFuncCount
     json
 end

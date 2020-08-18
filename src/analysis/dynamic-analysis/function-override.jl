@@ -16,9 +16,9 @@ FunctionInfo = Dict{String, Count}
 
 # Represents the distribution of function definition types
 mutable struct FuncDefTracker
-    newFuncCount :: Count
-    funcRedefCount :: Count
-    miscCount :: Count
+    newFuncCount      :: Count
+    funcRedefCount    :: Count
+    miscCount         :: Count
     bodylessFuncCount :: Count
 end
 # Initializes a base representation of function type tracker
@@ -26,26 +26,26 @@ FuncDefTracker() = FuncDefTracker(0,0,0,0)
 
 # Represents the information collected regarding eval function calls
 mutable struct EvalInfo
-    astHeads :: AstInfo
+    astHeads     :: AstInfo
     funcDefTypes :: FuncDefTracker
 end
 
-# Represents the information collected regarding eval function calls
+# Represents the information collected regarding invokelatest function calls
 mutable struct InvokeLatestInfo
-    funcNames :: FunctionInfo
+    funcNames  :: FunctionInfo
 end
 
 # Represents the information collected regarding the stacktrace of a function call
 mutable struct StackTraceInfo{T}
-    count :: Count
-    auxillary  :: T
+    count     :: Count
+    auxillary :: T
 end
 # Initializes a base representation of stacktrace information
 StackTraceInfo(funcSpecificData) = StackTraceInfo(0, funcSpecificData)
 
 # Represents the information collected regarding overriden function calls
 mutable struct FuncMetadata{T, U}
-    callCount :: Count
+    callCount   :: Count
     stackTraces :: Dict{StackTraces.StackFrame, StackTraceInfo{U}}
     funcSpecificData :: T
 end
@@ -57,10 +57,11 @@ FuncMetadata(funcSpecificData;
 # Represents the information being analyzed when running packages
 mutable struct OverrideInfo
     identifier :: String
-    # Determines if frame particular classification (ie. source-file, internal-file, external-file)
+    # Determines if frame particular classification
+    # (ie. source-file, internal-file, external-file)
     stackFramePredicate :: Function
-    evalInfo :: FuncMetadata{EvalInfo}
-    invokeLatestInfo :: FuncMetadata{InvokeLatestInfo}
+    evalInfo            :: FuncMetadata{EvalInfo}
+    invokeLatestInfo    :: FuncMetadata{InvokeLatestInfo}
 end
 # Initializes a base representation of override information
 OverrideInfo(identifier :: String, functionDataFilter :: Function) =
@@ -82,12 +83,14 @@ DYNAMIC_ANALYSIS_PACKAGE_DIR = joinpath(PACKAGE_DIR, ENV["DYNAMIC_ANALYSIS_PACKA
 
 # Determines if the given stack frame occurs in the given directory
 frameInDirectory(dir, frame) = findfirst(dir, string(frame.file)) != nothing
+
 # Determines if given stack frame is from package source code
 isSourceCode(stackFrame) = frameInDirectory(DYNAMIC_ANALYSIS_PACKAGE_DIR, stackFrame)
 # Determines if given stack frame is from external library code
 isExternalLibCode(stackFrame) = !isSourceCode(stackFrame) && frameInDirectory(PACKAGE_DIR, stackFrame)
 # Determines if given stack frame is from internal julia library code
 isInternalLibCode(stackFrame) = !(isSourceCode(stackFrame) || isExternalLibCode(stackFrame))
+
 # Initialize empty dataCollection
 overrideCollection = [
     OverrideInfo("source", isSourceCode),
@@ -101,12 +104,16 @@ overrideCollection = [
 
 # Overrides eval to store metadata about calls to the function
 function Core.eval(m::Module, @nospecialize(e))
+    # aux functions
+    updateEvalInfoWrap(evalInfo :: EvalInfo) = updateEvalInfo(evalInfo, e, m)
+    updateTraceAuxillary(astHeads :: AstInfo) = updateAstInfo(astHeads, e)
+    # action
     exprs = extractExprs(e)
     for expr = exprs
-        updateEvalInfoWrap(evalInfo :: EvalInfo) = updateEvalInfo(evalInfo, e, m)
-        updateTraceAuxillary(astHeads :: AstInfo) = updateAstInfo(astHeads, e)
-        updateFuncMetadata(overrideCollection, ((overrideInfo) -> overrideInfo.evalInfo), 3,
-            updateEvalInfoWrap; auxTuple=((() -> Dict{Symbol,Count}()), updateTraceAuxillary))
+        updateFuncMetadata(
+            overrideCollection, ((overrideInfo) -> overrideInfo.evalInfo),
+            3, updateEvalInfoWrap;
+            auxTuple=((() -> Dict{Symbol,Count}()), updateTraceAuxillary))
     end
 
     # Original eval code
@@ -115,10 +122,16 @@ end
 
 # Overrides invokelatest to store metadata about calls to the function
 function Base.invokelatest(@nospecialize(f), @nospecialize args...; kwargs...)
-    updateInvokeLatestInfo(invokeLatestInfo :: InvokeLatestInfo) = updateDictCount(invokeLatestInfo.funcNames, string(f))
-    updateTraceAuxillary(funcNames :: FunctionInfo) = updateDictCount(funcNames, string(f))
-    updateFuncMetadata(overrideCollection, ((overrideInfo) -> overrideInfo.invokeLatestInfo), 4,
-        updateInvokeLatestInfo; auxTuple=((() -> Dict{String,Count}()), updateTraceAuxillary))
+    # aux functions
+    updateInvokeLatestInfo(invokeLatestInfo :: InvokeLatestInfo) =
+        updateDictCount(invokeLatestInfo.funcNames, string(f))
+    updateTraceAuxillary(funcNames :: FunctionInfo) =
+        updateDictCount(funcNames, string(f))
+    # action
+    updateFuncMetadata(
+        overrideCollection, ((overrideInfo) -> overrideInfo.invokeLatestInfo),
+        4, updateInvokeLatestInfo;
+        auxTuple=((() -> Dict{String,Count}()), updateTraceAuxillary))
 
     # Original invokelatest code
     if isempty(kwargs)
@@ -134,17 +147,23 @@ end
 ##############################
 
 # Adds one to the value of the key, creates keys with value of 1 if it does not already exist
-updateDictCount(dict :: Dict{T, Count}, key :: T) where {T} = dict[key] = get!(dict, key, 0) + 1
+updateDictCount(dict :: Dict{T, Count}, key :: T) where {T} = 
+    dict[key] = get!(dict, key, 0) + 1
 
 # Updates the information for a new call to a function being analyzed
-function updateFuncMetadata(overrideCollection :: Vector{OverrideInfo}, getFuncMetadata :: Function,
+function updateFuncMetadata(
+        overrideCollection :: Vector{OverrideInfo}, getFuncMetadata :: Function,
         stackFrameIndex :: Count, updateFuncSpecificData :: Function;
-        auxTuple=((() -> nothing), ((aux) -> nothing)) :: Tuple{Function, Function})
+        auxTuple=((() -> nothing), ((aux) -> nothing)) :: Tuple{Function, Function}
+)
     for overrideInfo = overrideCollection
         metadata = getFuncMetadata(overrideInfo)
         if overrideInfo.stackFramePredicate(getindex(stacktrace(), stackFrameIndex + 1))
             (defaultTraceAuxillary, updateTraceAuxillary) = auxTuple
-            updateStackTraces(metadata.stackTraces, stackFrameIndex + 1, defaultTraceAuxillary, updateTraceAuxillary)
+            updateStackTraces(
+                metadata.stackTraces, stackFrameIndex + 1, 
+                defaultTraceAuxillary, updateTraceAuxillary
+            )
             metadata.callCount += 1
             updateFuncSpecificData(metadata.funcSpecificData)
         end
@@ -153,8 +172,10 @@ function updateFuncMetadata(overrideCollection :: Vector{OverrideInfo}, getFuncM
 end
 
 # Updates the metadata information for a stack trace
-function updateStackTraces(stackTraces :: Dict{StackTraces.StackFrame, StackTraceInfo{U}},
-        stackFrameIndex :: Count, defaultTraceAuxillary :: Function, updateTraceAuxillary :: Function
+function updateStackTraces(
+        stackTraces :: Dict{StackTraces.StackFrame, StackTraceInfo{U}},
+        stackFrameIndex :: Count, 
+        defaultTraceAuxillary :: Function, updateTraceAuxillary :: Function
     ) where {U}
     stackFrame = getindex(stacktrace(), stackFrameIndex + 1)
     defaultStackTraceInfo = StackTraceInfo(defaultTraceAuxillary())
@@ -167,13 +188,17 @@ end
 function updateEvalInfo(evalInfo :: EvalInfo, e, m :: Module)
     astIdentifier = updateAstInfo(evalInfo.astHeads, e)
     if astIdentifier == :function
-        if isLambdaFunc(e) # a lambda function (()->1)
+        # a lambda function (()->1)
+        if isLambdaFunc(e)
             evalInfo.funcDefTypes.newFuncCount += 1
-        elseif isLambdaBinding(e) # a variable bound to a lambda function (f=()->1)
+        # a variable bound to a lambda function (f=()->1)
+        elseif isLambdaBinding(e)
             updateMiscCount(evalInfo, e, "Lambda binding used")
-        elseif isAstWithBody(e, :function) && isa(e.args[1], Symbol) # function without body (function f end)
+        # function without body (function f end)
+        elseif isAstWithBody(e, :function) && isa(e.args[1], Symbol)
             evalInfo.funcDefTypes.bodylessFuncCount += 1
-        else # a normal or abreviated definitio ((function f() 1 end) or (f()=1))
+        # a normal or abreviated definitio ((function f() 1 end) or (f()=1))
+        else
             try
                 Core.isdefined(getFuncNameAndModule(e, m)...) ?
                     evalInfo.funcDefTypes.funcRedefCount += 1 :
@@ -190,21 +215,16 @@ function updateAstInfoHelp(astHeads :: AstInfo, astIdentifier :: Symbol)
     updateDictCount(astHeads, astIdentifier)
     astIdentifier
 end
-updateAstInfo(astHeads :: AstInfo, e :: Expr) = updateAstInfoHelp(astHeads, isIrregularFunction(e) ? :function : e.head)
-updateAstInfo(astHeads :: AstInfo, e :: Symbol) = updateAstInfoHelp(astHeads, Symbol(string("Symbol-", e)))
-updateAstInfo(astHeads :: AstInfo, e) = updateAstInfoHelp(astHeads, String(typeof(e)))
+updateAstInfo(astHeads :: AstInfo, e :: Expr) =
+    updateAstInfoHelp(astHeads, isIrregularFunction(e) ? :function : e.head)
+updateAstInfo(astHeads :: AstInfo, e :: Symbol) = 
+    updateAstInfoHelp(astHeads, Symbol(string("Symbol-", e)))
+updateAstInfo(astHeads :: AstInfo, e) =
+    updateAstInfoHelp(astHeads, String(typeof(e)))
 
 # Updates misc count and prints expression that is misc function definition
 function updateMiscCount(evalInfo, e, msg)
     @info msg
     dump(e)
     evalInfo.funcDefTypes.miscCount += 1
-end
-
-# Extracts all expressions from a block, returns the expression if not a block
-function extractExprs(e)
-    if isAstWithBody(e, :block)
-        foldr(((expr, exprs) -> vcat(extractExprs(expr), exprs)),
-            filter(e -> !isa(e, LineNumberNode), e.args); init=[])
-    else [e] end
 end
