@@ -1,29 +1,42 @@
-# Determines if the given expression has the given ast head and a body of at least 1 subexpression
-isAstWithBody(e :: Expr, head :: Symbol) = e.head == head && size(e.args)[1] > 0
-isAstWithBody(e, head :: Symbol) = false
+# AST, Symbol → Bool
+# Determines if the given expression has the given ast head
+# and a body of at least 1 subexpression
+isAstWithBody(e :: Expr,        head :: Symbol) =
+    e.head == head && length(e.args) > 0
+isAstWithBody(@nospecialize(e), head :: Symbol) = false
 
+# AST → Bool
 # Determines if the given expression is an abreviated function definition
 # eg: f() = 1
 isAbreviatedFunc(e :: Expr) =
     isAstWithBody(e, :(=)) &&
-        (isAstWithBody(e.args[1], :call) ||
-            (isAstWithBody(e.args[1], :(::)) &&
-                isAstWithBody(e.args[1].args[1], :call)))
+    (
+        isAstWithBody(e.args[1], :call) ||
+        # f(...) :: ty = ...
+        (isAstWithBody(e.args[1], :(::)) &&
+            isAstWithBody(e.args[1].args[1], :call)) ||
+        # f(...) where T = ...
+        isAstWithBody(e.args[1], :where)
+    )
 
-# Determines if the given expression is an abreviated function definition
-# eg: f = () -> 1
-isLambdaBinding(e :: Expr) =
-    isAstWithBody(e, :(=)) &&
-        (size(e.args)[1] > 1 &&
-            isAstWithBody(e.args[2], :(->)))
-
-# Determines if the given expression is an lambda function
+# AST → Bool
+# Determines if the given expression is a lambda function
 # eg: () -> 1
 isLambdaFunc(e) = isAstWithBody(e, :(->))
 
-# Determines if the given expression is a irregularly defined function
-isIrregularFunction(e) = isAbreviatedFunc(e) || isLambdaBinding(e) || isLambdaFunc(e)
+# AST → Bool
+# Determines if the given expression is an assignment of lambda
+# eg: f = () -> 1
+isLambdaBinding(e :: Expr) =
+    isAstWithBody(e, :(=)) &&
+    (length(e.args) > 1 && isAstWithBody(e.args[2], :(->)))
 
+# AST → Bool
+# Determines if the given expression is an irregularly defined function
+isIrregularFunction(e) = 
+    isAbreviatedFunc(e) || isLambdaBinding(e) || isLambdaFunc(e)
+
+# AST, Module → Module, Symbol
 # Gets the function name and module of the given function definition
 function getFuncNameAndModule(e :: Expr, m :: Module)
     maybeCallExpr = e.args[1]
@@ -38,7 +51,7 @@ function getFuncNameAndModule(e :: Expr, m :: Module)
                 isa(funcDef.args[1], Symbol)
             return (eval(funcDef.args[1]), funcDef.args[2].value)
         end
-    elseif isa(e, Expr) && (size(e.args)[1] > 0)
+    elseif isa(e, Expr) && (length(e.args) > 0)
         return getFuncNameAndModule(maybeCallExpr, m)
     end
     throw(DomainError(e))
