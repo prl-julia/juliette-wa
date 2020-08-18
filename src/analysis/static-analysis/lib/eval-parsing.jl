@@ -195,8 +195,15 @@ isFunDef(e :: Expr) =
     # explicit function definition
     e.head == SYM_FUNC || e.head == SYM_LAM ||
     # short form f(...) = ...
-    e.head == :(=) && (isCall(e.args[1]) || isWhere(e.args[1]))
+    e.head == :(=) && (isCall(e.args[1]) || isWhere(e.args[1]) || 
+        hasASTHead(e.args[1], :(::)))
 isFunDef(@nospecialize e) = false
+
+# AST → Bool
+# Checks if [e] represents an assignment of lambda
+isLambdaAsgn(e :: Expr) =
+    e.head == :(=) && length(e.args) > 1 && hasASTHead(e.args[2], SYM_LAM)
+isLambdaAsgn(@nospecialize e) = false
 
 # AST → Bool
 # Checks if [e] looks like eval def with parameters rather than a call to eval.
@@ -321,7 +328,7 @@ argDescrUnsafe(arg :: Expr,      inFunDef::Bool) =
     if arg.head == :quote
         argDescrUnsafe(arg.args[1], inFunDef)
     # let's count anonymous functions separately
-    elseif arg.head == SYM_LAM
+    elseif (arg.head == SYM_LAM) || isLambdaAsgn(arg)
         [EvalCallInfo(SYM_LAM, inFunDef)]
     # captures the case where [=] means function definition
     elseif isFunDef(arg)
