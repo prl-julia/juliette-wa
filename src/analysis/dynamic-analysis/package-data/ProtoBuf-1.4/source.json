@@ -1,0 +1,192 @@
+{
+  "eval_info": {
+    "call_count": 13190,
+    "stack_traces": [
+      {
+        "count": 13148,
+        "last_call": "eval at ProtoBuf.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 7401,
+              "ast_head": "read_varint"
+            },
+            {
+              "count": 1491,
+              "ast_head": "read_string"
+            },
+            {
+              "count": 1144,
+              "ast_head": "write_varint"
+            },
+            {
+              "count": 604,
+              "ast_head": "write_fixed"
+            },
+            {
+              "count": 604,
+              "ast_head": "read_fixed"
+            },
+            {
+              "count": 441,
+              "ast_head": "readproto"
+            },
+            {
+              "count": 400,
+              "ast_head": "write_svarint"
+            },
+            {
+              "count": 400,
+              "ast_head": "read_svarint"
+            },
+            {
+              "count": 340,
+              "ast_head": "writeproto"
+            },
+            {
+              "count": 106,
+              "ast_head": "read_bool"
+            },
+            {
+              "count": 106,
+              "ast_head": "write_bool"
+            },
+            {
+              "count": 101,
+              "ast_head": "write_string"
+            },
+            {
+              "count": 8,
+              "ast_head": "read_map"
+            },
+            {
+              "count": 2,
+              "ast_head": "read_bytes"
+            }
+          ]
+        }
+      },
+      {
+        "count": 40,
+        "last_call": "call_method(::ProtoService, ::MethodDescriptor, ::TestRpcController, ::BinaryOpReq) at svc.jl:74",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 20,
+              "ast_head": "Mul"
+            },
+            {
+              "count": 20,
+              "ast_head": "Add"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "meta(::Type{T} where T, ::Array{Symbol,1}, ::Array{Int64,1}, ::Dict{Symbol,Any}, ::Bool, ::Array{Symbol,1}, ::Dict{Symbol,Symbol}, ::Array{Int64,1}, ::Array{Symbol,1}, ::Dict{Symbol,String}) at codec.jl:569",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "ListValue"
+            },
+            {
+              "count": 1,
+              "ast_head": "curly"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 7401,
+          "ast_head": "read_varint"
+        },
+        {
+          "count": 1491,
+          "ast_head": "read_string"
+        },
+        {
+          "count": 1144,
+          "ast_head": "write_varint"
+        },
+        {
+          "count": 604,
+          "ast_head": "write_fixed"
+        },
+        {
+          "count": 604,
+          "ast_head": "read_fixed"
+        },
+        {
+          "count": 441,
+          "ast_head": "readproto"
+        },
+        {
+          "count": 400,
+          "ast_head": "write_svarint"
+        },
+        {
+          "count": 400,
+          "ast_head": "read_svarint"
+        },
+        {
+          "count": 340,
+          "ast_head": "writeproto"
+        },
+        {
+          "count": 106,
+          "ast_head": "read_bool"
+        },
+        {
+          "count": 106,
+          "ast_head": "write_bool"
+        },
+        {
+          "count": 101,
+          "ast_head": "write_string"
+        },
+        {
+          "count": 20,
+          "ast_head": "Add"
+        },
+        {
+          "count": 20,
+          "ast_head": "Mul"
+        },
+        {
+          "count": 8,
+          "ast_head": "read_map"
+        },
+        {
+          "count": 2,
+          "ast_head": "read_bytes"
+        },
+        {
+          "count": 1,
+          "ast_head": "curly"
+        },
+        {
+          "count": 1,
+          "ast_head": "ListValue"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}
