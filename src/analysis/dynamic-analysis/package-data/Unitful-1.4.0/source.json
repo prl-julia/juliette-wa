@@ -1,0 +1,92 @@
+{
+  "eval_info": {
+    "call_count": 59,
+    "stack_traces": [
+      {
+        "count": 28,
+        "last_call": "superscript(::Rational{Int64}) at display.jl:205",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 28,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 21,
+        "last_call": "top-level scope at runtests.jl:230",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 21,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 11,
+        "last_call": "eval at Unitful.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 6,
+              "ast_head": "call"
+            },
+            {
+              "count": 1,
+              "ast_head": "tuple"
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "top-level scope at runtests.jl:222",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 3,
+              "ast_head": "for"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 34,
+          "ast_head": "call"
+        },
+        {
+          "count": 21,
+          "ast_head": "block"
+        },
+        {
+          "count": 3,
+          "ast_head": "for"
+        },
+        {
+          "count": 1,
+          "ast_head": "tuple"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

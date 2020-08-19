@@ -1,0 +1,1022 @@
+{
+  "eval_info": {
+    "call_count": 23675,
+    "stack_traces": [
+      {
+        "count": 21101,
+        "last_call": "maybe_evaluate_builtin(::Frame, ::Expr, ::Bool) at builtins.jl:233",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 21101,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1071,
+        "last_call": "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:504",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1071,
+              "ast_head": "global"
+            }
+          ]
+        }
+      },
+      {
+        "count": 750,
+        "last_call": "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:490",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 750,
+              "ast_head": "const"
+            }
+          ]
+        }
+      },
+      {
+        "count": 501,
+        "last_call": "do_assignment!(::Frame, ::Any, ::Any) at interpret.jl:352",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 501,
+              "ast_head": "="
+            }
+          ]
+        }
+      },
+      {
+        "count": 71,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:331",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 71,
+              "ast_head": "tuple"
+            }
+          ]
+        }
+      },
+      {
+        "count": 71,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:360",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 71,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 66,
+        "last_call": "evaluate_methoddef(::Frame, ::Expr) at interpret.jl:268",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 66,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 9,
+        "last_call": "eval at JuliaInterpreter.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 9,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": "evaluate_call_recurse!(::Any, ::Frame, ::Expr; enter_generated::Bool) at interpret.jl:210",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 4,
+              "ast_head": "block"
+            },
+            {
+              "count": 1,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": "split_expressions!(::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Expr; extract_docexprs::Bool, filename::String) at construct.jl:447",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 5,
+              "ast_head": "module"
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at toplevel_script.jl:124",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 4,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": "prepare_thunk(::Module, ::Expr, ::Bool; eval::Bool) at construct.jl:365",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "global"
+            },
+            {
+              "count": 1,
+              "ast_head": "using"
+            },
+            {
+              "count": 1,
+              "ast_head": "import"
+            },
+            {
+              "count": 1,
+              "ast_head": "export"
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:481",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 3,
+              "ast_head": "export"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:330",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "where"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "top-level scope at toplevel_script.jl:115",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "top-level scope at toplevel_script.jl:112",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "top-level scope at toplevel_script.jl:109",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "top-level scope at toplevel_script.jl:106",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "top-level scope at toplevel_script.jl:103",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at toplevel_script.jl:119",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "evaluate_foreigncall(::Frame, ::Expr) at interpret.jl:167",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "foreigncall"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 21111,
+          "ast_head": "call"
+        },
+        {
+          "count": 1072,
+          "ast_head": "global"
+        },
+        {
+          "count": 750,
+          "ast_head": "const"
+        },
+        {
+          "count": 501,
+          "ast_head": "="
+        },
+        {
+          "count": 152,
+          "ast_head": "function"
+        },
+        {
+          "count": 71,
+          "ast_head": "tuple"
+        },
+        {
+          "count": 5,
+          "ast_head": "module"
+        },
+        {
+          "count": 4,
+          "ast_head": "block"
+        },
+        {
+          "count": 4,
+          "ast_head": "export"
+        },
+        {
+          "count": 2,
+          "ast_head": "where"
+        },
+        {
+          "count": 1,
+          "ast_head": "import"
+        },
+        {
+          "count": 1,
+          "ast_head": "foreigncall"
+        },
+        {
+          "count": 1,
+          "ast_head": "using"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 80,
+        "bodylessFuncCount": 66,
+        "funcRedefCount": 6,
+        "miscCount": 0
+      }
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 116131,
+    "stack_traces": [
+      {
+        "count": 115499,
+        "last_call": "bypass_builtins(::Frame, ::Expr, ::Int64) at interpret.jl:179",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##compiledcall#285",
+              "count": 21101
+            },
+            {
+              "function_name": "##compiledcall#284",
+              "count": 21101
+            },
+            {
+              "function_name": "##compiledcall#283",
+              "count": 21101
+            },
+            {
+              "function_name": "##compiledcall#258",
+              "count": 9426
+            },
+            {
+              "function_name": "##compiledcall#375",
+              "count": 6132
+            },
+            {
+              "function_name": "##compiledcall#286",
+              "count": 4594
+            },
+            {
+              "function_name": "##compiledcall#253",
+              "count": 4591
+            },
+            {
+              "function_name": "##compiledcall#380",
+              "count": 3672
+            },
+            {
+              "function_name": "##compiledcall#376",
+              "count": 3066
+            },
+            {
+              "function_name": "##compiledcall#374",
+              "count": 2792
+            },
+            {
+              "function_name": "##compiledcall#381",
+              "count": 2721
+            },
+            {
+              "function_name": "##compiledcall#378",
+              "count": 1516
+            },
+            {
+              "function_name": "##compiledcall#377",
+              "count": 1516
+            },
+            {
+              "function_name": "##compiledcall#298",
+              "count": 1388
+            },
+            {
+              "function_name": "##compiledcall#379",
+              "count": 1224
+            },
+            {
+              "function_name": "##compiledcall#272",
+              "count": 934
+            },
+            {
+              "function_name": "##compiledcall#259",
+              "count": 906
+            },
+            {
+              "function_name": "##compiledcall#276",
+              "count": 680
+            },
+            {
+              "function_name": "##compiledcall#271",
+              "count": 634
+            },
+            {
+              "function_name": "##compiledcall#260",
+              "count": 624
+            },
+            {
+              "function_name": "##compiledcall#262",
+              "count": 624
+            },
+            {
+              "function_name": "##compiledcall#382",
+              "count": 618
+            },
+            {
+              "function_name": "##compiledcall#257",
+              "count": 597
+            },
+            {
+              "function_name": "##compiledcall#261",
+              "count": 591
+            },
+            {
+              "function_name": "##compiledcall#263",
+              "count": 581
+            },
+            {
+              "function_name": "##compiledcall#264",
+              "count": 581
+            },
+            {
+              "function_name": "##compiledcall#255",
+              "count": 487
+            },
+            {
+              "function_name": "##compiledcall#266",
+              "count": 307
+            },
+            {
+              "function_name": "##compiledcall#265",
+              "count": 307
+            },
+            {
+              "function_name": "##compiledcall#297",
+              "count": 301
+            },
+            {
+              "function_name": "##compiledcall#254",
+              "count": 177
+            },
+            {
+              "function_name": "##compiledcall#330",
+              "count": 158
+            },
+            {
+              "function_name": "##compiledcall#256",
+              "count": 153
+            },
+            {
+              "function_name": "##compiledcall#280",
+              "count": 56
+            },
+            {
+              "function_name": "##compiledcall#299",
+              "count": 33
+            },
+            {
+              "function_name": "##compiledcall#363",
+              "count": 30
+            },
+            {
+              "function_name": "##compiledcall#322",
+              "count": 30
+            },
+            {
+              "function_name": "##compiledcall#295",
+              "count": 17
+            },
+            {
+              "function_name": "##compiledcall#291",
+              "count": 12
+            },
+            {
+              "function_name": "##compiledcall#287",
+              "count": 12
+            },
+            {
+              "function_name": "##compiledcall#281",
+              "count": 10
+            },
+            {
+              "function_name": "##compiledcall#282",
+              "count": 10
+            },
+            {
+              "function_name": "##compiledcall#278",
+              "count": 8
+            },
+            {
+              "function_name": "##compiledcall#277",
+              "count": 8
+            },
+            {
+              "function_name": "##compiledcall#273",
+              "count": 7
+            },
+            {
+              "function_name": "##compiledcall#289",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#290",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#294",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#292",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#288",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#279",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#293",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#315",
+              "count": 3
+            },
+            {
+              "function_name": "##compiledcall#383",
+              "count": 2
+            },
+            {
+              "function_name": "##compiledcall#323",
+              "count": 2
+            },
+            {
+              "function_name": "##compiledcall#364",
+              "count": 2
+            },
+            {
+              "function_name": "##compiledcall#365",
+              "count": 2
+            },
+            {
+              "function_name": "##compiledcall#320",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#312",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#310",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#311",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#314",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#316",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#319",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#274",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#321",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#275",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#313",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#317",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 611,
+        "last_call": "evaluate_call_recurse!(::Any, ::Frame, ::Expr; enter_generated::Bool) at interpret.jl:229",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "unsafe_store!",
+              "count": 300
+            },
+            {
+              "function_name": "print",
+              "count": 213
+            },
+            {
+              "function_name": "objectid",
+              "count": 80
+            },
+            {
+              "function_name": "inttype",
+              "count": 14
+            },
+            {
+              "function_name": "Base.Threads.SpinLock",
+              "count": 1
+            },
+            {
+              "function_name": "unlock",
+              "count": 1
+            },
+            {
+              "function_name": "threadid",
+              "count": 1
+            },
+            {
+              "function_name": "lock",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 10,
+        "last_call": "signatures_at(::Base.PkgId, ::String, ::Int64) at CodeTracking.jl:175",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "get_expressions",
+              "count": 10
+            }
+          ]
+        }
+      },
+      {
+        "count": 8,
+        "last_call": "definition(::Type{Expr}, ::Method) at CodeTracking.jl:248",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "get_def",
+              "count": 8
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "whereis(::Method) at CodeTracking.jl:63",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "get_def",
+              "count": 3
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "##compiledcall#285",
+          "count": 21101
+        },
+        {
+          "function_name": "##compiledcall#284",
+          "count": 21101
+        },
+        {
+          "function_name": "##compiledcall#283",
+          "count": 21101
+        },
+        {
+          "function_name": "##compiledcall#258",
+          "count": 9426
+        },
+        {
+          "function_name": "##compiledcall#375",
+          "count": 6132
+        },
+        {
+          "function_name": "##compiledcall#286",
+          "count": 4594
+        },
+        {
+          "function_name": "##compiledcall#253",
+          "count": 4591
+        },
+        {
+          "function_name": "##compiledcall#380",
+          "count": 3672
+        },
+        {
+          "function_name": "##compiledcall#376",
+          "count": 3066
+        },
+        {
+          "function_name": "##compiledcall#374",
+          "count": 2792
+        },
+        {
+          "function_name": "##compiledcall#381",
+          "count": 2721
+        },
+        {
+          "function_name": "##compiledcall#378",
+          "count": 1516
+        },
+        {
+          "function_name": "##compiledcall#377",
+          "count": 1516
+        },
+        {
+          "function_name": "##compiledcall#298",
+          "count": 1388
+        },
+        {
+          "function_name": "##compiledcall#379",
+          "count": 1224
+        },
+        {
+          "function_name": "##compiledcall#272",
+          "count": 934
+        },
+        {
+          "function_name": "##compiledcall#259",
+          "count": 906
+        },
+        {
+          "function_name": "##compiledcall#276",
+          "count": 680
+        },
+        {
+          "function_name": "##compiledcall#271",
+          "count": 634
+        },
+        {
+          "function_name": "##compiledcall#260",
+          "count": 624
+        },
+        {
+          "function_name": "##compiledcall#262",
+          "count": 624
+        },
+        {
+          "function_name": "##compiledcall#382",
+          "count": 618
+        },
+        {
+          "function_name": "##compiledcall#257",
+          "count": 597
+        },
+        {
+          "function_name": "##compiledcall#261",
+          "count": 591
+        },
+        {
+          "function_name": "##compiledcall#263",
+          "count": 581
+        },
+        {
+          "function_name": "##compiledcall#264",
+          "count": 581
+        },
+        {
+          "function_name": "##compiledcall#255",
+          "count": 487
+        },
+        {
+          "function_name": "##compiledcall#266",
+          "count": 307
+        },
+        {
+          "function_name": "##compiledcall#265",
+          "count": 307
+        },
+        {
+          "function_name": "##compiledcall#297",
+          "count": 301
+        },
+        {
+          "function_name": "unsafe_store!",
+          "count": 300
+        },
+        {
+          "function_name": "print",
+          "count": 213
+        },
+        {
+          "function_name": "##compiledcall#254",
+          "count": 177
+        },
+        {
+          "function_name": "##compiledcall#330",
+          "count": 158
+        },
+        {
+          "function_name": "##compiledcall#256",
+          "count": 153
+        },
+        {
+          "function_name": "objectid",
+          "count": 80
+        },
+        {
+          "function_name": "##compiledcall#280",
+          "count": 56
+        },
+        {
+          "function_name": "##compiledcall#299",
+          "count": 33
+        },
+        {
+          "function_name": "##compiledcall#363",
+          "count": 30
+        },
+        {
+          "function_name": "##compiledcall#322",
+          "count": 30
+        },
+        {
+          "function_name": "##compiledcall#295",
+          "count": 17
+        },
+        {
+          "function_name": "inttype",
+          "count": 14
+        },
+        {
+          "function_name": "##compiledcall#291",
+          "count": 12
+        },
+        {
+          "function_name": "##compiledcall#287",
+          "count": 12
+        },
+        {
+          "function_name": "get_def",
+          "count": 11
+        },
+        {
+          "function_name": "##compiledcall#281",
+          "count": 10
+        },
+        {
+          "function_name": "##compiledcall#282",
+          "count": 10
+        },
+        {
+          "function_name": "get_expressions",
+          "count": 10
+        },
+        {
+          "function_name": "##compiledcall#278",
+          "count": 8
+        },
+        {
+          "function_name": "##compiledcall#277",
+          "count": 8
+        },
+        {
+          "function_name": "##compiledcall#273",
+          "count": 7
+        },
+        {
+          "function_name": "##compiledcall#289",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#290",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#294",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#292",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#288",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#279",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#293",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#315",
+          "count": 3
+        },
+        {
+          "function_name": "##compiledcall#383",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#323",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#364",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#365",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#320",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#312",
+          "count": 1
+        },
+        {
+          "function_name": "Base.Threads.SpinLock",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#310",
+          "count": 1
+        },
+        {
+          "function_name": "unlock",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#311",
+          "count": 1
+        },
+        {
+          "function_name": "threadid",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#314",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#316",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#319",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#274",
+          "count": 1
+        },
+        {
+          "function_name": "lock",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#321",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#275",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#313",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#317",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

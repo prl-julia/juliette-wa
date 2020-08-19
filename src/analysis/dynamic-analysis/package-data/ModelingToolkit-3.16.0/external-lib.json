@@ -1,0 +1,170 @@
+{
+  "eval_info": {
+    "call_count": 151,
+    "stack_traces": [
+      {
+        "count": 66,
+        "last_call": "eval(::Expr) at SafeTestsets.jl:23",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 48,
+              "ast_head": "block"
+            },
+            {
+              "count": 17,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 41,
+        "last_call": "eval at DiffEqBase.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 41,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 17,
+        "last_call": "eval at ArrayInterface.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 17,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 12,
+        "last_call": "top-level scope at SafeTestsets.jl:23",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 12,
+              "ast_head": "module"
+            }
+          ]
+        }
+      },
+      {
+        "count": 12,
+        "last_call": "eval at SafeTestsets.jl:23 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 12,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": "eval at Latexify.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 4,
+              "ast_head": "block"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 110,
+          "ast_head": "block"
+        },
+        {
+          "count": 29,
+          "ast_head": "function"
+        },
+        {
+          "count": 12,
+          "ast_head": "module"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 29,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 20,
+    "stack_traces": [
+      {
+        "count": 17,
+        "last_call": "solve_call(::DiffEqBase.ODEProblem{Array{Float64,1},Tuple{Float64,Float64},true,Array{Float64,1},DiffEqBase.ODEFunction{true,DiffEqBase.EvalFunc{ModelingToolkit.var\"#f#166\"{ModelingToolkit.var\"#464#465\",ModelingToolkit.var\"#466#467\"}},Array{Float64,2},Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Nothing,Array{Symbol,1},Nothing},Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}},DiffEqBase.StandardODEProblem}, ::OrdinaryDiffEq.Rodas5{0,true,DiffEqBase.DefaultLinSolve,DataType}; merge_callbacks::Bool, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at solve.jl:90",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "__solve",
+              "count": 17
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:69",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "__solve",
+          "count": 17
+        },
+        {
+          "function_name": "do_artifact_str",
+          "count": 3
+        }
+      ]
+    }
+  }
+}
