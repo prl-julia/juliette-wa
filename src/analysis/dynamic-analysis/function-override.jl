@@ -1,6 +1,5 @@
 include("../../utils/lib.jl")
 include("ast-parse-helpers.jl")
-import Core: eval, invokelatest
 
 ##############################
 # Domain Object Definitions
