@@ -220,7 +220,7 @@ updateAstInfo(astHeads :: AstInfo, e :: Expr) =
 updateAstInfo(astHeads :: AstInfo, e :: Symbol) =
     updateAstInfoHelp(astHeads, Symbol(string("Symbol-", e)))
 updateAstInfo(astHeads :: AstInfo, e) =
-    updateAstInfoHelp(astHeads, String(typeof(e)))
+    updateAstInfoHelp(astHeads, Symbol(typeof(e)))
 
 # Updates misc count and prints expression that is misc function definition
 function updateMiscCount(evalInfo, e, msg)
