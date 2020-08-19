@@ -103,6 +103,7 @@ overrideCollection = [
 ########################
 
 # Overrides eval to store metadata about calls to the function
+Base.eval(@nospecialize(e)) = Core.eval(Main, e)
 function Core.eval(m::Module, @nospecialize(e))
     # aux functions
     updateEvalInfoWrap(evalInfo :: EvalInfo) = updateEvalInfo(evalInfo, e, m)
