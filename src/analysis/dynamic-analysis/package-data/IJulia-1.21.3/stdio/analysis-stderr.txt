@@ -1,0 +1,51 @@
+   Updating registry at `C:\Users\gelin\.julia\registries\General`
+   Updating git-repo `https://github.com/JuliaRegistries/General.git`
+  Resolving package versions...
+   Updating `C:\Users\gelin\AppData\Local\Temp\jl_ggpilA\Project.toml`
+ [no changes]
+   Updating `C:\Users\gelin\AppData\Local\Temp\jl_ggpilA\Manifest.toml`
+ [no changes]
+[ Info: Installing ijuliatest kernelspec in C:\Users\gelin\AppData\Roaming\jupyter\kernels\Yef1rLr4kXKxq9rbEh3m-1.4
+   Updating registry at `C:\Users\gelin\.julia\registries\General`
+   Updating git-repo `https://github.com/JuliaRegistries/General.git`
+  Resolving package versions...
+   Updating `C:\Users\gelin\.julia\environments\v1.4\Project.toml`
+ [no changes]
+   Updating `C:\Users\gelin\.julia\environments\v1.4\Manifest.toml`
+ [no changes]
+┌ Warning: Pkg.installed() is deprecated
+└ @ Pkg D:\buildbot\worker\package_win64\build\usr\share\julia\stdlib\v1.4\Pkg\src\Pkg.jl:531
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+    Testing IJulia
+Status `C:\Users\gelin\AppData\Local\Temp\jl_ggpilA\Manifest.toml`
+  [8f4d0f93] Conda v1.4.1
+  [7073ff75] IJulia v1.21.3
+  [682c06a0] JSON v0.21.0
+  [739be429] MbedTLS v1.0.2
+  [c8ffd9c3] MbedTLS_jll v2.16.6+1
+  [69de0a69] Parsers v1.0.7
+  [b85f4697] SoftGlobalScope v1.1.0
+  [81def892] VersionParsing v1.2.0
+  [c2297ded] ZMQ v1.2.1
+  [8f1865be] ZeroMQ_jll v4.3.2+4
+  [2a0f44e3] Base64 
+  [ade2ca70] Dates 
+  [8ba89e20] Distributed 
+  [7b1f6079] FileWatching 
+  [b77e0a4c] InteractiveUtils 
+  [76f85450] LibGit2 
+  [8f399da3] Libdl 
+  [56ddb016] Logging 
+  [d6f4376e] Markdown 
+  [a63ad114] Mmap 
+  [44cfe95a] Pkg 
+  [de0858da] Printf 
+  [3fa0cd96] REPL 
+  [9a3f8284] Random 
+  [ea8e919c] SHA 
+  [9e88b42a] Serialization 
+  [6462fe0b] Sockets 
+  [8dfed614] Test 
+  [cf7118a7] UUIDs 
+  [4ec0a83e] Unicode 
+    Testing IJulia tests passed 

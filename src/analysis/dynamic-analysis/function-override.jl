@@ -103,7 +103,6 @@ overrideCollection = [
 ########################
 
 # Overrides eval to store metadata about calls to the function
-Base.eval(@nospecialize(e)) = Core.eval(Main, e)
 function Core.eval(m::Module, @nospecialize(e))
     # aux functions
     updateEvalInfoWrap(evalInfo :: EvalInfo) = updateEvalInfo(evalInfo, e, m)
@@ -118,7 +117,13 @@ function Core.eval(m::Module, @nospecialize(e))
     end
 
     # Original eval code
-    ccall(:jl_toplevel_eval_in, Any, (Any, Any), m, e)
+    try
+    	ccall(:jl_toplevel_eval_in, Any, (Any, Any), m, e)
+    catch e
+        if !(isa(e,ErrorException) && e.msg == "error in method definition: function Core.eval must be explicitly imported to be extended")
+          throw(e)
+        end
+    end
 end
 
 # Overrides invokelatest to store metadata about calls to the function
@@ -225,7 +230,7 @@ updateAstInfo(astHeads :: AstInfo, e) =
 
 # Updates misc count and prints expression that is misc function definition
 function updateMiscCount(evalInfo, e, msg)
-    @info msg
-    dump(e)
+    # @info msg
+    # dump(e)
     evalInfo.funcDefTypes.miscCount += 1
 end

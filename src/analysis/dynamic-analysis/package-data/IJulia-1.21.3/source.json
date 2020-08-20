@@ -4,36 +4,12 @@
     "stack_traces": [
       {
         "count": 2,
-        "last_call": "docdict(::String) at handlers.jl:191",
+        "last_call": "docdict(::String) at handlers.jl:192",
         "auxillary": {
           "ast_heads": [
             {
               "count": 2,
               "ast_head": "call"
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "redirect_stdout(::IJulia.IJuliaStdio{IOStream}) at stdio.jl:31",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 1,
-              "ast_head": "="
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "redirect_stdin(::IJulia.IJuliaStdio{IOStream}) at stdio.jl:31",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 1,
-              "ast_head": "="
             }
           ]
         }
@@ -52,7 +28,31 @@
       },
       {
         "count": 1,
+        "last_call": "redirect_stdin(::IJulia.IJuliaStdio{IOStream}) at stdio.jl:31",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "="
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
         "last_call": "redirect_stderr(::IJulia.IJuliaStdio{IOStream}) at stdio.jl:31",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "="
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "redirect_stdout(::IJulia.IJuliaStdio{IOStream}) at stdio.jl:31",
         "auxillary": {
           "ast_heads": [
             {
@@ -91,7 +91,7 @@
     "stack_traces": [
       {
         "count": 1,
-        "last_call": "(::IJulia.var\"#35#36\")(::Base.GenericIOBuffer{Array{UInt8,1}}, ::UndefVarError, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at display.jl:156",
+        "last_call": "(::IJulia.var\"#35#36\")(::Base.GenericIOBuffer{Array{UInt8,1}}, ::UndefVarError, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at display.jl:162",
         "auxillary": {
           "function_names": [
             {

@@ -1,14 +1,14 @@
 {
   "eval_info": {
-    "call_count": 328,
+    "call_count": 244,
     "stack_traces": [
       {
-        "count": 186,
+        "count": 102,
         "last_call": "eval at Weave.jl:1 [inlined]",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 186,
+              "count": 102,
               "ast_head": "tuple"
             }
           ]
@@ -76,7 +76,7 @@
       },
       {
         "count": 1,
-        "last_call": "top-level scope at test_header.jl:76",
+        "last_call": "top-level scope at test_header.jl:67",
         "auxillary": {
           "ast_heads": [
             {
@@ -100,6 +100,30 @@
       },
       {
         "count": 1,
+        "last_call": "top-level scope at test_meta.jl:38",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "module"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at test_module.jl:29",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "="
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
         "last_call": "top-level scope at test_module.jl:34",
         "auxillary": {
           "ast_heads": [
@@ -112,7 +136,7 @@
       },
       {
         "count": 1,
-        "last_call": "top-level scope at test_header.jl:67",
+        "last_call": "top-level scope at test_header.jl:76",
         "auxillary": {
           "ast_heads": [
             {
@@ -125,18 +149,6 @@
       {
         "count": 1,
         "last_call": "top-level scope at test_module.jl:28",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 1,
-              "ast_head": "module"
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "top-level scope at test_meta.jl:38",
         "auxillary": {
           "ast_heads": [
             {
@@ -169,24 +181,12 @@
             }
           ]
         }
-      },
-      {
-        "count": 1,
-        "last_call": "top-level scope at test_module.jl:29",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 1,
-              "ast_head": "="
-            }
-          ]
-        }
       }
     ],
     "func_specific_data": {
       "ast_heads": [
         {
-          "count": 186,
+          "count": 102,
           "ast_head": "tuple"
         },
         {
