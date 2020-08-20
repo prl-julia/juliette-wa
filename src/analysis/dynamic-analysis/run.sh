@@ -29,6 +29,6 @@ do
     outputDir=package-data/$pkg-$pkgVersion
     stdioOutputDir=$outputDir/stdio
     mkdir -p $stdioOutputDir
-    julia analyze-package $pkg 1>$stdioOutputDir/analysis-stdout.txt 2>$stdioOutputDir/analysis-stderr.txt
-    julia test-package $pkg 1>$stdioOutputDir/test-stdout.txt 2>$stdioOutputDir/test-stderr.txt
+    julia analyze-package.jl $pkg 1>$stdioOutputDir/analysis-stdout.txt 2>$stdioOutputDir/analysis-stderr.txt
+    julia test-package.jl $pkg 1>$stdioOutputDir/test-stdout.txt 2>$stdioOutputDir/test-stderr.txt
 done
