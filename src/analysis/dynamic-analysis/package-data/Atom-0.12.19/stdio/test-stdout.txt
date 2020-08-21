@@ -1,0 +1,32 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+Test Summary:  | Pass  Total
+path utilities |   21     21
+Test Summary:     | Pass  Total
+REPL path finding |   14     14
+Test Summary:        | Pass  Total
+finding dev packages |    1      1
+Test Summary:        | Pass  Total
+finding project file |    8      8
+Test Summary: | Pass  Total
+Undefined     |    2      2
+Test Summary: | Pass  Total
+get utilities |   10     10
+Test Summary: | Pass  Total
+is utilities  |    6      6
+Test Summary:    | Pass  Total
+string utilities |    8      8
+Test Summary:          | Pass  Total
+basic message handling |    6      6
+Test Summary: | Pass  Total
+Display       |   14     14
+Test Summary:   | Pass  Total
+static analysis |  126    126
+environment: Test Failed at /home/jack/.julia/packages/Atom/ipSjf/test/environments.jl:19
+  Expression: Atom.project_info() in prjs.projects
+   Evaluated: (name = "Atom", path = "/home/jack/.julia/packages/Atom/ipSjf/Project.toml") in NamedTuple{(:name, :path),Tuple{String,String}}[(name = "Mads", path = "/home/jack/.julia/packages/Mads/6Fc5K/Project.toml"), (name = "jl_crBn2l", path = "/tmp/jl_crBn2l/Project.toml"), (name = "jl_RCVfMF", path = "/tmp/jl_RCVfMF/Project.toml"), (name = "jl_ppB0vD", path = "/tmp/jl_ppB0vD/Project.toml"), (name = "jl_qpbJl8", path = "/tmp/jl_qpbJl8/Project.toml"), (name = "jl_WXxyj6", path = "/tmp/jl_WXxyj6/Project.toml"), (name = "@v1.5", path = "/home/jack/.julia/environments/v1.5/Project.toml"), (name = "jl_hhGMBj", path = "/tmp/jl_hhGMBj/Project.toml"), (name = "Modia", path = "/home/jack/.julia/packages/Modia/D0Mdu/Project.toml"), (name = "jl_GF5xL9", path = "/tmp/jl_GF5xL9/Project.toml")]
+Stacktrace:
+ [1] top-level scope at /home/jack/.julia/packages/Atom/ipSjf/test/environments.jl:19
+ [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/jack/.julia/packages/Atom/ipSjf/test/environments.jl:2
+Test Summary: | Pass  Fail  Total
+environment   |    4     1      5

@@ -1,14 +1,14 @@
 {
   "eval_info": {
-    "call_count": 222574,
+    "call_count": 224402,
     "stack_traces": [
       {
-        "count": 222564,
+        "count": 224392,
         "last_call": "eval at Formatting.jl:1 [inlined]",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 222564,
+              "count": 224392,
               "ast_head": "call"
             }
           ]
@@ -30,7 +30,7 @@
     "func_specific_data": {
       "ast_heads": [
         {
-          "count": 222564,
+          "count": 224392,
           "ast_head": "call"
         },
         {
@@ -47,16 +47,16 @@
     }
   },
   "invokelatest_info": {
-    "call_count": 222563,
+    "call_count": 224392,
     "stack_traces": [
       {
-        "count": 222563,
+        "count": 224392,
         "last_call": "(::Formatting.var\"#1#4\")(::Float64) at cformat.jl:19",
         "auxillary": {
           "function_names": [
             {
               "function_name": "#25",
-              "count": 132563
+              "count": 134392
             },
             {
               "function_name": "#17",
@@ -102,7 +102,7 @@
       "function_names": [
         {
           "function_name": "#25",
-          "count": 132563
+          "count": 134392
         },
         {
           "function_name": "#17",

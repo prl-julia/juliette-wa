@@ -1,0 +1,52 @@
+{
+  "eval_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 2,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:69",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "do_artifact_str",
+          "count": 2
+        }
+      ]
+    }
+  }
+}
