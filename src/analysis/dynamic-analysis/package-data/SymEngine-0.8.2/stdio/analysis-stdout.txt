@@ -1,0 +1,3 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+(1/2)*x - 5*x*y + x^2
+1/2 + 2*x - 5*y

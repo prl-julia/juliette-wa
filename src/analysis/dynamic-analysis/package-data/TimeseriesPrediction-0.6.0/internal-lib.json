@@ -1,0 +1,94 @@
+{
+  "eval_info": {
+    "call_count": 1,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "initmeta(::Module) at Docs.jl:79",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "const"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 1,
+          "ast_head": "const"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 38,
+    "stack_traces": [
+      {
+        "count": 35,
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 35
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "foreach at abstractarray.jl:2009 [inlined]",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#498",
+              "count": 1
+            },
+            {
+              "function_name": "#21",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "require(::Base.PkgId) at loading.jl:931",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "loadpkg",
+          "count": 36
+        },
+        {
+          "function_name": "#498",
+          "count": 1
+        },
+        {
+          "function_name": "#21",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

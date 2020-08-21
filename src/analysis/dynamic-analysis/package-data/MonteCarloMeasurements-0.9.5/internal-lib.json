@@ -1,0 +1,100 @@
+{
+  "eval_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 105,
+    "stack_traces": [
+      {
+        "count": 93,
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 93
+            }
+          ]
+        }
+      },
+      {
+        "count": 7,
+        "last_call": "require(::Base.PkgId) at loading.jl:931",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 7
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": "foreach at abstractarray.jl:2009 [inlined]",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#501",
+              "count": 1
+            },
+            {
+              "function_name": "#200",
+              "count": 1
+            },
+            {
+              "function_name": "#21",
+              "count": 1
+            },
+            {
+              "function_name": "#194",
+              "count": 1
+            },
+            {
+              "function_name": "#197",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "loadpkg",
+          "count": 100
+        },
+        {
+          "function_name": "#501",
+          "count": 1
+        },
+        {
+          "function_name": "#200",
+          "count": 1
+        },
+        {
+          "function_name": "#21",
+          "count": 1
+        },
+        {
+          "function_name": "#194",
+          "count": 1
+        },
+        {
+          "function_name": "#197",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

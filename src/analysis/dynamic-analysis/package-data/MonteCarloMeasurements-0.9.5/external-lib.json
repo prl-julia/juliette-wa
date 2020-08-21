@@ -1,0 +1,354 @@
+{
+  "eval_info": {
+    "call_count": 108,
+    "stack_traces": [
+      {
+        "count": 57,
+        "last_call": "eval at DiffEqBase.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 57,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 24,
+        "last_call": "superscript(::Rational{Int64}) at display.jl:205",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 24,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 17,
+        "last_call": "eval at ArrayInterface.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 17,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 6,
+        "last_call": "eval at Measurements.jl:22 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 6,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at special-functions.jl:143",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 4,
+              "ast_head": "block"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 84,
+          "ast_head": "block"
+        },
+        {
+          "count": 24,
+          "ast_head": "call"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 45,
+    "stack_traces": [
+      {
+        "count": 25,
+        "last_call": "_plot_setup(::Plots.Plot{Plots.GRBackend}, ::Dict{Symbol,Any}, ::Array{Dict{Symbol,Any},1}) at pipeline.jl:185",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "_create_backend_figure",
+              "count": 25
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:69",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:32",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:59",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:59",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:59",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:57",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:215",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:29",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:73",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:41",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:30",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:59",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "_create_backend_figure",
+          "count": 25
+        },
+        {
+          "function_name": "do_artifact_str",
+          "count": 20
+        }
+      ]
+    }
+  }
+}

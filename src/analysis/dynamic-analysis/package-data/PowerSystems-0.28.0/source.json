@@ -1,0 +1,176 @@
+{
+  "eval_info": {
+    "call_count": 313,
+    "stack_traces": [
+      {
+        "count": 278,
+        "last_call": "eval(::Symbol) at PowerSystems.jl:6",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 24,
+              "ast_head": "Symbol-Bus"
+            },
+            {
+              "count": 24,
+              "ast_head": "Symbol-Line"
+            },
+            {
+              "count": 24,
+              "ast_head": "Symbol-PowerLoad"
+            },
+            {
+              "count": 24,
+              "ast_head": "Symbol-Area"
+            },
+            {
+              "count": 23,
+              "ast_head": "Symbol-RenewableDispatch"
+            },
+            {
+              "count": 23,
+              "ast_head": "Symbol-ThermalStandard"
+            },
+            {
+              "count": 23,
+              "ast_head": "Symbol-LoadZone"
+            },
+            {
+              "count": 21,
+              "ast_head": "Symbol-RenewableFix"
+            },
+            {
+              "count": 17,
+              "ast_head": "Symbol-HydroEnergyReservoir"
+            },
+            {
+              "count": 16,
+              "ast_head": "Symbol-TapTransformer"
+            },
+            {
+              "count": 14,
+              "ast_head": "Symbol-HydroDispatch"
+            },
+            {
+              "count": 14,
+              "ast_head": "Symbol-HVDCLine"
+            },
+            {
+              "count": 14,
+              "ast_head": "Symbol-GenericBattery"
+            },
+            {
+              "count": 7,
+              "ast_head": "Symbol-PhaseShiftingTransformer"
+            },
+            {
+              "count": 7,
+              "ast_head": "Symbol-AGC"
+            },
+            {
+              "count": 3,
+              "ast_head": "Symbol-FixedAdmittance"
+            }
+          ]
+        }
+      },
+      {
+        "count": 35,
+        "last_call": "eval at PowerSystems.jl:6 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 35,
+              "ast_head": "curly"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 35,
+          "ast_head": "curly"
+        },
+        {
+          "count": 24,
+          "ast_head": "Symbol-Bus"
+        },
+        {
+          "count": 24,
+          "ast_head": "Symbol-Line"
+        },
+        {
+          "count": 24,
+          "ast_head": "Symbol-PowerLoad"
+        },
+        {
+          "count": 24,
+          "ast_head": "Symbol-Area"
+        },
+        {
+          "count": 23,
+          "ast_head": "Symbol-RenewableDispatch"
+        },
+        {
+          "count": 23,
+          "ast_head": "Symbol-ThermalStandard"
+        },
+        {
+          "count": 23,
+          "ast_head": "Symbol-LoadZone"
+        },
+        {
+          "count": 21,
+          "ast_head": "Symbol-RenewableFix"
+        },
+        {
+          "count": 17,
+          "ast_head": "Symbol-HydroEnergyReservoir"
+        },
+        {
+          "count": 16,
+          "ast_head": "Symbol-TapTransformer"
+        },
+        {
+          "count": 14,
+          "ast_head": "Symbol-HydroDispatch"
+        },
+        {
+          "count": 14,
+          "ast_head": "Symbol-HVDCLine"
+        },
+        {
+          "count": 14,
+          "ast_head": "Symbol-GenericBattery"
+        },
+        {
+          "count": 7,
+          "ast_head": "Symbol-PhaseShiftingTransformer"
+        },
+        {
+          "count": 7,
+          "ast_head": "Symbol-AGC"
+        },
+        {
+          "count": 3,
+          "ast_head": "Symbol-FixedAdmittance"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

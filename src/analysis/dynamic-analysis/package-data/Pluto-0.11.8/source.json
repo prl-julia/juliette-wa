@@ -1,0 +1,118 @@
+{
+  "eval_info": {
+    "call_count": 1261,
+    "stack_traces": [
+      {
+        "count": 840,
+        "last_call": "top-level scope at Parse.jl:93",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 840,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 242,
+        "last_call": "move_vars(::Symbol, ::Symbol, ::Set{Symbol}, ::Set{Array{Symbol,1}}, ::Set{Expr}) at PlutoRunner.jl:77",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 242,
+              "ast_head": "import"
+            }
+          ]
+        }
+      },
+      {
+        "count": 102,
+        "last_call": "move_vars(::Symbol, ::Symbol, ::Set{Symbol}, ::Set{Array{Symbol,1}}, ::Set{Expr}) at PlutoRunner.jl:65",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 102,
+              "ast_head": "import"
+            }
+          ]
+        }
+      },
+      {
+        "count": 58,
+        "last_call": "move_vars(::Symbol, ::Symbol, ::Set{Symbol}, ::Set{Array{Symbol,1}}, ::Set{Expr}) at PlutoRunner.jl:97",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 58,
+              "ast_head": "="
+            }
+          ]
+        }
+      },
+      {
+        "count": 19,
+        "last_call": "move_vars(::Symbol, ::Symbol, ::Set{Symbol}, ::Set{Array{Symbol,1}}, ::Set{Expr}) at PlutoRunner.jl:60",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 19,
+              "ast_head": "using"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 840,
+          "ast_head": "block"
+        },
+        {
+          "count": 344,
+          "ast_head": "import"
+        },
+        {
+          "count": 58,
+          "ast_head": "="
+        },
+        {
+          "count": 19,
+          "ast_head": "using"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 2006,
+    "stack_traces": [
+      {
+        "count": 2006,
+        "last_call": "#17 at PlutoRunner.jl:307 [inlined]",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "showable",
+              "count": 2006
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "showable",
+          "count": 2006
+        }
+      ]
+    }
+  }
+}

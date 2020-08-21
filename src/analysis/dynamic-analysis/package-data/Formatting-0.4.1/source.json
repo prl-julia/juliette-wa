@@ -1,0 +1,146 @@
+{
+  "eval_info": {
+    "call_count": 203598,
+    "stack_traces": [
+      {
+        "count": 203588,
+        "last_call": "eval at Formatting.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 203588,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 10,
+        "last_call": "generate_formatter(::String) at cformat.jl:18",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 10,
+              "ast_head": "function"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 203588,
+          "ast_head": "call"
+        },
+        {
+          "count": 10,
+          "ast_head": "function"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 10,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 203587,
+    "stack_traces": [
+      {
+        "count": 203587,
+        "last_call": "(::Formatting.var\"#1#4\")(::Float64) at cformat.jl:19",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#25",
+              "count": 113587
+            },
+            {
+              "function_name": "#17",
+              "count": 10000
+            },
+            {
+              "function_name": "#23",
+              "count": 10000
+            },
+            {
+              "function_name": "#11",
+              "count": 10000
+            },
+            {
+              "function_name": "#29",
+              "count": 10000
+            },
+            {
+              "function_name": "#13",
+              "count": 10000
+            },
+            {
+              "function_name": "#15",
+              "count": 10000
+            },
+            {
+              "function_name": "#19",
+              "count": 10000
+            },
+            {
+              "function_name": "#21",
+              "count": 10000
+            },
+            {
+              "function_name": "#27",
+              "count": 10000
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "#25",
+          "count": 113587
+        },
+        {
+          "function_name": "#17",
+          "count": 10000
+        },
+        {
+          "function_name": "#23",
+          "count": 10000
+        },
+        {
+          "function_name": "#11",
+          "count": 10000
+        },
+        {
+          "function_name": "#29",
+          "count": 10000
+        },
+        {
+          "function_name": "#13",
+          "count": 10000
+        },
+        {
+          "function_name": "#15",
+          "count": 10000
+        },
+        {
+          "function_name": "#19",
+          "count": 10000
+        },
+        {
+          "function_name": "#21",
+          "count": 10000
+        },
+        {
+          "function_name": "#27",
+          "count": 10000
+        }
+      ]
+    }
+  }
+}

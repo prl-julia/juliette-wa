@@ -1,0 +1,40 @@
+{
+  "eval_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 1,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "show_backtrace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "identity",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "identity",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

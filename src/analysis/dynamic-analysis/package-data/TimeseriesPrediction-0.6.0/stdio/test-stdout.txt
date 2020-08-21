@@ -1,0 +1,351 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+
+Testing local models...
+Test Summary:      | Pass  Total
+ALM localmodel_tsp |   16     16
+Test Summary:              | Pass  Total
+LinearLocalModel Ridge Reg |   16     16
+Test Summary:                | Pass  Total
+LinearLocalModel McNames Reg |   16     16
+Test Summary:         | Pass  Total
+FixedSizeNeighborhood |    4      4
+Test Summary:              | Pass  Total
+Multivariate Input predict |   12     12
+Test Summary: | Pass  Total
+MSE           |    4      4
+Test Summary: | Pass  Total
+Maps          |    1      1
+Test Summary:     | Pass  Total
+ALM localmodel_cp |   16     16
+Test Summary:              | Pass  Total
+LinearLocalModel Ridge Reg |   16     16
+Test Summary:                | Pass  Total
+LinearLocalModel McNames Reg |   16     16
+Test Summary:         | Pass  Total
+FixedSizeNeighborhood |    4      4
+Test Summary:              | Pass  Total
+Multivariate Input predict |    6      6
+Reconstructing
+Creating Tree
+Working on Frame 1/20
+Working on Frame 2/20
+Working on Frame 3/20
+Working on Frame 4/20
+Working on Frame 5/20
+Working on Frame 6/20
+Working on Frame 7/20
+Working on Frame 8/20
+Working on Frame 9/20
+Working on Frame 10/20
+Working on Frame 11/20
+Working on Frame 12/20
+Working on Frame 13/20
+Working on Frame 14/20
+Working on Frame 15/20
+Working on Frame 16/20
+Working on Frame 17/20
+Working on Frame 18/20
+Working on Frame 19/20
+Working on Frame 20/20
+Reconstructing
+Creating Tree
+Working on Frame 1/20
+Working on Frame 2/20
+Working on Frame 3/20
+Working on Frame 4/20
+Working on Frame 5/20
+Working on Frame 6/20
+Working on Frame 7/20
+Working on Frame 8/20
+Working on Frame 9/20
+Working on Frame 10/20
+Working on Frame 11/20
+Working on Frame 12/20
+Working on Frame 13/20
+Working on Frame 14/20
+Working on Frame 15/20
+Working on Frame 16/20
+Working on Frame 17/20
+Working on Frame 18/20
+Working on Frame 19/20
+Working on Frame 20/20
+Reconstructing
+Creating Tree
+Working on Frame 1/20
+Working on Frame 2/20
+Working on Frame 3/20
+Working on Frame 4/20
+Working on Frame 5/20
+Working on Frame 6/20
+Working on Frame 7/20
+Working on Frame 8/20
+Working on Frame 9/20
+Working on Frame 10/20
+Working on Frame 11/20
+Working on Frame 12/20
+Working on Frame 13/20
+Working on Frame 14/20
+Working on Frame 15/20
+Working on Frame 16/20
+Working on Frame 17/20
+Working on Frame 18/20
+Working on Frame 19/20
+Working on Frame 20/20
+Reconstructing
+Creating Tree
+Working on Frame 1/10
+Working on Frame 2/10
+Working on Frame 3/10
+Working on Frame 4/10
+Working on Frame 5/10
+Working on Frame 6/10
+Working on Frame 7/10
+Working on Frame 8/10
+Working on Frame 9/10
+Working on Frame 10/10
+Reconstructing
+Creating Tree
+Working on Frame 1/20
+Working on Frame 2/20
+Working on Frame 3/20
+Working on Frame 4/20
+Working on Frame 5/20
+Working on Frame 6/20
+Working on Frame 7/20
+Working on Frame 8/20
+Working on Frame 9/20
+Working on Frame 10/20
+Working on Frame 11/20
+Working on Frame 12/20
+Working on Frame 13/20
+Working on Frame 14/20
+Working on Frame 15/20
+Working on Frame 16/20
+Working on Frame 17/20
+Working on Frame 18/20
+Working on Frame 19/20
+Working on Frame 20/20
+Test Summary:          | Pass  Total
+Barkley Const Boundary |  171    171
+Reconstructing
+Creating Tree
+Working on Frame 1/20
+Working on Frame 2/20
+Working on Frame 3/20
+Working on Frame 4/20
+Working on Frame 5/20
+Working on Frame 6/20
+Working on Frame 7/20
+Working on Frame 8/20
+Working on Frame 9/20
+Working on Frame 10/20
+Working on Frame 11/20
+Working on Frame 12/20
+Working on Frame 13/20
+Working on Frame 14/20
+Working on Frame 15/20
+Working on Frame 16/20
+Working on Frame 17/20
+Working on Frame 18/20
+Working on Frame 19/20
+Working on Frame 20/20
+Reconstructing
+Creating Tree
+Working on Frame 1/20
+Working on Frame 2/20
+Working on Frame 3/20
+Working on Frame 4/20
+Working on Frame 5/20
+Working on Frame 6/20
+Working on Frame 7/20
+Working on Frame 8/20
+Working on Frame 9/20
+Working on Frame 10/20
+Working on Frame 11/20
+Working on Frame 12/20
+Working on Frame 13/20
+Working on Frame 14/20
+Working on Frame 15/20
+Working on Frame 16/20
+Working on Frame 17/20
+Working on Frame 18/20
+Working on Frame 19/20
+Working on Frame 20/20
+Reconstructing
+Creating Tree
+Working on Frame 1/20
+Working on Frame 2/20
+Working on Frame 3/20
+Working on Frame 4/20
+Working on Frame 5/20
+Working on Frame 6/20
+Working on Frame 7/20
+Working on Frame 8/20
+Working on Frame 9/20
+Working on Frame 10/20
+Working on Frame 11/20
+Working on Frame 12/20
+Working on Frame 13/20
+Working on Frame 14/20
+Working on Frame 15/20
+Working on Frame 16/20
+Working on Frame 17/20
+Working on Frame 18/20
+Working on Frame 19/20
+Working on Frame 20/20
+Test Summary:    | Pass  Total
+Periodic Barkley |  139    139
+Reconstructing
+Creating Tree
+Working on Frame 1/20
+Working on Frame 2/20
+Working on Frame 3/20
+Working on Frame 4/20
+Working on Frame 5/20
+Working on Frame 6/20
+Working on Frame 7/20
+Working on Frame 8/20
+Working on Frame 9/20
+Working on Frame 10/20
+Working on Frame 11/20
+Working on Frame 12/20
+Working on Frame 13/20
+Working on Frame 14/20
+Working on Frame 15/20
+Working on Frame 16/20
+Working on Frame 17/20
+Working on Frame 18/20
+Working on Frame 19/20
+Working on Frame 20/20
+Reconstructing
+Creating Tree
+Working on Frame 1/20
+Working on Frame 2/20
+Working on Frame 3/20
+Working on Frame 4/20
+Working on Frame 5/20
+Working on Frame 6/20
+Working on Frame 7/20
+Working on Frame 8/20
+Working on Frame 9/20
+Working on Frame 10/20
+Working on Frame 11/20
+Working on Frame 12/20
+Working on Frame 13/20
+Working on Frame 14/20
+Working on Frame 15/20
+Working on Frame 16/20
+Working on Frame 17/20
+Working on Frame 18/20
+Working on Frame 19/20
+Working on Frame 20/20
+Test Summary:        | Pass  Total
+Half-Precision Tests |   70     70
+Reconstructing
+Creating Tree
+Working on Frame 1/5
+Working on Frame 2/5
+Working on Frame 3/5
+Working on Frame 4/5
+Working on Frame 5/5
+Reconstructing
+Creating Tree
+Working on Frame 1/5
+Working on Frame 2/5
+Working on Frame 3/5
+Working on Frame 4/5
+Working on Frame 5/5
+Reconstructing
+Creating Tree
+Working on Frame 1/5
+Working on Frame 2/5
+Working on Frame 3/5
+Working on Frame 4/5
+Working on Frame 5/5
+Reconstructing
+Creating Tree
+Working on Frame 1/5
+Working on Frame 2/5
+Working on Frame 3/5
+Working on Frame 4/5
+Working on Frame 5/5
+Reconstructing
+Creating Tree
+Working on Frame 1/5
+Working on Frame 2/5
+Working on Frame 3/5
+Working on Frame 4/5
+Working on Frame 5/5
+Reconstructing
+Creating Tree
+Working on Frame 1/5
+Working on Frame 2/5
+Working on Frame 3/5
+Working on Frame 4/5
+Working on Frame 5/5
+Reconstructing
+Creating Tree
+Working on Frame 1/5
+Working on Frame 2/5
+Working on Frame 3/5
+Working on Frame 4/5
+Working on Frame 5/5
+Reconstructing
+Creating Tree
+Working on Frame 1/5
+Working on Frame 2/5
+Working on Frame 3/5
+Working on Frame 4/5
+Working on Frame 5/5
+Reconstructing
+Creating Tree
+Working on Frame 1/5
+Working on Frame 2/5
+Working on Frame 3/5
+Working on Frame 4/5
+Working on Frame 5/5
+Test Summary:    | Pass  Total
+Coupled Henon 1D |   27     27
+Reconstructing
+Creating Tree
+Working on Frame 1/5
+Working on Frame 2/5
+Working on Frame 3/5
+Working on Frame 4/5
+Working on Frame 5/5
+Reconstructing
+Creating Tree
+Working on Frame 1/5
+Working on Frame 2/5
+Working on Frame 3/5
+Working on Frame 4/5
+Working on Frame 5/5
+Reconstructing
+Creating Tree
+Working on Frame 1/5
+Working on Frame 2/5
+Working on Frame 3/5
+Working on Frame 4/5
+Working on Frame 5/5
+Reconstructing
+Creating Tree
+Working on Frame 1/5
+Working on Frame 2/5
+Working on Frame 3/5
+Working on Frame 4/5
+Working on Frame 5/5
+Test Summary:    | Pass  Total
+Coupled Henon 2D |    8      8
+Reconstruction Tests
+Test Summary:         | Pass  Total
+cubic_shell_embedding |  386    386
+Test Summary:           | Pass  Total
+light_cone_embedding 1D |   10     10
+Test Summary:           | Pass  Total
+light_cone_embedding 2D |   16     16
+Testing PCA Functions
+Test Summary: | Pass  Total
+PCAEmbedding  |    3      3
+
+Test took total time of:
+299.897 seconds or 4.998 minutes

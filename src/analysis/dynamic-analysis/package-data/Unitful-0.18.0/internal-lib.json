@@ -1,0 +1,56 @@
+{
+  "eval_info": {
+    "call_count": 3,
+    "stack_traces": [
+      {
+        "count": 3,
+        "last_call": "eval(::Expr) at client.jl:467",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "call"
+            },
+            {
+              "count": 1,
+              "ast_head": "module"
+            },
+            {
+              "count": 1,
+              "ast_head": "const"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 1,
+          "ast_head": "call"
+        },
+        {
+          "count": 1,
+          "ast_head": "module"
+        },
+        {
+          "count": 1,
+          "ast_head": "const"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

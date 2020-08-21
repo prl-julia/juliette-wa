@@ -1,0 +1,536 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+/home/jack/bin/julia
+[✔️] Julia version
+[✔️] TensorFlow version
+[✔️] TensorFlow-Probability version
+[✔️] Python executable file
+[✔️] Julia path
+[✘] Dynamic library path (Optional)
+
+[Reason]
+/home/jack/.julia/conda/3/lib is not in LD_LIBRARY_PATH. This MAY break custom operator compilation. However, in most cases, ADCME automatic fixes this problem for you.
+
+
+[Instruction]
+Add your dynamic library path path to your environment path, e.g. (Unix systems) 
+
+export LD_LIBRARY_PATH=/home/jack/.julia/conda/3/lib:$LD_LIBRARY_PATH
+
+For convenience, you can add the above line to your `~/.bashrc` (Linux or Apple).
+For Windows, you need to add it to PATH instead of LD_LIBRARY_PATH.
+
+[✔️] Memory Address Length =  64
+[✘] Binaries path
+
+[Reason]
+/home/jack/.julia/conda/3/bin is not in PATH. This path contains compatible tools such as a GCC compiler, `cmake`, `make`, or any other tools you want to use directly from terminal.
+However, setting the path is NOT a requirement, and ADCME works totally fine without any action.
+
+
+[Instruction]
+(Optional) Add your binary path to your environment path, e.g. (Unix systems) 
+
+export PATH=/home/jack/.julia/conda/3/bin:$PATH
+
+For convenience, you can add the above line to your `~/.bashrc` (Linux) or `~/.bash_profile` (Apple).
+For Windows, you need to add it to system environment.
+
+[✘] GPU Support (Optional)
+
+[Reason]
+ADCME is not compiled against GPU.
+
+
+[Instruction]
+If you intend to use GPU, set ENV["GPU"] = 1 and then rebuild ADCME.
+
+Dependency file is located at: /home/jack/.julia/packages/ADCME/DBZ10/src/../deps/deps.jl
+Test Summary:               | Pass  Total
+indexing for rank 3 tensors |    3      3
+Load library operator (with gradient, multiple outputs = true): /home/jack/.julia/packages/ADCME/DBZ10/deps/Plugin/ExtendedNN/build/libExtendedNn.so ==> extended_nn
+Test Summary: | Pass  Total
+fcx           |    4      4
+Test Summary: | Pass  Total
+dropout       |    2      2
+Test Summary:      | Pass  Total
+sparse_constructor |    7      7
+Test Summary:     | Pass  Total
+sparse_arithmetic |    4      4
+Test Summary:  | Pass  Total
+sparse_adjoint |    1      1
+Test Summary: | Pass  Total
+sparse_mul    |    6      6
+Test Summary:    | Pass  Total
+sparse_vcat_hcat |    2      2
+Test Summary:   | Pass  Total
+sparse_indexing |    3      3
+Test Summary: | Pass  Total
+sparse_solve  |    1      1
+k = 1
+k = 2
+k = 3
+k = 4
+k = 5
+k = 6
+k = 7
+k = 8
+k = 9
+k = 10
+v = [0.800488384024882, 0.8241024666947354, 0.26054113162986714, 0.6668425422755024, 0.3084987249854121, 0.11581118335453278, 0.0051215798889825415, 0.05803861014365608, 0.5372324125477215, 0.27534744242934295]
+Test Summary:    | Pass  Total
+sparse_assembler |    3      3
+Test Summary:       | Pass  Total
+sparse_least_square |    1      1
+Test Summary:  | Pass  Total
+sparse mat mul |    3      3
+Test Summary: | Pass  Total
+spdiag        |    3      3
+Test Summary: | Pass  Total
+spzero        |    2      2
+Test Summary:   | Pass  Total
+sparse indexing |    1      1
+Test Summary: | Pass  Total
+sum           |    3      3
+Test Summary:   | Pass  Total
+dense_to_sparse |    2      2
+Test Summary: | Pass  Total
+spdiagm       |    4      4
+Test Summary: | Pass  Total
+hvcat         |    1      1
+Test Summary: | Pass  Total
+find          |    6      6
+Test Summary:             | Pass  Total
+sparse scatter update add |    2      2
+Test Summary:   | Pass  Total
+constant sparse |    1      1
+Test Summary: | Pass  Total
+get index     |    1      1
+Test Summary:                  | Pass  Total
+sparse_factorization_and_solve |    2      2
+Test Summary:         | Pass  Total
+sparse solver warning |    1      1
+Test Summary:  | Pass  Total
+sparse promote |    6      6
+Test Summary: | Broken  Total
+random        |     47     47
+Test Summary: | Pass  Total
+save and load |    1      1
+Test Summary:   | Pass  Total
+psave and pload |    1      1
+tensorboard --logdir="/tmp/jl_ismSf4" --port 0
+tensorboard --logdir="/tmp/jl_RULZGi" --port 0
+Test Summary: |
+diary         | No tests
+Test Summary: | Pass  Total
+indexing      |   28     28
+Test Summary: | Pass  Total
+Variables     |    4      4
+Test Summary: | Pass  Total
+tensor        |    2      2
+Test Summary: | Pass  Total
+Hessian       |    2      2
+Test Summary: | Pass  Total
+Jacobian      |    1      1
+Test Summary: | Pass  Total
+gradients_v   |    1      1
+Test Summary:   | Pass  Total
+size and length |    9      9
+Test Summary: | Pass  Total
+copy          |    1      1
+Test Summary: | Pass  Total
+getindex      |    1      1
+Test Summary:     | Pass  Total
+convert_to_tensor |    5      5
+Test Summary: | Pass  Total
+cell          |    2      2
+Test Summary:    | Pass  Total
+special matrices |    2      2
+Test Summary:   | Pass  Total
+ones/zeros like |    2      2
+Test Summary:      | Pass  Total
+gradient_magnitude |    1      1
+Test Summary:        | Pass  Total
+indexing with tensor |    6      6
+Test Summary: | Pass  Total
+ndims         |    4      4
+Test Summary:      | Pass  Total
+gradients_colocate |    1      1
+Test Summary: | Pass  Total
+*             |   27     27
+Test Summary: | Pass  Total
+reshape       |    6      6
+Test Summary:  | Pass  Total
+scatter_update |    9      9
+Test Summary: | Pass  Total
+adjoint       |    4      4
+Test Summary:           | Pass  Total
+scatter_update_pyobject |    9      9
+Test Summary: | Pass  Total
+Operators     |   14     14
+Test Summary:   | Pass  Total
+Other Operators |    1      1
+Test Summary:    | Pass  Total
+Concat and stack |    6      6
+Test Summary: | Pass  Total
+Vectorize     |    5      5
+Test Summary: | Pass  Total
+Solve         |    3      3
+Test Summary: | Pass  Total
+diff          |    3      3
+Test Summary: | Pass  Total
+clip          |    1      1
+Test Summary: | Pass  Total
+map           |    1      1
+Test Summary: | Pass  Total
+diag          |    2      2
+Test Summary: | Pass  Total
+dot           |    3      3
+Test Summary: | Pass  Total
+prod          |    1      1
+Test Summary: | Pass  Total
+findall       |    2      2
+Test Summary: | Pass  Total
+svd           |    1      1
+Test Summary: | Pass  Total
+vector        |    1      1
+Test Summary: | Pass  Total
+repeat        |    6      6
+Test Summary: | Pass  Total
+pmap          |    3      3
+Test Summary: | Pass  Total
+reshape       |    1      1
+Test Summary: | Pass  Total
+batch mul     |    1      1
+Test Summary: | Pass  Total
+sort          |    2      2
+Test Summary: | Pass  Total
+set_shape     |    3      3
+Test Summary: | Pass  Total
+activation    |    8      8
+Test Summary: | Pass  Total
+trace         |    1      1
+Test Summary: | Pass  Total
+trilu         |   22     22
+Test Summary: | Pass  Total
+reverse       |    3      3
+Test Summary: | Pass  Total
+solve batch   |    2      2
+Test Summary:      | Pass  Total
+control_dependency |    2      2
+Test Summary: | Pass  Total
+while loop    |    3      3
+Test Summary: | Pass  Total
+if_clause     |    1      1
+Test Summary:     | Pass  Total
+if_else: tf.where |    2      2
+Test Summary:          | Pass  Total
+get and add collection |    1      1
+Test Summary: | Pass  Total
+has_gpu       |    1      1
+Test Summary: |
+timeline      | No tests
+Test Summary: | Pass  Total
+independent   |    1      1
+Test Summary:    | Pass  Total
+run corner cases |    1      1
+Test Summary: | Pass  Total
+@cpu @gpu     |    4      4
+Test Summary: | Pass  Total
+xavier_init   |    1      1
+Load library operator: /home/jack/.julia/packages/ADCME/DBZ10/deps/CustomOps/build/libadcme.so ==> sparse_solver
+Load library operator (with gradient, multiple outputs = false): /home/jack/.julia/packages/ADCME/DBZ10/deps/CustomOps/build/libadcme.so ==> sparse_solver
+Test Summary: | Pass  Total
+load_op       |    2      2
+Test Summary: | Pass  Total
+ae            |    1      1
+Test Summary: | Pass  Total
+register      |    4      4
+Test Summary:         | Pass  Total
+list_physical_devices |    1      1
+((nrr[i]).x, (nrr[i]).iter, (nrr[i]).converged) = ([1.0], 6, true)
+((nrr[i]).x, (nrr[i]).iter, (nrr[i]).converged) = ([2.0945514815423265], 20, true)
+((nrr[i]).x, (nrr[i]).iter, (nrr[i]).converged) = ([0.9708700202758003], 12, true)
+((nrr[i]).x, (nrr[i]).iter, (nrr[i]).converged) = ([0.7390848761928382], 19, true)
+((nrr[i]).x, (nrr[i]).iter, (nrr[i]).converged) = ([0.9999995492491696], 21, true)
+((nrr[i]).x, (nrr[i]).iter, (nrr[i]).converged) = ([1.2999999999998577], 43, true)
+((nrr[i]).x, (nrr[i]).iter, (nrr[i]).converged) = ([1.5511047401462246], 64, true)
+Test Summary:                  | Pass  Total
+newton raphson with linesearch |    7      7
+[CustomOptimizer] Number of inequalities constraints = 1, Number of equality constraints = 0
+[CustomOptimizer] Total number of variables = 4
+Test Summary: | Pass  Total
+NLopt         |    1      1
+[CustomOptimizer] Number of inequalities constraints = 0, Number of equality constraints = 0
+[CustomOptimizer] Total number of variables = 2
+[CustomOptimizer] No bounds provided, use (-∞, +∞) as default; or you need to provide bounds in the function CustomOptimizer
+(f, df, c, dc, x0) = (ADCME.var"#f#468"{PyObject}(PyObject <function ExternalOptimizerInterface._make_eval_func.<locals>.eval_func at 0x7f227809d5f0>), ADCME.var"#df#469"{PyObject}(PyObject <function ExternalOptimizerInterface._make_eval_func.<locals>.eval_func at 0x7f227809d5f0>), ADCME.var"#c#470"{Array{Float64,1},Array{Any,1},Array{Any,1},Int64,Int64}([0.800488384024882, 0.8241024666947354], Any[], Any[], 0, 0), ADCME.var"#dc#473"{Array{Float64,1},Array{Any,1},Array{Any,1},Int64,Int64,Int64,Int64}([0.800488384024882, 0.8241024666947354], Any[], Any[], 0, 0, 2, 0), [0.800488384024882, 0.8241024666947354])
+Test Summary: | Pass  Total
+Optim         |    1      1
+Test Summary:  | Broken  Total
+newton raphson |      1      1
+Test Summary:               | Broken  Total
+NonlinearConstrainedProblem |      1      1
+iter 1, current loss = 10481.16513405056
+================== STEP 0 ==================
+iter 2, current loss = 8.674680614136826e11
+iter 3, current loss = 3994.6117195767524
+================== STEP 1 ==================
+iter 4, current loss = 3593.758825208133
+iter 5, current loss = 2430.0215441052264
+iter 6, current loss = 7163.518251508293
+iter 7, current loss = 1961.3930444755933
+================== STEP 2 ==================
+iter 8, current loss = 1955.0864884167065
+iter 9, current loss = 1929.96181628879
+iter 10, current loss = 1806.775706232354
+iter 11, current loss = 1251.7764205288852
+iter 12, current loss = 0.061606479303160704
+iter 13, current loss = 1.667102312426696e-20
+================== STEP 3 ==================
+iter 14, current loss = 5.505696003109266e-18
+iter 15, current loss = 1.6550181300167233e-20
+================== STEP 4 ==================
+Test Summary: | Pass  Total
+Custom BFGS!  |    1      1
+iter 0, current loss=4.0
+iter 1, current loss=1.0
+================ STEP 0 ===============
+Test Summary: | Pass  Total
+var_to_bounds |    1      1
+Test Summary:            | Pass  Total
+newton_raphson_with_grad |    3      3
+Test Summary:   | Pass  Total
+pack and unpack |    2      2
+Test Summary:    | Pass  Total
+search direction |    1      1
+iter 1, current loss = 31.41873623749015
+================== STEP 0 ==================
+iter 2, current loss = 9.421227507465258e6
+iter 3, current loss = 26.63554318541166
+iter 4, current loss = 0.7869181517441398
+================== STEP 1 ==================
+iter 5, current loss = 0.7576508420793803
+iter 6, current loss = 0.9672547725127995
+iter 7, current loss = 0.7552105289583271
+================== STEP 2 ==================
+iter 8, current loss = 0.7356363398999671
+iter 9, current loss = 0.6600585219147992
+iter 10, current loss = 1.0124696262381863
+iter 11, current loss = 0.6080860806609445
+================== STEP 3 ==================
+iter 12, current loss = 3.8479930547132146
+iter 13, current loss = 0.5878426066647625
+iter 14, current loss = 0.6378324742528356
+iter 15, current loss = 0.5475663907691561
+================== STEP 4 ==================
+iter 16, current loss = 0.48774447778505836
+iter 17, current loss = 0.48576226981102855
+================== STEP 5 ==================
+iter 18, current loss = 0.3932864815835869
+iter 19, current loss = 0.3069764154139901
+iter 20, current loss = 0.28369874330659106
+================== STEP 6 ==================
+iter 21, current loss = 0.26896457448842315
+iter 22, current loss = 0.23476352497423075
+================== STEP 7 ==================
+iter 23, current loss = 0.1565153795359934
+iter 24, current loss = 7.7902059171044735
+iter 25, current loss = 0.15607501559674974
+================== STEP 8 ==================
+iter 26, current loss = 0.14168683783974695
+iter 27, current loss = 0.13579926305438336
+================== STEP 9 ==================
+iter 28, current loss = 0.0841290483973924
+iter 29, current loss = 0.22472136215701558
+iter 30, current loss = 0.06434913893555012
+================== STEP 10 ==================
+iter 31, current loss = 0.04092814936265465
+iter 32, current loss = 0.005399276931010971
+iter 33, current loss = 35.88236380450396
+iter 34, current loss = 0.005224104424433896
+================== STEP 11 ==================
+iter 35, current loss = 2.525303461086011
+iter 36, current loss = 0.0038172277978073777
+================== STEP 12 ==================
+iter 37, current loss = 0.0012033966577810085
+iter 38, current loss = 0.001104827430824058
+================== STEP 13 ==================
+iter 39, current loss = 0.0007703894352359878
+iter 40, current loss = 0.0012682000653405088
+iter 41, current loss = 0.0005767250997462312
+================== STEP 14 ==================
+iter 42, current loss = 0.00012648246479401878
+iter 43, current loss = 0.0010147384683644725
+iter 44, current loss = 1.8817019421980154e-5
+================== STEP 15 ==================
+iter 45, current loss = 1.223628371356556e-6
+iter 46, current loss = 1.206832267965777e-6
+================== STEP 16 ==================
+iter 47, current loss = 1.0125251044949235e-9
+iter 48, current loss = 3.451113162715698e-10
+================== STEP 17 ==================
+iter 49, current loss = 4.4193311884385034e-14
+iter 50, current loss = 4.050063503351649e-14
+================== STEP 18 ==================
+iter 51, current loss = 2.0788415055304255e-19
+iter 52, current loss = 6.443444393193225e-13
+iter 53, current loss = 1.5710177204124288e-23
+================== STEP 19 ==================
+iter 54, current loss = 0.0
+================== STEP 20 ==================
+iter 1, current loss = 31.41873623749015
+================== STEP 0 ==================
+iter 2, current loss = 88044.49474067306
+iter 3, current loss = 10.324557145728383
+================== STEP 1 ==================
+iter 4, current loss = 8.660234908892937
+iter 5, current loss = 0.7435995242720491
+================== STEP 2 ==================
+iter 6, current loss = 0.7375340184330207
+iter 7, current loss = 0.7175701553315708
+================== STEP 3 ==================
+iter 8, current loss = 0.7105602294061514
+iter 9, current loss = 39186.609581186545
+iter 10, current loss = 0.7172077435989139
+iter 11, current loss = 2450.561811844529
+iter 12, current loss = 0.7157600874594378
+iter 13, current loss = 153.00915181184396
+iter 14, current loss = 0.7099972308171165
+iter 15, current loss = 9.65177364186858
+iter 16, current loss = 0.6874910931359037
+iter 17, current loss = 0.9467890178686476
+iter 18, current loss = 0.6112657479222497
+iter 19, current loss = 0.5240659390923511
+iter 20, current loss = 0.5216951143631857
+================== STEP 4 ==================
+iter 21, current loss = 0.7770448688322955
+iter 22, current loss = 0.49326433624006166
+================== STEP 5 ==================
+iter 23, current loss = 0.48273351854745966
+iter 24, current loss = 0.3150008529052397
+================== STEP 6 ==================
+iter 25, current loss = 0.3048245268779205
+iter 26, current loss = 0.30313331661231047
+================== STEP 7 ==================
+iter 27, current loss = 0.3027666853338943
+iter 28, current loss = 0.9311035731747701
+iter 29, current loss = 0.27044738461131906
+iter 30, current loss = 0.207350339181904
+iter 31, current loss = 0.2032602335296662
+================== STEP 8 ==================
+iter 32, current loss = 14.891637391809667
+iter 33, current loss = 0.19803327809488477
+iter 34, current loss = 0.17996080906496414
+================== STEP 9 ==================
+iter 35, current loss = 0.078967720579138
+iter 36, current loss = 0.06282016207825543
+================== STEP 10 ==================
+iter 37, current loss = 0.06203030309891009
+iter 38, current loss = 0.05679627643191168
+================== STEP 11 ==================
+iter 39, current loss = 0.04015325241485707
+iter 40, current loss = 1.5439929073157075
+iter 41, current loss = 0.05291882073767225
+iter 42, current loss = 0.07049463098782022
+iter 43, current loss = 0.03686823290781953
+iter 44, current loss = 0.015140988535987502
+iter 45, current loss = 0.015141331276078994
+================== STEP 12 ==================
+iter 46, current loss = 0.012747515498596325
+iter 47, current loss = 0.012267454036271648
+================== STEP 13 ==================
+iter 48, current loss = 0.008988778199125311
+iter 49, current loss = 0.002136229003854184
+================== STEP 14 ==================
+iter 50, current loss = 0.001982775475636184
+iter 51, current loss = 0.0017744723319735322
+================== STEP 15 ==================
+iter 52, current loss = 0.0016766649787500474
+iter 53, current loss = 0.000811900264048739
+================== STEP 16 ==================
+iter 54, current loss = 0.0016174276539537976
+iter 55, current loss = 0.00019936423857933256
+================== STEP 17 ==================
+iter 56, current loss = 0.0001983123454003859
+iter 57, current loss = 0.00019563049546848085
+================== STEP 18 ==================
+iter 58, current loss = 0.0001955098370177801
+iter 59, current loss = 2.789788991618652e-6
+================== STEP 19 ==================
+iter 60, current loss = 0.07313076520063341
+iter 61, current loss = 5.553318806912856e-7
+================== STEP 20 ==================
+iter 62, current loss = 4.7174414514093587e-7
+iter 63, current loss = 3.751022267789017e-7
+================== STEP 21 ==================
+iter 64, current loss = 3.7504034942091634e-7
+iter 65, current loss = 2.9457958113082e-10
+================== STEP 22 ==================
+iter 66, current loss = 6.505447725950654e-5
+iter 67, current loss = 5.266112178122424e-13
+================== STEP 23 ==================
+iter 68, current loss = 5.263353322139138e-13
+iter 69, current loss = 5.254798810461212e-13
+================== STEP 24 ==================
+iter 70, current loss = 5.245760184729856e-13
+iter 71, current loss = 6.665895054348392e-21
+================== STEP 25 ==================
+iter 72, current loss = 1.6751813805029995e-19
+iter 73, current loss = 6.641150980453462e-21
+================== STEP 26 ==================
+Test Summary: | Pass  Total
+Optim         |    2      2
+[2.687340311058956, 2.2848777584058286, 1.9594851778940723, 1.695402405085309, 1.480263493197685, 1.3043185081551039, 1.1598475045894157, 1.0407152651051803, 0.9420302552703157, 0.8598815076342152]
+[2.687340311058956, 2.284877740310942, 1.959485148600987, 1.6954023693861155, 1.480263454379844, 1.3043184684311484, 1.1598474654062378, 1.0407152273674067, 0.9420302195019172, 0.8598814740954399]
+[2.687340311058956, 2.51968033219294, 2.3591800737664697, 2.2059474319979726, 2.060057321374523, 1.9215424113722337, 1.7903868796137, 1.666533106551471, 1.5498999348193685, 1.4403938823398204]
+[2.687340311058956, 2.5196803722971532, 2.3591806721463433, 2.2059490607905308, 2.060059325290666, 1.921544648411781, 1.7903894445161121, 1.6665356793266157, 1.5499024452536936, 1.4403964019318742]
+[2.687340311058956, 2.519680334828145, 2.407655825231478, 2.3197815374114255, 2.246150283167248, 2.182163783773478, 2.1252505434992806, 2.0738022333150226, 2.0267344163791177, 1.9832752878804252]
+[2.687340311058956, 2.5289466959494193, 2.420490642269894, 2.3345738165870626, 2.262184980528145, 2.1990517443624436, 2.1427536022001736, 2.0917631683139017, 2.0450438762274734, 2.001854279772373]
+[2.687340311058956, 2.687340311058956, 2.687340311058956, 2.687340311058956, 2.687340311058956, 2.687340311058956, 2.687340311058956, 2.687340311058956, 2.687340311058956, 2.687340311058956]
+[2.687340311058956, 2.6872637777504984, 2.687186271558512, 2.6871081082446744, 2.6870294441458276, 2.6869503723706383, 2.6868709546007827, 2.6867912346415768, 2.686711245167153, 2.6866310114542364]
+ADCME.Optimizer.RMSProp: 
+[2.687340311058956, 2.1809229506849572, 1.8767079801297724, 1.6546592408302834, 1.4792440330627719, 1.334696176675614, 1.212439851596489, 1.1071870862263171, 1.0154089446876469, 0.9346163191023282]
+ADCME.Optimizer.AMSGrad: 
+[2.687340311058956, 2.1809312707347455, 1.6124928714759128, 1.1086151780363889, 0.7379095523937292, 0.5260637392759809, 0.45851612395000907, 0.4877499962958967, 0.5512317022689823, 0.5952183172262842]
+ADCME.Optimizer.NADAM: 
+[2.687340311058956, 2.442570256533514, 2.2636223209469, 2.1059931830955145, 1.9611223452288686, 1.8261560639124625, 1.699821585350836, 1.5814319739611475, 1.4705621558870794, 1.3669096060903076]
+ADCME.Optimizer.Momentum: 
+[2.687340311058956, 0.5561138694752266, 1.9019191744859019, 1.5251751312785737, 0.0420157941282293, 1.1070655728753587, 0.9972859136071748, 0.09250596740575295, 0.8373703084967704, 0.9155307151492695]
+ADCME.Optimizer.Nesterov: 
+[2.687340311058956, 1.9593498023002809, 1.2701537117986892, 0.7838060906690361, 0.5406336834135216, 0.4889865362290184, 0.5361697434507272, 0.593802848884102, 0.6052577936273842, 0.5531368580544891]
+ADCME.Optimizer.RADAM: 
+[2.687340311058956, 2.2848777584058286, 1.94323977812989, 1.6552856125616953, 1.4144226819237642, 1.4126078826685302, 1.4099249144610229, 1.4065453158264798, 1.4025672017224884, 1.3980581649489405]
+ADCME.Optimizer.AdaMax: 
+[2.687340311058956, 2.51968033219294, 2.362208211311266, 2.2144819560814186, 2.0760592333976766, 1.9464997124427983, 1.8253670164593165, 1.7122304206311472, 1.606666358477995, 1.5082598767767736]
+Test Summary: | Pass  Total
+Optimizers    |    4      4
+Test Summary: | Pass  Total
+sinkhorn      |    1      1
+Test Summary: | Pass  Total
+dist          |    5      5
+Test Summary: | Pass  Total
+runge_kutta   |    6      6
+Test Summary: | Pass  Total
+alpha scheme  |    2      2
+Test Summary: | Pass  Total
+LinearFlow    |    2      2
+Test Summary:      | Pass  Total
+AffineConstantFlow |    2      2
+Test Summary: | Pass  Total
+ActNorm       |    2      2
+Test Summary: | Pass  Total
+SlowMAF       |    2      2
+Test Summary: | Pass  Total
+MAF           |    2      2
+Test Summary: | Pass  Total
+IAF           |    2      2
+Test Summary:     | Pass  Total
+Invertible1x1Conv |    2      2
+Test Summary:  | Pass  Total
+AffineHalfFlow |    2      2
+Test Summary:      | Pass  Total
+NeuralCouplingFlow |    2      2
+Test Summary: | Pass  Total
+Permute       |    2      2
+Test Summary: | Pass  Total
+composite     |    2      2
