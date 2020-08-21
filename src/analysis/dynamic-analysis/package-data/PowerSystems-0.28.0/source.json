@@ -1,63 +1,63 @@
 {
   "eval_info": {
-    "call_count": 313,
+    "call_count": 540,
     "stack_traces": [
       {
-        "count": 278,
+        "count": 470,
         "last_call": "eval(::Symbol) at PowerSystems.jl:6",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 24,
+              "count": 56,
               "ast_head": "Symbol-Bus"
             },
             {
-              "count": 24,
-              "ast_head": "Symbol-Line"
-            },
-            {
-              "count": 24,
-              "ast_head": "Symbol-PowerLoad"
-            },
-            {
-              "count": 24,
-              "ast_head": "Symbol-Area"
-            },
-            {
-              "count": 23,
-              "ast_head": "Symbol-RenewableDispatch"
-            },
-            {
-              "count": 23,
+              "count": 49,
               "ast_head": "Symbol-ThermalStandard"
             },
             {
-              "count": 23,
+              "count": 42,
+              "ast_head": "Symbol-PowerLoad"
+            },
+            {
+              "count": 36,
+              "ast_head": "Symbol-Line"
+            },
+            {
+              "count": 35,
+              "ast_head": "Symbol-RenewableDispatch"
+            },
+            {
+              "count": 35,
               "ast_head": "Symbol-LoadZone"
             },
             {
-              "count": 21,
-              "ast_head": "Symbol-RenewableFix"
+              "count": 35,
+              "ast_head": "Symbol-Area"
             },
             {
-              "count": 17,
-              "ast_head": "Symbol-HydroEnergyReservoir"
-            },
-            {
-              "count": 16,
+              "count": 28,
               "ast_head": "Symbol-TapTransformer"
             },
             {
-              "count": 14,
+              "count": 28,
+              "ast_head": "Symbol-HydroEnergyReservoir"
+            },
+            {
+              "count": 28,
+              "ast_head": "Symbol-GenericBattery"
+            },
+            {
+              "count": 28,
+              "ast_head": "Symbol-RenewableFix"
+            },
+            {
+              "count": 21,
               "ast_head": "Symbol-HydroDispatch"
             },
             {
-              "count": 14,
+              "count": 21,
               "ast_head": "Symbol-HVDCLine"
-            },
-            {
-              "count": 14,
-              "ast_head": "Symbol-GenericBattery"
             },
             {
               "count": 7,
@@ -65,22 +65,26 @@
             },
             {
               "count": 7,
-              "ast_head": "Symbol-AGC"
+              "ast_head": "Symbol-DynamicBranch"
             },
             {
-              "count": 3,
+              "count": 7,
               "ast_head": "Symbol-FixedAdmittance"
+            },
+            {
+              "count": 7,
+              "ast_head": "Symbol-AGC"
             }
           ]
         }
       },
       {
-        "count": 35,
+        "count": 70,
         "last_call": "eval at PowerSystems.jl:6 [inlined]",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 35,
+              "count": 70,
               "ast_head": "curly"
             }
           ]
@@ -90,60 +94,60 @@
     "func_specific_data": {
       "ast_heads": [
         {
-          "count": 35,
+          "count": 70,
           "ast_head": "curly"
         },
         {
-          "count": 24,
+          "count": 56,
           "ast_head": "Symbol-Bus"
         },
         {
-          "count": 24,
-          "ast_head": "Symbol-Line"
-        },
-        {
-          "count": 24,
-          "ast_head": "Symbol-PowerLoad"
-        },
-        {
-          "count": 24,
-          "ast_head": "Symbol-Area"
-        },
-        {
-          "count": 23,
-          "ast_head": "Symbol-RenewableDispatch"
-        },
-        {
-          "count": 23,
+          "count": 49,
           "ast_head": "Symbol-ThermalStandard"
         },
         {
-          "count": 23,
+          "count": 42,
+          "ast_head": "Symbol-PowerLoad"
+        },
+        {
+          "count": 36,
+          "ast_head": "Symbol-Line"
+        },
+        {
+          "count": 35,
+          "ast_head": "Symbol-RenewableDispatch"
+        },
+        {
+          "count": 35,
           "ast_head": "Symbol-LoadZone"
         },
         {
-          "count": 21,
-          "ast_head": "Symbol-RenewableFix"
+          "count": 35,
+          "ast_head": "Symbol-Area"
         },
         {
-          "count": 17,
-          "ast_head": "Symbol-HydroEnergyReservoir"
-        },
-        {
-          "count": 16,
+          "count": 28,
           "ast_head": "Symbol-TapTransformer"
         },
         {
-          "count": 14,
+          "count": 28,
+          "ast_head": "Symbol-HydroEnergyReservoir"
+        },
+        {
+          "count": 28,
+          "ast_head": "Symbol-GenericBattery"
+        },
+        {
+          "count": 28,
+          "ast_head": "Symbol-RenewableFix"
+        },
+        {
+          "count": 21,
           "ast_head": "Symbol-HydroDispatch"
         },
         {
-          "count": 14,
+          "count": 21,
           "ast_head": "Symbol-HVDCLine"
-        },
-        {
-          "count": 14,
-          "ast_head": "Symbol-GenericBattery"
         },
         {
           "count": 7,
@@ -151,11 +155,15 @@
         },
         {
           "count": 7,
-          "ast_head": "Symbol-AGC"
+          "ast_head": "Symbol-DynamicBranch"
         },
         {
-          "count": 3,
+          "count": 7,
           "ast_head": "Symbol-FixedAdmittance"
+        },
+        {
+          "count": 7,
+          "ast_head": "Symbol-AGC"
         }
       ],
       "func_def_types": {

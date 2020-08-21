@@ -29,4 +29,4 @@ test_topology:
 test_validation: 
 Test Summary:            |  Pass  Total
 Begin PowerSystems tests | 15000  15000
-2163.573328 seconds (925.99 M allocations: 47.205 GiB, 1.59% gc time)
+453.535626 seconds (890.72 M allocations: 44.847 GiB, 7.21% gc time)
