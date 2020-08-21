@@ -13,16 +13,25 @@ function getDiff {
     returnVal=$(diff <(echo $analysis) <(echo $test))
 }
 
-pkgs=$(ls package-data-tst)
+haveDiffOut=()
+haveDiffErr=()
+packageDir=package-data
+pkgs=$(ls $packageDir)
 for pkg in $pkgs
 do
-    stdioDir=package-data-tst/$pkg/stdio/
+    stdioDir=$packageDir/$pkg/stdio/
     getDiff $stdioDir stdout
     outDiff=$returnVal
+    if [ -n "$outDiff" ]; then
+	haveDiffOut+=( $pkg )
+    fi
     getDiff $stdioDir stderr
     errDiff=$returnVal
-    echo \#\#\# OUT DIFF \#\#\#
-    echo $outDiff
-    echo \#\#\# ERR DIFF \#\#\#
-    echo $errDiff
+    if [ -n "$errDiff" ]; then
+	haveDiffErr+=( $pkg )
+    fi
 done
+echo \#\#\# Have Different Stdout \#\#\#
+printf '%s\n' ${haveDiffOut[@]}
+echo \#\#\# Have Different Stderr \#\#\#
+printf '%s\n' ${haveDiffErr[@]}
