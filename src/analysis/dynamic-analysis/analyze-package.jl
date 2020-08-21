@@ -9,6 +9,7 @@ function analyzePkg(pkgName :: String, pkgVersion :: Union{String, Nothing})
     ENV["DYNAMIC_ANALYSIS_DIR"] = pwd()
     ENV["DYNAMIC_ANALYSIS_PACKAGE_NAME"] = pkgName
     ENV["OUTPUT_DIR"] = "$(ENV["DYNAMIC_ANALYSIS_DIR"])/package-data/$(pkgName)-$(Pkg.installed()[pkgName])"
+    try mkdir(ENV["OUTPUT_DIR"]) catch e end
     addUniqueLineIdentifier()
     Pkg.test(pkg)
 end
