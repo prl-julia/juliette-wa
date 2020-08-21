@@ -24,11 +24,13 @@ do
     outDiff=$returnVal
     if [ -n "$outDiff" ]; then
 	haveDiffOut+=( $pkg )
+	echo $outDiff > $stdioDir/stdout-diff.txt
     fi
     getDiff $stdioDir stderr
     errDiff=$returnVal
     if [ -n "$errDiff" ]; then
 	haveDiffErr+=( $pkg )
+	echo $errDiff > $stdioDir/stderr-diff.txt
     fi
 done
 echo \#\#\# Have Different Stdout \#\#\#
