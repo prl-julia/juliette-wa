@@ -1,0 +1,218 @@
+{
+  "eval_info": {
+    "call_count": 45,
+    "stack_traces": [
+      {
+        "count": 32,
+        "last_call": "eval(::Expr) at client.jl:467",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 27,
+              "ast_head": "function"
+            },
+            {
+              "count": 5,
+              "ast_head": "Tuple{Expr,Expr}"
+            }
+          ]
+        }
+      },
+      {
+        "count": 13,
+        "last_call": "(::Distributed.var\"#155#156\"{Module,Expr})() at task.jl:356",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 6,
+              "ast_head": "="
+            },
+            {
+              "count": 3,
+              "ast_head": "block"
+            },
+            {
+              "count": 3,
+              "ast_head": "macrocall"
+            },
+            {
+              "count": 1,
+              "ast_head": "using"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 27,
+          "ast_head": "function"
+        },
+        {
+          "count": 6,
+          "ast_head": "="
+        },
+        {
+          "count": 5,
+          "ast_head": "Tuple{Expr,Expr}"
+        },
+        {
+          "count": 3,
+          "ast_head": "block"
+        },
+        {
+          "count": 3,
+          "ast_head": "macrocall"
+        },
+        {
+          "count": 1,
+          "ast_head": "using"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 27,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 186,
+    "stack_traces": [
+      {
+        "count": 68,
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 48
+            },
+            {
+              "function_name": "_require_callback",
+              "count": 20
+            }
+          ]
+        }
+      },
+      {
+        "count": 58,
+        "last_call": "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.JoinPGRPMsg, ::Bool) at messages.jl:185",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "serialize_msg",
+              "count": 58
+            }
+          ]
+        }
+      },
+      {
+        "count": 28,
+        "last_call": "(::Distributed.var\"#125#126\"{Distributed.ProcessGroup,Distributed.RRID,typeof(Distributed.def_rv_channel)})() at remotecall.jl:175",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "def_rv_channel",
+              "count": 28
+            }
+          ]
+        }
+      },
+      {
+        "count": 25,
+        "last_call": "message_handler_loop(::Sockets.TCPSocket, ::Sockets.TCPSocket, ::Bool) at process_messages.jl:185",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "deserialize_msg",
+              "count": 25
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": "foreach at abstractarray.jl:2009 [inlined]",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#99",
+              "count": 1
+            },
+            {
+              "function_name": "#63",
+              "count": 1
+            },
+            {
+              "function_name": "#498",
+              "count": 1
+            },
+            {
+              "function_name": "#21",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "require(::Base.PkgId) at loading.jl:931",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 2
+            },
+            {
+              "function_name": "_require_callback",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "serialize_msg",
+          "count": 58
+        },
+        {
+          "function_name": "loadpkg",
+          "count": 50
+        },
+        {
+          "function_name": "def_rv_channel",
+          "count": 28
+        },
+        {
+          "function_name": "deserialize_msg",
+          "count": 25
+        },
+        {
+          "function_name": "_require_callback",
+          "count": 21
+        },
+        {
+          "function_name": "#99",
+          "count": 1
+        },
+        {
+          "function_name": "#63",
+          "count": 1
+        },
+        {
+          "function_name": "#498",
+          "count": 1
+        },
+        {
+          "function_name": "#21",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

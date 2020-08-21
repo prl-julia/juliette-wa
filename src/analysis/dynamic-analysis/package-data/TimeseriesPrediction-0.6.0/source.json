@@ -1,0 +1,40 @@
+{
+  "eval_info": {
+    "call_count": 325,
+    "stack_traces": [
+      {
+        "count": 325,
+        "last_call": "eval at TimeseriesPrediction.jl:4 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 325,
+              "ast_head": "call"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 325,
+          "ast_head": "call"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

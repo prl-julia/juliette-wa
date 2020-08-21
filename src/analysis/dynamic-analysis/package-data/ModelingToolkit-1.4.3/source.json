@@ -1,0 +1,152 @@
+{
+  "eval_info": {
+    "call_count": 343,
+    "stack_traces": [
+      {
+        "count": 342,
+        "last_call": "eval at ModelingToolkit.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 187,
+              "ast_head": "Symbol-one"
+            },
+            {
+              "count": 104,
+              "ast_head": "Symbol--"
+            },
+            {
+              "count": 11,
+              "ast_head": "Symbol-*"
+            },
+            {
+              "count": 10,
+              "ast_head": "Symbol-^"
+            },
+            {
+              "count": 9,
+              "ast_head": "Symbol-/"
+            },
+            {
+              "count": 8,
+              "ast_head": "Symbol-cos"
+            },
+            {
+              "count": 5,
+              "ast_head": "Symbol-log"
+            },
+            {
+              "count": 3,
+              "ast_head": "Symbol-sin"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-csch"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-=="
+            },
+            {
+              "count": 1,
+              "ast_head": "typeof(ifelse)"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-coth"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-exp"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at system_construction.jl:211",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "call"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 187,
+          "ast_head": "Symbol-one"
+        },
+        {
+          "count": 104,
+          "ast_head": "Symbol--"
+        },
+        {
+          "count": 11,
+          "ast_head": "Symbol-*"
+        },
+        {
+          "count": 10,
+          "ast_head": "Symbol-^"
+        },
+        {
+          "count": 9,
+          "ast_head": "Symbol-/"
+        },
+        {
+          "count": 8,
+          "ast_head": "Symbol-cos"
+        },
+        {
+          "count": 5,
+          "ast_head": "Symbol-log"
+        },
+        {
+          "count": 3,
+          "ast_head": "Symbol-sin"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-csch"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-=="
+        },
+        {
+          "count": 1,
+          "ast_head": "typeof(ifelse)"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-coth"
+        },
+        {
+          "count": 1,
+          "ast_head": "call"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-exp"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      }
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

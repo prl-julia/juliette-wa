@@ -1,0 +1,37 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+Capture stacktrace: Error During Test at /home/jack/.julia/packages/Rebugger/ApBeQ/test/edit.jl:320
+  Got exception outside of a @test
+  failed to capture any elements of the stacktrace
+  Stacktrace:
+   [1] error(::String) at ./error.jl:33
+   [2] capture_stacktrace(::Module, ::Expr) at /home/jack/.julia/packages/Rebugger/ApBeQ/src/debug.jl:218
+   [3] (::var"#53#64")() at /home/jack/.julia/packages/Rebugger/ApBeQ/test/edit.jl:324
+   [4] redirect_stderr(::var"#53#64", ::IOStream) at ./stream.jl:1150
+   [5] (::var"#52#63")(::String, ::IOStream) at /home/jack/.julia/packages/Rebugger/ApBeQ/test/edit.jl:323
+   [6] mktemp(::var"#52#63", ::String) at ./file.jl:659
+   [7] mktemp(::Function) at ./file.jl:657
+   [8] top-level scope at /home/jack/.julia/packages/Rebugger/ApBeQ/test/edit.jl:322
+   [9] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [10] top-level scope at /home/jack/.julia/packages/Rebugger/ApBeQ/test/edit.jl:321
+   [11] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [12] top-level scope at /home/jack/.julia/packages/Rebugger/ApBeQ/test/edit.jl:23
+   [13] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/jack/.julia/packages/Rebugger/ApBeQ/test/edit.jl:20
+   [15] include(::String) at ./client.jl:457
+   [16] top-level scope at /home/jack/.julia/packages/Rebugger/ApBeQ/test/runtests.jl:4
+   [17] include(::String) at ./client.jl:457
+   [18] top-level scope at none:11
+   [19] eval(::Module, ::Any) at ./boot.jl:331
+   [20] exec_options(::Base.JLOptions) at ./client.jl:272
+   [21] _start() at ./client.jl:506
+  
+Test Summary:                           | Pass  Error  Total
+Rebugger                                |   82      1     83
+  Debug core                            |   79      1     80
+    Deepcopy                            |    1             1
+    Signatures                          |    8             8
+    Caller buffer capture and insertion |   13            13
+    Callee variable capture             |   18            18
+    Step in                             |   39            39
+    Capture stacktrace                  |           1      1
+  User interface                        |    2             2
