@@ -288,10 +288,16 @@
      (inMTdom MT x)]
 )
 
+(define-metafunction WA-full
+  inMTdomWrap : MT mname -> boolean
+  [(inMTdomWrap MT mname) (inMTdom MT ,(string->symbol (term mname)))]
+)
+
 (test-equal #f (term (inMTdom ∅ f)))
 (test-equal #f (term (inMTdom ((mdef "g" () 0) • ∅) f)))
 (test-equal #t (term (inMTdom ((mdef "f" () 0) • ∅) f)))
 (test-equal #t (term (inMTdom ((mdef "g" () 0) • ((mdef "f" () 0) • ∅)) f)))
+
 
 ;; ==================================================
 ;; Multiple Dispatch
