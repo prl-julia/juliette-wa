@@ -17,20 +17,27 @@
   
   ;; expression
   [e ::=
-     v           ; value
-     x           ; variable
-     (seq e e)   ; sequence e1;e2
-     (if e e e)
-     mc   ; method call e(e...)
+     v                 ; value
+     x                 ; variable
+     (seq e e)         ; sequence e1;e2
+     (if e e e)        ; if statement
+     mc                ; method call e(e...)
      (pcall op e ...)  ; primop call op(e...)
-     md          ; method definition
-     (evalg e)   ; global evaluation (|e|)
+     md                ; method definition
+     (evalt MT e)      ; local evaluation (|e|)_M
+     (evalg e)         ; global evaluation (|e|)
      ]
   ;; program (expression evaluated in the global context)
   [p ::= (evalg e)]
   ;; method definition mname(x::τ,...) = e
   [md ::= (mdef mname ((:: x τ) ...) e)]
   [mc ::= (mcall e e ...) ]
+
+    ;; method table
+  [MT ::=
+      ∅         ; empty table
+      (md • MT) ; table extended with a method definition
+      ]
   
   ;; value
   [v ::=

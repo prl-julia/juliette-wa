@@ -35,12 +35,6 @@
 
 ;; -------------------- State
 
-  ;; method table
-  [MT ::=
-      ∅         ; empty table
-      (md • MT) ; table extended with a method definition
-      ]
-
   ;; program state < MT , C[e] >
   [st ::= (< MT ce >)]
   [ce ::= (in-hole C e)]

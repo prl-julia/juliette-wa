@@ -232,6 +232,14 @@
 (test-equal (term (is-mval 1)) #f)
 (test-equal (term (is-mval (mval "func"))) #t)
 
+;; Gets the name of the direct call method if one exists
+(define-metafunction WA-opt
+  get-opt-method : Φ sig-σ -> mname or nothing
+  [(get-opt-method (_ ... (sig-σ mname_opt) _ ...) sig-σ)
+   mname_opt]
+  [(get-opt-method _ _) nothing]
+  )
+
 ;; Determines if the given local variable has the same name as the given variable
 ;; The regex match is needed in order to ignore the substitution id of redex vars
 (define (same-varname localvar x_str)
@@ -331,15 +339,15 @@
    (⊢ Γ v (typeof v))]
   ; Γ ⊢ e1;e2 :: σ, where e2 :: σ
   [(⊢ Γ e_2 σ_2)
-   ---------------------------- "T-Seq"
+   ------------------------ "T-Seq"
    (⊢ Γ (seq e_1 e_2) σ_2)]
   ; Γ ⊢ 𝛿(e...) :: τ
   [(⊢ Γ e σ) ...
    (where σ_res (res-type-primop op σ ...))
-   -------------------------------------------- "T-Primop"
+   ---------------------------------------- "T-Primop"
    (⊢ Γ (pcall op e ...) σ_res)]
   ; Γ ⊢ m(...) = e :: (mtag "m") 
-  [------------------------------------------------- "T-MD"
+  [----------------------------------------------------- "T-MD"
    (⊢ Γ (mdef mname ((:: x τ_arg) ...) e) (mtag mname))]
   ; Γ ⊢ (|e|) :: σ, where e :: σ
   [(⊢ Γ e σ)
@@ -348,6 +356,7 @@
   )
 
 (test-equal (judgment-holds (⊢ () 1 Int64)) #true)
+(test-equal (judgment-holds (⊢ () (evalg m) (mtag "m"))) #true)
 (test-equal (judgment-holds (⊢ ((x String) (y Bool) (y Float64)) (seq 4 y) Bool)) #true)
 (test-equal (judgment-holds (⊢ ((b Bool)) (pcall && b true) Bool)) #true)
 (test-equal (judgment-holds (⊢ ((x String) (y Float64)) (pcall + x 1) Float64)) #false)
@@ -363,39 +372,39 @@
   #:contract (~~> Γ Φ (evalt MT e) (evalt MT e))
   ; Γ ⊢ Φ (|v|)_MT ~~> (|v|)_MT' where v != m
   [(where #f (is-mval v))
-   ------------------------------------ "OE-Val"
+   -------------------------------------- "OE-Val"
    (~~> Γ Φ (evalt MT v) (evalt MT_P v))]
   ; Γ ⊢ Φ (|m|)_MT ~~> (|m|)_MT'
-  [(where #t (inMTdomWrap MT mname)) 
-   ------------------------------------ "OE-ValFun"
+  [(where #t (inMTdomWrap MT mname))
+   ------------------------------------------------------------ "OE-ValFun"
    (~~> Γ Φ (evalt MT (mval mname)) (evalt MT_P (mval mname)))]
   ; Γ ⊢ Φ (|x|)_MT ~~> (|x|)_MT'
-  [------------------------------------ "OE-Var"
+  [-------------------------------------- "OE-Var"
    (~~> Γ Φ (evalt MT x) (evalt MT_P x))]
   ; Γ ⊢ Φ (|(|x|)|)_MT ~~> (|(|x|)|)_MT'
-  [------------------------------------ "OE-Global"
+  [------------------------------------------------------ "OE-Global"
    (~~> Γ Φ (evalt MT (evalg e)) (evalt MT_P (evalg e)))]
   ; Γ ⊢ Φ (|(|x|)_MT_L|)_MT ~~> (|(|x|)_MT_L|)_MT'
-  [------------------------------------ "OE-Local"
+  [---------------------------------------------------------------- "OE-Local"
    (~~> Γ Φ (evalt MT (evalt MT_L e)) (evalt MT_P (evalt MT_L e)))]
   ; Γ ⊢ Φ (|md|)_MT ~~> (|md|)_MT'
-  [------------------------------------ "OE-MD"
+  [---------------------------------------- "OE-MD"
    (~~> Γ Φ (evalt MT md) (evalt MT_P md))]
   ; Γ ⊢ Φ (|e1;e2|)_MT ~~> (|e1';e2'|)_MT
   [(~~> Γ Φ (evalt MT e_1) (evalt MT_P e_1P))
    (~~> Γ Φ (evalt MT e_2) (evalt MT_P e_2P))
-   ---------------------------------------- "OE-Seq"
+   ------------------------------------------ "OE-Seq"
    (~~> Γ Φ (evalt MT (seq e_1 e_2))
           (evalt MT_P (seq e_1P e_2P)))]
   ; Γ ⊢ Φ (|𝛿(e...)|)_MT ~~> (|𝛿(e'...)|)_MT
   [(~~> Γ Φ (evalt MT e) (evalt MT_P e_P)) ...
-   ----------------------------------------- "OE-Primop"
+   ------------------------------------------- "OE-Primop"
    (~~> Γ Φ (evalt MT (pcall op e ...))
           (evalt MT_P (pcall op e_P ...)))]
   ; Γ ⊢ Φ (|m(e...)|)_MT -> (|m(e'...)|)_MT
   [(~~> Γ Φ (evalt MT e_arg) (evalt MT_P e_argP))
    (~~> Γ Φ (evalt MT e) (evalt MT_P e_P)) ...
-   -------------------------------------------- "OE-Call"
+   ---------------------------------------------- "OE-Call"
    (~~> Γ Φ (evalt MT (mcall e_arg e ...))
           (evalt MT_P (mcall e_argP e_P ...)))]
   ; Γ ⊢ Φ (|m(nv...)|)_MT ~~> (|nothing; e_body|)_MT' where is is mval
@@ -404,7 +413,7 @@
           (getmd MT mname (σ ...)))
    (where e_b (subst-n e_mbody (x nv) ...))
    (~~> Γ Φ (evalt MT e_b) (evalt MT_P e_P))
-   --------------------------------------------- "OE-Inline"
+   ----------------------------------------------- "OE-Inline"
    (~~> Γ Φ (evalt MT (mcall (mval mname) nv ...))
           (evalt MT_P (seq nothing e_P)))]
   ; Γ ⊢ Φ (|m(e...)|)_MT ~~> (|m_direct(e'...)|)_MT' where m_direct is a singleton method
@@ -412,14 +421,14 @@
    (⊢ Γ e_P σ) ...
    (where mname_opt (get-opt-method Φ (mdef mname (σ ...))))
    (where #t ,(equal? (term mname_P) (term mname_opt)))
-   -------------------------------------------------------- "OE-Specialize"
+   --------------------------------------------------------- "OE-Specialize"
    (~~> Γ Φ (evalt MT (mcall (mval mname) e ...))
           (evalt MT_P (mcall (mval mname_P) e_P ...)))]
   ; Convert variable to mval
   [(where mname ,(~a (term x_mname)))
    (where undeclared-var (lookup Γ x_mname))
    (~~> Γ Φ (evalt MT (mcall (mval mname) e ...)) (evalt MT_P e_p))
-   ---------------------------------------------------------------"OE-MName"
+   ---------------------------------------------------------------- "OE-MName"
     (~~> Γ Φ (evalt MT (mcall x_mname e ...)) (evalt MT_P e_p))]
   )
 
@@ -427,15 +436,32 @@
 (define MT-addintNum (term (,addxy-intNum • ∅)))
 (define MT-addintint-addintNum (term ((mdef "add_P" ((:: x Int64) (:: y Int64)) (pcall + x y))
                                           • ,MT-addintNum)))
-;(test-equal (judgment-holds (~~> () () (evalt (,id-fInt • ∅) y)
-;                                    (evalt (,id-fInt • ∅) y))) #true)
-;(test-equal (judgment-holds (~~> () () (evalt ∅ (seq 1 "a")) (evalt ∅ (seq 1 "a")))) #true)
-;(test-equal (judgment-holds (~~> () () (evalt ((mdef "func" () 3) • ∅) (mcall (mval "func")))
-;                                    (evalt ((mdef "func" () 3) • ∅) (seq nothing 3)))) #true)
-;(test-equal (judgment-holds (~~> ((y Int64)) ()
-;                                 (evalt ,MT-addintNum (mcall (mval "add") 1 (pcall + y y)))
-;                                 (evalt ,MT-addintint-addintNum
-;                                        (mcall (mval "add_P") 1 (pcall + y y))))) #true)
+(test-equal (judgment-holds (~~> ((x Int64)) () (evalt ∅ x) (evalt ∅ x))) #t)
+(test-equal (judgment-holds (~~> () () (evalt ∅ (evalg 1.1)) (evalt ∅ (evalg 1.1)))) #t)
+(test-equal (judgment-holds (~~> () () (evalt ∅ (evalt ∅ true))
+                                 (evalt (,addxy-intNum • ∅) (evalt ∅ true)))) #t)
+(test-equal (judgment-holds (~~> () () (evalt ∅ (evalt ∅ true))
+                                 (evalt (,addxy-intNum • ∅) (evalt (,addxy-intNum • ∅) true)))) #f)
+(test-equal (judgment-holds (~~> () () (evalt ∅ (evalg 1.1)) (evalt ∅ (evalg 1.1)))) #t)
+(test-equal (judgment-holds (~~> ((x Int64)) () (evalt ∅ x) (evalt ∅ x))) #t)
+(test-equal (judgment-holds (~~> () () (evalt (,id-fInt • ∅) (mval "func"))
+                                 (evalt (,id-fInt • (,addxy-intNum • ∅)) (mval "func")))) #t)
+(test-equal (judgment-holds (~~> () () (evalt ∅ (mval "func")) (evalt ∅ (mval "func")))) #f)
+(test-equal (judgment-holds (~~> () () (evalt ∅ ,addxy-intNum) (evalt ∅ ,addxy-intNum))) #t)
+(test-equal (judgment-holds (~~> () () (evalt (,id-fInt • ∅) y)
+                                    (evalt (,id-fInt • ∅) y))) #true)
+(test-equal (judgment-holds (~~> () () (evalt ((mdef "func" () 3) • ∅) (mcall (mval "func")))
+                                    (evalt ((mdef "func" () 3) • ∅) (seq nothing 3)))) #true)
+(test-equal (judgment-holds (~~> () () (evalt ((mdef "func" () 3) • ∅) (seq 1 (mcall (mval "func"))))
+                                 (evalt ((mdef "func" () 3) • ∅) (seq 1 (seq nothing 3))))) #true)
+(test-equal (judgment-holds (~~> ((y Int64)) (((mdef "add" (Int64 Int64)) "add_P"))
+                                 (evalt ,MT-addintNum (mcall (mval "add") 1 (pcall + y y)))
+                                 (evalt ,MT-addintint-addintNum
+                                        (mcall (mval "add_P") 1 (pcall + y y))))) #true)
+(test-equal (judgment-holds (~~> ((y Int64)) (((mdef "add" (Int64 Bool)) "add_P"))
+                                 (evalt ,MT-addintNum (mcall (mval "add") 1 (pcall + y y)))
+                                 (evalt ,MT-addintint-addintNum
+                                        (mcall (mval "add_P") 1 (pcall + y y))))) #false)
 
 ;; ==================================================
 ;; Optimization Judgment for Method Definition
@@ -505,7 +531,8 @@
 ;(test-equal (term (related-mt (,new-call-func-withy • ∅) ∅)) #f)
 ;(test-equal (term (related-mt ∅ (,new-call-func-withy • ∅))) #t)
 ;(test-equal (term (related-mt (,id-fInt •(,func-return1 • (,new-call-func-withy • ∅)))
-;                              (,id-fInt •(,func-return1 • ((mdef "new" ((:: x Int64)) (seq nothing x))
+;                              (,id-fInt •(,func-return1 •
+;((mdef "new" ((:: x Int64))(seq nothing x))
 ;                                                          • ∅))))) #t)
 
 ;; -------------------- Main Rule
@@ -564,7 +591,11 @@
   get-type :  Γ e -> τ
   [(get-type Γ e) τ
    (where (⊢ _ _ τ)
-          ,(derivation-term (first (build-derivations (⊢ Γ e τ)))))]
+          ,(let ((a (write "bef"))
+                 (b (write (term (Γ e τ))))
+                 (c (derivation-term (first (build-derivations (⊢ Γ e τ)))))
+                 (d (write "af")))
+             (derivation-term (first (build-derivations (⊢ Γ e τ))))))]
   )
 
 ;; Gets the types of the given expressions
@@ -576,14 +607,6 @@
 
 
 ;; -------------------- Direct Call
-
-;; Gets the name of the direct call method if one exists
-(define-metafunction WA-opt
-  get-opt-method : Φ sig-σ -> mname or nothing
-  [(get-opt-method (_ ... (sig-σ mname_opt) _ ...) sig-σ)
-   mname_opt]
-  [(get-opt-method _ _) nothing]
-  )
 
 ;; Determines if the direct call env contains the given name
 (define-metafunction WA-opt
@@ -637,7 +660,7 @@
    (where #f ,(andmap (λ (expr) (term (is-nv ,expr))) (term (e ...))))
    (where #f (contains-name-Φ Φ ,(~a (term mname))))
    (where (σ ...) (get-types Γ e ...))
-   (where (mdef mname ((:: x σ) ...) e_body) (getmd MT mname (σ ...)))
+   (where (mdef mname ((:: x _) ...) e_body) (getmd MT mname (σ ...)))
    (where maybe-mname (get-opt-method Φ (mdef mname (σ ...))))]
   [(get-opt-name-and-sig _ _ _ _) nothing])
 
@@ -736,9 +759,9 @@
 
 ;; Optimizes the given expression
 (define-metafunction WA-opt
-  opt-e : Γ MT e -> (< MT e >)
+  opt-e : Γ MT e -> (< Φ MT e >)
   [(opt-e Γ MT_in e_in)
-   (< MT_out e_out >)
+   (< Φ_out MT_out e_out >)
    (where ((< Φ MT_opt _ >) _ ...) (opt-mt MT_in))
    (where ((< Γ_out Δ_out Φ_out (evalt MT_out e_out) >) _ ...)
           ,(apply-reduction-relation*
