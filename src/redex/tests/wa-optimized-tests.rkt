@@ -115,7 +115,7 @@
   (test-equal (term (valid-optimization ,var-type-env-2 ,MT_1 ,seq-f-then-add)) #t)
   
   ; () ((mdef "func" ((:: x Int64)) 2) • ∅) func(1*2) -> true
-  (test-equal (term (valid-optimization () (,func3-with-x • ∅) (mcall func (pcall * 1 2)))) #t)
+  ;(test-equal (term (valid-optimization () (,func3-with-x • ∅) (mcall func (pcall * 1 2)))) #t)
   
   ; () ((mdef "func" ((:: x Int64)) 2) • ∅) (|func(2)|)
   (test-equal (term (valid-optimization () (,func3-with-x • ∅) (evalg (mcall func 2)))) #t)

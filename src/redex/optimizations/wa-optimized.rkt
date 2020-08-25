@@ -521,7 +521,7 @@
 (define-metafunction WA-opt
   no-repeat-names : e MT MT -> boolean
   [(no-repeat-names e MT_orig ((mdef mname _ _) • MT_rest))
-   ,(and (not (term (contains-name-e e mname)))
+   ,(and (not (term (contains-name-e e ,(string->symbol (term mname)))))
          (term (not-contain-name MT_orig mname))
          (term (no-repeat-names e MT_orig MT_rest)))]
   [(no-repeat-names e MT_orig ∅) #t]
