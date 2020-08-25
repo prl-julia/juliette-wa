@@ -62,70 +62,70 @@
 
   ; Manual optimization judgments
   
-;  (test-equal (judgment-holds (~~> () (evalt (,func-return3 • ∅) (mcall func))
-;                                   (evalt (,func-return3 • ∅) (mcall (mval "func"))))) #true)
-;  (test-equal (judgment-holds (~~> () (evalt (,func-return3 • ∅) (mcall func))
-;                                   (evalt (,func-return3 • ∅) (seq nothing 3)))) #true)
-;  (test-equal (judgment-holds (~~> ((y Int64))
-;                                   (evalt (,add-intNum • ∅)
-;                                          (mcall (mval "add") 1 (pcall + y 1.1)))
-;                                   (evalt ((mdef "add_P" ((:: x Int64) (:: y Int64)) (pcall + x y))
-;                                           • (,add-intNum • ∅))
-;                                          (mcall (mval "add_P") 1 (pcall + y 1.1))))) #false)
+  (test-equal (judgment-holds (~~> () () (evalt (,func-return3 • ∅) (mcall func))
+                                   (evalt (,func-return3 • ∅) (mcall (mval "func"))))) #true)
+  (test-equal (judgment-holds (~~> () () (evalt (,func-return3 • ∅) (mcall func))
+                                   (evalt (,func-return3 • ∅) (seq nothing 3)))) #true)
+  (test-equal (judgment-holds (~~> ((y Int64)) (((mdef "add" (Int64 Int64)) "add_P"))
+                                   (evalt (,add-intNum • ∅)
+                                          (mcall (mval "add") 1 (pcall + y 2)))
+                                   (evalt ((mdef "add_P" ((:: x Int64) (:: y Int64)) (pcall + x y))
+                                           • (,add-intNum • ∅))
+                                          (mcall (mval "add_P") 1 (pcall + y 2))))) #true)
   
   ; Automatically generated optimization judgements
   
-;  ; () ∅ 1 -> true
-;  (test-equal (term (valid-optimization () ∅ 1)) #t)
-;  
-;  ; () ∅ func(x) undeclared-var -> false
-;  (test-equal (term (valid-optimization () ∅ ,call-func-with-x)) #t)
-;  
-;  ; ((x Bool)) ∅ 1+x -> true
-;  (test-equal (term (valid-optimization ,xBool-type-env ∅ ,one-plus-x)) #t)
-;  
-;  ; () ∅ func() err-no-method -> true
-;  (test-equal (term (valid-optimization () ∅ ,call-func)) #t)
-;  
-;  ; () (f()=1 • ∅) func() -> true
-;  (test-equal (term (valid-optimization () (,func1 • ∅) ,call-func)) #t)
-;  
-;  ; ((y Int64)) (y()=1 • ∅) y() ->
-;  (test-equal (term (valid-optimization ,wInt-type-env (,func1 • ∅) (mcall w))) #t)
-;  
-;  ; ((w Int64)) (y()=x • ∅) id(id(w)) -> true
-;  (test-equal (term (valid-optimization ,wInt-type-env (,idInt • ∅) (mcall id ,call-id-with-w))) #t)
-;  
-;  ; ((w Int64)) (y(x:Int64)=x • ∅) id(w);id(w);id(w) -> true
-;  (test-equal (term (valid-optimization ,wInt-type-env (,idInt • ∅) seq-id-calls)) #t)
-;  
-;  ; ((var1 Bool) (var2 Int64) (var1 Int64))
-;  ; (f(x:Int64)=2 • (add(x:Int64,y=Int64)=x+y • (f(x:Bool)=1 • ∅)))
-;  ; f(var1) -> true
-;  (test-equal (term (valid-optimization ,var-type-env ,MT_1 ,call-f-with-var1)) #t)
-;  
-;  ; ((var1 Bool) (var2 Int64) (var1 Int64))
-;  ; (f(x:Int64)=2 • (add(x:Int64,y=Int64)=x+y • (f(x:Bool)=1 • ∅)))
-;  ; f(var1);add(var1,var2) err-no-method -> true
-;  (test-equal (term (valid-optimization ,var-type-env ,MT_1 ,seq-f-then-add)) #t)
-;  
-;  ; ((var1 Int64) (var2 Int64) (var1 Bool))
-;  ; (f(x:Int64)=2 • (add(x:Int64,y=Int64)=x+y • (f(x:Bool)=1 • ∅)))
-;  ; f(var1);add(var1,var2) -> true
-;  (test-equal (term (valid-optimization ,var-type-env-2 ,MT_1 ,seq-f-then-add)) #t)
-;  
-;  ; () ((mdef "func" ((:: x Int64)) 2) • ∅) func(1*2) -> true
-;  (test-equal (term (valid-optimization () (,func3-with-x • ∅) (mcall func (pcall * 1 2)))) #t)
-;  
-;  ; () ((mdef "func" ((:: x Int64)) 2) • ∅) (|func(2)|)
-;  (test-equal (term (valid-optimization () (,func3-with-x • ∅) (evalg (mcall func 2)))) #t)
-;  
-;  ; ((var1 Int64))
-;  ; (first()=second() • (second()=1 • ∅))
-;  ; first() -> true
-;  (test-equal (term (valid-optimization ((var1 Int64))
-;                                        (,first-calls-second • (,second-1 • ∅))
-;                                        (mcall first))) #t)
+  ; () ∅ 1 -> true
+  (test-equal (term (valid-optimization () ∅ 1)) #t)
+  
+  ; () ∅ func(x) undeclared-var -> false
+  (test-equal (term (valid-optimization () ∅ ,call-func-with-x)) #t)
+  
+  ; ((x Bool)) ∅ 1+x -> true
+  (test-equal (term (valid-optimization ,xBool-type-env ∅ ,one-plus-x)) #t)
+  
+  ; () ∅ func() err-no-method -> true
+  (test-equal (term (valid-optimization () ∅ ,call-func)) #t)
+  
+  ; () (f()=1 • ∅) func() -> true
+  (test-equal (term (valid-optimization () (,func1 • ∅) ,call-func)) #t)
+  
+  ; ((y Int64)) (y()=1 • ∅) y() ->
+  (test-equal (term (valid-optimization ,wInt-type-env (,func1 • ∅) (mcall w))) #t)
+  
+  ; ((w Int64)) (y()=x • ∅) id(id(w)) -> true
+  (test-equal (term (valid-optimization ,wInt-type-env (,idInt • ∅) (mcall id ,call-id-with-w))) #t)
+  
+  ; ((w Int64)) (y(x:Int64)=x • ∅) id(w);id(w);id(w) -> true
+  (test-equal (term (valid-optimization ,wInt-type-env (,idInt • ∅) seq-id-calls)) #t)
+  
+  ; ((var1 Bool) (var2 Int64) (var1 Int64))
+  ; (f(x:Int64)=2 • (add(x:Int64,y=Int64)=x+y • (f(x:Bool)=1 • ∅)))
+  ; f(var1) -> true
+  (test-equal (term (valid-optimization ,var-type-env ,MT_1 ,call-f-with-var1)) #t)
+  
+  ; ((var1 Bool) (var2 Int64) (var1 Int64))
+  ; (f(x:Int64)=2 • (add(x:Int64,y=Int64)=x+y • (f(x:Bool)=1 • ∅)))
+  ; f(var1);add(var1,var2) err-no-method -> true
+  (test-equal (term (valid-optimization ,var-type-env ,MT_1 ,seq-f-then-add)) #t)
+  
+  ; ((var1 Int64) (var2 Int64) (var1 Bool))
+  ; (f(x:Int64)=2 • (add(x:Int64,y=Int64)=x+y • (f(x:Bool)=1 • ∅)))
+  ; f(var1);add(var1,var2) -> true
+  (test-equal (term (valid-optimization ,var-type-env-2 ,MT_1 ,seq-f-then-add)) #t)
+  
+  ; () ((mdef "func" ((:: x Int64)) 2) • ∅) func(1*2) -> true
+  (test-equal (term (valid-optimization () (,func3-with-x • ∅) (mcall func (pcall * 1 2)))) #t)
+  
+  ; () ((mdef "func" ((:: x Int64)) 2) • ∅) (|func(2)|)
+  (test-equal (term (valid-optimization () (,func3-with-x • ∅) (evalg (mcall func 2)))) #t)
+  
+  ; ((var1 Int64))
+  ; (first()=second() • (second()=1 • ∅))
+  ; first() -> true
+  (test-equal (term (valid-optimization ((var1 Int64))
+                                        (,first-calls-second • (,second-1 • ∅))
+                                        (mcall first))) #t)
 
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   ;; Unoptimized to Optimized Juliette Equivalence Tests

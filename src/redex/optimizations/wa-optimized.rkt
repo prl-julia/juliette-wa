@@ -330,7 +330,7 @@
   [------------------- "T-Val"
    (⊢ Γ v (typeof v))]
   ; Γ ⊢ e1;e2 :: σ, where e2 :: σ
-  [(⊢ Γ e_1 σ_1) (⊢ Γ e_2 σ_2)
+  [(⊢ Γ e_2 σ_2)
    ---------------------------- "T-Seq"
    (⊢ Γ (seq e_1 e_2) σ_2)]
   ; Γ ⊢ 𝛿(e...) :: τ
@@ -339,8 +339,7 @@
    -------------------------------------------- "T-Primop"
    (⊢ Γ (pcall op e ...) σ_res)]
   ; Γ ⊢ m(...) = e :: (mtag "m") 
-  [(⊢ (extend Γ (x τ_arg) ...) e σ)
-   ------------------------------------------------- "T-MD"
+  [------------------------------------------------- "T-MD"
    (⊢ Γ (mdef mname ((:: x τ_arg) ...) e) (mtag mname))]
   ; Γ ⊢ (|e|) :: σ, where e :: σ
   [(⊢ Γ e σ)
@@ -444,13 +443,13 @@
 
 ;; Determines if the optimized method definition is a valid optimization
 (define-judgment-form WA-opt
-  #:mode (md~~> I I I)
-  #:contract (md~~> Φ (evalt MT e) (evalt MT e))
+  #:mode (md~~> I I I I I)
+  #:contract (md~~> Φ MT MT e e)
   [(where e_P (subst-n e_Pbody (x_P x) ...))
    (~~> ((x τ) ...) Φ (evalt MT e) (evalt MT_P e_P))
    ----------------------------------------------------- "OD-MD"
-   (md~~> Φ (evalt MT (mdef mname ((:: x τ) ...) e))
-          (evalt MT_P (mdef mname ((:: x_P τ) ...) e_Pbody)))]
+   (md~~> Φ MT MT_P (mdef mname ((:: x τ) ...) e)
+          (mdef mname ((:: x_P τ) ...) e_Pbody))]
   )
 (define func-return1 (term (mdef "func" () 1)))
 (define new-call-func-withy (term (mdef "new" ((:: y Int64)) (mcall func y))))
@@ -473,13 +472,13 @@
 ;; This determination is made by assuming the methods of the third and fourth
 ;; tables are evaluated in the context of the first and second tables respectively
 (define-metafunction WA-opt
-  related-mt-acc : Φ MT MT MT MT_orig2 -> boolean
+  related-mt-acc : Φ MT MT MT MT -> boolean
   [(related-mt-acc Φ MT_orig1 MT_orig2 ∅ ∅) #t]
   [(related-mt-acc Φ MT_orig1 MT_orig2 (md • MT) ∅) #f]
   [(related-mt-acc Φ MT_orig1 MT_orig2 ∅ (md • MT)) #t]
   [(related-mt-acc Φ MT_orig1 MT_orig2 (md_1 • MT_1) (md_2 • MT_2))
    (related-mt-acc Φ MT_orig1 MT_orig2 MT_1 MT_2)
-   (side-condition (judgment-holds (md~~> Φ (evalt MT_orig1 md_1) (evalt MT_orig2 md_2))))]
+   (side-condition (judgment-holds (md~~> Φ MT_orig1 MT_orig2 md_1 md_2)))]
   [(related-mt-acc _ _ _ _ _) #f]
   )
 
@@ -502,22 +501,6 @@
   [(no-repeat-names e MT_orig ∅) #t]
   )
 
-;; Determines if the second method table is a valid optimization of the first
-(define-metafunction WA-opt
-  related-mt : Φ e MT MT -> boolean
-  [(related-mt Φ e MT_1 MT_2) #t
-   (where N_1Len (length MT_1))
-   (where N_2Len (length MT_2))
-   (where #t ,(<= (term N_1Len) (term N_2Len)))
-   (where N_lenDiff ,(- (term N_2Len) (term N_1Len)))
-   (where #t (related-mt-acc Φ MT_1 MT_2 MT_1 (drop N_lenDiff MT_2)))
-   (where #t (no-repeat-names e MT_1 (take N_lenDiff MT_2)))
-   (where #t  ,(andmap (λ (sig-mname-pair)
-                         (term (judgement-holds (wd~~> Φ MT_1 MT_2 sig-mname-pair))))
-                       (term Φ)))]
-  [(related-mt _ _ _ _) #f]
-  )
-
 ;(test-equal (term (related-mt ∅ ∅)) #t)
 ;(test-equal (term (related-mt (,new-call-func-withy • ∅) ∅)) #f)
 ;(test-equal (term (related-mt ∅ (,new-call-func-withy • ∅))) #t)
@@ -531,8 +514,18 @@
 (define-judgment-form WA-opt
   #:mode (mt~~> I I I I)
   #:contract (mt~~> Φ e MT MT)
-  [(where #t (related-mt Φ e MT MT_P))
-   ------------------------------------- "OT-MethodTable"
+  [(where N_Len (length MT))
+   (where N_PLen (length MT_P))
+   (where #t ,(<= (term N_Len) (term N_PLen)))
+   (where N_lenDiff ,(- (term N_PLen) (term N_Len)))
+   (where #t (related-mt-acc Φ MT MT_P MT (drop N_lenDiff MT_P)))
+   (where #t (no-repeat-names e MT (take N_lenDiff MT_P)))
+   (where #t ,(andmap
+               (λ (sig-mname-pair)
+                 (term (judgement-holds
+                        (wd~~> Φ MT MT_P sig-mname-pair))))
+               (term Φ)))
+   -------------------------------------------------------------- "OT-MethodTable"
    (mt~~> Φ e MT MT_P)]
   )
 
@@ -554,8 +547,9 @@
           (getmd MT mname (σ ...)))
    (where (mdef mname_P ((:: x_P τ_P) ...) e_Pbody)
           (getmd MT_P mname_P (σ ...)))
-   (~~> ((x σ) ...) Φ e_body (subst-n e_Pbody (x_P x) ...))
-   -------------------------------------------------------- "OT-MethodTable"
+   (~~> ((x σ) ...) Φ (evalt MT e_body)
+        (evalt MT_P (subst-n e_Pbody (x_P x) ...)))
+   ------------------------------------------------- "OT-MethodTable"
    (wd~~> Φ MT MT_P ((mdef mname (σ ...)) mname_P))]
   )
 
