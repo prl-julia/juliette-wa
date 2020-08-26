@@ -548,9 +548,7 @@
    (where #t (related-mt-acc Φ MT MT_P MT (drop N_lenDiff MT_P)))
    (where #t (no-repeat-names e MT (take N_lenDiff MT_P)))
    (where #t ,(andmap
-               (λ (sig-mname-pair)
-                 (term (judgement-holds
-                        (wd~~> Φ MT MT_P sig-mname-pair))))
+               (λ (sig-mname-pair) (judgment-holds (wd~~> Φ MT MT_P ,sig-mname-pair)))
                (term Φ)))
    -------------------------------------------------------------- "OT-MethodTable"
    (mt~~> Φ e MT MT_P)]
@@ -591,10 +589,8 @@
   get-type :  Γ e -> τ
   [(get-type Γ e) τ
    (where (⊢ _ _ τ)
-          ,(let ((a (write "bef"))
-                 (b (write (term (Γ e τ))))
-                 (c (derivation-term (first (build-derivations (⊢ Γ e τ)))))
-                 (d (write "af")))
+          ,(let ((a (write (build-derivations (⊢ Γ e τ))))
+                 (b (write (length '()))))
              (derivation-term (first (build-derivations (⊢ Γ e τ))))))]
   )
 
@@ -778,7 +774,7 @@
 (define-metafunction WA-opt
   valid-optimization : Γ MT e -> boolean
   [(valid-optimization Γ MT_in e_in)
-   ,(and (judgment-holds (mt~~> Φ_out e_out MT_in MT_out))
+   ,(and (judgment-holds (mt~~> Φ_out e_in MT_in MT_out))
          (judgment-holds (~~> Γ Φ_out (evalt MT_in e_in) (evalt MT_out e_out))))
    (where (< Φ_out MT_out e_out >) (opt-e Γ MT_in e_in))]
   [(valid-optimization _ _ _) #f])

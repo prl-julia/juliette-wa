@@ -79,13 +79,13 @@
   (test-equal (term (valid-optimization () ∅ 1)) #t)
   
   ; () ∅ func(x) undeclared-var -> false
-  ;(test-equal (term (valid-optimization () ∅ ,call-func-with-x)) #t)
+  (test-equal (term (valid-optimization () (,func3-with-x • ∅) ,call-func-with-x)) #t)
   
   ; ((x Bool)) ∅ 1+x -> true
   (test-equal (term (valid-optimization ,xBool-type-env ∅ ,one-plus-x)) #t)
   
-  ; () ∅ func() err-no-method -> true
-  ;(test-equal (term (valid-optimization () ∅ ,call-func)) #t)
+  ; () ∅ func() err-no-method -> false
+  (test-equal (term (valid-optimization () ∅ ,call-func)) #f)
   
   ; () (f()=1 • ∅) func() -> true
   (test-equal (term (valid-optimization () (,func1 • ∅) ,call-func)) #t)
@@ -95,6 +95,7 @@
   
   ; ((w Int64)) (y()=x • ∅) id(id(w)) -> true
   ;(test-equal (term (valid-optimization ,wInt-type-env (,idInt • ∅) (mcall id ,call-id-with-w))) #t)
+  (test-equal (length '()) 0)
   
   ; ((w Int64)) (y(x:Int64)=x • ∅) id(w);id(w);id(w) -> true
   (test-equal (term (valid-optimization ,wInt-type-env (,idInt • ∅) seq-id-calls)) #t)
@@ -115,7 +116,7 @@
   (test-equal (term (valid-optimization ,var-type-env-2 ,MT_1 ,seq-f-then-add)) #t)
   
   ; () ((mdef "func" ((:: x Int64)) 2) • ∅) func(1*2) -> true
-  ;(test-equal (term (valid-optimization () (,func3-with-x • ∅) (mcall func (pcall * 1 2)))) #t)
+  (test-equal (term (valid-optimization () (,func3-with-x • ∅) (mcall func (pcall * 1 2)))) #t)
   
   ; () ((mdef "func" ((:: x Int64)) 2) • ∅) (|func(2)|)
   (test-equal (term (valid-optimization () (,func3-with-x • ∅) (evalg (mcall func 2)))) #t)
