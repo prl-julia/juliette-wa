@@ -94,8 +94,7 @@
   (test-equal (term (valid-optimization ,wInt-type-env (,func1 • ∅) (mcall w))) #t)
   
   ; ((w Int64)) (y()=x • ∅) id(id(w)) -> true
-  ;(test-equal (term (valid-optimization ,wInt-type-env (,idInt • ∅) (mcall id ,call-id-with-w))) #t)
-  (test-equal (length '()) 0)
+  (test-equal (term (valid-optimization ,wInt-type-env (,idInt • ∅) (mcall id ,call-id-with-w))) #t)
   
   ; ((w Int64)) (y(x:Int64)=x • ∅) id(w);id(w);id(w) -> true
   (test-equal (term (valid-optimization ,wInt-type-env (,idInt • ∅) seq-id-calls)) #t)

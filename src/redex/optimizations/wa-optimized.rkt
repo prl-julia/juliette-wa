@@ -18,7 +18,7 @@
   
   (Δ ::= ((sig-τ real) ...))       ; environment of inlined methods
   (Φ ::= ((sig-σ mname) ...))      ; environment of methods with direct calls
-  (opt-err ::= undeclared-var md-err)
+  (opt-err ::= undeclared-var md-err type-err)
   
   (maybe-τ ::= τ opt-err)
   (maybe-e ::= e opt-err)
@@ -479,13 +479,13 @@
   )
 (define func-return1 (term (mdef "func" () 1)))
 (define new-call-func-withy (term (mdef "new" ((:: y Int64)) (mcall func y))))
-;(test-equal (judgment-holds (md~~> () (evalt (,id-fInt • (,func-return1 • ∅)) ,new-call-func-withy)
-;                                   (evalt (,id-fInt • ∅)
-;                                          (mdef "new" ((:: x Int64)) (seq nothing x))))) #true)
-;(test-equal (judgment-holds (md~~> () (evalt ((mdef "func" ((:: x Int64)) 1) • (,id-fInt • ∅))
-;                                          ,new-call-func-withy)
-;                                   (evalt (,id-fInt • ∅)
-;                                          (mdef "new" ((:: x Int64)) (seq nothing x))))) #false)
+(test-equal (judgment-holds (md~~> () (,id-fInt • (,func-return1 • ∅))
+                                   (,id-fInt • (,func-return1 • ∅))
+                                   ,new-call-func-withy
+                                   (mdef "new" ((:: x Int64)) (seq nothing x)))) #true)
+(test-equal (judgment-holds (md~~> () ((mdef "func" ((:: x Int64)) 1) • (,id-fInt • ∅))
+                                   (,id-fInt • ∅) ,new-call-func-withy
+                                   (mdef "new" ((:: x Int64))(seq nothing 1)))) #true)
 
 
 ;; ==================================================
@@ -527,14 +527,6 @@
   [(no-repeat-names e MT_orig ∅) #t]
   )
 
-;(test-equal (term (related-mt ∅ ∅)) #t)
-;(test-equal (term (related-mt (,new-call-func-withy • ∅) ∅)) #f)
-;(test-equal (term (related-mt ∅ (,new-call-func-withy • ∅))) #t)
-;(test-equal (term (related-mt (,id-fInt •(,func-return1 • (,new-call-func-withy • ∅)))
-;                              (,id-fInt •(,func-return1 •
-;((mdef "new" ((:: x Int64))(seq nothing x))
-;                                                          • ∅))))) #t)
-
 ;; -------------------- Main Rule
 
 ;; Determines if the optimized method table is a valid optimization
@@ -554,15 +546,15 @@
    (mt~~> Φ e MT MT_P)]
   )
 
-;(test-equal (judgment-holds (mt~~> ∅ ∅)) #t)
-;(test-equal (judgment-holds (mt~~> (,id-fInt • ∅) ∅)) #f)
-;(test-equal (judgment-holds (mt~~> ∅ (,new-call-func-withy • ∅))) #t)
-;(test-equal (judgment-holds (mt~~> (,id-fInt
-;                               •(,func-return1
-;                                 • (,new-call-func-withy • ∅)))
-;                              (,id-fInt
-;                               •(,func-return1
-;                                 • ((mdef "new" ((:: x Int64)) (seq nothing x)) • ∅))))) #t)
+(test-equal (judgment-holds (mt~~> () 1 ∅ ∅)) #t)
+(test-equal (judgment-holds (mt~~> () true (,id-fInt • ∅) ∅)) #f)
+(test-equal (judgment-holds (mt~~> () 1 ∅ (,new-call-func-withy • ∅))) #t)
+(test-equal (judgment-holds (mt~~> () false (,id-fInt
+                               •(,func-return1
+                                 • (,new-call-func-withy • ∅)))
+                              (,id-fInt
+                               •(,func-return1
+                                 • ((mdef "new" ((:: x Int64)) (seq nothing x)) • ∅))))) #t)
 
 ;; Determines if the optimized method table is a valid optimization
 (define-judgment-form WA-opt
@@ -586,21 +578,20 @@
 
 ;; Gets the type of the given expression
 (define-metafunction WA-opt
-  get-type :  Γ e -> τ
+  get-type :  Γ e -> maybe-τ
   [(get-type Γ e) τ
    (where (⊢ _ _ τ)
-          ,(let ((a (write (build-derivations (⊢ Γ e τ))))
-                 (b (write (length '()))))
-             (derivation-term (first (build-derivations (⊢ Γ e τ))))))]
+          ,(let ((type-derivation (build-derivations (⊢ Γ e τ))))
+             (if (cons? type-derivation)
+                 (derivation-term (first type-derivation)) (term type-err))))]
+  [(get-type _ _) type-err]
   )
 
 ;; Gets the types of the given expressions
 (define-metafunction WA-opt
-  get-types :  Γ e ... -> (τ ...)
-  [(get-types Γ e ...) (τ ...)
-   (where (τ ...) ((get-type Γ e) ...))]
+  get-types :  Γ e ... -> (maybe-τ ...)
+  [(get-types Γ e ...) ((get-type Γ e) ...)]
   )
-
 
 ;; -------------------- Direct Call
 
