@@ -8043,6 +8043,10 @@ Non vacuous packages: 754/2002
 * !!! likely function calls in fun (bypass world age?): 79/2002
 * !!! likely impact world age: 242/2002
 * !!! likely both: 57/2002
+hasEval: 742/2002
+hasOnlyEval: 691/2002
+hasBothEvalIL: 51/2002
+hasOnlyIL: 12/2002
 
 Total Stat:
 * function   [top] => 6212 in 468 pkgs

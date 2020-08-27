@@ -430,9 +430,9 @@ const derivedConditions = Dict(
     "likelyBypassWA"    => likelyInFunCallFunction,
     "likelyImpactWA"    => likelyImpactWorldAge,
     "likelyBoth"        => stat -> likelyInFunCallFunction(stat) && likelyImpactWorldAge(stat),
-    "hasOnlyEval"           => hasOnlyEval,
-    "hasOnlyIL"           => hasOnlyIL,
-    "hasBothEvalIL"           => hasBothEvalIL,
+    "hasOnlyEval"       => hasOnlyEval,
+    "hasOnlyIL"         => hasOnlyIL,
+    "hasBothEvalIL"     => hasBothEvalIL,
     "hasEval"           => hasEval
 )
 
@@ -446,6 +446,7 @@ function computeDerivedMetrics(
             "fundef?", "onlyfundef?",
             "funcall?", "onlyfuncall!", "il",
             "likelyImpactWA", "likelyBypassWA", "likelyBoth",
+            "hasOnlyEval", "hasOnlyIL", "hasBothEvalIL", "hasEval"
             ])),
         Dict{String, Vector{String}}(map(param -> param=>String[], [
             "likelyBypassWA", "likelyImpactWA", "likelyBoth"]))
@@ -504,6 +505,10 @@ function analyzePackages(pkgsDir :: String, io :: IO)
     println(io, "* !!! likely function calls in fun (bypass world age?): $(derivedStat["likelyBypassWA"])/$(goodPkgsCnt)")
     println(io, "* !!! likely impact world age: $(derivedStat["likelyImpactWA"])/$(goodPkgsCnt)")
     println(io, "* !!! likely both: $(derivedStat["likelyBoth"])/$(goodPkgsCnt)")
+    println(io, "hasEval: $(derivedStat["hasEval"])/$(goodPkgsCnt)")
+    println(io, "hasOnlyEval: $(derivedStat["hasOnlyEval"])/$(goodPkgsCnt)")
+    println(io, "hasBothEvalIL: $(derivedStat["hasBothEvalIL"])/$(goodPkgsCnt)")
+    println(io, "hasOnlyIL: $(derivedStat["hasOnlyIL"])/$(goodPkgsCnt)")
     println(io)
     println(io, "Total Stat:")
     for info in sort(collect(pkgsStat.totalStat.evalArgStat);

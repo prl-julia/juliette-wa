@@ -421,6 +421,10 @@ Non vacuous packages: 33/50
 * !!! likely function calls in fun (bypass world age?): 10/50
 * !!! likely impact world age: 14/50
 * !!! likely both: 9/50
+hasEval: 33/50
+hasOnlyEval: 24/50
+hasBothEvalIL: 9/50
+hasOnlyIL: 0/50
 
 Total Stat:
 * function   [top] =>  238 in  24 pkgs
