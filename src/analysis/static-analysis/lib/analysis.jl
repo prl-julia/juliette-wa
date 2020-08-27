@@ -412,6 +412,10 @@ likelyImpactWorldAge(stat :: Stat) = begin
       length(inFunArgs) == 1 && length(stat.evalArgStat) > 3)
 end
 
+hasEval(stat :: Stat) = stat.eval > 0
+hasOnlyEval(stat :: Stat) = stat.eval > 0 && stat.invokelatest == 0
+hasOnlyIL(stat :: Stat) = stat.invokelatest > 0 && stat.eval == 0
+hasBothEvalIL(stat :: Stat) = stat.eval > 0 && stat.invokelatest > 0
 
 const derivedConditions = Dict(
     #"allEvalTop"        => allEvalsAreTopLevel,
@@ -426,6 +430,10 @@ const derivedConditions = Dict(
     "likelyBypassWA"    => likelyInFunCallFunction,
     "likelyImpactWA"    => likelyImpactWorldAge,
     "likelyBoth"        => stat -> likelyInFunCallFunction(stat) && likelyImpactWorldAge(stat),
+    "hasOnlyEval"           => hasOnlyEval,
+    "hasOnlyIL"           => hasOnlyIL,
+    "hasBothEvalIL"           => hasBothEvalIL,
+    "hasEval"           => hasEval
 )
 
 function computeDerivedMetrics(
