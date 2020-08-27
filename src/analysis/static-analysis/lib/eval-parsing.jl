@@ -372,7 +372,10 @@ argDescrUnsafe(@nospecialize(arg), inFunDef::Bool) =
 # (one of EVAL_ARG_DESCRIPTIONS).
 argDescr(arg :: Any, inFunDef::Bool=false) :: EvalCallsVec =
     try 
-        argDescrUnsafe(arg, inFunDef) 
+        # immediate call not within quotenode
+        isa(arg, Expr) && arg.head == SYM_CALL ?
+            [EvalCallInfo(:gencall, inFunDef)] :
+            argDescrUnsafe(arg, inFunDef) 
     catch e
         @error e
         [EvalCallInfo(:error, inFunDef)]

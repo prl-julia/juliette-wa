@@ -170,7 +170,7 @@ countEval(@nospecialize e) :: UInt = 0
 # Collects information about eval call [e]
 # assuming [e] IS an eval call (eval can be callen with no arguments)
 getEvalInfo(e :: Expr, inFunDef::Bool=false) :: Vector{EvalCallInfo} = 
-    length(e.args) > 1 ? 
+    length(e.args) > 1 ?
         argDescr(e.args[end], inFunDef) : 
         [EvalCallInfo(:nothing, inFunDef)]
 
@@ -351,13 +351,13 @@ end
 maybeInFunDefFunction(stat :: Stat) =
     !isempty(intersect(map(head -> EvalCallInfo(head, true),
         [SYM_FUNC, :macro, SYM_MCALL, SYM_LAM, :variable, :expr, :parse, :($),
-        :include, :useimport, :toplevel]),
+        :gencall, :include, :useimport, :toplevel]),
         keys(stat.evalArgStat)
     ))
 
 maybeInFunCallFunction(stat :: Stat) =
     !isempty(intersect(map(head -> EvalCallInfo(head, true),
-        [SYM_CALL, :variable, :($), :expr, :parse]),
+        [SYM_CALL, :variable, :($), :expr, :parse, :gencall]),
         keys(stat.evalArgStat)
     )) ||
     stat.invokelatest > 0
@@ -475,7 +475,7 @@ end
 #--------------------------------------------------
 # Running analysis on packages
 #--------------------------------------------------
-
+#using JLD
 # Runs analysis on all packages from [pkgsDir]
 function analyzePackages(pkgsDir :: String, io :: IO)
     isdir(pkgsDir) ||
@@ -486,6 +486,7 @@ function analyzePackages(pkgsDir :: String, io :: IO)
     outputPkgsProcessingSummary(io, goodPkgsCnt, badPkgs)
     # analyze all packages and summarize stats
     pkgsStat :: PackagesTotalStat = computeDerivedMetrics(goodPkgs, io)
+    #save("analysis-results.jld", "pkgs", goodPkgs, "summary", pkgsStat)
     derivedStat = pkgsStat.derivedStat
     # output derived stats
     println(io, "==============================\n")
