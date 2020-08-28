@@ -5,7 +5,7 @@ using ColorSchemes
 using Printf
 import Cairo, Fontconfig
 
-const analysis_result_path = "C:/Users/Ben Chung/Downloads/analysis-results (1).jld"
+const analysis_result_path = "C:/Users/Ben Chung/Downloads/analysis-results (2).jld"
 
 include("../../analysis/static-analysis/lib/analysis.jl")
 data = load(analysis_result_path)
@@ -66,8 +66,8 @@ eu = plot(eval_lbls, eval_bars,
 	Guide.title("(b) Eval AST type by package"),
 	Guide.ylabel("Packages"));
 
-draw(PDF("package_eval_usage.pdf", 6inch, 8inch), vstack(bf, eu))
 # aggregate chart
+draw(PDF("package_eval_usage.pdf", 6inch, 8inch), vstack(bf, eu))
 
 add_if_present(d::Dict{T,V}, k::T, v::V) where {T,V} = if haskey(d, k) d[k] += v else d[k] = v end
 
@@ -111,8 +111,8 @@ toplevel = plot(discont, labels, bars,
 	Guide.yticks(ticks=0:200:1000),
 	Guide.xticks(orientation=:vertical),
 	Guide.xlabel(nothing),
-	Guide.title("(a) Eval AST forms at top level"),
-	Guide.ylabel("AST forms"));
+	Guide.title("(a) Eval AST heads at top level"),
+	Guide.ylabel("AST heads"));
 
 infunc_cols = getindex.(display_infunc, 1)
 infunc_vals = getindex.(display_infunc, 2)
@@ -127,7 +127,36 @@ infunc = plot(discont, labels, bars,
 	Guide.yticks(ticks=0:200:1000),
 	Guide.xticks(orientation=:vertical),
 	Guide.xlabel(nothing),
-	Guide.title("(b) Eval AST forms inside functions"),
+	Guide.title("(b) Eval AST heads inside functions"),
 	Guide.ylabel(nothing));
 
 draw(PDF("ast_heads.pdf", 10inch, 4inch), hstack(toplevel, infunc))
+
+
+# per package AST forms
+
+
+pkgforms = merge(+, map(d->Dict(k=>if v>0 1 else 0 end for (k,v) in d), getfield.(getfield.(pkgs, :pkgStat), :evalArgStat))...)
+pkgforms_toplevel = Dict(k.astHead=>v for (k,v) in filter(x->!x[1].inFunDef, pkgforms))
+pkgforms_infunc = Dict(k.astHead=>v for (k,v) in filter(x->x[1].inFunDef, pkgforms))
+
+pkgforms_toplevel[:macrocall] += pkgforms_toplevel[Symbol("@!WAmacro")]
+delete!(pkgforms_toplevel, Symbol("@!WAmacro"))
+pkgforms_toplevel = collect(pkgforms_toplevel)
+
+pkgforms_infunc[:macrocall] += pkgforms_infunc[Symbol("@!WAmacro")]
+delete!(pkgforms_infunc, Symbol("@!WAmacro"))
+pkgforms_infunc = collect(pkgforms_infunc)
+
+sort!(pkgforms_toplevel, by=x->-x[2])
+sort!(pkgforms_infunc, by=x->-x[2])
+
+display_ptoplevel = Vector{Pair{Symbol,UInt64}}()
+append!(display_ptoplevel, pkgforms_toplevel[1:8])
+push!(display_ptoplevel, :other => sum(getindex.(pkgforms_toplevel[9:end],2)))
+display_ptoplevel = map(kv->string(kv[1])=>kv[2], display_ptoplevel)
+
+display_pinfunc = Vector{Pair{Symbol,UInt64}}()
+append!(display_pinfunc, pkgforms_infunc[1:8])
+push!(display_pinfunc, :other => sum(getindex.(pkgforms_infunc[9:end],2)))
+display_pinfunc = map(kv->string(kv[1])=>kv[2], display_pinfunc)
