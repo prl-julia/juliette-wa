@@ -169,36 +169,39 @@ countEval(@nospecialize e) :: UInt = 0
 # AST → [Symbol] (Note that Symbol ~ EvalCallInfo at the moment)
 # Collects information about eval call [e]
 # assuming [e] IS an eval call (eval can be callen with no arguments)
-getEvalInfo(e :: Expr, inFunDef::Bool=false) :: Vector{EvalCallInfo} = 
+getEvalInfo(e :: Expr, context=EvalArgContext()) :: Vector{EvalCallInfo} = 
     length(e.args) > 1 ?
-        argDescr(e.args[end], inFunDef) : 
-        [EvalCallInfo(:nothing, inFunDef)]
+        argDescr(e.args[end], context) : 
+        [EvalCallInfo(:nothing, context)]
 
 # AST → EvalCallsVec
 # Collects information about arguments of all eval calls in [e]
-gatherEvalInfo(e :: Expr, inFunDef::Bool=false) :: EvalCallsVec =
+gatherEvalInfo(e :: Expr, context=EvalArgContext()) :: EvalCallsVec =
     if isFunDef(e)
         # function definition should have exactly 2 arguments
         # gather info about function body
         result = length(e.args) > 1 ? 
-            gatherEvalInfo(e.args[2], true) :
+            gatherEvalInfo(e.args[2], EvalArgContext(true, context.inQuote)) :
             EvalCallInfo[]
         # if our function is [function eval] or [eval(...) =],
         # we want to record that we saw an eval definition
         if isCall(e.args[1]) && isEvalName(e.args[1].args[1])
-            push!(result, EvalCallInfo(:EvalDef, inFunDef))
+            push!(result, EvalCallInfo(:EvalDef, context))
         end
         result
     elseif isEvalCall(e)
-        getEvalInfo(e, inFunDef)
+        # @eval treats its arguments as an AST already,
+        # i.e. [@eval f()] is the same as [eval(:(f()))], which we want
+        # to distinguish from eval(f())
+        getEvalInfo(e, EvalArgContext(context.inFunDef, isMacroCall(e)))
     else
         foldl(
             vcat,
-            map(arg -> gatherEvalInfo(arg, inFunDef), e.args);
+            map(arg -> gatherEvalInfo(arg, context), e.args);
             init=EvalCallInfo[]
         )
     end
-gatherEvalInfo(@nospecialize(e), inFunDef::Bool=false) :: EvalCallsVec =
+gatherEvalInfo(@nospecialize(e), context=EvalArgContext()) :: EvalCallsVec =
     EvalCallInfo[]
 
 #--------------------------------------------------
@@ -348,22 +351,25 @@ end
 # Computing derived metrics
 #--------------------------------------------------
 
+getAstHeads(stat :: Stat) :: Vector{Symbol} =
+    map(x -> x.astHead, collect(keys(stat.evalArgStat)))
+
 maybeInFunDefFunction(stat :: Stat) =
-    !isempty(intersect(map(head -> EvalCallInfo(head, true),
+    !isempty(intersect(
+        getAstHeads(stat),
         [SYM_FUNC, :macro, SYM_MCALL, SYM_LAM, :variable, :expr, :parse, :($),
-        :gencall, :include, :useimport, :toplevel]),
-        keys(stat.evalArgStat)
+         :gencall, :include, :useimport, :toplevel]
     ))
 
 maybeInFunCallFunction(stat :: Stat) =
-    !isempty(intersect(map(head -> EvalCallInfo(head, true),
-        [SYM_CALL, :variable, :($), :expr, :parse, :gencall]),
-        keys(stat.evalArgStat)
+    !isempty(intersect(
+        getAstHeads(stat),
+        [SYM_CALL, :variable, :($), :expr, :parse, :gencall]
     )) ||
     stat.invokelatest > 0
 
 likelyInFunCallFunction(stat :: Stat) =
-    in(EvalCallInfo(SYM_CALL, true), keys(stat.evalArgStat)) ||
+    in(SYM_CALL, getAstHeads(stat)) ||
     stat.invokelatest > 0
 
 likelyInFunCallFunctionButNotDef(stat :: Stat) =
@@ -373,10 +379,10 @@ maybeInFunDefFunButNotCall(stat :: Stat) =
     maybeInFunDefFunction(stat) && !likelyInFunCallFunction(stat)
 
 allEvalsAreTopLevel(stat :: Stat) =
-    all(evalInfo -> !evalInfo.inFunDef, keys(stat.evalArgStat))
+    all(evalInfo -> !evalInfo.context.inFunDef, keys(stat.evalArgStat))
 
 allEvalsAreTopLevelAndNoIL(stat :: Stat) =
-    all(evalInfo -> !evalInfo.inFunDef, keys(stat.evalArgStat)) &&
+    all(evalInfo -> !evalInfo.context.inFunDef, keys(stat.evalArgStat)) &&
     stat.invokelatest == 0
 
 const BORING_EVAL_ARGS = [
@@ -385,14 +391,14 @@ const BORING_EVAL_ARGS = [
     ]
 
 evalIsBoring(evalInfo :: EvalCallInfo) :: Bool = 
-    !evalInfo.inFunDef ||
+    !evalInfo.context.inFunDef ||
     in(evalInfo.astHead, BORING_EVAL_ARGS)
 allEvalsAreBoringAndNoIL(stat :: Stat) =
     all(evalIsBoring, keys(stat.evalArgStat)) &&
     stat.invokelatest == 0
 
 singleTopLevelEvalAndNoIL(stat :: Stat) =
-    stat.eval == 1 && !first(keys(stat.evalArgStat)).inFunDef &&
+    stat.eval == 1 && !first(keys(stat.evalArgStat)).context.inFunDef &&
     stat.invokelatest == 0
 
 likelyImpactWorldAge(stat :: Stat) = begin
@@ -402,7 +408,7 @@ likelyImpactWorldAge(stat :: Stat) = begin
     end
     # leave only inFun elements that are not boring
     inFunArgs = filter(
-        evalInfo -> evalInfo.inFunDef && 
+        evalInfo -> evalInfo.context.inFunDef && 
             !in(evalInfo.astHead, BORING_EVAL_ARGS), 
         keys(stat.evalArgStat)
     )
@@ -476,7 +482,7 @@ end
 #--------------------------------------------------
 # Running analysis on packages
 #--------------------------------------------------
-#using JLD
+using JLD
 # Runs analysis on all packages from [pkgsDir]
 function analyzePackages(pkgsDir :: String, io :: IO)
     isdir(pkgsDir) ||
@@ -487,7 +493,7 @@ function analyzePackages(pkgsDir :: String, io :: IO)
     outputPkgsProcessingSummary(io, goodPkgsCnt, badPkgs)
     # analyze all packages and summarize stats
     pkgsStat :: PackagesTotalStat = computeDerivedMetrics(goodPkgs, io)
-    #save("analysis-results.jld", "pkgs", goodPkgs, "summary", pkgsStat)
+    save("analysis-results.jld", "pkgs", goodPkgs, "summary", pkgsStat)
     derivedStat = pkgsStat.derivedStat
     # output derived stats
     println(io, "==============================\n")
@@ -514,7 +520,7 @@ function analyzePackages(pkgsDir :: String, io :: IO)
     for info in sort(collect(pkgsStat.totalStat.evalArgStat);
                      by=kv->kv[2], rev=true)
         println(io,
-            "* $(rpad(info[1].astHead, 10)) $(showEvalLevel(info[1].inFunDef))" *
+            "* $(rpad(info[1].astHead, 10)) $(rpad(showEvalLevel(info[1].context), 11))" *
             " => $(lpad(info[2], 4))" *
             " in $(lpad(pkgsStat.evalStat[info[1]], 3)) pkgs")
     end

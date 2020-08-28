@@ -13,7 +13,7 @@ CUDAnative.jl: {ev: 37, il: 2}
 * /src/device/cuda/warp_shuffle.jl => {ev: 3, il: 0}
   [evalArgs: (function [top] => 2, export [top] => 1)]
 * /src/device/cuda/wmma.jl => {ev: 13, il: 0}
-  [evalArgs: (function [top] => 6, @doc [top] => 3, export [top] => 3, struct [top] => 1)]
+  [evalArgs: (function [top] => 6, export [top] => 3, @doc [top] => 3, struct [top] => 1)]
 * /src/init.jl => {ev: 0, il: 2}
   [evalArgs: ()]
 * /src/reflection.jl => {ev: 8, il: 0}
@@ -22,10 +22,10 @@ CUDAnative.jl: {ev: 37, il: 2}
   [evalArgs: (function [top] => 9)]
 
 Genie.jl: {ev: 24, il: 6}
-  [evalArgs: (gencall [fun] => 11, useimport [fun] => 3, call [fun] => 3, const [fun] => 2, include [fun] => 2, = [fun] => 1, other [fun] => 1, $ [top] => 1)]
+  [evalArgs: (parse [fun (gen)] => 11, call [fun] => 3, useimport [fun] => 3, const [fun] => 2, include [fun] => 2, other [fun] => 1, $ [top (gen)] => 1, = [fun] => 1)]
 # non vacuous files: 10/38
 * /src/App.jl => {ev: 1, il: 0}
-  [evalArgs: (gencall [fun] => 1)]
+  [evalArgs: (parse [fun (gen)] => 1)]
 * /src/Router.jl => {ev: 0, il: 2}
   [evalArgs: ()]
 * /src/Sessions.jl => {ev: 1, il: 0}
@@ -33,25 +33,25 @@ Genie.jl: {ev: 24, il: 6}
 * /src/Toolbox.jl => {ev: 2, il: 0}
   [evalArgs: (useimport [fun] => 1, include [fun] => 1)]
 * /src/renderers/Html.jl => {ev: 10, il: 1}
-  [evalArgs: (gencall [fun] => 9, $ [top] => 1)]
+  [evalArgs: (parse [fun (gen)] => 9, $ [top (gen)] => 1)]
 * /src/Renderer.jl => {ev: 1, il: 1}
-  [evalArgs: (gencall [fun] => 1)]
+  [evalArgs: (parse [fun (gen)] => 1)]
 * /src/Encryption.jl => {ev: 2, il: 0}
-  [evalArgs: (= [fun] => 1, const [fun] => 1)]
+  [evalArgs: (const [fun] => 1, = [fun] => 1)]
 * /src/genie_module.jl => {ev: 1, il: 0}
   [evalArgs: (call [fun] => 1)]
 * /src/Commands.jl => {ev: 0, il: 2}
   [evalArgs: ()]
 * /src/Genie.jl => {ev: 6, il: 0}
-  [evalArgs: (useimport [fun] => 2, call [fun] => 2, other [fun] => 1, include [fun] => 1)]
+  [evalArgs: (call [fun] => 2, useimport [fun] => 2, other [fun] => 1, include [fun] => 1)]
 
 Documenter.jl: {ev: 21, il: 7}
-  [evalArgs: (variable [fun] => 13, gencall [fun] => 5, function [fun] => 2, const [fun] => 1)]
+  [evalArgs: (variable [fun (gen)] => 13, global [fun] => 3, call [fun (gen)] => 2, function [fun] => 2, const [fun] => 1)]
 # non vacuous files: 8/23
 * /src/Expanders.jl => {ev: 12, il: 2}
-  [evalArgs: (variable [fun] => 7, gencall [fun] => 3, function [fun] => 2)]
+  [evalArgs: (variable [fun (gen)] => 7, global [fun] => 2, function [fun] => 2, call [fun (gen)] => 1)]
 * /src/DocTests.jl => {ev: 6, il: 2}
-  [evalArgs: (variable [fun] => 5, gencall [fun] => 1)]
+  [evalArgs: (variable [fun (gen)] => 5, global [fun] => 1)]
 * /src/Writers/HTMLWriter.jl => {ev: 0, il: 1}
   [evalArgs: ()]
 * /src/DocMeta.jl => {ev: 1, il: 0}
@@ -61,9 +61,9 @@ Documenter.jl: {ev: 21, il: 7}
 * /src/Writers/MarkdownWriter.jl => {ev: 0, il: 1}
   [evalArgs: ()]
 * /src/CrossReferences.jl => {ev: 1, il: 0}
-  [evalArgs: (gencall [fun] => 1)]
+  [evalArgs: (call [fun (gen)] => 1)]
 * /src/Documents.jl => {ev: 1, il: 0}
-  [evalArgs: (variable [fun] => 1)]
+  [evalArgs: (variable [fun (gen)] => 1)]
 
 Plots.jl: {ev: 27, il: 1}
   [evalArgs: (function [top] => 18, useimport [fun] => 4, export [fun] => 3, @!WAmacro [top] => 1, call [fun] => 1)]
@@ -92,16 +92,16 @@ Plots.jl: {ev: 27, il: 1}
   [evalArgs: (function [top] => 1)]
 
 IJulia.jl: {ev: 7, il: 8}
-  [evalArgs: (function [top] => 3, gencall [fun] => 2, = [top] => 1, call [fun] => 1)]
+  [evalArgs: (function [top] => 3, call [fun (gen)] => 2, call [fun] => 1, = [top] => 1)]
 # non vacuous files: 7/15
 * /src/inline.jl => {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
 * /src/execute_request.jl => {ev: 1, il: 6}
-  [evalArgs: (gencall [fun] => 1)]
+  [evalArgs: (call [fun (gen)] => 1)]
 * /src/display.jl => {ev: 0, il: 1}
   [evalArgs: ()]
 * /src/handlers.jl => {ev: 2, il: 0}
-  [evalArgs: (gencall [fun] => 1, call [fun] => 1)]
+  [evalArgs: (call [fun (gen)] => 1, call [fun] => 1)]
 * /src/kernel.jl => {ev: 1, il: 0}
   [evalArgs: (= [top] => 1)]
 * /src/eventloop.jl => {ev: 0, il: 1}
@@ -110,42 +110,42 @@ IJulia.jl: {ev: 7, il: 8}
   [evalArgs: (function [top] => 1)]
 
 PyCall.jl: {ev: 12, il: 1}
-  [evalArgs: (function [top] => 10, gencall [fun] => 1, @!WAmacro [top] => 1)]
+  [evalArgs: (function [top] => 10, @!WAmacro [top] => 1, toplevel [fun] => 1)]
 # non vacuous files: 3/20
 * /src/pyoperators.jl => {ev: 8, il: 0}
   [evalArgs: (function [top] => 8)]
 * /src/callback.jl => {ev: 0, il: 1}
   [evalArgs: ()]
 * /src/PyCall.jl => {ev: 4, il: 0}
-  [evalArgs: (function [top] => 2, gencall [fun] => 1, @!WAmacro [top] => 1)]
+  [evalArgs: (function [top] => 2, @!WAmacro [top] => 1, toplevel [fun] => 1)]
 
 Weave.jl: {ev: 6, il: 6}
-  [evalArgs: (gencall [fun] => 2, = [fun] => 2, useimport [fun] => 1, module [fun] => 1)]
+  [evalArgs: (expr [fun] => 2, = [fun] => 2, module [fun] => 1, useimport [fun] => 1)]
 # non vacuous files: 3/25
 * /src/reader/reader.jl => {ev: 2, il: 0}
-  [evalArgs: (gencall [fun] => 2)]
+  [evalArgs: (expr [fun] => 2)]
 * /src/display_methods.jl => {ev: 0, il: 4}
   [evalArgs: ()]
 * /src/run.jl => {ev: 4, il: 2}
-  [evalArgs: (= [fun] => 2, useimport [fun] => 1, module [fun] => 1)]
+  [evalArgs: (= [fun] => 2, module [fun] => 1, useimport [fun] => 1)]
 
 Pluto.jl: {ev: 7, il: 1}
-  [evalArgs: (variable [fun] => 2, useimport [fun] => 2, $ [fun] => 2, = [fun] => 1)]
+  [evalArgs: (variable [fun (gen)] => 2, $ [fun (gen)] => 2, useimport [fun] => 2, = [fun] => 1)]
 # non vacuous files: 3/18
 * /src/runner/PlutoRunner.jl => {ev: 5, il: 1}
-  [evalArgs: (variable [fun] => 2, useimport [fun] => 2, = [fun] => 1)]
+  [evalArgs: (variable [fun (gen)] => 2, useimport [fun] => 2, = [fun] => 1)]
 * /src/evaluation/WorkspaceManager.jl => {ev: 1, il: 0}
-  [evalArgs: ($ [fun] => 1)]
+  [evalArgs: ($ [fun (gen)] => 1)]
 * /src/analysis/Parse.jl => {ev: 1, il: 0}
-  [evalArgs: ($ [fun] => 1)]
+  [evalArgs: ($ [fun (gen)] => 1)]
 
 Revise.jl: {ev: 3, il: 1}
-  [evalArgs: (variable [fun] => 2, @!WAmacro [top] => 1)]
+  [evalArgs: (variable [fun (gen)] => 2, @!WAmacro [top] => 1)]
 # non vacuous files: 2/13
 * /src/Revise.jl => {ev: 2, il: 1}
-  [evalArgs: (variable [fun] => 1, @!WAmacro [top] => 1)]
+  [evalArgs: (variable [fun (gen)] => 1, @!WAmacro [top] => 1)]
 * /src/lowered.jl => {ev: 1, il: 0}
-  [evalArgs: (variable [fun] => 1)]
+  [evalArgs: (variable [fun (gen)] => 1)]
 
 Knet.jl: {ev: 87, il: 0}
   [evalArgs: (function [top] => 48, function [fun] => 38, macrocall [top] => 1)]
@@ -174,7 +174,7 @@ Knet.jl: {ev: 87, il: 0}
   [evalArgs: (function [fun] => 1)]
 
 TensorFlow.jl: {ev: 21, il: 0}
-  [evalArgs: (function [top] => 18, macrocall [top] => 1, variable [fun] => 1, @doc [top] => 1)]
+  [evalArgs: (function [top] => 18, variable [fun (gen)] => 1, macrocall [top] => 1, @doc [top] => 1)]
 # non vacuous files: 7/93
 * /src/ops/comparison.jl => {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
@@ -187,9 +187,9 @@ TensorFlow.jl: {ev: 21, il: 0}
 * /src/ops/debugging.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 * /src/ops/summaries.jl => {ev: 2, il: 0}
-  [evalArgs: (@doc [top] => 1, function [top] => 1)]
+  [evalArgs: (function [top] => 1, @doc [top] => 1)]
 * /src/generate_ops.jl => {ev: 1, il: 0}
-  [evalArgs: (variable [fun] => 1)]
+  [evalArgs: (variable [fun (gen)] => 1)]
 
 DataStructures.jl: {ev: 19, il: 0}
   [evalArgs: (function [top] => 18, struct [top] => 1)]
@@ -198,7 +198,7 @@ DataStructures.jl: {ev: 19, il: 0}
   [evalArgs: (function [top] => 18, struct [top] => 1)]
 
 Turing.jl: {ev: 19, il: 0}
-  [evalArgs: (function [top] => 14, useimport [top] => 1, struct [top] => 1, include [top] => 1, if [top] => 1, export [top] => 1)]
+  [evalArgs: (function [top] => 14, include [top] => 1, export [top] => 1, struct [top] => 1, if [top] => 1, useimport [top] => 1)]
 # non vacuous files: 5/27
 * /src/core/compat/reversediff.jl => {ev: 10, il: 0}
   [evalArgs: (function [top] => 9, struct [top] => 1)]
@@ -209,38 +209,38 @@ Turing.jl: {ev: 19, il: 0}
 * /src/core/ad.jl => {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
 * /src/Turing.jl => {ev: 4, il: 0}
-  [evalArgs: (useimport [top] => 1, include [top] => 1, if [top] => 1, export [top] => 1)]
+  [evalArgs: (include [top] => 1, export [top] => 1, if [top] => 1, useimport [top] => 1)]
 
 StaticArrays.jl: {ev: 17, il: 0}
-  [evalArgs: (variable [top] => 16, function [top] => 1)]
+  [evalArgs: (variable [top (gen)] => 16, function [top] => 1)]
 # non vacuous files: 7/43
 * /src/MMatrix.jl => {ev: 4, il: 0}
-  [evalArgs: (variable [top] => 4)]
+  [evalArgs: (variable [top (gen)] => 4)]
 * /src/MVector.jl => {ev: 2, il: 0}
-  [evalArgs: (variable [top] => 2)]
+  [evalArgs: (variable [top (gen)] => 2)]
 * /src/MArray.jl => {ev: 2, il: 0}
-  [evalArgs: (variable [top] => 2)]
+  [evalArgs: (variable [top (gen)] => 2)]
 * /src/SMatrix.jl => {ev: 4, il: 0}
-  [evalArgs: (variable [top] => 4)]
+  [evalArgs: (variable [top (gen)] => 4)]
 * /src/SVector.jl => {ev: 2, il: 0}
-  [evalArgs: (variable [top] => 2)]
+  [evalArgs: (variable [top (gen)] => 2)]
 * /src/solve.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 * /src/SArray.jl => {ev: 2, il: 0}
-  [evalArgs: (variable [top] => 2)]
+  [evalArgs: (variable [top (gen)] => 2)]
 
 ForwardDiff.jl: {ev: 16, il: 0}
-  [evalArgs: (function [top] => 14, gencall [top] => 2)]
+  [evalArgs: (function [top] => 14, call [top (gen)] => 2)]
 # non vacuous files: 3/10
 * /src/dual.jl => {ev: 10, il: 0}
-  [evalArgs: (function [top] => 8, gencall [top] => 2)]
+  [evalArgs: (function [top] => 8, call [top (gen)] => 2)]
 * /src/jacobian.jl => {ev: 4, il: 0}
   [evalArgs: (function [top] => 4)]
 * /src/gradient.jl => {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
 
 Cxx.jl: {ev: 13, il: 0}
-  [evalArgs: (function [top] => 9, call [fun] => 2, let [fun] => 1, variable [top] => 1)]
+  [evalArgs: (function [top] => 9, call [fun] => 2, let [fun] => 1, variable [top (gen)] => 1)]
 # non vacuous files: 8/15
 * /src/std.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
@@ -253,25 +253,25 @@ Cxx.jl: {ev: 13, il: 0}
 * /src/autowrap.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 * /src/cxxmacro.jl => {ev: 1, il: 0}
-  [evalArgs: (variable [top] => 1)]
+  [evalArgs: (variable [top (gen)] => 1)]
 * /src/initialization.jl => {ev: 1, il: 0}
   [evalArgs: (let [fun] => 1)]
 * /src/typetranslation.jl => {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
 
 DSGE.jl: {ev: 13, il: 0}
-  [evalArgs: (function [top] => 8, gencall [fun] => 4, $ [fun] => 1)]
+  [evalArgs: (function [top] => 8, variable [fun (gen)] => 3, $ [fun] => 1, = [fun] => 1)]
 # non vacuous files: 5/287
 * /src/util.jl => {ev: 2, il: 0}
-  [evalArgs: (gencall [fun] => 1, function [top] => 1)]
+  [evalArgs: (function [top] => 1, = [fun] => 1)]
 * /src/estimate/smc/particle.jl => {ev: 7, il: 0}
   [evalArgs: (function [top] => 7)]
 * /src/models/heterogeneous/two_asset_hank/test_against_matlab.jl => {ev: 1, il: 0}
   [evalArgs: ($ [fun] => 1)]
 * /src/analysis/util.jl => {ev: 1, il: 0}
-  [evalArgs: (gencall [fun] => 1)]
+  [evalArgs: (variable [fun (gen)] => 1)]
 * /src/forecast/smooth.jl => {ev: 2, il: 0}
-  [evalArgs: (gencall [fun] => 2)]
+  [evalArgs: (variable [fun (gen)] => 2)]
 
 PyPlot.jl: {ev: 11, il: 0}
   [evalArgs: (function [top] => 8, @doc [top] => 3)]
@@ -320,27 +320,27 @@ JuliaDB.jl: {ev: 6, il: 0}
   [evalArgs: (function [top] => 2)]
 
 ScikitLearn.jl: {ev: 6, il: 0}
-  [evalArgs: (macrocall [top] => 2, function [top] => 2, useimport [top] => 1, export [top] => 1)]
+  [evalArgs: (function [top] => 2, macrocall [top] => 2, export [top] => 1, useimport [top] => 1)]
 # non vacuous files: 3/15
 * /src/Skcore.jl => {ev: 3, il: 0}
-  [evalArgs: (useimport [top] => 1, function [top] => 1, export [top] => 1)]
+  [evalArgs: (export [top] => 1, function [top] => 1, useimport [top] => 1)]
 * /src/ScikitLearn.jl => {ev: 2, il: 0}
   [evalArgs: (macrocall [top] => 2)]
 * /src/cross_validation.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 
 Distributions.jl: {ev: 5, il: 0}
-  [evalArgs: (@deprecate [top] => 3, variable [top] => 1, function [top] => 1)]
+  [evalArgs: (@deprecate [top] => 3, variable [top (gen)] => 1, function [top] => 1)]
 # non vacuous files: 3/114
 * /src/deprecates.jl => {ev: 3, il: 0}
   [evalArgs: (@deprecate [top] => 3)]
 * /src/univariates.jl => {ev: 1, il: 0}
-  [evalArgs: (variable [top] => 1)]
+  [evalArgs: (variable [top (gen)] => 1)]
 * /src/common.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 
 JuMP.jl: {ev: 5, il: 0}
-  [evalArgs: (function [top] => 3, macro [top] => 1, export [top] => 1)]
+  [evalArgs: (function [top] => 3, export [top] => 1, macro [top] => 1)]
 # non vacuous files: 4/42
 * /src/_Derivatives/forward.jl => {ev: 2, il: 0}
   [evalArgs: (function [top] => 2)]
@@ -376,10 +376,10 @@ Gadfly.jl: {ev: 2, il: 0}
   [evalArgs: (@doc [top] => 2)]
 
 Gen.jl: {ev: 2, il: 0}
-  [evalArgs: (variable [fun] => 1, variable [top] => 1)]
+  [evalArgs: (variable [fun (gen)] => 1, variable [top (gen)] => 1)]
 # non vacuous files: 1/89
 * /src/Gen.jl => {ev: 2, il: 0}
-  [evalArgs: (variable [fun] => 1, variable [top] => 1)]
+  [evalArgs: (variable [fun (gen)] => 1, variable [top (gen)] => 1)]
 
 HTTP.jl: {ev: 2, il: 0}
   [evalArgs: (function [fun] => 2)]
@@ -388,18 +388,18 @@ HTTP.jl: {ev: 2, il: 0}
   [evalArgs: (function [fun] => 2)]
 
 LightGraphs.jl: {ev: 2, il: 0}
-  [evalArgs: (gencall [fun] => 1, function [top] => 1)]
+  [evalArgs: (variable [fun (gen)] => 1, function [top] => 1)]
 # non vacuous files: 2/202
 * /src/linalg13/graphmatrices.jl => {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
 * /src/persistence13/lg.jl => {ev: 1, il: 0}
-  [evalArgs: (gencall [fun] => 1)]
+  [evalArgs: (variable [fun (gen)] => 1)]
 
 Makie.jl: {ev: 2, il: 0}
-  [evalArgs: (useimport [top] => 1, export [top] => 1)]
+  [evalArgs: (export [top] => 1, useimport [top] => 1)]
 # non vacuous files: 1/1
 * /src/Makie.jl => {ev: 2, il: 0}
-  [evalArgs: (useimport [top] => 1, export [top] => 1)]
+  [evalArgs: (export [top] => 1, useimport [top] => 1)]
 
 Optim.jl: {ev: 1, il: 0}
   [evalArgs: (function [top] => 1)]
@@ -413,12 +413,12 @@ Non vacuous packages: 33/50
 * all evals are top-level and no invokelatest: 17/50
 * all evals are boring and no invokelatest: 17/50
 * single top-level eval and no invokelatest: 1/50
-* maybe function defs in fun: 14/50
-* maybe function defs in fun but not likely calls: 6/50
-* likely function calls in fun but not defs: 2/50
-* maybe function calls in fun: 14/50
+* maybe function defs in fun: 32/50
+* maybe function defs in fun but not likely calls: 21/50
+* likely function calls in fun but not defs: 0/50
+* maybe function calls in fun: 17/50
 * invokelatest: 9/50
-* !!! likely function calls in fun (bypass world age?): 10/50
+* !!! likely function calls in fun (bypass world age?): 11/50
 * !!! likely impact world age: 14/50
 * !!! likely both: 9/50
 hasEval: 33/50
@@ -427,38 +427,43 @@ hasBothEvalIL: 9/50
 hasOnlyIL: 0/50
 
 Total Stat:
-* function   [top] =>  238 in  24 pkgs
-* function   [fun] =>   42 in   3 pkgs
-* gencall    [fun] =>   26 in   7 pkgs
-* variable   [fun] =>   19 in   5 pkgs
-* variable   [top] =>   19 in   4 pkgs
-* useimport  [fun] =>   10 in   4 pkgs
-* @doc       [top] =>    9 in   4 pkgs
-* export     [top] =>    8 in   5 pkgs
-* call       [fun] =>    7 in   4 pkgs
-* =          [top] =>    7 in   2 pkgs
-* macrocall  [top] =>    4 in   3 pkgs
-* =          [fun] =>    4 in   3 pkgs
-* useimport  [top] =>    3 in   3 pkgs
-* export     [fun] =>    3 in   1 pkgs
-* struct     [top] =>    3 in   3 pkgs
-* const      [fun] =>    3 in   2 pkgs
-* @!WAmacro  [top] =>    3 in   3 pkgs
-* $          [fun] =>    3 in   2 pkgs
-* @deprecate [top] =>    3 in   1 pkgs
-* gencall    [top] =>    2 in   1 pkgs
-* include    [fun] =>    2 in   1 pkgs
-* include    [top] =>    1 in   1 pkgs
-* let        [fun] =>    1 in   1 pkgs
-* $          [top] =>    1 in   1 pkgs
-* module     [fun] =>    1 in   1 pkgs
-* if         [top] =>    1 in   1 pkgs
-* macro      [top] =>    1 in   1 pkgs
-* other      [fun] =>    1 in   1 pkgs
+* function   [top]       =>  238 in  24 pkgs
+* function   [fun]       =>   42 in   3 pkgs
+* variable   [fun (gen)] =>   23 in   7 pkgs
+* variable   [top (gen)] =>   19 in   4 pkgs
+* parse      [fun (gen)] =>   11 in   1 pkgs
+* useimport  [fun]       =>   10 in   4 pkgs
+* @doc       [top]       =>    9 in   4 pkgs
+* export     [top]       =>    8 in   5 pkgs
+* call       [fun]       =>    7 in   4 pkgs
+* =          [top]       =>    7 in   2 pkgs
+* =          [fun]       =>    5 in   4 pkgs
+* call       [fun (gen)] =>    4 in   2 pkgs
+* macrocall  [top]       =>    4 in   3 pkgs
+* const      [fun]       =>    3 in   2 pkgs
+* export     [fun]       =>    3 in   1 pkgs
+* struct     [top]       =>    3 in   3 pkgs
+* @!WAmacro  [top]       =>    3 in   3 pkgs
+* global     [fun]       =>    3 in   1 pkgs
+* @deprecate [top]       =>    3 in   1 pkgs
+* useimport  [top]       =>    3 in   3 pkgs
+* $          [fun (gen)] =>    2 in   1 pkgs
+* call       [top (gen)] =>    2 in   1 pkgs
+* expr       [fun]       =>    2 in   1 pkgs
+* include    [fun]       =>    2 in   1 pkgs
+* include    [top]       =>    1 in   1 pkgs
+* if         [top]       =>    1 in   1 pkgs
+* $          [top (gen)] =>    1 in   1 pkgs
+* let        [fun]       =>    1 in   1 pkgs
+* $          [fun]       =>    1 in   1 pkgs
+* toplevel   [fun]       =>    1 in   1 pkgs
+* macro      [top]       =>    1 in   1 pkgs
+* other      [fun]       =>    1 in   1 pkgs
+* module     [fun]       =>    1 in   1 pkgs
 
 "likelyBoth" => ["Genie.jl", "Documenter.jl", "Plots.jl", "IJulia.jl", "PyCall.jl", "Weave.jl", "Pluto.jl", "Revise.jl", "Cxx.jl"]
 
-"likelyBypassWA" => ["CUDAnative.jl", "Genie.jl", "Documenter.jl", "Plots.jl", "IJulia.jl", "PyCall.jl", "Weave.jl", "Pluto.jl", "Revise.jl", "Cxx.jl"]
+"likelyBypassWA" => ["CUDAnative.jl", "Genie.jl", "Documenter.jl", "Plots.jl", "IJulia.jl", "PyCall.jl", "Weave.jl", "Pluto.jl", "Revise.jl", "ForwardDiff.jl", "Cxx.jl"]
 
 "likelyImpactWA" => ["Genie.jl", "Documenter.jl", "Plots.jl", "IJulia.jl", "PyCall.jl", "Weave.jl", "Pluto.jl", "Revise.jl", "Knet.jl", "Cxx.jl", "DSGE.jl", "Gen.jl", "HTTP.jl", "LightGraphs.jl"]
 
