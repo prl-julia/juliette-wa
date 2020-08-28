@@ -66,6 +66,8 @@
                                    (evalt (,func-return3 • ∅) (mcall (mval "func"))))) #true)
   (test-equal (judgment-holds (~~> () () (evalt (,func-return3 • ∅) (mcall func))
                                    (evalt (,func-return3 • ∅) (seq nothing 3)))) #true)
+  (test-equal (judgment-holds (~~> () () (evalt (,func-return3 • ∅) (mcall func))
+                                   (evalt (,func-return3 • ∅) (seq nothing 3)))) #true)
   (test-equal (judgment-holds (~~> ((y Int64)) (((mdef "add" (Int64 Int64)) "add_P"))
                                    (evalt (,add-intNum • ∅)
                                           (mcall (mval "add") 1 (pcall + y 2)))
@@ -98,6 +100,9 @@
   
   ; ((w Int64)) (y(x:Int64)=x • ∅) id(w);id(w);id(w) -> true
   (test-equal (term (valid-optimization ,wInt-type-env (,idInt • ∅) seq-id-calls)) #t)
+
+   ; () (addNumNum(x::Number,y::Number)=x+y • ∅) 1+1;1.1+1.1 -> true
+  (test-equal (term (valid-optimization () (,add-NumNum • ∅) ,addNumNumSpecialize)) #t)
   
   ; ((var1 Bool) (var2 Int64) (var1 Int64))
   ; (f(x:Int64)=2 • (add(x:Int64,y=Int64)=x+y • (f(x:Bool)=1 • ∅)))

@@ -286,6 +286,15 @@
   ; (| maketrue(x::Bool) = (!x && true) || x; maketrue(false)|) -->* true
   (test-equal (term (run-to-r ,p-triv-5))
               (term true))
+  ; (| appf0(f :: Function) = f(0); inc(x) = x+1; appf0(inc) |)
+  (test-equal (term (run-to-r ,p-triv-appf0))
+              (term 1))
+  ; (| appf0(f :: Function) = f(0); appf0(f :: Any) = f(1); inc(x) = x+1; appf0(inc) |)
+  (test-equal (term (run-to-r ,p-triv-appf0-dispatch))
+              (term 1))
+  ; (| composeFunc(f :: Function, g Function) = f(g()); get1()=1; inc(x) = x+1;composeFunc(inc,get1)|)
+  (test-equal (term (run-to-r ,p-triv-compose))
+              (term 2))
   ; (| !true |) -->* false
   (test-equal (term (run-to-r ,p-triv-6))
               (term false))

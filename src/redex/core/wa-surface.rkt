@@ -64,6 +64,7 @@
   [τ ::=
      σ        ; all type tags are valid annotations
      Number   ; abstract supertype
+     Function ; an abstract function type
      Any      ; top type  (like in Julia)
      Bot      ; bottom type (Union{} in Julia)
      ]
@@ -118,14 +119,16 @@
   get-supertype : τ -> τ
   [(get-supertype Int64)   Number]
   [(get-supertype Float64) Number]
+  [(get-supertype (mtag _)) Function]
   [(get-supertype τ)       Any]
 )
 
-(test-equal (term (get-supertype Float64))  (term Number))
-(test-equal (term (get-supertype String))   (term Any))
-(test-equal (term (get-supertype Nothing))  (term Any))
-(test-equal (term (get-supertype Bot))      (term Any))
-(test-equal (term (get-supertype Any))      (term Any))
+(test-equal (term (get-supertype Float64))    (term Number))
+(test-equal (term (get-supertype String))     (term Any))
+(test-equal (term (get-supertype Nothing))    (term Any))
+(test-equal (term (get-supertype Bot))        (term Any))
+(test-equal (term (get-supertype (mtag "f"))) (term Function))
+(test-equal (term (get-supertype Any))        (term Any))
 
 ;; -------------------- Subtyping of types
 
@@ -155,14 +158,17 @@
     (<: τ_1 τ_3) ]
 )
 
-(test-equal (judgment-holds (<: Float64 Number))  #t)
-(test-equal (judgment-holds (<: Float64 Any))     #t)
-(test-equal (judgment-holds (<: Bot Float64))     #t)
-(test-equal (judgment-holds (<: String Any))      #t)
+(test-equal (judgment-holds (<: Float64 Number))       #t)
+(test-equal (judgment-holds (<: Float64 Any))          #t)
+(test-equal (judgment-holds (<: Bot Float64))          #t)
+(test-equal (judgment-holds (<: String Any))           #t)
+(test-equal (judgment-holds (<: (mtag "f") Any))       #t)
+(test-equal (judgment-holds (<: (mtag "f") Function))  #t)
 
-(test-equal (judgment-holds (<: String Bool))     #f)
-(test-equal (judgment-holds (<: Float64 Nothing)) #f)
-(test-equal (judgment-holds (<: Float64 Bot))     #f)
+(test-equal (judgment-holds (<: (mtag "f") Number))  #f)
+(test-equal (judgment-holds (<: String Bool))        #f)
+(test-equal (judgment-holds (<: Float64 Nothing))    #f)
+(test-equal (judgment-holds (<: Float64 Bot))        #f)
 
 ;; -------------------- Subtyping of tuple-types
 

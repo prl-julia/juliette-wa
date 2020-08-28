@@ -28,6 +28,8 @@
                                      ,call-id-with-w))))
 ;; add(x :: Int64, y :: Number) = x+y
 (define add-intNum (term (mdef "add" ((:: x Int64) (:: y Number)) (pcall + x y))))
+;; addNumNum(x :: Number, y :: Number) = x+y
+(define add-NumNum (term (mdef "add" ((:: x Number) (:: y Number)) (pcall + x y))))
 ;; func() = 3
 (define func-return3 (term (mdef "func" () 3)))
 ;; f(var1)
@@ -35,6 +37,9 @@
 ;; f(var1);add(var1,var2)
 (define seq-f-then-add (term (seq ,call-f-with-var1
                                   (mcall (mval "add") var1 var2))))
+;; addNumum(1,1);addNumNum(1.1,1.1)
+(define addNumNumSpecialize (term (seq (mcall add (pcall + 1 1) 1)
+                                  (mcall add (pcall + 1.1 1.1) 1.1))))
 ;; 1+x
 (define one-plus-x (term (pcall + 1 x)))
 ;; first() = second()

@@ -284,6 +284,15 @@
 (define 1-plus-1 (term (pcall + 1 1)))
 ; 1==1
 (define 1-eq-1 (term (pcall == 1 1)))
+; appf0(f :: Function) = f(0)
+(define appf0 (term (mdef "appf0" ((:: f Function)) (mcall f 0))))
+; appf1(f :: Any) = f(1)
+(define appf1-any (term (mdef "appf0" ((:: f Any)) (mcall f 1))))
+; get1() = 1
+(define get1 (term (mdef "get1" () 1)))
+; composeFunc(f :: Function, g Function) = f(g())
+(define compose-func
+  (term (mdef "composeFunc" ((:: f Function) (:: g Function)) (mcall f (mcall g)))))
 
 ;; ==================================================
 ;; Programs
@@ -320,6 +329,16 @@
 (define p-triv-10 (term (evalg (seq ,get1or2-mdef (mcall get1or2 ,btrue)))))
 ; (| get1or2(x::Bool) = x ? 1 : 2; get1or2(false)|)
 (define p-triv-11 (term (evalg (seq ,get1or2-mdef (mcall get1or2 ,bfalse)))))
+; (| appf0(f :: Function) = f(0); inc(x) = x+1; appf0(inc) |)
+(define p-triv-appf0
+  (term (evalg (seq ,appf0 (seq ,incint (mcall (mval "appf0") (mval "inc")))))))
+; (| appf0(f :: Function) = f(0); appf0(f :: Any) = f(1); inc(x) = x+1; appf0(inc) |)
+(define p-triv-appf0-dispatch
+  (term (evalg (seq ,appf0 (seq ,appf1-any (seq ,incint (mcall (mval "appf0") (mval "inc"))))))))
+; (| composeFunc(f :: Function, g Function) = f(g()); get1()=1; inc(x) = x+1; composeFunc(inc,get1) |)
+(define p-triv-compose
+  (term (evalg (seq ,compose-func (seq ,get1
+                         (seq ,incint (mcall (mval "composeFunc") (mval "inc") get1)))))))
 
 ;; ------------------- Print-sequence programs
 

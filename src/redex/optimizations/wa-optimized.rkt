@@ -545,7 +545,6 @@
    -------------------------------------------------------------- "OT-MethodTable"
    (mt~~> Φ e MT MT_P)]
   )
-
 (test-equal (judgment-holds (mt~~> () 1 ∅ ∅)) #t)
 (test-equal (judgment-holds (mt~~> () true (,id-fInt • ∅) ∅)) #f)
 (test-equal (judgment-holds (mt~~> () 1 ∅ (,new-call-func-withy • ∅))) #t)
