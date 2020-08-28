@@ -482,7 +482,7 @@ end
 #--------------------------------------------------
 # Running analysis on packages
 #--------------------------------------------------
-using JLD
+#using JLD
 # Runs analysis on all packages from [pkgsDir]
 function analyzePackages(pkgsDir :: String, io :: IO)
     isdir(pkgsDir) ||
@@ -493,7 +493,7 @@ function analyzePackages(pkgsDir :: String, io :: IO)
     outputPkgsProcessingSummary(io, goodPkgsCnt, badPkgs)
     # analyze all packages and summarize stats
     pkgsStat :: PackagesTotalStat = computeDerivedMetrics(goodPkgs, io)
-    save("analysis-results.jld", "pkgs", goodPkgs, "summary", pkgsStat)
+    #save("analysis-results.jld", "pkgs", goodPkgs, "summary", pkgsStat)
     derivedStat = pkgsStat.derivedStat
     # output derived stats
     println(io, "==============================\n")
