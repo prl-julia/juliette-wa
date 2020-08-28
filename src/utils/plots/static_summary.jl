@@ -66,21 +66,20 @@ eu = plot(eval_lbls, eval_bars,
 	Guide.title("(b) Eval AST type by package"),
 	Guide.ylabel("Packages"));
 
-# aggregate chart
 draw(PDF("package_eval_usage.pdf", 6inch, 8inch), vstack(bf, eu))
+# aggregate chart
 
 add_if_present(d::Dict{T,V}, k::T, v::V) where {T,V} = if haskey(d, k) d[k] += v else d[k] = v end
 
 mergedDefns = merge(+, getfield.(getfield.(pkgs, :pkgStat), :evalArgStat)...)
-eval_toplevel = Dict(k.astHead=>v for (k,v) in filter(x->!x[1].inFunDef, mergedDefns))
-eval_infunc = Dict(k.astHead=>v for (k,v) in filter(x->x[1].inFunDef, mergedDefns))
+eval_toplevel = Dict(k.astHead=>v for (k,v) in filter(x->!x[1].context.inFunDef && x[1].context.inQuote, mergedDefns))
+eval_infunc = Dict(k.astHead=>v for (k,v) in filter(x->x[1].context.inFunDef && x[1].context.inQuote, mergedDefns))
 
-missing_to_z(v) = if ismissing(v) 0 else v end
-eval_toplevel[:macrocall] += eval_toplevel[Symbol("@!WAmacro")]
+#eval_toplevel[Symbol("(non-WA) macro")] = eval_toplevel[Symbol("@!WAmacro")]
 delete!(eval_toplevel, Symbol("@!WAmacro"))
 eval_toplevel = collect(eval_toplevel)
 
-eval_infunc[:macrocall] += eval_infunc[Symbol("@!WAmacro")]
+#eval_infunc[Symbol("(non-WA) macro")] = eval_infunc[Symbol("@!WAmacro")]
 delete!(eval_infunc, Symbol("@!WAmacro"))
 eval_infunc = collect(eval_infunc)
 
@@ -100,34 +99,34 @@ display_infunc = map(kv->string(kv[1])=>kv[2], display_infunc)
 #
 toplevel_cols = getindex.(display_toplevel, 1)
 toplevel_vals = getindex.(display_toplevel, 2)
-toplevel_displayvals = map(x-> if x > 1250 1250+(x-1250)/30 else x end, toplevel_vals)
-discont = layer(yintercept=[1000], Geom.hline(style=:dot,color="grey"))
+toplevel_displayvals = map(x-> if x > 450 450+(x-450)/200 else x end, toplevel_vals)
+discont = layer(yintercept=[400], Geom.hline(style=:dot,color="grey"))
 labels = layer(x=toplevel_cols, y=toplevel_displayvals, label=string.(toplevel_vals), Geom.label(position=:above))
 bars = layer(x=toplevel_cols, y=toplevel_displayvals, color=toplevel_cols, Geom.bar())
 toplevel = plot(discont, labels, bars,
 	Scale.y_continuous(format=:plain), 
-	Coord.cartesian(ymin=0,ymax=1600), 
+	Coord.cartesian(ymin=0,ymax=550), 
 	Scale.color_discrete_manual((cpalette.((0:1/(length(toplevel_cols)-1):1) .* 0.8))...), Theme(key_position = :none),
-	Guide.yticks(ticks=0:200:1000),
+	Guide.yticks(ticks=0:100:400),
 	Guide.xticks(orientation=:vertical),
 	Guide.xlabel(nothing),
-	Guide.title("(a) Eval AST heads at top level"),
-	Guide.ylabel("AST heads"));
+	Guide.title("(a) Eval AST forms at top level"),
+	Guide.ylabel("AST forms"));
 
 infunc_cols = getindex.(display_infunc, 1)
 infunc_vals = getindex.(display_infunc, 2)
-infunc_displayvals = map(x-> if x > 1250 1250+(x-1250)/30 else x end, infunc_vals)
-discont = layer(yintercept=[1000], Geom.hline(style=:dot,color="grey"))
+infunc_displayvals = map(x-> if x > 450 450+(x-450)/200 else x end, infunc_vals)
+discont = layer(yintercept=[400], Geom.hline(style=:dot,color="grey"))
 labels = layer(x=infunc_cols, y=infunc_displayvals, label=string.(infunc_vals), Geom.label(position=:above))
 bars = layer(x=infunc_cols, y=infunc_displayvals, color=infunc_cols, Geom.bar())
 infunc = plot(discont, labels, bars,
 	Scale.y_continuous(format=:plain), 
-	Coord.cartesian(ymin=0,ymax=1600), 
+	Coord.cartesian(ymin=0,ymax=550), 
 	Scale.color_discrete_manual((cpalette.((0:1/(length(infunc_cols)-1):1) .* 0.8))...), Theme(key_position = :none),
-	Guide.yticks(ticks=0:200:1000),
+	Guide.yticks(ticks=0:100:400),
 	Guide.xticks(orientation=:vertical),
 	Guide.xlabel(nothing),
-	Guide.title("(b) Eval AST heads inside functions"),
+	Guide.title("(b) Eval AST forms inside functions"),
 	Guide.ylabel(nothing));
 
 draw(PDF("ast_heads.pdf", 10inch, 4inch), hstack(toplevel, infunc))
@@ -137,14 +136,14 @@ draw(PDF("ast_heads.pdf", 10inch, 4inch), hstack(toplevel, infunc))
 
 
 pkgforms = merge(+, map(d->Dict(k=>if v>0 1 else 0 end for (k,v) in d), getfield.(getfield.(pkgs, :pkgStat), :evalArgStat))...)
-pkgforms_toplevel = Dict(k.astHead=>v for (k,v) in filter(x->!x[1].inFunDef, pkgforms))
-pkgforms_infunc = Dict(k.astHead=>v for (k,v) in filter(x->x[1].inFunDef, pkgforms))
+pkgforms_toplevel = Dict(k.astHead=>v for (k,v) in filter(x->!x[1].context.inFunDef && x[1].context.inQuote, pkgforms))
+pkgforms_infunc = Dict(k.astHead=>v for (k,v) in filter(x->x[1].context.inFunDef && x[1].context.inQuote, pkgforms))
 
-pkgforms_toplevel[:macrocall] += pkgforms_toplevel[Symbol("@!WAmacro")]
+#pkgforms_toplevel[:macrocall] += pkgforms_toplevel[Symbol("@!WAmacro")]
 delete!(pkgforms_toplevel, Symbol("@!WAmacro"))
 pkgforms_toplevel = collect(pkgforms_toplevel)
 
-pkgforms_infunc[:macrocall] += pkgforms_infunc[Symbol("@!WAmacro")]
+#pkgforms_infunc[:macrocall] += pkgforms_infunc[Symbol("@!WAmacro")]
 delete!(pkgforms_infunc, Symbol("@!WAmacro"))
 pkgforms_infunc = collect(pkgforms_infunc)
 
@@ -160,3 +159,34 @@ display_pinfunc = Vector{Pair{Symbol,UInt64}}()
 append!(display_pinfunc, pkgforms_infunc[1:8])
 push!(display_pinfunc, :other => sum(getindex.(pkgforms_infunc[9:end],2)))
 display_pinfunc = map(kv->string(kv[1])=>kv[2], display_pinfunc)
+
+toplevel_pkg_cols = getindex.(display_ptoplevel, 1)
+toplevel_pkg_vals = getindex.(display_ptoplevel, 2)
+toplevel_pkg_displayvals = map(x-> if x > 450 450+(x-450)/200 else x end, toplevel_pkg_vals)
+discont = layer(yintercept=[400], Geom.hline(style=:dot,color="grey"))
+labels = layer(x=toplevel_pkg_cols, y=toplevel_pkg_displayvals, label=string.(toplevel_pkg_vals), Geom.label(position=:above))
+bars = layer(x=toplevel_pkg_cols, y=toplevel_pkg_displayvals, color=toplevel_pkg_cols, Geom.bar())
+toplevel = plot(discont, labels, bars,
+	Scale.y_continuous(format=:plain), 
+	Coord.cartesian(ymin=0,ymax=550), 
+	Scale.color_discrete_manual((cpalette.((0:1/(length(toplevel_pkg_cols)-1):1) .* 0.8))...), Theme(key_position = :none),
+	Guide.yticks(ticks=0:100:400),
+	Guide.xticks(orientation=:vertical),
+	Guide.xlabel(nothing),
+	Guide.title("(a) Packages with AST form at top level"),
+	Guide.ylabel("Packages", orientation=:vertical));
+
+infunc_pkg_cols = getindex.(display_pinfunc, 1)
+infunc_pkg_vals = getindex.(display_pinfunc, 2)
+infunc_pkg_displayvals = map(x-> if x > 450 450+(x-450)/200 else x end, infunc_pkg_vals)
+labels = layer(x=infunc_pkg_cols, y=infunc_pkg_displayvals, label=string.(infunc_pkg_vals), Geom.label(position=:above))
+bars = layer(x=infunc_pkg_cols, y=infunc_pkg_displayvals, color=infunc_pkg_cols, Geom.bar())
+infunc = plot(labels, bars,
+	Scale.y_continuous(format=:plain),
+	Scale.color_discrete_manual((cpalette.((0:1/(length(infunc_pkg_cols)-1):1) .* 0.8))...), Theme(key_position = :none),
+	Guide.xticks(orientation=:vertical),
+	Guide.xlabel(nothing),
+	Guide.title("(b) Packages with AST form inside function"),
+	Guide.ylabel(nothing),
+	Guide.ylabel("Packages", orientation=:vertical));
+draw(PDF("pkg_heads.pdf", 6inch, 8inch), vstack(toplevel, infunc))
