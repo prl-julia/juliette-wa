@@ -5,10 +5,10 @@ using ColorSchemes
 using Printf
 import Cairo, Fontconfig
 
-const analysis_result_path = "C:/Users/Ben Chung/Downloads/analysis-results.jld"
+const analysis_result_path = "C:/Users/Ben Chung/Downloads/analysis-results (1).jld"
 
 include("../../analysis/static-analysis/lib/analysis.jl")
-data = load("analysis-results.jld")
+data = load(analysis_result_path)
 pkgs = data["pkgs"]
 
 # per pkg statistics
@@ -66,36 +66,20 @@ eu = plot(eval_lbls, eval_bars,
 	Guide.title("(b) Eval AST type by package"),
 	Guide.ylabel("Packages"));
 
-# aggregate chart
 draw(PDF("package_eval_usage.pdf", 6inch, 8inch), vstack(bf, eu))
+# aggregate chart
 
 add_if_present(d::Dict{T,V}, k::T, v::V) where {T,V} = if haskey(d, k) d[k] += v else d[k] = v end
 
-df_eval_toplevel = DataFrame()
-df_eval_infunc = DataFrame()
-
-# per eval statistics
-for pkg in pkgs
-	toplevel = Dict()
-	infunc = Dict()
-	for (k,v) in pkg.pkgStat.evalArgStat
-		if k.inFunDef
-			add_if_present(toplevel, k.astHead, v)
-		else
-			add_if_present(infunc, k.astHead, v)
-		end
-	end
-	push!(df_eval_toplevel, toplevel, cols = :union)
-	push!(df_eval_infunc, infunc, cols = :union)
-end
+mergedDefns = merge(+, getfield.(getfield.(pkgs, :pkgStat), :evalArgStat)...)
+eval_toplevel = Dict(k.astHead=>v for (k,v) in filter(x->!x[1].inFunDef, mergedDefns))
+eval_infunc = Dict(k.astHead=>v for (k,v) in filter(x->x[1].inFunDef, mergedDefns))
 
 missing_to_z(v) = if ismissing(v) 0 else v end
-eval_toplevel = Dict(pn=>sum(missing_to_z.(df_eval_toplevel[:,pn])) for pn = propertynames(df_eval_toplevel))
 eval_toplevel[:macrocall] += eval_toplevel[Symbol("@!WAmacro")]
 delete!(eval_toplevel, Symbol("@!WAmacro"))
 eval_toplevel = collect(eval_toplevel)
 
-eval_infunc = Dict(pn=>sum(missing_to_z.(df_eval_infunc[:,pn])) for pn = propertynames(df_eval_infunc))
 eval_infunc[:macrocall] += eval_infunc[Symbol("@!WAmacro")]
 delete!(eval_infunc, Symbol("@!WAmacro"))
 eval_infunc = collect(eval_infunc)
@@ -127,8 +111,8 @@ toplevel = plot(discont, labels, bars,
 	Guide.yticks(ticks=0:200:1000),
 	Guide.xticks(orientation=:vertical),
 	Guide.xlabel(nothing),
-	Guide.title("(a) Eval AST heads at top level"),
-	Guide.ylabel("AST heads"));
+	Guide.title("(a) Eval AST forms at top level"),
+	Guide.ylabel("AST forms"));
 
 infunc_cols = getindex.(display_infunc, 1)
 infunc_vals = getindex.(display_infunc, 2)
@@ -143,7 +127,7 @@ infunc = plot(discont, labels, bars,
 	Guide.yticks(ticks=0:200:1000),
 	Guide.xticks(orientation=:vertical),
 	Guide.xlabel(nothing),
-	Guide.title("(b) Eval AST heads inside functions"),
+	Guide.title("(b) Eval AST forms inside functions"),
 	Guide.ylabel(nothing));
 
 draw(PDF("ast_heads.pdf", 10inch, 4inch), hstack(toplevel, infunc))
