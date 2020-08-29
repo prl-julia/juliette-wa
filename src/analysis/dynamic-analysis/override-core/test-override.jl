@@ -14,7 +14,13 @@ function Pkg.Operations.gen_test_code(testfile::String;
         $(Base.load_path_setup_code(false))
         cd($(repr(dirname(testfile))))
         append!(empty!(ARGS), $(repr(test_args.exec)))
-        include($(repr(testfile)))
+        try 
+            include($(repr(testfile)))
+        finally
+            for overrideInfo = overrideCollection
+                storeOverrideInfo(overrideInfo, "\$(ENV["OUTPUT_DIR"])/\$(overrideInfo.identifier).json")
+            end
+        end
         """
     return ```
         $(Base.julia_cmd())

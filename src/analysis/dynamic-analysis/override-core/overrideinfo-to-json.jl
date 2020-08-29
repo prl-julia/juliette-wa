@@ -1,20 +1,21 @@
 using Pkg
 Pkg.add("JSON")
 using JSON
+import JLD
 
 # Store the overrideInfo as a JSON file
 function storeOverrideInfo(overrideInfo :: OverrideInfo, outputFile :: String)
     fd = open(outputFile, "w+")
     INDENT_SIZE = 2
-    JSON.print(fd, overrideInfoToJson(overrideInfo), INDENT_SIZE)
+    JSON.print(fd, overrideInfoToJson(overrideInfo, outputFile), INDENT_SIZE)
     close(fd)
 end
 
 # Convert an OverrideInfo object to a julia json representation
-function overrideInfoToJson(info :: OverrideInfo)
+function overrideInfoToJson(info :: OverrideInfo, outputFile :: String)
     json = Dict()
     json["eval_info"] = funcMetadataToJson(info.evalInfo,
-        evalInfoToJson;
+        (md) -> evalInfoToJson(md, outputFile);
         traceAuxillaryToJson=astInfoToJson)
     json["invokelatest_info"] = funcMetadataToJson(info.invokeLatestInfo,
         (invokeLatestInfo) -> Dict(["function_names" => countingDictToJson(invokeLatestInfo.funcNames, "function_name")]);
@@ -23,7 +24,9 @@ function overrideInfoToJson(info :: OverrideInfo)
 end
 
 # Convert an evalInfo object to a julia json representation
-function evalInfoToJson(evalInfo :: EvalInfo)
+function evalInfoToJson(evalInfo :: EvalInfo, outputFile :: String)
+    JLD.save("$(outputFile).jld", "callInfo", mkOccurDict(evalInfo.evalCallInfos))
+
     json = astInfoToJson(evalInfo.astHeads)
     json["func_def_types"] = funcDefTrackerToJson(evalInfo.funcDefTypes)
     json

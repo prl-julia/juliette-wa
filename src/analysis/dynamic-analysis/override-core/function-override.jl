@@ -1,4 +1,5 @@
 include("../../../utils/lib.jl")
+include("../../static-analysis/lib/analysis.jl")
 include("ast-parse-helpers.jl")
 
 ##############################
@@ -26,6 +27,7 @@ FuncDefTracker() = FuncDefTracker(0,0,0,0)
 
 # Represents the information collected regarding eval function calls
 mutable struct EvalInfo
+    evalCallInfos :: Vector{EvalCallInfo}
     astHeads     :: AstInfo
     funcDefTypes :: FuncDefTracker
 end
@@ -66,7 +68,7 @@ end
 # Initializes a base representation of override information
 OverrideInfo(identifier :: String, functionDataFilter :: Function) =
     OverrideInfo(identifier, functionDataFilter,
-        FuncMetadata(EvalInfo(Dict(), FuncDefTracker());
+        FuncMetadata(EvalInfo(EvalCallInfo[], Dict(), FuncDefTracker());
             initialTrace=Dict{StackTraces.StackFrame,StackTraceInfo{AstInfo}}()),
         FuncMetadata(InvokeLatestInfo(Dict());
             initialTrace=Dict{StackTraces.StackFrame,StackTraceInfo{FunctionInfo}}())
@@ -105,7 +107,7 @@ overrideCollection = [
 # Overrides eval to store metadata about calls to the function
 function Core.eval(m::Module, @nospecialize(e))
     # aux functions
-    updateEvalInfoWrap(evalInfo :: EvalInfo) = updateEvalInfo(evalInfo, e, m)
+    updateEvalInfoWrap(evalInfo :: EvalInfo, stackinfo) = updateEvalInfo(evalInfo, e, m, stackinfo)
     updateTraceAuxillary(astHeads :: AstInfo) = updateAstInfo(astHeads, e)
     # action
     exprs = extractExprs(e)
@@ -129,7 +131,7 @@ end
 # Overrides invokelatest to store metadata about calls to the function
 function Base.invokelatest(@nospecialize(f), @nospecialize args...; kwargs...)
     # aux functions
-    updateInvokeLatestInfo(invokeLatestInfo :: InvokeLatestInfo) =
+    updateInvokeLatestInfo(invokeLatestInfo :: InvokeLatestInfo, stackinfo) =
         updateDictCount(invokeLatestInfo.funcNames, string(f))
     updateTraceAuxillary(funcNames :: FunctionInfo) =
         updateDictCount(funcNames, string(f))
@@ -160,8 +162,7 @@ updateDictCount(dict :: Dict{T, Count}, key :: T) where {T} =
 function updateFuncMetadata(
         overrideCollection :: Vector{OverrideInfo}, getFuncMetadata :: Function,
         stackFrameIndex :: Count, updateFuncSpecificData :: Function;
-        auxTuple=((() -> nothing), ((aux) -> nothing)) :: Tuple{Function, Function}
-)
+        auxTuple=((() -> nothing), ((aux) -> nothing)) :: Tuple{Function, Function})
     for overrideInfo = overrideCollection
         metadata = getFuncMetadata(overrideInfo)
         if overrideInfo.stackFramePredicate(getindex(stacktrace(), stackFrameIndex + 1))
@@ -171,9 +172,8 @@ function updateFuncMetadata(
                 defaultTraceAuxillary, updateTraceAuxillary
             )
             metadata.callCount += 1
-            updateFuncSpecificData(metadata.funcSpecificData)
+            updateFuncSpecificData(metadata.funcSpecificData, getindex(stacktrace(), stackFrameIndex + 1))
         end
-        storeOverrideInfo(overrideInfo, "$(ENV["OUTPUT_DIR"])/$(overrideInfo.identifier).json")
     end
 end
 
@@ -191,7 +191,9 @@ function updateStackTraces(
 end
 
 # Updates the ast information to increment the ast type of the given expression
-function updateEvalInfo(evalInfo :: EvalInfo, e, m :: Module)
+function updateEvalInfo(evalInfo :: EvalInfo, e, m :: Module, stackinfo)
+    isInFunc = stackinfo.func != Symbol("top-level scope")
+    append!(evalInfo.evalCallInfos, argDescr(e, EvalArgContext(true, isInFunc)))
     astIdentifier = updateAstInfo(evalInfo.astHeads, e)
     if astIdentifier == :function
         # a lambda function (()->1)
