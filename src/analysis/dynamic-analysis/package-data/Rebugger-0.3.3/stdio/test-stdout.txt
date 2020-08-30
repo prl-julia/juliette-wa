@@ -1,5 +1,0 @@
-### DYNAMIC ANALYSIS LINE IDENTIFIER ###
-Test Summary: | Pass  Total
-Rebugger      |   98     98
-Test Summary:                        | Pass  Total
-Expression-printing and line numbers |   16     16
