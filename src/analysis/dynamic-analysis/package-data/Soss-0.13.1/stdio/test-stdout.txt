@@ -1,1 +1,27 @@
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+Test Summary: | Pass  Total
+Doctests      |    1      1
+Test Summary: | Pass  Total
+prior         |    3      3
+Test Summary: | Pass  Total
+prune         |    4      4
+Test Summary: | Pass  Total
+predictive    |    1      1
+Test Summary: | Pass  Total
+Do            |    2      2
+README: Error During Test at /home/jack/.julia/packages/Soss/FgRzp/test/readme.jl:11
+  Test threw exception
+  Expression: buildREADME()
+  MethodError: no method matching weave(::String; doctype="github", throw_errors=true, cache=:refresh, args=Dict(:seed => 6))
+  Closest candidates are:
+    weave(::AbstractString; doctype, informat, out_path, args, mod, fig_path, fig_ext, cache_path, cache, template, css, highlight_theme, pandoc_options, latex_cmd, keep_unicode) at /home/jack/.julia/packages/Weave/7zyqS/src/Weave.jl:125 got unsupported keyword argument "throw_errors"
+    weave(::AbstractString, !Matched::Union{AbstractString, Symbol}; kwargs...) at /home/jack/.julia/packages/Weave/7zyqS/src/Weave.jl:233
+  Stacktrace:
+   [1] kwerr(::NamedTuple{(:doctype, :throw_errors, :cache, :args),Tuple{String,Bool,Symbol,Dict{Symbol,Int64}}}, ::Function, ::String) at ./error.jl:157
+   [2] buildREADME() at /home/jack/.julia/packages/Soss/FgRzp/test/readme.jl:5
+   [3] top-level scope at /home/jack/.julia/packages/Soss/FgRzp/test/readme.jl:11
+   [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [5] top-level scope at /home/jack/.julia/packages/Soss/FgRzp/test/readme.jl:11
+  
+Test Summary: | Error  Total
+README        |     1      1

@@ -43,143 +43,11 @@
     }
   },
   "invokelatest_info": {
-    "call_count": 74,
+    "call_count": 72,
     "stack_traces": [
       {
         "count": 1,
         "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:69",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:59",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:135",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:89",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:27",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at any.jl:36",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:30",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:79",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:92",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu-cxx11.jl:91",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:57",
         "auxillary": {
           "function_names": [
             {
@@ -203,19 +71,7 @@
       },
       {
         "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:29",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:43",
+        "last_call": "__init__() at x86_64-linux-gnu.jl:59",
         "auxillary": {
           "function_names": [
             {
@@ -228,6 +84,522 @@
       {
         "count": 1,
         "last_call": "__init__() at x86_64-linux-gnu.jl:32",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:30",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:135",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at any.jl:36",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:80",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:13",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-cxx11.jl:91",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:29",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:31",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:90",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:30",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:57",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:42",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:63",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:44",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:29",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:66",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:32",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at any.jl:13",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:59",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:113",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:75",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:92",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:353",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:29",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:41",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:46",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:29",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:29",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:29",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:323",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:60",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:104",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:44",
         "auxillary": {
           "function_names": [
             {
@@ -275,54 +647,6 @@
       },
       {
         "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:32",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:27",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
         "last_call": "__init__() at x86_64-linux-gnu.jl:29",
         "auxillary": {
           "function_names": [
@@ -335,367 +659,7 @@
       },
       {
         "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:44",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:43",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:104",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:65",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:75",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:113",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:27",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:353",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:41",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:11",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
         "last_call": "__init__() at x86_64-linux-gnu.jl:30",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at any.jl:13",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at any.jl:25",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:30",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:27",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:59",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:42",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:29",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:27",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:59",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:29",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:30",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
         "auxillary": {
           "function_names": [
             {
@@ -731,19 +695,7 @@
       },
       {
         "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:60",
+        "last_call": "__init__() at x86_64-linux-gnu.jl:12",
         "auxillary": {
           "function_names": [
             {
@@ -779,7 +731,7 @@
       },
       {
         "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:27",
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
         "auxillary": {
           "function_names": [
             {
@@ -791,31 +743,7 @@
       },
       {
         "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:13",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:90",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:61",
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
         "auxillary": {
           "function_names": [
             {
@@ -839,7 +767,19 @@
       },
       {
         "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:323",
+        "last_call": "__init__() at x86_64-linux-gnu.jl:29",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:29",
         "auxillary": {
           "function_names": [
             {
@@ -863,6 +803,30 @@
       },
       {
         "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at any.jl:25",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
         "last_call": "__init__() at any.jl:26",
         "auxillary": {
           "function_names": [
@@ -875,7 +839,43 @@
       },
       {
         "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:11",
+        "last_call": "__init__() at x86_64-linux-gnu.jl:59",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:12",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:30",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:30",
         "auxillary": {
           "function_names": [
             {
@@ -899,31 +899,7 @@
       },
       {
         "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:29",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "last_call": "__init__() at x86_64-linux-gnu.jl:31",
         "auxillary": {
           "function_names": [
             {
@@ -938,7 +914,7 @@
       "function_names": [
         {
           "function_name": "do_artifact_str",
-          "count": 74
+          "count": 72
         }
       ]
     }

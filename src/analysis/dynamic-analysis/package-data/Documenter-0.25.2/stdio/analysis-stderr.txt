@@ -1,7 +1,7 @@
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-No Changes to `/tmp/jl_2y6hDX/Project.toml`
-No Changes to `/tmp/jl_2y6hDX/Manifest.toml`
+No Changes to `/tmp/jl_rN4ETw/Project.toml`
+No Changes to `/tmp/jl_rN4ETw/Manifest.toml`
 [ Info: Building example/make.jl
 [ Info: Building mock package docs: HTMLWriter / deployment build
 [ Info: Building mock package docs: HTMLWriter / deployment build using MathJax v3
@@ -1191,7 +1191,7 @@ No Changes to `/tmp/jl_2y6hDX/Manifest.toml`
 [ Info: Populate: populating indices.
 [ Info: RenderDocument: rendering document.
 [ Info: MarkdownWriter: rendering Markdown pages.
-[ Info: Building 'nongit' in /tmp/jl_OLYg8s
+[ Info: Building 'nongit' in /tmp/jl_zuafCy
 [ Info: SetupBuildDirectory: setting up build directory.
 [ Info: Doctest: running doctests.
 [ Info: ExpandTemplates: expanding markdown templates.
@@ -1277,9 +1277,9 @@ No Changes to `/tmp/jl_2y6hDX/Manifest.toml`
 │     [10] doctest(::String, ::Array{Module,1}; fix::Bool, testset::String) at /home/jack/.julia/packages/Documenter/pjwqp/src/Documenter.jl:818
 │     [11] doctest(::Module; manual::Bool, testset::Nothing, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/Documenter/pjwqp/src/Documenter.jl:761
 │     [12] doctest at /home/jack/.julia/packages/Documenter/pjwqp/src/Documenter.jl:748 [inlined]
-│     [13] (::var"#129#131")() at ./none:0
+│     [13] (::var"#171#173")() at ./none:0
 └ @ Documenter ~/.julia/packages/Documenter/pjwqp/src/Documenter.jl:811
-ERROR: LoadError: Some tests did not pass: 4153 passed, 4 failed, 0 errored, 0 broken.
+ERROR: LoadError: Some tests did not pass: 4210 passed, 4 failed, 0 errored, 0 broken.
 in expression starting at /home/jack/.julia/packages/Documenter/pjwqp/test/runtests.jl:5
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
@@ -1289,7 +1289,7 @@ No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Documenter
-Status `/tmp/jl_2y6hDX/Project.toml`
+Status `/tmp/jl_rN4ETw/Project.toml`
   [ffbed154] DocStringExtensions v0.8.2
   [e30172f5] Documenter v0.25.2
   [997ab1e6] DocumenterMarkdown v0.2.0
@@ -1305,7 +1305,7 @@ Status `/tmp/jl_2y6hDX/Project.toml`
   [9a3f8284] Random
   [8dfed614] Test
   [4ec0a83e] Unicode
-Status `/tmp/jl_2y6hDX/Manifest.toml`
+Status `/tmp/jl_rN4ETw/Manifest.toml`
   [b99e7846] BinaryProvider v0.5.10
   [ffbed154] DocStringExtensions v0.8.2
   [e30172f5] Documenter v0.25.2
@@ -1346,10 +1346,10 @@ Stacktrace:
  [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
  [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
  [10] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65 [inlined]
- [11] analyzePkg(::String, ::Nothing) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:13
- [12] top-level scope at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:16
+ [11] analyzePkg(::String, ::Nothing) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:14
+ [12] top-level scope at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:17
  [13] include(::Function, ::Module, ::String) at ./Base.jl:380
  [14] include(::Module, ::String) at ./Base.jl:368
  [15] exec_options(::Base.JLOptions) at ./client.jl:296
  [16] _start() at ./client.jl:506
-in expression starting at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:16
+in expression starting at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:17

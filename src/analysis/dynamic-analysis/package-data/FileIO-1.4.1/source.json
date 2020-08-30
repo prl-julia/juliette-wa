@@ -31,16 +31,16 @@
     }
   },
   "invokelatest_info": {
-    "call_count": 53,
+    "call_count": 51,
     "stack_traces": [
       {
-        "count": 20,
+        "count": 18,
         "last_call": "load(::Formatted; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:184",
         "auxillary": {
           "function_names": [
             {
               "function_name": "load",
-              "count": 20
+              "count": 18
             }
           ]
         }
@@ -157,12 +157,12 @@
     "func_specific_data": {
       "function_names": [
         {
-          "function_name": "load",
-          "count": 20
-        },
-        {
           "function_name": "save",
           "count": 19
+        },
+        {
+          "function_name": "load",
+          "count": 18
         },
         {
           "function_name": "savestreaming",

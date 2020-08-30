@@ -1,4 +1,28 @@
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+Load String: Test Failed at /home/jack/.julia/packages/FileIO/DzfYr/test/loadsave.jl:48
+  Expression: load(joinpath(fp, "file.jld")) == "JLD"
+   Evaluated: Dict{String,Any}("a" => 3) == "JLD"
+Stacktrace:
+ [1] macro expansion at /home/jack/.julia/packages/FileIO/DzfYr/test/loadsave.jl:48 [inlined]
+ [2] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1190 [inlined]
+ [3] top-level scope at /home/jack/.julia/packages/FileIO/DzfYr/test/loadsave.jl:27
+Load PosixPath: Error During Test at /home/jack/.julia/packages/FileIO/DzfYr/test/loadsave.jl:48
+  Test threw exception
+  Expression: load(joinpath(fp, "file.jld")) == "JLD"
+  MethodError: no method matching jldopen(::PosixPath, ::String)
+  Closest candidates are:
+    jldopen(!Matched::AbstractString, ::AbstractString; mmaparrays, compatible, compress) at /home/jack/.julia/packages/JLD/jeGJb/src/JLD.jl:230
+    jldopen(!Matched::Function, ::Any...; kws...) at /home/jack/.julia/packages/JLD/jeGJb/src/JLD.jl:240
+  Stacktrace:
+   [1] jldopen(::JLD.var"#42#44", ::PosixPath, ::Vararg{Any,N} where N; kws::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/JLD/jeGJb/src/JLD.jl:241
+   [2] jldopen(::Function, ::PosixPath, ::String) at /home/jack/.julia/packages/JLD/jeGJb/src/JLD.jl:241
+   [3] load(::File{DataFormat{:JLD}}) at /home/jack/.julia/packages/JLD/jeGJb/src/JLD.jl:1245
+   [4] load(::PosixPath; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/FileIO/DzfYr/src/loadsave.jl:118
+   [5] load(::PosixPath) at /home/jack/.julia/packages/FileIO/DzfYr/src/loadsave.jl:118
+   [6] macro expansion at /home/jack/.julia/packages/FileIO/DzfYr/test/loadsave.jl:48 [inlined]
+   [7] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1190 [inlined]
+   [8] top-level scope at /home/jack/.julia/packages/FileIO/DzfYr/test/loadsave.jl:27
+  
 these tests will print warnings: 
 this test will print warnings: 
 All errors:
@@ -7,5 +31,23 @@ All errors:
 ===========================================
 2
 ===========================================
-Test Summary: | Pass  Total
-FileIO        |  174    174
+Test Summary:                          | Pass  Fail  Error  Total
+FileIO                                 |  172     1      1    174
+  OS                                   |    4                   4
+  DataFormat                           |   16                  16
+  streams                              |    5                   5
+  query                                |   23                  23
+  multiple libs                        |    7                   7
+  Querying with String                 |   26                  26
+  Querying with PosixPath              |   26                  26
+  Format with function for magic bytes |                    No tests
+  Load String                          |    6     1             7
+  Load PosixPath                       |    6            1      7
+  Save                                 |   30                  30
+  Ambiguous extension                  |    4                   4
+  Absent file                          |    1                   1
+  Path errors                          |    3                   3
+  Not installed                        |    1                   1
+  Absent implementation                |    2                   2
+  multiple errors                      |    1                   1
+  Mime save                            |   10                  10

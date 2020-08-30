@@ -63,16 +63,16 @@
     }
   },
   "invokelatest_info": {
-    "call_count": 19,
+    "call_count": 18,
     "stack_traces": [
       {
-        "count": 17,
+        "count": 16,
         "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
         "auxillary": {
           "function_names": [
             {
               "function_name": "loadpkg",
-              "count": 17
+              "count": 16
             }
           ]
         }
@@ -106,7 +106,7 @@
       "function_names": [
         {
           "function_name": "loadpkg",
-          "count": 18
+          "count": 17
         },
         {
           "function_name": "identity",

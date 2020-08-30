@@ -1,14 +1,14 @@
 {
   "eval_info": {
-    "call_count": 2,
+    "call_count": 5,
     "stack_traces": [
       {
-        "count": 2,
+        "count": 5,
         "last_call": "eval at Plots.jl:1 [inlined]",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
+              "count": 5,
               "ast_head": "block"
             }
           ]
@@ -18,7 +18,7 @@
     "func_specific_data": {
       "ast_heads": [
         {
-          "count": 2,
+          "count": 5,
           "ast_head": "block"
         }
       ],

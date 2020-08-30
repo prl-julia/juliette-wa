@@ -75,7 +75,7 @@ Assets paths: Error During Test at /home/jack/.julia/packages/Genie/rqHFz/test/t
    [28] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
    [29] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
    [30] include(::String) at ./client.jl:457
-   [31] top-level scope at none:11
+   [31] top-level scope at ./none:12
    [32] eval(::Module, ::Any) at ./boot.jl:331
    [33] exec_options(::Base.JLOptions) at ./client.jl:272
    [34] _start() at ./client.jl:506
@@ -106,17 +106,17 @@ Not found matches request type -- Content-Type -- custom HTML Genie page: Error 
    [2] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:13
    [3] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
    [4] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:5
-   [5] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:121
+   [5] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:123
    [6] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
    [7] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:4
    [8] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
    [9] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:4
-   [10] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:121
+   [10] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:123
    [11] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
    [12] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:3
    [13] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
    [14] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:3
-   [15] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:121
+   [15] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:123
    [16] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
    [17] include(::Function, ::Module, ::String) at ./Base.jl:380
    [18] include(::Module, ::String) at ./Base.jl:368
@@ -125,7 +125,7 @@ Not found matches request type -- Content-Type -- custom HTML Genie page: Error 
    [21] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
    [22] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
    [23] include(::String) at ./client.jl:457
-   [24] top-level scope at none:11
+   [24] top-level scope at ./none:12
    [25] eval(::Module, ::Any) at ./boot.jl:331
    [26] exec_options(::Base.JLOptions) at ./client.jl:272
    [27] _start() at ./client.jl:506
@@ -152,17 +152,17 @@ Not found matches request type -- Content-Type -- custom HTML Genie page: Error 
    [17] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:11
    [18] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
    [19] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:5
-   [20] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:121
+   [20] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:123
    [21] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
    [22] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:4
    [23] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
    [24] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:4
-   [25] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:121
+   [25] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:123
    [26] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
    [27] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:3
    [28] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
    [29] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:3
-   [30] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:121
+   [30] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:123
    [31] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
    [32] include(::Function, ::Module, ::String) at ./Base.jl:380
    [33] include(::Module, ::String) at ./Base.jl:368
@@ -171,7 +171,7 @@ Not found matches request type -- Content-Type -- custom HTML Genie page: Error 
    [36] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
    [37] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
    [38] include(::String) at ./client.jl:457
-   [39] top-level scope at none:11
+   [39] top-level scope at ./none:12
    [40] eval(::Module, ::Any) at ./boot.jl:331
    [41] exec_options(::Base.JLOptions) at ./client.jl:272
    [42] _start() at ./client.jl:506
@@ -239,77 +239,77 @@ Ready!
 Web Server starting at http://127.0.0.1:8000 
 
 Web Server running at http://127.0.0.1:8000 
-[ Info: 2020-08-20 20:14:59 New controller created at /tmp/jl_M2fT1j/fullstack_test/app/resources/foo/FooController.jl
-...┌ Error: 2020-08-20 20:14:59 Base.IOError("listen: address already in use (EADDRINUSE)", -98)
+[ Info: 2020-08-30 06:22:49 New controller created at /tmp/jl_Q1Cn8A/fullstack_test/app/resources/foo/FooController.jl
+...┌ Error: 2020-08-30 06:22:50 Base.IOError("listen: address already in use (EADDRINUSE)", -98)
 └ @ Genie.AppServer ~/.julia/packages/Genie/rqHFz/src/AppServer.jl:79
-┌ Warning: 2020-08-20 20:14:59 Sessions folder /tmp/jl_M2fT1j/fullstack_test/sessions does not exist
+┌ Warning: 2020-08-30 06:22:50 Sessions folder /tmp/jl_Q1Cn8A/fullstack_test/sessions does not exist
 └ @ Genie.FileSession ~/.julia/packages/Genie/rqHFz/src/session_adapters/FileSession.jl:15
-[ Info: 2020-08-20 20:14:59 Creating sessions folder at /tmp/jl_M2fT1j/fullstack_test/sessions
-[ Info: 2020-08-20 20:15:00 /test 200
+[ Info: 2020-08-30 06:22:50 Creating sessions folder at /tmp/jl_Q1Cn8A/fullstack_test/sessions
+[ Info: 2020-08-30 06:22:50 /test 200
 .
-tests_genie_generators: [ Info: 2020-08-20 20:15:01 Done! New app created at /tmp/jl_eE1eNB
-[ Info: 2020-08-20 20:15:01 Changing active directory to /tmp/jl_eE1eNB
-[ Info: 2020-08-20 20:15:01 Installing app dependencies
-┌ Info: 2020-08-20 20:15:02 Your new Genie app is ready!
+tests_genie_generators: [ Info: 2020-08-30 06:22:51 Done! New app created at /tmp/jl_Xl6jAT
+[ Info: 2020-08-30 06:22:51 Changing active directory to /tmp/jl_Xl6jAT
+[ Info: 2020-08-30 06:22:51 Installing app dependencies
+┌ Info: 2020-08-30 06:22:52 Your new Genie app is ready!
 │         Run 
 │ julia> Genie.loadapp() 
 │ to load the app's environment
 │         and then 
 │ julia> up() 
 └ to start the web server on port 8000.
-.[ Info: 2020-08-20 20:15:02 Done! New app created at /tmp/jl_8XYul0
-[ Info: 2020-08-20 20:15:02 Changing active directory to /tmp/jl_8XYul0
-[ Info: 2020-08-20 20:15:02 Installing app dependencies
-┌ Info: 2020-08-20 20:15:03 Your new Genie app is ready!
+.[ Info: 2020-08-30 06:22:52 Done! New app created at /tmp/jl_CUsiN9
+[ Info: 2020-08-30 06:22:52 Changing active directory to /tmp/jl_CUsiN9
+[ Info: 2020-08-30 06:22:52 Installing app dependencies
+┌ Info: 2020-08-30 06:22:52 Your new Genie app is ready!
 │         Run 
 │ julia> Genie.loadapp() 
 │ to load the app's environment
 │         and then 
 │ julia> up() 
 └ to start the web server on port 8000.
-..[ Info: 2020-08-20 20:15:03 Done! New app created at /tmp/jl_qchtdr
-[ Info: 2020-08-20 20:15:03 Changing active directory to /tmp/jl_qchtdr
-[ Info: 2020-08-20 20:15:03 Installing app dependencies
-┌ Info: 2020-08-20 20:15:03 Your new Genie app is ready!
+..[ Info: 2020-08-30 06:22:53 Done! New app created at /tmp/jl_rwtTxt
+[ Info: 2020-08-30 06:22:53 Changing active directory to /tmp/jl_rwtTxt
+[ Info: 2020-08-30 06:22:53 Installing app dependencies
+┌ Info: 2020-08-30 06:22:54 Your new Genie app is ready!
 │         Run 
 │ julia> Genie.loadapp() 
 │ to load the app's environment
 │         and then 
 │ julia> up() 
 └ to start the web server on port 8000.
-...[ Info: 2020-08-20 20:15:04 Done! New app created at /tmp/jl_GH90CU
-[ Info: 2020-08-20 20:15:04 Changing active directory to /tmp/jl_GH90CU
-[ Info: 2020-08-20 20:15:04 Installing app dependencies
-┌ Info: 2020-08-20 20:15:04 Your new Genie app is ready!
+...[ Info: 2020-08-30 06:22:54 Done! New app created at /tmp/jl_2GtPvR
+[ Info: 2020-08-30 06:22:54 Changing active directory to /tmp/jl_2GtPvR
+[ Info: 2020-08-30 06:22:54 Installing app dependencies
+┌ Info: 2020-08-30 06:22:55 Your new Genie app is ready!
 │         Run 
 │ julia> Genie.loadapp() 
 │ to load the app's environment
 │         and then 
 │ julia> up() 
 └ to start the web server on port 8000.
-...[ Info: 2020-08-20 20:15:05 New controller created at /tmp/jl_4ZFr0q/app/resources/yazoo/YazooController.jl
-..[ Info: 2020-08-20 20:15:05 New KazooController.jl created at /tmp/jl_as84UX/app/resources/kazoo/KazooController.jl
-┌ Error: 2020-08-20 20:15:05 UndefVarError(:SearchLight)
+...[ Info: 2020-08-30 06:22:55 New controller created at /tmp/jl_fwr5Qh/app/resources/yazoo/YazooController.jl
+..[ Info: 2020-08-30 06:22:55 New KazooController.jl created at /tmp/jl_qDRdRI/app/resources/kazoo/KazooController.jl
+┌ Error: 2020-08-30 06:22:56 UndefVarError(:SearchLight)
 └ @ Genie ~/.julia/packages/Genie/rqHFz/src/genie_module.jl:39
-┌ Warning: 2020-08-20 20:15:05 Skipping SearchLight
+┌ Warning: 2020-08-30 06:22:56 Skipping SearchLight
 └ @ Genie ~/.julia/packages/Genie/rqHFz/src/genie_module.jl:40
-..[ Info: 2020-08-20 20:15:05 New task created at tasks/VavoomTask.jl
+..[ Info: 2020-08-30 06:22:56 New task created at tasks/VavoomTask.jl
 ...
 tests_html_attributes_rendering: .........................
 tests_html_rendering: ........................
 tests_js_rendering: ....
 tests_json_rendering: .
-tests_markdown_rendering: ...┌ Warning: 2020-08-20 20:15:38 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
+tests_markdown_rendering: ...┌ Warning: 2020-08-30 06:23:39 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
 └ @ string:2
-┌ Warning: 2020-08-20 20:15:39 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
+┌ Warning: 2020-08-30 06:23:40 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
 └ @ string:8
-.┌ Warning: 2020-08-20 20:15:40 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
+.┌ Warning: 2020-08-30 06:23:41 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
 └ @ string:2
-┌ Warning: 2020-08-20 20:15:40 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
+┌ Warning: 2020-08-30 06:23:41 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
 └ @ string:8
-.┌ Warning: 2020-08-20 20:15:46 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
+.┌ Warning: 2020-08-30 06:23:48 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
 └ @ string:2
-┌ Warning: 2020-08-20 20:15:46 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
+┌ Warning: 2020-08-30 06:23:48 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
 └ @ string:8
 .
 tests_router: 

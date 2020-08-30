@@ -1,93 +1,11 @@
 {
   "eval_info": {
-    "call_count": 11,
-    "stack_traces": [
-      {
-        "count": 6,
-        "last_call": "eval(::Expr) at client.jl:467",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 2,
-              "ast_head": "="
-            },
-            {
-              "count": 2,
-              "ast_head": "Symbol-Base"
-            },
-            {
-              "count": 1,
-              "ast_head": "function"
-            },
-            {
-              "count": 1,
-              "ast_head": "macrocall"
-            }
-          ]
-        }
-      },
-      {
-        "count": 3,
-        "last_call": "initmeta(::Module) at Docs.jl:79",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 3,
-              "ast_head": "const"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "@static(::LineNumberNode, ::Module, ::Any) at osutils.jl:19",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 1,
-              "ast_head": "call"
-            },
-            {
-              "count": 1,
-              "ast_head": "&&"
-            }
-          ]
-        }
-      }
-    ],
+    "call_count": 0,
+    "stack_traces": [],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 3,
-          "ast_head": "const"
-        },
-        {
-          "count": 2,
-          "ast_head": "="
-        },
-        {
-          "count": 2,
-          "ast_head": "Symbol-Base"
-        },
-        {
-          "count": 1,
-          "ast_head": "call"
-        },
-        {
-          "count": 1,
-          "ast_head": "function"
-        },
-        {
-          "count": 1,
-          "ast_head": "&&"
-        },
-        {
-          "count": 1,
-          "ast_head": "macrocall"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
-        "newFuncCount": 1,
+        "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0

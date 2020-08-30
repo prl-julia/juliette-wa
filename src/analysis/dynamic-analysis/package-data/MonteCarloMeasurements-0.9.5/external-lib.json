@@ -1,6 +1,6 @@
 {
   "eval_info": {
-    "call_count": 108,
+    "call_count": 90,
     "stack_traces": [
       {
         "count": 57,
@@ -15,24 +15,12 @@
         }
       },
       {
-        "count": 24,
-        "last_call": "superscript(::Rational{Int64}) at display.jl:205",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 24,
-              "ast_head": "call"
-            }
-          ]
-        }
-      },
-      {
-        "count": 17,
+        "count": 18,
         "last_call": "eval at ArrayInterface.jl:1 [inlined]",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 17,
+              "count": 18,
               "ast_head": "block"
             }
           ]
@@ -45,6 +33,18 @@
           "ast_heads": [
             {
               "count": 6,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": "eval at Plots.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 5,
               "ast_head": "block"
             }
           ]
@@ -66,12 +66,8 @@
     "func_specific_data": {
       "ast_heads": [
         {
-          "count": 84,
+          "count": 90,
           "ast_head": "block"
-        },
-        {
-          "count": 24,
-          "ast_head": "call"
         }
       ],
       "func_def_types": {
@@ -83,7 +79,7 @@
     }
   },
   "invokelatest_info": {
-    "call_count": 45,
+    "call_count": 44,
     "stack_traces": [
       {
         "count": 25,
@@ -147,7 +143,7 @@
       },
       {
         "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "last_call": "__init__() at x86_64-linux-gnu.jl:215",
         "auxillary": {
           "function_names": [
             {
@@ -172,6 +168,18 @@
       {
         "count": 1,
         "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:59",
         "auxillary": {
           "function_names": [
             {
@@ -195,7 +203,7 @@
       },
       {
         "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:59",
+        "last_call": "__init__() at x86_64-linux-gnu.jl:30",
         "auxillary": {
           "function_names": [
             {
@@ -231,18 +239,6 @@
       },
       {
         "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:215",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
         "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:29",
         "auxillary": {
           "function_names": [
@@ -267,43 +263,31 @@
       },
       {
         "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
         "last_call": "__init__() at x86_64-linux-gnu.jl:41",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:30",
         "auxillary": {
           "function_names": [
             {
@@ -346,7 +330,7 @@
         },
         {
           "function_name": "do_artifact_str",
-          "count": 20
+          "count": 19
         }
       ]
     }
