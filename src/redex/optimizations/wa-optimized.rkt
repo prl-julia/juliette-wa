@@ -234,11 +234,23 @@
 
 ;; Gets the name of the direct call method if one exists
 (define-metafunction WA-opt
-  get-opt-method : Φ sig-σ -> mname or nothing
-  [(get-opt-method (_ ... (sig-σ mname_opt) _ ...) sig-σ)
-   mname_opt]
-  [(get-opt-method _ _) nothing]
+  get-opt-methods : Φ sig-σ -> (mname ...)
+  [(get-opt-methods () sig-σ) ()]
+  [(get-opt-methods ((sig-σ mname_opt) any_rest ...) sig-σ)
+   (mname_opt mname_rest ...)
+   (where (mname_rest ...) (get-opt-methods (any_rest ...) sig-σ))]
+  [(get-opt-methods (_ any_rest ...) sig-σ) (get-opt-methods (any_rest ...) sig-σ)]
   )
+(test-equal (term (get-opt-methods (((mdef "f" (Int64 Float64)) "f_P")
+                                    ((mdef "f" (Float64 Float64)) "f_PP"))
+                                   (mdef "f" (Int64 Float64)))) (term ("f_P")))
+(test-equal (term (get-opt-methods (((mdef "f" (Int64 Float64)) "f_P")
+                                    ((mdef "f" (Float64 Float64)) "f_PP"))
+                                   (mdef "f" (Float64 Int64)))) (term ()))
+(test-equal (term (get-opt-methods (((mdef "f" (Int64 Float64)) "f_P")
+                                    ((mdef "f" (Float64 Float64)) "f_PP")
+                                    ((mdef "f" (Int64 Float64)) "f_PPP"))
+                                   (mdef "f" (Int64 Float64)))) (term ("f_P" "f_PPP")))
 
 ;; Determines if the given local variable has the same name as the given variable
 ;; The regex match is needed in order to ignore the substitution id of redex vars
@@ -349,14 +361,9 @@
   ; Γ ⊢ m(...) = e :: (mtag "m") 
   [----------------------------------------------------- "T-MD"
    (⊢ Γ (mdef mname ((:: x τ_arg) ...) e) (mtag mname))]
-  ; Γ ⊢ (|e|) :: σ, where e :: σ
-  [(⊢ Γ e σ)
-   ------------------ "T-EvalGlobal"
-   (⊢ Γ (evalg e) σ)]
   )
 
 (test-equal (judgment-holds (⊢ () 1 Int64)) #true)
-(test-equal (judgment-holds (⊢ () (evalg m) (mtag "m"))) #true)
 (test-equal (judgment-holds (⊢ ((x String) (y Bool) (y Float64)) (seq 4 y) Bool)) #true)
 (test-equal (judgment-holds (⊢ ((b Bool)) (pcall && b true) Bool)) #true)
 (test-equal (judgment-holds (⊢ ((x String) (y Float64)) (pcall + x 1) Float64)) #false)
@@ -419,9 +426,10 @@
   ; Γ ⊢ Φ (|m(e...)|)_MT ~~> (|m_direct(e'...)|)_MT' where m_direct is a singleton method
   [(~~> Γ Φ (evalt MT e) (evalt MT_P e_P)) ...
    (⊢ Γ e_P σ) ...
-   (where mname_opt (get-opt-method Φ (mdef mname (σ ...))))
-   (where #t ,(equal? (term mname_P) (term mname_opt)))
-   --------------------------------------------------------- "OE-Specialize"
+   (where (mname_opt ...) (get-opt-methods Φ (mdef mname (σ ...))))
+   (where #t ,(ormap (λ (mname_elem) (equal? (term mname_P) mname_elem))
+                     (term (mname_opt ...))))
+   --------------------------------------------------------------------- "OE-Specialize"
    (~~> Γ Φ (evalt MT (mcall (mval mname) e ...))
           (evalt MT_P (mcall (mval mname_P) e_P ...)))]
   ; Convert variable to mval
@@ -565,7 +573,7 @@
           (getmd MT_P mname_P (σ ...)))
    (~~> ((x σ) ...) Φ (evalt MT e_body)
         (evalt MT_P (subst-n e_Pbody (x_P x) ...)))
-   ------------------------------------------------- "OT-MethodTable"
+   ------------------------------------------------- "MCallSpec-WD"
    (wd~~> Φ MT MT_P ((mdef mname (σ ...)) mname_P))]
   )
 
@@ -640,14 +648,14 @@
 
 ;; Gets the signature and optimized method name of the callee of the given method call
 (define-metafunction WA-opt
-  get-opt-name-and-sig : Γ Φ MT mc -> (< maybe-mname md >) or nothing
+  get-opt-name-and-sig : Γ Φ MT mc -> (< (mname ...) md >) or nothing
   [(get-opt-name-and-sig Γ Φ MT (mcall (mval mname) e ...))
-   (< maybe-mname (mdef mname ((:: x σ) ...) e_body) >)
+   (< (mname_opt ...) (mdef mname ((:: x σ) ...) e_body) >)
    (where #f ,(andmap (λ (expr) (term (is-nv ,expr))) (term (e ...))))
    (where #f (contains-name-Φ Φ ,(~a (term mname))))
    (where (σ ...) (get-types Γ e ...))
    (where (mdef mname ((:: x _) ...) e_body) (getmd MT mname (σ ...)))
-   (where maybe-mname (get-opt-method Φ (mdef mname (σ ...))))]
+   (where (mname_opt ...) (get-opt-methods Φ (mdef mname (σ ...))))]
   [(get-opt-name-and-sig _ _ _ _) nothing])
 
 
@@ -683,14 +691,14 @@
    [--> (< Γ Δ Φ (evalt MT (in-hole E (mcall (mval mname) e ...))) >)
         (< Γ Δ Φ (evalt MT (in-hole E (mcall (mval mname_opt) e ...))) >)
         (where mc (mcall (mval mname) e ...))
-        (where (< mname_opt _ >) (get-opt-name-and-sig Γ Φ MT mc))
+        (where (< (mname_opt) _ >) (get-opt-name-and-sig Γ Φ MT mc))
         OE-Direct-Existing]
    ; < Γ Δ Φ (|X[m(e...)]|)_MT > --> < Γ Δ Φ' (|X[m_direct(e...)]|)_MT >
    ; where (m(τ...) m_direct) ∉ Φ
    [--> (< Γ Δ Φ (evalt MT (in-hole E (mcall (mval mname) e ...))) >)
         (< Γ Δ Φ_P (evalt MT_P (in-hole E (mcall (mval mname_opt) e ...))) >)
         (where mc (mcall (mval mname) e ...))
-        (where (< nothing (mdef mname ((:: x σ) ...) e_body) >)
+        (where (< () (mdef mname ((:: x σ) ...) e_body) >)
                (get-opt-name-and-sig Γ Φ MT mc))
         (where mname_opt (gen-name MT Φ))
         (where md_opt (mdef mname_opt ((:: x σ) ...) e_body))
