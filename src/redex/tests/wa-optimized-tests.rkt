@@ -29,7 +29,6 @@
   (test-equal (judgment-holds (⊢ ((y Bool)) y Int64)) #false)
   (test-equal (judgment-holds (⊢ ((y Bool)) (seq y true) Bool)) #true)
   (test-equal (judgment-holds (⊢ ((x String) (y Float64)) (seq y x) Bool)) #false)
-  (test-equal (judgment-holds (⊢ ((y Bool)) (evalg y) Bool)) #true)
   (test-equal (judgment-holds (⊢ ((y Bool)) (evalg 1.1) Bool)) #false)
   
   ; Type-check primop tests
