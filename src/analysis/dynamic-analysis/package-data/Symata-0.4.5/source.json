@@ -1,22 +1,386 @@
 {
   "eval_info": {
-    "call_count": 0,
-    "stack_traces": [],
+    "call_count": 375,
+    "stack_traces": [
+      {
+        "count": 350,
+        "last_call": "eval at Symata.jl:2 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 225,
+              "ast_head": "Symbol-Integer"
+            },
+            {
+              "count": 40,
+              "ast_head": "Symbol-Symbol"
+            },
+            {
+              "count": 29,
+              "ast_head": "call"
+            },
+            {
+              "count": 16,
+              "ast_head": "Symbol-List"
+            },
+            {
+              "count": 15,
+              "ast_head": "function"
+            },
+            {
+              "count": 9,
+              "ast_head": "Symbol-AbstractString"
+            },
+            {
+              "count": 6,
+              "ast_head": "macrocall"
+            },
+            {
+              "count": 2,
+              "ast_head": "const"
+            },
+            {
+              "count": 2,
+              "ast_head": "Symbol-AbstractFloat"
+            },
+            {
+              "count": 1,
+              "ast_head": "vect"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-sympy_LessThan"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-sympy_StrictLessThan"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-sympy_StrictGreaterThan"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-sympy_Unequality"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-sympy_GreaterThan"
+            }
+          ]
+        }
+      },
+      {
+        "count": 12,
+        "last_call": "init_sympy() at sympy.jl:858",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 12,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 10,
+        "last_call": "populate_rewrite_dict() at sympy.jl:382",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 10,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "do_Compile(::Mxpr{:Compile}, ::Mxpr{:List}, ::Mxpr{:Power}) at symata_julia_interface.jl:295",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 3,
+              "ast_head": "function"
+            }
+          ]
+        }
+      }
+    ],
     "func_specific_data": {
-      "ast_heads": [],
+      "ast_heads": [
+        {
+          "count": 225,
+          "ast_head": "Symbol-Integer"
+        },
+        {
+          "count": 41,
+          "ast_head": "call"
+        },
+        {
+          "count": 40,
+          "ast_head": "Symbol-Symbol"
+        },
+        {
+          "count": 18,
+          "ast_head": "function"
+        },
+        {
+          "count": 16,
+          "ast_head": "Symbol-List"
+        },
+        {
+          "count": 10,
+          "ast_head": "block"
+        },
+        {
+          "count": 9,
+          "ast_head": "Symbol-AbstractString"
+        },
+        {
+          "count": 6,
+          "ast_head": "macrocall"
+        },
+        {
+          "count": 2,
+          "ast_head": "const"
+        },
+        {
+          "count": 2,
+          "ast_head": "Symbol-AbstractFloat"
+        },
+        {
+          "count": 1,
+          "ast_head": "vect"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-sympy_LessThan"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-sympy_StrictLessThan"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-sympy_StrictGreaterThan"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-sympy_Unequality"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-sympy_GreaterThan"
+        }
+      ],
       "func_def_types": {
-        "newFuncCount": 0,
+        "newFuncCount": 15,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
-        "miscCount": 0
+        "miscCount": 3
       }
     }
   },
   "invokelatest_info": {
-    "call_count": 0,
-    "stack_traces": [],
+    "call_count": 243,
+    "stack_traces": [
+      {
+        "count": 112,
+        "last_call": "do_GenHead(::Mxpr{Symata.GenHead}, ::Function) at apprules_core.jl:286",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#194",
+              "count": 100
+            },
+            {
+              "function_name": "#192",
+              "count": 4
+            },
+            {
+              "function_name": "#188",
+              "count": 2
+            },
+            {
+              "function_name": "#190",
+              "count": 2
+            },
+            {
+              "function_name": "#96",
+              "count": 1
+            },
+            {
+              "function_name": "#210",
+              "count": 1
+            },
+            {
+              "function_name": "#94",
+              "count": 1
+            },
+            {
+              "function_name": "#98",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 103,
+        "last_call": "invokelatest at sjcompat.jl:81 [inlined]",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#212",
+              "count": 99
+            },
+            {
+              "function_name": "#214",
+              "count": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 23,
+        "last_call": "do_Map(::Mxpr{:Map}, ::Function, ::Mxpr{:f}) at expressions.jl:199",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#208",
+              "count": 5
+            },
+            {
+              "function_name": "#198",
+              "count": 3
+            },
+            {
+              "function_name": "#200",
+              "count": 3
+            },
+            {
+              "function_name": "#204",
+              "count": 3
+            },
+            {
+              "function_name": "#202",
+              "count": 3
+            },
+            {
+              "function_name": "#196",
+              "count": 3
+            },
+            {
+              "function_name": "#206",
+              "count": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "do_Map(::Mxpr{:Map}, ::Function, ::Array{Int64,1}) at expressions.jl:208",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#216",
+              "count": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "do_Nest(::Mxpr{:Nest}, ::Function, ::Symbol, ::Int64) at lists.jl:163",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#212",
+              "count": 1
+            },
+            {
+              "function_name": "#214",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
     "func_specific_data": {
-      "function_names": []
+      "function_names": [
+        {
+          "function_name": "#194",
+          "count": 100
+        },
+        {
+          "function_name": "#212",
+          "count": 100
+        },
+        {
+          "function_name": "#208",
+          "count": 5
+        },
+        {
+          "function_name": "#214",
+          "count": 5
+        },
+        {
+          "function_name": "#192",
+          "count": 4
+        },
+        {
+          "function_name": "#198",
+          "count": 3
+        },
+        {
+          "function_name": "#206",
+          "count": 3
+        },
+        {
+          "function_name": "#216",
+          "count": 3
+        },
+        {
+          "function_name": "#200",
+          "count": 3
+        },
+        {
+          "function_name": "#196",
+          "count": 3
+        },
+        {
+          "function_name": "#202",
+          "count": 3
+        },
+        {
+          "function_name": "#204",
+          "count": 3
+        },
+        {
+          "function_name": "#188",
+          "count": 2
+        },
+        {
+          "function_name": "#190",
+          "count": 2
+        },
+        {
+          "function_name": "#96",
+          "count": 1
+        },
+        {
+          "function_name": "#98",
+          "count": 1
+        },
+        {
+          "function_name": "#94",
+          "count": 1
+        },
+        {
+          "function_name": "#210",
+          "count": 1
+        }
+      ]
     }
   }
 }

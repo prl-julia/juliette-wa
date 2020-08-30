@@ -1,5 +1,5 @@
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
-  3.787251 seconds (5.24 M allocations: 329.124 MiB, 5.88% gc time)
+  3.459183 seconds (5.09 M allocations: 320.801 MiB, 6.35% gc time)
 -3.22e-17 ± 1.0
 mode = :montecarlo
 mode = :reduction
@@ -8,10 +8,10 @@ mode = :safe
 mode = :montecarlo
 mode = :reduction
 mode = :safe
- 57.734958 seconds (51.94 M allocations: 2.429 GiB, 3.63% gc time)
-  1.752816 seconds (2.33 M allocations: 114.892 MiB, 4.65% gc time)
-  1.664720 seconds (2.55 M allocations: 132.306 MiB, 3.62% gc time)
- 13.559729 seconds (5.34 M allocations: 5.349 GiB, 21.29% gc time)
+ 58.319255 seconds (51.92 M allocations: 2.427 GiB, 3.36% gc time)
+  1.751157 seconds (2.33 M allocations: 114.840 MiB, 4.68% gc time)
+  1.842959 seconds (2.55 M allocations: 132.307 MiB, 4.57% gc time)
+ 12.692241 seconds (5.34 M allocations: 5.349 GiB, 21.10% gc time)
 Particles{Float64,2000}
  -8.65974e-18 ± 1.0-8.66e-18 ± 1.0
 $-8.66e-18 ± 1.0$
@@ -34,9 +34,9 @@ Particles{Float64,2000}
  -8.66e-18 ± 1.0
  -8.66e-18 ± 1.0Particles{Float64,2000}[-8.66e-18 ± 1.0, -8.66e-18 ± 1.0]
 Particles{Float64,2000}[-8.66e-18 ± 1.0, 0.0]
- 22.969620 seconds (23.78 M allocations: 1.202 GiB, 4.54% gc time)
-  0.206189 seconds (155.03 k allocations: 8.797 MiB)
-  2.221916 seconds (2.41 M allocations: 157.763 MiB, 7.73% gc time)
+ 18.220349 seconds (23.95 M allocations: 1.210 GiB, 3.93% gc time)
+  0.114849 seconds (155.03 k allocations: 8.796 MiB)
+  1.274037 seconds (2.41 M allocations: 157.693 MiB, 7.59% gc time)
 !=,
 !==,
 rem,
@@ -206,18 +206,18 @@ issubset,
 ⊊,
 ⊋,
 xor,
-272.670196 seconds (60.11 M allocations: 5.084 GiB, 1.44% gc time)
-  4.403496 seconds (5.71 M allocations: 658.766 MiB, 8.85% gc time)
-  7.640938 seconds (8.57 M allocations: 435.128 MiB, 5.05% gc time)
+271.522858 seconds (44.33 M allocations: 2.252 GiB, 0.65% gc time)
+  5.209278 seconds (5.71 M allocations: 658.217 MiB, 20.42% gc time)
+  5.657352 seconds (8.57 M allocations: 435.089 MiB, 5.08% gc time)
 0.5 V ± 0.5802298395176404 V
-Particles{Quantity{Float64,𝐋^2 𝐌 𝐈^-1 𝐓^-3,Unitful.FreeUnits{(V,),𝐋^2 𝐌 𝐈^-1 𝐓^-3,nothing}},100}
+Particles{Quantity{Float64,𝐋^2*𝐌*𝐈^-1*𝐓^-3,Unitful.FreeUnits{(V,),𝐋^2*𝐌*𝐈^-1*𝐓^-3,nothing}},100}
  0.5 V ± 0.5802298395176404 V0.0 V
-Particles{Quantity{Float64,𝐋^2 𝐌 𝐈^-1 𝐓^-3,Unitful.FreeUnits{(V,),𝐋^2 𝐌 𝐈^-1 𝐓^-3,nothing}},100}
+Particles{Quantity{Float64,𝐋^2*𝐌*𝐈^-1*𝐓^-3,Unitful.FreeUnits{(V,),𝐋^2*𝐌*𝐈^-1*𝐓^-3,nothing}},100}
  0.0 V0.49999999999999994 V ± 0.5802298395176404 V
-StaticParticles{Quantity{Float64,𝐋^2 𝐌 𝐈^-1 𝐓^-3,Unitful.FreeUnits{(V,),𝐋^2 𝐌 𝐈^-1 𝐓^-3,nothing}},100}
+StaticParticles{Quantity{Float64,𝐋^2*𝐌*𝐈^-1*𝐓^-3,Unitful.FreeUnits{(V,),𝐋^2*𝐌*𝐈^-1*𝐓^-3,nothing}},100}
  0.49999999999999994 V ± 0.5802298395176404 V0.0 V
-StaticParticles{Quantity{Float64,𝐋^2 𝐌 𝐈^-1 𝐓^-3,Unitful.FreeUnits{(V,),𝐋^2 𝐌 𝐈^-1 𝐓^-3,nothing}},100}
- 0.0 V 18.704157 seconds (2.89 M allocations: 487.930 MiB, 1.51% gc time)
- 28.326878 seconds (4.30 M allocations: 900.099 MiB, 1.48% gc time)
+StaticParticles{Quantity{Float64,𝐋^2*𝐌*𝐈^-1*𝐓^-3,Unitful.FreeUnits{(V,),𝐋^2*𝐌*𝐈^-1*𝐓^-3,nothing}},100}
+ 0.0 V 13.364119 seconds (999.25 k allocations: 53.520 MiB, 5.14% gc time)
+ 27.800721 seconds (489.97 k allocations: 30.268 MiB, 1.69% gc time)
 Test Summary:             | Pass  Total
 MonteCarloMeasurements.jl |  928    928

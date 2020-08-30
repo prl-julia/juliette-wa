@@ -1,4 +1,13 @@
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+ 
+Importing ModiaMath Version 0.5.2 (2019-07-10)
+ 
+
+Welcome to Modia - Dynamic Modeling and Simulation with Julia
+Version 0.3.0 (2019-04-07)
+Type "?Modia" for help.
+
+
     PyPlot not available (plot commands will be ignored).
     Try to install PyPlot. See hints here:
     https://github.com/ModiaSim/ModiaMath.jl/wiki/Installing-PyPlot-in-a-robust-way.
@@ -112,13 +121,13 @@ components = Any[Any[3], Any[1], Any[8], Any[6], Any[7], Any[2], Any[4], Any[5]]
 Big tests, n = 5000
 
 Big test: diagonal
-  0.183935 seconds (76.44 k allocations: 51.765 MiB, 13.66% gc time)
+  0.063982 seconds (76.44 k allocations: 51.765 MiB, 18.72% gc time)
 
 Big test: band
-  0.150248 seconds (112.88 k allocations: 52.218 MiB, 15.57% gc time)
+  0.044182 seconds (112.88 k allocations: 52.218 MiB, 25.68% gc time)
 
 Big test: full, n=1000
-  0.283002 seconds (4.80 M allocations: 106.005 MiB, 8.17% gc time)
+  0.246240 seconds (4.80 M allocations: 106.005 MiB, 16.44% gc time)
 
 Test solve
 
@@ -573,7 +582,7 @@ top-level scope at runtests.jl:18
 top-level scope at Test.jl:1115
 top-level scope at runtests.jl:16
 include(::String) at client.jl:457
-top-level scope at none:11
+top-level scope at none:12
 eval(::Module, ::Any) at boot.jl:331
 exec_options(::Base.JLOptions) at client.jl:272
 _start() at client.jl:506
@@ -604,7 +613,7 @@ VariableTypes: Error During Test at /home/jack/.julia/packages/Modia/D0Mdu/test/
    [12] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
    [13] top-level scope at /home/jack/.julia/packages/Modia/D0Mdu/test/runtests.jl:16
    [14] include(::String) at ./client.jl:457
-   [15] top-level scope at none:11
+   [15] top-level scope at ./none:12
    [16] eval(::Module, ::Any) at ./boot.jl:331
    [17] exec_options(::Base.JLOptions) at ./client.jl:272
    [18] _start() at ./client.jl:506
@@ -646,7 +655,7 @@ RunSimulations: Error During Test at /home/jack/.julia/packages/Modia/D0Mdu/test
    [19] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
    [20] top-level scope at /home/jack/.julia/packages/Modia/D0Mdu/test/runtests.jl:16
    [21] include(::String) at ./client.jl:457
-   [22] top-level scope at none:11
+   [22] top-level scope at ./none:12
    [23] eval(::Module, ::Any) at ./boot.jl:331
    [24] exec_options(::Base.JLOptions) at ./client.jl:272
    [25] _start() at ./client.jl:506
@@ -704,7 +713,7 @@ top-level scope at runtests.jl:19
 top-level scope at Test.jl:1115
 top-level scope at runtests.jl:16
 include(::String) at client.jl:457
-top-level scope at none:11
+top-level scope at none:12
 eval(::Module, ::Any) at boot.jl:331
 exec_options(::Base.JLOptions) at client.jl:272
 _start() at client.jl:506
@@ -766,7 +775,7 @@ top-level scope at runtests.jl:19
 top-level scope at Test.jl:1115
 top-level scope at runtests.jl:16
 include(::String) at client.jl:457
-top-level scope at none:11
+top-level scope at none:12
 eval(::Module, ::Any) at boot.jl:331
 exec_options(::Base.JLOptions) at client.jl:272
 _start() at client.jl:506
@@ -833,7 +842,7 @@ top-level scope at runtests.jl:19
 top-level scope at Test.jl:1115
 top-level scope at runtests.jl:16
 include(::String) at client.jl:457
-top-level scope at none:11
+top-level scope at none:12
 eval(::Module, ::Any) at boot.jl:331
 exec_options(::Base.JLOptions) at client.jl:272
 _start() at client.jl:506
@@ -855,17 +864,17 @@ removeSingularities = false
 logTiming = true
 
 Simulating model: CauerLowPassOPV
-Instantiate:             9.425708 seconds (13.50 M allocations: 661.192 MiB, 4.31% gc time)
-Flatten:                 0.026586 seconds (11.12 k allocations: 589.516 KiB)
-Consistency check:       0.000149 seconds (436 allocations: 131.125 KiB)
-Pantelides:              0.000814 seconds (1.79 k allocations: 240.844 KiB)
-Matching:                0.000155 seconds (469 allocations: 155.547 KiB)
+Instantiate:            10.410044 seconds (13.50 M allocations: 661.227 MiB, 4.12% gc time)
+Flatten:                 0.030911 seconds (11.12 k allocations: 589.516 KiB)
+Consistency check:       0.000241 seconds (436 allocations: 131.125 KiB)
+Pantelides:              0.000996 seconds (1.79 k allocations: 240.844 KiB)
+Matching:                0.000228 seconds (469 allocations: 155.547 KiB)
 Number of equations: 234
 Number of variables: 240
 Number of continuous states: 6
 Number of non states: 4
-BLT:                     0.000147 seconds (659 allocations: 58.422 KiB)
-Symbolic processing:     0.062001 seconds (165.67 k allocations: 9.497 MiB)
+BLT:                     0.000160 seconds (659 allocations: 58.422 KiB)
+Symbolic processing:     0.121814 seconds (179.83 k allocations: 10.159 MiB)
 Code generation and simulation:         
   ModiaMath:           
 
@@ -911,7 +920,7 @@ top-level scope at runtests.jl:19
 top-level scope at Test.jl:1115
 top-level scope at runtests.jl:16
 include(::String) at client.jl:457
-top-level scope at none:11
+top-level scope at none:12
 eval(::Module, ::Any) at boot.jl:331
 exec_options(::Base.JLOptions) at client.jl:272
 _start() at client.jl:506
@@ -976,7 +985,7 @@ top-level scope at runtests.jl:19
 top-level scope at Test.jl:1115
 top-level scope at runtests.jl:16
 include(::String) at client.jl:457
-top-level scope at none:11
+top-level scope at none:12
 eval(::Module, ::Any) at boot.jl:331
 exec_options(::Base.JLOptions) at client.jl:272
 _start() at client.jl:506
@@ -1038,7 +1047,7 @@ top-level scope at runtests.jl:19
 top-level scope at Test.jl:1115
 top-level scope at runtests.jl:16
 include(::String) at client.jl:457
-top-level scope at none:11
+top-level scope at none:12
 eval(::Module, ::Any) at boot.jl:331
 exec_options(::Base.JLOptions) at client.jl:272
 _start() at client.jl:506
@@ -1103,7 +1112,7 @@ Synchronous: Error During Test at /home/jack/.julia/packages/Modia/D0Mdu/example
    [21] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
    [22] top-level scope at /home/jack/.julia/packages/Modia/D0Mdu/test/runtests.jl:16
    [23] include(::String) at ./client.jl:457
-   [24] top-level scope at none:11
+   [24] top-level scope at ./none:12
    [25] eval(::Module, ::Any) at ./boot.jl:331
    [26] exec_options(::Base.JLOptions) at ./client.jl:272
    [27] _start() at ./client.jl:506
@@ -1146,7 +1155,7 @@ RunExamples: Error During Test at /home/jack/.julia/packages/Modia/D0Mdu/example
    [20] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
    [21] top-level scope at /home/jack/.julia/packages/Modia/D0Mdu/test/runtests.jl:16
    [22] include(::String) at ./client.jl:457
-   [23] top-level scope at none:11
+   [23] top-level scope at ./none:12
    [24] eval(::Module, ::Any) at ./boot.jl:331
    [25] exec_options(::Base.JLOptions) at ./client.jl:272
    [26] _start() at ./client.jl:506

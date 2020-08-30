@@ -13,11 +13,35 @@
     }
   },
   "invokelatest_info": {
-    "call_count": 1,
+    "call_count": 68,
     "stack_traces": [
       {
+        "count": 63,
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 63
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": "require(::Base.PkgId) at loading.jl:931",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 4
+            }
+          ]
+        }
+      },
+      {
         "count": 1,
-        "last_call": "show_backtrace(::IOContext{IOStream}, ::Array{Base.StackTraces.StackFrame,1}) at errorshow.jl:655",
+        "last_call": "show_backtrace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
         "auxillary": {
           "function_names": [
             {
@@ -30,6 +54,10 @@
     ],
     "func_specific_data": {
       "function_names": [
+        {
+          "function_name": "loadpkg",
+          "count": 67
+        },
         {
           "function_name": "identity",
           "count": 1

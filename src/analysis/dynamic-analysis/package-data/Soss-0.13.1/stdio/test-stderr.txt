@@ -1,72 +1,20 @@
-ERROR: LoadError: LoadError: InitError: PyError (PyImport_ImportModule
-
-The Python package sympy could not be found by pyimport. Usually this means
-that you did not install sympy in the Python version being used by PyCall.
-
-PyCall is currently configured to use the Python version at:
-
-/usr/bin/python3
-
-and you should use whatever mechanism you usually use (apt-get, pip, conda,
-etcetera) to install the Python package containing the sympy module.
-
-One alternative is to re-configure PyCall to use a different Python
-version on your system: set ENV["PYTHON"] to the path/name of the python
-executable you want to use, run Pkg.build("PyCall"), and re-launch Julia.
-
-Another alternative is to configure PyCall to use a Julia-specific Python
-distribution via the Conda.jl package (which installs a private Anaconda
-Python distribution), which has the advantage that packages can be installed
-and kept up-to-date via Julia.  As explained in the PyCall documentation,
-set ENV["PYTHON"]="", run Pkg.build("PyCall"), and re-launch Julia. Then,
-To install the sympy module, you can use `pyimport_conda("sympy", PKG)`,
-where PKG is the Anaconda package the contains the module sympy,
-or alternatively you can use the Conda package directly (via
-`using Conda` followed by `Conda.add` etcetera).
-
-) <class 'ModuleNotFoundError'>
-ModuleNotFoundError("No module named 'sympy'",)
-
-Stacktrace:
- [1] pyimport(::String) at /home/jack/.julia/packages/PyCall/zqDXB/src/PyCall.jl:536
- [2] pyimport_conda(::String, ::String, ::String) at /home/jack/.julia/packages/PyCall/zqDXB/src/PyCall.jl:694
- [3] pyimport_conda at /home/jack/.julia/packages/PyCall/zqDXB/src/PyCall.jl:693 [inlined]
- [4] __init__() at /home/jack/.julia/packages/SymPy/u5t7C/src/SymPy.jl:118
- [5] _include_from_serialized(::String, ::Array{Any,1}) at ./loading.jl:697
- [6] _require_search_from_serialized(::Base.PkgId, ::String) at ./loading.jl:782
- [7] _require(::Base.PkgId) at ./loading.jl:1007
- [8] require(::Base.PkgId) at ./loading.jl:928
- [9] require(::Module, ::Symbol) at ./loading.jl:923
- [10] include(::Function, ::Module, ::String) at ./Base.jl:380
- [11] include at ./Base.jl:368 [inlined]
- [12] include(::String) at /home/jack/.julia/packages/Soss/FgRzp/src/Soss.jl:1
- [13] top-level scope at /home/jack/.julia/packages/Soss/FgRzp/src/Soss.jl:48
- [14] include(::Function, ::Module, ::String) at ./Base.jl:380
- [15] include(::Module, ::String) at ./Base.jl:368
- [16] top-level scope at none:2
- [17] eval at ./boot.jl:331 [inlined]
- [18] eval(::Expr) at ./client.jl:467
- [19] top-level scope at ./none:3
-during initialization of module SymPy
-in expression starting at /home/jack/.julia/packages/Soss/FgRzp/src/symbolic/symbolic.jl:6
-in expression starting at /home/jack/.julia/packages/Soss/FgRzp/src/Soss.jl:48
-ERROR: LoadError: Failed to precompile Soss [8ce77f84-9b61-11e8-39ff-d17a774bf41c] to /home/jack/.julia/compiled/v1.5/Soss/vXX0U_xiSHa.ji.
-Stacktrace:
- [1] error(::String) at ./error.jl:33
- [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1290
- [3] _require(::Base.PkgId) at ./loading.jl:1030
- [4] require(::Base.PkgId) at ./loading.jl:928
- [5] require(::Module, ::Symbol) at ./loading.jl:923
- [6] include(::String) at ./client.jl:457
- [7] top-level scope at none:6
-in expression starting at /home/jack/.julia/packages/Soss/FgRzp/test/runtests.jl:1
+[ Info: SetupBuildDirectory: setting up build directory.
+[ Info: Doctest: running doctests.
+[ Info: Skipped ExpandTemplates step (doctest only).
+[ Info: Skipped CrossReferences step (doctest only).
+[ Info: Skipped CheckDocument step (doctest only).
+[ Info: Skipped Populate step (doctest only).
+[ Info: Skipped RenderDocument step (doctest only).
+ERROR: LoadError: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/jack/.julia/packages/Soss/FgRzp/test/readme.jl:10
+in expression starting at /home/jack/.julia/packages/Soss/FgRzp/test/runtests.jl:6
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
 No Changes to `~/.julia/environments/v1.5/Project.toml`
 No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Soss
-Status `/tmp/jl_Txr6CQ/Project.toml`
+Status `/tmp/jl_IAw6HV/Project.toml`
   [6e4b80f9] BenchmarkTools v0.5.0
   [e30172f5] Documenter v0.25.2
   [91a5bcdd] Plots v1.6.0
@@ -74,17 +22,15 @@ Status `/tmp/jl_Txr6CQ/Project.toml`
   [44d3d7a6] Weave v0.10.3
   [9a3f8284] Random
   [8dfed614] Test
-Status `/tmp/jl_Txr6CQ/Manifest.toml`
+Status `/tmp/jl_IAw6HV/Manifest.toml`
   [398f06c4] AbstractLattices v0.2.1
-  [79e6a3ab] Adapt v2.0.2
+  [79e6a3ab] Adapt v1.1.0
   [0bf59076] AdvancedHMC v0.2.25
   [dce04be8] ArgCheck v2.1.0
-  [7d9fca2a] Arpack v0.4.0
-  [68821587] Arpack_jll v3.5.0+3
   [4fba245c] ArrayInterface v2.11.0
   [4c555306] ArrayLayouts v0.3.8
   [6e4b80f9] BenchmarkTools v0.5.0
-  [6e34b625] Bzip2_jll v1.0.6+3
+  [6e34b625] Bzip2_jll v1.0.6+4
   [a603d957] CanonicalTraits v0.2.2
   [35d6a980] ColorSchemes v3.9.0
   [3da002f7] ColorTypes v0.10.8
@@ -101,21 +47,21 @@ Status `/tmp/jl_Txr6CQ/Manifest.toml`
   [e2d170a0] DataValueInterfaces v1.0.0
   [163ba53b] DiffResults v1.0.2
   [b552c78f] DiffRules v1.0.1
-  [31c24e10] Distributions v0.22.6
+  [31c24e10] Distributions v0.23.8
   [ffbed154] DocStringExtensions v0.8.2
   [e30172f5] Documenter v0.25.2
   [bbc10e6e] DynamicHMC v2.1.5
   [e2ba6199] ExprTools v0.1.1
   [8f5d6c58] EzXML v1.1.0
   [c87230d0] FFMPEG v0.4.0
-  [b22a6f82] FFMPEG_jll v4.3.1+1
+  [b22a6f82] FFMPEG_jll v4.3.1+2
   [1a297f60] FillArrays v0.8.14
   [6a86dc24] FiniteDiff v2.5.2
   [53c48c17] FixedPointNumbers v0.8.4
   [b67e1e5a] FlexLinearAlgebra v0.1.0
   [f6369f11] ForwardDiff v0.10.12
-  [d7e528f0] FreeType2_jll v2.10.1+3
-  [559328eb] FriBidi_jll v1.0.5+4
+  [d7e528f0] FreeType2_jll v2.10.1+4
+  [559328eb] FriBidi_jll v1.0.5+5
   [069b7b12] FunctionWrappers v1.1.1
   [28b8d3ca] GR v0.51.0
   [6b9d7cbe] GeneralizedGenerated v0.2.7
@@ -135,7 +81,7 @@ Status `/tmp/jl_Txr6CQ/Manifest.toml`
   [c1c5ebd0] LAME_jll v3.100.0+2
   [5078a376] LazyArrays v0.16.16
   [dd192d2f] LibVPX_jll v1.9.0+0
-  [94ce4f54] Libiconv_jll v1.16.0+5
+  [94ce4f54] Libiconv_jll v1.16.0+6
   [9c8b4983] LightXML v0.9.0
   [d3d80556] LineSearches v7.1.0
   [6fdf6af0] LogDensityProblems v0.10.3
@@ -154,13 +100,12 @@ Status `/tmp/jl_Txr6CQ/Manifest.toml`
   [71a1bf82] NameResolution v0.1.4
   [d9ec5142] NamedTupleTools v0.13.6
   [e7412a2a] Ogg_jll v1.3.4+1
-  [4536629a] OpenBLAS_jll v0.3.9+5
   [458c3c95] OpenSSL_jll v1.1.1+5
   [efe28fd5] OpenSpecFun_jll v0.5.3+3
   [429524aa] Optim v0.20.1
   [91d4177d] Opus_jll v1.3.1+2
   [bac558e1] OrderedCollections v1.3.0
-  [90014a1f] PDMats v0.9.12
+  [90014a1f] PDMats v0.10.0
   [d96e819e] Parameters v0.12.1
   [69de0a69] Parsers v1.0.10
   [2ae35dd2] Permutations v0.3.2
@@ -205,9 +150,9 @@ Status `/tmp/jl_Txr6CQ/Manifest.toml`
   [3d5dd08c] VectorizationBase v0.12.32
   [81def892] VersionParsing v1.2.0
   [44d3d7a6] Weave v0.10.3
-  [02c8fc9c] XML2_jll v2.9.10+1
+  [02c8fc9c] XML2_jll v2.9.10+2
   [ddb6d928] YAML v0.4.0
-  [83775a58] Zlib_jll v1.2.11+15
+  [83775a58] Zlib_jll v1.2.11+16
   [0ac62f75] libass_jll v0.14.0+3
   [f638f0a6] libfdk_aac_jll v0.1.6+3
   [f27f6e37] libvorbis_jll v1.3.6+5

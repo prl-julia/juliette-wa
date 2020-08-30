@@ -53,7 +53,7 @@ Test Summary:        | Fail  Total
 Doctests: Documenter |    1      1
 ^^^ Expected error output.
 Test Summary:                         | Pass  Fail  Total
-Documenter                            | 4153     4   4157
+Documenter                            | 4210     4   4214
   TestUtilities                       |    9            9
   Utilities                           |  175          175
   Markdown2                           |   78           78
@@ -67,7 +67,7 @@ Documenter                            | 4153     4   4157
   MDFlatten                           |   20           20
   Builder.lt_page                     |   56           56
   highlightsig!                       |    4            4
-  HTMLWriter                          | 3319         3319
+  HTMLWriter                          | 3376         3376
   Travis CI deploy configuration      |   20           20
   GitHub Actions deploy configuration |   53           53
   Custom configuration                |    6            6

@@ -6,9 +6,9 @@
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-Updating `/tmp/jl_XeIPwS/Project.toml`
+Updating `/tmp/jl_Bo97cS/Project.toml`
   [7f9c7709] + BIGUQ v0.8.0
-Updating `/tmp/jl_XeIPwS/Manifest.toml`
+Updating `/tmp/jl_Bo97cS/Manifest.toml`
   [7f9c7709] + BIGUQ v0.8.0
 ┌ Warning: Pkg.installed() is deprecated
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
@@ -35,7 +35,7 @@ Stacktrace:
  [17] top-level scope at ./none:3
 in expression starting at /home/jack/.julia/packages/Mads/6Fc5K/src/Mads.jl:221
 in expression starting at /home/jack/.julia/packages/Mads/6Fc5K/src/Mads.jl:220
-ERROR: LoadError: Failed to precompile Mads [d6bdc55b-bd94-5012-933c-1f73fc2ee992] to /home/jack/.julia/compiled/v1.5/Mads/P7IWT_taWDa.ji.
+ERROR: LoadError: Failed to precompile Mads [d6bdc55b-bd94-5012-933c-1f73fc2ee992] to /home/jack/.julia/compiled/v1.5/Mads/P7IWT_zKrRl.ji.
 Stacktrace:
  [1] error(::String) at ./error.jl:33
  [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1290
@@ -51,7 +51,7 @@ No Changes to `~/.julia/environments/v1.5/Project.toml`
 No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Mads
-Status `/tmp/jl_XeIPwS/Project.toml`
+Status `/tmp/jl_Bo97cS/Project.toml`
   [a0f608ac] AffineInvariantMCMC v0.6.0
   [fd9e7046] Anasol v0.6.0
   [a134a8b2] BlackBoxOptim v0.5.0
@@ -62,7 +62,7 @@ Status `/tmp/jl_XeIPwS/Project.toml`
   [8f4d0f93] Conda v1.4.1
   [a93c6f00] DataFrames v0.21.6
   [864edb3b] DataStructures v0.17.20
-  [31c24e10] Distributions v0.22.6
+  [31c24e10] Distributions v0.23.8
   [e1f3b4f0] DocumentFunction v0.6.0
   [e30172f5] Documenter v0.25.2
   [997ab1e6] DocumenterMarkdown v0.2.0
@@ -107,30 +107,28 @@ Status `/tmp/jl_XeIPwS/Project.toml`
   [2f01184e] SparseArrays
   [10745b16] Statistics
   [8dfed614] Test
-Status `/tmp/jl_XeIPwS/Manifest.toml`
+Status `/tmp/jl_Bo97cS/Manifest.toml`
   [ae81ac8f] ASL_jll v0.1.1+3
   [621f4979] AbstractFFTs v0.5.0
   [1520ce14] AbstractTrees v0.3.3
-  [79e6a3ab] Adapt v2.0.2
+  [79e6a3ab] Adapt v1.1.0
   [a0f608ac] AffineInvariantMCMC v0.6.0
   [fd9e7046] Anasol v0.6.0
   [ec485272] ArnoldiMethod v0.0.4
-  [7d9fca2a] Arpack v0.4.0
-  [68821587] Arpack_jll v3.5.0+3
   [4fba245c] ArrayInterface v2.11.0
   [13072b0f] AxisAlgorithms v1.0.0
   [39de3d68] AxisArrays v0.4.3
   [6e4b80f9] BenchmarkTools v0.5.0
   [b99e7846] BinaryProvider v0.5.10
   [a134a8b2] BlackBoxOptim v0.5.0
-  [6e34b625] Bzip2_jll v1.0.6+3
+  [6e34b625] Bzip2_jll v1.0.6+4
   [a9c8d775] CPUTime v1.0.0
   [159f3aea] Cairo v1.0.5
-  [83423d85] Cairo_jll v1.16.0+4
+  [83423d85] Cairo_jll v1.16.0+5
   [49dc2e85] Calculus v0.5.1
   [aafaddc9] CatIndices v0.2.1
   [324d7699] CategoricalArrays v0.8.1
-  [d360d2e6] ChainRulesCore v0.9.5
+  [d360d2e6] ChainRulesCore v0.8.1
   [523fee87] CodecBzip2 v0.7.2
   [944b1d66] CodecZlib v0.7.0
   [3da002f7] ColorTypes v0.10.8
@@ -156,13 +154,13 @@ Status `/tmp/jl_XeIPwS/Manifest.toml`
   [163ba53b] DiffResults v1.0.2
   [b552c78f] DiffRules v1.0.1
   [b4f34e82] Distances v0.8.2
-  [31c24e10] Distributions v0.22.6
+  [31c24e10] Distributions v0.23.8
   [ffbed154] DocStringExtensions v0.8.2
   [e1f3b4f0] DocumentFunction v0.6.0
   [e30172f5] Documenter v0.25.2
   [997ab1e6] DocumenterMarkdown v0.2.0
   [da5c29d0] EllipsisNotation v0.4.0
-  [2e619515] Expat_jll v2.2.7+4
+  [2e619515] Expat_jll v2.2.7+5
   [d4d017d3] ExponentialUtilities v1.8.0
   [4f61f5a4] FFTViews v0.3.1
   [7a1cc6ca] FFTW v1.2.4
@@ -173,26 +171,26 @@ Status `/tmp/jl_XeIPwS/Manifest.toml`
   [6a86dc24] FiniteDiff v2.5.2
   [53c48c17] FixedPointNumbers v0.8.4
   [186bb1d3] Fontconfig v0.4.0
-  [a3f928ae] Fontconfig_jll v2.13.1+12
+  [a3f928ae] Fontconfig_jll v2.13.1+13
   [f6369f11] ForwardDiff v0.10.12
-  [d7e528f0] FreeType2_jll v2.10.1+3
-  [559328eb] FriBidi_jll v1.0.5+4
+  [d7e528f0] FreeType2_jll v2.10.1+4
+  [559328eb] FriBidi_jll v1.0.5+5
   [069b7b12] FunctionWrappers v1.1.1
   [c91e804a] Gadfly v1.3.0
   [01680d73] GenericSVD v0.3.0
-  [78b55507] Gettext_jll v0.20.1+5
-  [7746bdde] Glib_jll v2.59.0+2
+  [78b55507] Gettext_jll v0.20.1+6
+  [7746bdde] Glib_jll v2.59.0+3
   [a2bd30eb] Graphics v1.0.2
-  [3b182d85] Graphite2_jll v1.3.13+2
+  [3b182d85] Graphite2_jll v1.3.13+3
   [cd3eb016] HTTP v0.8.17
-  [2e76f6c2] HarfBuzz_jll v2.6.1+5
+  [2e76f6c2] HarfBuzz_jll v2.6.1+6
   [a1b4810d] Hexagons v0.2.0
   [bbac6d45] IdentityRanges v0.3.1
   [2803e5a7] ImageAxes v0.6.4
   [f332f351] ImageContrastAdjustment v0.3.5
   [a09fc81d] ImageCore v0.8.14
   [51556ac3] ImageDistances v0.2.7
-  [6a3955dd] ImageFiltering v0.6.14
+  [6a3955dd] ImageFiltering v0.6.15
   [bc367c6b] ImageMetadata v0.9.1
   [787d08f9] ImageMorphology v0.2.8
   [2996bd0c] ImageQualityIndexes v0.1.4
@@ -218,16 +216,16 @@ Status `/tmp/jl_XeIPwS/Manifest.toml`
   [e5e0dc1b] Juno v0.8.3
   [5ab0869b] KernelDensity v0.5.1
   [6133562b] Kriging v0.6.2
-  [dd4b983a] LZO_jll v2.10.0+1
+  [dd4b983a] LZO_jll v2.10.0+2
   [b964fa9f] LaTeXStrings v1.1.0
   [2ee39098] LabelledArrays v1.3.0
   [1d6d02ad] LeftChildRightSiblingTrees v0.1.2
-  [e9f186c6] Libffi_jll v3.2.1+2
-  [d4300ac3] Libgcrypt_jll v1.8.5+2
-  [7add5ba3] Libgpg_error_jll v1.36.0+1
-  [94ce4f54] Libiconv_jll v1.16.0+5
-  [4b2f31a3] Libmount_jll v2.34.0+1
-  [38a345b3] Libuuid_jll v2.34.0+5
+  [e9f186c6] Libffi_jll v3.2.1+3
+  [d4300ac3] Libgcrypt_jll v1.8.5+3
+  [7add5ba3] Libgpg_error_jll v1.36.0+2
+  [94ce4f54] Libiconv_jll v1.16.0+6
+  [4b2f31a3] Libmount_jll v2.34.0+2
+  [38a345b3] Libuuid_jll v2.34.0+6
   [093fc24a] LightGraphs v1.3.3
   [d3d80556] LineSearches v7.1.0
   [4345ca2d] Loess v0.5.1
@@ -258,19 +256,18 @@ Status `/tmp/jl_XeIPwS/Manifest.toml`
   [b8a86587] NearestNeighbors v0.4.4
   [6fe1bfb0] OffsetArrays v1.1.2
   [656ef2d0] OpenBLAS32_jll v0.3.9+4
-  [4536629a] OpenBLAS_jll v0.3.9+5
   [efe28fd5] OpenSpecFun_jll v0.5.3+3
   [429524aa] Optim v0.20.1
   [87e2bd06] OptimBase v2.0.1
   [bac558e1] OrderedCollections v1.3.0
   [1dea7af3] OrdinaryDiffEq v5.42.3
-  [2f80f16e] PCRE_jll v8.42.0+2
-  [90014a1f] PDMats v0.9.12
+  [2f80f16e] PCRE_jll v8.42.0+3
+  [90014a1f] PDMats v0.10.0
   [5432bcbf] PaddedViews v0.5.5
-  [36c8627f] Pango_jll v1.42.4+8
+  [36c8627f] Pango_jll v1.42.4+9
   [d96e819e] Parameters v0.12.1
   [69de0a69] Parsers v1.0.10
-  [30392449] Pixman_jll v0.38.4+3
+  [30392449] Pixman_jll v0.38.4+4
   [2dfb63ee] PooledArrays v0.5.3
   [85a6dd25] PositiveFactorizations v0.2.3
   [33c8b6b6] ProgressLogging v0.1.3
@@ -316,21 +313,21 @@ Status `/tmp/jl_XeIPwS/Manifest.toml`
   [81def892] VersionParsing v1.2.0
   [19fa3120] VertexSafeGraphs v0.1.2
   [efce3f68] WoodburyMatrices v0.5.2
-  [02c8fc9c] XML2_jll v2.9.10+1
-  [aed1982a] XSLT_jll v1.1.33+2
-  [4f6342f7] Xorg_libX11_jll v1.6.9+2
-  [0c0b7dd1] Xorg_libXau_jll v1.0.9+2
-  [a3789734] Xorg_libXdmcp_jll v1.1.3+2
-  [1082639a] Xorg_libXext_jll v1.3.4+2
-  [ea2f1a96] Xorg_libXrender_jll v0.9.10+2
-  [14d82f49] Xorg_libpthread_stubs_jll v0.1.0+1
+  [02c8fc9c] XML2_jll v2.9.10+2
+  [aed1982a] XSLT_jll v1.1.33+3
+  [4f6342f7] Xorg_libX11_jll v1.6.9+3
+  [0c0b7dd1] Xorg_libXau_jll v1.0.9+3
+  [a3789734] Xorg_libXdmcp_jll v1.1.3+3
+  [1082639a] Xorg_libXext_jll v1.3.4+3
+  [ea2f1a96] Xorg_libXrender_jll v0.9.10+3
+  [14d82f49] Xorg_libpthread_stubs_jll v0.1.0+2
   [c7cfdc94] Xorg_libxcb_jll v1.13.0+2
-  [c5fb5394] Xorg_xtrans_jll v1.4.0+1
+  [c5fb5394] Xorg_xtrans_jll v1.4.0+2
   [ddb6d928] YAML v0.4.0
   [a5390f91] ZipFile v0.9.2
-  [83775a58] Zlib_jll v1.2.11+15
+  [83775a58] Zlib_jll v1.2.11+16
   [700de1a5] ZygoteRules v0.2.0
-  [b53b4c65] libpng_jll v1.6.37+4
+  [b53b4c65] libpng_jll v1.6.37+5
   [2a0f44e3] Base64
   [ade2ca70] Dates
   [8bb1440f] DelimitedFiles

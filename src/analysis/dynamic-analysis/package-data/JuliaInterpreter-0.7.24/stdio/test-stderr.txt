@@ -10,7 +10,7 @@ No Changes to `~/.julia/environments/v1.5/Project.toml`
 No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing JuliaInterpreter
-Status `/tmp/jl_u4moWC/Project.toml`
+Status `/tmp/jl_DGHvAx/Project.toml`
   [da1fd8a2] CodeTracking v0.5.11
   [a93c6f00] DataFrames v0.21.6
   [aa1ae85d] JuliaInterpreter v0.7.24
@@ -26,18 +26,18 @@ Status `/tmp/jl_u4moWC/Project.toml`
   [2f01184e] SparseArrays
   [8dfed614] Test
   [cf7118a7] UUIDs
-Status `/tmp/jl_u4moWC/Manifest.toml`
+Status `/tmp/jl_DGHvAx/Manifest.toml`
   [324d7699] CategoricalArrays v0.8.1
   [da1fd8a2] CodeTracking v0.5.11
   [ba30903b] CodecXz v0.7.0
   [944b1d66] CodecZlib v0.7.0
   [6b39b394] CodecZstd v0.7.0
   [bbf7d656] CommonSubexpressions v0.3.0
-  [34da2185] Compat v3.14.0
+  [34da2185] Compat v2.2.1
   [e66e0078] CompilerSupportLibraries_jll v0.3.3+0
   [9a962f9c] DataAPI v1.3.0
   [a93c6f00] DataFrames v0.21.6
-  [864edb3b] DataStructures v0.18.0
+  [864edb3b] DataStructures v0.17.20
   [e2d170a0] DataValueInterfaces v1.0.0
   [163ba53b] DiffResults v1.0.2
   [b552c78f] DiffRules v1.0.1
@@ -64,8 +64,8 @@ Status `/tmp/jl_u4moWC/Manifest.toml`
   [48a634ad] Tensors v1.4.2
   [3bb67fe8] TranscodingStreams v0.9.5
   [ffd25f8a] XZ_jll v5.2.4+3
-  [83775a58] Zlib_jll v1.2.11+15
-  [3161d3a3] Zstd_jll v1.4.5+0
+  [83775a58] Zlib_jll v1.2.11+16
+  [3161d3a3] Zstd_jll v1.4.5+1
   [2a0f44e3] Base64
   [ade2ca70] Dates
   [8bb1440f] DelimitedFiles

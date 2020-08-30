@@ -78,20 +78,20 @@ WARNING: Workqueue inconsistency detected: popfirst!(Workqueue).state != :runnab
 └ @ Genie.Router ~/.julia/packages/Genie/rqHFz/src/Router.jl:163
 ┌ Error: /notexisting 401
 └ @ Genie.Router ~/.julia/packages/Genie/rqHFz/src/Router.jl:163
-[ Info: Done! New app created at /tmp/jl_l5yJte/fullstack_test
-[ Info: Changing active directory to /tmp/jl_l5yJte/fullstack_test
+[ Info: Done! New app created at /tmp/jl_nOCGw1/fullstack_test
+[ Info: Changing active directory to /tmp/jl_nOCGw1/fullstack_test
 [ Info: Installing app dependencies
- Activating new environment at `/tmp/jl_l5yJte/fullstack_test/Project.toml`
+ Activating new environment at `/tmp/jl_nOCGw1/fullstack_test/Project.toml`
 Path `/home/jack/.julia/dev/Genie` exists and looks like the correct package. Using existing path.
   Resolving package versions...
-Updating `/tmp/jl_l5yJte/fullstack_test/Project.toml`
+Updating `/tmp/jl_nOCGw1/fullstack_test/Project.toml`
   [c43c736e] + Genie v1.1.0 `~/.julia/dev/Genie`
-Updating `/tmp/jl_l5yJte/fullstack_test/Manifest.toml`
+Updating `/tmp/jl_nOCGw1/fullstack_test/Manifest.toml`
   [1520ce14] + AbstractTrees v0.3.3
   [c7e460c6] + ArgParse v1.1.0
-  [da1fd8a2] + CodeTracking v0.5.11
+  [da1fd8a2] + CodeTracking v0.5.12
   [8fc22ac5] + FilePaths v0.8.1
-  [48062228] + FilePathsBase v0.9.4
+  [48062228] + FilePathsBase v0.9.5
   [781609d7] + GMP_jll v6.1.2+5
   [c43c736e] + Genie v1.1.0 `~/.julia/dev/Genie`
   [c27321d9] + Glob v1.3.0
@@ -101,9 +101,9 @@ Updating `/tmp/jl_l5yJte/fullstack_test/Manifest.toml`
   [77172c1b] + HttpCommon v0.5.0
   [83e8ac13] + IniFile v0.5.0
   [682c06a0] + JSON v0.21.0
-  [aa1ae85d] + JuliaInterpreter v0.7.24
+  [aa1ae85d] + JuliaInterpreter v0.7.26
   [e6f89c97] + LoggingExtras v0.4.2
-  [6f1432cf] + LoweredCodeUtils v0.4.7
+  [6f1432cf] + LoweredCodeUtils v0.4.9
   [1914dd2f] + MacroTools v0.5.5
   [739be429] + MbedTLS v1.0.2
   [c8ffd9c3] + MbedTLS_jll v2.16.6+1
@@ -114,10 +114,10 @@ Updating `/tmp/jl_l5yJte/fullstack_test/Manifest.toml`
   [bac558e1] + OrderedCollections v1.3.0
   [69de0a69] + Parsers v1.0.10
   [189a3867] + Reexport v0.2.0
-  [295af30f] + Revise v2.7.3
+  [295af30f] + Revise v2.7.4
   [b718987f] + TextWrap v1.0.1
   [30578b45] + URIParser v0.4.1
-  [ddb6d928] + YAML v0.4.0
+  [ddb6d928] + YAML v0.4.2
   [2a0f44e3] + Base64
   [ade2ca70] + Dates
   [8ba89e20] + Distributed
@@ -140,31 +140,31 @@ Updating `/tmp/jl_l5yJte/fullstack_test/Manifest.toml`
   [4ec0a83e] + Unicode
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-Updating `/tmp/jl_l5yJte/fullstack_test/Project.toml`
-  [295af30f] + Revise v2.7.3
-No Changes to `/tmp/jl_l5yJte/fullstack_test/Manifest.toml`
+Updating `/tmp/jl_nOCGw1/fullstack_test/Project.toml`
+  [295af30f] + Revise v2.7.4
+No Changes to `/tmp/jl_nOCGw1/fullstack_test/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_l5yJte/fullstack_test/Project.toml`
+Updating `/tmp/jl_nOCGw1/fullstack_test/Project.toml`
   [e6f89c97] + LoggingExtras v0.4.2
-No Changes to `/tmp/jl_l5yJte/fullstack_test/Manifest.toml`
+No Changes to `/tmp/jl_nOCGw1/fullstack_test/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_l5yJte/fullstack_test/Project.toml`
+Updating `/tmp/jl_nOCGw1/fullstack_test/Project.toml`
   [739be429] + MbedTLS v1.0.2
-No Changes to `/tmp/jl_l5yJte/fullstack_test/Manifest.toml`
+No Changes to `/tmp/jl_nOCGw1/fullstack_test/Manifest.toml`
 [ Info: Starting your brand new Genie app - hang tight!
- Activating environment at `/tmp/jl_l5yJte/fullstack_test/Project.toml`
+ Activating environment at `/tmp/jl_nOCGw1/fullstack_test/Project.toml`
  Activating environment at `~/.julia/packages/Genie/rqHFz/test/Project.toml`
- Activating new environment at `/tmp/jl_VZk2ES/Project.toml`
+ Activating new environment at `/tmp/jl_dbZkx0/Project.toml`
 Path `/home/jack/.julia/dev/Genie` exists and looks like the correct package. Using existing path.
   Resolving package versions...
-Updating `/tmp/jl_VZk2ES/Project.toml`
+Updating `/tmp/jl_dbZkx0/Project.toml`
   [c43c736e] + Genie v1.1.0 `~/.julia/dev/Genie`
-Updating `/tmp/jl_VZk2ES/Manifest.toml`
+Updating `/tmp/jl_dbZkx0/Manifest.toml`
   [1520ce14] + AbstractTrees v0.3.3
   [c7e460c6] + ArgParse v1.1.0
-  [da1fd8a2] + CodeTracking v0.5.11
+  [da1fd8a2] + CodeTracking v0.5.12
   [8fc22ac5] + FilePaths v0.8.1
-  [48062228] + FilePathsBase v0.9.4
+  [48062228] + FilePathsBase v0.9.5
   [781609d7] + GMP_jll v6.1.2+5
   [c43c736e] + Genie v1.1.0 `~/.julia/dev/Genie`
   [c27321d9] + Glob v1.3.0
@@ -174,9 +174,9 @@ Updating `/tmp/jl_VZk2ES/Manifest.toml`
   [77172c1b] + HttpCommon v0.5.0
   [83e8ac13] + IniFile v0.5.0
   [682c06a0] + JSON v0.21.0
-  [aa1ae85d] + JuliaInterpreter v0.7.24
+  [aa1ae85d] + JuliaInterpreter v0.7.26
   [e6f89c97] + LoggingExtras v0.4.2
-  [6f1432cf] + LoweredCodeUtils v0.4.7
+  [6f1432cf] + LoweredCodeUtils v0.4.9
   [1914dd2f] + MacroTools v0.5.5
   [739be429] + MbedTLS v1.0.2
   [c8ffd9c3] + MbedTLS_jll v2.16.6+1
@@ -187,10 +187,10 @@ Updating `/tmp/jl_VZk2ES/Manifest.toml`
   [bac558e1] + OrderedCollections v1.3.0
   [69de0a69] + Parsers v1.0.10
   [189a3867] + Reexport v0.2.0
-  [295af30f] + Revise v2.7.3
+  [295af30f] + Revise v2.7.4
   [b718987f] + TextWrap v1.0.1
   [30578b45] + URIParser v0.4.1
-  [ddb6d928] + YAML v0.4.0
+  [ddb6d928] + YAML v0.4.2
   [2a0f44e3] + Base64
   [ade2ca70] + Dates
   [8ba89e20] + Distributed
@@ -212,29 +212,29 @@ Updating `/tmp/jl_VZk2ES/Manifest.toml`
   [cf7118a7] + UUIDs
   [4ec0a83e] + Unicode
   Resolving package versions...
-Updating `/tmp/jl_VZk2ES/Project.toml`
-  [295af30f] + Revise v2.7.3
-No Changes to `/tmp/jl_VZk2ES/Manifest.toml`
+Updating `/tmp/jl_dbZkx0/Project.toml`
+  [295af30f] + Revise v2.7.4
+No Changes to `/tmp/jl_dbZkx0/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_VZk2ES/Project.toml`
+Updating `/tmp/jl_dbZkx0/Project.toml`
   [e6f89c97] + LoggingExtras v0.4.2
-No Changes to `/tmp/jl_VZk2ES/Manifest.toml`
+No Changes to `/tmp/jl_dbZkx0/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_VZk2ES/Project.toml`
+Updating `/tmp/jl_dbZkx0/Project.toml`
   [739be429] + MbedTLS v1.0.2
-No Changes to `/tmp/jl_VZk2ES/Manifest.toml`
+No Changes to `/tmp/jl_dbZkx0/Manifest.toml`
  Activating environment at `~/.julia/packages/Genie/rqHFz/test/Project.toml`
- Activating new environment at `/tmp/jl_8DZgLK/Project.toml`
+ Activating new environment at `/tmp/jl_N8QgUr/Project.toml`
 Path `/home/jack/.julia/dev/Genie` exists and looks like the correct package. Using existing path.
   Resolving package versions...
-Updating `/tmp/jl_8DZgLK/Project.toml`
+Updating `/tmp/jl_N8QgUr/Project.toml`
   [c43c736e] + Genie v1.1.0 `~/.julia/dev/Genie`
-Updating `/tmp/jl_8DZgLK/Manifest.toml`
+Updating `/tmp/jl_N8QgUr/Manifest.toml`
   [1520ce14] + AbstractTrees v0.3.3
   [c7e460c6] + ArgParse v1.1.0
-  [da1fd8a2] + CodeTracking v0.5.11
+  [da1fd8a2] + CodeTracking v0.5.12
   [8fc22ac5] + FilePaths v0.8.1
-  [48062228] + FilePathsBase v0.9.4
+  [48062228] + FilePathsBase v0.9.5
   [781609d7] + GMP_jll v6.1.2+5
   [c43c736e] + Genie v1.1.0 `~/.julia/dev/Genie`
   [c27321d9] + Glob v1.3.0
@@ -244,9 +244,9 @@ Updating `/tmp/jl_8DZgLK/Manifest.toml`
   [77172c1b] + HttpCommon v0.5.0
   [83e8ac13] + IniFile v0.5.0
   [682c06a0] + JSON v0.21.0
-  [aa1ae85d] + JuliaInterpreter v0.7.24
+  [aa1ae85d] + JuliaInterpreter v0.7.26
   [e6f89c97] + LoggingExtras v0.4.2
-  [6f1432cf] + LoweredCodeUtils v0.4.7
+  [6f1432cf] + LoweredCodeUtils v0.4.9
   [1914dd2f] + MacroTools v0.5.5
   [739be429] + MbedTLS v1.0.2
   [c8ffd9c3] + MbedTLS_jll v2.16.6+1
@@ -257,10 +257,10 @@ Updating `/tmp/jl_8DZgLK/Manifest.toml`
   [bac558e1] + OrderedCollections v1.3.0
   [69de0a69] + Parsers v1.0.10
   [189a3867] + Reexport v0.2.0
-  [295af30f] + Revise v2.7.3
+  [295af30f] + Revise v2.7.4
   [b718987f] + TextWrap v1.0.1
   [30578b45] + URIParser v0.4.1
-  [ddb6d928] + YAML v0.4.0
+  [ddb6d928] + YAML v0.4.2
   [2a0f44e3] + Base64
   [ade2ca70] + Dates
   [8ba89e20] + Distributed
@@ -282,29 +282,29 @@ Updating `/tmp/jl_8DZgLK/Manifest.toml`
   [cf7118a7] + UUIDs
   [4ec0a83e] + Unicode
   Resolving package versions...
-Updating `/tmp/jl_8DZgLK/Project.toml`
-  [295af30f] + Revise v2.7.3
-No Changes to `/tmp/jl_8DZgLK/Manifest.toml`
+Updating `/tmp/jl_N8QgUr/Project.toml`
+  [295af30f] + Revise v2.7.4
+No Changes to `/tmp/jl_N8QgUr/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_8DZgLK/Project.toml`
+Updating `/tmp/jl_N8QgUr/Project.toml`
   [e6f89c97] + LoggingExtras v0.4.2
-No Changes to `/tmp/jl_8DZgLK/Manifest.toml`
+No Changes to `/tmp/jl_N8QgUr/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_8DZgLK/Project.toml`
+Updating `/tmp/jl_N8QgUr/Project.toml`
   [739be429] + MbedTLS v1.0.2
-No Changes to `/tmp/jl_8DZgLK/Manifest.toml`
+No Changes to `/tmp/jl_N8QgUr/Manifest.toml`
  Activating environment at `~/.julia/packages/Genie/rqHFz/test/Project.toml`
- Activating new environment at `/tmp/jl_5o4FpF/Project.toml`
+ Activating new environment at `/tmp/jl_5ScZHV/Project.toml`
 Path `/home/jack/.julia/dev/Genie` exists and looks like the correct package. Using existing path.
   Resolving package versions...
-Updating `/tmp/jl_5o4FpF/Project.toml`
+Updating `/tmp/jl_5ScZHV/Project.toml`
   [c43c736e] + Genie v1.1.0 `~/.julia/dev/Genie`
-Updating `/tmp/jl_5o4FpF/Manifest.toml`
+Updating `/tmp/jl_5ScZHV/Manifest.toml`
   [1520ce14] + AbstractTrees v0.3.3
   [c7e460c6] + ArgParse v1.1.0
-  [da1fd8a2] + CodeTracking v0.5.11
+  [da1fd8a2] + CodeTracking v0.5.12
   [8fc22ac5] + FilePaths v0.8.1
-  [48062228] + FilePathsBase v0.9.4
+  [48062228] + FilePathsBase v0.9.5
   [781609d7] + GMP_jll v6.1.2+5
   [c43c736e] + Genie v1.1.0 `~/.julia/dev/Genie`
   [c27321d9] + Glob v1.3.0
@@ -314,9 +314,9 @@ Updating `/tmp/jl_5o4FpF/Manifest.toml`
   [77172c1b] + HttpCommon v0.5.0
   [83e8ac13] + IniFile v0.5.0
   [682c06a0] + JSON v0.21.0
-  [aa1ae85d] + JuliaInterpreter v0.7.24
+  [aa1ae85d] + JuliaInterpreter v0.7.26
   [e6f89c97] + LoggingExtras v0.4.2
-  [6f1432cf] + LoweredCodeUtils v0.4.7
+  [6f1432cf] + LoweredCodeUtils v0.4.9
   [1914dd2f] + MacroTools v0.5.5
   [739be429] + MbedTLS v1.0.2
   [c8ffd9c3] + MbedTLS_jll v2.16.6+1
@@ -327,10 +327,10 @@ Updating `/tmp/jl_5o4FpF/Manifest.toml`
   [bac558e1] + OrderedCollections v1.3.0
   [69de0a69] + Parsers v1.0.10
   [189a3867] + Reexport v0.2.0
-  [295af30f] + Revise v2.7.3
+  [295af30f] + Revise v2.7.4
   [b718987f] + TextWrap v1.0.1
   [30578b45] + URIParser v0.4.1
-  [ddb6d928] + YAML v0.4.0
+  [ddb6d928] + YAML v0.4.2
   [2a0f44e3] + Base64
   [ade2ca70] + Dates
   [8ba89e20] + Distributed
@@ -352,29 +352,29 @@ Updating `/tmp/jl_5o4FpF/Manifest.toml`
   [cf7118a7] + UUIDs
   [4ec0a83e] + Unicode
   Resolving package versions...
-Updating `/tmp/jl_5o4FpF/Project.toml`
-  [295af30f] + Revise v2.7.3
-No Changes to `/tmp/jl_5o4FpF/Manifest.toml`
+Updating `/tmp/jl_5ScZHV/Project.toml`
+  [295af30f] + Revise v2.7.4
+No Changes to `/tmp/jl_5ScZHV/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_5o4FpF/Project.toml`
+Updating `/tmp/jl_5ScZHV/Project.toml`
   [e6f89c97] + LoggingExtras v0.4.2
-No Changes to `/tmp/jl_5o4FpF/Manifest.toml`
+No Changes to `/tmp/jl_5ScZHV/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_5o4FpF/Project.toml`
+Updating `/tmp/jl_5ScZHV/Project.toml`
   [739be429] + MbedTLS v1.0.2
-No Changes to `/tmp/jl_5o4FpF/Manifest.toml`
+No Changes to `/tmp/jl_5ScZHV/Manifest.toml`
  Activating environment at `~/.julia/packages/Genie/rqHFz/test/Project.toml`
- Activating new environment at `/tmp/jl_oIW5BC/Project.toml`
+ Activating new environment at `/tmp/jl_XpD4zr/Project.toml`
 Path `/home/jack/.julia/dev/Genie` exists and looks like the correct package. Using existing path.
   Resolving package versions...
-Updating `/tmp/jl_oIW5BC/Project.toml`
+Updating `/tmp/jl_XpD4zr/Project.toml`
   [c43c736e] + Genie v1.1.0 `~/.julia/dev/Genie`
-Updating `/tmp/jl_oIW5BC/Manifest.toml`
+Updating `/tmp/jl_XpD4zr/Manifest.toml`
   [1520ce14] + AbstractTrees v0.3.3
   [c7e460c6] + ArgParse v1.1.0
-  [da1fd8a2] + CodeTracking v0.5.11
+  [da1fd8a2] + CodeTracking v0.5.12
   [8fc22ac5] + FilePaths v0.8.1
-  [48062228] + FilePathsBase v0.9.4
+  [48062228] + FilePathsBase v0.9.5
   [781609d7] + GMP_jll v6.1.2+5
   [c43c736e] + Genie v1.1.0 `~/.julia/dev/Genie`
   [c27321d9] + Glob v1.3.0
@@ -384,9 +384,9 @@ Updating `/tmp/jl_oIW5BC/Manifest.toml`
   [77172c1b] + HttpCommon v0.5.0
   [83e8ac13] + IniFile v0.5.0
   [682c06a0] + JSON v0.21.0
-  [aa1ae85d] + JuliaInterpreter v0.7.24
+  [aa1ae85d] + JuliaInterpreter v0.7.26
   [e6f89c97] + LoggingExtras v0.4.2
-  [6f1432cf] + LoweredCodeUtils v0.4.7
+  [6f1432cf] + LoweredCodeUtils v0.4.9
   [1914dd2f] + MacroTools v0.5.5
   [739be429] + MbedTLS v1.0.2
   [c8ffd9c3] + MbedTLS_jll v2.16.6+1
@@ -397,10 +397,10 @@ Updating `/tmp/jl_oIW5BC/Manifest.toml`
   [bac558e1] + OrderedCollections v1.3.0
   [69de0a69] + Parsers v1.0.10
   [189a3867] + Reexport v0.2.0
-  [295af30f] + Revise v2.7.3
+  [295af30f] + Revise v2.7.4
   [b718987f] + TextWrap v1.0.1
   [30578b45] + URIParser v0.4.1
-  [ddb6d928] + YAML v0.4.0
+  [ddb6d928] + YAML v0.4.2
   [2a0f44e3] + Base64
   [ade2ca70] + Dates
   [8ba89e20] + Distributed
@@ -422,17 +422,17 @@ Updating `/tmp/jl_oIW5BC/Manifest.toml`
   [cf7118a7] + UUIDs
   [4ec0a83e] + Unicode
   Resolving package versions...
-Updating `/tmp/jl_oIW5BC/Project.toml`
-  [295af30f] + Revise v2.7.3
-No Changes to `/tmp/jl_oIW5BC/Manifest.toml`
+Updating `/tmp/jl_XpD4zr/Project.toml`
+  [295af30f] + Revise v2.7.4
+No Changes to `/tmp/jl_XpD4zr/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_oIW5BC/Project.toml`
+Updating `/tmp/jl_XpD4zr/Project.toml`
   [e6f89c97] + LoggingExtras v0.4.2
-No Changes to `/tmp/jl_oIW5BC/Manifest.toml`
+No Changes to `/tmp/jl_XpD4zr/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_oIW5BC/Project.toml`
+Updating `/tmp/jl_XpD4zr/Project.toml`
   [739be429] + MbedTLS v1.0.2
-No Changes to `/tmp/jl_oIW5BC/Manifest.toml`
+No Changes to `/tmp/jl_XpD4zr/Manifest.toml`
  Activating environment at `~/.julia/packages/Genie/rqHFz/test/Project.toml`
  Activating environment at `~/.julia/packages/Genie/rqHFz/test/Project.toml`
  Activating environment at `~/.julia/packages/Genie/rqHFz/test/Project.toml`
@@ -445,7 +445,7 @@ No Changes to `~/.julia/environments/v1.5/Project.toml`
 No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Genie
-Status `/tmp/jl_lN6wkv/Project.toml`
+Status `/tmp/jl_mn3USH/Project.toml`
   [c43c736e] Genie v1.1.0
   [cd3eb016] HTTP v0.8.17
   [e6f89c97] LoggingExtras v0.4.2
@@ -459,7 +459,7 @@ Status `/tmp/jl_lN6wkv/Project.toml`
   [9a3f8284] Random
   [6462fe0b] Sockets
   [8dfed614] Test
-Status `/tmp/jl_lN6wkv/Manifest.toml`
+Status `/tmp/jl_mn3USH/Manifest.toml`
   [1520ce14] AbstractTrees v0.3.3
   [c7e460c6] ArgParse v1.1.0
   [da1fd8a2] CodeTracking v0.5.11
@@ -477,7 +477,7 @@ Status `/tmp/jl_lN6wkv/Manifest.toml`
   [682c06a0] JSON v0.21.0
   [aa1ae85d] JuliaInterpreter v0.7.24
   [e6f89c97] LoggingExtras v0.4.2
-  [6f1432cf] LoweredCodeUtils v0.4.7
+  [6f1432cf] LoweredCodeUtils v0.4.8
   [1914dd2f] MacroTools v0.5.5
   [739be429] MbedTLS v1.0.2
   [c8ffd9c3] MbedTLS_jll v2.16.6+1
