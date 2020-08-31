@@ -1,21 +1,20 @@
 using Pkg
 Pkg.add("JSON")
 using JSON
-import JLD
 
 # Store the overrideInfo as a JSON file
 function storeOverrideInfo(overrideInfo :: OverrideInfo, outputFile :: String)
     fd = open(outputFile, "w+")
     INDENT_SIZE = 2
-    JSON.print(fd, overrideInfoToJson(overrideInfo, outputFile), INDENT_SIZE)
+    JSON.print(fd, overrideInfoToJson(overrideInfo), INDENT_SIZE)
     close(fd)
 end
 
 # Convert an OverrideInfo object to a julia json representation
-function overrideInfoToJson(info :: OverrideInfo, outputFile :: String)
+function overrideInfoToJson(info :: OverrideInfo)
     json = Dict()
     json["eval_info"] = funcMetadataToJson(info.evalInfo,
-        (md) -> evalInfoToJson(md, outputFile);
+        (md) -> evalInfoToJson(md);
         traceAuxillaryToJson=astInfoToJson)
     json["invokelatest_info"] = funcMetadataToJson(info.invokeLatestInfo,
         (invokeLatestInfo) -> Dict(["function_names" => countingDictToJson(invokeLatestInfo.funcNames, "function_name")]);
@@ -24,11 +23,12 @@ function overrideInfoToJson(info :: OverrideInfo, outputFile :: String)
 end
 
 # Convert an evalInfo object to a julia json representation
-function evalInfoToJson(evalInfo :: EvalInfo, outputFile :: String)
-    JLD.save("$(outputFile).jld", "callInfo", mkOccurDict(evalInfo.evalCallInfos))
-
+function evalInfoToJson(evalInfo :: EvalInfo)
+    io = IOBuffer()
+    JSON.print(io, map(kv->(kv[1], kv[2]), collect(mkOccurDict(evalInfo.evalCallInfos))))
     json = astInfoToJson(evalInfo.astHeads)
     json["func_def_types"] = funcDefTrackerToJson(evalInfo.funcDefTypes)
+    json["func_def_ast_forms"] = String(take!(io))
     json
 end
 
