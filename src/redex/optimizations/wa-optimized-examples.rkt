@@ -39,7 +39,9 @@
                                   (mcall (mval "add") var1 var2))))
 ;; addNumum(1,1);addNumNum(1.1,1.1)
 (define addNumNumSpecialize (term (seq (mcall add (pcall + 1 1) 1)
-                                  (mcall add (pcall + 1.1 1.1) 1.1))))
+                                  (seq (mcall add (pcall + 1.1 1.1) 1.1)
+                                  (seq (mcall add (pcall + 1.1 1.1) 1)
+                                  (mcall add 1 (pcall + 1.1 1.1)))))))
 ;; 1+x
 (define one-plus-x (term (pcall + 1 x)))
 ;; first() = second()
