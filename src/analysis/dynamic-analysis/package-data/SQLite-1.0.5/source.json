@@ -1,0 +1,75 @@
+{
+  "eval_info": {
+    "call_count": 35,
+    "stack_traces": [
+      {
+        "count": 32,
+        "last_call": "eval at SQLite.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 32,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "newidentity() at UDF.jl:227",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 3,
+              "ast_head": "function"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 32,
+          "ast_head": "block"
+        },
+        {
+          "count": 3,
+          "ast_head": "function"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 3,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},32],[{\"astHead\":\"->\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},32]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 1,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:29",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "do_artifact_str",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

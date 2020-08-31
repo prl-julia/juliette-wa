@@ -1,0 +1,103 @@
+{
+  "eval_info": {
+    "call_count": 5,
+    "stack_traces": [
+      {
+        "count": 4,
+        "last_call": "eval at Formatting.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 4,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "generate_formatter(::String) at cformat.jl:18",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 4,
+          "ast_head": "call"
+        },
+        {
+          "count": 1,
+          "ast_head": "function"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 1,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"->\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 6,
+    "stack_traces": [
+      {
+        "count": 4,
+        "last_call": "(::Formatting.var\"#1#4\")(::Rational{Int64}) at cformat.jl:19",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#11",
+              "count": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:69",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "#11",
+          "count": 4
+        },
+        {
+          "function_name": "do_artifact_str",
+          "count": 2
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "eval_info": {
+    "call_count": 106,
+    "stack_traces": [
+      {
+        "count": 36,
+        "last_call": "eval at ArrayInterface.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 36,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 31,
+        "last_call": "eval at DiffEqBase.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 31,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 24,
+        "last_call": "top-level scope at SafeTestsets.jl:23",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 24,
+              "ast_head": "module"
+            }
+          ]
+        }
+      },
+      {
+        "count": 11,
+        "last_call": "eval at FiniteDiff.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 11,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "eval at Latexify.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "eval at NNlib.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "block"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 82,
+          "ast_head": "block"
+        },
+        {
+          "count": 24,
+          "ast_head": "module"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1043],[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},82],[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},29],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},24],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},18]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 2,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:69",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "do_artifact_str",
+          "count": 2
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,355 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+
+tests_AppServer: 
+Web Server starting at http://127.0.0.1:8000 
+
+Web Server running at http://127.0.0.1:8000 
+..
+=====================================================
+Start/stop servers: Test Failed at /home/jack/.julia/packages/Genie/rqHFz/test/tests_AppServer.jl:13
+  Expression: servers.webserver.state == :done
+   Evaluated: runnable == done
+Stacktrace:
+ [1] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_AppServer.jl:13
+ [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_AppServer.jl:4
+=====================================================
+
+=====================================================
+Start/stop servers: Test Failed at /home/jack/.julia/packages/Genie/rqHFz/test/tests_AppServer.jl:14
+  Expression: Genie.AppServer.SERVERS.webserver.state == :done
+   Evaluated: runnable == done
+Stacktrace:
+ [1] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_AppServer.jl:14
+ [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_AppServer.jl:4
+=====================================================
+
+Web Server starting at http://127.0.0.1:8000 
+
+Web Server running at http://127.0.0.1:8000 
+....
+Web Server starting at http://127.0.0.1:9000 
+
+Web Server running at http://127.0.0.1:9000 
+..
+tests_Assets: ............
+tests_Sessions: 
+Web Server starting at http://127.0.0.1:8000 
+
+Web Server running at http://127.0.0.1:8000 
+
+=====================================================
+Assets paths: Error During Test at /home/jack/.julia/packages/Genie/rqHFz/test/tests_Sessions.jl:3
+  Got exception outside of a @test
+  IOError(Base.IOError("connect: connection refused (ECONNREFUSED)", -111) during request(http://127.0.0.1:8000/home))
+  
+  Stacktrace:
+   [1] wait_connected(::Sockets.TCPSocket) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Sockets/src/Sockets.jl:525
+   [2] connect at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Sockets/src/Sockets.jl:560 [inlined]
+   [3] connect(::Sockets.IPv4, ::UInt64) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Sockets/src/Sockets.jl:546
+   [4] getconnection(::Type{Sockets.TCPSocket}, ::SubString{String}, ::SubString{String}; keepalive::Bool, connect_timeout::Int64, kw::Base.Iterators.Pairs{Symbol,Union{Nothing, Bool},Tuple{Symbol,Symbol,Symbol},NamedTuple{(:require_ssl_verification, :iofunction, :reached_redirect_limit),Tuple{Bool,Nothing,Bool}}}) at /home/jack/.julia/packages/HTTP/atT5q/src/ConnectionPool.jl:616
+   [5] #newconnection#25 at /home/jack/.julia/packages/HTTP/atT5q/src/ConnectionPool.jl:583 [inlined]
+   [6] getconnection(::Type{HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}, ::SubString{String}, ::SubString{String}; connection_limit::Int64, pipeline_limit::Int64, idle_timeout::Int64, reuse_limit::Int64, require_ssl_verification::Bool, kw::Base.Iterators.Pairs{Symbol,Union{Nothing, Bool},Tuple{Symbol,Symbol},NamedTuple{(:iofunction, :reached_redirect_limit),Tuple{Nothing,Bool}}}) at /home/jack/.julia/packages/HTTP/atT5q/src/ConnectionPool.jl:527
+   [7] request(::Type{ConnectionPoolLayer{StreamLayer{Union{}}}}, ::HTTP.URIs.URI, ::HTTP.Messages.Request, ::Array{UInt8,1}; proxy::Nothing, socket_type::Type{T} where T, reuse_limit::Int64, kw::Base.Iterators.Pairs{Symbol,Union{Nothing, Bool},Tuple{Symbol,Symbol},NamedTuple{(:iofunction, :reached_redirect_limit),Tuple{Nothing,Bool}}}) at /home/jack/.julia/packages/HTTP/atT5q/src/ConnectionRequest.jl:73
+   [8] request(::Type{ExceptionLayer{ConnectionPoolLayer{StreamLayer{Union{}}}}}, ::HTTP.URIs.URI, ::Vararg{Any,N} where N; kw::Base.Iterators.Pairs{Symbol,Union{Nothing, Bool},Tuple{Symbol,Symbol},NamedTuple{(:iofunction, :reached_redirect_limit),Tuple{Nothing,Bool}}}) at /home/jack/.julia/packages/HTTP/atT5q/src/ExceptionRequest.jl:19
+   [9] (::Base.var"#56#58"{Base.var"#56#57#59"{ExponentialBackOff,HTTP.RetryRequest.var"#2#3"{Bool,HTTP.Messages.Request},typeof(HTTP.request)}})(::Type{T} where T, ::Vararg{Any,N} where N; kwargs::Base.Iterators.Pairs{Symbol,Union{Nothing, Bool},Tuple{Symbol,Symbol},NamedTuple{(:iofunction, :reached_redirect_limit),Tuple{Nothing,Bool}}}) at ./error.jl:301
+   [10] #request#1 at /home/jack/.julia/packages/HTTP/atT5q/src/RetryRequest.jl:44 [inlined]
+   [11] request(::Type{MessageLayer{RetryLayer{ExceptionLayer{ConnectionPoolLayer{StreamLayer{Union{}}}}}}}, ::String, ::HTTP.URIs.URI, ::Array{Pair{SubString{String},SubString{String}},1}, ::Array{UInt8,1}; http_version::VersionNumber, target::String, parent::Nothing, iofunction::Nothing, kw::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:reached_redirect_limit,),Tuple{Bool}}}) at /home/jack/.julia/packages/HTTP/atT5q/src/MessageRequest.jl:51
+   [12] request(::Type{BasicAuthLayer{MessageLayer{RetryLayer{ExceptionLayer{ConnectionPoolLayer{StreamLayer{Union{}}}}}}}}, ::String, ::HTTP.URIs.URI, ::Array{Pair{SubString{String},SubString{String}},1}, ::Array{UInt8,1}; kw::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:reached_redirect_limit,),Tuple{Bool}}}) at /home/jack/.julia/packages/HTTP/atT5q/src/BasicAuthRequest.jl:28
+   [13] request(::Type{RedirectLayer{BasicAuthLayer{MessageLayer{RetryLayer{ExceptionLayer{ConnectionPoolLayer{StreamLayer{Union{}}}}}}}}}, ::String, ::HTTP.URIs.URI, ::Array{Pair{SubString{String},SubString{String}},1}, ::Array{UInt8,1}; redirect_limit::Int64, forwardheaders::Bool, kw::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/HTTP/atT5q/src/RedirectRequest.jl:24
+   [14] request(::Type{RedirectLayer{BasicAuthLayer{MessageLayer{RetryLayer{ExceptionLayer{ConnectionPoolLayer{StreamLayer{Union{}}}}}}}}}, ::String, ::HTTP.URIs.URI, ::Array{Pair{SubString{String},SubString{String}},1}, ::Array{UInt8,1}) at /home/jack/.julia/packages/HTTP/atT5q/src/RedirectRequest.jl:21
+   [15] request(::String, ::String, ::Array{Pair{SubString{String},SubString{String}},1}, ::Array{UInt8,1}; headers::Array{Pair{SubString{String},SubString{String}},1}, body::Array{UInt8,1}, query::Nothing, kw::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/HTTP/atT5q/src/HTTP.jl:314
+   [16] request at /home/jack/.julia/packages/HTTP/atT5q/src/HTTP.jl:314 [inlined] (repeats 2 times)
+   [17] #get#12 at /home/jack/.julia/packages/HTTP/atT5q/src/HTTP.jl:391 [inlined]
+   [18] get(::String) at /home/jack/.julia/packages/HTTP/atT5q/src/HTTP.jl:391
+   [19] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_Sessions.jl:20
+   [20] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [21] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_Sessions.jl:4
+   [22] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [23] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_Sessions.jl:3
+   [24] include(::Function, ::Module, ::String) at ./Base.jl:380
+   [25] include(::Module, ::String) at ./Base.jl:368
+   [26] top-level scope at /home/jack/.julia/packages/TestSetExtensions/lB7xG/src/TestSetExtensions.jl:40
+   [27] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
+   [28] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [29] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
+   [30] include(::String) at ./client.jl:457
+   [31] top-level scope at none:6
+   [32] eval(::Module, ::Any) at ./boot.jl:331
+   [33] exec_options(::Base.JLOptions) at ./client.jl:272
+   [34] _start() at ./client.jl:506
+  
+=====================================================
+
+tests_advanced_html_rendering: ...
+tests_advanced_select_rendering: .
+tests_assets_rendering: ...
+tests_basic_rendering: ......................
+tests_cache: .......
+tests_config: ....
+Web Server starting at http://0.0.0.0:9000 
+
+Web Server running at http://0.0.0.0:9000 
+....
+tests_content_negotiation: 
+Web Server starting at http://127.0.0.1:8000 
+
+Web Server running at http://127.0.0.1:8000 
+
+=====================================================
+Not found matches request type -- Content-Type -- custom HTML Genie page: Error During Test at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:25
+  Got exception outside of a @test
+  type IOError has no field response
+  Stacktrace:
+   [1] getproperty(::HTTP.IOExtras.IOError, ::Symbol) at ./Base.jl:33
+   [2] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:13
+   [3] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [4] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:5
+   [5] eval(::Module, ::Any) at ./boot.jl:331
+   [6] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [7] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:4
+   [8] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [9] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:4
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [12] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:3
+   [13] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:3
+   [15] eval(::Module, ::Any) at ./boot.jl:331
+   [16] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [17] include(::Function, ::Module, ::String) at ./Base.jl:380
+   [18] include(::Module, ::String) at ./Base.jl:368
+   [19] top-level scope at /home/jack/.julia/packages/TestSetExtensions/lB7xG/src/TestSetExtensions.jl:40
+   [20] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
+   [21] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [22] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
+   [23] include(::String) at ./client.jl:457
+   [24] top-level scope at none:6
+   [25] eval(::Module, ::Any) at ./boot.jl:331
+   [26] exec_options(::Base.JLOptions) at ./client.jl:272
+   [27] _start() at ./client.jl:506
+  caused by [exception 1]
+  IOError(Base.IOError("connect: connection refused (ECONNREFUSED)", -111) during request(http://127.0.0.1:8000/notexisting))
+  
+  Stacktrace:
+   [1] wait_connected(::Sockets.TCPSocket) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Sockets/src/Sockets.jl:525
+   [2] connect at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Sockets/src/Sockets.jl:560 [inlined]
+   [3] connect(::Sockets.IPv4, ::UInt64) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Sockets/src/Sockets.jl:546
+   [4] getconnection(::Type{Sockets.TCPSocket}, ::SubString{String}, ::SubString{String}; keepalive::Bool, connect_timeout::Int64, kw::Base.Iterators.Pairs{Symbol,Union{Nothing, Bool},Tuple{Symbol,Symbol,Symbol},NamedTuple{(:require_ssl_verification, :iofunction, :reached_redirect_limit),Tuple{Bool,Nothing,Bool}}}) at /home/jack/.julia/packages/HTTP/atT5q/src/ConnectionPool.jl:616
+   [5] #newconnection#25 at /home/jack/.julia/packages/HTTP/atT5q/src/ConnectionPool.jl:583 [inlined]
+   [6] getconnection(::Type{HTTP.ConnectionPool.Transaction{Sockets.TCPSocket}}, ::SubString{String}, ::SubString{String}; connection_limit::Int64, pipeline_limit::Int64, idle_timeout::Int64, reuse_limit::Int64, require_ssl_verification::Bool, kw::Base.Iterators.Pairs{Symbol,Union{Nothing, Bool},Tuple{Symbol,Symbol},NamedTuple{(:iofunction, :reached_redirect_limit),Tuple{Nothing,Bool}}}) at /home/jack/.julia/packages/HTTP/atT5q/src/ConnectionPool.jl:527
+   [7] request(::Type{ConnectionPoolLayer{StreamLayer{Union{}}}}, ::HTTP.URIs.URI, ::HTTP.Messages.Request, ::Array{UInt8,1}; proxy::Nothing, socket_type::Type{T} where T, reuse_limit::Int64, kw::Base.Iterators.Pairs{Symbol,Union{Nothing, Bool},Tuple{Symbol,Symbol},NamedTuple{(:iofunction, :reached_redirect_limit),Tuple{Nothing,Bool}}}) at /home/jack/.julia/packages/HTTP/atT5q/src/ConnectionRequest.jl:73
+   [8] request(::Type{ExceptionLayer{ConnectionPoolLayer{StreamLayer{Union{}}}}}, ::HTTP.URIs.URI, ::Vararg{Any,N} where N; kw::Base.Iterators.Pairs{Symbol,Union{Nothing, Bool},Tuple{Symbol,Symbol},NamedTuple{(:iofunction, :reached_redirect_limit),Tuple{Nothing,Bool}}}) at /home/jack/.julia/packages/HTTP/atT5q/src/ExceptionRequest.jl:19
+   [9] (::Base.var"#56#58"{Base.var"#56#57#59"{ExponentialBackOff,HTTP.RetryRequest.var"#2#3"{Bool,HTTP.Messages.Request},typeof(HTTP.request)}})(::Type{T} where T, ::Vararg{Any,N} where N; kwargs::Base.Iterators.Pairs{Symbol,Union{Nothing, Bool},Tuple{Symbol,Symbol},NamedTuple{(:iofunction, :reached_redirect_limit),Tuple{Nothing,Bool}}}) at ./error.jl:301
+   [10] #request#1 at /home/jack/.julia/packages/HTTP/atT5q/src/RetryRequest.jl:44 [inlined]
+   [11] request(::Type{MessageLayer{RetryLayer{ExceptionLayer{ConnectionPoolLayer{StreamLayer{Union{}}}}}}}, ::String, ::HTTP.URIs.URI, ::Array{Pair{SubString{String},SubString{String}},1}, ::Array{UInt8,1}; http_version::VersionNumber, target::String, parent::Nothing, iofunction::Nothing, kw::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:reached_redirect_limit,),Tuple{Bool}}}) at /home/jack/.julia/packages/HTTP/atT5q/src/MessageRequest.jl:51
+   [12] request(::Type{BasicAuthLayer{MessageLayer{RetryLayer{ExceptionLayer{ConnectionPoolLayer{StreamLayer{Union{}}}}}}}}, ::String, ::HTTP.URIs.URI, ::Array{Pair{SubString{String},SubString{String}},1}, ::Array{UInt8,1}; kw::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:reached_redirect_limit,),Tuple{Bool}}}) at /home/jack/.julia/packages/HTTP/atT5q/src/BasicAuthRequest.jl:28
+   [13] request(::Type{RedirectLayer{BasicAuthLayer{MessageLayer{RetryLayer{ExceptionLayer{ConnectionPoolLayer{StreamLayer{Union{}}}}}}}}}, ::String, ::HTTP.URIs.URI, ::Array{Pair{SubString{String},SubString{String}},1}, ::Array{UInt8,1}; redirect_limit::Int64, forwardheaders::Bool, kw::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/HTTP/atT5q/src/RedirectRequest.jl:24
+   [14] request(::Type{RedirectLayer{BasicAuthLayer{MessageLayer{RetryLayer{ExceptionLayer{ConnectionPoolLayer{StreamLayer{Union{}}}}}}}}}, ::String, ::HTTP.URIs.URI, ::Array{Pair{SubString{String},SubString{String}},1}, ::Array{UInt8,1}) at /home/jack/.julia/packages/HTTP/atT5q/src/RedirectRequest.jl:21
+   [15] request(::String, ::String, ::Array{Pair{String,String},1}, ::Array{UInt8,1}; headers::Array{Pair{String,String},1}, body::Array{UInt8,1}, query::Nothing, kw::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/HTTP/atT5q/src/HTTP.jl:314
+   [16] request at /home/jack/.julia/packages/HTTP/atT5q/src/HTTP.jl:314 [inlined] (repeats 2 times)
+   [17] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:11
+   [18] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [19] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:5
+   [20] eval(::Module, ::Any) at ./boot.jl:331
+   [21] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [22] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:4
+   [23] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [24] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:4
+   [25] eval(::Module, ::Any) at ./boot.jl:331
+   [26] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [27] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:3
+   [28] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [29] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_content_negotiation.jl:3
+   [30] eval(::Module, ::Any) at ./boot.jl:331
+   [31] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
+   [32] include(::Function, ::Module, ::String) at ./Base.jl:380
+   [33] include(::Module, ::String) at ./Base.jl:368
+   [34] top-level scope at /home/jack/.julia/packages/TestSetExtensions/lB7xG/src/TestSetExtensions.jl:40
+   [35] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
+   [36] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [37] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
+   [38] include(::String) at ./client.jl:457
+   [39] top-level scope at none:6
+   [40] eval(::Module, ::Any) at ./boot.jl:331
+   [41] exec_options(::Base.JLOptions) at ./client.jl:272
+   [42] _start() at ./client.jl:506
+  
+=====================================================
+
+Web Server starting at http://127.0.0.1:8000 
+
+Web Server running at http://127.0.0.1:8000 
+......
+Web Server starting at http://127.0.0.1:8000 
+
+Web Server running at http://127.0.0.1:8000 
+......
+Web Server starting at http://127.0.0.1:8000 
+
+Web Server running at http://127.0.0.1:8000 
+......
+Web Server starting at http://127.0.0.1:8000 
+
+Web Server running at http://127.0.0.1:8000 
+......
+Web Server starting at http://127.0.0.1:8000 
+
+Web Server running at http://127.0.0.1:8000 
+......
+Web Server starting at http://127.0.0.1:8000 
+
+Web Server running at http://127.0.0.1:8000 
+......
+Web Server starting at http://127.0.0.1:8000 
+
+Web Server running at http://127.0.0.1:8000 
+.........
+Web Server starting at http://127.0.0.1:8000 
+
+Web Server running at http://127.0.0.1:8000 
+.........
+Web Server starting at http://127.0.0.1:8000 
+
+Web Server running at http://127.0.0.1:8000 
+.......
+tests_files_vars_rendering: ..............
+tests_flax_control_flow_rendering: ..
+tests_flax_views_rendering: ......
+tests_fullstack_app: 
+ _____         _
+|   __|___ ___|_|___
+|  |  | -_|   | | -_|
+|_____|___|_|_|_|___|
+
+| Web: https://genieframework.com
+| GitHub: https://github.com/genieframework/Genie.jl
+| Docs: https://genieframework.github.io/Genie.jl/dev
+| Gitter: https://gitter.im/essenciary/Genie.jl
+| Twitter: https://twitter.com/GenieMVC
+
+Genie v1.1.0
+Active env: DEV
+
+Loading initializers[0K[0KLoading helpers[0K[0KLoading lib[0K[0KLoading resources[0K[0KLoading plugins[0K[0KLoading routes[0K[0K[0K
+Ready! 
+
+
+Web Server starting at http://127.0.0.1:8000 
+
+Web Server running at http://127.0.0.1:8000 
+[ Info: 2020-08-30 22:13:07 New controller created at /tmp/jl_b1Sfdw/fullstack_test/app/resources/foo/FooController.jl
+...┌ Error: 2020-08-30 22:13:08 Base.IOError("listen: address already in use (EADDRINUSE)", -98)
+└ @ Genie.AppServer ~/.julia/packages/Genie/rqHFz/src/AppServer.jl:79
+┌ Warning: 2020-08-30 22:13:08 Sessions folder /tmp/jl_b1Sfdw/fullstack_test/sessions does not exist
+└ @ Genie.FileSession ~/.julia/packages/Genie/rqHFz/src/session_adapters/FileSession.jl:15
+[ Info: 2020-08-30 22:13:08 Creating sessions folder at /tmp/jl_b1Sfdw/fullstack_test/sessions
+[ Info: 2020-08-30 22:13:09 /test 200
+.
+tests_genie_generators: [ Info: 2020-08-30 22:13:09 Done! New app created at /tmp/jl_vAspPK
+[ Info: 2020-08-30 22:13:09 Changing active directory to /tmp/jl_vAspPK
+[ Info: 2020-08-30 22:13:09 Installing app dependencies
+┌ Info: 2020-08-30 22:13:10 Your new Genie app is ready!
+│         Run 
+│ julia> Genie.loadapp() 
+│ to load the app's environment
+│         and then 
+│ julia> up() 
+└ to start the web server on port 8000.
+.[ Info: 2020-08-30 22:13:10 Done! New app created at /tmp/jl_pCiFXw
+[ Info: 2020-08-30 22:13:10 Changing active directory to /tmp/jl_pCiFXw
+[ Info: 2020-08-30 22:13:10 Installing app dependencies
+┌ Info: 2020-08-30 22:13:10 Your new Genie app is ready!
+│         Run 
+│ julia> Genie.loadapp() 
+│ to load the app's environment
+│         and then 
+│ julia> up() 
+└ to start the web server on port 8000.
+..[ Info: 2020-08-30 22:13:10 Done! New app created at /tmp/jl_Dw3WDl
+[ Info: 2020-08-30 22:13:10 Changing active directory to /tmp/jl_Dw3WDl
+[ Info: 2020-08-30 22:13:10 Installing app dependencies
+┌ Info: 2020-08-30 22:13:11 Your new Genie app is ready!
+│         Run 
+│ julia> Genie.loadapp() 
+│ to load the app's environment
+│         and then 
+│ julia> up() 
+└ to start the web server on port 8000.
+...[ Info: 2020-08-30 22:13:11 Done! New app created at /tmp/jl_XBZrhd
+[ Info: 2020-08-30 22:13:11 Changing active directory to /tmp/jl_XBZrhd
+[ Info: 2020-08-30 22:13:11 Installing app dependencies
+┌ Info: 2020-08-30 22:13:13 Your new Genie app is ready!
+│         Run 
+│ julia> Genie.loadapp() 
+│ to load the app's environment
+│         and then 
+│ julia> up() 
+└ to start the web server on port 8000.
+...[ Info: 2020-08-30 22:13:13 New controller created at /tmp/jl_T5m4t9/app/resources/yazoo/YazooController.jl
+..[ Info: 2020-08-30 22:13:13 New KazooController.jl created at /tmp/jl_rvnMJ5/app/resources/kazoo/KazooController.jl
+┌ Error: 2020-08-30 22:13:13 UndefVarError(:SearchLight)
+└ @ Genie ~/.julia/packages/Genie/rqHFz/src/genie_module.jl:39
+┌ Warning: 2020-08-30 22:13:13 Skipping SearchLight
+└ @ Genie ~/.julia/packages/Genie/rqHFz/src/genie_module.jl:40
+..[ Info: 2020-08-30 22:13:13 New task created at tasks/VavoomTask.jl
+...
+tests_html_attributes_rendering: .........................
+tests_html_rendering: ........................
+tests_js_rendering: ....
+tests_json_rendering: .
+tests_markdown_rendering: ...┌ Warning: 2020-08-30 22:13:23 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
+└ @ string:2
+┌ Warning: 2020-08-30 22:13:23 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
+└ @ string:8
+.┌ Warning: 2020-08-30 22:13:24 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
+└ @ string:2
+┌ Warning: 2020-08-30 22:13:24 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
+└ @ string:8
+.┌ Warning: 2020-08-30 22:13:28 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
+└ @ string:2
+┌ Warning: 2020-08-30 22:13:28 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
+└ @ string:8
+.
+tests_router: 
+tests_vars_rendering: ....
+
+
+Test Summary:                                                                                | Pass  Fail  Error  Broken  Total
+Genie tests                                                                                  |  231     2      2       1    236
+  AppServer functionality                                                                    |    8     2                    10
+    Start/stop servers                                                                       |    6     2                     8
+    Update config when custom startup args                                                   |    2                           2
+  Assets functionality                                                                       |   12                          12
+  Sessions functionality                                                                     |                 1              1
+    Assets paths                                                                             |                 1              1
+  Advanced rendering                                                                         |    3                    1      4
+  Assets rendering                                                                           |    3                           3
+  Basic rendering                                                                            |   22                          22
+  Caching                                                                                    |    7                           7
+  App Config                                                                                 |    8                           8
+  Content negotiation                                                                        |   61            1             62
+    Response type matches request type                                                       |   24            1             25
+      Not found matches request type -- Content-Type -- custom HTML Genie page               |                 1              1
+      Not found matches request type -- Accept -- custom HTML Genie page                     |    6                           6
+      Not found matches request type -- Content-Type -- custom JSON Genie handler            |    6                           6
+      Not found matches request type -- Accept -- custom JSON Genie handler                  |    6                           6
+      Not found matches request type -- Content-Type -- custom text Genie handler            |    6                           6
+    Not found matches request type -- Content-Type -- unknown content type get same response |    6                           6
+    Not found matches request type -- Accept -- unknown content type get same response       |    6                           6
+    Custom error handler for unknown types                                                   |    9                           9
+    Custom error handler for known types                                                     |    9                           9
+    Order of accept preferences                                                              |    7                           7
+  Files vars rendering                                                                       |   14                          14
+  Control flow rendering                                                                     |    2                           2
+  HTML+Julia rendering                                                                       |    6                           6
+  Fullstack app                                                                              |    4                           4
+  Create new app                                                                             |   16                          16
+  HTML attributes rendering                                                                  |   25                          25
+  HTML rendering                                                                             |   24                          24
+  JS rendering                                                                               |    4                           4
+  JS rendering                                                                               |    1                           1
+  Markdown rendering                                                                         |    6                           6
+  Router tests                                                                               |                            No tests
+  Vars rendering                                                                             |    4                           4

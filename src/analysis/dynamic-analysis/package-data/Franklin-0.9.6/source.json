@@ -1,0 +1,313 @@
+{
+  "eval_info": {
+    "call_count": 840,
+    "stack_traces": [
+      {
+        "count": 629,
+        "last_call": "eval at Franklin.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 360,
+              "ast_head": "call"
+            },
+            {
+              "count": 93,
+              "ast_head": "String"
+            },
+            {
+              "count": 89,
+              "ast_head": "Bool"
+            },
+            {
+              "count": 31,
+              "ast_head": "Int64"
+            },
+            {
+              "count": 31,
+              "ast_head": "vect"
+            },
+            {
+              "count": 9,
+              "ast_head": "tuple"
+            },
+            {
+              "count": 8,
+              "ast_head": "toplevel"
+            },
+            {
+              "count": 6,
+              "ast_head": "comprehension"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-pi"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-nothing"
+            }
+          ]
+        }
+      },
+      {
+        "count": 119,
+        "last_call": "(::Franklin.var\"#75#77\"{Module,Array{Any,1},Int64})() at run.jl:64",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 52,
+              "ast_head": "call"
+            },
+            {
+              "count": 36,
+              "ast_head": "="
+            },
+            {
+              "count": 11,
+              "ast_head": "using"
+            },
+            {
+              "count": 5,
+              "ast_head": "*="
+            },
+            {
+              "count": 3,
+              "ast_head": "+="
+            },
+            {
+              "count": 3,
+              "ast_head": "macrocall"
+            },
+            {
+              "count": 3,
+              "ast_head": "ref"
+            },
+            {
+              "count": 2,
+              "ast_head": "toplevel"
+            },
+            {
+              "count": 1,
+              "ast_head": "for"
+            },
+            {
+              "count": 1,
+              "ast_head": "String"
+            },
+            {
+              "count": 1,
+              "ast_head": "Int64"
+            },
+            {
+              "count": 1,
+              "ast_head": "const"
+            }
+          ]
+        }
+      },
+      {
+        "count": 56,
+        "last_call": "resolve_code_block(::SubString{String}) at codeblock.jl:115",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 56,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 14,
+        "last_call": "(::Franklin.var\"#70#72\"{String})() at module.jl:37",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 14,
+              "ast_head": "module"
+            }
+          ]
+        }
+      },
+      {
+        "count": 8,
+        "last_call": "#99 at mddefs.jl:25 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 7,
+              "ast_head": "="
+            },
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 6,
+        "last_call": "convert_html_fblock(::Franklin.HFun) at functions.jl:12",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 6,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": "resolve_lxcom(::Franklin.LxCom, ::Array{Franklin.LxDef,1}; inmath::Bool) at latex.jl:17",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 5,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "eval(::Expr) at Franklin.jl:1",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at module.jl:14",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "const"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at module.jl:21",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "="
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 423,
+          "ast_head": "call"
+        },
+        {
+          "count": 94,
+          "ast_head": "String"
+        },
+        {
+          "count": 89,
+          "ast_head": "Bool"
+        },
+        {
+          "count": 56,
+          "ast_head": "block"
+        },
+        {
+          "count": 44,
+          "ast_head": "="
+        },
+        {
+          "count": 32,
+          "ast_head": "Int64"
+        },
+        {
+          "count": 31,
+          "ast_head": "vect"
+        },
+        {
+          "count": 14,
+          "ast_head": "module"
+        },
+        {
+          "count": 11,
+          "ast_head": "using"
+        },
+        {
+          "count": 10,
+          "ast_head": "toplevel"
+        },
+        {
+          "count": 9,
+          "ast_head": "tuple"
+        },
+        {
+          "count": 6,
+          "ast_head": "comprehension"
+        },
+        {
+          "count": 5,
+          "ast_head": "*="
+        },
+        {
+          "count": 3,
+          "ast_head": "+="
+        },
+        {
+          "count": 3,
+          "ast_head": "macrocall"
+        },
+        {
+          "count": 3,
+          "ast_head": "ref"
+        },
+        {
+          "count": 2,
+          "ast_head": "function"
+        },
+        {
+          "count": 2,
+          "ast_head": "const"
+        },
+        {
+          "count": 1,
+          "ast_head": "for"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-nothing"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-pi"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 2,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},5],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},64],[{\"astHead\":\"for\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},14],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},11],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},215],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},477],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},44]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

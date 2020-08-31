@@ -1,0 +1,91 @@
+{
+  "eval_info": {
+    "call_count": 11,
+    "stack_traces": [
+      {
+        "count": 8,
+        "last_call": "eval(::Module, ::Expr) at Base.jl:39",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 8,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "initmeta(::Module) at Docs.jl:79",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "const"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "@static(::LineNumberNode, ::Module, ::Any) at osutils.jl:19",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "call"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 8,
+          "ast_head": "block"
+        },
+        {
+          "count": 2,
+          "ast_head": "const"
+        },
+        {
+          "count": 1,
+          "ast_head": "call"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},8],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},11]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 2,
+    "stack_traces": [
+      {
+        "count": 2,
+        "last_call": "show_backtrace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "identity",
+              "count": 2
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "identity",
+          "count": 2
+        }
+      ]
+    }
+  }
+}

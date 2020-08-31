@@ -1,0 +1,295 @@
+{
+  "eval_info": {
+    "call_count": 182,
+    "stack_traces": [
+      {
+        "count": 49,
+        "last_call": "eval at DiffEqBase.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 49,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 29,
+        "last_call": "eval at ArrayInterface.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 29,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 25,
+        "last_call": "eval(::Expr) at CuArrays.jl:1",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 25,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 19,
+        "last_call": "eval at DiffEqFlux.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 19,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 13,
+        "last_call": "eval at DiffEqSensitivity.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 13,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 12,
+        "last_call": "eval at Zygote.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 12,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 9,
+        "last_call": "eval at RecursiveArrayTools.jl:3 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 9,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": "top-level scope at SafeTestsets.jl:23",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 5,
+              "ast_head": "module"
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": "eval at ChainRules.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 4,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": "eval at DiffEqNoiseProcess.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 4,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "eval at SparseDiffTools.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 3,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "eval at CuArrays.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "eval at NNlib.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "eval at Tracker.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "eval at ExponentialUtilities.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at forwarddiff.jl:44",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "define_typeinf_code2() at reflection.jl:9",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 176,
+          "ast_head": "block"
+        },
+        {
+          "count": 5,
+          "ast_head": "module"
+        },
+        {
+          "count": 1,
+          "ast_head": "function"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 1,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},23],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1533],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},150],[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},29],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},5],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},25],[{\"astHead\":\"if\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},6],[{\"astHead\":\"export\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 4,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:69",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:41",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "do_artifact_str",
+          "count": 4
+        }
+      ]
+    }
+  }
+}

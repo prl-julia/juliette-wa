@@ -1,0 +1,603 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+UTILS-1
+Test Summary: | Pass  Total
+set_paths!    |   12     12
+Test Summary: | Pass  Total
+outp_path     |   12     12
+Test Summary: | Pass  Total
+Paths         |    8      8
+Test Summary: | Pass  Total
+Set vars      |    5      5
+Test Summary: | Pass  Total
+Def+coms      |    2      2
+UTILS-2
+Test Summary: | Pass  Total
+strings       |    7      7
+Test Summary: | Pass  Total
+ocblock       |    2      2
+Test Summary: | Pass  Total
+isexactly     |   18     18
+Test Summary: | Pass  Total
+timeittook    |    1      1
+Test Summary: | Pass  Total
+refstring     |    8      8
+Test Summary: | Pass  Total
+misc-html     |    8      8
+Test Summary: | Pass  Total
+misc-html 2   |    4      4
+Test Summary: | Pass  Total
+match_url     |    8      8
+Test Summary: | Pass  Total
+check_type    |    7      7
+Test Summary: | Pass  Total
+Date locales  |    4      4
+Test Summary: | Pass  Total
+dict-inv      |    5      5
+Test Summary: | Pass  Total
+get_url       |    6      6
+Test Summary: | Pass  Total
+context       |    6      6
+Test Summary: | Pass  Total
+show          |    2      2
+Test Summary: | Pass  Total
+ocbe          |    1      1
+Test Summary: | Pass  Total
+lxbe          |    7      7
+Test Summary: | Pass  Total
+Unfound       |    1      1
+Test Summary: | Pass  Total
+H-For         |    4      4
+Test Summary: | Pass  Total
+HToc          |    2      2
+Test Summary: | Pass  Total
+misc-html     |   11     11
+Test Summary: | Pass  Total
+misc-html 2   |    4      4
+Test Summary: | Pass  Total
+html/hide     |    3      3
+Test Summary: | Pass  Total
+html_code     |    1      1
+Test Summary: | Pass  Total
+html_content  |    1      1
+Test Summary: | Pass  Total
+latex         |    8      8
+Test Summary: | Pass  Total
+assign        |    2      2
+Test Summary: | Pass  Total
+esclink       |   13     13
+Test Summary: | Pass  Total
+fndef         |    1      1
+Test Summary: | Pass  Total
+html-ent      |   12     12
+Test Summary: | Pass  Total
+code          |   12     12
+Test Summary: | Pass  Total
+hb-if         |    6      6
+Test Summary: | Pass  Total
+hb-else       |    4      4
+Test Summary: | Pass  Total
+hb-elseif     |    6      6
+Test Summary: | Pass  Total
+hb-end        |    4      4
+Test Summary: | Pass  Total
+hb-isdef      |    8      8
+Test Summary: | Pass  Total
+hb-isndef     |    8      8
+Test Summary: | Pass  Total
+hb-ispage     |    2      2
+Test Summary: | Pass  Total
+hb-isnotpage  |    2      2
+Test Summary: | Pass  Total
+hb-for        |    9      9
+Test Summary: | Pass  Total
+hb-fun-0      |    6      6
+Test Summary: | Pass  Total
+hb-fun-1      |    6      6
+Test Summary: | Pass  Total
+hb-fun-2      |    4      4
+Test Summary: | Pass  Total
+ch-for        |    5      5
+🍺
+MANAGER
+Test Summary: | Pass  Total
+Prep outdir   |    4      4
+🐝 Testing file tracking...:
+tracking new file 'config.md'.
+tracking new file 'index.html'.
+tracking new file 'index.md'.
+tracking new file 'blah.md'.
+tracking new file 'temp.html'.
+tracking new file 'temp.rnd'.
+tracking new file 'temp.css'.
+Test Summary: | Pass  Total
+Scan dir      |    4      4
+Test Summary: | Pass  Total
+Config+write  |    4      4
+Test Summary: | Pass  Total
+Part convert  |    2      2
+🐝 Testing error message...:
+Test Summary: | Pass  Total
+Err procfile  |    1      1
+Test Summary: | Pass  Total
+Prep outdir   |    3      3
+🐝 Testing file tracking...:
+tracking new file 'blah.md'.
+tracking new file 'config.md'.
+tracking new file 'index.html'.
+tracking new file 'index.md'.
+tracking new file 'temp.html'.
+tracking new file 'temp.rnd'.
+tracking new file 'temp.css'.
+tracking new file 'foo.js'.
+Test Summary: | Pass  Total
+Scan dir      |    4      4
+Test Summary: | Pass  Total
+Config+write  |    4      4
+Test Summary: | Pass  Total
+Part convert  |    4      4
+🐝 Testing error message...:
+Test Summary: | Pass  Total
+Err procfile  |    1      1
+Test Summary: | Pass  Total
+RSSItem       |    8      8
+Test Summary: | Pass  Total
+RSSbasics     |    9      9
+Test Summary: | Pass  Total
+RSSbasics     |    9      9
+Test Summary: | Pass  Total
+config        |    6      6
+Test Summary: | Pass  Total
+config        |    6      6
+Test Summary: | Pass  Total
+i381          |    1      1
+Test Summary: | Pass  Total
+ignore/fs2    |    3      3
+Test Summary: | Pass  Total
+ignore/fs1    |    3      3
+→ Initial full pass...
+Test Summary: | Pass  Total
+Scope (#412)  |    2      2
+→ Initial full pass...
+→ Initial full pass...
+→ Initial full pass...
+→ Initial full pass...
+→ Initial full pass...
+→ Initial full pass...
+Test Summary: | Pass  Total
+Paginate      |   16     16
+🍺
+PARSER/MD+LX
+Test Summary: | Pass  Total
+P:1:find-tok  |   21     21
+Test Summary: | Pass  Total
+P:1:ctok      |   13     13
+Test Summary: | Pass  Total
+P:1:val-fn    |    3      3
+Test Summary: | Pass  Total
+P:1:val-hd    |    6      6
+Test Summary: | Pass  Total
+P:1:fib       |   22     22
+Test Summary: | Pass  Total
+P:2:blk       |    5      5
+Test Summary: | Pass  Total
+P:2:blk-ind   |    7      7
+Test Summary: | Pass  Total
+P:2:blk-indF  |    7      7
+Test Summary: | Pass  Total
+More ind      |    1      1
+Test Summary: | Pass  Total
+P:2:blk-{}    |    5      5
+Test Summary: | Pass  Total
+P:2:blk-[]    |    6      6
+Test Summary: | Pass  Total
+Find Tokens   |    6      6
+Test Summary: | Pass  Total
+Find blocks   |    8      8
+Test Summary: | Pass  Total
+Unicode lx    |    4      4
+Test Summary: | Pass  Total
+Lx defs+coms  |   13     13
+Test Summary: | Pass  Total
+Lxdefs 2      |    8      8
+Test Summary: | Pass  Total
+Lxcoms 2      |    9      9
+Test Summary: | Pass  Total
+lxcoms3       |    5      5
+Test Summary: | Pass  Total
+Merge-blocks  |   13     13
+Test Summary: | Pass  Total
+Header blocks |    8      8
+Test Summary: | Pass  Total
+Line skip     |    1      1
+Test Summary: | Pass  Total
+Header+lx     |    5      5
+Test Summary: | Pass  Total
+Bold x*       |    2      2
+Test Summary: | Pass  Total
+Bold code     |    1      1
+Test Summary: | Pass  Total
+Tickssss      |   14     14
+Test Summary: | Pass  Total
+Nested ind    |    3      3
+Test Summary: | Pass  Total
+Double brace  |    2      2
+Test Summary: | Pass  Total
+Double brace2 |    1      1
+Test Summary: | Pass  Total
+Hz rule       |    4      4
+Test Summary: | Pass  Total
+mathunicode   |    1      1
+Test Summary: | Pass  Total
+emoji-basics  |    6      6
+Test Summary: | Pass  Total
+footnotes     |    2      2
+Test Summary: | Pass  Total
+Fn in code    |    1      1
+Test Summary: | Pass  Total
+lx++1         |    1      1
+Test Summary: | Pass  Total
+indentation   |   11     11
+Test Summary: | Pass  Total
+ind+lx        |    1      1
+Test Summary: | Pass  Total
+Bad cases     |    3      3
+Test Summary: | Pass  Total
+Script        |    1      1
+Test Summary: | Pass  Total
+div-dbb       |    4      4
+Test Summary: | Pass  Total
+iss#502       |    1      1
+🍺
+EVAL
+Test Summary: | Pass  Total
+utils         |   10     10
+Test Summary: | Pass  Total
+parse_code    |    7      7
+Test Summary: | Pass  Total
+run_code      |   10     10
+Test Summary: | Pass  Total
+i462          |    2      2
+Test Summary: | Pass  Total
+unixify       |    4      4
+Test Summary: | Pass  Total
+join_rpath    |    1      1
+Test Summary: | Pass  Total
+parse_rpath   |   13     13
+Test Summary: | Pass  Total
+resolve_rpath |    9      9
+Test Summary: | Pass  Total
+form_cpaths   |    6      6
+Test Summary: | Pass  Total
+unixify       |    4      4
+Test Summary: | Pass  Total
+join_rpath    |    1      1
+Test Summary: | Pass  Total
+parse_rpath   |   13     13
+Test Summary: | Pass  Total
+resolve_rpath |    9      9
+Test Summary: | Pass  Total
+form_cpaths   |    6      6
+Test Summary: | Pass  Total
+parse fenced  |   12     12
+Test Summary: | Pass  Total
+resolve code  |    4      4
+Test Summary: | Pass  Total
+Evalcode      |    7      7
+Test Summary: | Pass  Total
+Eval (errs)   |    2      2
+Test Summary: | Pass  Total
+Eval (rinput) |   10     10
+Test Summary: | Pass  Total
+Eval (module) |    1      1
+Test Summary: | Pass  Total
+Eval (img)    |    1      1
+Test Summary: | Pass  Total
+Eval (throw)  |    2      2
+Test Summary: | Pass  Total
+Eval (nojl)   |    2      2
+Test Summary: | Pass  Total
+eval #186     |    1      1
+Test Summary: | Pass  Total
+show          |    2      2
+Test Summary: | Pass  Total
+Evalcode      |    7      7
+Test Summary: | Pass  Total
+Eval (errs)   |    2      2
+Test Summary: | Pass  Total
+Eval (rinput) |   10     10
+Test Summary: | Pass  Total
+Eval (module) |    1      1
+Test Summary: | Pass  Total
+Eval (img)    |    1      1
+Test Summary: | Pass  Total
+Eval (throw)  |    2      2
+Test Summary: | Pass  Total
+Eval (nojl)   |    2      2
+Test Summary: | Pass  Total
+eval #186     |    1      1
+Test Summary: | Pass  Total
+show          |    3      3
+Test Summary: | Pass  Total
+locvar        |    1      1
+Test Summary: | Pass  Total
+fig/rpath     |    4      4
+Test Summary: | Pass  Total
+show          |    1      1
+CONVERTER/MD
+Test Summary: | Pass  Total
+Partial MD    |    7      7
+Test Summary: | Pass  Total
+Inter Md 2    |    1      1
+Test Summary: | Pass  Total
+Latex eqa     |    4      4
+Test Summary: | Pass  Total
+MD>HTML       |    3      3
+Test Summary: | Pass  Total
+headers       |    1      1
+Test Summary: | Pass  Total
+issue163      |    8      8
+Test Summary: | Pass  Total
+TOC           |    1      1
+Test Summary: | Pass  Total
+TOC           |    1      1
+Test Summary: | Pass  Total
+TOC-fs2       |    1      1
+Test Summary: | Pass  Total
+TOC-fs2       |    1      1
+Test Summary: | Pass  Total
+Backslashes   |   11     11
+Test Summary: | Pass  Total
+Backslashes2  |    2      2
+Test Summary: | Pass  Total
+Backtick      |    1      1
+Test Summary: | Pass  Total
+HTMLEnts      |    2      2
+Test Summary: | Pass  Total
+DoubleTicks   |   31     31
+Test Summary: | Pass  Total
+\ and `       |    1      1
+Test Summary: | Pass  Total
+i198          |    1      1
+Test Summary: | Pass  Total
+fixlinks      |    1      1
+Test Summary: | Pass  Total
+fixlinks2     |    1      1
+Test Summary: | Pass  Total
+fixlinks3     |    1      1
+Test Summary: | Pass  Total
+IndCode       |    2      2
+Test Summary: | Pass  Total
+More ``       |    1      1
+Test Summary: | Pass  Total
+Issue 266     |    1      1
+Test Summary: | Pass  Total
+TOML lang     |    2      2
+Test Summary: | Pass  Total
+latex-wspace  |    4      4
+Test Summary: | Pass  Total
+latex-wspmath |    1      1
+Test Summary: | Pass  Total
+code-wspace   |    1      1
+Test Summary: | Pass  Total
+auto html esc |    1      1
+Test Summary: | Pass  Total
+Hyperref      |    7      7
+Test Summary: | Pass  Total
+Href-space    |    3      3
+Test Summary: | Pass  Total
+Eqref         |    3      3
+Test Summary: | Pass  Total
+preprocess    |   28     28
+Test Summary: | Pass  Total
+mddefs1       |    9      9
+Test Summary: | Pass  Total
+mdd+indent    |    3      3
+Test Summary: | Pass  Total
+mddefblock    |    4      4
+Test Summary: | Pass  Total
+tagpages      |   11     11
+Test Summary: | Pass  Total
+tags          |   12     12
+🍺
+CONVERTER/HTML
+Test Summary: | Pass  Total
+Cblock+h-fill |    7      7
+Test Summary: | Pass  Total
+h-insert      |    3      3
+Test Summary: | Pass  Total
+h-insert-fs2  |    3      3
+Test Summary: | Pass  Total
+cond-insert   |    1      1
+Test Summary: | Pass  Total
+cond-insert 2 |    2      2
+Test Summary: | Pass  Total
+escape-coms   |    1      1
+Test Summary: | Pass  Total
+Cblock+empty  |   10     10
+Test Summary: | Pass  Total
+Cond ispage   |    2      2
+Test Summary: | Pass  Total
+Cond isempty  |    4      4
+Test Summary: | Pass  Total
+Non-nested    |    3      3
+Test Summary: | Pass  Total
+Nested        |    4      4
+Test Summary: | Pass  Total
+h-for         |    6      6
+Test Summary: | Pass  Total
+h-for2        |    1      1
+Test Summary: | Pass  Total
+h-for3        |    2      2
+Test Summary: | Pass  Total
+for-file      |    1      1
+🍺
+CONVERTER/LX
+Test Summary: | Pass  Total
+LX input      |    3      3
+Test Summary: | Pass  Total
+Input MD      |    1      1
+Test Summary: | Pass  Total
+LX input      |    3      3
+Test Summary: | Pass  Total
+Input MD      |    1      1
+Test Summary: | Pass  Total
+Input err     |    2      2
+Test Summary: | Pass  Total
+figalt, fig   |    3      3
+Test Summary: | Pass  Total
+table         |    6      6
+Test Summary: | Pass  Total
+figalt, fig   |    3      3
+Test Summary: | Pass  Total
+table         |    6      6
+🍺
+GLOBAL
+Test Summary: | Pass  Total
+∫ newcom      |    1      1
+Test Summary: | Pass  Total
+∫ math        |    1      1
+Test Summary: | Pass  Total
+∫ re-com      |    1      1
+Test Summary: | Pass  Total
+∫ div         |    1      1
+Test Summary: | Pass  Total
+∫ code-l      |    1      1
+Test Summary: | Pass  Total
+∫ math-br     |    1      1
+Test Summary: | Pass  Total
+∫ insert      |    4      4
+Test Summary: | Pass  Total
+∫ br-rge      |    1      1
+Test Summary: | Pass  Total
+∫ cond        |    3      3
+Test Summary: | Pass  Total
+∫ recurs      |    2      2
+Test Summary: | Pass  Total
+∫ label       |    1      1
+Test Summary: | Pass  Total
+HTML escape   |    1      1
+Test Summary: | Pass  Total
+Code blocks   |    1      1
+Test Summary: | Pass  Total
+Table         |    1      1
+Test Summary: | Pass  Total
+Table-fs2     |    1      1
+Test Summary: | Pass  Total
+Auto title    |    1      1
+Test Summary: | Pass  Total
+i 430         |    1      1
+Test Summary: | Pass  Total
+i 419         |    2      2
+Test Summary: | Pass  Total
+Ordering-1    |    3      3
+Test Summary: | Pass  Total
+Ordering-2    |    3      3
+Test Summary: | Pass  Total
+Ordering-3    |    4      4
+Test Summary: | Pass  Total
+Ordering-4    |    3      3
+Test Summary: | Pass  Total
+Ordering-5    |    2      2
+Test Summary: | Pass  Total
+Issue 326     |    2      2
+✓ Website folder generated at "basic" (now the current directory).
+→ Use serve() from Franklin to see the website in your browser.
+→ Initial full pass...
+Verifying links... [you don't seem online ✗]All internal links verified ✓.      
+→ Full pass (no pre-rendering)     [done  32.6s]                               
+Test Summary: | Pass  Total
+Gen&Opt       |   16     16
+Test Summary: | Pass  Total
+prerender     |    3      3
+Test Summary: | Pass  Total
+RSS gen       |    7      7
+Test Summary: | Pass  Total
+EvalOrder     |    4      4
+Test Summary: | Pass  Total
+EvalOrder2    |    2      2
+TEMPLATING
+Test Summary: | Pass  Total
+for-basic     |    3      3
+→ Initial full pass...
+Test Summary: | Pass  Total
+fill2         |    2      2
+UTILS FILE
+Test Summary: | Pass  Total
+utils1        |    2      2
+Test Summary: | Pass  Total
+utils:hfun    |    2      2
+Test Summary: | Pass  Total
+utils:lxfun   |    2      2
+Test Summary: | Pass  Total
+utils:lxfun2  |    1      1
+INTEGRATION
+Test Summary: | Pass  Total
+Literate-0    |    2      2
+Test Summary: | Pass  Total
+Literate-b    |    3      3
+Test Summary: | Pass  Total
+Literate-c    |    3      3
+Test Summary: | Pass  Total
+Literate-0    |    2      2
+Test Summary: | Pass  Total
+Literate-b    |    6      6
+Test Summary: | Pass  Total
+Literate-c    |    3      3
+Test Summary: | Pass  Total
+(no)show      |    1      1
+→ Initial full pass...
+Test Summary: | Pass  Total
+redirect      |    5      5
+HTML validation
+Test Summary: | Pass  Total
+close:headers |    2      2
+Test Summary: | Pass  Total
+close:div     |    1      1
+Test Summary: | Pass  Total
+close:list+i  |    1      1
+Test Summary: | Pass  Total
+ending p      |    1      1
+Test Summary: | Pass  Total
+1/noblock nop |    1      1
+Test Summary: | Pass  Total
+2/block nop   |    1      1
+Test Summary: | Pass  Total
+3/block wp    |    1      1
+Test Summary: | Pass  Total
+4/mixing      |    2      2
+Test Summary: | Pass  Total
+5/nesting     |    3      3
+Test Summary: | Pass  Total
+6/div-mix     |    1      1
+Test Summary: | Pass  Total
+simplify-ps   |    3      3
+Test Summary: | Pass  Total
+div-note      |    3      3
+COVERAGE
+Test Summary: | Pass  Total
+Conv-lx       |    1      1
+Test Summary: | Pass  Total
+Conv-html     |    8      8
+Test Summary: | Pass  Total
+Conv-md       |    3      3
+Test Summary: | Pass  Total
+Franklin      |    1      1
+Test Summary: | Pass  Total
+RSS           |    2      2
+Test Summary: | Pass  Total
+parser-lx     |    3      3
+Test Summary: | Pass  Total
+ocblocks      |    1      1
+Test Summary: | Pass  Total
+tofrom        |    2      2
+Test Summary: | Pass  Total
+{{toc}}       |    1      1
+Test Summary: | Pass  Total
+franklin      |    1      1
+Test Summary: | Pass  Total
+filecmp       |    5      5
+😅 😅 😅 😅
+Verifying ip addresses, if online these should succeed.
+Ping Google: ✗.
+Ping GitHub: ✗.
+Ping Baidu:  ✗.

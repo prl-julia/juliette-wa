@@ -1,0 +1,136 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+Done testing symbol_test.sj
+Done testing block_test.sj
+Done testing ntable_test.sj
+Done testing flowcontrol_test.sj
+Done testing input_test.sj
+Done testing output_test.sj
+Done testing numeric_test.sj
+Done testing sympy_test.sj
+Done testing pattern_test.sj
+Done testing integral_derivative_test.sj
+Done testing evaluation_test.sj
+PyError ($(Expr(:escape, :(ccall(#= /home/jack/.julia/packages/PyCall/zqDXB/src/pyfncall.jl:43 =# @pysym(:PyObject_Call), PyPtr, (PyPtr, PyPtr, PyPtr), o, pyargsptr, kw))))) <class 'AttributeError'>
+AttributeError("'Equality' object has no attribute 'as_coefficient'")
+  File "/home/jack/.julia/conda/3/lib/python3.7/site-packages/sympy/core/function.py", line 465, in __new__
+    result = super().__new__(cls, *args, **options)
+  File "/home/jack/.julia/conda/3/lib/python3.7/site-packages/sympy/core/function.py", line 280, in __new__
+    evaluated = cls.eval(*args)
+  File "/home/jack/.julia/conda/3/lib/python3.7/site-packages/sympy/functions/elementary/exponential.py", line 669, in eval
+    coeff = arg.as_coefficient(I)
+
+LoadError("/home/jack/.julia/packages/Symata/1oDeR/symata_test/sjruntests.jl", 68, UndefVarError(:warn))
+Error During Test at /home/jack/.julia/packages/Symata/1oDeR/test/runtests.jl:20
+  Test threw exception
+  Expression: begin
+    runtests()
+    true
+end
+  LoadError: LoadError: UndefVarError: warn not defined
+  Stacktrace:
+   [1] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:126
+   [2] eval(::Expr) at ./client.jl:467
+   [3] runtests() at /home/jack/.julia/packages/Symata/1oDeR/test/runtests.jl:18
+   [4] top-level scope at /home/jack/.julia/packages/Symata/1oDeR/test/runtests.jl:20
+   [5] include(::String) at ./client.jl:457
+   [6] top-level scope at ./none:12
+   [7] eval(::Module, ::Any) at ./boot.jl:331
+   [8] exec_options(::Base.JLOptions) at ./client.jl:272
+   [9] _start() at ./client.jl:506
+  in expression starting at /home/jack/.julia/packages/Symata/1oDeR/symata_test/sjruntests.jl:68
+  in expression starting at none:1
+  caused by [exception 2]
+  LoadError: LoadError: UndefVarError: warn not defined
+  Stacktrace:
+   [1] top-level scope at /home/jack/.julia/packages/Symata/1oDeR/symata_test/sjruntests.jl:71
+   [2] include(::Function, ::Module, ::String) at ./Base.jl:380
+   [3] include at ./Base.jl:368 [inlined]
+   [4] include at /home/jack/.julia/packages/Symata/1oDeR/src/Symata.jl:2 [inlined]
+   [5] run_testsuite at /home/jack/.julia/packages/Symata/1oDeR/src/test.jl:78 [inlined]
+   [6] #do_Tests#43 at /home/jack/.julia/packages/Symata/1oDeR/src/test.jl:104 [inlined]
+   [7] apprules(::Mxpr{:Tests}) at /home/jack/.julia/packages/Symata/1oDeR/src/apprules_core.jl:138
+   [8] meval_apply_all_rules(::Mxpr{:Tests}) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:486
+   [9] meval(::Mxpr{:Tests}) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:470
+   [10] infseval(::Mxpr{:Tests}) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:383
+   [11] doeval at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:28 [inlined]
+   [12] trysymataevaluate(::Mxpr{:Tests}) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:329
+   [13] symataevaluate(::Expr, ::Symata.EvaluateJuliaSyntaxSimple) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:303
+   [14] _sym_inner(::Expr, ::Symata.EvaluateJuliaSyntaxSimple) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:150
+   [15] @sym(::LineNumberNode, ::Module, ::Any) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:140
+   [16] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:123
+   [17] eval(::Expr) at ./client.jl:467
+   [18] runtests() at /home/jack/.julia/packages/Symata/1oDeR/test/runtests.jl:18
+   [19] top-level scope at /home/jack/.julia/packages/Symata/1oDeR/test/runtests.jl:20
+   [20] include(::String) at ./client.jl:457
+   [21] top-level scope at ./none:12
+   [22] eval(::Module, ::Any) at ./boot.jl:331
+   [23] exec_options(::Base.JLOptions) at ./client.jl:272
+   [24] _start() at ./client.jl:506
+  in expression starting at /home/jack/.julia/packages/Symata/1oDeR/symata_test/sjruntests.jl:68
+  in expression starting at none:1
+  caused by [exception 1]
+  PyError ($(Expr(:escape, :(ccall(#= /home/jack/.julia/packages/PyCall/zqDXB/src/pyfncall.jl:43 =# @pysym(:PyObject_Call), PyPtr, (PyPtr, PyPtr, PyPtr), o, pyargsptr, kw))))) <class 'AttributeError'>
+  AttributeError("'Equality' object has no attribute 'as_coefficient'")
+    File "/home/jack/.julia/conda/3/lib/python3.7/site-packages/sympy/core/function.py", line 465, in __new__
+      result = super().__new__(cls, *args, **options)
+    File "/home/jack/.julia/conda/3/lib/python3.7/site-packages/sympy/core/function.py", line 280, in __new__
+      evaluated = cls.eval(*args)
+    File "/home/jack/.julia/conda/3/lib/python3.7/site-packages/sympy/functions/elementary/exponential.py", line 669, in eval
+      coeff = arg.as_coefficient(I)
+  
+  Stacktrace:
+   [1] pyerr_check at /home/jack/.julia/packages/PyCall/zqDXB/src/exception.jl:60 [inlined]
+   [2] pyerr_check at /home/jack/.julia/packages/PyCall/zqDXB/src/exception.jl:64 [inlined]
+   [3] _handle_error(::String) at /home/jack/.julia/packages/PyCall/zqDXB/src/exception.jl:81
+   [4] macro expansion at /home/jack/.julia/packages/PyCall/zqDXB/src/exception.jl:95 [inlined]
+   [5] #110 at /home/jack/.julia/packages/PyCall/zqDXB/src/pyfncall.jl:43 [inlined]
+   [6] disable_sigint at ./c.jl:446 [inlined]
+   [7] __pycall! at /home/jack/.julia/packages/PyCall/zqDXB/src/pyfncall.jl:42 [inlined]
+   [8] _pycall!(::PyCall.PyObject, ::PyCall.PyObject, ::Tuple{PyCall.PyObject}, ::Int64, ::Ptr{Nothing}) at /home/jack/.julia/packages/PyCall/zqDXB/src/pyfncall.jl:29
+   [9] _pycall! at /home/jack/.julia/packages/PyCall/zqDXB/src/pyfncall.jl:11 [inlined]
+   [10] #_#117 at /home/jack/.julia/packages/PyCall/zqDXB/src/pyfncall.jl:86 [inlined]
+   [11] PyObject at /home/jack/.julia/packages/PyCall/zqDXB/src/pyfncall.jl:86 [inlined]
+   [12] |>(::PyCall.PyObject, ::PyCall.PyObject) at ./operators.jl:834
+   [13] sjlog(::Mxpr{:Equal}) at /home/jack/.julia/packages/Symata/1oDeR/src/wrappers.jl:75
+   [14] do_Log(::Mxpr{:Log}, ::Mxpr{:Equal}) at /home/jack/.julia/packages/Symata/1oDeR/src/math_functions.jl:534
+   [15] apprules(::Mxpr{:Log}) at /home/jack/.julia/packages/Symata/1oDeR/src/apprules_core.jl:147
+   [16] meval_apply_all_rules(::Mxpr{:Log}) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:486
+   [17] meval(::Mxpr{:Log}) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:470
+   [18] infseval(::Mxpr{:Log}) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:383
+   [19] doeval at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:28 [inlined]
+   [20] argeval(::Mxpr{:Log}) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:507
+   [21] meval_arguments(::Mxpr{:Thread}) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:540
+   [22] meval(::Mxpr{:Thread}) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:466
+   ... (the last 5 lines are repeated 1 more time)
+   [28] infseval(::Mxpr{:Equal}) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:383
+   [29] doeval at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:28 [inlined]
+   [30] trysymataevaluate(::Mxpr{:Equal}) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:329
+   [31] symataevaluate(::Expr, ::Symata.EvaluateJuliaSyntaxSimple) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:303
+   [32] read_Symata_file(::String, ::Symata.SymataPlainTest) at /home/jack/.julia/packages/Symata/1oDeR/src/IO.jl:77
+   [33] #runtest#42 at /home/jack/.julia/packages/Symata/1oDeR/src/test.jl:72 [inlined]
+   [34] runtest(::Symata.SymataPlainTest, ::String) at /home/jack/.julia/packages/Symata/1oDeR/src/test.jl:71
+   [35] runalltests() at /home/jack/.julia/packages/Symata/1oDeR/symata_test/sjruntests.jl:58
+   [36] top-level scope at /home/jack/.julia/packages/Symata/1oDeR/symata_test/sjruntests.jl:69
+   [37] include(::Function, ::Module, ::String) at ./Base.jl:380
+   [38] include at ./Base.jl:368 [inlined]
+   [39] include at /home/jack/.julia/packages/Symata/1oDeR/src/Symata.jl:2 [inlined]
+   [40] run_testsuite at /home/jack/.julia/packages/Symata/1oDeR/src/test.jl:78 [inlined]
+   [41] #do_Tests#43 at /home/jack/.julia/packages/Symata/1oDeR/src/test.jl:104 [inlined]
+   [42] apprules(::Mxpr{:Tests}) at /home/jack/.julia/packages/Symata/1oDeR/src/apprules_core.jl:138
+   [43] meval_apply_all_rules(::Mxpr{:Tests}) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:486
+   [44] meval(::Mxpr{:Tests}) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:470
+   [45] infseval(::Mxpr{:Tests}) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:383
+   [46] doeval at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:28 [inlined]
+   [47] trysymataevaluate(::Mxpr{:Tests}) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:329
+   [48] symataevaluate(::Expr, ::Symata.EvaluateJuliaSyntaxSimple) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:303
+   [49] _sym_inner(::Expr, ::Symata.EvaluateJuliaSyntaxSimple) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:150
+   [50] @sym(::LineNumberNode, ::Module, ::Any) at /home/jack/.julia/packages/Symata/1oDeR/src/evaluation.jl:140
+   [51] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:123
+   [52] eval(::Expr) at ./client.jl:467
+   [53] runtests() at /home/jack/.julia/packages/Symata/1oDeR/test/runtests.jl:18
+   [54] top-level scope at /home/jack/.julia/packages/Symata/1oDeR/test/runtests.jl:20
+   [55] include(::String) at ./client.jl:457
+   [56] top-level scope at ./none:12
+   [57] eval(::Module, ::Any) at ./boot.jl:331
+   [58] exec_options(::Base.JLOptions) at ./client.jl:272
+  

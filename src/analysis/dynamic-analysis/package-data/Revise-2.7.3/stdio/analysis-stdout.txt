@@ -1,0 +1,6 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+Skipping Base.active_repl
+Skipping Base.active_repl_backend
+Test Failed at /home/jack/.julia/packages/Revise/BqeJF/test/runtests.jl:7
+  Expression: isempty(detect_ambiguities(Revise, Base, Core))
+   Evaluated: isempty(Tuple{Method,Method}[(dump(io::IO, parent::Union{JLD.JLD00.JldFile, JLD.JLD00.JldGroup}, n::Int64, indent) in JLD.JLD00 at /home/jack/.julia/packages/JLD/jeGJb/src/JLD00.jl:885, dump(io::IOContext, x, n::Int64, indent) in Base at show.jl:1930), (write(parent::Union{JLD.JLD00.JldFile, JLD.JLD00.JldGroup}, name::String, data::Union{T, StridedArray{T, N} where N}, astype::String) where T<:Union{Bool, Float32, Float64, Int16, Int32, Int64, Int8, UInt16, UInt32, UInt64, UInt8, String} in JLD.JLD00 at /home/jack/.julia/packages/JLD/jeGJb/src/JLD00.jl:524, write(parent::Union{JLD.JLD00.JldFile, JLD.JLD00.JldGroup}, path::String, data::Array{T,N} where N, astype::AbstractString) where T in JLD.JLD00 at /home/jack/.julia/packages/JLD/jeGJb/src/JLD00.jl:616)])

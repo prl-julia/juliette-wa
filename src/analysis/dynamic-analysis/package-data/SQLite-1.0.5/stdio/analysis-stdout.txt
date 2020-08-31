@@ -1,0 +1,3 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+SQLite.DB(":memory:")Test Summary: | Pass  Total
+basics        |   86     86
