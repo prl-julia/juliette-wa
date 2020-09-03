@@ -162,6 +162,7 @@ hasEval: 9/10
 hasOnlyEval: 6/10
 hasBothEvalIL: 3/10
 hasOnlyIL: 0/10
+inFunCallOrFunNoIL: 1/10
 
 Total Stat:
 * function   [top]       =>   90 in   6 pkgs
