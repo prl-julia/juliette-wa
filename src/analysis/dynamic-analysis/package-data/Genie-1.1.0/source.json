@@ -227,7 +227,8 @@
         "bodylessFuncCount": 0,
         "funcRedefCount": 3,
         "miscCount": 0
-      }
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},3],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3],[{\"astHead\":\"export\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1]]"
     }
   },
   "invokelatest_info": {
@@ -299,15 +300,15 @@
               "count": 1
             },
             {
+              "function_name": "func_f317843e8c9e0ff4083412b839ca14c2576b6f9d",
+              "count": 1
+            },
+            {
               "function_name": "func_2af93cf936abd2fb0be955e5a9e1aa6367e83e67",
               "count": 1
             },
             {
               "function_name": "func_07707e24cefe56020f6a310355c32c2d6648a2f5",
-              "count": 1
-            },
-            {
-              "function_name": "func_322ef705af0413263ce2b514a3467fa5b573245b",
               "count": 1
             },
             {
@@ -348,6 +349,10 @@
             },
             {
               "function_name": "func_4c177e110a0d6f04174a11c81d4198d1a4e16306",
+              "count": 1
+            },
+            {
+              "function_name": "func_75559d0ac6fd16a5f989b33e2949e1fbefdeb4c3",
               "count": 1
             },
             {
@@ -416,10 +421,6 @@
             },
             {
               "function_name": "func_6ff66eaf21710859644ed5acb37022965dae06f4",
-              "count": 1
-            },
-            {
-              "function_name": "func_4a4bed6dc03c9ce375356bff58938560ef4e6e05",
               "count": 1
             },
             {
@@ -509,15 +510,15 @@
           "count": 1
         },
         {
+          "function_name": "func_f317843e8c9e0ff4083412b839ca14c2576b6f9d",
+          "count": 1
+        },
+        {
           "function_name": "func_2af93cf936abd2fb0be955e5a9e1aa6367e83e67",
           "count": 1
         },
         {
           "function_name": "func_07707e24cefe56020f6a310355c32c2d6648a2f5",
-          "count": 1
-        },
-        {
-          "function_name": "func_322ef705af0413263ce2b514a3467fa5b573245b",
           "count": 1
         },
         {
@@ -558,6 +559,10 @@
         },
         {
           "function_name": "func_4c177e110a0d6f04174a11c81d4198d1a4e16306",
+          "count": 1
+        },
+        {
+          "function_name": "func_75559d0ac6fd16a5f989b33e2949e1fbefdeb4c3",
           "count": 1
         },
         {
@@ -626,10 +631,6 @@
         },
         {
           "function_name": "func_6ff66eaf21710859644ed5acb37022965dae06f4",
-          "count": 1
-        },
-        {
-          "function_name": "func_4a4bed6dc03c9ce375356bff58938560ef4e6e05",
           "count": 1
         },
         {

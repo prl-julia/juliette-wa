@@ -211,7 +211,8 @@
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
-      }
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},6],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},42],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},186],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},93]]"
     }
   },
   "invokelatest_info": {

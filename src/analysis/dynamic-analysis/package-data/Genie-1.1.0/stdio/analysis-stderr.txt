@@ -21,9 +21,9 @@ WARNING: Workqueue inconsistency detected: popfirst!(Workqueue).state != :runnab
 WARNING: Workqueue inconsistency detected: popfirst!(Workqueue).state != :runnable
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-Updating `/tmp/jl_QpXm99/Project.toml`
+Updating `/tmp/jl_9XpWcW/Project.toml`
   [682c06a0] + JSON v0.21.0
-No Changes to `/tmp/jl_QpXm99/Manifest.toml`
+No Changes to `/tmp/jl_9XpWcW/Manifest.toml`
 ┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8000"))
 └ @ HTTP.Servers ~/.julia/packages/HTTP/atT5q/src/Servers.jl:273
 ┌ Warning: Interrupted: listen(HTTP.Servers.Server{Nothing,Sockets.TCPServer}(nothing, Sockets.TCPServer(RawFD(0xffffffff) closed), "127.0.0.1", "8000"))
@@ -84,20 +84,15 @@ No Changes to `/tmp/jl_QpXm99/Manifest.toml`
 └ @ Genie.Router ~/.julia/packages/Genie/rqHFz/src/Router.jl:163
 ┌ Error: /notexisting 401
 └ @ Genie.Router ~/.julia/packages/Genie/rqHFz/src/Router.jl:163
-[ Info: Done! New app created at /tmp/jl_Q1Cn8A/fullstack_test
-[ Info: Changing active directory to /tmp/jl_Q1Cn8A/fullstack_test
+[ Info: Done! New app created at /tmp/jl_Vo4EnN/fullstack_test
+[ Info: Changing active directory to /tmp/jl_Vo4EnN/fullstack_test
 [ Info: Installing app dependencies
- Activating new environment at `/tmp/jl_Q1Cn8A/fullstack_test/Project.toml`
+ Activating new environment at `/tmp/jl_Vo4EnN/fullstack_test/Project.toml`
 Path `/home/jack/.julia/dev/Genie` exists and looks like the correct package. Using existing path.
   Resolving package versions...
-  Installed YAML ───────────── v0.4.2
-  Installed LoweredCodeUtils ─ v0.4.9
-  Installed FilePathsBase ──── v0.9.5
-  Installed JuliaInterpreter ─ v0.7.26
-  Installed Revise ─────────── v2.7.4
-Updating `/tmp/jl_Q1Cn8A/fullstack_test/Project.toml`
+Updating `/tmp/jl_Vo4EnN/fullstack_test/Project.toml`
   [c43c736e] + Genie v1.1.0 `~/.julia/dev/Genie`
-Updating `/tmp/jl_Q1Cn8A/fullstack_test/Manifest.toml`
+Updating `/tmp/jl_Vo4EnN/fullstack_test/Manifest.toml`
   [1520ce14] + AbstractTrees v0.3.3
   [c7e460c6] + ArgParse v1.1.0
   [da1fd8a2] + CodeTracking v0.5.12
@@ -150,26 +145,26 @@ Updating `/tmp/jl_Q1Cn8A/fullstack_test/Manifest.toml`
   [cf7118a7] + UUIDs
   [4ec0a83e] + Unicode
   Resolving package versions...
-Updating `/tmp/jl_Q1Cn8A/fullstack_test/Project.toml`
+Updating `/tmp/jl_Vo4EnN/fullstack_test/Project.toml`
   [295af30f] + Revise v2.7.4
-No Changes to `/tmp/jl_Q1Cn8A/fullstack_test/Manifest.toml`
+No Changes to `/tmp/jl_Vo4EnN/fullstack_test/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_Q1Cn8A/fullstack_test/Project.toml`
+Updating `/tmp/jl_Vo4EnN/fullstack_test/Project.toml`
   [e6f89c97] + LoggingExtras v0.4.2
-No Changes to `/tmp/jl_Q1Cn8A/fullstack_test/Manifest.toml`
+No Changes to `/tmp/jl_Vo4EnN/fullstack_test/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_Q1Cn8A/fullstack_test/Project.toml`
+Updating `/tmp/jl_Vo4EnN/fullstack_test/Project.toml`
   [739be429] + MbedTLS v1.0.2
-No Changes to `/tmp/jl_Q1Cn8A/fullstack_test/Manifest.toml`
+No Changes to `/tmp/jl_Vo4EnN/fullstack_test/Manifest.toml`
 [ Info: Starting your brand new Genie app - hang tight!
- Activating environment at `/tmp/jl_Q1Cn8A/fullstack_test/Project.toml`
+ Activating environment at `/tmp/jl_Vo4EnN/fullstack_test/Project.toml`
  Activating environment at `~/.julia/packages/Genie/rqHFz/test/Project.toml`
- Activating new environment at `/tmp/jl_Xl6jAT/Project.toml`
+ Activating new environment at `/tmp/jl_dlUa9N/Project.toml`
 Path `/home/jack/.julia/dev/Genie` exists and looks like the correct package. Using existing path.
   Resolving package versions...
-Updating `/tmp/jl_Xl6jAT/Project.toml`
+Updating `/tmp/jl_dlUa9N/Project.toml`
   [c43c736e] + Genie v1.1.0 `~/.julia/dev/Genie`
-Updating `/tmp/jl_Xl6jAT/Manifest.toml`
+Updating `/tmp/jl_dlUa9N/Manifest.toml`
   [1520ce14] + AbstractTrees v0.3.3
   [c7e460c6] + ArgParse v1.1.0
   [da1fd8a2] + CodeTracking v0.5.12
@@ -222,24 +217,24 @@ Updating `/tmp/jl_Xl6jAT/Manifest.toml`
   [cf7118a7] + UUIDs
   [4ec0a83e] + Unicode
   Resolving package versions...
-Updating `/tmp/jl_Xl6jAT/Project.toml`
+Updating `/tmp/jl_dlUa9N/Project.toml`
   [295af30f] + Revise v2.7.4
-No Changes to `/tmp/jl_Xl6jAT/Manifest.toml`
+No Changes to `/tmp/jl_dlUa9N/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_Xl6jAT/Project.toml`
+Updating `/tmp/jl_dlUa9N/Project.toml`
   [e6f89c97] + LoggingExtras v0.4.2
-No Changes to `/tmp/jl_Xl6jAT/Manifest.toml`
+No Changes to `/tmp/jl_dlUa9N/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_Xl6jAT/Project.toml`
+Updating `/tmp/jl_dlUa9N/Project.toml`
   [739be429] + MbedTLS v1.0.2
-No Changes to `/tmp/jl_Xl6jAT/Manifest.toml`
+No Changes to `/tmp/jl_dlUa9N/Manifest.toml`
  Activating environment at `~/.julia/packages/Genie/rqHFz/test/Project.toml`
- Activating new environment at `/tmp/jl_CUsiN9/Project.toml`
+ Activating new environment at `/tmp/jl_csuZBS/Project.toml`
 Path `/home/jack/.julia/dev/Genie` exists and looks like the correct package. Using existing path.
   Resolving package versions...
-Updating `/tmp/jl_CUsiN9/Project.toml`
+Updating `/tmp/jl_csuZBS/Project.toml`
   [c43c736e] + Genie v1.1.0 `~/.julia/dev/Genie`
-Updating `/tmp/jl_CUsiN9/Manifest.toml`
+Updating `/tmp/jl_csuZBS/Manifest.toml`
   [1520ce14] + AbstractTrees v0.3.3
   [c7e460c6] + ArgParse v1.1.0
   [da1fd8a2] + CodeTracking v0.5.12
@@ -292,24 +287,24 @@ Updating `/tmp/jl_CUsiN9/Manifest.toml`
   [cf7118a7] + UUIDs
   [4ec0a83e] + Unicode
   Resolving package versions...
-Updating `/tmp/jl_CUsiN9/Project.toml`
+Updating `/tmp/jl_csuZBS/Project.toml`
   [295af30f] + Revise v2.7.4
-No Changes to `/tmp/jl_CUsiN9/Manifest.toml`
+No Changes to `/tmp/jl_csuZBS/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_CUsiN9/Project.toml`
+Updating `/tmp/jl_csuZBS/Project.toml`
   [e6f89c97] + LoggingExtras v0.4.2
-No Changes to `/tmp/jl_CUsiN9/Manifest.toml`
+No Changes to `/tmp/jl_csuZBS/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_CUsiN9/Project.toml`
+Updating `/tmp/jl_csuZBS/Project.toml`
   [739be429] + MbedTLS v1.0.2
-No Changes to `/tmp/jl_CUsiN9/Manifest.toml`
+No Changes to `/tmp/jl_csuZBS/Manifest.toml`
  Activating environment at `~/.julia/packages/Genie/rqHFz/test/Project.toml`
- Activating new environment at `/tmp/jl_rwtTxt/Project.toml`
+ Activating new environment at `/tmp/jl_DvkIj1/Project.toml`
 Path `/home/jack/.julia/dev/Genie` exists and looks like the correct package. Using existing path.
   Resolving package versions...
-Updating `/tmp/jl_rwtTxt/Project.toml`
+Updating `/tmp/jl_DvkIj1/Project.toml`
   [c43c736e] + Genie v1.1.0 `~/.julia/dev/Genie`
-Updating `/tmp/jl_rwtTxt/Manifest.toml`
+Updating `/tmp/jl_DvkIj1/Manifest.toml`
   [1520ce14] + AbstractTrees v0.3.3
   [c7e460c6] + ArgParse v1.1.0
   [da1fd8a2] + CodeTracking v0.5.12
@@ -362,24 +357,24 @@ Updating `/tmp/jl_rwtTxt/Manifest.toml`
   [cf7118a7] + UUIDs
   [4ec0a83e] + Unicode
   Resolving package versions...
-Updating `/tmp/jl_rwtTxt/Project.toml`
+Updating `/tmp/jl_DvkIj1/Project.toml`
   [295af30f] + Revise v2.7.4
-No Changes to `/tmp/jl_rwtTxt/Manifest.toml`
+No Changes to `/tmp/jl_DvkIj1/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_rwtTxt/Project.toml`
+Updating `/tmp/jl_DvkIj1/Project.toml`
   [e6f89c97] + LoggingExtras v0.4.2
-No Changes to `/tmp/jl_rwtTxt/Manifest.toml`
+No Changes to `/tmp/jl_DvkIj1/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_rwtTxt/Project.toml`
+Updating `/tmp/jl_DvkIj1/Project.toml`
   [739be429] + MbedTLS v1.0.2
-No Changes to `/tmp/jl_rwtTxt/Manifest.toml`
+No Changes to `/tmp/jl_DvkIj1/Manifest.toml`
  Activating environment at `~/.julia/packages/Genie/rqHFz/test/Project.toml`
- Activating new environment at `/tmp/jl_2GtPvR/Project.toml`
+ Activating new environment at `/tmp/jl_yrF40e/Project.toml`
 Path `/home/jack/.julia/dev/Genie` exists and looks like the correct package. Using existing path.
   Resolving package versions...
-Updating `/tmp/jl_2GtPvR/Project.toml`
+Updating `/tmp/jl_yrF40e/Project.toml`
   [c43c736e] + Genie v1.1.0 `~/.julia/dev/Genie`
-Updating `/tmp/jl_2GtPvR/Manifest.toml`
+Updating `/tmp/jl_yrF40e/Manifest.toml`
   [1520ce14] + AbstractTrees v0.3.3
   [c7e460c6] + ArgParse v1.1.0
   [da1fd8a2] + CodeTracking v0.5.12
@@ -432,17 +427,17 @@ Updating `/tmp/jl_2GtPvR/Manifest.toml`
   [cf7118a7] + UUIDs
   [4ec0a83e] + Unicode
   Resolving package versions...
-Updating `/tmp/jl_2GtPvR/Project.toml`
+Updating `/tmp/jl_yrF40e/Project.toml`
   [295af30f] + Revise v2.7.4
-No Changes to `/tmp/jl_2GtPvR/Manifest.toml`
+No Changes to `/tmp/jl_yrF40e/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_2GtPvR/Project.toml`
+Updating `/tmp/jl_yrF40e/Project.toml`
   [e6f89c97] + LoggingExtras v0.4.2
-No Changes to `/tmp/jl_2GtPvR/Manifest.toml`
+No Changes to `/tmp/jl_yrF40e/Manifest.toml`
   Resolving package versions...
-Updating `/tmp/jl_2GtPvR/Project.toml`
+Updating `/tmp/jl_yrF40e/Project.toml`
   [739be429] + MbedTLS v1.0.2
-No Changes to `/tmp/jl_2GtPvR/Manifest.toml`
+No Changes to `/tmp/jl_yrF40e/Manifest.toml`
  Activating environment at `~/.julia/packages/Genie/rqHFz/test/Project.toml`
  Activating environment at `~/.julia/packages/Genie/rqHFz/test/Project.toml`
  Activating environment at `~/.julia/packages/Genie/rqHFz/test/Project.toml`
@@ -457,7 +452,7 @@ No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Genie
-Status `/tmp/jl_QpXm99/Project.toml`
+Status `/tmp/jl_9XpWcW/Project.toml`
   [c43c736e] Genie v1.1.0
   [cd3eb016] HTTP v0.8.17
   [e6f89c97] LoggingExtras v0.4.2
@@ -471,7 +466,7 @@ Status `/tmp/jl_QpXm99/Project.toml`
   [9a3f8284] Random
   [6462fe0b] Sockets
   [8dfed614] Test
-Status `/tmp/jl_QpXm99/Manifest.toml`
+Status `/tmp/jl_9XpWcW/Manifest.toml`
   [1520ce14] AbstractTrees v0.3.3
   [c7e460c6] ArgParse v1.1.0
   [da1fd8a2] CodeTracking v0.5.11

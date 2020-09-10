@@ -1,7 +1,7 @@
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-No Changes to `/tmp/jl_Et1kJL/Project.toml`
-No Changes to `/tmp/jl_Et1kJL/Manifest.toml`
+No Changes to `/tmp/jl_9fE3Bf/Project.toml`
+No Changes to `/tmp/jl_9fE3Bf/Manifest.toml`
 ERROR: LoadError: Some tests did not pass: 211 passed, 7 failed, 4 errored, 0 broken.
 in expression starting at /home/jack/.julia/packages/Modia/D0Mdu/test/runtests.jl:14
    Updating registry at `~/.julia/registries/General`
@@ -12,7 +12,7 @@ No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Modia
-Status `/tmp/jl_Et1kJL/Project.toml`
+Status `/tmp/jl_9fE3Bf/Project.toml`
   [864edb3b] DataStructures v0.17.20
   [682c06a0] JSON v0.21.0
   [cb905087] Modia v0.3.0
@@ -25,7 +25,7 @@ Status `/tmp/jl_Et1kJL/Project.toml`
   [de0858da] Printf
   [2f01184e] SparseArrays
   [8dfed614] Test
-Status `/tmp/jl_Et1kJL/Manifest.toml`
+Status `/tmp/jl_9fE3Bf/Manifest.toml`
   [1520ce14] AbstractTrees v0.3.3
   [4fba245c] ArrayInterface v2.11.0
   [fa961155] CEnum v0.3.0

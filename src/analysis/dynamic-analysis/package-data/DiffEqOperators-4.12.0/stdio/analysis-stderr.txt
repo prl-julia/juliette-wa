@@ -1,8 +1,8 @@
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-Updating `/tmp/jl_QTM5qT/Project.toml`
+Updating `/tmp/jl_7FfhcK/Project.toml`
   [682c06a0] + JSON v0.21.0
-Updating `/tmp/jl_QTM5qT/Manifest.toml`
+Updating `/tmp/jl_7FfhcK/Manifest.toml`
   [682c06a0] + JSON v0.21.0
   [69de0a69] + Parsers v1.0.10
 ┌ Warning: Assignment to `A` in soft scope is ambiguous because a global variable by the same name exists: `A` will be treated as a new local. Disambiguate by using `local A` to suppress this warning or `global A` to assign to the existing global variable.
@@ -16,7 +16,7 @@ No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing DiffEqOperators
-Status `/tmp/jl_QTM5qT/Project.toml`
+Status `/tmp/jl_7FfhcK/Project.toml`
   [aae01518] BandedMatrices v0.15.15
   [ffab5731] BlockBandedMatrices v0.8.11
   [2b5f629d] DiffEqBase v6.44.3
@@ -26,7 +26,7 @@ Status `/tmp/jl_QTM5qT/Project.toml`
   [5078a376] LazyArrays v0.16.16
   [d7e5e226] LazyBandedMatrices v0.2.12
   [961ee093] ModelingToolkit v1.4.3
-  [872c559c] NNlib v0.7.4
+  [872c559c] NNlib v0.6.6
   [1dea7af3] OrdinaryDiffEq v5.42.3
   [d96e819e] Parameters v0.12.1
   [1bc83da4] SafeTestsets v0.0.1
@@ -38,17 +38,18 @@ Status `/tmp/jl_QTM5qT/Project.toml`
   [2f01184e] SparseArrays
   [4607b0f0] SuiteSparse
   [8dfed614] Test
-Status `/tmp/jl_QTM5qT/Manifest.toml`
+Status `/tmp/jl_7FfhcK/Manifest.toml`
   [1520ce14] AbstractTrees v0.3.3
-  [79e6a3ab] Adapt v2.0.2
+  [79e6a3ab] Adapt v1.1.0
   [ec485272] ArnoldiMethod v0.0.4
   [4fba245c] ArrayInterface v2.11.0
   [4c555306] ArrayLayouts v0.3.8
   [aae01518] BandedMatrices v0.15.15
+  [b99e7846] BinaryProvider v0.5.10
   [8e7c35d0] BlockArrays v0.12.11
   [ffab5731] BlockBandedMatrices v0.8.11
   [a603d957] CanonicalTraits v0.2.2
-  [d360d2e6] ChainRulesCore v0.9.5
+  [d360d2e6] ChainRulesCore v0.8.1
   [bbf7d656] CommonSubexpressions v0.3.0
   [34da2185] Compat v2.2.1
   [e66e0078] CompilerSupportLibraries_jll v0.3.3+0
@@ -91,7 +92,7 @@ Status `/tmp/jl_QTM5qT/Manifest.toml`
   [46d2c3a1] MuladdMacro v0.2.2
   [d41bc354] NLSolversBase v7.7.0
   [2774e3e8] NLsolve v4.4.1
-  [872c559c] NNlib v0.7.4
+  [872c559c] NNlib v0.6.6
   [77ba4419] NaNMath v0.3.4
   [71a1bf82] NameResolution v0.1.4
   [6fe1bfb0] OffsetArrays v1.1.2

@@ -9,7 +9,8 @@
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
-      }
+      },
+      "func_def_ast_forms": "[]"
     }
   },
   "invokelatest_info": {

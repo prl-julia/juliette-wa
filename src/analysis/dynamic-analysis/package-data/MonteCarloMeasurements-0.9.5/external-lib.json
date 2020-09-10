@@ -75,7 +75,8 @@
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
-      }
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},9],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1094],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},86],[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},29],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},11],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3]]"
     }
   },
   "invokelatest_info": {

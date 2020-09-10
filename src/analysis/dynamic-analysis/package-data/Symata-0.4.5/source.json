@@ -179,7 +179,8 @@
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 3
-      }
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},13],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},297],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},6],[{\"astHead\":\"->\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},15],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},41],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},10],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1]]"
     }
   },
   "invokelatest_info": {
@@ -215,7 +216,7 @@
               "count": 1
             },
             {
-              "function_name": "#94",
+              "function_name": "#100",
               "count": 1
             },
             {
@@ -373,7 +374,7 @@
           "count": 1
         },
         {
-          "function_name": "#94",
+          "function_name": "#100",
           "count": 1
         },
         {

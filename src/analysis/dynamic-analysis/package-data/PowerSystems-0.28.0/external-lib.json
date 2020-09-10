@@ -203,63 +203,16 @@
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
-      }
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},82],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},12],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},5210],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},10]]"
     }
   },
   "invokelatest_info": {
-    "call_count": 7,
+    "call_count": 2,
     "stack_traces": [
       {
         "count": 1,
         "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:69",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:42",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:152",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu-cxx11.jl:30",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
         "auxillary": {
           "function_names": [
             {
@@ -280,25 +233,13 @@
             }
           ]
         }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:90",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
       }
     ],
     "func_specific_data": {
       "function_names": [
         {
           "function_name": "do_artifact_str",
-          "count": 7
+          "count": 2
         }
       ]
     }

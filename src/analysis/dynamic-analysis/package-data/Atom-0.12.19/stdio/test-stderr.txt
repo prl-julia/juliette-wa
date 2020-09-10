@@ -1,6 +1,6 @@
 [ Info: Changed working directory to `/home/jack/.julia/packages/Atom/ipSjf/test/..`
  Activating environment at `~/.julia/packages/Atom/ipSjf/Project.toml`
- Activating environment at `/tmp/jl_beYKaP/Project.toml`
+ Activating environment at `/tmp/jl_THHGUy/Project.toml`
 ERROR: LoadError: LoadError: Some tests did not pass: 4 passed, 1 failed, 0 errored, 0 broken.
 in expression starting at /home/jack/.julia/packages/Atom/ipSjf/test/environments.jl:1
 in expression starting at /home/jack/.julia/packages/Atom/ipSjf/test/runtests.jl:55
@@ -10,7 +10,7 @@ No Changes to `~/.julia/environments/v1.5/Project.toml`
 No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Atom
-Status `/tmp/jl_beYKaP/Project.toml`
+Status `/tmp/jl_THHGUy/Project.toml`
   [c52e3926] Atom v0.12.19
   [00ebfdb7] CSTParser v2.5.0
   [53a63b46] CodeTools v0.7.1
@@ -44,7 +44,7 @@ Status `/tmp/jl_beYKaP/Project.toml`
   [3fa0cd96] REPL
   [6462fe0b] Sockets
   [8dfed614] Test
-Status `/tmp/jl_beYKaP/Manifest.toml`
+Status `/tmp/jl_THHGUy/Manifest.toml`
   [1520ce14] AbstractTrees v0.3.3
   [bf4720bc] AssetRegistry v0.1.0
   [c52e3926] Atom v0.12.19

@@ -6,9 +6,9 @@
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-Updating `/tmp/jl_Bo97cS/Project.toml`
+Updating `/tmp/jl_VMBNLT/Project.toml`
   [7f9c7709] + BIGUQ v0.8.0
-Updating `/tmp/jl_Bo97cS/Manifest.toml`
+Updating `/tmp/jl_VMBNLT/Manifest.toml`
   [7f9c7709] + BIGUQ v0.8.0
 ┌ Warning: Pkg.installed() is deprecated
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
@@ -35,7 +35,7 @@ Stacktrace:
  [17] top-level scope at ./none:3
 in expression starting at /home/jack/.julia/packages/Mads/6Fc5K/src/Mads.jl:221
 in expression starting at /home/jack/.julia/packages/Mads/6Fc5K/src/Mads.jl:220
-ERROR: LoadError: Failed to precompile Mads [d6bdc55b-bd94-5012-933c-1f73fc2ee992] to /home/jack/.julia/compiled/v1.5/Mads/P7IWT_zKrRl.ji.
+ERROR: LoadError: Failed to precompile Mads [d6bdc55b-bd94-5012-933c-1f73fc2ee992] to /home/jack/.julia/compiled/v1.5/Mads/P7IWT_n0L2h.ji.
 Stacktrace:
  [1] error(::String) at ./error.jl:33
  [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1290
@@ -51,7 +51,7 @@ No Changes to `~/.julia/environments/v1.5/Project.toml`
 No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Mads
-Status `/tmp/jl_Bo97cS/Project.toml`
+Status `/tmp/jl_VMBNLT/Project.toml`
   [a0f608ac] AffineInvariantMCMC v0.6.0
   [fd9e7046] Anasol v0.6.0
   [a134a8b2] BlackBoxOptim v0.5.0
@@ -107,7 +107,7 @@ Status `/tmp/jl_Bo97cS/Project.toml`
   [2f01184e] SparseArrays
   [10745b16] Statistics
   [8dfed614] Test
-Status `/tmp/jl_Bo97cS/Manifest.toml`
+Status `/tmp/jl_VMBNLT/Manifest.toml`
   [ae81ac8f] ASL_jll v0.1.1+3
   [621f4979] AbstractFFTs v0.5.0
   [1520ce14] AbstractTrees v0.3.3

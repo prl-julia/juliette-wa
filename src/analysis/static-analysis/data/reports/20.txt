@@ -244,6 +244,7 @@ hasEval: 16/20
 hasOnlyEval: 12/20
 hasBothEvalIL: 4/20
 hasOnlyIL: 0/20
+inFunCallOrFunNoIL: 2/20
 
 Total Stat:
 * function   [top]       =>  144 in  12 pkgs

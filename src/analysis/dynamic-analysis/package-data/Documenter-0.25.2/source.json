@@ -397,11 +397,11 @@
             },
             {
               "count": 1,
-              "ast_head": "Symbol-codelang"
+              "ast_head": "Symbol-parseblock"
             },
             {
               "count": 1,
-              "ast_head": "Symbol-parseblock"
+              "ast_head": "Symbol-codelang"
             },
             {
               "count": 1,
@@ -593,11 +593,11 @@
             },
             {
               "count": 1,
-              "ast_head": "Symbol-matcher"
+              "ast_head": "Symbol-dispatch"
             },
             {
               "count": 1,
-              "ast_head": "Symbol-dispatch"
+              "ast_head": "Symbol-matcher"
             },
             {
               "count": 1,
@@ -1651,11 +1651,11 @@
         },
         {
           "count": 1,
-          "ast_head": "Symbol-codelang"
+          "ast_head": "Symbol-parseblock"
         },
         {
           "count": 1,
-          "ast_head": "Symbol-parseblock"
+          "ast_head": "Symbol-codelang"
         },
         {
           "count": 1,
@@ -1867,11 +1867,11 @@
         },
         {
           "count": 1,
-          "ast_head": "Symbol-matcher"
+          "ast_head": "Symbol-dispatch"
         },
         {
           "count": 1,
-          "ast_head": "Symbol-dispatch"
+          "ast_head": "Symbol-matcher"
         },
         {
           "count": 1,
@@ -2075,7 +2075,8 @@
         "bodylessFuncCount": 0,
         "funcRedefCount": 321,
         "miscCount": 0
-      }
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"error\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},5],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},700],[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},10],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},373],[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},22],[{\"astHead\":\"let\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},12],[{\"astHead\":\"->\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1592],[{\"astHead\":\"curly\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},629],[{\"astHead\":\"|>\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"for\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},9],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},5],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},71],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},8],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},34],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},67],[{\"astHead\":\"nothing\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},21],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},589],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},178]]"
     }
   },
   "invokelatest_info": {
@@ -2095,15 +2096,15 @@
               "count": 3
             },
             {
-              "function_name": "#102",
+              "function_name": "#110",
               "count": 3
             },
             {
-              "function_name": "#108",
+              "function_name": "#106",
               "count": 3
             },
             {
-              "function_name": "#112",
+              "function_name": "#114",
               "count": 3
             }
           ]
@@ -2201,15 +2202,15 @@
           "count": 3
         },
         {
-          "function_name": "#102",
+          "function_name": "#110",
           "count": 3
         },
         {
-          "function_name": "#108",
+          "function_name": "#106",
           "count": 3
         },
         {
-          "function_name": "#112",
+          "function_name": "#114",
           "count": 3
         }
       ]

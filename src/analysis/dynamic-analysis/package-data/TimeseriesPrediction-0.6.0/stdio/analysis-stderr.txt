@@ -1,8 +1,8 @@
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-Updating `/tmp/jl_KxfKDA/Project.toml`
+Updating `/tmp/jl_jKF5VY/Project.toml`
   [682c06a0] + JSON v0.21.0
-Updating `/tmp/jl_KxfKDA/Manifest.toml`
+Updating `/tmp/jl_jKF5VY/Manifest.toml`
   [682c06a0] + JSON v0.21.0
   [69de0a69] + Parsers v1.0.10
   [a63ad114] + Mmap
@@ -14,7 +14,7 @@ No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing TimeseriesPrediction
-Status `/tmp/jl_KxfKDA/Project.toml`
+Status `/tmp/jl_jKF5VY/Project.toml`
   [6e36e845] DynamicalSystemsBase v1.5.6
   [c8e1da08] IterTools v1.3.0
   [6f286f6a] MultivariateStats v0.7.0
@@ -28,12 +28,12 @@ Status `/tmp/jl_KxfKDA/Project.toml`
   [9a3f8284] Random
   [10745b16] Statistics
   [8dfed614] Test
-Status `/tmp/jl_KxfKDA/Manifest.toml`
+Status `/tmp/jl_jKF5VY/Manifest.toml`
   [1520ce14] AbstractTrees v0.3.3
   [7d9fca2a] Arpack v0.4.0
   [68821587] Arpack_jll v3.5.0+3
   [4fba245c] ArrayInterface v2.11.0
-  [d360d2e6] ChainRulesCore v0.9.5
+  [d360d2e6] ChainRulesCore v0.8.1
   [bbf7d656] CommonSubexpressions v0.3.0
   [e66e0078] CompilerSupportLibraries_jll v0.3.3+0
   [88cd18e8] ConsoleProgressMonitor v0.1.2

@@ -1,16 +1,15 @@
-#=#=#                                                                         #                                                                          2.6%#############                                                             18.1%############################                                              39.8%##############################################                            63.9%###############################################################           88.6%######################################################################## 100.0%
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-No Changes to `/tmp/jl_xOlxtp/Project.toml`
-No Changes to `/tmp/jl_xOlxtp/Manifest.toml`
+No Changes to `/tmp/jl_rmpKVA/Project.toml`
+No Changes to `/tmp/jl_rmpKVA/Manifest.toml`
 ERROR: LoadError: InitError: Cannot open display: 
 Stacktrace:
  [1] error(::String) at ./error.jl:33
  [2] Gtk.GLib.GError(::Gtk.var"#304#310") at /home/jack/.julia/packages/Gtk/X7HfN/src/GLib/gerror.jl:17
  [3] __init__() at /home/jack/.julia/packages/Gtk/X7HfN/src/Gtk.jl:123
  [4] _include_from_serialized(::String, ::Array{Any,1}) at ./loading.jl:697
- [5] _require_from_serialized(::String) at ./loading.jl:749
- [6] _require(::Base.PkgId) at ./loading.jl:1040
+ [5] _require_search_from_serialized(::Base.PkgId, ::String) at ./loading.jl:782
+ [6] _require(::Base.PkgId) at ./loading.jl:1007
  [7] require(::Base.PkgId) at ./loading.jl:928
  [8] require(::Module, ::Symbol) at ./loading.jl:923
  [9] include(::String) at ./client.jl:457
@@ -25,7 +24,7 @@ No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Plots
-Status `/tmp/jl_xOlxtp/Project.toml`
+Status `/tmp/jl_rmpKVA/Project.toml`
   [d38c429a] Contour v0.5.4
   [31c24e10] Distributions v0.23.8
   [c87230d0] FFMPEG v0.4.0
@@ -69,7 +68,7 @@ Status `/tmp/jl_xOlxtp/Project.toml`
   [10745b16] Statistics
   [8dfed614] Test
   [cf7118a7] UUIDs
-Status `/tmp/jl_xOlxtp/Manifest.toml`
+Status `/tmp/jl_rmpKVA/Manifest.toml`
   [7b86fcea] ATK_jll v2.34.1+4
   [621f4979] AbstractFFTs v0.5.0
   [79e6a3ab] Adapt v1.1.0

@@ -59,7 +59,8 @@
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
-      }
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},27],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1]]"
     }
   },
   "invokelatest_info": {

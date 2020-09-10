@@ -29,6 +29,6 @@ Cleanup       |    1      1
 Test Summary: | Pass  Total
 Backedges     |    9      9
 beginning signatures tests
- 36.473802 seconds (61.96 M allocations: 2.264 GiB, 4.94% gc time)
+ 41.472840 seconds (61.95 M allocations: 2.264 GiB, 4.08% gc time)
 Test Summary:   | Pass  Total
 Base signatures |    2      2

@@ -10,16 +10,6 @@ Solving environment: ...working... done
     - pyzmq
 
 
-The following packages will be downloaded:
-
-    package                    |            build
-    ---------------------------|-----------------
-    libsodium-1.0.18           |       h516909a_0         339 KB  conda-forge
-    pyzmq-19.0.2               |   py37hac76be4_0         479 KB  conda-forge
-    zeromq-4.3.2               |       he1b5a44_3         326 KB  conda-forge
-    ------------------------------------------------------------
-                                           Total:         1.1 MB
-
 The following NEW packages will be INSTALLED:
 
   libsodium          conda-forge/linux-64::libsodium-1.0.18-h516909a_0
@@ -27,11 +17,6 @@ The following NEW packages will be INSTALLED:
   zeromq             conda-forge/linux-64::zeromq-4.3.2-he1b5a44_3
 
 
-
-Downloading and Extracting Packages
-pyzmq-19.0.2         | 479 KB    |            |   0% pyzmq-19.0.2         | 479 KB    | ########## | 100% pyzmq-19.0.2         | 479 KB    | ########## | 100% 
-zeromq-4.3.2         | 326 KB    |            |   0% zeromq-4.3.2         | 326 KB    | ########## | 100% 
-libsodium-1.0.18     | 339 KB    |            |   0% libsodium-1.0.18     | 339 KB    | ########## | 100% 
 Preparing transaction: ...working... done
 Verifying transaction: ...working... done
 Executing transaction: ...working... done

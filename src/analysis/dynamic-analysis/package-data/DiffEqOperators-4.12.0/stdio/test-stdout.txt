@@ -1,145 +1,80 @@
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
 Test Summary:   | Pass  Total
 Utilities Tests |    4      4
- 26.212902 seconds (48.90 M allocations: 2.883 GiB, 6.27% gc time)
+ 26.091258 seconds (48.99 M allocations: 2.888 GiB, 5.77% gc time)
 Test Summary:   | Pass  Total
 Poisson example |    1      1
-  7.170786 seconds (11.87 M allocations: 610.463 MiB, 9.51% gc time)
+  7.617059 seconds (11.87 M allocations: 610.457 MiB, 5.92% gc time)
 Test Summary:         | Pass  Total
 Heat equation example |    1      1
- 19.911859 seconds (23.97 M allocations: 1.241 GiB, 6.88% gc time)
+ 23.210469 seconds (23.95 M allocations: 1.240 GiB, 6.61% gc time)
 Test Summary:                      | Pass  Total
 Robin Boundary Condition Operators |  124    124
-  2.870742 seconds (3.41 M allocations: 169.737 MiB, 4.47% gc time)
+  2.890486 seconds (3.41 M allocations: 169.738 MiB, 3.45% gc time)
 Test Summary:              | Pass  Broken  Total
 JacVec Operators Interface |   34       4     38
- 76.059359 seconds (115.85 M allocations: 5.961 GiB, 7.27% gc time)
+ 79.321647 seconds (115.85 M allocations: 5.962 GiB, 7.45% gc time)
 Test Summary:                 | Pass  Total
 Composite Operators Interface |   12     12
-  5.006819 seconds (5.06 M allocations: 247.862 MiB, 4.06% gc time)
+  2.939662 seconds (5.06 M allocations: 247.858 MiB, 5.72% gc time)
 Test Summary:                   | Pass  Broken  Total
 BC and Coefficient Compositions |  103       6    109
- 29.065843 seconds (30.54 M allocations: 1.518 GiB, 4.25% gc time)
+ 24.699077 seconds (30.54 M allocations: 1.518 GiB, 3.75% gc time)
 Test Summary:                  | Pass  Total
 Derivative Operators Interface | 1080   1080
- 48.734084 seconds (197.80 M allocations: 10.417 GiB, 22.56% gc time)
+ 54.046945 seconds (197.86 M allocations: 10.419 GiB, 21.80% gc time)
 Test Summary:                        | Pass  Total
 Ghost Derivative Operators Interface |    4      4
-  0.059165 seconds (34.74 k allocations: 2.017 MiB)
+  0.037339 seconds (34.74 k allocations: 2.017 MiB)
 Test Summary:                         | Pass  Total
 Validate Regular Derivative Operators |   30     30
- 10.078819 seconds (11.38 M allocations: 581.538 MiB, 3.93% gc time)
+  7.791746 seconds (11.38 M allocations: 581.790 MiB, 4.58% gc time)
 Test Summary:                          | Pass  Total
 Validate and Compare Generic Operators |   72     72
-  8.419271 seconds (8.74 M allocations: 611.169 MiB, 2.73% gc time)
+  9.769068 seconds (8.74 M allocations: 611.154 MiB, 2.91% gc time)
 Test Summary:                                 |   Pass   Total
-Validate Boundary Padded Array Concretization | 153105  153105
- 22.030936 seconds (31.34 M allocations: 1.561 GiB, 4.00% gc time)
+Validate Boundary Padded Array Concretization | 125921  125921
+ 20.228412 seconds (30.55 M allocations: 1.507 GiB, 4.02% gc time)
 Test Summary:                                  | Pass  Broken  Total
 Validate Higher Dimensional Boundary Extension |  351       3    354
- 67.420924 seconds (99.29 M allocations: 4.734 GiB, 4.07% gc time)
+ 75.463092 seconds (97.14 M allocations: 4.613 GiB, 4.18% gc time)
 Test Summary:   | Pass  Total
 2nd order check |    4      4
-  0.839060 seconds (601.66 k allocations: 31.322 MiB)
+  0.850040 seconds (601.65 k allocations: 31.322 MiB)
 Test Summary:         | Pass  Total
 Matrix-Free Operators |   34     34
- 22.460560 seconds (33.13 M allocations: 1.717 GiB, 4.28% gc time)
+ 28.723467 seconds (33.13 M allocations: 1.717 GiB, 4.34% gc time)
 Test Summary:                    | Pass  Total
 JacVec Operator Integration Test |    2      2
- 66.029222 seconds (35.85 M allocations: 3.863 GiB, 2.52% gc time)
+ 66.941094 seconds (35.85 M allocations: 3.863 GiB, 4.15% gc time)
 Test Summary: | Pass  Total
 Convolutions  |    6      6
-  0.423730 seconds (554.95 k allocations: 30.176 MiB)
+  0.582602 seconds (554.94 k allocations: 30.176 MiB, 15.50% gc time)
 Test Summary:             |   Pass   Total
 Differentiation Dimension | 476861  476861
- 17.386157 seconds (21.22 M allocations: 1.100 GiB, 3.24% gc time)
+ 15.957092 seconds (21.36 M allocations: 1.106 GiB, 5.10% gc time)
 Test Summary:                     | Pass  Total
 Higher Dimensional Concretization |   33     33
- 36.105392 seconds (44.50 M allocations: 3.168 GiB, 5.78% gc time)
+ 38.488669 seconds (44.56 M allocations: 3.170 GiB, 6.17% gc time)
 Test Summary:         | Pass  Total
 Coefficient Functions |   22     22
-  2.223360 seconds (3.11 M allocations: 161.761 MiB, 3.75% gc time)
-Test: Derivative Order = 1, Approx Order = 2, Winding = Negative, Grid = Irregular: Test Failed at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:498
-  Expression: L * x ≈ analyticL * x
-   Evaluated: [NaN, 12.473458194355771, -3.523343889791118, -13.002531720112069, 3.90726450071174] ≈ [7.582503805251559, 12.473458194355771, -3.5233438897911142, -13.002531720112069, 3.9072645007117366]
-Stacktrace:
- [1] top-level scope at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:498
- [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
- [3] top-level scope at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:491
-Test: Derivative Order = 1, Approx Order = 2, Winding = Negative, Grid = Irregular: Test Failed at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:501
-  Expression: Array(L) * x ≈ analyticL * x
-   Evaluated: [NaN, 12.473458194355764, -3.5233438897911142, -13.002531720112069, 3.90726450071174] ≈ [7.582503805251559, 12.473458194355771, -3.5233438897911142, -13.002531720112069, 3.9072645007117366]
-Stacktrace:
- [1] top-level scope at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:501
- [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
- [3] top-level scope at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:491
-Test: Derivative Order = 1, Approx Order = 2, Winding = Negative, Grid = Irregular: Test Failed at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:504
-  Expression: L * x ≈ Array(L) * x
-   Evaluated: [NaN, 12.473458194355771, -3.523343889791118, -13.002531720112069, 3.90726450071174] ≈ [NaN, 12.473458194355764, -3.5233438897911142, -13.002531720112069, 3.90726450071174]
-Stacktrace:
- [1] top-level scope at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:504
- [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
- [3] top-level scope at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:491
-Test: Derivative Order = 1, Approx Order = 2, Winding = Negative, Grid = Irregular: Test Failed at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:507
-  Expression: Array(L) ≈ analyticL
-   Evaluated: [NaN NaN … 0.0 0.0; -2.5000000000000004 62.499999999999986 … 0.0 0.0; … ; 0.0 0.0 … 0.0 0.0; 0.0 0.0 … -23.376623376623378 0.0] ≈ [2.5 37.5 … -0.0 -0.0; -2.5 62.5 … -0.0 -0.0; … ; -0.0 -0.0 … -0.0 -0.0; -0.0 -0.0 … -23.376623376623378 -0.0]
-Stacktrace:
- [1] top-level scope at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:507
- [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
- [3] top-level scope at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:491
-Test: Derivative Order = 1, Approx Order = 2, Winding = Negative, Grid = Irregular: Test Failed at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:510
-  Expression: Array(L) == BandedMatrix(L)
-   Evaluated: [NaN NaN … 0.0 0.0; -2.5000000000000004 62.499999999999986 … 0.0 0.0; … ; 0.0 0.0 … 0.0 0.0; 0.0 0.0 … -23.376623376623378 0.0] == [NaN NaN … 0.0 0.0; -2.5000000000000004 62.499999999999986 … 0.0 0.0; … ; 0.0 0.0 … 0.0 0.0; 0.0 0.0 … -23.376623376623378 0.0]
-Stacktrace:
- [1] top-level scope at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:510
- [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
- [3] top-level scope at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:491
-Test: Derivative Order = 1, Approx Order = 2, Winding = Negative, Grid = Irregular: Test Failed at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:511
-  Expression: Array(L) == SparseMatrixCSC(L)
-   Evaluated: [NaN NaN … 0.0 0.0; -2.5000000000000004 62.499999999999986 … 0.0 0.0; … ; 0.0 0.0 … 0.0 0.0; 0.0 0.0 … -23.376623376623378 0.0] == 
-  [1, 1]  =  NaN
-  [2, 1]  =  -2.5
-  [1, 2]  =  NaN
-  [2, 2]  =  62.5
-  [3, 2]  =  -35.7143
-  [1, 3]  =  NaN
-  [2, 3]  =  -60.0
-  [3, 3]  =  70.0
-  [4, 3]  =  -8.88889
-  [3, 4]  =  -34.2857
-  [4, 4]  =  45.0
-  [5, 4]  =  -15.9091
-  [4, 5]  =  -36.1111
-  [5, 5]  =  39.2857
-  [5, 6]  =  -23.3766
-Stacktrace:
- [1] top-level scope at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:511
- [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
- [3] top-level scope at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:491
-Test: Derivative Order = 1, Approx Order = 2, Winding = Negative, Grid = Irregular: Test Failed at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:517
-  Expression: L * bpv ≈ analyticL * bpv
-   Evaluated: [NaN, -11.065096549358145, 13.160344036884975, 2.0505171627229437, -9.49518120608043] ≈ [-6.530143234296748, -11.065096549358145, 13.160344036884972, 2.0505171627229437, -9.49518120608043]
-Stacktrace:
- [1] top-level scope at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:517
- [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
- [3] top-level scope at /home/jack/.julia/packages/DiffEqOperators/Gqnn8/test/upwind_operators_interface.jl:491
-Test Summary:                                                                                     | Pass  Fail  Total
-Upwind Operator Interface                                                                         |  210     7    217
-  Test: Derivative Order = 1, Approx Order = 1, Winding = Positive                                |    9            9
-  Test: Derivative Order = 1, Approx Order = 1, Winding = Negative                                |    9            9
-  Test: Derivative Order = 1, Approx Order = 2, Winding = Positive                                |   10           10
-  Test: Derivative Order = 1, Approx Order = 2, Winding = Negative                                |    9            9
-  Test: Derivative Order = 2, Approx Order = 2, Winding = Positive                                |    9            9
-  Test: Derivative Order = 2, Approx Order = 2, Winding = Negative                                |    9            9
-  Test: Derivative Order = 2, Approx Order = 3, Winding = Positive                                |    9            9
-  Test: Derivative Order = 2, Approx Order = 3, Winding = Negative                                |    9            9
-  Test: Derivative Order = 1, Approx Order = 1, Winding = Positive, Grid = Irregular              |    9            9
-  Test: Derivative Order = 1, Approx Order = 1, Winding = Negative, Grid = Irregular              |    9            9
-  Test: Derivative Order = 1, Approx Order = 2, Winding = Positive, Grid = Irregular              |    9            9
-  Test: Derivative Order = 1, Approx Order = 2, Winding = Negative, Grid = Irregular              |    2     7      9
-  Test: Derivative Order = 2, Approx Order = 2, Winding = Positive, Grid = Irregular              |    9            9
-  Test: Derivative Order = 2, Approx Order = 2, Winding = Negative, Grid = Irregular              |    9            9
-  Test: Scaling by dx and Derivative Order in Uniform Case                                        |   36           36
-  Test: Non-Trivial Coefficient Handling in Uniform Grid Case                                     |   18           18
-  Test: dx and Derivative Order Scaling and Non-Trivial Coefficient Handling in Uniform Grid Case |   18           18
-  Test: Coefficient Handling in Non-Uniform Grid Case                                             |   18           18
+  3.202864 seconds (3.11 M allocations: 161.751 MiB, 2.43% gc time)
+Test Summary:             | Pass  Total
+Upwind Operator Interface |  217    217
+ 12.076409 seconds (9.18 M allocations: 474.034 MiB, 1.86% gc time)
+Test Summary:                 |
+MOLFiniteDifference Interface | No tests
+  6.279700 seconds (8.25 M allocations: 423.456 MiB)
+Test Summary:      | Pass  Total
+Basic SDO Examples |   22     22
+  5.685345 seconds (9.02 M allocations: 450.883 MiB, 4.53% gc time)
+"2D" = "2D"
+"irregular" = "irregular"
+"3D" = "3D"
+"3D BPC" = "3D BPC"
+"3D with coefficients" = "3D with coefficients"
+"3D irregular" = "3D irregular"
+Test Summary:                 | Pass  Broken  Total
+2D and 3D fast multiplication |  139      11    150
+416.628228 seconds (244.74 M allocations: 83.706 GiB, 7.68% gc time)
+929.871278 seconds (996.62 M allocations: 125.455 GiB, 7.20% gc time)

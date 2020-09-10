@@ -171,7 +171,8 @@
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
-      }
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},470],[{\"astHead\":\"curly\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},70]]"
     }
   },
   "invokelatest_info": {

@@ -9,32 +9,15 @@
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
-      }
+      },
+      "func_def_ast_forms": "[]"
     }
   },
   "invokelatest_info": {
-    "call_count": 1,
-    "stack_traces": [
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      }
-    ],
+    "call_count": 0,
+    "stack_traces": [],
     "func_specific_data": {
-      "function_names": [
-        {
-          "function_name": "do_artifact_str",
-          "count": 1
-        }
-      ]
+      "function_names": []
     }
   }
 }

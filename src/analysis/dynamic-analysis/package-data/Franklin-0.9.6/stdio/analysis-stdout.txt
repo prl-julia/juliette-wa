@@ -1,9 +1,4 @@
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
-✘ Couldn't find highlight.js (``/home/jack/.julia/artifacts/a42f5c72a500a8683c08a5e818d27a104fc9cd5a/bin/node` -e "require('highlight.js')"` failed).
-→ It is required for pre-rendering highlight.js but is not necessary to run Franklin (cf docs).
-✘ Couldn't find css_html_js_minify (`SubString{String}["python3"] -m "import css_html_js_minify"` failed).
-→ It is required for minification but is not necessary to run Franklin (cf docs).
-→ After installing any missing component, please re-build the package (cf docs).
 UTILS-1
 Test Summary: | Pass  Total
 set_paths!    |   12     12
@@ -509,7 +504,7 @@ Issue 326     |    2      2
 → Use serve() from Franklin to see the website in your browser.
 → Initial full pass...
 Verifying links... [you don't seem online ✗]All internal links verified ✓.      
-→ Full pass (no pre-rendering)     [done  29.5s]                               
+→ Full pass (no pre-rendering)     [done  32.6s]                               
 Test Summary: | Pass  Total
 Gen&Opt       |   16     16
 Test Summary: | Pass  Total

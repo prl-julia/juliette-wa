@@ -231,7 +231,8 @@
         "bodylessFuncCount": 0,
         "funcRedefCount": 18,
         "miscCount": 0
-      }
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},246],[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},8],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},29],[{\"astHead\":\"for\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},8],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},23],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},10],[{\"astHead\":\"export\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},110],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},11],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4]]"
     }
   },
   "invokelatest_info": {

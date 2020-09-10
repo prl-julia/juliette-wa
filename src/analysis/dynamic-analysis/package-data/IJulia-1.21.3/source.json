@@ -83,7 +83,8 @@
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
-      }
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3]]"
     }
   },
   "invokelatest_info": {

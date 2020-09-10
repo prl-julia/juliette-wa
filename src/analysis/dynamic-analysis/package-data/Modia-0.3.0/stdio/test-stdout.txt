@@ -112,13 +112,13 @@ components = Any[Any[3], Any[1], Any[8], Any[6], Any[7], Any[2], Any[4], Any[5]]
 Big tests, n = 5000
 
 Big test: diagonal
-  0.063918 seconds (76.44 k allocations: 51.765 MiB, 24.84% gc time)
+  0.066400 seconds (76.44 k allocations: 51.765 MiB, 24.42% gc time)
 
 Big test: band
-  0.048000 seconds (112.88 k allocations: 52.218 MiB, 20.88% gc time)
+  0.049395 seconds (112.88 k allocations: 52.218 MiB, 22.66% gc time)
 
 Big test: full, n=1000
-  0.232219 seconds (4.80 M allocations: 106.005 MiB, 13.65% gc time)
+  0.245544 seconds (4.80 M allocations: 106.005 MiB, 15.65% gc time)
 
 Test solve
 
@@ -855,17 +855,17 @@ removeSingularities = false
 logTiming = true
 
 Simulating model: CauerLowPassOPV
-Instantiate:             9.757290 seconds (13.50 M allocations: 661.186 MiB, 5.11% gc time)
-Flatten:                 0.036344 seconds (11.12 k allocations: 589.516 KiB)
-Consistency check:       0.000175 seconds (436 allocations: 131.125 KiB)
-Pantelides:              0.000867 seconds (1.79 k allocations: 240.844 KiB)
-Matching:                0.000173 seconds (469 allocations: 155.547 KiB)
+Instantiate:             8.882221 seconds (13.50 M allocations: 661.186 MiB, 4.30% gc time)
+Flatten:                 0.026877 seconds (11.12 k allocations: 589.516 KiB)
+Consistency check:       0.000109 seconds (436 allocations: 131.125 KiB)
+Pantelides:              0.000424 seconds (1.79 k allocations: 240.844 KiB)
+Matching:                0.000105 seconds (469 allocations: 155.547 KiB)
 Number of equations: 234
 Number of variables: 240
 Number of continuous states: 6
 Number of non states: 4
-BLT:                     0.000119 seconds (659 allocations: 58.422 KiB)
-Symbolic processing:     0.147591 seconds (179.83 k allocations: 10.159 MiB, 35.52% gc time)
+BLT:                     0.000063 seconds (659 allocations: 58.422 KiB)
+Symbolic processing:     0.071667 seconds (179.83 k allocations: 10.159 MiB)
 Code generation and simulation:         
   ModiaMath:           
 

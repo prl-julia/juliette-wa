@@ -9,7 +9,7 @@ DataStreams with WeakRefStrings: Error During Test at /home/jack/.julia/packages
    [4] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
    [5] top-level scope at /home/jack/.julia/packages/DataStreams/mEqAy/test/runtests.jl:53
    [6] include(::String) at ./client.jl:457
-   [7] top-level scope at none:11
+   [7] top-level scope at ./none:12
    [8] eval(::Module, ::Any) at ./boot.jl:331
    [9] exec_options(::Base.JLOptions) at ./client.jl:272
    [10] _start() at ./client.jl:506

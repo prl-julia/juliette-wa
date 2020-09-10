@@ -227,11 +227,12 @@
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
-      }
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},23],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1533],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},150],[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},29],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},5],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},25],[{\"astHead\":\"if\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},6],[{\"astHead\":\"export\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3]]"
     }
   },
   "invokelatest_info": {
-    "call_count": 5,
+    "call_count": 4,
     "stack_traces": [
       {
         "count": 1,
@@ -271,18 +272,6 @@
       },
       {
         "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
         "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
         "auxillary": {
           "function_names": [
@@ -298,7 +287,7 @@
       "function_names": [
         {
           "function_name": "do_artifact_str",
-          "count": 5
+          "count": 4
         }
       ]
     }

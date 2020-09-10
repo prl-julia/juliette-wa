@@ -9,11 +9,12 @@
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
-      }
+      },
+      "func_def_ast_forms": "[]"
     }
   },
   "invokelatest_info": {
-    "call_count": 57,
+    "call_count": 58,
     "stack_traces": [
       {
         "count": 50,
@@ -28,7 +29,7 @@
         }
       },
       {
-        "count": 4,
+        "count": 5,
         "last_call": "foreach at abstractarray.jl:2009 [inlined]",
         "auxillary": {
           "function_names": [
@@ -42,6 +43,10 @@
             },
             {
               "function_name": "#498",
+              "count": 1
+            },
+            {
+              "function_name": "#24",
               "count": 1
             },
             {
@@ -80,6 +85,10 @@
         },
         {
           "function_name": "#498",
+          "count": 1
+        },
+        {
+          "function_name": "#24",
           "count": 1
         },
         {

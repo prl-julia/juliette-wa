@@ -163,7 +163,8 @@
         "bodylessFuncCount": 2,
         "funcRedefCount": 0,
         "miscCount": 0
-      }
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},18],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},7],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},5],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},17],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},54],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},22],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3]]"
     }
   },
   "invokelatest_info": {
