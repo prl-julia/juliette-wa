@@ -16,8 +16,8 @@
   (sig-σ ::= (mdef mname (σ ...))) ; concrete type method signature
   (sig-τ ::= (mdef mname (τ ...))) ; abstract type method signature
   
-  (Δ ::= ((sig-τ real) ...))       ; environment of inlined methods
-  (𝛾 ::= ((sig-τ mname) ...))      ; environment of methods with direct calls
+  (Ω ::= ((sig-τ real) ...))       ; environment of inlined methods
+  (ε ::= ((sig-τ mname) ...))      ; environment of methods with direct calls
   (Φ ::= ((sig-σ mname) ...))      ; environment of speicialized methods with direct calls
   (opt-err ::= undeclared-var md-err type-err)
   
@@ -38,8 +38,8 @@
       ]
 
   ;; optimize state < Γ Φ xe >
-  [st-opt ::= (< Γ Δ 𝛾 Φ (evalt MT (in-hole E maybe-e)) >)]
-  [st-mtopt ::= (< 𝛾 Φ MT L >)])
+  [st-opt ::= (< Γ Ω ε Φ (evalt MT (in-hole E maybe-e)) >)]
+  [st-mtopt ::= (< ε Φ MT L >)])
 
 (define MAX_INLINE_COUNT 3)
 (define MAX_SPECIALIZE_COUNT 2)
@@ -384,7 +384,10 @@
    -------------------------------------- "OE-Val"
    (~~> Γ Φ (evalt MT v) (evalt MT_P v))]
   ; Γ ⊢ Φ (|m|)_MT ~~> (|m|)_MT'
-  [(where #t (inMTdomWrap MT mname))
+  [(where #t ,(or (and (term (inMTdomWrap MT mname))
+                       (term (inMTdomWrap MT_P mname)))
+                  (not (or (term (inMTdomWrap MT mname))
+                           (term (inMTdomWrap MT_P mname))))))
    ------------------------------------------------------------ "OE-ValFun"
    (~~> Γ Φ (evalt MT (mval mname)) (evalt MT_P (mval mname)))]
   ; Γ ⊢ Φ (|x|)_MT ~~> (|x|)_MT'
@@ -431,7 +434,7 @@
    (where (mname_opt ...) (get-opt-methods Φ (mdef mname (σ ...))))
    (where #t ,(ormap (λ (mname_elem) (equal? (term mname_P) mname_elem))
                      (term (mname_opt ...))))
-   --------------------------------------------------------------------- "OE-Specialize"
+   --------------------------------------------------------------------- "OE-Direct"
    (~~> Γ Φ (evalt MT (mcall (mval mname) e ...))
           (evalt MT_P (mcall (mval mname_P) e_P ...)))]
   ; Convert variable to mval
@@ -456,7 +459,7 @@
 (test-equal (judgment-holds (~~> ((x Int64)) () (evalt ∅ x) (evalt ∅ x))) #t)
 (test-equal (judgment-holds (~~> () () (evalt (,id-fInt • ∅) (mval "func"))
                                  (evalt (,id-fInt • (,addxy-intNum • ∅)) (mval "func")))) #t)
-(test-equal (judgment-holds (~~> () () (evalt ∅ (mval "func")) (evalt ∅ (mval "func")))) #f)
+(test-equal (judgment-holds (~~> () () (evalt ∅ (mval "func")) (evalt ∅ (mval "func")))) #t)
 (test-equal (judgment-holds (~~> () () (evalt ∅ ,addxy-intNum) (evalt ∅ ,addxy-intNum))) #t)
 (test-equal (judgment-holds (~~> () () (evalt (,id-fInt • ∅) y)
                                     (evalt (,id-fInt • ∅) y))) #true)
@@ -630,7 +633,7 @@
                                    "f")) 2)
 
 (define-metafunction WA-opt
-  get-direct-call : 𝛾 sig-τ -> maybe-mname
+  get-direct-call : ε sig-τ -> maybe-mname
   [(get-direct-call (_ ... (sig-τ mname) _ ...) sig-τ) mname]
   [(get-direct-call _ _) nothing])
 
@@ -647,7 +650,7 @@
 
 ;; Gets the inline count valued paired to the given signature in the inline env
 (define-metafunction WA-opt
-  get-inline-count : Δ sig-τ -> natural
+  get-inline-count : Ω sig-τ -> natural
   [(get-inline-count (_ ... (sig-τ N_count) _ ...) sig-τ)
    N_count]
   [(get-inline-count _ _)
@@ -656,7 +659,7 @@
 
 ;; Updates the given signature with the given value in the inline env
 (define-metafunction WA-opt
-  update-inline-count : Δ sig-τ natural -> Δ
+  update-inline-count : Ω sig-τ natural -> Ω
   [(update-inline-count (any_begin ... (sig-τ _) any_end ...) sig-τ N)
    (any_begin ... (sig-τ N) any_end ...)]
   [(update-inline-count (any_list ...) sig-τ N)
@@ -665,9 +668,9 @@
 
 ;; Updates the given signature with a value of 1 greater than then current in the inline env
 (define-metafunction WA-opt
-  increment-inline-count : Δ sig-τ -> Δ
-  [(increment-inline-count Δ sig-τ)
-  (update-inline-count Δ sig-τ ,(+ (term (get-inline-count Δ sig-τ)) 1))])
+  increment-inline-count : Ω sig-τ -> Ω
+  [(increment-inline-count Ω sig-τ)
+  (update-inline-count Ω sig-τ ,(+ (term (get-inline-count Ω sig-τ)) 1))])
 
 ;; Gets the signature and optimized method name of the callee of the given method call
 (define-metafunction WA-opt
@@ -686,65 +689,65 @@
 ;; Expression Optimization
 ;; ==================================================
 
-;; < Γ Δ Φ (|X[e]|)_MT > --> < Γ Δ' Φ' (|X[e']|)_MT' >
+;; < Γ Ω Φ (|X[e]|)_MT > --> < Γ Ω' Φ' (|X[e']|)_MT' >
 (define ->optimize
   (reduction-relation 
    WA-opt
    #:domain st-opt
-   ; < Γ Δ Φ (|X[m(nv...)]|)_MT > --> < Γ Δ' Φ (|X[nothing;e]|)_MT >
+   ; < Γ Ω Φ (|X[m(nv...)]|)_MT > --> < Γ Ω' Φ (|X[nothing;e]|)_MT >
    ; where e is is m body
-   [--> (< Γ Δ 𝛾 Φ (evalt MT (in-hole E (mcall (mval mname) nv ...))) >)
-        (< Γ Δ_P 𝛾 Φ (evalt MT (in-hole E (seq nothing e))) >)
+   [--> (< Γ Ω ε Φ (evalt MT (in-hole E (mcall (mval mname) nv ...))) >)
+        (< Γ Ω_P ε Φ (evalt MT (in-hole E (seq nothing e))) >)
         (where (σ ...) (typeof-nv-tuple Γ (nv ...)))
         (where (mdef mname ((:: x τ) ...) e_mbody) (getmd MT mname (σ ...)))
         (where sig-τ (mdef mname (τ ...)))
-        (where N_count (get-inline-count Δ sig-τ))
+        (where N_count (get-inline-count Ω sig-τ))
         (side-condition (< (term N_count) MAX_INLINE_COUNT))
-        (where Δ_P (increment-inline-count Δ sig-τ))
+        (where Ω_P (increment-inline-count Ω sig-τ))
         (where e (subst-n e_mbody (x nv) ...))
         OE-Inline]
    ; Convert variable to mval
-   [--> (< Γ Δ 𝛾 Φ (evalt MT (in-hole E (mcall x_mname e ...))) >)
-        (< Γ Δ 𝛾 Φ (evalt MT (in-hole E (mcall (mval mname) e ...))) >)
+   [--> (< Γ Ω ε Φ (evalt MT (in-hole E (mcall x_mname e ...))) >)
+        (< Γ Ω ε Φ (evalt MT (in-hole E (mcall (mval mname) e ...))) >)
         (where mname ,(~a (term x_mname)))
         (where undeclared-var (lookup Γ x_mname))
         OE-MName]
-   ; < Γ Δ Φ (|X[m(e...)]|)_MT > --> < Γ Δ Φ (|X[m_direct(e...)]|)_MT >
+   ; < Γ Ω Φ (|X[m(e...)]|)_MT > --> < Γ Ω Φ (|X[m_direct(e...)]|)_MT >
    ; where (m(τ...) m_direct) ∈ Φ
-   [--> (< Γ Δ 𝛾 Φ (evalt MT (in-hole E (mcall (mval mname) e ...))) >)
-        (< Γ Δ 𝛾 Φ (evalt MT (in-hole E (mcall (mval mname_opt) e ...))) >)
+   [--> (< Γ Ω ε Φ (evalt MT (in-hole E (mcall (mval mname) e ...))) >)
+        (< Γ Ω ε Φ (evalt MT (in-hole E (mcall (mval mname_opt) e ...))) >)
         (where mc (mcall (mval mname) e ...))
         (where (< (mname_opt) _ _ >) (get-opt-name-and-sig Γ Φ MT mc))
         OE-Direct-Existing]
-   [--> (< Γ Δ 𝛾 Φ (evalt MT (in-hole E (mcall (mval mname) e ...))) >)
-        (< Γ Δ 𝛾 Φ_P (evalt MT (in-hole E (mcall (mval mname_opt) e ...))) >)
+   [--> (< Γ Ω ε Φ (evalt MT (in-hole E (mcall (mval mname) e ...))) >)
+        (< Γ Ω ε Φ_P (evalt MT (in-hole E (mcall (mval mname_opt) e ...))) >)
         (where mc (mcall (mval mname) e ...))
         (where (< () (mdef mname ((:: x σ) ...) e_body) (τ ...) >)
                (get-opt-name-and-sig Γ Φ MT mc))
         (side-condition (>= (term (get-specialize-count Φ mname)) MAX_SPECIALIZE_COUNT))
-        (where mname_opt (get-direct-call 𝛾 (mdef mname (τ ...))))
+        (where mname_opt (get-direct-call ε (mdef mname (τ ...))))
         (where (any_optpair ...) Φ)
         (where Φ_P (((mdef mname (σ ...)) mname_opt) any_optpair ...))
         OE-Direct-No-Specialize-Existing]
-   [--> (< Γ Δ 𝛾 Φ (evalt MT (in-hole E (mcall (mval mname) e ...))) >)
-        (< Γ Δ 𝛾_P Φ_P (evalt MT_P (in-hole E (mcall (mval mname_opt) e ...))) >)
+   [--> (< Γ Ω ε Φ (evalt MT (in-hole E (mcall (mval mname) e ...))) >)
+        (< Γ Ω ε_P Φ_P (evalt MT_P (in-hole E (mcall (mval mname_opt) e ...))) >)
         (where mc (mcall (mval mname) e ...))
         (where (< () (mdef mname ((:: x σ) ...) e_body) (τ ...) >)
                (get-opt-name-and-sig Γ Φ MT mc))
         (side-condition (>= (term (get-specialize-count Φ mname)) MAX_SPECIALIZE_COUNT))
-        (where nothing (get-direct-call 𝛾 (mdef mname (τ ...))))
+        (where nothing (get-direct-call ε (mdef mname (τ ...))))
         (where mname_opt (gen-name MT Φ))
         (where md_opt (mdef mname_opt ((:: x τ) ...) e_body))
         (where MT_P (md_opt • MT))
         (where (any_optpair ...) Φ)
         (where Φ_P (((mdef mname (σ ...)) mname_opt) any_optpair ...))
-        (where (any_directpair ...) 𝛾)
-        (where 𝛾_P (((mdef mname (τ ...)) mname_opt) any_directpair ...))
+        (where (any_directpair ...) ε)
+        (where ε_P (((mdef mname (τ ...)) mname_opt) any_directpair ...))
         OE-Direct-No-Specialize-New]
-   ; < Γ Δ Φ (|X[m(e...)]|)_MT > --> < Γ Δ Φ' (|X[m_direct(e...)]|)_MT >
+   ; < Γ Ω Φ (|X[m(e...)]|)_MT > --> < Γ Ω Φ' (|X[m_direct(e...)]|)_MT >
    ; where (m(τ...) m_direct) ∉ Φ
-   [--> (< Γ Δ 𝛾 Φ (evalt MT (in-hole E (mcall (mval mname) e ...))) >)
-        (< Γ Δ 𝛾 Φ_P (evalt MT_P (in-hole E (mcall (mval mname_opt) e ...))) >)
+   [--> (< Γ Ω ε Φ (evalt MT (in-hole E (mcall (mval mname) e ...))) >)
+        (< Γ Ω ε Φ_P (evalt MT_P (in-hole E (mcall (mval mname_opt) e ...))) >)
         (where mc (mcall (mval mname) e ...))
         (where (< () (mdef mname ((:: x σ) ...) e_body) _ >)
                (get-opt-name-and-sig Γ Φ MT mc))
@@ -778,14 +781,14 @@
   (reduction-relation 
    WA-opt
    #:domain st-mtopt
-   [--> (< 𝛾 Φ MT L >) (< 𝛾_P Φ_P MT_PP L_P >)
+   [--> (< ε Φ MT L >) (< ε_P Φ_P MT_PP L_P >)
         (where N_MTlen (length MT))
         (side-condition (< (term L) (term N_MTlen)))
         (where (mdef mname ((:: x τ) ...) e_body) (get-element L MT))
-        (where ((< _ _ 𝛾_P Φ_P (evalt MT_P e_bodyP) >) _ ...)
+        (where ((< _ _ ε_P Φ_P (evalt MT_P e_bodyP) >) _ ...)
                ,(apply-reduction-relation*
                  ->optimize
-                 (term (< ((x τ) ...) () 𝛾 Φ (evalt MT e_body) >))))
+                 (term (< ((x τ) ...) () ε Φ (evalt MT e_body) >))))
         (where md_opt (mdef mname ((:: x τ) ...) e_bodyP))
         (where MT_PP (generate-mtopt N_MTlen L MT md_opt MT_P))
         (where L_P ,(+ 1 (term L)))
@@ -794,7 +797,7 @@
 
 ;; Optimizes the given method table
 (define-metafunction WA-opt
-  opt-mt : MT -> ((< 𝛾 Φ MT_opt L >) ...)
+  opt-mt : MT -> ((< ε Φ MT_opt L >) ...)
   [(opt-mt MT)
    ,(apply-reduction-relation*
             ->optimize-mt
@@ -805,11 +808,11 @@
   opt-e : Γ MT e -> (< Φ MT e >)
   [(opt-e Γ MT_in e_in)
    (< Φ_out MT_out e_out >)
-   (where ((< 𝛾 Φ MT_opt _ >) _ ...) (opt-mt MT_in))
-   (where ((< Γ_out Δ_out 𝛾_out Φ_out (evalt MT_out e_out) >) _ ...)
+   (where ((< ε Φ MT_opt _ >) _ ...) (opt-mt MT_in))
+   (where ((< Γ_out Ω_out ε_out Φ_out (evalt MT_out e_out) >) _ ...)
           ,(apply-reduction-relation*
             ->optimize
-            (term (< Γ () 𝛾 Φ (evalt MT_opt e_in) >))))]
+            (term (< Γ () ε Φ (evalt MT_opt e_in) >))))]
   )
 
 ;; ==================================================
