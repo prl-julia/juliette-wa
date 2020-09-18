@@ -13252,6 +13252,7 @@ hasEval: 1150/4011
 hasOnlyEval: 1094/4011
 hasBothEvalIL: 56/4011
 hasOnlyIL: 15/4011
+inFunCallOrFunNoIL: 115/4011
 
 Total Stat:
 * function   [top]       => 7991 in 637 pkgs

@@ -41,32 +41,33 @@ nEval = chartdat["hasEval"]
 ### usage of basic features
 bf_data = [neitherEvalOrIL, onlyEval, onlyIL, ilAndEval]
 bf_labels = ["Neither", "Only eval", "Only invokelatest", "Both"]
-bars = layer(y=bf_data, x=bf_labels, color=bf_labels, Geom.bar)
-lbls = layer(y=bf_data, x=bf_labels, label=string.(bf_data), Geom.label(position=:above))
+bars = layer(x=bf_data, y=bf_labels, color=bf_labels, Geom.bar(orientation=:horizontal))
+lbls = layer(x=bf_data, y=bf_labels, label=string.(bf_data), Geom.label(position=:right))
 
 cpalette(p) = get(ColorSchemes.gray, p)
 bf = plot(lbls, bars, 
-	Scale.y_continuous(format=:plain),
-	Scale.color_discrete_manual((cpalette.((0:1/(length(bf_data)-1):1) .* 0.8))...), Theme(key_position = :none),
-	Coord.cartesian(ymin=0,ymax=3200),
+	Scale.x_continuous(format=:plain),
+	Scale.color_discrete_manual((cpalette.((0:1/(length(bf_data)-1):1) .* 0.8))...), Theme(key_position = :none, grid_line_width=0mm, plot_padding=[2mm,5mm,5mm,1mm]),
+	Coord.cartesian(xmin=0,xmax=3200),
 	Guide.xlabel(nothing),
-	Guide.title("(a) Eval and invokelatest usage by package"),
-	Guide.ylabel("Packages"));
+	Guide.title("(a) Packages with eval and invokelatest"),
+	Guide.ylabel(nothing));
 
 # eval usage
 eval_data = [interestingEvalNoIL, boringNotTopLevel, multipleTopLevel, singleTopLevel]
 eval_labels = ["Non-trivial", "Non-top-level trivial", "Multiple top-level", "Single top-level"]
-eval_bars = layer(y=eval_data, x=eval_labels, color=eval_labels, Geom.bar)
-eval_lbls = layer(y=eval_data, x=eval_labels, label=string.(eval_data), Geom.label(position=:above))
+eval_bars = layer(x=eval_data, y=eval_labels, color=eval_labels, Geom.bar(orientation=:horizontal))
+eval_lbls = layer(x=eval_data, y=eval_labels, label=string.(eval_data), Geom.label(position=:right))
 eu = plot(eval_lbls, eval_bars, 
-	Scale.y_continuous(format=:plain),
-	Scale.color_discrete_manual((cpalette.((0:1/(length(eval_data)-1):1) .* 0.8))...), Theme(key_position = :none),
-	Coord.cartesian(ymin=0,ymax=600),
+	Scale.x_continuous(format=:plain),
+	Scale.color_discrete_manual((cpalette.((0:1/(length(eval_data)-1):1) .* 0.8))...), Theme(key_position = :none, grid_line_width=0mm, plot_padding=[2mm,5mm,5mm,1mm]),
+	Coord.cartesian(xmin=0,xmax=600),
 	Guide.xlabel(nothing),
-	Guide.title("(b) Eval AST type by package"),
-	Guide.ylabel("Packages"));
+	Guide.title("(b) Packages with eval usage"),
+	Guide.ylabel(nothing));
 
-draw(PDF("package_eval_usage.pdf", 6inch, 8inch), vstack(bf, eu))
+draw(PDF("package_eval_usage.pdf", 5inch, 3inch), vstack(bf, eu))
+
 # aggregate chart
 
 add_if_present(d::Dict{T,V}, k::T, v::V) where {T,V} = if haskey(d, k) d[k] += v else d[k] = v end
@@ -100,36 +101,36 @@ display_infunc = map(kv->string(kv[1])=>kv[2], display_infunc)
 toplevel_cols = getindex.(display_toplevel, 1)
 toplevel_vals = getindex.(display_toplevel, 2)
 toplevel_displayvals = map(x-> if x > 450 450+(x-450)/200 else x end, toplevel_vals)
-discont = layer(yintercept=[400], Geom.hline(style=:dot,color="grey"))
-labels = layer(x=toplevel_cols, y=toplevel_displayvals, label=string.(toplevel_vals), Geom.label(position=:above))
-bars = layer(x=toplevel_cols, y=toplevel_displayvals, color=toplevel_cols, Geom.bar())
+discont = layer(xintercept=[400], Geom.vline(style=:dot,color="grey"))
+labels = layer(y=toplevel_cols, x=toplevel_displayvals, label=string.(toplevel_vals), Geom.label(position=:right))
+bars = layer(y=toplevel_cols, x=toplevel_displayvals, color=toplevel_cols, Geom.bar(orientation=:horizontal))
 toplevel = plot(discont, labels, bars,
-	Scale.y_continuous(format=:plain), 
-	Coord.cartesian(ymin=0,ymax=550), 
-	Scale.color_discrete_manual((cpalette.((0:1/(length(toplevel_cols)-1):1) .* 0.8))...), Theme(key_position = :none),
-	Guide.yticks(ticks=0:100:400),
-	Guide.xticks(orientation=:vertical),
-	Guide.xlabel(nothing),
+	Scale.x_continuous(format=:plain), 
+	Coord.cartesian(xmin=0,xmax=550), 
+	Scale.color_discrete_manual((cpalette.((0:1/(length(toplevel_cols)-1):1) .* 0.8))...), Theme(key_position = :none, grid_line_width=0mm, plot_padding=[2mm,5mm,5mm,1mm]),
+	Guide.xticks(ticks=0:100:400),
+	Guide.yticks(orientation=:horizontal),
+	Guide.ylabel(nothing),
 	Guide.title("(a) Eval AST forms at top level"),
-	Guide.ylabel("AST forms"));
+	Guide.xlabel(nothing));
 
 infunc_cols = getindex.(display_infunc, 1)
 infunc_vals = getindex.(display_infunc, 2)
 infunc_displayvals = map(x-> if x > 450 450+(x-450)/200 else x end, infunc_vals)
-discont = layer(yintercept=[400], Geom.hline(style=:dot,color="grey"))
-labels = layer(x=infunc_cols, y=infunc_displayvals, label=string.(infunc_vals), Geom.label(position=:above))
-bars = layer(x=infunc_cols, y=infunc_displayvals, color=infunc_cols, Geom.bar())
+discont = layer(xintercept=[400], Geom.vline(style=:dot,color="grey"))
+labels = layer(y=infunc_cols, x=infunc_displayvals, label=string.(infunc_vals), Geom.label(position=:right))
+bars = layer(y=infunc_cols, x=infunc_displayvals, color=infunc_cols, Geom.bar(orientation=:horizontal))
 infunc = plot(discont, labels, bars,
-	Scale.y_continuous(format=:plain), 
-	Coord.cartesian(ymin=0,ymax=550), 
-	Scale.color_discrete_manual((cpalette.((0:1/(length(infunc_cols)-1):1) .* 0.8))...), Theme(key_position = :none),
-	Guide.yticks(ticks=0:100:400),
-	Guide.xticks(orientation=:vertical),
+	Scale.x_continuous(format=:plain), 
+	Coord.cartesian(xmin=0,xmax=550), 
+	Scale.color_discrete_manual((cpalette.((0:1/(length(infunc_cols)-1):1) .* 0.8))...), Theme(key_position = :none, grid_line_width=0mm, plot_padding=[2mm,5mm,5mm,1mm]),
+	Guide.xticks(ticks=0:100:400),
+	Guide.yticks(orientation=:horizontal),
 	Guide.xlabel(nothing),
 	Guide.title("(b) Eval AST forms inside functions"),
 	Guide.ylabel(nothing));
 
-draw(PDF("ast_heads.pdf", 10inch, 4inch), hstack(toplevel, infunc))
+draw(PDF("ast_heads.pdf", 4inch, 4inch), vstack(toplevel, infunc))
 
 
 # per package AST forms
@@ -163,15 +164,14 @@ display_pinfunc = map(kv->string(kv[1])=>kv[2], display_pinfunc)
 toplevel_pkg_cols = getindex.(display_ptoplevel, 1)
 toplevel_pkg_vals = getindex.(display_ptoplevel, 2)
 toplevel_pkg_displayvals = map(x-> if x > 450 450+(x-450)/200 else x end, toplevel_pkg_vals)
-discont = layer(yintercept=[400], Geom.hline(style=:dot,color="grey"))
-labels = layer(x=toplevel_pkg_cols, y=toplevel_pkg_displayvals, label=string.(toplevel_pkg_vals), Geom.label(position=:above))
-bars = layer(x=toplevel_pkg_cols, y=toplevel_pkg_displayvals, color=toplevel_pkg_cols, Geom.bar())
+discont = layer(xintercept=[400], Geom.vline(style=:dot,color="grey"))
+labels = layer(y=toplevel_pkg_cols, x=toplevel_pkg_displayvals, label=string.(toplevel_pkg_vals), Geom.label(position=:right))
+bars = layer(y=toplevel_pkg_cols, x=toplevel_pkg_displayvals, color=toplevel_pkg_cols, Geom.bar(orientation=:horizontal))
 toplevel = plot(discont, labels, bars,
-	Scale.y_continuous(format=:plain), 
-	Coord.cartesian(ymin=0,ymax=550), 
-	Scale.color_discrete_manual((cpalette.((0:1/(length(toplevel_pkg_cols)-1):1) .* 0.8))...), Theme(key_position = :none),
-	Guide.yticks(ticks=0:100:400),
-	Guide.xticks(orientation=:vertical),
+	Scale.x_continuous(format=:plain), 
+	Coord.cartesian(xmin=0,xmax=550), 
+	Scale.color_discrete_manual((cpalette.((0:1/(length(toplevel_pkg_cols)-1):1) .* 0.8))...), Theme(key_position = :none, grid_line_width=0mm, plot_padding=[2mm,5mm,5mm,1mm]),
+	Guide.xticks(ticks=0:100:400),
 	Guide.xlabel(nothing),
 	Guide.title("(a) Packages with AST form at top level"),
 	Guide.ylabel("Packages", orientation=:vertical));
@@ -179,14 +179,15 @@ toplevel = plot(discont, labels, bars,
 infunc_pkg_cols = getindex.(display_pinfunc, 1)
 infunc_pkg_vals = getindex.(display_pinfunc, 2)
 infunc_pkg_displayvals = map(x-> if x > 450 450+(x-450)/200 else x end, infunc_pkg_vals)
-labels = layer(x=infunc_pkg_cols, y=infunc_pkg_displayvals, label=string.(infunc_pkg_vals), Geom.label(position=:above))
-bars = layer(x=infunc_pkg_cols, y=infunc_pkg_displayvals, color=infunc_pkg_cols, Geom.bar())
+labels = layer(y=infunc_pkg_cols, x=infunc_pkg_displayvals, label=string.(infunc_pkg_vals), Geom.label(position=:right))
+bars = layer(y=infunc_pkg_cols, x=infunc_pkg_displayvals, color=infunc_pkg_cols, Geom.bar(orientation=:horizontal))
 infunc = plot(labels, bars,
-	Scale.y_continuous(format=:plain),
-	Scale.color_discrete_manual((cpalette.((0:1/(length(infunc_pkg_cols)-1):1) .* 0.8))...), Theme(key_position = :none),
-	Guide.xticks(orientation=:vertical),
+	Scale.x_continuous(format=:plain),
+	Scale.color_discrete_manual((cpalette.((0:1/(length(infunc_pkg_cols)-1):1) .* 0.8))...), Theme(key_position = :none, grid_line_width=0mm, plot_padding=[2mm,5mm,5mm,1mm]),
+	Guide.xticks(ticks=0:20:80),
+	Coord.cartesian(xmin=0,xmax=100), 
 	Guide.xlabel(nothing),
 	Guide.title("(b) Packages with AST form inside function"),
 	Guide.ylabel(nothing),
 	Guide.ylabel("Packages", orientation=:vertical));
-draw(PDF("pkg_heads.pdf", 6inch, 8inch), vstack(toplevel, infunc))
+draw(PDF("pkg_heads.pdf", 5inch, 4inch), vstack(toplevel, infunc))

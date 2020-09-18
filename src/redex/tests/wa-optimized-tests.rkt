@@ -85,8 +85,8 @@
   ; ((x Bool)) ∅ 1+x -> true
   (test-equal (term (valid-optimization ,xBool-type-env ∅ ,one-plus-x)) #t)
   
-  ; () ∅ func() err-no-method -> false
-  (test-equal (term (valid-optimization () ∅ ,call-func)) #f)
+  ; () ∅ func() -> false
+  (test-equal (term (valid-optimization () ∅ ,call-func)) #t)
   
   ; () (f()=1 • ∅) func() -> true
   (test-equal (term (valid-optimization () (,func1 • ∅) ,call-func)) #t)

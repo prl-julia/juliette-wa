@@ -418,6 +418,13 @@ likelyImpactWorldAge(stat :: Stat) = begin
       length(inFunArgs) == 1 && length(stat.evalArgStat) > 3)
 end
 
+evalInFunIsCallOrFun(evalInfo :: EvalCallInfo) :: Bool = 
+    evalInfo.context.inFunDef &&
+    in(evalInfo.astHead, [SYM_CALL, SYM_FUNC, SYM_LAM])
+inFunCallOrFunNoIL(stat :: Stat) =
+    any(evalInFunIsCallOrFun, keys(stat.evalArgStat)) &&
+    stat.invokelatest == 0
+    
 hasEval(stat :: Stat) = stat.eval > 0
 hasOnlyEval(stat :: Stat) = stat.eval > 0 && stat.invokelatest == 0
 hasOnlyIL(stat :: Stat) = stat.invokelatest > 0 && stat.eval == 0
@@ -439,7 +446,8 @@ const derivedConditions = Dict(
     "hasOnlyEval"       => hasOnlyEval,
     "hasOnlyIL"         => hasOnlyIL,
     "hasBothEvalIL"     => hasBothEvalIL,
-    "hasEval"           => hasEval
+    "hasEval"           => hasEval,
+    "inFunCallOrFunNoIL"=> inFunCallOrFunNoIL,
 )
 
 function computeDerivedMetrics(
@@ -452,7 +460,8 @@ function computeDerivedMetrics(
             "fundef?", "onlyfundef?",
             "funcall?", "onlyfuncall!", "il",
             "likelyImpactWA", "likelyBypassWA", "likelyBoth",
-            "hasOnlyEval", "hasOnlyIL", "hasBothEvalIL", "hasEval"
+            "hasOnlyEval", "hasOnlyIL", "hasBothEvalIL", "hasEval",
+            "inFunCallOrFunNoIL"
             ])),
         Dict{String, Vector{String}}(map(param -> param=>String[], [
             "likelyBypassWA", "likelyImpactWA", "likelyBoth"]))
@@ -482,7 +491,7 @@ end
 #--------------------------------------------------
 # Running analysis on packages
 #--------------------------------------------------
-using JLD
+#using JLD
 # Runs analysis on all packages from [pkgsDir]
 function analyzePackages(pkgsDir :: String, io :: IO)
     isdir(pkgsDir) ||
@@ -493,7 +502,7 @@ function analyzePackages(pkgsDir :: String, io :: IO)
     outputPkgsProcessingSummary(io, goodPkgsCnt, badPkgs)
     # analyze all packages and summarize stats
     pkgsStat :: PackagesTotalStat = computeDerivedMetrics(goodPkgs, io)
-    save("analysis-results.jld", "pkgs", goodPkgs, "summary", pkgsStat)
+    #save("analysis-results.jld", "pkgs", goodPkgs, "summary", pkgsStat)
     derivedStat = pkgsStat.derivedStat
     # output derived stats
     println(io, "==============================\n")
@@ -515,6 +524,7 @@ function analyzePackages(pkgsDir :: String, io :: IO)
     println(io, "hasOnlyEval: $(derivedStat["hasOnlyEval"])/$(goodPkgsCnt)")
     println(io, "hasBothEvalIL: $(derivedStat["hasBothEvalIL"])/$(goodPkgsCnt)")
     println(io, "hasOnlyIL: $(derivedStat["hasOnlyIL"])/$(goodPkgsCnt)")
+    println(io, "inFunCallOrFunNoIL: $(derivedStat["inFunCallOrFunNoIL"])/$(goodPkgsCnt)")
     println(io)
     println(io, "Total Stat:")
     for info in sort(collect(pkgsStat.totalStat.evalArgStat);
