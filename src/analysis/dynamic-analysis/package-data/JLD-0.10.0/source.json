@@ -1,0 +1,413 @@
+{
+  "eval_info": {
+    "call_count": 199,
+    "stack_traces": [
+      {
+        "count": 101,
+        "last_call": "eval at JLD.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 81,
+              "ast_head": "Int64"
+            },
+            {
+              "count": 8,
+              "ast_head": "Bool"
+            },
+            {
+              "count": 4,
+              "ast_head": "UInt8"
+            },
+            {
+              "count": 4,
+              "ast_head": "tuple"
+            },
+            {
+              "count": 4,
+              "ast_head": "Float64"
+            }
+          ]
+        }
+      },
+      {
+        "count": 84,
+        "last_call": "julia_type(::Expr) at JLD.jl:1009",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 37,
+              "ast_head": "curly"
+            },
+            {
+              "count": 15,
+              "ast_head": "."
+            },
+            {
+              "count": 4,
+              "ast_head": "where"
+            },
+            {
+              "count": 3,
+              "ast_head": "Symbol-TestType5"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-MyBT"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-EmptyTI"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-EmptyType"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-Vague"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-EmptyII"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-PaddingTest"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-TestType2"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-TypeUnionField"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-MyImmutable2"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-Type"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-EmptyTT"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-TestType7"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-GenericUnionField"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-EmptyIIOtherField"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-MyStruct"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-NALikeType"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-TestType3"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-TestType4"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-EmptyIT"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-TestType8"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-TestType1"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-TestType6"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-ObjRefType"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-TestBenchmarkGroup"
+            },
+            {
+              "count": 1,
+              "ast_head": "Symbol-EmptyImmutable"
+            }
+          ]
+        }
+      },
+      {
+        "count": 6,
+        "last_call": "reconstruct_type(::JLD.JldFile, ::HDF5Datatype, ::String) at jld_types.jl:781",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 6,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "reconstruct_type(::JLD.JldFile, ::HDF5Datatype, ::String) at jld_types.jl:746",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "reconstruct_type(::JLD.JldFile, ::HDF5Datatype, ::String) at jld_types.jl:743",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at jldtests.jl:919",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at jldtests.jl:154",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "struct"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at jldtests.jl:938",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "macrocall"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "jldopen(::String, ::Bool, ::Bool, ::Bool, ::Bool, ::Bool; mmaparrays::Bool, compatible::Bool, compress::Bool) at JLD.jl:211",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "import"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 81,
+          "ast_head": "Int64"
+        },
+        {
+          "count": 37,
+          "ast_head": "curly"
+        },
+        {
+          "count": 15,
+          "ast_head": "."
+        },
+        {
+          "count": 11,
+          "ast_head": "block"
+        },
+        {
+          "count": 8,
+          "ast_head": "Bool"
+        },
+        {
+          "count": 4,
+          "ast_head": "UInt8"
+        },
+        {
+          "count": 4,
+          "ast_head": "where"
+        },
+        {
+          "count": 4,
+          "ast_head": "tuple"
+        },
+        {
+          "count": 4,
+          "ast_head": "Float64"
+        },
+        {
+          "count": 3,
+          "ast_head": "Symbol-TestType5"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-MyBT"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-EmptyType"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-EmptyTI"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-EmptyII"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-Vague"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-PaddingTest"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-TestType2"
+        },
+        {
+          "count": 1,
+          "ast_head": "macrocall"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-TypeUnionField"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-MyImmutable2"
+        },
+        {
+          "count": 1,
+          "ast_head": "struct"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-Type"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-EmptyTT"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-TestType7"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-GenericUnionField"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-EmptyIIOtherField"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-MyStruct"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-NALikeType"
+        },
+        {
+          "count": 1,
+          "ast_head": "import"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-TestType3"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-TestType4"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-EmptyIT"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-TestType1"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-TestType6"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-ObjRefType"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-TestType8"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-TestBenchmarkGroup"
+        },
+        {
+          "count": 1,
+          "ast_head": "Symbol-EmptyImmutable"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},8],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},1],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},53],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},1],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},97],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},10],[{\"astHead\":\"curly\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},37]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

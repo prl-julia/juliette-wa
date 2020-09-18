@@ -1,0 +1,132 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+/home/jack/bin/julia
+[✔️] Julia version
+[✔️] TensorFlow version
+[✔️] TensorFlow-Probability version
+[✔️] Python executable file
+[✔️] Julia path
+[✘] Dynamic library path (Optional)
+
+[Reason]
+/home/jack/.julia/conda/3/lib is not in LD_LIBRARY_PATH. This MAY break custom operator compilation. However, in most cases, ADCME automatic fixes this problem for you.
+
+
+[Instruction]
+Add your dynamic library path path to your environment path, e.g. (Unix systems) 
+
+export LD_LIBRARY_PATH=/home/jack/.julia/conda/3/lib:$LD_LIBRARY_PATH
+
+For convenience, you can add the above line to your `~/.bashrc` (Linux or Apple).
+For Windows, you need to add it to PATH instead of LD_LIBRARY_PATH.
+
+[✔️] Memory Address Length =  64
+[✘] Binaries path
+
+[Reason]
+/home/jack/.julia/conda/3/bin is not in PATH. This path contains compatible tools such as a GCC compiler, `cmake`, `make`, or any other tools you want to use directly from terminal.
+However, setting the path is NOT a requirement, and ADCME works totally fine without any action.
+
+
+[Instruction]
+(Optional) Add your binary path to your environment path, e.g. (Unix systems) 
+
+export PATH=/home/jack/.julia/conda/3/bin:$PATH
+
+For convenience, you can add the above line to your `~/.bashrc` (Linux) or `~/.bash_profile` (Apple).
+For Windows, you need to add it to system environment.
+
+[✘] GPU Support (Optional)
+
+[Reason]
+ADCME is not compiled against GPU.
+
+
+[Instruction]
+If you intend to use GPU, set ENV["GPU"] = 1 and then rebuild ADCME.
+
+Dependency file is located at: /home/jack/.julia/packages/ADCME/DBZ10/src/../deps/deps.jl
+Test Summary:               | Pass  Total
+indexing for rank 3 tensors |    3      3
+Load library operator (with gradient, multiple outputs = true): /home/jack/.julia/packages/ADCME/DBZ10/deps/Plugin/ExtendedNN/build/libExtendedNn.so ==> extended_nn
+Test Summary: | Pass  Total
+fcx           |    4      4
+Test Summary: | Pass  Total
+dropout       |    2      2
+Test Summary:      | Pass  Total
+sparse_constructor |    7      7
+Test Summary:     | Pass  Total
+sparse_arithmetic |    4      4
+Test Summary:  | Pass  Total
+sparse_adjoint |    1      1
+Test Summary: | Pass  Total
+sparse_mul    |    6      6
+Test Summary:    | Pass  Total
+sparse_vcat_hcat |    2      2
+Test Summary:   | Pass  Total
+sparse_indexing |    3      3
+Test Summary: | Pass  Total
+sparse_solve  |    1      1
+k = 1
+k = 2
+k = 3
+k = 4
+k = 5
+k = 6
+k = 7
+k = 8
+k = 9
+k = 10
+v = [0.310753028854708, 0.3231980245454744, 0.5985635367758273, 0.8065005484608625, 0.0019090090672639892, 0.49592656040223293, 0.4738336866546835, 0.9168224659693978, 0.009303342815150772, 0.5446528665083872]
+Test Summary:    | Pass  Total
+sparse_assembler |    3      3
+Test Summary:       | Pass  Total
+sparse_least_square |    1      1
+Test Summary:  | Pass  Total
+sparse mat mul |    3      3
+Test Summary: | Pass  Total
+spdiag        |    3      3
+Test Summary: | Pass  Total
+spzero        |    2      2
+Test Summary:   | Pass  Total
+sparse indexing |    1      1
+Test Summary: | Pass  Total
+sum           |    3      3
+Test Summary:   | Pass  Total
+dense_to_sparse |    2      2
+Test Summary: | Pass  Total
+spdiagm       |    4      4
+Test Summary: | Pass  Total
+hvcat         |    1      1
+Test Summary: | Pass  Total
+find          |    6      6
+Test Summary:             | Pass  Total
+sparse scatter update add |    2      2
+Test Summary:   | Pass  Total
+constant sparse |    1      1
+Test Summary: | Pass  Total
+get index     |    1      1
+Test Summary:                  | Pass  Total
+sparse_factorization_and_solve |    2      2
+Test Summary:         | Pass  Total
+sparse solver warning |    1      1
+Test Summary:  | Pass  Total
+sparse promote |    6      6
+Test Summary: | Broken  Total
+random        |     47     47
+save and load: Error During Test at /home/jack/.julia/packages/ADCME/DBZ10/test/io.jl:1
+  Got exception outside of a @test
+  UndefVarError: save not defined
+  Stacktrace:
+   [1] top-level scope at /home/jack/.julia/packages/ADCME/DBZ10/test/io.jl:5
+   [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/jack/.julia/packages/ADCME/DBZ10/test/io.jl:2
+   [4] include(::String) at ./client.jl:457
+   [5] top-level scope at /home/jack/.julia/packages/ADCME/DBZ10/test/runtests.jl:26
+   [6] include(::String) at ./client.jl:457
+   [7] top-level scope at ./none:12
+   [8] eval(::Module, ::Any) at ./boot.jl:331
+   [9] exec_options(::Base.JLOptions) at ./client.jl:272
+   [10] _start() at ./client.jl:506
+  
+Test Summary: | Error  Total
+save and load |     1      1

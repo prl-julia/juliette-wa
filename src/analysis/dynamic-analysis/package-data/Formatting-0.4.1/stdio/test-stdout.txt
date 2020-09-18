@@ -1,0 +1,22 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+test cformat equality...
+...Done
+  7.739550 seconds (6.27 M allocations: 360.873 MiB, 1.01% gc time)
+
+Test speed
+integer @sprintf speed
+  0.164854 seconds (800.00 k allocations: 48.828 MiB, 9.69% gc time)
+integer sprintf speed
+ 14.575970 seconds (8.80 M allocations: 512.672 MiB, 0.90% gc time)
+integer sprintf speed, bypass repeated lookup
+  0.054683 seconds (1.40 M allocations: 57.968 MiB, 10.68% gc time)
+
+float64 @sprintf speed
+  0.068759 seconds (800.00 k allocations: 48.828 MiB, 24.89% gc time)
+float64 sprintf speed
+ 12.639990 seconds (8.60 M allocations: 509.644 MiB, 0.78% gc time)
+float64 sprintf speed, bypass repeated lookup
+  0.086750 seconds (1.40 M allocations: 57.984 MiB, 15.53% gc time)
+
+test commas...
+test format...

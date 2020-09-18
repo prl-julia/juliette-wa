@@ -80,7 +80,7 @@
     }
   },
   "invokelatest_info": {
-    "call_count": 183,
+    "call_count": 184,
     "stack_traces": [
       {
         "count": 68,
@@ -99,13 +99,13 @@
         }
       },
       {
-        "count": 55,
+        "count": 56,
         "last_call": "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.JoinPGRPMsg, ::Bool) at messages.jl:185",
         "auxillary": {
           "function_names": [
             {
               "function_name": "serialize_msg",
-              "count": 55
+              "count": 56
             }
           ]
         }
@@ -179,7 +179,7 @@
       "function_names": [
         {
           "function_name": "serialize_msg",
-          "count": 55
+          "count": 56
         },
         {
           "function_name": "loadpkg",

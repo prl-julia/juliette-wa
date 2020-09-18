@@ -504,7 +504,7 @@ Issue 326     |    2      2
 → Use serve() from Franklin to see the website in your browser.
 → Initial full pass...
 Verifying links... [you don't seem online ✗]All internal links verified ✓.      
-→ Full pass (no pre-rendering)     [done  32.6s]                               
+→ Full pass (no pre-rendering)     [done  20.2s]                               
 Test Summary: | Pass  Total
 Gen&Opt       |   16     16
 Test Summary: | Pass  Total

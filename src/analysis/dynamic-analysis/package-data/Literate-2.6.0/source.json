@@ -1,0 +1,111 @@
+{
+  "eval_info": {
+    "call_count": 38,
+    "stack_traces": [
+      {
+        "count": 19,
+        "last_call": "sandbox() at Literate.jl:674",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 19,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 19,
+        "last_call": "sandbox() at Literate.jl:671",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 19,
+              "ast_head": "function"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 38,
+          "ast_head": "function"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 19,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 19,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},38]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 25,
+    "stack_traces": [
+      {
+        "count": 19,
+        "last_call": "execute_notebook(::Dict{Any,Any}) at Literate.jl:651",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "display_dict",
+              "count": 19
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "execute_markdown!(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Module, ::String, ::String) at Literate.jl:486",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "show",
+              "count": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "#20 at Literate.jl:472 [inlined]",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "show",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "execute_markdown!(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Module, ::String, ::String) at Literate.jl:480",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "show",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "display_dict",
+          "count": 19
+        },
+        {
+          "function_name": "show",
+          "count": 6
+        }
+      ]
+    }
+  }
+}

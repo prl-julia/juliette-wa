@@ -1,0 +1,83 @@
+{
+  "eval_info": {
+    "call_count": 5,
+    "stack_traces": [
+      {
+        "count": 4,
+        "last_call": "eval(::Expr) at client.jl:467",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 3,
+              "ast_head": "="
+            },
+            {
+              "count": 1,
+              "ast_head": "where"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "@static(::LineNumberNode, ::Module, ::Any) at osutils.jl:19",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "call"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 3,
+          "ast_head": "="
+        },
+        {
+          "count": 1,
+          "ast_head": "call"
+        },
+        {
+          "count": 1,
+          "ast_head": "where"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 5965,
+    "stack_traces": [
+      {
+        "count": 5965,
+        "last_call": "getdict(::Array{UInt64,1}) at Profile.jl:207",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "identity",
+              "count": 5965
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "identity",
+          "count": 5965
+        }
+      ]
+    }
+  }
+}

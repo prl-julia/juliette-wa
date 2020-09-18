@@ -1,0 +1,135 @@
+{
+  "eval_info": {
+    "call_count": 8,
+    "stack_traces": [
+      {
+        "count": 7,
+        "last_call": "top-level scope at none:1",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 7,
+              "ast_head": "let"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "eval(::Expr) at client.jl:467",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "call"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 7,
+          "ast_head": "let"
+        },
+        {
+          "count": 1,
+          "ast_head": "call"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"let\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},7],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 11,
+    "stack_traces": [
+      {
+        "count": 5,
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "watch_package",
+              "count": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "require(::Base.PkgId) at loading.jl:931",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "watch_package",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "updated_methodloc(::Method) at methodshow.jl:130",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "method_location",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "show_backtrace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "update_stacktrace_lineno!",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "include(::String) at client.jl:451",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#103",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "watch_package",
+          "count": 7
+        },
+        {
+          "function_name": "method_location",
+          "count": 2
+        },
+        {
+          "function_name": "#103",
+          "count": 1
+        },
+        {
+          "function_name": "update_stacktrace_lineno!",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

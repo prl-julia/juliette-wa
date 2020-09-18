@@ -1,0 +1,79 @@
+{
+  "eval_info": {
+    "call_count": 3541,
+    "stack_traces": [
+      {
+        "count": 3541,
+        "last_call": "#67 at array.jl:0 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1913,
+              "ast_head": "UnionAll"
+            },
+            {
+              "count": 1628,
+              "ast_head": "DataType"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 1913,
+          "ast_head": "UnionAll"
+        },
+        {
+          "count": 1628,
+          "ast_head": "DataType"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3541]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 4,
+    "stack_traces": [
+      {
+        "count": 3,
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "require(::Base.PkgId) at loading.jl:931",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "loadpkg",
+          "count": 4
+        }
+      ]
+    }
+  }
+}

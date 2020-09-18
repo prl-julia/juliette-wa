@@ -1,14 +1,14 @@
 {
   "eval_info": {
-    "call_count": 840,
+    "call_count": 838,
     "stack_traces": [
       {
-        "count": 629,
+        "count": 627,
         "last_call": "eval at Franklin.jl:1 [inlined]",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 360,
+              "count": 359,
               "ast_head": "call"
             },
             {
@@ -28,7 +28,7 @@
               "ast_head": "vect"
             },
             {
-              "count": 9,
+              "count": 8,
               "ast_head": "tuple"
             },
             {
@@ -210,7 +210,7 @@
     "func_specific_data": {
       "ast_heads": [
         {
-          "count": 423,
+          "count": 422,
           "ast_head": "call"
         },
         {
@@ -250,7 +250,7 @@
           "ast_head": "toplevel"
         },
         {
-          "count": 9,
+          "count": 8,
           "ast_head": "tuple"
         },
         {
@@ -300,7 +300,7 @@
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},5],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},64],[{\"astHead\":\"for\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},14],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},11],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},215],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},477],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},44]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},5],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},63],[{\"astHead\":\"for\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},14],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},11],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},215],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},476],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},44]]"
     }
   },
   "invokelatest_info": {

@@ -1,0 +1,89 @@
+{
+  "eval_info": {
+    "call_count": 13,
+    "stack_traces": [
+      {
+        "count": 9,
+        "last_call": "rcopy(::Type{FormulaTerm}, ::Ptr{LangSxp}) at formula.jl:41",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 9,
+              "ast_head": "macrocall"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "repl_eval(::String, ::Base.PipeEndpoint, ::Base.PipeEndpoint) at RPrompt.jl:53",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "let"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at namespaces.jl:96",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "using"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "rimport(::String, ::Symbol; normalizenames::Bool) at namespaces.jl:41",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "toplevel"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 9,
+          "ast_head": "macrocall"
+        },
+        {
+          "count": 2,
+          "ast_head": "let"
+        },
+        {
+          "count": 1,
+          "ast_head": "using"
+        },
+        {
+          "count": 1,
+          "ast_head": "toplevel"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},1],[{\"astHead\":\"let\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"@!WAmacro\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},9],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

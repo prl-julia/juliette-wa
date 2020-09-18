@@ -1,22 +1,22 @@
 {
   "eval_info": {
-    "call_count": 13072,
+    "call_count": 13284,
     "stack_traces": [
       {
-        "count": 13030,
+        "count": 13242,
         "last_call": "eval at ProtoBuf.jl:1 [inlined]",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 7301,
+              "count": 7453,
               "ast_head": "Symbol-read_varint"
             },
             {
-              "count": 1504,
+              "count": 1498,
               "ast_head": "Symbol-read_string"
             },
             {
-              "count": 1125,
+              "count": 1151,
               "ast_head": "Symbol-write_varint"
             },
             {
@@ -28,7 +28,7 @@
               "ast_head": "Symbol-read_fixed"
             },
             {
-              "count": 435,
+              "count": 455,
               "ast_head": "Symbol-readproto"
             },
             {
@@ -40,7 +40,7 @@
               "ast_head": "Symbol-read_svarint"
             },
             {
-              "count": 334,
+              "count": 354,
               "ast_head": "Symbol-writeproto"
             },
             {
@@ -102,15 +102,15 @@
     "func_specific_data": {
       "ast_heads": [
         {
-          "count": 7301,
+          "count": 7453,
           "ast_head": "Symbol-read_varint"
         },
         {
-          "count": 1504,
+          "count": 1498,
           "ast_head": "Symbol-read_string"
         },
         {
-          "count": 1125,
+          "count": 1151,
           "ast_head": "Symbol-write_varint"
         },
         {
@@ -122,7 +122,7 @@
           "ast_head": "Symbol-read_fixed"
         },
         {
-          "count": 435,
+          "count": 455,
           "ast_head": "Symbol-readproto"
         },
         {
@@ -134,7 +134,7 @@
           "ast_head": "Symbol-read_svarint"
         },
         {
-          "count": 334,
+          "count": 354,
           "ast_head": "Symbol-writeproto"
         },
         {
@@ -180,7 +180,7 @@
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},13071],[{\"astHead\":\"curly\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},13283],[{\"astHead\":\"curly\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1]]"
     }
   },
   "invokelatest_info": {

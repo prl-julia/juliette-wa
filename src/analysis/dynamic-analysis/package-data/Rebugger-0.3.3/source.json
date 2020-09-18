@@ -1,0 +1,247 @@
+{
+  "eval_info": {
+    "call_count": 43,
+    "stack_traces": [
+      {
+        "count": 21,
+        "last_call": "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:265",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 16,
+              "ast_head": "block"
+            },
+            {
+              "count": 5,
+              "ast_head": "macrocall"
+            }
+          ]
+        }
+      },
+      {
+        "count": 14,
+        "last_call": "method_capture_from_callee(::Method, ::Expr; overwrite::Bool) at debug.jl:474",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 14,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "(::var\"#run_insertion#105\")(::String, ::String) at edit.jl:54",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 2,
+              "ast_head": "for"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at edit.jl:138",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at edit.jl:155",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "block"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at edit.jl:280",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "macrocall"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "capture_stacktrace(::Module, ::Expr) at debug.jl:201",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at edit.jl:293",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "macrocall"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at edit.jl:162",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "block"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 19,
+          "ast_head": "block"
+        },
+        {
+          "count": 14,
+          "ast_head": "function"
+        },
+        {
+          "count": 7,
+          "ast_head": "macrocall"
+        },
+        {
+          "count": 2,
+          "ast_head": "for"
+        },
+        {
+          "count": 1,
+          "ast_head": "call"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 13,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 1,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},17],[{\"astHead\":\"for\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},7],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},17],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},16]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 13,
+    "stack_traces": [
+      {
+        "count": 13,
+        "last_call": "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:291",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##kwvarargs#261",
+              "count": 2
+            },
+            {
+              "function_name": "##kwvarargs2#262",
+              "count": 2
+            },
+            {
+              "function_name": "##broadcast#284",
+              "count": 2
+            },
+            {
+              "function_name": "##snoop2#260",
+              "count": 1
+            },
+            {
+              "function_name": "##destruct#264",
+              "count": 1
+            },
+            {
+              "function_name": "##apply#286",
+              "count": 1
+            },
+            {
+              "function_name": "##calldo#285",
+              "count": 1
+            },
+            {
+              "function_name": "##HasValue#263",
+              "count": 1
+            },
+            {
+              "function_name": "##snoop0#258",
+              "count": 1
+            },
+            {
+              "function_name": "##snoop1#259",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "##kwvarargs#261",
+          "count": 2
+        },
+        {
+          "function_name": "##kwvarargs2#262",
+          "count": 2
+        },
+        {
+          "function_name": "##broadcast#284",
+          "count": 2
+        },
+        {
+          "function_name": "##snoop2#260",
+          "count": 1
+        },
+        {
+          "function_name": "##destruct#264",
+          "count": 1
+        },
+        {
+          "function_name": "##apply#286",
+          "count": 1
+        },
+        {
+          "function_name": "##calldo#285",
+          "count": 1
+        },
+        {
+          "function_name": "##HasValue#263",
+          "count": 1
+        },
+        {
+          "function_name": "##snoop0#258",
+          "count": 1
+        },
+        {
+          "function_name": "##snoop1#259",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

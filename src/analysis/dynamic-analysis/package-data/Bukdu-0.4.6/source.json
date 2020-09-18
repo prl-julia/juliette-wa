@@ -1,0 +1,65 @@
+{
+  "eval_info": {
+    "call_count": 63,
+    "stack_traces": [
+      {
+        "count": 45,
+        "last_call": "add_route(::Function, ::String, ::Type{Bukdu.System.AnonymousController}, ::Function, ::Dict{Symbol,DataType}) at Routing.jl:59",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 45,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 17,
+        "last_call": "empty!() at Routing.jl:84",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 17,
+              "ast_head": "function"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at routing.jl:30",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "function"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 63,
+          "ast_head": "function"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 1,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 62,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},62],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},1]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

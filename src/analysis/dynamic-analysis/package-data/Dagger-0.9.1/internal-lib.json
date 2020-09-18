@@ -1,0 +1,139 @@
+{
+  "eval_info": {
+    "call_count": 66,
+    "stack_traces": [
+      {
+        "count": 65,
+        "last_call": "(::Distributed.var\"#155#156\"{Module,Expr})() at task.jl:356",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 62,
+              "ast_head": "block"
+            },
+            {
+              "count": 3,
+              "ast_head": "call"
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "@static(::LineNumberNode, ::Module, ::Any) at osutils.jl:19",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "count": 1,
+              "ast_head": "call"
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [
+        {
+          "count": 62,
+          "ast_head": "block"
+        },
+        {
+          "count": 4,
+          "ast_head": "call"
+        }
+      ],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},52],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},49],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},343],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},8]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 26290,
+    "stack_traces": [
+      {
+        "count": 9046,
+        "last_call": "message_handler_loop(::Sockets.TCPSocket, ::Sockets.TCPSocket, ::Bool) at process_messages.jl:185",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "deserialize_msg",
+              "count": 9046
+            }
+          ]
+        }
+      },
+      {
+        "count": 9013,
+        "last_call": "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.JoinPGRPMsg, ::Bool) at messages.jl:185",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "serialize_msg",
+              "count": 9013
+            }
+          ]
+        }
+      },
+      {
+        "count": 8222,
+        "last_call": "(::Distributed.var\"#125#126\"{Distributed.ProcessGroup,Distributed.RRID,typeof(Distributed.def_rv_channel)})() at remotecall.jl:175",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "def_rv_channel",
+              "count": 8222
+            }
+          ]
+        }
+      },
+      {
+        "count": 8,
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "_require_callback",
+              "count": 8
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "require(::Base.PkgId) at loading.jl:931",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "_require_callback",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "deserialize_msg",
+          "count": 9046
+        },
+        {
+          "function_name": "serialize_msg",
+          "count": 9013
+        },
+        {
+          "function_name": "def_rv_channel",
+          "count": 8222
+        },
+        {
+          "function_name": "_require_callback",
+          "count": 9
+        }
+      ]
+    }
+  }
+}
