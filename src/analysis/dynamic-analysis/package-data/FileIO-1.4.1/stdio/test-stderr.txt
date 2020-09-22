@@ -1,45 +1,206 @@
-┌ Warning: Assignment to `file_dir` in soft scope is ambiguous because a global variable by the same name exists: `file_dir` will be treated as a new local. Disambiguate by using `local file_dir` to suppress this warning or `global file_dir` to assign to the existing global variable.
-└ @ ~/.julia/packages/FileIO/DzfYr/test/loadsave.jl:24
-┌ Warning: Assignment to `file_path` in soft scope is ambiguous because a global variable by the same name exists: `file_path` will be treated as a new local. Disambiguate by using `local file_path` to suppress this warning or `global file_path` to assign to the existing global variable.
-└ @ ~/.julia/packages/FileIO/DzfYr/test/loadsave.jl:25
-Error encountered while saving "test.not_installed".
-
-Fatal error:
-Errors encountered while loading "/tmp/jl_yHUG0z/test.multierr".
-
-Fatal error:
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-No Changes to `~/.julia/environments/v1.5/Project.toml`
-No Changes to `~/.julia/environments/v1.5/Manifest.toml`
-### DYNAMIC ANALYSIS LINE IDENTIFIER ###
-    Testing FileIO
-Status `/tmp/jl_svzNVp/Project.toml`
-  [5789e2e9] FileIO v1.4.1
-  [48062228] FilePathsBase v0.9.4
-  [44cfe95a] Pkg
-  [9a3f8284] Random
-  [8dfed614] Test
-Status `/tmp/jl_svzNVp/Manifest.toml`
-  [5789e2e9] FileIO v1.4.1
-  [48062228] FilePathsBase v0.9.4
-  [2a0f44e3] Base64
-  [ade2ca70] Dates
-  [8ba89e20] Distributed
-  [b77e0a4c] InteractiveUtils
-  [76f85450] LibGit2
-  [8f399da3] Libdl
-  [56ddb016] Logging
-  [d6f4376e] Markdown
-  [a63ad114] Mmap
-  [44cfe95a] Pkg
-  [de0858da] Printf
-  [3fa0cd96] REPL
-  [9a3f8284] Random
-  [ea8e919c] SHA
-  [9e88b42a] Serialization
-  [6462fe0b] Sockets
-  [8dfed614] Test
-  [cf7118a7] UUIDs
-  [4ec0a83e] Unicode
-    Testing FileIO tests passed 
+ERROR: LoadError: Unsatisfiable requirements detected for package MonteCarloMeasurements [0987c9cc]:
+ MonteCarloMeasurements [0987c9cc] log:
+ ├─possible versions are: [0.1.0-0.1.4, 0.2.0-0.2.2, 0.3.0-0.3.4, 0.4.0-0.4.1, 0.5.0-0.5.8, 0.6.0-0.6.4, 0.7.0-0.7.6, 0.8.0-0.8.12, 0.9.0-0.9.6] or uninstalled
+ ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0-0.1.4, 0.2.0-0.2.2, 0.3.0-0.3.4, 0.4.0-0.4.1, 0.5.0-0.5.8, 0.6.0-0.6.4, 0.7.0-0.7.6, 0.8.0-0.8.12, 0.9.0-0.9.6]
+ ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.1.0-0.1.4, 0.2.0-0.2.2, 0.3.0-0.3.1, 0.6.4, 0.7.0-0.7.6, 0.8.0-0.8.12, 0.9.0-0.9.6] or uninstalled, leaving only versions: [0.1.0-0.1.4, 0.2.0-0.2.2, 0.3.0-0.3.1, 0.6.4, 0.7.0-0.7.6, 0.8.0-0.8.12, 0.9.0-0.9.6]
+ │ └─Requires [ae029012] log:
+ │   ├─possible versions are: [0.5.0-0.5.2, 1.0.0-1.0.3] or uninstalled
+ │   └─restricted by compatibility requirements with Weave [44d3d7a6] to versions: 1.0.0-1.0.3
+ │     └─Weave [44d3d7a6] log:
+ │       ├─possible versions are: [0.6.0-0.6.2, 0.7.0-0.7.2, 0.8.0-0.8.1, 0.9.0-0.9.4, 0.10.0-0.10.3] or uninstalled
+ │       └─restricted to versions * by an explicit requirement, leaving only versions [0.6.0-0.6.2, 0.7.0-0.7.2, 0.8.0-0.8.1, 0.9.0-0.9.4, 0.10.0-0.10.3]
+ ├─restricted by compatibility requirements with Soss [8ce77f84] to versions: [0.1.0-0.1.4, 0.2.0-0.2.2, 0.3.0-0.3.4], leaving only versions: [0.1.0-0.1.4, 0.2.0-0.2.2, 0.3.0-0.3.1]
+ │ └─Soss [8ce77f84] log:
+ │   ├─possible versions are: [0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 0.9.0, 0.10.0, 0.11.0, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.4, 0.15.0-0.15.1] or uninstalled
+ │   ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 0.9.0, 0.10.0, 0.11.0, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.4, 0.15.0-0.15.1]
+ │   ├─restricted by compatibility requirements with LogDensityProblems [6fdf6af0] to versions: [0.1.0, 0.3.0, 0.4.0, 0.5.0, 0.6.0, 0.7.0, 0.11.0, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.4, 0.15.0-0.15.1] or uninstalled, leaving only versions: [0.1.0, 0.3.0, 0.4.0, 0.5.0, 0.6.0, 0.7.0, 0.11.0, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.4, 0.15.0-0.15.1]
+ │   │ └─LogDensityProblems [6fdf6af0] log:
+ │   │   ├─possible versions are: [0.2.0, 0.3.0, 0.4.0-0.4.1, 0.5.0-0.5.1, 0.6.0, 0.8.0-0.8.3, 0.9.0-0.9.2, 0.10.0-0.10.3] or uninstalled
+ │   │   ├─restricted by compatibility requirements with Soss [8ce77f84] to versions: [0.2.0, 0.3.0, 0.4.0-0.4.1, 0.5.0-0.5.1, 0.6.0, 0.8.0-0.8.3, 0.9.0-0.9.2, 0.10.0-0.10.3]
+ │   │   │ └─Soss [8ce77f84] log: see above
+ │   │   ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.2.0, 0.3.0, 0.4.0, 0.10.1-0.10.3] or uninstalled, leaving only versions: [0.2.0, 0.3.0, 0.4.0, 0.10.1-0.10.3]
+ │   │   │ └─Requires [ae029012] log: see above
+ │   │   └─restricted by compatibility requirements with Soss [8ce77f84] to versions: [0.2.0, 0.3.0, 0.4.0-0.4.1, 0.5.0-0.5.1, 0.6.0, 0.8.0-0.8.3], leaving only versions: [0.2.0, 0.3.0, 0.4.0]
+ │   │     └─Soss [8ce77f84] log: see above
+ │   ├─restricted by compatibility requirements with CategoricalArrays [324d7699] to versions: [0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 0.9.0, 0.10.0, 0.11.0, 0.12.0, 0.13.0-0.13.1] or uninstalled, leaving only versions: [0.1.0, 0.3.0, 0.4.0, 0.5.0, 0.6.0, 0.7.0, 0.11.0, 0.12.0, 0.13.0-0.13.1]
+ │   │ └─CategoricalArrays [324d7699] log:
+ │   │   ├─possible versions are: [0.3.11, 0.3.13-0.3.14, 0.4.0, 0.5.0-0.5.5, 0.6.0, 0.7.0-0.7.7, 0.8.0-0.8.3] or uninstalled
+ │   │   ├─restricted by compatibility requirements with RCall [6f49c342] to versions: [0.3.11, 0.3.13-0.3.14, 0.4.0, 0.5.0-0.5.5, 0.6.0, 0.7.0-0.7.7, 0.8.0-0.8.3]
+ │   │   │ └─RCall [6f49c342] log:
+ │   │   │   ├─possible versions are: [0.12.0-0.12.1, 0.13.0-0.13.7] or uninstalled
+ │   │   │   ├─restricted to versions * by an explicit requirement, leaving only versions [0.12.0-0.12.1, 0.13.0-0.13.7]
+ │   │   │   ├─restricted by compatibility requirements with Requires [ae029012] to versions: 0.13.3-0.13.7 or uninstalled, leaving only versions: 0.13.3-0.13.7
+ │   │   │   │ └─Requires [ae029012] log: see above
+ │   │   │   └─restricted by compatibility requirements with DataFrames [a93c6f00] to versions: [0.12.0-0.12.1, 0.13.0-0.13.6] or uninstalled, leaving only versions: 0.13.3-0.13.6
+ │   │   │     └─DataFrames [a93c6f00] log:
+ │   │   │       ├─possible versions are: [0.11.7, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.2, 0.16.0, 0.17.0-0.17.1, 0.18.0-0.18.4, 0.19.0-0.19.4, 0.20.0-0.20.2, 0.21.0-0.21.7] or uninstalled
+ │   │   │       ├─restricted by compatibility requirements with PowerSystems [bcd98974] to versions: [0.11.7, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.2, 0.16.0, 0.17.0-0.17.1, 0.18.0-0.18.4, 0.19.0-0.19.4, 0.20.0-0.20.2, 0.21.0-0.21.7]
+ │   │   │       │ └─PowerSystems [bcd98974] log:
+ │   │   │       │   ├─possible versions are: [0.1.0, 0.2.0, 0.3.0-0.3.2, 0.4.0-0.4.3, 0.5.0-0.5.2, 0.6.0-0.6.3, 0.7.0-0.7.1, 0.8.0-0.8.6, 0.9.0-0.9.1, 0.10.0, 0.11.0-0.11.2, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.2, 0.18.0-0.18.6, 0.19.0, 0.20.0-0.20.1, 0.21.0, 0.22.0, 0.23.0-0.23.3, 0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1] or uninstalled
+ │   │   │       │   ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0, 0.2.0, 0.3.0-0.3.2, 0.4.0-0.4.3, 0.5.0-0.5.2, 0.6.0-0.6.3, 0.7.0-0.7.1, 0.8.0-0.8.6, 0.9.0-0.9.1, 0.10.0, 0.11.0-0.11.2, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.2, 0.18.0-0.18.6, 0.19.0, 0.20.0-0.20.1, 0.21.0, 0.22.0, 0.23.0-0.23.3, 0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1]
+ │   │   │       │   ├─restricted by julia compatibility requirements to versions: [0.1.0, 0.2.0, 0.3.0-0.3.2, 0.4.1-0.4.3, 0.5.0-0.5.2, 0.6.0-0.6.3, 0.7.0-0.7.1, 0.8.0-0.8.6, 0.9.0-0.9.1, 0.10.0, 0.11.0-0.11.2, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.2, 0.18.0-0.18.6, 0.19.0, 0.20.0-0.20.1, 0.21.0, 0.22.0, 0.23.0-0.23.3, 0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1] or uninstalled, leaving only versions: [0.1.0, 0.2.0, 0.3.0-0.3.2, 0.4.1-0.4.3, 0.5.0-0.5.2, 0.6.0-0.6.3, 0.7.0-0.7.1, 0.8.0-0.8.6, 0.9.0-0.9.1, 0.10.0, 0.11.0-0.11.2, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.2, 0.18.0-0.18.6, 0.19.0, 0.20.0-0.20.1, 0.21.0, 0.22.0, 0.23.0-0.23.3, 0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1]
+ │   │   │       │   └─restricted by compatibility requirements with DataFrames [a93c6f00] to versions: [0.1.0, 0.2.0, 0.3.0-0.3.2, 0.4.0-0.4.3, 0.5.0-0.5.2, 0.6.0-0.6.3, 0.7.0-0.7.1, 0.8.0-0.8.6, 0.9.0-0.9.1, 0.10.0, 0.11.0-0.11.2, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.2, 0.18.0-0.18.6, 0.19.0] or uninstalled, leaving only versions: [0.1.0, 0.2.0, 0.3.0-0.3.2, 0.4.1-0.4.3, 0.5.0-0.5.2, 0.6.0-0.6.3, 0.7.0-0.7.1, 0.8.0-0.8.6, 0.9.0-0.9.1, 0.10.0, 0.11.0-0.11.2, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.2, 0.18.0-0.18.6, 0.19.0]
+ │   │   │       │     └─DataFrames [a93c6f00] log: see above
+ │   │   │       └─restricted by compatibility requirements with Mads [d6bdc55b] to versions: [0.11.7, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.2, 0.16.0, 0.17.0-0.17.1, 0.18.0-0.18.4, 0.19.0-0.19.4, 0.20.0-0.20.2]
+ │   │   │         └─Mads [d6bdc55b] log:
+ │   │   │           ├─possible versions are: [0.5.2, 0.6.0-0.6.3, 0.7.0-0.7.6, 0.8.0, 0.9.0-0.9.7, 0.10.0-0.10.8] or uninstalled
+ │   │   │           └─restricted to versions * by an explicit requirement, leaving only versions [0.5.2, 0.6.0-0.6.3, 0.7.0-0.7.6, 0.8.0, 0.9.0-0.9.7, 0.10.0-0.10.8]
+ │   │   ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.3.11, 0.3.13-0.3.14, 0.4.0, 0.5.3-0.5.5, 0.6.0, 0.7.0-0.7.7, 0.8.0-0.8.3] or uninstalled, leaving only versions: [0.3.11, 0.3.13-0.3.14, 0.4.0, 0.5.3-0.5.5, 0.6.0, 0.7.0-0.7.7, 0.8.0-0.8.3]
+ │   │   │ └─Requires [ae029012] log: see above
+ │   │   ├─restricted by compatibility requirements with DataFrames [a93c6f00] to versions: [0.3.11, 0.3.13-0.3.14, 0.4.0, 0.5.0-0.5.5, 0.6.0, 0.7.0-0.7.7], leaving only versions: [0.3.11, 0.3.13-0.3.14, 0.4.0, 0.5.3-0.5.5, 0.6.0, 0.7.0-0.7.7]
+ │   │   │ └─DataFrames [a93c6f00] log: see above
+ │   │   └─restricted by compatibility requirements with Gadfly [c91e804a] to versions: [0.5.0-0.5.5, 0.6.0, 0.7.0-0.7.7, 0.8.0-0.8.3], leaving only versions: [0.5.3-0.5.5, 0.6.0, 0.7.0-0.7.7]
+ │   │     └─Gadfly [c91e804a] log:
+ │   │       ├─possible versions are: [0.8.0, 1.0.0-1.0.1, 1.1.0, 1.2.0-1.2.1, 1.3.0] or uninstalled
+ │   │       ├─restricted by compatibility requirements with Mads [d6bdc55b] to versions: [0.8.0, 1.0.0-1.0.1, 1.1.0, 1.2.0-1.2.1, 1.3.0]
+ │   │       │ └─Mads [d6bdc55b] log: see above
+ │   │       ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.8.0, 1.1.0, 1.2.0-1.2.1, 1.3.0] or uninstalled, leaving only versions: [0.8.0, 1.1.0, 1.2.0-1.2.1, 1.3.0]
+ │   │       │ └─Requires [ae029012] log: see above
+ │   │       ├─restricted by compatibility requirements with JSON [682c06a0] to versions: [1.2.0-1.2.1, 1.3.0] or uninstalled, leaving only versions: [1.2.0-1.2.1, 1.3.0]
+ │   │       │ └─JSON [682c06a0] log:
+ │   │       │   ├─possible versions are: [0.18.0, 0.19.0, 0.20.0-0.20.1, 0.21.0-0.21.1] or uninstalled
+ │   │       │   ├─restricted by compatibility requirements with Literate [98b081ad] to versions: [0.18.0, 0.19.0, 0.20.0-0.20.1, 0.21.0-0.21.1]
+ │   │       │   │ └─Literate [98b081ad] log:
+ │   │       │   │   ├─possible versions are: [0.3.0, 1.0.0-1.0.5, 1.1.0, 2.0.0-2.0.4, 2.1.0-2.1.1, 2.2.0-2.2.1, 2.3.0-2.3.1, 2.4.0, 2.5.0-2.5.1, 2.6.0, 2.7.0] or uninstalled
+ │   │       │   │   ├─restricted to versions * by an explicit requirement, leaving only versions [0.3.0, 1.0.0-1.0.5, 1.1.0, 2.0.0-2.0.4, 2.1.0-2.1.1, 2.2.0-2.2.1, 2.3.0-2.3.1, 2.4.0, 2.5.0-2.5.1, 2.6.0, 2.7.0]
+ │   │       │   │   └─restricted by compatibility requirements with Franklin [713c75ef] to versions: [2.0.0-2.0.4, 2.1.0-2.1.1, 2.2.0-2.2.1, 2.3.0-2.3.1, 2.4.0, 2.5.0-2.5.1, 2.6.0, 2.7.0]
+ │   │       │   │     └─Franklin [713c75ef] log:
+ │   │       │   │       ├─possible versions are: [0.4.4, 0.5.0, 0.6.0-0.6.17, 0.7.0-0.7.10, 0.8.0-0.8.6, 0.9.0-0.9.16] or uninstalled
+ │   │       │   │       └─restricted to versions * by an explicit requirement, leaving only versions [0.4.4, 0.5.0, 0.6.0-0.6.17, 0.7.0-0.7.10, 0.8.0-0.8.6, 0.9.0-0.9.16]
+ │   │       │   └─restricted by compatibility requirements with Weave [44d3d7a6] to versions: 0.21.0-0.21.1
+ │   │       │     └─Weave [44d3d7a6] log: see above
+ │   │       └─restricted by compatibility requirements with CategoricalArrays [324d7699] to versions: [0.8.0, 1.0.0-1.0.1, 1.1.0, 1.2.0-1.2.1] or uninstalled, leaving only versions: 1.2.0-1.2.1
+ │   │         └─CategoricalArrays [324d7699] log: see above
+ │   ├─restricted by compatibility requirements with MonteCarloMeasurements [0987c9cc] to versions: [0.1.0, 0.10.0, 0.11.0, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.4, 0.15.0-0.15.1] or uninstalled, leaving only versions: [0.1.0, 0.11.0, 0.12.0, 0.13.0-0.13.1]
+ │   │ └─MonteCarloMeasurements [0987c9cc] log: see above
+ │   └─restricted by compatibility requirements with AdvancedHMC [0bf59076] to versions: [0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.5.0, 0.6.0, 0.7.0] or uninstalled, leaving only versions: 0.1.0
+ │     └─AdvancedHMC [0bf59076] log:
+ │       ├─possible versions are: [0.1.0, 0.1.2-0.1.9, 0.2.0-0.2.25] or uninstalled
+ │       ├─restricted by compatibility requirements with ProgressMeter [92933f4c] to versions: [0.1.0, 0.1.2-0.1.9, 0.2.0-0.2.7] or uninstalled
+ │       │ └─ProgressMeter [92933f4c] log:
+ │       │   ├─possible versions are: [0.6.0-0.6.1, 0.7.0, 0.8.0, 0.9.0, 1.0.0, 1.1.0, 1.2.0, 1.3.0-1.3.4] or uninstalled
+ │       │   ├─restricted by compatibility requirements with Omega [1af16e33] to versions: [0.6.0-0.6.1, 0.7.0, 0.8.0, 0.9.0, 1.0.0, 1.1.0, 1.2.0, 1.3.0-1.3.4]
+ │       │   │ └─Omega [1af16e33] log:
+ │       │   │   ├─possible versions are: 0.1.0-0.1.1 or uninstalled
+ │       │   │   └─restricted to versions * by an explicit requirement, leaving only versions 0.1.0-0.1.1
+ │       │   └─restricted by compatibility requirements with Mads [d6bdc55b] to versions: [0.6.0-0.6.1, 0.7.0, 0.8.0, 0.9.0]
+ │       │     └─Mads [d6bdc55b] log: see above
+ │       └─restricted by compatibility requirements with Parameters [d96e819e] to versions: [0.1.0, 0.1.2-0.1.5, 0.2.11-0.2.25] or uninstalled, leaving only versions: [0.1.0, 0.1.2-0.1.5] or uninstalled
+ │         └─Parameters [d96e819e] log:
+ │           ├─possible versions are: [0.9.1-0.9.2, 0.10.0-0.10.3, 0.11.0, 0.12.0-0.12.1] or uninstalled
+ │           ├─restricted by compatibility requirements with TimeseriesPrediction [f218859d] to versions: [0.9.1-0.9.2, 0.10.0-0.10.3, 0.11.0, 0.12.0-0.12.1]
+ │           │ └─TimeseriesPrediction [f218859d] log:
+ │           │   ├─possible versions are: [0.5.0-0.5.5, 0.6.0] or uninstalled
+ │           │   └─restricted to versions * by an explicit requirement, leaving only versions [0.5.0-0.5.5, 0.6.0]
+ │           └─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: 0.12.0-0.12.1
+ │             └─DiffEqBase [2b5f629d] log:
+ │               ├─possible versions are: [3.13.2-3.13.3, 4.0.0-4.0.1, 4.1.0, 4.2.0, 4.3.0-4.3.1, 4.4.0, 4.5.0, 4.6.0, 4.7.0, 4.8.0, 4.9.0, 4.10.0-4.10.1, 4.11.0-4.11.1, 4.12.0, 4.13.0, 4.14.0-4.14.1, 4.15.0, 4.16.0, 4.17.0, 4.18.0, 4.19.0, 4.20.0-4.20.3, 4.21.0, 4.21.2-4.21.3, 4.22.0-4.22.2, 4.23.0, 4.23.2-4.23.4, 4.24.0-4.24.3, 4.25.0-4.25.1, 4.26.0-4.26.3, 4.27.0-4.27.1, 4.28.0-4.28.1, 4.29.0-4.29.2, 4.30.0-4.30.2, 4.31.0-4.31.2, 4.32.0, 5.0.0-5.0.1, 5.1.0, 5.2.0-5.2.3, 5.3.0-5.3.2, 5.4.0-5.4.1, 5.5.0-5.5.2, 5.6.0-5.6.4, 5.7.0, 5.8.0-5.8.1, 5.9.0, 5.10.0-5.10.3, 5.11.0-5.11.1, 5.12.0, 5.13.0, 5.14.0-5.14.2, 5.15.0, 5.16.0-5.16.5, 5.17.0-5.17.1, 5.18.0, 5.19.0, 5.20.0-5.20.1, 6.0.0, 6.1.0, 6.2.0-6.2.4, 6.3.0-6.3.6, 6.4.0-6.4.2, 6.5.0-6.5.1, 6.6.0, 6.7.0, 6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.20.0, 6.21.0-6.21.1, 6.22.0-6.22.2, 6.23.0, 6.24.0, 6.25.0-6.25.2, 6.26.0, 6.27.0, 6.28.0, 6.29.0-6.29.3, 6.30.0-6.30.4, 6.31.0-6.31.1, 6.32.0-6.32.2, 6.33.0-6.33.1, 6.34.0-6.34.3, 6.35.0-6.35.2, 6.36.0-6.36.4, 6.37.0, 6.38.0-6.38.4, 6.39.0-6.39.1, 6.40.0-6.40.9, 6.41.0-6.41.3, 6.42.0, 6.43.0-6.43.1, 6.44.0-6.44.3, 6.45.0-6.45.1, 6.46.0-6.46.1, 6.47.0-6.47.1] or uninstalled
+ │               ├─restricted by compatibility requirements with NeuralNetDiffEq [8faf48c0] to versions: [5.0.0-5.0.1, 5.1.0, 5.2.0-5.2.3, 5.3.0-5.3.2, 5.4.0-5.4.1, 5.5.0-5.5.2, 5.6.0-5.6.4, 5.7.0, 5.8.0-5.8.1, 5.9.0, 5.10.0-5.10.3, 5.11.0-5.11.1, 5.12.0, 5.13.0, 5.14.0-5.14.2, 5.15.0, 5.16.0-5.16.5, 5.17.0-5.17.1, 5.18.0, 5.19.0, 5.20.0-5.20.1, 6.0.0, 6.1.0, 6.2.0-6.2.4, 6.3.0-6.3.6, 6.4.0-6.4.2, 6.5.0-6.5.1, 6.6.0, 6.7.0, 6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.20.0, 6.21.0-6.21.1, 6.22.0-6.22.2, 6.23.0, 6.24.0, 6.25.0-6.25.2, 6.26.0, 6.27.0, 6.28.0, 6.29.0-6.29.3, 6.30.0-6.30.4, 6.31.0-6.31.1, 6.32.0-6.32.2, 6.33.0-6.33.1, 6.34.0-6.34.3, 6.35.0-6.35.2, 6.36.0-6.36.4, 6.37.0, 6.38.0-6.38.4, 6.39.0-6.39.1, 6.40.0-6.40.9, 6.41.0-6.41.3, 6.42.0, 6.43.0-6.43.1, 6.44.0-6.44.3, 6.45.0-6.45.1, 6.46.0-6.46.1, 6.47.0-6.47.1]
+ │               │ └─NeuralNetDiffEq [8faf48c0] log:
+ │               │   ├─possible versions are: [0.0.1, 0.1.0, 1.0.0-1.0.2, 1.1.0, 1.2.0, 1.3.0, 1.4.0, 1.5.0, 1.6.0] or uninstalled
+ │               │   ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1, 0.1.0, 1.0.0-1.0.2, 1.1.0, 1.2.0, 1.3.0, 1.4.0, 1.5.0, 1.6.0]
+ │               │   ├─restricted by compatibility requirements with DiffEqFlux [aae7a2af] to versions: [0.0.1, 0.1.0, 1.1.0, 1.2.0, 1.3.0, 1.4.0, 1.5.0, 1.6.0] or uninstalled, leaving only versions: [0.0.1, 0.1.0, 1.1.0, 1.2.0, 1.3.0, 1.4.0, 1.5.0, 1.6.0]
+ │               │   │ └─DiffEqFlux [aae7a2af] log:
+ │               │   │   ├─possible versions are: [0.0.1, 0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.5.0-0.5.2, 0.6.0-0.6.1, 0.7.0, 0.8.0-0.8.1, 0.9.0, 0.10.0-0.10.2, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0-1.8.1, 1.9.0, 1.10.0-1.10.3, 1.11.0, 1.12.0-1.12.1, 1.13.0, 1.14.0, 1.15.0, 1.16.0, 1.17.0, 1.18.0, 1.19.0, 1.20.0, 1.21.0, 1.22.0, 1.23.0] or uninstalled
+ │               │   │   ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.0.1, 0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.10.0-0.10.2, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0-1.8.1, 1.9.0, 1.10.0-1.10.3, 1.11.0, 1.12.0-1.12.1, 1.13.0, 1.14.0, 1.15.0, 1.16.0, 1.17.0, 1.18.0, 1.19.0, 1.20.0, 1.21.0, 1.22.0, 1.23.0] or uninstalled
+ │               │   │   │ └─Requires [ae029012] log: see above
+ │               │   │   ├─restricted by compatibility requirements with Flux [587475ba] to versions: [0.0.1, 0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.5.0-0.5.2, 0.6.0-0.6.1, 0.7.0, 0.8.0-0.8.1, 0.9.0, 0.10.0-0.10.2, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0-1.8.1, 1.9.0, 1.10.0-1.10.3, 1.11.0, 1.12.0-1.12.1, 1.13.0, 1.14.0, 1.15.0, 1.16.0, 1.17.0] or uninstalled, leaving only versions: [0.0.1, 0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.10.0-0.10.2, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0-1.8.1, 1.9.0, 1.10.0-1.10.3, 1.11.0, 1.12.0-1.12.1, 1.13.0, 1.14.0, 1.15.0, 1.16.0, 1.17.0] or uninstalled
+ │               │   │   │ └─Flux [587475ba] log:
+ │               │   │   │   ├─possible versions are: [0.4.1, 0.5.0-0.5.4, 0.6.0-0.6.10, 0.7.0-0.7.3, 0.8.0-0.8.3, 0.9.0, 0.10.0-0.10.4, 0.11.0-0.11.1] or uninstalled
+ │               │   │   │   ├─restricted by compatibility requirements with Omega [1af16e33] to versions: [0.4.1, 0.5.0-0.5.4, 0.6.0-0.6.10, 0.7.0-0.7.3, 0.8.0-0.8.3, 0.9.0, 0.10.0-0.10.4, 0.11.0-0.11.1]
+ │               │   │   │   │ └─Omega [1af16e33] log: see above
+ │               │   │   │   ├─restricted by compatibility requirements with NeuralNetDiffEq [8faf48c0] to versions: [0.4.1, 0.5.0-0.5.4, 0.6.0-0.6.10, 0.7.0-0.7.3, 0.8.0-0.8.3, 0.9.0, 0.10.1-0.10.4]
+ │               │   │   │   │ └─NeuralNetDiffEq [8faf48c0] log: see above
+ │               │   │   │   ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.8.3, 0.9.0, 0.10.0-0.10.4, 0.11.0-0.11.1] or uninstalled, leaving only versions: [0.8.3, 0.9.0, 0.10.1-0.10.4]
+ │               │   │   │   │ └─Requires [ae029012] log: see above
+ │               │   │   │   └─restricted by compatibility requirements with CuArrays [3a865a2d] to versions: [0.4.1, 0.5.0-0.5.4, 0.6.0-0.6.10, 0.7.0-0.7.3, 0.8.0-0.8.3, 0.10.0-0.10.4, 0.11.0-0.11.1] or uninstalled, leaving only versions: [0.8.3, 0.10.1-0.10.4]
+ │               │   │   │     └─CuArrays [3a865a2d] log:
+ │               │   │   │       ├─possible versions are: [0.2.1, 0.3.0, 0.4.0, 0.5.0, 0.6.0-0.6.2, 0.7.0-0.7.3, 0.8.0-0.8.1, 0.9.0-0.9.1, 1.0.0-1.0.2, 1.1.0, 1.2.0-1.2.1, 1.3.0, 1.4.0-1.4.7, 1.5.0, 1.6.0, 1.7.0-1.7.3, 2.0.0-2.0.1, 2.1.0, 2.2.0-2.2.2] or uninstalled
+ │               │   │   │       ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.2.1, 0.3.0, 0.4.0, 0.5.0, 0.6.0-0.6.2, 0.7.0-0.7.3, 0.8.0-0.8.1, 0.9.0-0.9.1, 1.0.0-1.0.1, 1.6.0, 1.7.0-1.7.3, 2.0.0-2.0.1, 2.1.0, 2.2.0-2.2.2] or uninstalled
+ │               │   │   │       │ └─Requires [ae029012] log: see above
+ │               │   │   │       └─restricted by compatibility requirements with NNlib [872c559c] to versions: [1.0.2, 1.1.0, 1.2.0-1.2.1, 1.3.0, 1.4.0-1.4.7, 1.5.0, 1.6.0, 1.7.0-1.7.3, 2.0.0-2.0.1, 2.1.0, 2.2.0-2.2.2] or uninstalled, leaving only versions: [1.6.0, 1.7.0-1.7.3, 2.0.0-2.0.1, 2.1.0, 2.2.0-2.2.2] or uninstalled
+ │               │   │   │         └─NNlib [872c559c] log:
+ │               │   │   │           ├─possible versions are: [0.3.2, 0.4.0-0.4.3, 0.5.0, 0.6.0-0.6.6, 0.7.0-0.7.4] or uninstalled
+ │               │   │   │           ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.6.0-0.6.6, 0.7.0-0.7.4] or uninstalled
+ │               │   │   │           │ └─Requires [ae029012] log: see above
+ │               │   │   │           └─restricted by compatibility requirements with Flux [587475ba] to versions: 0.6.0-0.6.6
+ │               │   │   │             └─Flux [587475ba] log: see above
+ │               │   │   ├─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [0.5.1-0.5.2, 0.6.0-0.6.1, 0.7.0, 0.8.0-0.8.1, 0.9.0, 0.10.0-0.10.2, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0-1.8.1, 1.9.0, 1.10.0-1.10.3, 1.11.0, 1.12.0-1.12.1, 1.13.0, 1.14.0, 1.15.0, 1.16.0, 1.17.0, 1.18.0, 1.19.0, 1.20.0, 1.21.0, 1.22.0, 1.23.0] or uninstalled, leaving only versions: [0.10.0-0.10.2, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0-1.8.1, 1.9.0, 1.10.0-1.10.3, 1.11.0, 1.12.0-1.12.1, 1.13.0, 1.14.0, 1.15.0, 1.16.0, 1.17.0] or uninstalled
+ │               │   │   │ └─DiffEqBase [2b5f629d] log: see above
+ │               │   │   ├─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [0.5.1-0.5.2, 0.6.0-0.6.1, 0.7.0, 0.8.0-0.8.1, 0.9.0, 0.10.0-0.10.2, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0] or uninstalled, leaving only versions: [0.10.0-0.10.2, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0] or uninstalled
+ │               │   │   │ └─DiffEqBase [2b5f629d] log: see above
+ │               │   │   └─restricted by compatibility requirements with Flux [587475ba] to versions: [0.0.1, 0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.5.0-0.5.2, 0.6.0-0.6.1, 0.7.0, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0-1.8.1, 1.9.0, 1.10.0-1.10.3, 1.11.0, 1.12.0-1.12.1, 1.13.0, 1.14.0, 1.15.0, 1.16.0, 1.17.0] or uninstalled, leaving only versions: [1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0] or uninstalled
+ │               │   │     └─Flux [587475ba] log: see above
+ │               │   └─restricted by compatibility requirements with Flux [587475ba] to versions: [0.0.1, 0.1.0, 1.0.0-1.0.1, 1.2.0, 1.3.0, 1.4.0, 1.5.0, 1.6.0] or uninstalled, leaving only versions: [0.0.1, 0.1.0, 1.2.0, 1.3.0, 1.4.0, 1.5.0, 1.6.0]
+ │               │     └─Flux [587475ba] log: see above
+ │               ├─restricted by compatibility requirements with Requires [ae029012] to versions: [6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.20.0, 6.21.0-6.21.1, 6.22.0-6.22.2, 6.23.0, 6.24.0, 6.25.0-6.25.2, 6.26.0, 6.27.0, 6.28.0, 6.29.0-6.29.3, 6.30.0-6.30.4, 6.31.0-6.31.1, 6.32.0-6.32.2, 6.33.0-6.33.1, 6.34.0-6.34.3, 6.35.0-6.35.2, 6.36.0-6.36.4, 6.37.0, 6.38.0-6.38.4, 6.39.0-6.39.1, 6.40.0-6.40.9, 6.41.0-6.41.3, 6.42.0, 6.43.0-6.43.1, 6.44.0-6.44.3, 6.45.0-6.45.1, 6.46.0-6.46.1, 6.47.0-6.47.1] or uninstalled, leaving only versions: [6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.20.0, 6.21.0-6.21.1, 6.22.0-6.22.2, 6.23.0, 6.24.0, 6.25.0-6.25.2, 6.26.0, 6.27.0, 6.28.0, 6.29.0-6.29.3, 6.30.0-6.30.4, 6.31.0-6.31.1, 6.32.0-6.32.2, 6.33.0-6.33.1, 6.34.0-6.34.3, 6.35.0-6.35.2, 6.36.0-6.36.4, 6.37.0, 6.38.0-6.38.4, 6.39.0-6.39.1, 6.40.0-6.40.9, 6.41.0-6.41.3, 6.42.0, 6.43.0-6.43.1, 6.44.0-6.44.3, 6.45.0-6.45.1, 6.46.0-6.46.1, 6.47.0-6.47.1]
+ │               │ └─Requires [ae029012] log: see above
+ │               ├─restricted by compatibility requirements with DataStructures [864edb3b] to versions: [3.13.2-3.13.3, 4.0.0-4.0.1, 4.1.0, 4.2.0, 4.3.0-4.3.1, 4.4.0, 4.5.0, 4.6.0, 4.7.0, 4.8.0, 4.9.0, 4.10.0-4.10.1, 4.11.0-4.11.1, 4.12.0, 4.13.0, 4.14.0-4.14.1, 4.15.0, 4.16.0, 4.17.0, 4.18.0, 4.19.0, 4.20.0-4.20.3, 4.21.0, 4.21.2-4.21.3, 4.22.0-4.22.2, 4.23.0, 4.23.2-4.23.4, 4.24.0-4.24.3, 4.25.0-4.25.1, 4.26.0-4.26.3, 4.27.0-4.27.1, 4.28.0-4.28.1, 4.29.0-4.29.2, 4.30.0-4.30.2, 4.31.0-4.31.2, 4.32.0, 5.0.0-5.0.1, 5.1.0, 5.2.0-5.2.3, 5.3.0-5.3.2, 5.4.0-5.4.1, 5.5.0-5.5.2, 5.6.0-5.6.4, 5.7.0, 5.8.0-5.8.1, 5.9.0, 5.10.0-5.10.3, 5.11.0-5.11.1, 5.12.0, 5.13.0, 5.14.0-5.14.2, 5.15.0, 5.16.0-5.16.5, 5.17.0-5.17.1, 5.18.0, 5.19.0, 5.20.0-5.20.1, 6.0.0, 6.1.0, 6.2.0-6.2.4, 6.3.0-6.3.6, 6.4.0-6.4.2, 6.5.0-6.5.1, 6.6.0, 6.7.0, 6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.20.0, 6.21.0-6.21.1, 6.22.0-6.22.2, 6.23.0, 6.24.0, 6.25.0-6.25.2, 6.26.0, 6.27.0, 6.28.0, 6.29.0-6.29.3, 6.30.0-6.30.4, 6.31.0-6.31.1, 6.32.0-6.32.2, 6.33.0-6.33.1, 6.34.0-6.34.3, 6.35.0-6.35.2, 6.36.0-6.36.4, 6.37.0, 6.38.0-6.38.4, 6.39.0-6.39.1, 6.40.0-6.40.9, 6.41.0-6.41.3, 6.42.0, 6.43.0-6.43.1, 6.44.0-6.44.3] or uninstalled, leaving only versions: [6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.20.0, 6.21.0-6.21.1, 6.22.0-6.22.2, 6.23.0, 6.24.0, 6.25.0-6.25.2, 6.26.0, 6.27.0, 6.28.0, 6.29.0-6.29.3, 6.30.0-6.30.4, 6.31.0-6.31.1, 6.32.0-6.32.2, 6.33.0-6.33.1, 6.34.0-6.34.3, 6.35.0-6.35.2, 6.36.0-6.36.4, 6.37.0, 6.38.0-6.38.4, 6.39.0-6.39.1, 6.40.0-6.40.9, 6.41.0-6.41.3, 6.42.0, 6.43.0-6.43.1, 6.44.0-6.44.3]
+ │               │ └─DataStructures [864edb3b] log:
+ │               │   ├─possible versions are: [0.9.0, 0.10.0, 0.11.0-0.11.1, 0.12.0, 0.13.0, 0.14.0-0.14.1, 0.15.0, 0.16.1, 0.17.0-0.17.20, 0.18.0-0.18.6] or uninstalled
+ │               │   ├─restricted by compatibility requirements with Mads [d6bdc55b] to versions: [0.9.0, 0.10.0, 0.11.0-0.11.1, 0.12.0, 0.13.0, 0.14.0-0.14.1, 0.15.0, 0.16.1, 0.17.0-0.17.20, 0.18.0-0.18.6]
+ │               │   │ └─Mads [d6bdc55b] log: see above
+ │               │   ├─restricted by compatibility requirements with Symata [a906b1d5] to versions: [0.9.0, 0.10.0, 0.11.0-0.11.1, 0.12.0, 0.13.0, 0.14.0-0.14.1, 0.15.0, 0.16.1, 0.17.0-0.17.20]
+ │               │   │ └─Symata [a906b1d5] log:
+ │               │   │   ├─possible versions are: [0.4.0-0.4.2, 0.4.5, 0.4.7-0.4.8] or uninstalled
+ │               │   │   └─restricted to versions * by an explicit requirement, leaving only versions [0.4.0-0.4.2, 0.4.5, 0.4.7-0.4.8]
+ │               │   ├─restricted by compatibility requirements with Gadfly [c91e804a] to versions: [0.11.0-0.11.1, 0.12.0, 0.13.0, 0.14.0-0.14.1, 0.15.0, 0.16.1, 0.17.0-0.17.20]
+ │               │   │ └─Gadfly [c91e804a] log: see above
+ │               │   └─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [0.17.0-0.17.20, 0.18.0-0.18.6], leaving only versions: 0.17.0-0.17.20
+ │               │     └─DiffEqBase [2b5f629d] log: see above
+ │               └─restricted by compatibility requirements with ConsoleProgressMonitor [88cd18e8] to versions: [3.13.2-3.13.3, 4.0.0-4.0.1, 4.1.0, 4.2.0, 4.3.0-4.3.1, 4.4.0, 4.5.0, 4.6.0, 4.7.0, 4.8.0, 4.9.0, 4.10.0-4.10.1, 4.11.0-4.11.1, 4.12.0, 4.13.0, 4.14.0-4.14.1, 4.15.0, 4.16.0, 4.17.0, 4.18.0, 4.19.0, 4.20.0-4.20.3, 4.21.0, 4.21.2-4.21.3, 4.22.0-4.22.2, 4.23.0, 4.23.2-4.23.4, 4.24.0-4.24.3, 4.25.0-4.25.1, 4.26.0-4.26.3, 4.27.0-4.27.1, 4.28.0-4.28.1, 4.29.0-4.29.2, 4.30.0-4.30.2, 4.31.0-4.31.2, 4.32.0, 5.0.0-5.0.1, 5.1.0, 5.2.0-5.2.3, 5.3.0-5.3.2, 5.4.0-5.4.1, 5.5.0-5.5.2, 5.6.0-5.6.4, 5.7.0, 5.8.0-5.8.1, 5.9.0, 5.10.0-5.10.3, 5.11.0-5.11.1, 5.12.0, 5.13.0, 5.14.0-5.14.2, 5.15.0, 5.16.0-5.16.5, 5.17.0-5.17.1, 5.18.0, 5.19.0, 5.20.0-5.20.1, 6.0.0, 6.1.0, 6.2.0-6.2.4, 6.3.0-6.3.6, 6.4.0-6.4.2, 6.5.0-6.5.1, 6.6.0, 6.7.0, 6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.45.0-6.45.1, 6.46.0-6.46.1, 6.47.0-6.47.1] or uninstalled, leaving only versions: [6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0]
+ │                 └─ConsoleProgressMonitor [88cd18e8] log:
+ │                   ├─possible versions are: 0.1.0-0.1.2 or uninstalled
+ │                   └─restricted by compatibility requirements with ProgressMeter [92933f4c] to versions: uninstalled
+ │                     └─ProgressMeter [92933f4c] log: see above
+ └─restricted by compatibility requirements with StatsBase [2913bbd2] to versions: [0.5.3-0.5.8, 0.6.0-0.6.4, 0.7.0-0.7.6, 0.8.0-0.8.12, 0.9.0-0.9.6] or uninstalled — no versions left
+   └─StatsBase [2913bbd2] log:
+     ├─possible versions are: [0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1, 0.29.0, 0.30.0, 0.31.0, 0.32.0-0.32.2, 0.33.0-0.33.1] or uninstalled
+     ├─restricted by compatibility requirements with TimeseriesPrediction [f218859d] to versions: [0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1, 0.29.0, 0.30.0, 0.31.0, 0.32.0-0.32.2, 0.33.0-0.33.1]
+     │ └─TimeseriesPrediction [f218859d] log: see above
+     ├─restricted by compatibility requirements with MonteCarloMeasurements [0987c9cc] to versions: [0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1, 0.29.0, 0.30.0, 0.32.0-0.32.2, 0.33.0-0.33.1]
+     │ └─MonteCarloMeasurements [0987c9cc] log: see above
+     └─restricted by compatibility requirements with Plots [91a5bcdd] to versions: [0.32.0-0.32.2, 0.33.0-0.33.1]
+       └─Plots [91a5bcdd] log:
+         ├─possible versions are: [0.12.1-0.12.4, 0.13.0-0.13.1, 0.14.0-0.14.2, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.4, 0.18.0, 0.19.0-0.19.3, 0.20.0-0.20.6, 0.21.0, 0.22.0-0.22.5, 0.23.0-0.23.2, 0.24.0, 0.25.0-0.25.3, 0.26.0-0.26.3, 0.27.0-0.27.1, 0.28.0-0.28.4, 0.29.0-0.29.9, 1.0.0-1.0.14, 1.1.0-1.1.4, 1.2.0-1.2.6, 1.3.0-1.3.7, 1.4.0-1.4.4, 1.5.0-1.5.9, 1.6.0-1.6.6] or uninstalled
+         ├─restricted to versions * by an explicit requirement, leaving only versions [0.12.1-0.12.4, 0.13.0-0.13.1, 0.14.0-0.14.2, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.4, 0.18.0, 0.19.0-0.19.3, 0.20.0-0.20.6, 0.21.0, 0.22.0-0.22.5, 0.23.0-0.23.2, 0.24.0, 0.25.0-0.25.3, 0.26.0-0.26.3, 0.27.0-0.27.1, 0.28.0-0.28.4, 0.29.0-0.29.9, 1.0.0-1.0.14, 1.1.0-1.1.4, 1.2.0-1.2.6, 1.3.0-1.3.7, 1.4.0-1.4.4, 1.5.0-1.5.9, 1.6.0-1.6.6]
+         ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.28.4, 0.29.0-0.29.9, 1.0.0-1.0.14, 1.1.0-1.1.4, 1.2.0-1.2.6, 1.3.0-1.3.7, 1.4.0-1.4.4, 1.5.0-1.5.9, 1.6.0-1.6.6] or uninstalled, leaving only versions: [0.28.4, 0.29.0-0.29.9, 1.0.0-1.0.14, 1.1.0-1.1.4, 1.2.0-1.2.6, 1.3.0-1.3.7, 1.4.0-1.4.4, 1.5.0-1.5.9, 1.6.0-1.6.6]
+         │ └─Requires [ae029012] log: see above
+         └─restricted by compatibility requirements with RecipesBase [3cdcf5f2] to versions: [0.12.1-0.12.4, 0.13.0-0.13.1, 0.14.0-0.14.2, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.4, 0.18.0, 0.19.0-0.19.3, 0.20.0-0.20.6, 0.21.0, 0.22.0-0.22.5, 0.23.0-0.23.2, 0.24.0, 0.25.0-0.25.3, 0.26.0-0.26.3, 0.27.0-0.27.1, 0.28.0-0.28.4, 1.0.0-1.0.14, 1.1.0-1.1.4, 1.2.0-1.2.6, 1.3.0-1.3.7, 1.4.0-1.4.4, 1.5.0-1.5.9, 1.6.0-1.6.6] or uninstalled, leaving only versions: [0.28.4, 1.0.0-1.0.14, 1.1.0-1.1.4, 1.2.0-1.2.6, 1.3.0-1.3.7, 1.4.0-1.4.4, 1.5.0-1.5.9, 1.6.0-1.6.6]
+           └─RecipesBase [3cdcf5f2] log:
+             ├─possible versions are: [0.4.0, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 1.0.0-1.0.2, 1.1.0] or uninstalled
+             ├─restricted by compatibility requirements with SymPy [24249f21] to versions: [0.4.0, 0.5.0, 0.6.0, 0.7.0, 1.0.0-1.0.2, 1.1.0]
+             │ └─SymPy [24249f21] log:
+             │   ├─possible versions are: [0.7.0, 0.8.0-0.8.4, 0.9.0, 1.0.0-1.0.29] or uninstalled
+             │   └─restricted to versions * by an explicit requirement, leaving only versions [0.7.0, 0.8.0-0.8.4, 0.9.0, 1.0.0-1.0.29]
+             ├─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [0.7.0, 0.8.0, 1.0.0-1.0.2, 1.1.0], leaving only versions: [0.7.0, 1.0.0-1.0.2, 1.1.0]
+             │ └─DiffEqBase [2b5f629d] log: see above
+             └─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [0.7.0, 0.8.0], leaving only versions: 0.7.0
+               └─DiffEqBase [2b5f629d] log: see above
+Stacktrace:
+ [1] propagate_constraints!(::Pkg.Resolve.Graph, ::Set{Int64}; log_events::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1005
+ [2] propagate_constraints! at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:946 [inlined] (repeats 2 times)
+ [3] simplify_graph!(::Pkg.Resolve.Graph, ::Set{Int64}; clean_graph::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1460
+ [4] simplify_graph! at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1460 [inlined] (repeats 2 times)
+ [5] resolve_versions!(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:368
+ [6] targeted_resolve at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1107 [inlined]
+ [7] tiered_resolve(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1093
+ [8] _resolve at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1113 [inlined]
+ [9] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Array{Base.UUID,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1128
+ [10] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:189
+ [11] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:140
+ [12] #add#21 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [13] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [14] #add#20 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [15] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [16] add(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [17] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65 [inlined]
+ [18] testPkg(::String, ::Nothing) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/test-package.jl:6
+ [19] top-level scope at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/test-package.jl:11
+ [20] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [21] include(::Module, ::String) at ./Base.jl:368
+ [22] exec_options(::Base.JLOptions) at ./client.jl:296
+ [23] _start() at ./client.jl:506
+in expression starting at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/test-package.jl:11

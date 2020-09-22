@@ -1,1155 +1,264 @@
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-Updating `/tmp/jl_gEqzVS/Project.toml`
-  [682c06a0] + JSON v0.21.0
-No Changes to `/tmp/jl_gEqzVS/Manifest.toml`
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:243
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:243
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:243
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:243
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:243
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:243
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:243
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:243
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:243
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:243
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:243
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:243
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:243
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:254
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:254
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:254
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:254
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:254
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:254
-┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
-│   caller = populate_py_to_mx_dict() at sympy.jl:254
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:254
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:255
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:255
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:255
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:255
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:255
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:255
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_py_to_mx_dict() at sympy.jl:255
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:255
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = mk_py_to_mx_funcs() at sympy.jl:265
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:265
-┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
-│   caller = mk_py_to_mx_funcs() at sympy.jl:265
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:265
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = mk_py_to_mx_funcs() at sympy.jl:266
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:266
-┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
-│   caller = mk_py_to_mx_funcs() at sympy.jl:266
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:266
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_user_symbol_dict() at sympy.jl:282
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
-┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
-│   caller = populate_user_symbol_dict() at sympy.jl:282
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_user_symbol_dict() at sympy.jl:282
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
-┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
-│   caller = populate_user_symbol_dict() at sympy.jl:282
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_user_symbol_dict() at sympy.jl:282
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
-┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
-│   caller = populate_user_symbol_dict() at sympy.jl:282
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_user_symbol_dict() at sympy.jl:282
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
-┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
-│   caller = populate_user_symbol_dict() at sympy.jl:282
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_user_symbol_dict() at sympy.jl:282
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
-┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
-│   caller = populate_user_symbol_dict() at sympy.jl:282
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_user_symbol_dict() at sympy.jl:282
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
-┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
-│   caller = populate_user_symbol_dict() at sympy.jl:282
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_mx_to_py_dict() at sympy.jl:473
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_mx_to_py_dict() at sympy.jl:473
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_mx_to_py_dict() at sympy.jl:473
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_mx_to_py_dict() at sympy.jl:473
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_mx_to_py_dict() at sympy.jl:473
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_mx_to_py_dict() at sympy.jl:473
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_mx_to_py_dict() at sympy.jl:473
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_mx_to_py_dict() at sympy.jl:473
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_mx_to_py_dict() at sympy.jl:473
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = populate_mx_to_py_dict() at sympy.jl:473
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = init_sympy() at sympy.jl:860
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:860
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = init_sympy() at sympy.jl:860
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:860
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = init_sympy() at sympy.jl:861
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:861
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = init_sympy() at sympy.jl:861
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:861
-┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
-│   caller = init_isympy() at sympy.jl:872
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:872
-┌ Warning: For::argb: For called with one argument; between 3 and 4 are expected.
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrapout.jl:29
-┌ Warning: For::argb: For called with five arguments; between 3 and 4 are expected.
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrapout.jl:29
-┌ Warning: Throw flag set, but expression is not throw.
-│   wrapout($(Expr(:escape, :mx))) = True
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrapout.jl:29
-┌ Warning: Throw flag set, but expression is not throw.
-│   wrapout($(Expr(:escape, :mx))) = True
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrapout.jl:29
-┌ Warning: Catch: throw set but expr is 
-│   wrapout($(Expr(:escape, :res))) = Throw(x,u)
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrapout.jl:29
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _sjtopy(::Symbol) at sympy.jl:754
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:754
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = apprules(::Mxpr{:Expand}) at sympy_application.jl:17
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:17
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:399
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:399
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:408
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:408
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:416
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:416
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:422
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:422
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:425
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:425
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:431
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:431
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:412
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:412
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _sjtopy(::Mxpr{:HoldForm}) at sympy.jl:731
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:731
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Sum(::Mxpr{:Sum}, ::Mxpr{:f}, ::Mxpr{:List}) at sympy_application.jl:238
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:238
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:433
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:433
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = pytosj_Function(::PyCall.PyObject, ::PyCall.PyObject) at sympy.jl:349
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:349
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = pytosj_Function(::PyCall.PyObject, ::PyCall.PyObject) at sympy.jl:350
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:350
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = dopowerE(::Mxpr{:Power}, ::Mxpr{:Times}) at math_functions.jl:1380
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/math_functions.jl:1380
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Cos(::Mxpr{:Cos}, ::Mxpr{:Times}) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Cos(::Mxpr{:Cos}, ::Symbol) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = apprules(::Mxpr{:Limit}) at sympy_application.jl:74
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:74
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Sin(::Mxpr{:Sin}, ::Symbol) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _sjtopy(::Mxpr{:DirectedInfinity}) at sympy.jl:556
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:556
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = sjlog(::Mxpr{:Power}) at wrappers.jl:75
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:75
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = sjlog(::Mxpr{:Log}) at wrappers.jl:75
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:75
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:425
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:425
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = dopowerE(::Mxpr{:Power}, ::Symbol) at math_functions.jl:1380
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/math_functions.jl:1380
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = sjlog(::Mxpr{:Plus}) at wrappers.jl:75
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:75
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = sjlog(::Symbol) at wrappers.jl:75
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:75
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = dopowerE(::Mxpr{:Power}, ::Mxpr{:Plus}) at math_functions.jl:1380
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/math_functions.jl:1380
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = dopowerE(::Mxpr{:Power}, ::Mxpr{:Power}) at math_functions.jl:1380
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/math_functions.jl:1380
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Solve(::Mxpr{:Solve}, ::Mxpr{:Plus}, ::Symbol) at sympy_application.jl:492
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:492
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _sjtopy(::Mxpr{:Equal}) at sympy.jl:564
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:564
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Solve(::Mxpr{:Solve}, ::Mxpr{:Equal}, ::Symbol) at sympy_application.jl:492
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:492
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Solve(::Mxpr{:Solve}, ::Mxpr{:List}, ::Mxpr{:List}) at sympy_application.jl:500
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:500
-/home/jack/.julia/conda/3/lib/python3.7/site-packages/sympy/__init__.py:676: SymPyDeprecationWarning: 
-
-importing sympy.core.containers with 'from sympy import *' has been
-deprecated since SymPy 1.6. Use import sympy.core.containers instead.
-See https://github.com/sympy/sympy/issues/18245 for more info.
-
-  deprecated_since_version="1.6").warn()
-/home/jack/.julia/conda/3/lib/python3.7/site-packages/sympy/__init__.py:676: SymPyDeprecationWarning: 
-
-importing sympy.core.numbers with 'from sympy import *' has been
-deprecated since SymPy 1.6. Use import sympy.core.numbers instead. See
-https://github.com/sympy/sympy/issues/18245 for more info.
-
-  deprecated_since_version="1.6").warn()
-/home/jack/.julia/conda/3/lib/python3.7/site-packages/sympy/__init__.py:676: SymPyDeprecationWarning: 
-
-importing sympy.logic.boolalg with 'from sympy import *' has been
-deprecated since SymPy 1.6. Use import sympy.logic.boolalg instead.
-See https://github.com/sympy/sympy/issues/18245 for more info.
-
-  deprecated_since_version="1.6").warn()
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:417
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:417
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:418
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:418
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:419
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:419
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:419
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:419
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = apprules(::Mxpr{:Roots}) at sympy_application.jl:538
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:538
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_JacobiP(::Mxpr{:JacobiP}, ::Int64, ::Int64, ::Int64, ::Symbol) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Sin(::Mxpr{:Sin}, ::Mxpr{:Times}) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _sjtopy(::Rational{Int64}) at sympy.jl:820
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:820
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_DiracDelta(::Mxpr{:DiracDelta}, ::Mxpr{:Plus}) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:DiracDelta}, ::Mxpr{:List}) at sympy_application.jl:103
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_DiracDelta(::Mxpr{:DiracDelta}, ::Int64) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_FactorSquareFree(::Mxpr{:FactorSquareFree}, ::Mxpr{:Plus}) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = apprules(::Mxpr{:Factor}) at sympy_application.jl:17
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:17
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_BellB(::Mxpr{:BellB}, ::Int64) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_BellB(::Mxpr{:BellB}, ::Int64, ::Vararg{Any,N} where N) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Divisors(::Mxpr{:Divisors}, ::Int64) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _sjtopy(::Mxpr{:Pattern}) at sympy.jl:731
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:731
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _sjtopy(::Mxpr{:Blank}) at sympy.jl:731
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:731
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = sjlog(::Mxpr{:Times}) at wrappers.jl:75
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:75
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _sjtopy(::Mxpr{:f}) at sympy.jl:731
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:731
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:f}, ::Symbol) at sympy_application.jl:103
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = (::Symata.var"#151#155")(::PyCall.PyObject) at sympy.jl:371
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:371
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Sum(::Mxpr{:Sum}, ::Mxpr{:Power}, ::Mxpr{:List}) at sympy_application.jl:238
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:238
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Sum(::Mxpr{:Sum}, ::Mxpr{:Times}, ::Mxpr{:List}) at sympy_application.jl:238
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:238
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_BesselI(::Mxpr{:BesselI}, ::Int64, ::Mxpr{:Times}) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Sum(::Mxpr{:Sum}, ::Symbol, ::Mxpr{:List}) at sympy_application.jl:238
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:238
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Zeta(::Mxpr{:Zeta}, ::Int64) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Sum(::Mxpr{:Sum}, ::Mxpr{:Power}, ::Mxpr{:List}, ::Vararg{Mxpr{:List},N} where N) at sympy_application.jl:238
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:238
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = pytosj_less_than(::PyCall.PyObject) at sympy.jl:384
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:384
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = (::Symata.var"#150#154")(::PyCall.PyObject) at sympy.jl:370
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:370
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Abs(::Mxpr{:Abs}, ::Symbol) at math_functions.jl:965
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/math_functions.jl:965
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Integrate(::Mxpr{:Integrate}, ::Symbol, ::Symbol) at sympy_application.jl:103
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Integrate(::Mxpr{:Integrate}, ::Symbol, ::Mxpr{:List}) at sympy_application.jl:103
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Integrate(::Mxpr{:Integrate}, ::Symbol, ::Mxpr{:List}, ::Vararg{Any,N} where N) at sympy_application.jl:103
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Cos(::Mxpr{:Cos}, ::Mxpr{:Plus}) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:Power}, ::Symbol) at sympy_application.jl:103
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Tan(::Mxpr{:Tan}, ::Mxpr{:Plus}) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = sympy_erf(::PyCall.PyObject) at wrappers.jl:36
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:36
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Erfi(::Mxpr{:Erfi}, ::Symbol) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Integrate_kws(::Mxpr{:Integrate}, ::Dict{Any,Any}, ::Mxpr{:Times}, ::Mxpr{:List}) at sympy_application.jl:118
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:118
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = sympy_gamma(::PyCall.PyObject) at wrappers.jl:33
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:33
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:Plus}, ::Symbol) at sympy_application.jl:103
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:Times}, ::Symbol) at sympy_application.jl:103
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:Log}, ::Symbol) at sympy_application.jl:103
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:Log}, ::Mxpr{:List}) at sympy_application.jl:103
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Integrate(::Mxpr{:Integrate}, ::Symbol) at sympy_application.jl:96
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:96
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:Power}, ::Mxpr{:List}) at sympy_application.jl:103
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:Times}, ::Mxpr{:List}) at sympy_application.jl:103
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = pytosj_greater_than(::PyCall.PyObject) at sympy.jl:384
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:384
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Re(::Mxpr{:Re}, ::Symbol) at none:3
-└ @ Symata ./none:3
-[ Info: Test failed in integral_derivative_test.sj, line 76
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Re(::Mxpr{:Re}, ::Rational{Int64}) at none:3
-└ @ Symata ./none:3
-[ Info: Test failed in integral_derivative_test.sj, line 84
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_MellinTransform(::Mxpr{:MellinTransform}, ::Mxpr{:Power}, ::Vararg{Any,N} where N) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_InverseMellinTransform(::Mxpr{:InverseMellinTransform}, ::Mxpr{:Gamma}, ::Vararg{Any,N} where N) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_InverseMellinTransform(::Mxpr{:InverseMellinTransform}, ::Mxpr{:Power}, ::Vararg{Any,N} where N) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_HeavisideTheta(::Mxpr{:HeavisideTheta}, ::Mxpr{:Plus}) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = macro expansion at sympy.jl:906 [inlined]
-└ @ Core ~/.julia/packages/Symata/1oDeR/src/sympy.jl:906
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = apprules(::Mxpr{:InverseLaplaceTransform}) at sympy_application.jl:182
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:182
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_HeavisideTheta(::Mxpr{:HeavisideTheta}, ::Symbol) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = top-level scope at none:1
-└ @ Core none:1
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:402
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:402
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = apprules(::Mxpr{:FourierTransform}) at sympy_application.jl:206
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:206
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = apprules(::Mxpr{:InverseFourierTransform}) at sympy_application.jl:212
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:212
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_SineTransform(::Mxpr{:SineTransform}, ::Mxpr{:Times}, ::Vararg{Any,N} where N) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_CosineTransform(::Mxpr{:CosineTransform}, ::Mxpr{:Power}, ::Vararg{Any,N} where N) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_HankelTransform(::Mxpr{:HankelTransform}, ::Mxpr{:Power}, ::Vararg{Any,N} where N) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_InverseHankelTransform(::Mxpr{:InverseHankelTransform}, ::Mxpr{:Times}, ::Vararg{Any,N} where N) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = apprules(::Mxpr{:D}) at sympy_application.jl:326
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:326
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_ArcTan(::Mxpr{:ArcTan}, ::Symbol) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_BesselJ(::Mxpr{:BesselJ}, ::Int64, ::Symbol) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Product(::Mxpr{:Product}, ::Symbol, ::Mxpr{:List}) at sympy_application.jl:261
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:261
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Product(::Mxpr{:Product}, ::Symbol, ::Mxpr{:List}, ::Vararg{Mxpr{:List},N} where N) at sympy_application.jl:261
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:261
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:441
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:441
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:441
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:441
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:445
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:445
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Product(::Mxpr{:Product}, ::Mxpr{:Factorial}, ::Mxpr{:List}) at sympy_application.jl:261
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:261
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Product(::Mxpr{:Product}, ::Mxpr{:Times}, ::Mxpr{:List}) at sympy_application.jl:261
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:261
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = do_Pochhammer(::Mxpr{:Pochhammer}, ::Int64, ::Vararg{Any,N} where N) at none:3
-└ @ Symata ./none:3
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = sjlog(::Int64) at wrappers.jl:75
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:75
-┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
-│   caller = sjlog(::Mxpr{:Equal}) at wrappers.jl:75
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:75
-┌ Warning: Symata: Error reading file /home/jack/.julia/packages/Symata/1oDeR/src/../symata_test/list_test.sj, line 379
-└ @ Symata ~/.julia/packages/Symata/1oDeR/src/IO.jl:85
-ERROR: LoadError: There was an error during testing
-in expression starting at /home/jack/.julia/packages/Symata/1oDeR/test/runtests.jl:20
-   Updating registry at `~/.julia/registries/General`
-  Resolving package versions...
-No Changes to `~/.julia/environments/v1.5/Project.toml`
-No Changes to `~/.julia/environments/v1.5/Manifest.toml`
-┌ Warning: Pkg.installed() is deprecated
-└ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
-### DYNAMIC ANALYSIS LINE IDENTIFIER ###
-    Testing Symata
-Status `/tmp/jl_gEqzVS/Project.toml`
-  [861a8166] Combinatorics v0.7.0
-  [bbf7d656] CommonSubexpressions v0.3.0
-  [8f4d0f93] Conda v1.4.1
-  [864edb3b] DataStructures v0.17.20
-  [163ba53b] DiffResults v1.0.2
-  [b552c78f] DiffRules v1.0.1
-  [59287772] Formatting v0.4.1
-  [f6369f11] ForwardDiff v0.10.12
-  [c8e1da08] IterTools v1.3.0
-  [1914dd2f] MacroTools v0.5.5
-  [c03570c3] Memoize v0.4.3
-  [f27b6e38] Polynomials v0.8.0
-  [27ebfcd6] Primes v0.5.0
-  [438e738f] PyCall v1.91.4
-  [1fd47b50] QuadGK v2.4.0
-  [f2b01f46] Roots v0.8.4
-  [276daf66] SpecialFunctions v0.10.3
-  [a906b1d5] Symata v0.4.5
-  [81def892] VersionParsing v1.2.0
-  [ade2ca70] Dates
-  [b77e0a4c] InteractiveUtils
-  [d6f4376e] Markdown
-  [3fa0cd96] REPL
-  [10745b16] Statistics
-  [8dfed614] Test
-Status `/tmp/jl_gEqzVS/Manifest.toml`
-  [861a8166] Combinatorics v0.7.0
-  [bbf7d656] CommonSubexpressions v0.3.0
-  [34da2185] Compat v2.2.1
-  [e66e0078] CompilerSupportLibraries_jll v0.3.3+0
-  [8f4d0f93] Conda v1.4.1
-  [864edb3b] DataStructures v0.17.20
-  [163ba53b] DiffResults v1.0.2
-  [b552c78f] DiffRules v1.0.1
-  [e2ba6199] ExprTools v0.1.1
-  [8f5d6c58] EzXML v1.1.0
-  [59287772] Formatting v0.4.1
-  [f6369f11] ForwardDiff v0.10.12
-  [d8418881] Intervals v1.4.2
-  [c8e1da08] IterTools v1.3.0
-  [682c06a0] JSON v0.21.0
-  [94ce4f54] Libiconv_jll v1.16.0+6
-  [1914dd2f] MacroTools v0.5.5
-  [c03570c3] Memoize v0.4.3
-  [78c3b35d] Mocking v0.7.1
-  [77ba4419] NaNMath v0.3.4
-  [efe28fd5] OpenSpecFun_jll v0.5.3+3
-  [bac558e1] OrderedCollections v1.3.0
-  [69de0a69] Parsers v1.0.10
-  [f27b6e38] Polynomials v0.8.0
-  [27ebfcd6] Primes v0.5.0
-  [438e738f] PyCall v1.91.4
-  [1fd47b50] QuadGK v2.4.0
-  [3cdcf5f2] RecipesBase v1.0.2
-  [f2b01f46] Roots v0.8.4
-  [276daf66] SpecialFunctions v0.10.3
-  [90137ffa] StaticArrays v0.12.4
-  [a906b1d5] Symata v0.4.5
-  [f269a46b] TimeZones v1.3.2
-  [81def892] VersionParsing v1.2.0
-  [02c8fc9c] XML2_jll v2.9.10+2
-  [83775a58] Zlib_jll v1.2.11+16
-  [2a0f44e3] Base64
-  [ade2ca70] Dates
-  [8bb1440f] DelimitedFiles
-  [8ba89e20] Distributed
-  [b77e0a4c] InteractiveUtils
-  [76f85450] LibGit2
-  [8f399da3] Libdl
-  [37e2e46d] LinearAlgebra
-  [56ddb016] Logging
-  [d6f4376e] Markdown
-  [a63ad114] Mmap
-  [44cfe95a] Pkg
-  [de0858da] Printf
-  [3fa0cd96] REPL
-  [9a3f8284] Random
-  [ea8e919c] SHA
-  [9e88b42a] Serialization
-  [1a1011a3] SharedArrays
-  [6462fe0b] Sockets
-  [2f01184e] SparseArrays
-  [10745b16] Statistics
-  [8dfed614] Test
-  [cf7118a7] UUIDs
-  [4ec0a83e] Unicode
-ERROR: LoadError: Package Symata errored during testing
+ERROR: LoadError: Unsatisfiable requirements detected for package MonteCarloMeasurements [0987c9cc]:
+ MonteCarloMeasurements [0987c9cc] log:
+ ├─possible versions are: [0.1.0-0.1.4, 0.2.0-0.2.2, 0.3.0-0.3.4, 0.4.0-0.4.1, 0.5.0-0.5.8, 0.6.0-0.6.4, 0.7.0-0.7.6, 0.8.0-0.8.12, 0.9.0-0.9.6] or uninstalled
+ ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0-0.1.4, 0.2.0-0.2.2, 0.3.0-0.3.4, 0.4.0-0.4.1, 0.5.0-0.5.8, 0.6.0-0.6.4, 0.7.0-0.7.6, 0.8.0-0.8.12, 0.9.0-0.9.6]
+ ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.1.0-0.1.4, 0.2.0-0.2.2, 0.3.0-0.3.1, 0.6.4, 0.7.0-0.7.6, 0.8.0-0.8.12, 0.9.0-0.9.6] or uninstalled, leaving only versions: [0.1.0-0.1.4, 0.2.0-0.2.2, 0.3.0-0.3.1, 0.6.4, 0.7.0-0.7.6, 0.8.0-0.8.12, 0.9.0-0.9.6]
+ │ └─Requires [ae029012] log:
+ │   ├─possible versions are: [0.5.0-0.5.2, 1.0.0-1.0.3] or uninstalled
+ │   └─restricted by compatibility requirements with Weave [44d3d7a6] to versions: 1.0.0-1.0.3
+ │     └─Weave [44d3d7a6] log:
+ │       ├─possible versions are: [0.6.0-0.6.2, 0.7.0-0.7.2, 0.8.0-0.8.1, 0.9.0-0.9.4, 0.10.0-0.10.3] or uninstalled
+ │       └─restricted to versions * by an explicit requirement, leaving only versions [0.6.0-0.6.2, 0.7.0-0.7.2, 0.8.0-0.8.1, 0.9.0-0.9.4, 0.10.0-0.10.3]
+ ├─restricted by compatibility requirements with Soss [8ce77f84] to versions: [0.1.0-0.1.4, 0.2.0-0.2.2, 0.3.0-0.3.4], leaving only versions: [0.1.0-0.1.4, 0.2.0-0.2.2, 0.3.0-0.3.1]
+ │ └─Soss [8ce77f84] log:
+ │   ├─possible versions are: [0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 0.9.0, 0.10.0, 0.11.0, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.4, 0.15.0-0.15.1] or uninstalled
+ │   ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 0.9.0, 0.10.0, 0.11.0, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.4, 0.15.0-0.15.1]
+ │   ├─restricted by compatibility requirements with LogDensityProblems [6fdf6af0] to versions: [0.1.0, 0.3.0, 0.4.0, 0.5.0, 0.6.0, 0.7.0, 0.11.0, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.4, 0.15.0-0.15.1] or uninstalled, leaving only versions: [0.1.0, 0.3.0, 0.4.0, 0.5.0, 0.6.0, 0.7.0, 0.11.0, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.4, 0.15.0-0.15.1]
+ │   │ └─LogDensityProblems [6fdf6af0] log:
+ │   │   ├─possible versions are: [0.2.0, 0.3.0, 0.4.0-0.4.1, 0.5.0-0.5.1, 0.6.0, 0.8.0-0.8.3, 0.9.0-0.9.2, 0.10.0-0.10.3] or uninstalled
+ │   │   ├─restricted by compatibility requirements with Soss [8ce77f84] to versions: [0.2.0, 0.3.0, 0.4.0-0.4.1, 0.5.0-0.5.1, 0.6.0, 0.8.0-0.8.3, 0.9.0-0.9.2, 0.10.0-0.10.3]
+ │   │   │ └─Soss [8ce77f84] log: see above
+ │   │   ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.2.0, 0.3.0, 0.4.0, 0.10.1-0.10.3] or uninstalled, leaving only versions: [0.2.0, 0.3.0, 0.4.0, 0.10.1-0.10.3]
+ │   │   │ └─Requires [ae029012] log: see above
+ │   │   └─restricted by compatibility requirements with Soss [8ce77f84] to versions: [0.2.0, 0.3.0, 0.4.0-0.4.1, 0.5.0-0.5.1, 0.6.0, 0.8.0-0.8.3], leaving only versions: [0.2.0, 0.3.0, 0.4.0]
+ │   │     └─Soss [8ce77f84] log: see above
+ │   ├─restricted by compatibility requirements with SpecialFunctions [276daf66] to versions: [0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 0.9.0, 0.10.0] or uninstalled, leaving only versions: [0.1.0, 0.3.0, 0.4.0, 0.5.0, 0.6.0, 0.7.0]
+ │   │ └─SpecialFunctions [276daf66] log:
+ │   │   ├─possible versions are: [0.7.0-0.7.2, 0.8.0, 0.9.0, 0.10.0-0.10.3] or uninstalled
+ │   │   ├─restricted by compatibility requirements with SymPy [24249f21] to versions: [0.7.0-0.7.2, 0.8.0, 0.9.0, 0.10.0-0.10.3]
+ │   │   │ └─SymPy [24249f21] log:
+ │   │   │   ├─possible versions are: [0.7.0, 0.8.0-0.8.4, 0.9.0, 1.0.0-1.0.29] or uninstalled
+ │   │   │   └─restricted to versions * by an explicit requirement, leaving only versions [0.7.0, 0.8.0-0.8.4, 0.9.0, 1.0.0-1.0.29]
+ │   │   └─restricted by compatibility requirements with Symata [a906b1d5] to versions: [0.7.0-0.7.2, 0.8.0]
+ │   │     └─Symata [a906b1d5] log:
+ │   │       ├─possible versions are: [0.4.0-0.4.2, 0.4.5, 0.4.7-0.4.8] or uninstalled
+ │   │       └─restricted to versions 0.4.5 by an explicit requirement, leaving only versions 0.4.5
+ │   └─restricted by compatibility requirements with MonteCarloMeasurements [0987c9cc] to versions: [0.1.0, 0.10.0, 0.11.0, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.4, 0.15.0-0.15.1] or uninstalled, leaving only versions: 0.1.0
+ │     └─MonteCarloMeasurements [0987c9cc] log: see above
+ └─restricted by compatibility requirements with StatsBase [2913bbd2] to versions: [0.5.3-0.5.8, 0.6.0-0.6.4, 0.7.0-0.7.6, 0.8.0-0.8.12, 0.9.0-0.9.6] or uninstalled — no versions left
+   └─StatsBase [2913bbd2] log:
+     ├─possible versions are: [0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1, 0.29.0, 0.30.0, 0.31.0, 0.32.0-0.32.2, 0.33.0-0.33.1] or uninstalled
+     ├─restricted by compatibility requirements with TimeseriesPrediction [f218859d] to versions: [0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1, 0.29.0, 0.30.0, 0.31.0, 0.32.0-0.32.2, 0.33.0-0.33.1]
+     │ └─TimeseriesPrediction [f218859d] log:
+     │   ├─possible versions are: [0.5.0-0.5.5, 0.6.0] or uninstalled
+     │   └─restricted to versions * by an explicit requirement, leaving only versions [0.5.0-0.5.5, 0.6.0]
+     ├─restricted by compatibility requirements with MonteCarloMeasurements [0987c9cc] to versions: [0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1, 0.29.0, 0.30.0, 0.32.0-0.32.2, 0.33.0-0.33.1]
+     │ └─MonteCarloMeasurements [0987c9cc] log: see above
+     ├─restricted by compatibility requirements with Optim [429524aa] to versions: [0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1, 0.29.0, 0.30.0, 0.31.0, 0.32.0-0.32.2], leaving only versions: [0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1, 0.29.0, 0.30.0, 0.32.0-0.32.2]
+     │ └─Optim [429524aa] log:
+     │   ├─possible versions are: [0.15.3, 0.16.0, 0.17.0-0.17.2, 0.18.0-0.18.1, 0.19.0-0.19.7, 0.20.0-0.20.6, 0.21.0, 0.22.0, 1.0.0, 1.1.0, 1.2.0] or uninstalled
+     │   ├─restricted by compatibility requirements with Compat [34da2185] to versions: [0.15.3, 0.16.0, 0.17.0-0.17.2, 0.18.0-0.18.1, 0.19.0-0.19.7, 0.20.0-0.20.1] or uninstalled
+     │   │ └─Compat [34da2185] log:
+     │   │   ├─possible versions are: [1.0.0-1.0.1, 1.1.0, 1.2.0, 1.3.0, 1.4.0, 1.5.0-1.5.1, 2.0.0, 2.1.0, 2.2.0-2.2.1, 3.0.0, 3.1.0, 3.2.0, 3.3.0-3.3.1, 3.4.0, 3.5.0, 3.6.0, 3.7.0, 3.8.0, 3.9.0-3.9.1, 3.10.0, 3.11.0, 3.12.0, 3.13.0, 3.14.0, 3.15.0, 3.16.0] or uninstalled
+     │   │   ├─restricted by compatibility requirements with SymEngine [123dc426] to versions: [1.0.0-1.0.1, 1.1.0, 1.2.0, 1.3.0, 1.4.0, 1.5.0-1.5.1, 2.0.0, 2.1.0, 2.2.0-2.2.1, 3.0.0, 3.1.0, 3.2.0, 3.3.0-3.3.1, 3.4.0, 3.5.0, 3.6.0, 3.7.0, 3.8.0, 3.9.0-3.9.1, 3.10.0, 3.11.0, 3.12.0, 3.13.0, 3.14.0, 3.15.0, 3.16.0]
+     │   │   │ └─SymEngine [123dc426] log:
+     │   │   │   ├─possible versions are: [0.4.1-0.4.3, 0.5.0, 0.6.0, 0.7.0-0.7.1, 0.8.0-0.8.2] or uninstalled
+     │   │   │   └─restricted to versions * by an explicit requirement, leaving only versions [0.4.1-0.4.3, 0.5.0, 0.6.0, 0.7.0-0.7.1, 0.8.0-0.8.2]
+     │   │   ├─restricted by compatibility requirements with Symata [a906b1d5] to versions: [1.0.0-1.0.1, 1.1.0, 1.2.0, 1.3.0, 1.4.0, 1.5.0-1.5.1, 2.0.0, 2.1.0, 2.2.0-2.2.1]
+     │   │   │ └─Symata [a906b1d5] log: see above
+     │   │   └─restricted by compatibility requirements with SparseDiffTools [47a9eef4] to versions: [2.2.0-2.2.1, 3.0.0, 3.1.0, 3.2.0, 3.3.0-3.3.1, 3.4.0, 3.5.0, 3.6.0, 3.7.0, 3.8.0, 3.9.0-3.9.1, 3.10.0, 3.11.0, 3.12.0, 3.13.0, 3.14.0, 3.15.0, 3.16.0], leaving only versions: 2.2.0-2.2.1
+     │   │     └─SparseDiffTools [47a9eef4] log:
+     │   │       ├─possible versions are: [0.1.0, 0.2.0, 0.3.0, 0.4.0-0.4.1, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 0.9.0-0.9.2, 0.10.0-0.10.3, 1.0.0, 1.1.0-1.1.1, 1.2.0, 1.3.0-1.3.3, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0, 1.9.0-1.9.1, 1.10.0] or uninstalled
+     │   │       ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.1.0, 0.2.0, 0.3.0, 1.1.0-1.1.1, 1.2.0, 1.3.0-1.3.3, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0, 1.9.0-1.9.1, 1.10.0] or uninstalled
+     │   │       │ └─Requires [ae029012] log: see above
+     │   │       └─restricted by compatibility requirements with OrdinaryDiffEq [1dea7af3] to versions: [0.9.0-0.9.2, 0.10.0-0.10.3, 1.0.0, 1.1.0-1.1.1, 1.2.0, 1.3.0-1.3.3, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0, 1.9.0-1.9.1, 1.10.0], leaving only versions: [1.1.0-1.1.1, 1.2.0, 1.3.0-1.3.3, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0, 1.9.0-1.9.1, 1.10.0]
+     │   │         └─OrdinaryDiffEq [1dea7af3] log:
+     │   │           ├─possible versions are: [4.0.0, 4.1.0, 4.2.0, 4.3.0, 4.4.0-4.4.1, 4.5.0, 4.6.0, 4.7.0-4.7.1, 4.8.0-4.8.1, 4.9.0, 4.10.0, 4.11.0-4.11.1, 4.12.0-4.12.4, 4.13.0, 4.14.0, 4.15.0-4.15.1, 4.16.0-4.16.5, 4.17.0-4.17.2, 4.18.0-4.18.3, 4.19.0, 4.20.0, 4.21.0-4.21.1, 5.0.0, 5.1.0-5.1.4, 5.2.0-5.2.1, 5.3.0, 5.4.0-5.4.1, 5.5.0, 5.6.0-5.6.1, 5.7.0-5.7.1, 5.8.0-5.8.1, 5.9.0, 5.10.0, 5.11.0-5.11.1, 5.12.0, 5.13.0, 5.14.0, 5.15.0-5.15.1, 5.16.0, 5.17.0-5.17.2, 5.18.0, 5.19.0, 5.20.0-5.20.1, 5.21.0, 5.22.0, 5.23.0, 5.24.0, 5.25.0, 5.26.0-5.26.8, 5.27.0-5.27.1, 5.28.0-5.28.1, 5.29.0, 5.30.0, 5.31.0, 5.32.0-5.32.2, 5.33.0, 5.34.0-5.34.1, 5.35.0-5.35.5, 5.36.0-5.36.1, 5.37.0, 5.38.0-5.38.3, 5.39.0-5.39.1, 5.40.0, 5.41.0, 5.42.0-5.42.9] or uninstalled
+     │   │           ├─restricted by compatibility requirements with Mads [d6bdc55b] to versions: [4.0.0, 4.1.0, 4.2.0, 4.3.0, 4.4.0-4.4.1, 4.5.0, 4.6.0, 4.7.0-4.7.1, 4.8.0-4.8.1, 4.9.0, 4.10.0, 4.11.0-4.11.1, 4.12.0-4.12.4, 4.13.0, 4.14.0, 4.15.0-4.15.1, 4.16.0-4.16.5, 4.17.0-4.17.2, 4.18.0-4.18.3, 4.19.0, 4.20.0, 4.21.0-4.21.1, 5.0.0, 5.1.0-5.1.4, 5.2.0-5.2.1, 5.3.0, 5.4.0-5.4.1, 5.5.0, 5.6.0-5.6.1, 5.7.0-5.7.1, 5.8.0-5.8.1, 5.9.0, 5.10.0, 5.11.0-5.11.1, 5.12.0, 5.13.0, 5.14.0, 5.15.0-5.15.1, 5.16.0, 5.17.0-5.17.2, 5.18.0, 5.19.0, 5.20.0-5.20.1, 5.21.0, 5.22.0, 5.23.0, 5.24.0, 5.25.0, 5.26.0-5.26.8, 5.27.0-5.27.1, 5.28.0-5.28.1, 5.29.0, 5.30.0, 5.31.0, 5.32.0-5.32.2, 5.33.0, 5.34.0-5.34.1, 5.35.0-5.35.5, 5.36.0-5.36.1, 5.37.0, 5.38.0-5.38.3, 5.39.0-5.39.1, 5.40.0, 5.41.0, 5.42.0-5.42.9]
+     │   │           │ └─Mads [d6bdc55b] log:
+     │   │           │   ├─possible versions are: [0.5.2, 0.6.0-0.6.3, 0.7.0-0.7.6, 0.8.0, 0.9.0-0.9.7, 0.10.0-0.10.8] or uninstalled
+     │   │           │   └─restricted to versions * by an explicit requirement, leaving only versions [0.5.2, 0.6.0-0.6.3, 0.7.0-0.7.6, 0.8.0, 0.9.0-0.9.7, 0.10.0-0.10.8]
+     │   │           ├─restricted by compatibility requirements with DataStructures [864edb3b] to versions: [4.0.0, 4.1.0, 4.2.0, 4.3.0, 4.4.0-4.4.1, 4.5.0, 4.6.0, 4.7.0-4.7.1, 4.8.0-4.8.1, 4.9.0, 4.10.0, 4.11.0-4.11.1, 4.12.0-4.12.4, 4.13.0, 4.14.0, 4.15.0-4.15.1, 4.16.0-4.16.5, 4.17.0-4.17.2, 4.18.0-4.18.3, 4.19.0, 4.20.0, 4.21.0-4.21.1, 5.0.0, 5.1.0-5.1.4, 5.2.0-5.2.1, 5.3.0, 5.4.0-5.4.1, 5.5.0, 5.6.0-5.6.1, 5.7.0-5.7.1, 5.8.0-5.8.1, 5.9.0, 5.10.0, 5.11.0-5.11.1, 5.12.0, 5.13.0, 5.14.0, 5.15.0-5.15.1, 5.16.0, 5.17.0-5.17.2, 5.18.0, 5.19.0, 5.20.0-5.20.1, 5.21.0, 5.22.0, 5.23.0, 5.24.0, 5.25.0, 5.26.0-5.26.8, 5.27.0-5.27.1, 5.28.0-5.28.1, 5.29.0, 5.30.0, 5.31.0, 5.32.0-5.32.2, 5.33.0, 5.34.0-5.34.1, 5.35.0-5.35.5, 5.36.0-5.36.1, 5.37.0, 5.38.0-5.38.3, 5.39.0-5.39.1, 5.40.0, 5.41.0, 5.42.0-5.42.3] or uninstalled, leaving only versions: [4.0.0, 4.1.0, 4.2.0, 4.3.0, 4.4.0-4.4.1, 4.5.0, 4.6.0, 4.7.0-4.7.1, 4.8.0-4.8.1, 4.9.0, 4.10.0, 4.11.0-4.11.1, 4.12.0-4.12.4, 4.13.0, 4.14.0, 4.15.0-4.15.1, 4.16.0-4.16.5, 4.17.0-4.17.2, 4.18.0-4.18.3, 4.19.0, 4.20.0, 4.21.0-4.21.1, 5.0.0, 5.1.0-5.1.4, 5.2.0-5.2.1, 5.3.0, 5.4.0-5.4.1, 5.5.0, 5.6.0-5.6.1, 5.7.0-5.7.1, 5.8.0-5.8.1, 5.9.0, 5.10.0, 5.11.0-5.11.1, 5.12.0, 5.13.0, 5.14.0, 5.15.0-5.15.1, 5.16.0, 5.17.0-5.17.2, 5.18.0, 5.19.0, 5.20.0-5.20.1, 5.21.0, 5.22.0, 5.23.0, 5.24.0, 5.25.0, 5.26.0-5.26.8, 5.27.0-5.27.1, 5.28.0-5.28.1, 5.29.0, 5.30.0, 5.31.0, 5.32.0-5.32.2, 5.33.0, 5.34.0-5.34.1, 5.35.0-5.35.5, 5.36.0-5.36.1, 5.37.0, 5.38.0-5.38.3, 5.39.0-5.39.1, 5.40.0, 5.41.0, 5.42.0-5.42.3]
+     │   │           │ └─DataStructures [864edb3b] log:
+     │   │           │   ├─possible versions are: [0.9.0, 0.10.0, 0.11.0-0.11.1, 0.12.0, 0.13.0, 0.14.0-0.14.1, 0.15.0, 0.16.1, 0.17.0-0.17.20, 0.18.0-0.18.6] or uninstalled
+     │   │           │   ├─restricted by compatibility requirements with Mads [d6bdc55b] to versions: [0.9.0, 0.10.0, 0.11.0-0.11.1, 0.12.0, 0.13.0, 0.14.0-0.14.1, 0.15.0, 0.16.1, 0.17.0-0.17.20, 0.18.0-0.18.6]
+     │   │           │   │ └─Mads [d6bdc55b] log: see above
+     │   │           │   ├─restricted by compatibility requirements with Symata [a906b1d5] to versions: [0.9.0, 0.10.0, 0.11.0-0.11.1, 0.12.0, 0.13.0, 0.14.0-0.14.1, 0.15.0, 0.16.1, 0.17.0-0.17.20]
+     │   │           │   │ └─Symata [a906b1d5] log: see above
+     │   │           │   ├─restricted by compatibility requirements with Gadfly [c91e804a] to versions: [0.11.0-0.11.1, 0.12.0, 0.13.0, 0.14.0-0.14.1, 0.15.0, 0.16.1, 0.17.0-0.17.20]
+     │   │           │   │ └─Gadfly [c91e804a] log:
+     │   │           │   │   ├─possible versions are: [0.8.0, 1.0.0-1.0.1, 1.1.0, 1.2.0-1.2.1, 1.3.0] or uninstalled
+     │   │           │   │   ├─restricted by compatibility requirements with Mads [d6bdc55b] to versions: [0.8.0, 1.0.0-1.0.1, 1.1.0, 1.2.0-1.2.1, 1.3.0]
+     │   │           │   │   │ └─Mads [d6bdc55b] log: see above
+     │   │           │   │   ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.8.0, 1.1.0, 1.2.0-1.2.1, 1.3.0] or uninstalled, leaving only versions: [0.8.0, 1.1.0, 1.2.0-1.2.1, 1.3.0]
+     │   │           │   │   │ └─Requires [ae029012] log: see above
+     │   │           │   │   ├─restricted by compatibility requirements with JSON [682c06a0] to versions: [1.2.0-1.2.1, 1.3.0] or uninstalled, leaving only versions: [1.2.0-1.2.1, 1.3.0]
+     │   │           │   │   │ └─JSON [682c06a0] log:
+     │   │           │   │   │   ├─possible versions are: [0.18.0, 0.19.0, 0.20.0-0.20.1, 0.21.0-0.21.1] or uninstalled
+     │   │           │   │   │   ├─restricted by compatibility requirements with Literate [98b081ad] to versions: [0.18.0, 0.19.0, 0.20.0-0.20.1, 0.21.0-0.21.1]
+     │   │           │   │   │   │ └─Literate [98b081ad] log:
+     │   │           │   │   │   │   ├─possible versions are: [0.3.0, 1.0.0-1.0.5, 1.1.0, 2.0.0-2.0.4, 2.1.0-2.1.1, 2.2.0-2.2.1, 2.3.0-2.3.1, 2.4.0, 2.5.0-2.5.1, 2.6.0, 2.7.0] or uninstalled
+     │   │           │   │   │   │   ├─restricted to versions * by an explicit requirement, leaving only versions [0.3.0, 1.0.0-1.0.5, 1.1.0, 2.0.0-2.0.4, 2.1.0-2.1.1, 2.2.0-2.2.1, 2.3.0-2.3.1, 2.4.0, 2.5.0-2.5.1, 2.6.0, 2.7.0]
+     │   │           │   │   │   │   └─restricted by compatibility requirements with Franklin [713c75ef] to versions: [2.0.0-2.0.4, 2.1.0-2.1.1, 2.2.0-2.2.1, 2.3.0-2.3.1, 2.4.0, 2.5.0-2.5.1, 2.6.0, 2.7.0]
+     │   │           │   │   │   │     └─Franklin [713c75ef] log:
+     │   │           │   │   │   │       ├─possible versions are: [0.4.4, 0.5.0, 0.6.0-0.6.17, 0.7.0-0.7.10, 0.8.0-0.8.6, 0.9.0-0.9.16] or uninstalled
+     │   │           │   │   │   │       └─restricted to versions * by an explicit requirement, leaving only versions [0.4.4, 0.5.0, 0.6.0-0.6.17, 0.7.0-0.7.10, 0.8.0-0.8.6, 0.9.0-0.9.16]
+     │   │           │   │   │   └─restricted by compatibility requirements with Weave [44d3d7a6] to versions: 0.21.0-0.21.1
+     │   │           │   │   │     └─Weave [44d3d7a6] log: see above
+     │   │           │   │   └─restricted by compatibility requirements with CategoricalArrays [324d7699] to versions: [0.8.0, 1.0.0-1.0.1, 1.1.0, 1.2.0-1.2.1] or uninstalled, leaving only versions: 1.2.0-1.2.1
+     │   │           │   │     └─CategoricalArrays [324d7699] log:
+     │   │           │   │       ├─possible versions are: [0.3.11, 0.3.13-0.3.14, 0.4.0, 0.5.0-0.5.5, 0.6.0, 0.7.0-0.7.7, 0.8.0-0.8.3] or uninstalled
+     │   │           │   │       ├─restricted by compatibility requirements with RCall [6f49c342] to versions: [0.3.11, 0.3.13-0.3.14, 0.4.0, 0.5.0-0.5.5, 0.6.0, 0.7.0-0.7.7, 0.8.0-0.8.3]
+     │   │           │   │       │ └─RCall [6f49c342] log:
+     │   │           │   │       │   ├─possible versions are: [0.12.0-0.12.1, 0.13.0-0.13.7] or uninstalled
+     │   │           │   │       │   ├─restricted to versions * by an explicit requirement, leaving only versions [0.12.0-0.12.1, 0.13.0-0.13.7]
+     │   │           │   │       │   ├─restricted by compatibility requirements with Requires [ae029012] to versions: 0.13.3-0.13.7 or uninstalled, leaving only versions: 0.13.3-0.13.7
+     │   │           │   │       │   │ └─Requires [ae029012] log: see above
+     │   │           │   │       │   └─restricted by compatibility requirements with DataFrames [a93c6f00] to versions: [0.12.0-0.12.1, 0.13.0-0.13.6] or uninstalled, leaving only versions: 0.13.3-0.13.6
+     │   │           │   │       │     └─DataFrames [a93c6f00] log:
+     │   │           │   │       │       ├─possible versions are: [0.11.7, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.2, 0.16.0, 0.17.0-0.17.1, 0.18.0-0.18.4, 0.19.0-0.19.4, 0.20.0-0.20.2, 0.21.0-0.21.7] or uninstalled
+     │   │           │   │       │       ├─restricted by compatibility requirements with PowerSystems [bcd98974] to versions: [0.11.7, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.2, 0.16.0, 0.17.0-0.17.1, 0.18.0-0.18.4, 0.19.0-0.19.4, 0.20.0-0.20.2, 0.21.0-0.21.7]
+     │   │           │   │       │       │ └─PowerSystems [bcd98974] log:
+     │   │           │   │       │       │   ├─possible versions are: [0.1.0, 0.2.0, 0.3.0-0.3.2, 0.4.0-0.4.3, 0.5.0-0.5.2, 0.6.0-0.6.3, 0.7.0-0.7.1, 0.8.0-0.8.6, 0.9.0-0.9.1, 0.10.0, 0.11.0-0.11.2, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.2, 0.18.0-0.18.6, 0.19.0, 0.20.0-0.20.1, 0.21.0, 0.22.0, 0.23.0-0.23.3, 0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1] or uninstalled
+     │   │           │   │       │       │   ├─restricted to versions * by an explicit requirement, leaving only versions [0.1.0, 0.2.0, 0.3.0-0.3.2, 0.4.0-0.4.3, 0.5.0-0.5.2, 0.6.0-0.6.3, 0.7.0-0.7.1, 0.8.0-0.8.6, 0.9.0-0.9.1, 0.10.0, 0.11.0-0.11.2, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.2, 0.18.0-0.18.6, 0.19.0, 0.20.0-0.20.1, 0.21.0, 0.22.0, 0.23.0-0.23.3, 0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1]
+     │   │           │   │       │       │   ├─restricted by julia compatibility requirements to versions: [0.1.0, 0.2.0, 0.3.0-0.3.2, 0.4.1-0.4.3, 0.5.0-0.5.2, 0.6.0-0.6.3, 0.7.0-0.7.1, 0.8.0-0.8.6, 0.9.0-0.9.1, 0.10.0, 0.11.0-0.11.2, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.2, 0.18.0-0.18.6, 0.19.0, 0.20.0-0.20.1, 0.21.0, 0.22.0, 0.23.0-0.23.3, 0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1] or uninstalled, leaving only versions: [0.1.0, 0.2.0, 0.3.0-0.3.2, 0.4.1-0.4.3, 0.5.0-0.5.2, 0.6.0-0.6.3, 0.7.0-0.7.1, 0.8.0-0.8.6, 0.9.0-0.9.1, 0.10.0, 0.11.0-0.11.2, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.2, 0.18.0-0.18.6, 0.19.0, 0.20.0-0.20.1, 0.21.0, 0.22.0, 0.23.0-0.23.3, 0.24.0, 0.25.0, 0.26.0, 0.27.0, 0.28.0-0.28.1]
+     │   │           │   │       │       │   └─restricted by compatibility requirements with DataFrames [a93c6f00] to versions: [0.1.0, 0.2.0, 0.3.0-0.3.2, 0.4.0-0.4.3, 0.5.0-0.5.2, 0.6.0-0.6.3, 0.7.0-0.7.1, 0.8.0-0.8.6, 0.9.0-0.9.1, 0.10.0, 0.11.0-0.11.2, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.2, 0.18.0-0.18.6, 0.19.0] or uninstalled, leaving only versions: [0.1.0, 0.2.0, 0.3.0-0.3.2, 0.4.1-0.4.3, 0.5.0-0.5.2, 0.6.0-0.6.3, 0.7.0-0.7.1, 0.8.0-0.8.6, 0.9.0-0.9.1, 0.10.0, 0.11.0-0.11.2, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.2, 0.18.0-0.18.6, 0.19.0]
+     │   │           │   │       │       │     └─DataFrames [a93c6f00] log: see above
+     │   │           │   │       │       └─restricted by compatibility requirements with Mads [d6bdc55b] to versions: [0.11.7, 0.12.0, 0.13.0-0.13.1, 0.14.0-0.14.1, 0.15.0-0.15.2, 0.16.0, 0.17.0-0.17.1, 0.18.0-0.18.4, 0.19.0-0.19.4, 0.20.0-0.20.2]
+     │   │           │   │       │         └─Mads [d6bdc55b] log: see above
+     │   │           │   │       ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.3.11, 0.3.13-0.3.14, 0.4.0, 0.5.3-0.5.5, 0.6.0, 0.7.0-0.7.7, 0.8.0-0.8.3] or uninstalled, leaving only versions: [0.3.11, 0.3.13-0.3.14, 0.4.0, 0.5.3-0.5.5, 0.6.0, 0.7.0-0.7.7, 0.8.0-0.8.3]
+     │   │           │   │       │ └─Requires [ae029012] log: see above
+     │   │           │   │       ├─restricted by compatibility requirements with DataFrames [a93c6f00] to versions: [0.3.11, 0.3.13-0.3.14, 0.4.0, 0.5.0-0.5.5, 0.6.0, 0.7.0-0.7.7], leaving only versions: [0.3.11, 0.3.13-0.3.14, 0.4.0, 0.5.3-0.5.5, 0.6.0, 0.7.0-0.7.7]
+     │   │           │   │       │ └─DataFrames [a93c6f00] log: see above
+     │   │           │   │       └─restricted by compatibility requirements with Gadfly [c91e804a] to versions: [0.5.0-0.5.5, 0.6.0, 0.7.0-0.7.7, 0.8.0-0.8.3], leaving only versions: [0.5.3-0.5.5, 0.6.0, 0.7.0-0.7.7]
+     │   │           │   │         └─Gadfly [c91e804a] log: see above
+     │   │           │   └─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [0.17.0-0.17.20, 0.18.0-0.18.6], leaving only versions: 0.17.0-0.17.20
+     │   │           │     └─DiffEqBase [2b5f629d] log:
+     │   │           │       ├─possible versions are: [3.13.2-3.13.3, 4.0.0-4.0.1, 4.1.0, 4.2.0, 4.3.0-4.3.1, 4.4.0, 4.5.0, 4.6.0, 4.7.0, 4.8.0, 4.9.0, 4.10.0-4.10.1, 4.11.0-4.11.1, 4.12.0, 4.13.0, 4.14.0-4.14.1, 4.15.0, 4.16.0, 4.17.0, 4.18.0, 4.19.0, 4.20.0-4.20.3, 4.21.0, 4.21.2-4.21.3, 4.22.0-4.22.2, 4.23.0, 4.23.2-4.23.4, 4.24.0-4.24.3, 4.25.0-4.25.1, 4.26.0-4.26.3, 4.27.0-4.27.1, 4.28.0-4.28.1, 4.29.0-4.29.2, 4.30.0-4.30.2, 4.31.0-4.31.2, 4.32.0, 5.0.0-5.0.1, 5.1.0, 5.2.0-5.2.3, 5.3.0-5.3.2, 5.4.0-5.4.1, 5.5.0-5.5.2, 5.6.0-5.6.4, 5.7.0, 5.8.0-5.8.1, 5.9.0, 5.10.0-5.10.3, 5.11.0-5.11.1, 5.12.0, 5.13.0, 5.14.0-5.14.2, 5.15.0, 5.16.0-5.16.5, 5.17.0-5.17.1, 5.18.0, 5.19.0, 5.20.0-5.20.1, 6.0.0, 6.1.0, 6.2.0-6.2.4, 6.3.0-6.3.6, 6.4.0-6.4.2, 6.5.0-6.5.1, 6.6.0, 6.7.0, 6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.20.0, 6.21.0-6.21.1, 6.22.0-6.22.2, 6.23.0, 6.24.0, 6.25.0-6.25.2, 6.26.0, 6.27.0, 6.28.0, 6.29.0-6.29.3, 6.30.0-6.30.4, 6.31.0-6.31.1, 6.32.0-6.32.2, 6.33.0-6.33.1, 6.34.0-6.34.3, 6.35.0-6.35.2, 6.36.0-6.36.4, 6.37.0, 6.38.0-6.38.4, 6.39.0-6.39.1, 6.40.0-6.40.9, 6.41.0-6.41.3, 6.42.0, 6.43.0-6.43.1, 6.44.0-6.44.3, 6.45.0-6.45.1, 6.46.0-6.46.1, 6.47.0-6.47.1] or uninstalled
+     │   │           │       ├─restricted by compatibility requirements with NeuralNetDiffEq [8faf48c0] to versions: [5.0.0-5.0.1, 5.1.0, 5.2.0-5.2.3, 5.3.0-5.3.2, 5.4.0-5.4.1, 5.5.0-5.5.2, 5.6.0-5.6.4, 5.7.0, 5.8.0-5.8.1, 5.9.0, 5.10.0-5.10.3, 5.11.0-5.11.1, 5.12.0, 5.13.0, 5.14.0-5.14.2, 5.15.0, 5.16.0-5.16.5, 5.17.0-5.17.1, 5.18.0, 5.19.0, 5.20.0-5.20.1, 6.0.0, 6.1.0, 6.2.0-6.2.4, 6.3.0-6.3.6, 6.4.0-6.4.2, 6.5.0-6.5.1, 6.6.0, 6.7.0, 6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.20.0, 6.21.0-6.21.1, 6.22.0-6.22.2, 6.23.0, 6.24.0, 6.25.0-6.25.2, 6.26.0, 6.27.0, 6.28.0, 6.29.0-6.29.3, 6.30.0-6.30.4, 6.31.0-6.31.1, 6.32.0-6.32.2, 6.33.0-6.33.1, 6.34.0-6.34.3, 6.35.0-6.35.2, 6.36.0-6.36.4, 6.37.0, 6.38.0-6.38.4, 6.39.0-6.39.1, 6.40.0-6.40.9, 6.41.0-6.41.3, 6.42.0, 6.43.0-6.43.1, 6.44.0-6.44.3, 6.45.0-6.45.1, 6.46.0-6.46.1, 6.47.0-6.47.1]
+     │   │           │       │ └─NeuralNetDiffEq [8faf48c0] log:
+     │   │           │       │   ├─possible versions are: [0.0.1, 0.1.0, 1.0.0-1.0.2, 1.1.0, 1.2.0, 1.3.0, 1.4.0, 1.5.0, 1.6.0] or uninstalled
+     │   │           │       │   ├─restricted to versions * by an explicit requirement, leaving only versions [0.0.1, 0.1.0, 1.0.0-1.0.2, 1.1.0, 1.2.0, 1.3.0, 1.4.0, 1.5.0, 1.6.0]
+     │   │           │       │   ├─restricted by compatibility requirements with DiffEqFlux [aae7a2af] to versions: [0.0.1, 0.1.0, 1.1.0, 1.2.0, 1.3.0, 1.4.0, 1.5.0, 1.6.0] or uninstalled, leaving only versions: [0.0.1, 0.1.0, 1.1.0, 1.2.0, 1.3.0, 1.4.0, 1.5.0, 1.6.0]
+     │   │           │       │   │ └─DiffEqFlux [aae7a2af] log:
+     │   │           │       │   │   ├─possible versions are: [0.0.1, 0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.5.0-0.5.2, 0.6.0-0.6.1, 0.7.0, 0.8.0-0.8.1, 0.9.0, 0.10.0-0.10.2, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0-1.8.1, 1.9.0, 1.10.0-1.10.3, 1.11.0, 1.12.0-1.12.1, 1.13.0, 1.14.0, 1.15.0, 1.16.0, 1.17.0, 1.18.0, 1.19.0, 1.20.0, 1.21.0, 1.22.0, 1.23.0] or uninstalled
+     │   │           │       │   │   ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.0.1, 0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.10.0-0.10.2, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0-1.8.1, 1.9.0, 1.10.0-1.10.3, 1.11.0, 1.12.0-1.12.1, 1.13.0, 1.14.0, 1.15.0, 1.16.0, 1.17.0, 1.18.0, 1.19.0, 1.20.0, 1.21.0, 1.22.0, 1.23.0] or uninstalled
+     │   │           │       │   │   │ └─Requires [ae029012] log: see above
+     │   │           │       │   │   ├─restricted by compatibility requirements with Flux [587475ba] to versions: [0.0.1, 0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.5.0-0.5.2, 0.6.0-0.6.1, 0.7.0, 0.8.0-0.8.1, 0.9.0, 0.10.0-0.10.2, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0-1.8.1, 1.9.0, 1.10.0-1.10.3, 1.11.0, 1.12.0-1.12.1, 1.13.0, 1.14.0, 1.15.0, 1.16.0, 1.17.0] or uninstalled, leaving only versions: [0.0.1, 0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.10.0-0.10.2, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0-1.8.1, 1.9.0, 1.10.0-1.10.3, 1.11.0, 1.12.0-1.12.1, 1.13.0, 1.14.0, 1.15.0, 1.16.0, 1.17.0] or uninstalled
+     │   │           │       │   │   │ └─Flux [587475ba] log:
+     │   │           │       │   │   │   ├─possible versions are: [0.4.1, 0.5.0-0.5.4, 0.6.0-0.6.10, 0.7.0-0.7.3, 0.8.0-0.8.3, 0.9.0, 0.10.0-0.10.4, 0.11.0-0.11.1] or uninstalled
+     │   │           │       │   │   │   ├─restricted by compatibility requirements with Omega [1af16e33] to versions: [0.4.1, 0.5.0-0.5.4, 0.6.0-0.6.10, 0.7.0-0.7.3, 0.8.0-0.8.3, 0.9.0, 0.10.0-0.10.4, 0.11.0-0.11.1]
+     │   │           │       │   │   │   │ └─Omega [1af16e33] log:
+     │   │           │       │   │   │   │   ├─possible versions are: 0.1.0-0.1.1 or uninstalled
+     │   │           │       │   │   │   │   └─restricted to versions * by an explicit requirement, leaving only versions 0.1.0-0.1.1
+     │   │           │       │   │   │   ├─restricted by compatibility requirements with NeuralNetDiffEq [8faf48c0] to versions: [0.4.1, 0.5.0-0.5.4, 0.6.0-0.6.10, 0.7.0-0.7.3, 0.8.0-0.8.3, 0.9.0, 0.10.1-0.10.4]
+     │   │           │       │   │   │   │ └─NeuralNetDiffEq [8faf48c0] log: see above
+     │   │           │       │   │   │   ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.8.3, 0.9.0, 0.10.0-0.10.4, 0.11.0-0.11.1] or uninstalled, leaving only versions: [0.8.3, 0.9.0, 0.10.1-0.10.4]
+     │   │           │       │   │   │   │ └─Requires [ae029012] log: see above
+     │   │           │       │   │   │   └─restricted by compatibility requirements with CuArrays [3a865a2d] to versions: [0.4.1, 0.5.0-0.5.4, 0.6.0-0.6.10, 0.7.0-0.7.3, 0.8.0-0.8.3, 0.10.0-0.10.4, 0.11.0-0.11.1] or uninstalled, leaving only versions: [0.8.3, 0.10.1-0.10.4]
+     │   │           │       │   │   │     └─CuArrays [3a865a2d] log:
+     │   │           │       │   │   │       ├─possible versions are: [0.2.1, 0.3.0, 0.4.0, 0.5.0, 0.6.0-0.6.2, 0.7.0-0.7.3, 0.8.0-0.8.1, 0.9.0-0.9.1, 1.0.0-1.0.2, 1.1.0, 1.2.0-1.2.1, 1.3.0, 1.4.0-1.4.7, 1.5.0, 1.6.0, 1.7.0-1.7.3, 2.0.0-2.0.1, 2.1.0, 2.2.0-2.2.2] or uninstalled
+     │   │           │       │   │   │       ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.2.1, 0.3.0, 0.4.0, 0.5.0, 0.6.0-0.6.2, 0.7.0-0.7.3, 0.8.0-0.8.1, 0.9.0-0.9.1, 1.0.0-1.0.1, 1.6.0, 1.7.0-1.7.3, 2.0.0-2.0.1, 2.1.0, 2.2.0-2.2.2] or uninstalled
+     │   │           │       │   │   │       │ └─Requires [ae029012] log: see above
+     │   │           │       │   │   │       └─restricted by compatibility requirements with NNlib [872c559c] to versions: [1.0.2, 1.1.0, 1.2.0-1.2.1, 1.3.0, 1.4.0-1.4.7, 1.5.0, 1.6.0, 1.7.0-1.7.3, 2.0.0-2.0.1, 2.1.0, 2.2.0-2.2.2] or uninstalled, leaving only versions: [1.6.0, 1.7.0-1.7.3, 2.0.0-2.0.1, 2.1.0, 2.2.0-2.2.2] or uninstalled
+     │   │           │       │   │   │         └─NNlib [872c559c] log:
+     │   │           │       │   │   │           ├─possible versions are: [0.3.2, 0.4.0-0.4.3, 0.5.0, 0.6.0-0.6.6, 0.7.0-0.7.4] or uninstalled
+     │   │           │       │   │   │           ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.6.0-0.6.6, 0.7.0-0.7.4] or uninstalled
+     │   │           │       │   │   │           │ └─Requires [ae029012] log: see above
+     │   │           │       │   │   │           └─restricted by compatibility requirements with Flux [587475ba] to versions: 0.6.0-0.6.6
+     │   │           │       │   │   │             └─Flux [587475ba] log: see above
+     │   │           │       │   │   ├─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [0.5.1-0.5.2, 0.6.0-0.6.1, 0.7.0, 0.8.0-0.8.1, 0.9.0, 0.10.0-0.10.2, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0-1.8.1, 1.9.0, 1.10.0-1.10.3, 1.11.0, 1.12.0-1.12.1, 1.13.0, 1.14.0, 1.15.0, 1.16.0, 1.17.0, 1.18.0, 1.19.0, 1.20.0, 1.21.0, 1.22.0, 1.23.0] or uninstalled, leaving only versions: [0.10.0-0.10.2, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0-1.8.1, 1.9.0, 1.10.0-1.10.3, 1.11.0, 1.12.0-1.12.1, 1.13.0, 1.14.0, 1.15.0, 1.16.0, 1.17.0] or uninstalled
+     │   │           │       │   │   │ └─DiffEqBase [2b5f629d] log: see above
+     │   │           │       │   │   ├─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [0.5.1-0.5.2, 0.6.0-0.6.1, 0.7.0, 0.8.0-0.8.1, 0.9.0, 0.10.0-0.10.2, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0] or uninstalled, leaving only versions: [0.10.0-0.10.2, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0] or uninstalled
+     │   │           │       │   │   │ └─DiffEqBase [2b5f629d] log: see above
+     │   │           │       │   │   └─restricted by compatibility requirements with Flux [587475ba] to versions: [0.0.1, 0.1.0, 0.2.0, 0.3.0, 0.4.0, 0.5.0-0.5.2, 0.6.0-0.6.1, 0.7.0, 1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0-1.7.1, 1.8.0-1.8.1, 1.9.0, 1.10.0-1.10.3, 1.11.0, 1.12.0-1.12.1, 1.13.0, 1.14.0, 1.15.0, 1.16.0, 1.17.0] or uninstalled, leaving only versions: [1.0.0, 1.1.0-1.1.1, 1.2.0-1.2.2, 1.3.0-1.3.2, 1.4.0, 1.5.0, 1.6.0, 1.7.0] or uninstalled
+     │   │           │       │   │     └─Flux [587475ba] log: see above
+     │   │           │       │   ├─restricted by compatibility requirements with Distributions [31c24e10] to versions: [0.0.1, 0.1.0, 1.0.0-1.0.2, 1.1.0, 1.2.0, 1.3.0, 1.4.0] or uninstalled, leaving only versions: [0.0.1, 0.1.0, 1.1.0, 1.2.0, 1.3.0, 1.4.0]
+     │   │           │       │   │ └─Distributions [31c24e10] log:
+     │   │           │       │   │   ├─possible versions are: [0.16.0-0.16.4, 0.17.0, 0.18.0, 0.19.1-0.19.2, 0.20.0, 0.21.0-0.21.3, 0.21.5-0.21.12, 0.22.0-0.22.6, 0.23.0-0.23.12] or uninstalled
+     │   │           │       │   │   ├─restricted by compatibility requirements with Omega [1af16e33] to versions: [0.16.0-0.16.4, 0.17.0, 0.18.0, 0.19.1-0.19.2, 0.20.0, 0.21.0-0.21.3, 0.21.5-0.21.12, 0.22.0-0.22.6, 0.23.0-0.23.12]
+     │   │           │       │   │   │ └─Omega [1af16e33] log: see above
+     │   │           │       │   │   ├─restricted by compatibility requirements with StatsBase [2913bbd2] to versions: [0.16.0-0.16.4, 0.17.0, 0.18.0, 0.19.1-0.19.2, 0.20.0, 0.21.1-0.21.3, 0.21.5-0.21.12, 0.22.0-0.22.6, 0.23.0-0.23.12] or uninstalled, leaving only versions: [0.16.0-0.16.4, 0.17.0, 0.18.0, 0.19.1-0.19.2, 0.20.0, 0.21.1-0.21.3, 0.21.5-0.21.12, 0.22.0-0.22.6, 0.23.0-0.23.12]
+     │   │           │       │   │   │ └─StatsBase [2913bbd2] log: see above
+     │   │           │       │   │   └─restricted by compatibility requirements with Soss [8ce77f84] to versions: [0.16.0-0.16.4, 0.17.0, 0.18.0, 0.19.1-0.19.2, 0.20.0, 0.21.0-0.21.3, 0.21.5-0.21.12], leaving only versions: [0.16.0-0.16.4, 0.17.0, 0.18.0, 0.19.1-0.19.2, 0.20.0, 0.21.1-0.21.3, 0.21.5-0.21.12]
+     │   │           │       │   │     └─Soss [8ce77f84] log: see above
+     │   │           │       │   └─restricted by compatibility requirements with Flux [587475ba] to versions: [0.0.1, 0.1.0, 1.0.0-1.0.1, 1.2.0, 1.3.0, 1.4.0, 1.5.0, 1.6.0] or uninstalled, leaving only versions: [0.0.1, 0.1.0, 1.2.0, 1.3.0, 1.4.0]
+     │   │           │       │     └─Flux [587475ba] log: see above
+     │   │           │       ├─restricted by compatibility requirements with Requires [ae029012] to versions: [6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.20.0, 6.21.0-6.21.1, 6.22.0-6.22.2, 6.23.0, 6.24.0, 6.25.0-6.25.2, 6.26.0, 6.27.0, 6.28.0, 6.29.0-6.29.3, 6.30.0-6.30.4, 6.31.0-6.31.1, 6.32.0-6.32.2, 6.33.0-6.33.1, 6.34.0-6.34.3, 6.35.0-6.35.2, 6.36.0-6.36.4, 6.37.0, 6.38.0-6.38.4, 6.39.0-6.39.1, 6.40.0-6.40.9, 6.41.0-6.41.3, 6.42.0, 6.43.0-6.43.1, 6.44.0-6.44.3, 6.45.0-6.45.1, 6.46.0-6.46.1, 6.47.0-6.47.1] or uninstalled, leaving only versions: [6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.20.0, 6.21.0-6.21.1, 6.22.0-6.22.2, 6.23.0, 6.24.0, 6.25.0-6.25.2, 6.26.0, 6.27.0, 6.28.0, 6.29.0-6.29.3, 6.30.0-6.30.4, 6.31.0-6.31.1, 6.32.0-6.32.2, 6.33.0-6.33.1, 6.34.0-6.34.3, 6.35.0-6.35.2, 6.36.0-6.36.4, 6.37.0, 6.38.0-6.38.4, 6.39.0-6.39.1, 6.40.0-6.40.9, 6.41.0-6.41.3, 6.42.0, 6.43.0-6.43.1, 6.44.0-6.44.3, 6.45.0-6.45.1, 6.46.0-6.46.1, 6.47.0-6.47.1]
+     │   │           │       │ └─Requires [ae029012] log: see above
+     │   │           │       ├─restricted by compatibility requirements with Compat [34da2185] to versions: [3.13.2-3.13.3, 4.0.0-4.0.1, 4.1.0, 4.2.0, 4.3.0-4.3.1, 4.4.0, 4.5.0, 4.6.0, 4.7.0, 4.8.0, 4.9.0, 4.10.0-4.10.1, 4.11.0-4.11.1, 4.12.0, 4.13.0, 4.14.0-4.14.1, 4.15.0, 4.16.0, 4.17.0, 4.18.0, 4.19.0, 4.20.0-4.20.3, 4.21.0, 4.21.2-4.21.3, 4.22.0-4.22.2, 4.23.0, 4.23.2-4.23.4, 4.24.0-4.24.3, 4.25.0-4.25.1, 4.26.0-4.26.3, 4.27.0-4.27.1, 4.28.0-4.28.1, 4.29.0-4.29.2, 4.30.0-4.30.2, 4.31.0-4.31.2, 4.32.0, 5.0.0-5.0.1, 5.1.0, 5.2.0-5.2.3, 5.3.0-5.3.2, 5.4.0-5.4.1, 5.5.0-5.5.2, 5.6.0-5.6.4, 5.7.0, 5.8.0-5.8.1, 5.9.0, 5.10.0-5.10.3, 5.11.0-5.11.1, 5.12.0, 5.13.0, 5.14.0-5.14.2, 5.15.0, 5.16.0-5.16.5, 5.17.0-5.17.1, 5.18.0, 5.19.0, 5.20.0-5.20.1, 6.0.0, 6.1.0, 6.2.0-6.2.4, 6.3.0-6.3.6, 6.4.0-6.4.2, 6.5.0-6.5.1, 6.6.0, 6.7.0, 6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.20.0, 6.21.0-6.21.1, 6.22.0-6.22.2, 6.24.0, 6.25.0-6.25.2, 6.26.0, 6.27.0, 6.28.0, 6.29.0-6.29.3, 6.30.0-6.30.4, 6.31.0-6.31.1, 6.32.0-6.32.2, 6.33.0-6.33.1, 6.34.0-6.34.3, 6.35.0-6.35.2, 6.36.0-6.36.4, 6.37.0, 6.38.0-6.38.4, 6.39.0-6.39.1, 6.40.0-6.40.9, 6.41.0-6.41.3, 6.42.0, 6.43.0-6.43.1, 6.44.0-6.44.3, 6.45.0-6.45.1, 6.46.0-6.46.1, 6.47.0-6.47.1] or uninstalled, leaving only versions: [6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.20.0, 6.21.0-6.21.1, 6.22.0-6.22.2, 6.24.0, 6.25.0-6.25.2, 6.26.0, 6.27.0, 6.28.0, 6.29.0-6.29.3, 6.30.0-6.30.4, 6.31.0-6.31.1, 6.32.0-6.32.2, 6.33.0-6.33.1, 6.34.0-6.34.3, 6.35.0-6.35.2, 6.36.0-6.36.4, 6.37.0, 6.38.0-6.38.4, 6.39.0-6.39.1, 6.40.0-6.40.9, 6.41.0-6.41.3, 6.42.0, 6.43.0-6.43.1, 6.44.0-6.44.3, 6.45.0-6.45.1, 6.46.0-6.46.1, 6.47.0-6.47.1]
+     │   │           │       │ └─Compat [34da2185] log: see above
+     │   │           │       ├─restricted by compatibility requirements with DataStructures [864edb3b] to versions: [3.13.2-3.13.3, 4.0.0-4.0.1, 4.1.0, 4.2.0, 4.3.0-4.3.1, 4.4.0, 4.5.0, 4.6.0, 4.7.0, 4.8.0, 4.9.0, 4.10.0-4.10.1, 4.11.0-4.11.1, 4.12.0, 4.13.0, 4.14.0-4.14.1, 4.15.0, 4.16.0, 4.17.0, 4.18.0, 4.19.0, 4.20.0-4.20.3, 4.21.0, 4.21.2-4.21.3, 4.22.0-4.22.2, 4.23.0, 4.23.2-4.23.4, 4.24.0-4.24.3, 4.25.0-4.25.1, 4.26.0-4.26.3, 4.27.0-4.27.1, 4.28.0-4.28.1, 4.29.0-4.29.2, 4.30.0-4.30.2, 4.31.0-4.31.2, 4.32.0, 5.0.0-5.0.1, 5.1.0, 5.2.0-5.2.3, 5.3.0-5.3.2, 5.4.0-5.4.1, 5.5.0-5.5.2, 5.6.0-5.6.4, 5.7.0, 5.8.0-5.8.1, 5.9.0, 5.10.0-5.10.3, 5.11.0-5.11.1, 5.12.0, 5.13.0, 5.14.0-5.14.2, 5.15.0, 5.16.0-5.16.5, 5.17.0-5.17.1, 5.18.0, 5.19.0, 5.20.0-5.20.1, 6.0.0, 6.1.0, 6.2.0-6.2.4, 6.3.0-6.3.6, 6.4.0-6.4.2, 6.5.0-6.5.1, 6.6.0, 6.7.0, 6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.20.0, 6.21.0-6.21.1, 6.22.0-6.22.2, 6.23.0, 6.24.0, 6.25.0-6.25.2, 6.26.0, 6.27.0, 6.28.0, 6.29.0-6.29.3, 6.30.0-6.30.4, 6.31.0-6.31.1, 6.32.0-6.32.2, 6.33.0-6.33.1, 6.34.0-6.34.3, 6.35.0-6.35.2, 6.36.0-6.36.4, 6.37.0, 6.38.0-6.38.4, 6.39.0-6.39.1, 6.40.0-6.40.9, 6.41.0-6.41.3, 6.42.0, 6.43.0-6.43.1, 6.44.0-6.44.3] or uninstalled, leaving only versions: [6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.20.0, 6.21.0-6.21.1, 6.22.0-6.22.2, 6.24.0, 6.25.0-6.25.2, 6.26.0, 6.27.0, 6.28.0, 6.29.0-6.29.3, 6.30.0-6.30.4, 6.31.0-6.31.1, 6.32.0-6.32.2, 6.33.0-6.33.1, 6.34.0-6.34.3, 6.35.0-6.35.2, 6.36.0-6.36.4, 6.37.0, 6.38.0-6.38.4, 6.39.0-6.39.1, 6.40.0-6.40.9, 6.41.0-6.41.3, 6.42.0, 6.43.0-6.43.1, 6.44.0-6.44.3]
+     │   │           │       │ └─DataStructures [864edb3b] log: see above
+     │   │           │       └─restricted by compatibility requirements with ConsoleProgressMonitor [88cd18e8] to versions: [3.13.2-3.13.3, 4.0.0-4.0.1, 4.1.0, 4.2.0, 4.3.0-4.3.1, 4.4.0, 4.5.0, 4.6.0, 4.7.0, 4.8.0, 4.9.0, 4.10.0-4.10.1, 4.11.0-4.11.1, 4.12.0, 4.13.0, 4.14.0-4.14.1, 4.15.0, 4.16.0, 4.17.0, 4.18.0, 4.19.0, 4.20.0-4.20.3, 4.21.0, 4.21.2-4.21.3, 4.22.0-4.22.2, 4.23.0, 4.23.2-4.23.4, 4.24.0-4.24.3, 4.25.0-4.25.1, 4.26.0-4.26.3, 4.27.0-4.27.1, 4.28.0-4.28.1, 4.29.0-4.29.2, 4.30.0-4.30.2, 4.31.0-4.31.2, 4.32.0, 5.0.0-5.0.1, 5.1.0, 5.2.0-5.2.3, 5.3.0-5.3.2, 5.4.0-5.4.1, 5.5.0-5.5.2, 5.6.0-5.6.4, 5.7.0, 5.8.0-5.8.1, 5.9.0, 5.10.0-5.10.3, 5.11.0-5.11.1, 5.12.0, 5.13.0, 5.14.0-5.14.2, 5.15.0, 5.16.0-5.16.5, 5.17.0-5.17.1, 5.18.0, 5.19.0, 5.20.0-5.20.1, 6.0.0, 6.1.0, 6.2.0-6.2.4, 6.3.0-6.3.6, 6.4.0-6.4.2, 6.5.0-6.5.1, 6.6.0, 6.7.0, 6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0, 6.45.0-6.45.1, 6.46.0-6.46.1, 6.47.0-6.47.1] or uninstalled, leaving only versions: [6.8.0, 6.9.0-6.9.4, 6.10.0-6.10.2, 6.11.0, 6.12.0-6.12.5, 6.13.0-6.13.3, 6.14.0-6.14.2, 6.15.0-6.15.2, 6.16.0, 6.17.0-6.17.3, 6.18.0-6.18.1, 6.19.0]
+     │   │           │         └─ConsoleProgressMonitor [88cd18e8] log:
+     │   │           │           ├─possible versions are: 0.1.0-0.1.2 or uninstalled
+     │   │           │           └─restricted by compatibility requirements with ProgressMeter [92933f4c] to versions: uninstalled
+     │   │           │             └─ProgressMeter [92933f4c] log:
+     │   │           │               ├─possible versions are: [0.6.0-0.6.1, 0.7.0, 0.8.0, 0.9.0, 1.0.0, 1.1.0, 1.2.0, 1.3.0-1.3.4] or uninstalled
+     │   │           │               ├─restricted by compatibility requirements with Omega [1af16e33] to versions: [0.6.0-0.6.1, 0.7.0, 0.8.0, 0.9.0, 1.0.0, 1.1.0, 1.2.0, 1.3.0-1.3.4]
+     │   │           │               │ └─Omega [1af16e33] log: see above
+     │   │           │               └─restricted by compatibility requirements with Mads [d6bdc55b] to versions: [0.6.0-0.6.1, 0.7.0, 0.8.0, 0.9.0]
+     │   │           │                 └─Mads [d6bdc55b] log: see above
+     │   │           ├─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [5.16.0, 5.17.0-5.17.2, 5.18.0, 5.19.0, 5.20.0-5.20.1, 5.21.0, 5.22.0, 5.23.0, 5.24.0, 5.25.0, 5.26.0-5.26.8, 5.27.0-5.27.1, 5.28.0-5.28.1, 5.29.0, 5.30.0, 5.31.0, 5.32.0-5.32.2, 5.33.0, 5.34.0-5.34.1, 5.35.0-5.35.5, 5.36.0-5.36.1, 5.37.0, 5.38.0-5.38.3, 5.39.0-5.39.1, 5.40.0, 5.41.0, 5.42.0-5.42.9] or uninstalled, leaving only versions: [5.16.0, 5.17.0-5.17.2, 5.18.0, 5.19.0, 5.20.0-5.20.1, 5.21.0, 5.22.0, 5.23.0, 5.24.0, 5.25.0, 5.26.0-5.26.8, 5.27.0-5.27.1, 5.28.0-5.28.1, 5.29.0, 5.30.0, 5.31.0, 5.32.0-5.32.2, 5.33.0, 5.34.0-5.34.1, 5.35.0-5.35.5, 5.36.0-5.36.1, 5.37.0, 5.38.0-5.38.3, 5.39.0-5.39.1, 5.40.0, 5.41.0, 5.42.0-5.42.3]
+     │   │           │ └─DiffEqBase [2b5f629d] log: see above
+     │   │           ├─restricted by compatibility requirements with Parameters [d96e819e] to versions: [4.0.0, 4.1.0, 4.2.0, 4.3.0, 4.4.0-4.4.1, 4.5.0, 4.6.0, 4.7.0-4.7.1, 4.8.0-4.8.1, 4.9.0, 4.10.0, 4.11.0-4.11.1, 4.12.0-4.12.4, 4.13.0, 4.14.0, 4.15.0-4.15.1, 4.16.0-4.16.5, 4.17.0-4.17.2, 4.18.0-4.18.3, 4.19.0, 4.20.0, 4.21.0-4.21.1, 5.0.0, 5.1.0-5.1.4, 5.2.0-5.2.1, 5.3.0, 5.4.0-5.4.1, 5.5.0, 5.6.0, 5.17.0-5.17.2, 5.18.0, 5.19.0, 5.20.0-5.20.1, 5.21.0, 5.22.0, 5.23.0, 5.24.0, 5.25.0, 5.26.0-5.26.8, 5.27.0-5.27.1, 5.28.0-5.28.1, 5.29.0, 5.30.0, 5.31.0, 5.32.0-5.32.2, 5.33.0, 5.34.0-5.34.1, 5.35.0-5.35.5, 5.36.0-5.36.1, 5.37.0, 5.38.0-5.38.3, 5.39.0-5.39.1, 5.40.0, 5.41.0, 5.42.0-5.42.9] or uninstalled, leaving only versions: [5.17.0-5.17.2, 5.18.0, 5.19.0, 5.20.0-5.20.1, 5.21.0, 5.22.0, 5.23.0, 5.24.0, 5.25.0, 5.26.0-5.26.8, 5.27.0-5.27.1, 5.28.0-5.28.1, 5.29.0, 5.30.0, 5.31.0, 5.32.0-5.32.2, 5.33.0, 5.34.0-5.34.1, 5.35.0-5.35.5, 5.36.0-5.36.1, 5.37.0, 5.38.0-5.38.3, 5.39.0-5.39.1, 5.40.0, 5.41.0, 5.42.0-5.42.3]
+     │   │           │ └─Parameters [d96e819e] log:
+     │   │           │   ├─possible versions are: [0.9.1-0.9.2, 0.10.0-0.10.3, 0.11.0, 0.12.0-0.12.1] or uninstalled
+     │   │           │   ├─restricted by compatibility requirements with TimeseriesPrediction [f218859d] to versions: [0.9.1-0.9.2, 0.10.0-0.10.3, 0.11.0, 0.12.0-0.12.1]
+     │   │           │   │ └─TimeseriesPrediction [f218859d] log: see above
+     │   │           │   └─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: 0.12.0-0.12.1
+     │   │           │     └─DiffEqBase [2b5f629d] log: see above
+     │   │           ├─restricted by compatibility requirements with SparseDiffTools [47a9eef4] to versions: [4.0.0, 4.1.0, 4.2.0, 4.3.0, 4.4.0-4.4.1, 4.5.0, 4.6.0, 4.7.0-4.7.1, 4.8.0-4.8.1, 4.9.0, 4.10.0, 4.11.0-4.11.1, 4.12.0-4.12.4, 4.13.0, 4.14.0, 4.15.0-4.15.1, 4.16.0-4.16.5, 4.17.0-4.17.2, 4.18.0-4.18.3, 4.19.0, 4.20.0, 4.21.0-4.21.1, 5.0.0, 5.1.0-5.1.4, 5.2.0-5.2.1, 5.3.0, 5.4.0-5.4.1, 5.5.0, 5.6.0-5.6.1, 5.7.0-5.7.1, 5.8.0-5.8.1, 5.9.0, 5.10.0, 5.11.0-5.11.1, 5.24.0, 5.25.0, 5.26.0-5.26.8, 5.27.0-5.27.1, 5.28.0-5.28.1, 5.29.0, 5.30.0, 5.31.0, 5.32.0-5.32.2, 5.33.0, 5.34.0-5.34.1, 5.35.0-5.35.5, 5.36.0-5.36.1, 5.37.0, 5.38.0-5.38.3, 5.39.0-5.39.1, 5.40.0, 5.41.0, 5.42.0-5.42.9] or uninstalled, leaving only versions: [5.24.0, 5.25.0, 5.26.0-5.26.8, 5.27.0-5.27.1, 5.28.0-5.28.1, 5.29.0, 5.30.0, 5.31.0, 5.32.0-5.32.2, 5.33.0, 5.34.0-5.34.1, 5.35.0-5.35.5, 5.36.0-5.36.1, 5.37.0, 5.38.0-5.38.3, 5.39.0-5.39.1, 5.40.0, 5.41.0, 5.42.0-5.42.3]
+     │   │           │ └─SparseDiffTools [47a9eef4] log: see above
+     │   │           └─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [5.16.0, 5.17.0-5.17.2, 5.18.0, 5.19.0, 5.20.0-5.20.1, 5.21.0, 5.22.0, 5.23.0, 5.24.0, 5.25.0, 5.26.0-5.26.8, 5.27.0-5.27.1, 5.28.0-5.28.1, 5.29.0] or uninstalled, leaving only versions: [5.24.0, 5.25.0, 5.26.0-5.26.8, 5.27.0-5.27.1, 5.28.0-5.28.1, 5.29.0]
+     │   │             └─DiffEqBase [2b5f629d] log: see above
+     │   ├─restricted by compatibility requirements with SimpleGraphs [55797a34] to versions: [0.15.3, 0.16.0, 0.17.0-0.17.2, 0.18.0-0.18.1, 0.19.0-0.19.7, 0.20.0-0.20.6, 0.21.0, 0.22.0], leaving only versions: [0.15.3, 0.16.0, 0.17.0-0.17.2, 0.18.0-0.18.1, 0.19.0-0.19.7, 0.20.0-0.20.1]
+     │   │ └─SimpleGraphs [55797a34] log:
+     │   │   ├─possible versions are: [0.2.3-0.2.10, 0.3.0, 0.4.0-0.4.4, 0.5.0-0.5.3, 0.6.0-0.6.9] or uninstalled
+     │   │   ├─restricted by compatibility requirements with Soss [8ce77f84] to versions: [0.2.3-0.2.10, 0.3.0, 0.4.0-0.4.4, 0.5.0-0.5.3, 0.6.0-0.6.9]
+     │   │   │ └─Soss [8ce77f84] log: see above
+     │   │   ├─restricted by compatibility requirements with Polynomials [f27b6e38] to versions: [0.2.3-0.2.10, 0.3.0, 0.5.0-0.5.3, 0.6.0-0.6.9] or uninstalled, leaving only versions: [0.2.3-0.2.10, 0.3.0, 0.5.0-0.5.3, 0.6.0-0.6.9]
+     │   │   │ └─Polynomials [f27b6e38] log:
+     │   │   │   ├─possible versions are: [0.5.0-0.5.3, 0.6.0-0.6.1, 0.7.0, 0.8.0, 1.0.0-1.0.6, 1.1.0-1.1.8] or uninstalled
+     │   │   │   └─restricted by compatibility requirements with Symata [a906b1d5] to versions: [0.5.0-0.5.3, 0.6.0-0.6.1]
+     │   │   │     └─Symata [a906b1d5] log: see above
+     │   │   └─restricted by compatibility requirements with Combinatorics [861a8166] to versions: [0.2.3-0.2.10, 0.3.0, 0.4.0-0.4.3] or uninstalled, leaving only versions: [0.2.3-0.2.10, 0.3.0]
+     │   │     └─Combinatorics [861a8166] log:
+     │   │       ├─possible versions are: [0.7.0, 1.0.0-1.0.2] or uninstalled
+     │   │       └─restricted by compatibility requirements with Symata [a906b1d5] to versions: 0.7.0
+     │   │         └─Symata [a906b1d5] log: see above
+     │   └─restricted by compatibility requirements with Parameters [d96e819e] to versions: [0.19.3-0.19.7, 0.20.0-0.20.6, 0.21.0, 0.22.0, 1.0.0, 1.1.0, 1.2.0] or uninstalled, leaving only versions: [0.19.3-0.19.7, 0.20.0-0.20.1]
+     │     └─Parameters [d96e819e] log: see above
+     └─restricted by compatibility requirements with Plots [91a5bcdd] to versions: [0.32.0-0.32.2, 0.33.0-0.33.1], leaving only versions: 0.32.0-0.32.2
+       └─Plots [91a5bcdd] log:
+         ├─possible versions are: [0.12.1-0.12.4, 0.13.0-0.13.1, 0.14.0-0.14.2, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.4, 0.18.0, 0.19.0-0.19.3, 0.20.0-0.20.6, 0.21.0, 0.22.0-0.22.5, 0.23.0-0.23.2, 0.24.0, 0.25.0-0.25.3, 0.26.0-0.26.3, 0.27.0-0.27.1, 0.28.0-0.28.4, 0.29.0-0.29.9, 1.0.0-1.0.14, 1.1.0-1.1.4, 1.2.0-1.2.6, 1.3.0-1.3.7, 1.4.0-1.4.4, 1.5.0-1.5.9, 1.6.0-1.6.6] or uninstalled
+         ├─restricted to versions * by an explicit requirement, leaving only versions [0.12.1-0.12.4, 0.13.0-0.13.1, 0.14.0-0.14.2, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.4, 0.18.0, 0.19.0-0.19.3, 0.20.0-0.20.6, 0.21.0, 0.22.0-0.22.5, 0.23.0-0.23.2, 0.24.0, 0.25.0-0.25.3, 0.26.0-0.26.3, 0.27.0-0.27.1, 0.28.0-0.28.4, 0.29.0-0.29.9, 1.0.0-1.0.14, 1.1.0-1.1.4, 1.2.0-1.2.6, 1.3.0-1.3.7, 1.4.0-1.4.4, 1.5.0-1.5.9, 1.6.0-1.6.6]
+         ├─restricted by compatibility requirements with Requires [ae029012] to versions: [0.28.4, 0.29.0-0.29.9, 1.0.0-1.0.14, 1.1.0-1.1.4, 1.2.0-1.2.6, 1.3.0-1.3.7, 1.4.0-1.4.4, 1.5.0-1.5.9, 1.6.0-1.6.6] or uninstalled, leaving only versions: [0.28.4, 0.29.0-0.29.9, 1.0.0-1.0.14, 1.1.0-1.1.4, 1.2.0-1.2.6, 1.3.0-1.3.7, 1.4.0-1.4.4, 1.5.0-1.5.9, 1.6.0-1.6.6]
+         │ └─Requires [ae029012] log: see above
+         └─restricted by compatibility requirements with RecipesBase [3cdcf5f2] to versions: [0.12.1-0.12.4, 0.13.0-0.13.1, 0.14.0-0.14.2, 0.15.0-0.15.1, 0.16.0, 0.17.0-0.17.4, 0.18.0, 0.19.0-0.19.3, 0.20.0-0.20.6, 0.21.0, 0.22.0-0.22.5, 0.23.0-0.23.2, 0.24.0, 0.25.0-0.25.3, 0.26.0-0.26.3, 0.27.0-0.27.1, 0.28.0-0.28.4, 1.0.0-1.0.14, 1.1.0-1.1.4, 1.2.0-1.2.6, 1.3.0-1.3.7, 1.4.0-1.4.4, 1.5.0-1.5.9, 1.6.0-1.6.6] or uninstalled, leaving only versions: [0.28.4, 1.0.0-1.0.14, 1.1.0-1.1.4, 1.2.0-1.2.6, 1.3.0-1.3.7, 1.4.0-1.4.4, 1.5.0-1.5.9, 1.6.0-1.6.6]
+           └─RecipesBase [3cdcf5f2] log:
+             ├─possible versions are: [0.4.0, 0.5.0, 0.6.0, 0.7.0, 0.8.0, 1.0.0-1.0.2, 1.1.0] or uninstalled
+             ├─restricted by compatibility requirements with SymPy [24249f21] to versions: [0.4.0, 0.5.0, 0.6.0, 0.7.0, 1.0.0-1.0.2, 1.1.0]
+             │ └─SymPy [24249f21] log: see above
+             ├─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [0.7.0, 0.8.0, 1.0.0-1.0.2, 1.1.0], leaving only versions: [0.7.0, 1.0.0-1.0.2, 1.1.0]
+             │ └─DiffEqBase [2b5f629d] log: see above
+             └─restricted by compatibility requirements with DiffEqBase [2b5f629d] to versions: [0.7.0, 0.8.0], leaving only versions: 0.7.0
+               └─DiffEqBase [2b5f629d] log: see above
 Stacktrace:
- [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
- [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1566
- [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:328
- [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:315
- [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
- [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
- [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
- [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
- [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
- [10] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65 [inlined]
- [11] analyzePkg(::String, ::Nothing) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:14
- [12] top-level scope at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:17
- [13] include(::Function, ::Module, ::String) at ./Base.jl:380
- [14] include(::Module, ::String) at ./Base.jl:368
- [15] exec_options(::Base.JLOptions) at ./client.jl:296
- [16] _start() at ./client.jl:506
+ [1] propagate_constraints!(::Pkg.Resolve.Graph, ::Set{Int64}; log_events::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1005
+ [2] propagate_constraints! at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:946 [inlined] (repeats 2 times)
+ [3] simplify_graph!(::Pkg.Resolve.Graph, ::Set{Int64}; clean_graph::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1460
+ [4] simplify_graph! at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1460 [inlined] (repeats 2 times)
+ [5] resolve_versions!(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:368
+ [6] targeted_resolve at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1107 [inlined]
+ [7] tiered_resolve(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1093
+ [8] _resolve at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1113 [inlined]
+ [9] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Array{Base.UUID,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1128
+ [10] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:189
+ [11] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:140
+ [12] #add#21 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [13] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [14] #add#20 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [15] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [16] add(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [17] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65 [inlined]
+ [18] analyzePkg(::String, ::Nothing) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:8
+ [19] top-level scope at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:17
+ [20] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [21] include(::Module, ::String) at ./Base.jl:368
+ [22] exec_options(::Base.JLOptions) at ./client.jl:296
+ [23] _start() at ./client.jl:506
 in expression starting at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:17
