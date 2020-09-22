@@ -10,7 +10,7 @@ include("ast-parse-helpers.jl")
 Count = Int64
 
 # Represents an ast head distribution
-AstInfo = Dict{Symbol, Count}
+AstInfo = Vector{EvalCallInfo}
 
 # Represents the a function name distribution
 FunctionInfo = Dict{String, Count}
@@ -68,7 +68,7 @@ end
 # Initializes a base representation of override information
 OverrideInfo(identifier :: String, functionDataFilter :: Function) =
     OverrideInfo(identifier, functionDataFilter,
-        FuncMetadata(EvalInfo(EvalCallInfo[], Dict(), FuncDefTracker());
+        FuncMetadata(EvalInfo(EvalCallInfo[], Vector{EvalCallInfo}(), FuncDefTracker());
             initialTrace=Dict{StackTraces.StackFrame,StackTraceInfo{AstInfo}}()),
         FuncMetadata(InvokeLatestInfo(Dict());
             initialTrace=Dict{StackTraces.StackFrame,StackTraceInfo{FunctionInfo}}())
@@ -106,16 +106,17 @@ overrideCollection = [
 
 # Overrides eval to store metadata about calls to the function
 function Core.eval(m::Module, @nospecialize(e))
+    isTopLevel = stacktrace()[2].func == Symbol("top-level scope")
     # aux functions
     updateEvalInfoWrap(evalInfo :: EvalInfo, stackinfo) = updateEvalInfo(evalInfo, e, m, stackinfo)
-    updateTraceAuxillary(astHeads :: AstInfo) = updateAstInfo(astHeads, e)
+    updateTraceAuxillary(astHeads :: AstInfo) = updateAstInfo(astHeads, e, isTopLevel)
     # action
     exprs = extractExprs(e)
     for expr = exprs
         updateFuncMetadata(
             overrideCollection, ((overrideInfo) -> overrideInfo.evalInfo),
             3, updateEvalInfoWrap;
-            auxTuple=((() -> Dict{Symbol,Count}()), updateTraceAuxillary))
+            auxTuple=((() -> Vector{EvalCallInfo}()), updateTraceAuxillary))
     end
 
     # Original eval code
@@ -139,7 +140,7 @@ function Base.invokelatest(@nospecialize(f), @nospecialize args...; kwargs...)
     updateFuncMetadata(
         overrideCollection, ((overrideInfo) -> overrideInfo.invokeLatestInfo),
         4, updateInvokeLatestInfo;
-        auxTuple=((() -> Dict{String,Count}()), updateTraceAuxillary))
+        auxTuple=((() -> Dict{String,Int64}()), updateTraceAuxillary))
 
     # Original invokelatest code
     if isempty(kwargs)
@@ -193,8 +194,8 @@ end
 # Updates the ast information to increment the ast type of the given expression
 function updateEvalInfo(evalInfo :: EvalInfo, e, m :: Module, stackinfo)
     isInFunc = stackinfo.func != Symbol("top-level scope")
-    append!(evalInfo.evalCallInfos, argDescr(e, EvalArgContext(true, isInFunc)))
-    astIdentifier = updateAstInfo(evalInfo.astHeads, e)
+    append!(evalInfo.evalCallInfos, argDescr(e, EvalArgContext(isInFunc, false)))
+    astIdentifier = updateAstInfo(evalInfo.evalCallInfos, e, isInFunc)
     if astIdentifier == :function
         # a lambda function (()->1)
         if isLambdaFunc(e)
@@ -223,12 +224,8 @@ function updateAstInfoHelp(astHeads :: AstInfo, astIdentifier :: Symbol)
     updateDictCount(astHeads, astIdentifier)
     astIdentifier
 end
-updateAstInfo(astHeads :: AstInfo, e :: Expr) =
-    updateAstInfoHelp(astHeads, isIrregularFunction(e) ? :function : e.head)
-updateAstInfo(astHeads :: AstInfo, e :: Symbol) =
-    updateAstInfoHelp(astHeads, Symbol(string("Symbol-", e)))
-updateAstInfo(astHeads :: AstInfo, e) =
-    updateAstInfoHelp(astHeads, Symbol(typeof(e)))
+updateAstInfo(astHeads :: AstInfo, e :: Expr, isInFunc :: Bool) =
+    append!(astHeads, argDescr(e, EvalArgContext(isInFunc, false)))
 
 # Updates misc count and prints expression that is misc function definition
 function updateMiscCount(evalInfo, e, msg)

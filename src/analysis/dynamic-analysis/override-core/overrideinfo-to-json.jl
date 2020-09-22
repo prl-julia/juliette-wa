@@ -38,7 +38,7 @@ funcInfoToJson(funcNames :: FunctionInfo) =
 
 # Convert an astInfo object to a julia json representation
 astInfoToJson(astHeads :: AstInfo) =
-    Dict{Any, Any}(["ast_heads" => countingDictToJson(astHeads, "ast_head")])
+    Dict{Any, Any}(["ast_heads" => collect(mkOccurDict(astHeads))])
 
 # Convert an functionDefTracker object to a julia json representation
 function funcDefTrackerToJson(funcDefTypes :: FuncDefTracker)
