@@ -224,7 +224,7 @@ function updateAstInfoHelp(astHeads :: AstInfo, astIdentifier :: Symbol)
     updateDictCount(astHeads, astIdentifier)
     astIdentifier
 end
-updateAstInfo(astHeads :: AstInfo, e :: Expr, isInFunc :: Bool) =
+updateAstInfo(astHeads :: AstInfo, e, isInFunc :: Bool) =
     append!(astHeads, argDescr(e, EvalArgContext(isInFunc, false)))
 
 # Updates misc count and prints expression that is misc function definition
