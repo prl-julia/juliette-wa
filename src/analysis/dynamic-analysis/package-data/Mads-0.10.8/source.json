@@ -1,0 +1,42 @@
+{
+  "eval_info": {
+    "call_count": 1,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "functions(::String; shortoutput::Bool, quiet::Bool) at MadsHelp.jl:60",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "import [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "eval(::Symbol) at Mads.jl:11",
+        "auxillary": {
+          "ast_heads": []
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"import\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

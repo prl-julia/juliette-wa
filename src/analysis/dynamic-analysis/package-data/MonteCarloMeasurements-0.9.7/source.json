@@ -1,0 +1,223 @@
+{
+  "eval_info": {
+    "call_count": 68,
+    "stack_traces": [
+      {
+        "count": 20,
+        "last_call": "eval at MonteCarloMeasurements.jl:40 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top]": 50
+            },
+            {
+              "include [top]": 6
+            },
+            {
+              "const [top]": 6
+            }
+          ]
+        }
+      },
+      {
+        "count": 16,
+        "last_call": "top-level scope at unitful.jl:27",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 64
+            }
+          ]
+        }
+      },
+      {
+        "count": 8,
+        "last_call": "top-level scope at forwarddiff.jl:40",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 32
+            }
+          ]
+        }
+      },
+      {
+        "count": 8,
+        "last_call": "top-level scope at forwarddiff.jl:21",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 8
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": "get_buffer_setter(::Tuple{Tuple{Array{Any,1},DataType,Int64,UnionAll},Tuple{Array{Any,1},DataType,Int64,UnionAll}}) at deconstruct.jl:247",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [top (gen)]": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": "get_result_setter(::TransferFunction{ControlSystems.Discrete{Float64},ControlSystems.SisoRational{Particles{Float64,50}}}) at deconstruct.jl:288",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [top (gen)]": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": "top-level scope at unitful.jl:14",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 8
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "top-level scope at measurements.jl:3",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "print_functions_to_extend() at particles.jl:70",
+        "auxillary": {
+          "ast_heads": []
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},12],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":false,\"inQuote\":true}},212],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},12],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},100],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":false,\"inQuote\":false}},16],[{\"astHead\":\"->\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},20]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 254,
+    "stack_traces": [
+      {
+        "count": 100,
+        "last_call": "(::Workspace{TransferFunction{ControlSystems.Continuous,ControlSystems.SisoRational{Float64}},TransferFunction{ControlSystems.Discrete{Float64},ControlSystems.SisoRational{Float64}},TransferFunction{ControlSystems.Discrete{Float64},ControlSystems.SisoRational{Particles{Float64,50}}},MonteCarloMeasurements.var\"#248#249\",MonteCarloMeasurements.var\"#250#251\",var\"#393#402\"})(::TransferFunction{ControlSystems.Continuous,ControlSystems.SisoRational{StaticParticles{Float64,50}}}, ::Bool) at deconstruct.jl:370",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#250",
+              "count": 50
+            },
+            {
+              "function_name": "#254",
+              "count": 50
+            }
+          ]
+        }
+      },
+      {
+        "count": 100,
+        "last_call": "(::Workspace{TransferFunction{ControlSystems.Continuous,ControlSystems.SisoRational{Float64}},TransferFunction{ControlSystems.Discrete{Float64},ControlSystems.SisoRational{Float64}},TransferFunction{ControlSystems.Discrete{Float64},ControlSystems.SisoRational{Particles{Float64,50}}},MonteCarloMeasurements.var\"#248#249\",MonteCarloMeasurements.var\"#250#251\",var\"#393#402\"})(::TransferFunction{ControlSystems.Continuous,ControlSystems.SisoRational{StaticParticles{Float64,50}}}, ::Bool) at deconstruct.jl:368",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#248",
+              "count": 50
+            },
+            {
+              "function_name": "#252",
+              "count": 50
+            }
+          ]
+        }
+      },
+      {
+        "count": 50,
+        "last_call": "(::Workspace{TransferFunction{ControlSystems.Continuous,ControlSystems.SisoRational{Float64}},TransferFunction{ControlSystems.Discrete{Float64},ControlSystems.SisoRational{Float64}},TransferFunction{ControlSystems.Discrete{Float64},ControlSystems.SisoRational{Particles{Float64,50}}},MonteCarloMeasurements.var\"#240#241\",MonteCarloMeasurements.var\"#242#243\",var\"#389#398\"})(::TransferFunction{ControlSystems.Continuous,ControlSystems.SisoRational{StaticParticles{Float64,50}}}) at deconstruct.jl:358",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#242",
+              "count": 50
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": "Workspace(::var\"#389#398\", ::TransferFunction{ControlSystems.Continuous,ControlSystems.SisoRational{StaticParticles{Float64,50}}}) at deconstruct.jl:329",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#240",
+              "count": 1
+            },
+            {
+              "function_name": "#248",
+              "count": 1
+            },
+            {
+              "function_name": "#252",
+              "count": 1
+            },
+            {
+              "function_name": "#244",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "#248",
+          "count": 51
+        },
+        {
+          "function_name": "#252",
+          "count": 51
+        },
+        {
+          "function_name": "#250",
+          "count": 50
+        },
+        {
+          "function_name": "#254",
+          "count": 50
+        },
+        {
+          "function_name": "#242",
+          "count": 50
+        },
+        {
+          "function_name": "#240",
+          "count": 1
+        },
+        {
+          "function_name": "#244",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

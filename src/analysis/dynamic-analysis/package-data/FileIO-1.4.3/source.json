@@ -1,0 +1,185 @@
+{
+  "eval_info": {
+    "call_count": 9,
+    "stack_traces": [
+      {
+        "count": 9,
+        "last_call": "topimport(::Symbol) at loadsave.jl:13",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "useimport [top (gen)]": 9
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},18]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 55,
+    "stack_traces": [
+      {
+        "count": 21,
+        "last_call": "load(::Formatted; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:202",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "load",
+              "count": 21
+            }
+          ]
+        }
+      },
+      {
+        "count": 18,
+        "last_call": "save(::Formatted, ::Any; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:230",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "save",
+              "count": 18
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": "load(::Formatted; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:197",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "fileio_load",
+              "count": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "savestreaming(::Formatted; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:230",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "savestreaming",
+              "count": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "loadstreaming(::Formatted; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:202",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadstreaming",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "save(::Type{DataFormat{:AmbigExt2}}, ::String, ::String; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:146",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "save",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "save(::Formatted, ::Any; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:225",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "fileio_save",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "savestreaming(::Type{DataFormat{:DUMMY}}, ::IOStream; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:152",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "savestreaming",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "metadata(::Formatted; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:202",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "metadata",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "savestreaming(::Type{DataFormat{:DUMMY}}, ::String; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:164",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "savestreaming",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "load",
+          "count": 21
+        },
+        {
+          "function_name": "save",
+          "count": 20
+        },
+        {
+          "function_name": "savestreaming",
+          "count": 5
+        },
+        {
+          "function_name": "fileio_load",
+          "count": 4
+        },
+        {
+          "function_name": "fileio_save",
+          "count": 2
+        },
+        {
+          "function_name": "loadstreaming",
+          "count": 2
+        },
+        {
+          "function_name": "metadata",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

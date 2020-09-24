@@ -1,0 +1,83 @@
+{
+  "eval_info": {
+    "call_count": 126,
+    "stack_traces": [
+      {
+        "count": 125,
+        "last_call": "generate_benchmark_definition(::Module, ::Array{Symbol,1}, ::Array{Symbol,1}, ::Expr, ::Expr, ::Nothing, ::Parameters) at execution.jl:296",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top]": 500
+            },
+            {
+              "call [top]": 125
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "recover(::Array{Any,1}) at serialization.jl:25",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "curly [top (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1000],[{\"astHead\":\"curly\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},250]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 129,
+    "stack_traces": [
+      {
+        "count": 99,
+        "last_call": "#run_result#37 at execution.jl:32 [inlined]",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "_run",
+              "count": 99
+            }
+          ]
+        }
+      },
+      {
+        "count": 30,
+        "last_call": "#lineartrial#38 at execution.jl:33 [inlined]",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "_lineartrial",
+              "count": 30
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "_run",
+          "count": 99
+        },
+        {
+          "function_name": "_lineartrial",
+          "count": 30
+        }
+      ]
+    }
+  }
+}

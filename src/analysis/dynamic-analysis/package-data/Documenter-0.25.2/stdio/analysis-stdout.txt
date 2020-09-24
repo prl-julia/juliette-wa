@@ -1,0 +1,68 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+===================== @quietly: output from the expression =====================
+[ Info: SetupBuildDirectory: setting up build directory.
+[ Info: Doctest: skipped.
+[ Info: ExpandTemplates: expanding markdown templates.
+
+=========================== @quietly: end of output ============================
+Documenter: Error During Test at /home/jack/.julia/packages/Documenter/pjwqp/test/runtests.jl:5
+  Got exception outside of a @test
+  LoadError: @quietly hit an exception (MethodError):
+  MethodError: no method matching updateAstInfo(::Array{EvalCallInfo,1}, ::Int64, ::Bool)
+  Closest candidates are:
+    updateAstInfo(::Array{EvalCallInfo,1}, !Matched::Expr, ::Bool) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:227
+  Stacktrace:
+   [1] (::var"#updateTraceAuxillary#59"{Bool})(::Array{EvalCallInfo,1}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:112
+   [2] updateStackTraces(::Dict{Base.StackTraces.StackFrame,StackTraceInfo{Array{EvalCallInfo,1}}}, ::Int64, ::var"#57#61", ::var"#updateTraceAuxillary#59"{Bool}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:191
+   [3] updateFuncMetadata(::Array{OverrideInfo,1}, ::var"#56#60", ::Int64, ::var"#updateEvalInfoWrap#58"{Module}; auxTuple::Tuple{var"#57#61",var"#updateTraceAuxillary#59"{Bool}}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:171
+   [4] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:116
+   [5] (::Documenter.Documents.var"#13#14"{Module,Dict{Symbol,Any},Expr})() at /home/jack/.julia/packages/Documenter/pjwqp/src/Documents.jl:477
+   [6] cd(::Documenter.Documents.var"#13#14"{Module,Dict{Symbol,Any},Expr}, ::String) at ./file.jl:104
+   [7] buildnode(::Type{T} where T, ::Markdown.Code, ::Documenter.Documents.Document, ::Documenter.Documents.Page) at /home/jack/.julia/packages/Documenter/pjwqp/src/Documents.jl:476
+   [8] runner(::Type{Documenter.Expanders.ContentsBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at /home/jack/.julia/packages/Documenter/pjwqp/src/Expanders.jl:524
+   [9] dispatch(::Type{Documenter.Expanders.ExpanderPipeline}, ::Markdown.Code, ::Vararg{Any,N} where N) at /home/jack/.julia/packages/Documenter/pjwqp/src/Utilities/Selectors.jl:167
+   [10] expand(::Documenter.Documents.Document) at /home/jack/.julia/packages/Documenter/pjwqp/src/Expanders.jl:42
+   [11] runner(::Type{Documenter.Builder.ExpandTemplates}, ::Documenter.Documents.Document) at /home/jack/.julia/packages/Documenter/pjwqp/src/Builder.jl:227
+   [12] dispatch(::Type{Documenter.Builder.DocumentPipeline}, ::Documenter.Documents.Document) at /home/jack/.julia/packages/Documenter/pjwqp/src/Utilities/Selectors.jl:167
+   [13] #2 at /home/jack/.julia/packages/Documenter/pjwqp/src/Documenter.jl:241 [inlined]
+   [14] cd(::Documenter.var"#2#3"{Documenter.Documents.Document}, ::String) at ./file.jl:104
+   [15] #makedocs#1 at /home/jack/.julia/packages/Documenter/pjwqp/src/Documenter.jl:240 [inlined]
+   [16] (::var"#101#103"{String,MathJax2})() at /home/jack/.julia/packages/Documenter/pjwqp/test/examples/make.jl:169
+   [17] withassets(::var"#101#103"{String,MathJax2}, ::String, ::Vararg{String,N} where N) at /home/jack/.julia/packages/Documenter/pjwqp/test/examples/make.jl:122
+   [18] #100 at /home/jack/.julia/packages/Documenter/pjwqp/test/TestUtilities.jl:62 [inlined]
+   [19] (::Documenter.Utilities.var"#14#15"{var"#100#102"{String,MathJax2},IOStream,IOStream,Pipe,Array{UInt8,1}})() at /home/jack/.julia/packages/Documenter/pjwqp/src/Utilities/Utilities.jl:569
+   [20] with_logstate(::Function, ::Any) at ./logging.jl:408
+   [21] with_logger at ./logging.jl:514 [inlined]
+   [22] withoutput at /home/jack/.julia/packages/Documenter/pjwqp/src/Utilities/Utilities.jl:567 [inlined]
+   [23] _quietly(::Function, ::Expr, ::LineNumberNode) at /home/jack/.julia/packages/Documenter/pjwqp/test/TestUtilities.jl:22
+   [24] macro expansion at /home/jack/.julia/packages/Documenter/pjwqp/test/TestUtilities.jl:61 [inlined]
+   [25] html_doc(::String, ::MathJax2) at /home/jack/.julia/packages/Documenter/pjwqp/test/examples/make.jl:168
+   [26] top-level scope at /home/jack/.julia/packages/Documenter/pjwqp/test/examples/make.jl:199
+   [27] include(::String) at ./client.jl:457
+   [28] top-level scope at /home/jack/.julia/packages/Documenter/pjwqp/test/runtests.jl:11
+   [29] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [30] top-level scope at /home/jack/.julia/packages/Documenter/pjwqp/test/runtests.jl:7
+   [31] include(::String) at ./client.jl:457
+   [32] top-level scope at ./none:12
+   [33] eval(::Module, ::Any) at ./boot.jl:331
+   [34] exec_options(::Base.JLOptions) at ./client.jl:272
+   [35] _start() at ./client.jl:506
+  Stacktrace:
+   [1] _quietly(::Function, ::Expr, ::LineNumberNode) at /home/jack/.julia/packages/Documenter/pjwqp/test/TestUtilities.jl:54
+   [2] macro expansion at /home/jack/.julia/packages/Documenter/pjwqp/test/TestUtilities.jl:61 [inlined]
+   [3] html_doc(::String, ::MathJax2) at /home/jack/.julia/packages/Documenter/pjwqp/test/examples/make.jl:168
+   [4] top-level scope at /home/jack/.julia/packages/Documenter/pjwqp/test/examples/make.jl:199
+   [5] include(::String) at ./client.jl:457
+   [6] top-level scope at /home/jack/.julia/packages/Documenter/pjwqp/test/runtests.jl:11
+   [7] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [8] top-level scope at /home/jack/.julia/packages/Documenter/pjwqp/test/runtests.jl:7
+   [9] include(::String) at ./client.jl:457
+   [10] top-level scope at ./none:12
+   [11] eval(::Module, ::Any) at ./boot.jl:331
+   [12] exec_options(::Base.JLOptions) at ./client.jl:272
+   [13] _start() at ./client.jl:506
+  in expression starting at /home/jack/.julia/packages/Documenter/pjwqp/test/examples/make.jl:197
+  
+Test Summary:   | Pass  Error  Total
+Documenter      |    9      1     10
+  TestUtilities |    9             9

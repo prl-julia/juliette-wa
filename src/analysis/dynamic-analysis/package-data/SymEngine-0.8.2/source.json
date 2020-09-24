@@ -8,35 +8,24 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 11,
-              "ast_head": "function"
+              "function [top (gen)]": 11
             },
             {
-              "count": 1,
-              "ast_head": "call"
+              "call [top (gen)]": 1
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 11,
-          "ast_head": "function"
-        },
-        {
-          "count": 1,
-          "ast_head": "call"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
-        "newFuncCount": 11,
+        "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},11],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},22]]"
     }
   },
   "invokelatest_info": {

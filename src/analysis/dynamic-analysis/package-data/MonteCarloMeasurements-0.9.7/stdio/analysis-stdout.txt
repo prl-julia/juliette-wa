@@ -1,0 +1,108 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+  2.616968 seconds (5.44 M allocations: 337.878 MiB, 10.09% gc time)
+-3.22e-17 ± 1.0
+mode = :montecarlo
+mode = :reduction
+mode = :safe
+-3.22e-17 ± 1.0
+mode = :montecarlo
+mode = :reduction
+mode = :safe
+ 43.222098 seconds (52.14 M allocations: 2.439 GiB, 3.00% gc time)
+  1.227474 seconds (2.33 M allocations: 114.899 MiB, 2.50% gc time)
+  1.485451 seconds (2.55 M allocations: 132.295 MiB, 3.96% gc time)
+  8.199386 seconds (5.35 M allocations: 5.349 GiB, 18.37% gc time)
+Particles{Float64,2000}
+ -8.65974e-18 ± 1.0-8.66e-18 ± 1.0
+$-8.66e-18 ± 1.0$
+0.0
+$0.0$
+$(-8.66e-18 ± 1.0) + (-8.66e-18 ± 1.0)i$
+$(-8.66e-18 ± 1.0) + (8.66e-18 ± 1.0)i$
+$(0.0) + (-8.66e-18 ± 1.0)i$
+$(0.0) + (8.66e-18 ± 1.0)i$
+Particles{Float64,2000}
+ -8.65974e-18 ± 1.0
+0.0
+Particles{Float64,2000}
+ 0.0
+(-8.66e-18 ± 1.0) + (-8.66e-18 ± 1.0)im
+(-8.66e-18 ± 1.0) + (8.66e-18 ± 1.0)im
+(0.0) + (-8.66e-18 ± 1.0)im
+(0.0) - (10.0 ± 1.0)im
+2-element Array{Particles{Float64,2000},1}:
+ -8.66e-18 ± 1.0
+ -8.66e-18 ± 1.0Particles{Float64,2000}[-8.66e-18 ± 1.0, -8.66e-18 ± 1.0]
+Particles{Float64,2000}[-8.66e-18 ± 1.0, 0.0]
+isfinite(real(p)) && isfinite(imag(p)) = true
+isfinite(real(p)) && isfinite(imag(p)) = true
+isinf(real(p)) || isinf(imag(p)) = false
+isfinite(real(p)) && isfinite(imag(p)) = true
+ 14.378409 seconds (24.03 M allocations: 1.214 GiB, 4.30% gc time)
+  0.111720 seconds (155.03 k allocations: 8.808 MiB)
+  1.147110 seconds (2.39 M allocations: 156.410 MiB, 7.20% gc time)
+plotting: Error During Test at /home/jack/.julia/packages/MonteCarloMeasurements/yhiSC/test/runtests.jl:559
+  Got exception outside of a @test
+  MethodError: no method matching updateAstInfo(::Array{EvalCallInfo,1}, ::Symbol, ::Bool)
+  Closest candidates are:
+    updateAstInfo(::Array{EvalCallInfo,1}, !Matched::Expr, ::Bool) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:227
+  Stacktrace:
+   [1] (::var"#updateTraceAuxillary#59"{Bool})(::Array{EvalCallInfo,1}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:112
+   [2] updateStackTraces(::Dict{Base.StackTraces.StackFrame,StackTraceInfo{Array{EvalCallInfo,1}}}, ::Int64, ::var"#57#61", ::var"#updateTraceAuxillary#59"{Bool}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:191
+   [3] updateFuncMetadata(::Array{OverrideInfo,1}, ::var"#56#60", ::Int64, ::var"#updateEvalInfoWrap#58"{Module}; auxTuple::Tuple{var"#57#61",var"#updateTraceAuxillary#59"{Bool}}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:171
+   [4] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:116
+   [5] print_functions_to_extend() at /home/jack/.julia/packages/MonteCarloMeasurements/yhiSC/src/particles.jl:70
+   [6] #207 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:633 [inlined]
+   [7] redirect_stderr(::var"#207#323", ::IOStream) at ./stream.jl:1150
+   [8] #206 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:632 [inlined]
+   [9] open(::var"#206#322", ::String, ::Vararg{String,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:325
+   [10] open(::Function, ::String, ::String) at ./io.jl:323
+   [11] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:631
+   [12] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/yhiSC/test/runtests.jl:594
+   [13] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/yhiSC/test/runtests.jl:560
+   [15] top-level scope at timing.jl:174
+   [16] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/yhiSC/test/runtests.jl:559
+   [17] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [18] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/yhiSC/test/runtests.jl:12
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at ./none:12
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  
+ 32.347534 seconds (47.48 M allocations: 2.359 GiB, 6.63% gc time)
+  3.642390 seconds (5.57 M allocations: 650.688 MiB, 7.02% gc time)
+  4.392312 seconds (8.28 M allocations: 421.744 MiB, 4.82% gc time)
+0.5 V ± 0.5802298395176404 V
+Particles{Quantity{Float64,𝐋^2 𝐌 𝐈^-1 𝐓^-3,Unitful.FreeUnits{(V,),𝐋^2 𝐌 𝐈^-1 𝐓^-3,nothing}},100}
+ 0.5 V ± 0.5802298395176404 V0.0 V
+Particles{Quantity{Float64,𝐋^2 𝐌 𝐈^-1 𝐓^-3,Unitful.FreeUnits{(V,),𝐋^2 𝐌 𝐈^-1 𝐓^-3,nothing}},100}
+ 0.0 V0.49999999999999994 V ± 0.5802298395176404 V
+StaticParticles{Quantity{Float64,𝐋^2 𝐌 𝐈^-1 𝐓^-3,Unitful.FreeUnits{(V,),𝐋^2 𝐌 𝐈^-1 𝐓^-3,nothing}},100}
+ 0.49999999999999994 V ± 0.5802298395176404 V0.0 V
+StaticParticles{Quantity{Float64,𝐋^2 𝐌 𝐈^-1 𝐓^-3,Unitful.FreeUnits{(V,),𝐋^2 𝐌 𝐈^-1 𝐓^-3,nothing}},100}
+ 0.0 V  9.964290 seconds (1.05 M allocations: 56.464 MiB, 0.61% gc time)
+ 18.922375 seconds (499.21 k allocations: 30.843 MiB, 0.31% gc time)
+Test Summary:             | Pass  Error  Total
+MonteCarloMeasurements.jl |  937      1    938
+  sampling                |  242           242
+  Basic operations        |  339           339
+  Multivariate Particles  |   22            22
+  sigmapoints             |    6             6
+  transform_moments       |    4             4
+  gradient                |    5             5
+  leastsquares            |    5             5
+  misc                    |  106           106
+  mutation                |    1             1
+  outer_product           |   10            10
+  plotting                |   26      1     27
+  optimize                |    2             2
+  Particle BLAS           |   22            22
+  bymap                   |   46            46
+  inference               |              No tests
+  Unitful                 |   30            30
+  forwarddiff             |   22            22
+  deconstruct             |   26            26
+  SLEEFPirates            |   12            12
+  Measurements            |   11            11

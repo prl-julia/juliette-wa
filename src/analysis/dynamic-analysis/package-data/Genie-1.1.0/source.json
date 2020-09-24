@@ -1,17 +1,12 @@
 {
   "eval_info": {
-    "call_count": 18,
+    "call_count": 15,
     "stack_traces": [
       {
         "count": 3,
         "last_call": "top-level scope at Html.jl:830",
         "auxillary": {
-          "ast_heads": [
-            {
-              "count": 3,
-              "ast_head": "String"
-            }
-          ]
+          "ast_heads": []
         }
       },
       {
@@ -20,8 +15,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "="
+              "= [top (gen)]": 2
             }
           ]
         }
@@ -32,8 +26,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "block"
+              "include [top]": 1
             }
           ]
         }
@@ -44,8 +37,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "call"
+              "call [top (gen)]": 1
             }
           ]
         }
@@ -56,8 +48,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "&&"
+              "other [top (gen)]": 1
             }
           ]
         }
@@ -68,8 +59,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "function"
+              "function [top (gen)]": 1
             }
           ]
         }
@@ -80,8 +70,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "import"
+              "useimport [top (gen)]": 1
             }
           ]
         }
@@ -92,8 +81,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "function"
+              "function [top (gen)]": 1
             }
           ]
         }
@@ -104,8 +92,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "call"
+              "call [top (gen)]": 1
             }
           ]
         }
@@ -116,8 +103,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "export"
+              "export [top (gen)]": 1
             }
           ]
         }
@@ -128,8 +114,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "="
+              "= [top (gen)]": 1
             }
           ]
         }
@@ -140,8 +125,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "call"
+              "call [top (gen)]": 1
             }
           ]
         }
@@ -152,8 +136,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "function"
+              "function [top (gen)]": 1
             }
           ]
         }
@@ -164,8 +147,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "using"
+              "useimport [top (gen)]": 1
             }
           ]
         }
@@ -176,66 +158,28 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "function"
+              "function [top (gen)]": 1
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 4,
-          "ast_head": "function"
-        },
-        {
-          "count": 3,
-          "ast_head": "call"
-        },
-        {
-          "count": 3,
-          "ast_head": "="
-        },
-        {
-          "count": 3,
-          "ast_head": "String"
-        },
-        {
-          "count": 1,
-          "ast_head": "block"
-        },
-        {
-          "count": 1,
-          "ast_head": "using"
-        },
-        {
-          "count": 1,
-          "ast_head": "import"
-        },
-        {
-          "count": 1,
-          "ast_head": "&&"
-        },
-        {
-          "count": 1,
-          "ast_head": "export"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
-        "newFuncCount": 1,
+        "newFuncCount": 0,
         "bodylessFuncCount": 0,
-        "funcRedefCount": 3,
+        "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},3],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3],[{\"astHead\":\"export\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4],[{\"astHead\":\"export\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},6],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},8],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},6]]"
     }
   },
   "invokelatest_info": {
-    "call_count": 51,
+    "call_count": 48,
     "stack_traces": [
       {
-        "count": 51,
+        "count": 48,
         "last_call": "WebRenderable(::typeof(Genie.Renderer.Html.func_60806e0a6a353f6ce3a3546208230a0ad8970fb6)) at Renderer.jl:160",
         "auxillary": {
           "function_names": [
@@ -284,11 +228,11 @@
               "count": 1
             },
             {
-              "function_name": "func_6e8e6315d784f200d225e0fe5f0afb05ad5b1745",
+              "function_name": "func_8365a886458e43be0e3ed79cca05846b876caaf2",
               "count": 1
             },
             {
-              "function_name": "func_8365a886458e43be0e3ed79cca05846b876caaf2",
+              "function_name": "func_51d2a188b6f0be76869fc561502994e1adbbf575",
               "count": 1
             },
             {
@@ -297,10 +241,6 @@
             },
             {
               "function_name": "func_b63209d364ddb6bfb6232ede377d07f83fc1e236",
-              "count": 1
-            },
-            {
-              "function_name": "func_f317843e8c9e0ff4083412b839ca14c2576b6f9d",
               "count": 1
             },
             {
@@ -352,10 +292,6 @@
               "count": 1
             },
             {
-              "function_name": "func_75559d0ac6fd16a5f989b33e2949e1fbefdeb4c3",
-              "count": 1
-            },
-            {
               "function_name": "func_ec360d21992c1a88018d7ebac53bc6cdc8ef4231",
               "count": 1
             },
@@ -384,10 +320,6 @@
               "count": 1
             },
             {
-              "function_name": "func_711fdc28197cbaf7d42691e4c64735f521bb1663",
-              "count": 1
-            },
-            {
               "function_name": "func_8687168ef420a48a69e5ae1f08612edcbc40ca49",
               "count": 1
             },
@@ -397,6 +329,10 @@
             },
             {
               "function_name": "func_e45fe8839ee7c9e7e3c377618380a4b46500ed7f",
+              "count": 1
+            },
+            {
+              "function_name": "func_4af14c8e94e6f9d1e8328c8fcdd0c6595e91a81a",
               "count": 1
             },
             {
@@ -417,10 +353,6 @@
             },
             {
               "function_name": "func_8aa1c055256774c3647f844be139ff8dcdd23824",
-              "count": 1
-            },
-            {
-              "function_name": "func_6ff66eaf21710859644ed5acb37022965dae06f4",
               "count": 1
             },
             {
@@ -494,11 +426,11 @@
           "count": 1
         },
         {
-          "function_name": "func_6e8e6315d784f200d225e0fe5f0afb05ad5b1745",
+          "function_name": "func_8365a886458e43be0e3ed79cca05846b876caaf2",
           "count": 1
         },
         {
-          "function_name": "func_8365a886458e43be0e3ed79cca05846b876caaf2",
+          "function_name": "func_51d2a188b6f0be76869fc561502994e1adbbf575",
           "count": 1
         },
         {
@@ -507,10 +439,6 @@
         },
         {
           "function_name": "func_b63209d364ddb6bfb6232ede377d07f83fc1e236",
-          "count": 1
-        },
-        {
-          "function_name": "func_f317843e8c9e0ff4083412b839ca14c2576b6f9d",
           "count": 1
         },
         {
@@ -562,10 +490,6 @@
           "count": 1
         },
         {
-          "function_name": "func_75559d0ac6fd16a5f989b33e2949e1fbefdeb4c3",
-          "count": 1
-        },
-        {
           "function_name": "func_ec360d21992c1a88018d7ebac53bc6cdc8ef4231",
           "count": 1
         },
@@ -594,10 +518,6 @@
           "count": 1
         },
         {
-          "function_name": "func_711fdc28197cbaf7d42691e4c64735f521bb1663",
-          "count": 1
-        },
-        {
           "function_name": "func_8687168ef420a48a69e5ae1f08612edcbc40ca49",
           "count": 1
         },
@@ -607,6 +527,10 @@
         },
         {
           "function_name": "func_e45fe8839ee7c9e7e3c377618380a4b46500ed7f",
+          "count": 1
+        },
+        {
+          "function_name": "func_4af14c8e94e6f9d1e8328c8fcdd0c6595e91a81a",
           "count": 1
         },
         {
@@ -627,10 +551,6 @@
         },
         {
           "function_name": "func_8aa1c055256774c3647f844be139ff8dcdd23824",
-          "count": 1
-        },
-        {
-          "function_name": "func_6ff66eaf21710859644ed5acb37022965dae06f4",
           "count": 1
         },
         {

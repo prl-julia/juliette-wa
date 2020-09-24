@@ -14,20 +14,8 @@
     }
   },
   "invokelatest_info": {
-    "call_count": 2,
+    "call_count": 1,
     "stack_traces": [
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:56",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
       {
         "count": 1,
         "last_call": "__init__() at x86_64-linux-gnu-cxx11.jl:28",
@@ -45,7 +33,7 @@
       "function_names": [
         {
           "function_name": "do_artifact_str",
-          "count": 2
+          "count": 1
         }
       ]
     }

@@ -8,8 +8,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -20,8 +19,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "="
+              "= [top (gen)]": 1
             }
           ]
         }
@@ -32,8 +30,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "="
+              "= [top (gen)]": 1
             }
           ]
         }
@@ -44,8 +41,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "struct"
+              "struct [top (gen)]": 1
             }
           ]
         }
@@ -56,35 +52,21 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "="
+              "= [top (gen)]": 1
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 3,
-          "ast_head": "="
-        },
-        {
-          "count": 2,
-          "ast_head": "call"
-        },
-        {
-          "count": 1,
-          "ast_head": "struct"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
         "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},6]]"
     }
   },
   "invokelatest_info": {

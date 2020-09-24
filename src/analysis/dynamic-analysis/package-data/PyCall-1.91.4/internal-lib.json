@@ -1,6 +1,6 @@
 {
   "eval_info": {
-    "call_count": 11,
+    "call_count": 10,
     "stack_traces": [
       {
         "count": 8,
@@ -8,20 +8,13 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 8,
-              "ast_head": "block"
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "initmeta(::Module) at Docs.jl:79",
-        "auxillary": {
-          "ast_heads": [
+              "= [top]": 11
+            },
             {
-              "count": 2,
-              "ast_head": "const"
+              "struct [top]": 3
+            },
+            {
+              "useimport [top]": 8
             }
           ]
         }
@@ -32,48 +25,45 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "call"
+              "call [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "initmeta(::Module) at Docs.jl:79",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [top (gen)]": 1
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 8,
-          "ast_head": "block"
-        },
-        {
-          "count": 2,
-          "ast_head": "const"
-        },
-        {
-          "count": 1,
-          "ast_head": "call"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
         "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},8],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},11]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},6],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},16],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},22]]"
     }
   },
   "invokelatest_info": {
-    "call_count": 2,
+    "call_count": 3,
     "stack_traces": [
       {
-        "count": 2,
+        "count": 3,
         "last_call": "show_backtrace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
         "auxillary": {
           "function_names": [
             {
               "function_name": "identity",
-              "count": 2
+              "count": 3
             }
           ]
         }
@@ -83,7 +73,7 @@
       "function_names": [
         {
           "function_name": "identity",
-          "count": 2
+          "count": 3
         }
       ]
     }

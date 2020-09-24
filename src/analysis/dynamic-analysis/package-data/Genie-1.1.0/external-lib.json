@@ -8,8 +8,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 54,
-              "ast_head": "module"
+              "module [top (gen)]": 54
             }
           ]
         }
@@ -20,32 +19,29 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 17,
-              "ast_head": "module"
+              "module [fun (gen)]": 17
             }
           ]
         }
       },
       {
         "count": 16,
-        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:331",
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:361",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 16,
-              "ast_head": "tuple"
+              "function [top (gen)]": 16
             }
           ]
         }
       },
       {
         "count": 16,
-        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:360",
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:332",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 16,
-              "ast_head": "function"
+              "other [top (gen)]": 16
             }
           ]
         }
@@ -56,8 +52,38 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 12,
-              "ast_head": "block"
+              "call [top]": 2
+            },
+            {
+              "const [top]": 2
+            },
+            {
+              "useimport [top]": 7
+            },
+            {
+              "other [top]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "step_expr!(::Any, ::JuliaInterpreter.Frame, ::Any, ::Bool) at interpret.jl:506",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [top (gen)]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "step_expr!(::Any, ::JuliaInterpreter.Frame, ::Any, ::Bool) at interpret.jl:492",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [top (gen)]": 3
             }
           ]
         }
@@ -68,32 +94,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 3,
-              "ast_head": "="
-            }
-          ]
-        }
-      },
-      {
-        "count": 3,
-        "last_call": "step_expr!(::Any, ::JuliaInterpreter.Frame, ::Any, ::Bool) at interpret.jl:490",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 3,
-              "ast_head": "const"
-            }
-          ]
-        }
-      },
-      {
-        "count": 3,
-        "last_call": "step_expr!(::Any, ::JuliaInterpreter.Frame, ::Any, ::Bool) at interpret.jl:504",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 3,
-              "ast_head": "global"
+              "= [top (gen)]": 3
             }
           ]
         }
@@ -104,71 +105,36 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "function"
+              "function [top (gen)]": 2
             }
           ]
         }
       },
       {
         "count": 2,
-        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:330",
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:331",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "where"
+              "other [top (gen)]": 2
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 71,
-          "ast_head": "module"
-        },
-        {
-          "count": 18,
-          "ast_head": "function"
-        },
-        {
-          "count": 16,
-          "ast_head": "tuple"
-        },
-        {
-          "count": 12,
-          "ast_head": "block"
-        },
-        {
-          "count": 3,
-          "ast_head": "global"
-        },
-        {
-          "count": 3,
-          "ast_head": "const"
-        },
-        {
-          "count": 3,
-          "ast_head": "="
-        },
-        {
-          "count": 2,
-          "ast_head": "where"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
-        "newFuncCount": 16,
-        "bodylessFuncCount": 2,
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},18],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},7],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},5],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},17],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},54],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},22],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},14],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},108],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},42],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":false,\"inQuote\":false}},34],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},36],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},6],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},6]]"
     }
   },
   "invokelatest_info": {
-    "call_count": 52,
+    "call_count": 51,
     "stack_traces": [
       {
         "count": 44,
@@ -268,18 +234,6 @@
       },
       {
         "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:56",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
         "last_call": "__init__() at x86_64-linux-gnu.jl:72",
         "auxillary": {
           "function_names": [
@@ -318,10 +272,6 @@
           "count": 4
         },
         {
-          "function_name": "do_artifact_str",
-          "count": 4
-        },
-        {
           "function_name": "unsafe_store!",
           "count": 3
         },
@@ -331,6 +281,10 @@
         },
         {
           "function_name": "##compiledcall#295",
+          "count": 3
+        },
+        {
+          "function_name": "do_artifact_str",
           "count": 3
         },
         {

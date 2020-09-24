@@ -1,35 +1,88 @@
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-ERROR: LoadError: Unsatisfiable requirements detected for package Documenter [e30172f5]:
- Documenter [e30172f5] log:
- ├─possible versions are: [0.19.0-0.19.7, 0.20.0, 0.21.0-0.21.5, 0.22.0-0.22.6, 0.23.0-0.23.4, 0.24.0-0.24.11, 0.25.0-0.25.2] or uninstalled
- ├─restricted to versions 0.25.2 by an explicit requirement, leaving only versions 0.25.2
- └─restricted by compatibility requirements with Bukdu [3e78a19a] to versions: [0.19.0-0.19.7, 0.20.0, 0.21.0-0.21.5, 0.22.0-0.22.6, 0.23.0-0.23.4, 0.24.0-0.24.11] — no versions left
-   └─Bukdu [3e78a19a] log:
-     ├─possible versions are: [0.3.0-0.3.4, 0.4.0-0.4.15] or uninstalled
-     └─restricted to versions * by an explicit requirement, leaving only versions [0.3.0-0.3.4, 0.4.0-0.4.15]
+No Changes to `/tmp/jl_Ecd7Ne/Project.toml`
+No Changes to `/tmp/jl_Ecd7Ne/Manifest.toml`
+[ Info: Building example/make.jl
+[ Info: Building mock package docs: HTMLWriter / deployment build
+┌ Error: An error was thrown in @quietly, 138 bytes of output captured
+│ MethodError at /home/jack/.julia/packages/Documenter/pjwqp/test/examples/make.jl:168 in expression:
+│ withassets("images/logo.png", "images/logo.jpg", "images/logo.gif") do 
+│     #= /home/jack/.julia/packages/Documenter/pjwqp/test/examples/make.jl:169 =#
+│     makedocs(debug = true, root = examples_root, build = "builds/$(build_directory)", doctestfilters = [r"Ptr{0x[0-9]+}"], sitename = "Documenter example", pages = htmlbuild_pages, expandfirst = expandfirst, doctest = false, format = Documenter.HTML(assets = ["assets/favicon.ico", "assets/custom.css", asset("https://example.com/resource.js"), asset("http://example.com/fonts?param=foo", class = :css), asset("https://fonts.googleapis.com/css?family=Nanum+Brush+Script&display=swap", class = :css)], prettyurls = true, canonical = "https://example.com/stable", mathengine = mathengine, highlights = ["erlang", "erlang-repl"], footer = "This footer has been customized."))
+│ end
+│ 138 bytes of output captured
+└ @ Main.TestUtilities ~/.julia/packages/Documenter/pjwqp/test/TestUtilities.jl:42
+ERROR: LoadError: Some tests did not pass: 9 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/jack/.julia/packages/Documenter/pjwqp/test/runtests.jl:5
+   Updating registry at `~/.julia/registries/General`
+  Resolving package versions...
+No Changes to `~/.julia/environments/v1.5/Project.toml`
+No Changes to `~/.julia/environments/v1.5/Manifest.toml`
+┌ Warning: Pkg.installed() is deprecated
+└ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+    Testing Documenter
+Status `/tmp/jl_Ecd7Ne/Project.toml`
+  [ffbed154] DocStringExtensions v0.8.3
+  [e30172f5] Documenter v0.25.2
+  [997ab1e6] DocumenterMarkdown v0.2.0
+  [35a29f4d] DocumenterTools v0.1.7
+  [682c06a0] JSON v0.21.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+Status `/tmp/jl_Ecd7Ne/Manifest.toml`
+  [b99e7846] BinaryProvider v0.5.10
+  [ffbed154] DocStringExtensions v0.8.3
+  [e30172f5] Documenter v0.25.2
+  [997ab1e6] DocumenterMarkdown v0.2.0
+  [35a29f4d] DocumenterTools v0.1.7
+  [682c06a0] JSON v0.21.1
+  [69de0a69] Parsers v1.0.10
+  [322a6be2] Sass v0.1.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [7b1f6079] FileWatching
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+ERROR: LoadError: Package Documenter errored during testing
 Stacktrace:
- [1] propagate_constraints!(::Pkg.Resolve.Graph, ::Set{Int64}; log_events::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1005
- [2] propagate_constraints! at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:946 [inlined] (repeats 2 times)
- [3] simplify_graph!(::Pkg.Resolve.Graph, ::Set{Int64}; clean_graph::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1460
- [4] simplify_graph! at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Resolve/graphtype.jl:1460 [inlined] (repeats 2 times)
- [5] resolve_versions!(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:368
- [6] targeted_resolve at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1107 [inlined]
- [7] tiered_resolve(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1093
- [8] _resolve at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1113 [inlined]
- [9] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}, ::Array{Base.UUID,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1128
- [10] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; preserve::Pkg.Types.PreserveLevel, platform::Pkg.BinaryPlatforms.Linux, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:189
- [11] add(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:140
- [12] #add#21 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
- [13] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
- [14] #add#20 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
- [15] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
- [16] add(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
- [17] add at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65 [inlined]
- [18] analyzePkg(::String, ::Nothing) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:8
- [19] top-level scope at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:17
- [20] include(::Function, ::Module, ::String) at ./Base.jl:380
- [21] include(::Module, ::String) at ./Base.jl:368
- [22] exec_options(::Base.JLOptions) at ./client.jl:296
- [23] _start() at ./client.jl:506
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1566
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:328
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:315
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65 [inlined]
+ [11] analyzePkg(::String, ::Nothing) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:14
+ [12] top-level scope at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:17
+ [13] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [14] include(::Module, ::String) at ./Base.jl:368
+ [15] exec_options(::Base.JLOptions) at ./client.jl:296
+ [16] _start() at ./client.jl:506
 in expression starting at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:17
