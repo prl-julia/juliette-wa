@@ -1,16 +1,3 @@
-┌ Warning: `lgamma(x::Real)` is deprecated, use `(logabsgamma(x))[1]` instead.
-│   caller = lstirling_asym(::BigFloat) at misc.jl:56
-└ @ StatsFuns ~/.julia/packages/StatsFuns/2QE7p/src/misc.jl:56
-┌ Warning: `@get!(dict, key, default)` at /home/jack/.julia/packages/Lazy/mAoZN/src/collections.jl:49 is deprecated, use `get!(()->default, dict, key)` instead.
-└ @ Base deprecated.jl:204
-┌ Warning: `@get!(dict, key, default)` at /home/jack/.julia/packages/Requires/9Jse8/src/require.jl:11 is deprecated, use `get!(()->default, dict, key)` instead.
-└ @ Base deprecated.jl:204
-WARNING: Method definition dot(Any, Any, Any) in module LinearAlgebra at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/LinearAlgebra/src/generic.jl:924 overwritten in module Optim at /home/jack/.julia/packages/Optim/Agd3B/src/multivariate/precon.jl:23.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition dot(Any, Any, Any) in module LinearAlgebra at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/LinearAlgebra/src/generic.jl:924 overwritten in module Optim at /home/jack/.julia/packages/Optim/Agd3B/src/multivariate/precon.jl:23.
-  ** incremental compilation may be fatally broken for this module **
-
 WARNING: Method definition dot(Any, Any, Any) in module LinearAlgebra at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/LinearAlgebra/src/generic.jl:924 overwritten in module Optim at /home/jack/.julia/packages/Optim/Agd3B/src/multivariate/precon.jl:23.
   ** incremental compilation may be fatally broken for this module **
 
@@ -49,8 +36,8 @@ Stacktrace:
  [3] pyimport_conda at /home/jack/.julia/packages/PyCall/zqDXB/src/PyCall.jl:693 [inlined]
  [4] __init__() at /home/jack/.julia/packages/SymPy/YfZu1/src/SymPy.jl:118
  [5] _include_from_serialized(::String, ::Array{Any,1}) at ./loading.jl:697
- [6] _require_from_serialized(::String) at ./loading.jl:749
- [7] _require(::Base.PkgId) at ./loading.jl:1040
+ [6] _require_search_from_serialized(::Base.PkgId, ::String) at ./loading.jl:782
+ [7] _require(::Base.PkgId) at ./loading.jl:1007
  [8] require(::Base.PkgId) at ./loading.jl:928
  [9] require(::Module, ::Symbol) at ./loading.jl:923
  [10] include(::Function, ::Module, ::String) at ./Base.jl:380
@@ -68,10 +55,10 @@ in expression starting at /home/jack/.julia/packages/Soss/sRBrv/src/symbolic.jl:
 in expression starting at /home/jack/.julia/packages/Soss/sRBrv/src/Soss.jl:34
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-Updating `/tmp/jl_4bHilQ/Project.toml`
+Updating `/tmp/jl_Wp6K4R/Project.toml`
   [682c06a0] + JSON v0.21.1
-No Changes to `/tmp/jl_4bHilQ/Manifest.toml`
-ERROR: LoadError: Failed to precompile Soss [8ce77f84-9b61-11e8-39ff-d17a774bf41c] to /home/jack/.julia/compiled/v1.5/Soss/vXX0U_KLZX1.ji.
+No Changes to `/tmp/jl_Wp6K4R/Manifest.toml`
+ERROR: LoadError: Failed to precompile Soss [8ce77f84-9b61-11e8-39ff-d17a774bf41c] to /home/jack/.julia/compiled/v1.5/Soss/vXX0U_FFLCF.ji.
 Stacktrace:
  [1] error(::String) at ./error.jl:33
  [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1290
@@ -89,7 +76,7 @@ No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Soss
-Status `/tmp/jl_4bHilQ/Project.toml`
+Status `/tmp/jl_Wp6K4R/Project.toml`
   [0bf59076] AdvancedHMC v0.1.0
   [76274a88] Bijectors v0.4.0
   [163ba53b] DiffResults v0.0.4
@@ -121,7 +108,7 @@ Status `/tmp/jl_4bHilQ/Project.toml`
   [9a3f8284] Random
   [10745b16] Statistics
   [8dfed614] Test
-Status `/tmp/jl_4bHilQ/Manifest.toml`
+Status `/tmp/jl_Wp6K4R/Manifest.toml`
   [398f06c4] AbstractLattices v0.2.1
   [79e6a3ab] Adapt v2.2.0
   [0bf59076] AdvancedHMC v0.1.0

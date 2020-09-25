@@ -1,0 +1,234 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+  2.161056 seconds (4.46 M allocations: 236.281 MiB, 6.11% gc time)
+-3.22e-17 ± 1.0
+-3.22e-17 ± 1.0
+-4.34e-17 ± 0.99
+ 49.866752 seconds (57.01 M allocations: 2.673 GiB, 4.56% gc time)
+  1.319056 seconds (2.40 M allocations: 119.585 MiB, 2.03% gc time)
+  2.682578 seconds (4.72 M allocations: 236.183 MiB, 4.63% gc time)
+  4.451699 seconds (4.57 M allocations: 2.019 GiB, 18.66% gc time)
+Part500(-2.887e-18 ± 1.0)-2.89e-18 ± 1.0
+$-2.89e-18 ± 1.0$
+0.0
+$0.0$
+2-element Array{Particles{Float64,500},1}:
+ Part500(-2.887e-18 ± 1.0)
+ Part500(-2.887e-18 ± 1.0)Particles{Float64,500}[-2.89e-18 ± 1.0, -2.89e-18 ± 1.0]
+Particles{Float64,500}[-2.89e-18 ± 1.0, 0.0]
+ 11.406023 seconds (18.66 M allocations: 946.912 MiB, 3.13% gc time)
+  0.159709 seconds (269.20 k allocations: 14.319 MiB)
+  1.049675 seconds (2.05 M allocations: 129.161 MiB, 6.78% gc time)
+!=,
+!==,
+rem,
+&,
+*,
++,
+-,
+/,
+//,
+Colon,
+<<,
+>,
+>:,
+>=,
+>>,
+>>>,
+\,
+^,
+accumulate,
+all,
+any,
+asyncmap,
+atan,
+atand,
+axes,
+binomial,
+bitrotate,
+broadcast,
+broadcast!,
+cat,
+circcopy!,
+cld,
+cmp,
+coalesce,
+code_lowered,
+code_typed,
+complex,
+copysign,
+count,
+ctime,
+div,
+divrem,
+eachindex,
+error,
+extrema,
+falses,
+fdio,
+filemode,
+filesize,
+finalizer,
+findnext,
+findprev,
+fld,
+fld1,
+fldmod,
+fldmod1,
+flipsign,
+foldl,
+foldr,
+foreach,
+functionloc,
+gcd,
+gcdx,
+getindex,
+gperm,
+hash,
+hasmethod,
+hcat,
+hvcat,
+hypot,
+in,
+intersect,
+invmod,
+isblockdev,
+ischardev,
+isdir,
+isdisjoint,
+isequal,
+isfifo,
+isfile,
+isless,
+islink,
+ismount,
+ispath,
+issetequal,
+issetgid,
+issetuid,
+issocket,
+issticky,
+issubset,
+iszero,
+iterate,
+join,
+kron,
+lcm,
+ldexp,
+log,
+lpad,
+lstat,
+map,
+mapreduce,
+max,
+maximum,
+methods,
+min,
+minimum,
+minmax,
+mod,
+mod1,
+mtime,
+nextfloat,
+nextpow,
+ntuple,
+oftype,
+ones,
+operm,
+parentmodule,
+prevfloat,
+prevpow,
+print,
+println,
+printstyled,
+prod,
+propertynames,
+range,
+reduce,
+rem,
+rpad,
+setdiff,
+something,
+stat,
+string,
+sum,
+symdiff,
+systemerror,
+task_local_storage,
+trues,
+typeintersect,
+typejoin,
+union,
+unique,
+uperm,
+vcat,
+which,
+widemul,
+xor,
+zip,
+|,
+div,
+in,
+∉,
+∋,
+∌,
+∘,
+intersect,
+union,
+isapprox,
+≉,
+!=,
+!==,
+<=,
+>=,
+issubset,
+⊇,
+⊈,
+⊉,
+⊊,
+⊋,
+xor,
+209.780450 seconds (25.18 M allocations: 1.314 GiB, 0.41% gc time)
+  2.805132 seconds (4.77 M allocations: 366.994 MiB, 5.47% gc time)
+  1.279387 seconds (2.27 M allocations: 118.021 MiB, 3.70% gc time)
+  5.435714 seconds (9.24 M allocations: 541.736 MiB, 3.58% gc time)
+deconstruct: Error During Test at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/test_deconstruct.jl:9
+  Got exception outside of a @test
+  MethodError: no method matching TransferFunction(::Array{ControlSystems.SisoRational{Float64},2}, ::ControlSystems.Continuous, ::Int64, ::Int64)
+  Closest candidates are:
+    TransferFunction(::Array{var"#s1787",2} where var"#s1787"<:ControlSystems.SisoRational, !Matched::Float64, ::Int64, ::Int64) at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/test_deconstruct.jl:6
+    TransferFunction(::Array{S,2}, ::TE) where {TE<:ControlSystems.TimeEvolution, T<:Number, S<:ControlSystems.SisoTf{T}} at /home/jack/.julia/packages/ControlSystems/fDg6j/src/types/TransferFunction.jl:12
+  Stacktrace:
+   [1] replace_particles(::TransferFunction{ControlSystems.Continuous,ControlSystems.SisoRational{StaticParticles{Float64,50}}}, ::MonteCarloMeasurements.var"#180#182", ::MonteCarloMeasurements.var"#181#183") at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/src/deconstruct.jl:123
+   [2] build_container at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/src/deconstruct.jl:87 [inlined]
+   [3] Workspace(::var"#343#352", ::TransferFunction{ControlSystems.Continuous,ControlSystems.SisoRational{StaticParticles{Float64,50}}}) at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/src/deconstruct.jl:324
+   [4] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/test_deconstruct.jl:14
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/test_deconstruct.jl:10
+   [7] include(::String) at ./client.jl:457
+   [8] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:520
+   [9] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [10] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:13
+   [11] include(::String) at ./client.jl:457
+   [12] top-level scope at ./none:12
+   [13] eval(::Module, ::Any) at ./boot.jl:331
+   [14] exec_options(::Base.JLOptions) at ./client.jl:272
+   [15] _start() at ./client.jl:506
+  
+Test Summary:             | Pass  Error  Total
+MonteCarloMeasurements.jl |  514      1    515
+  sampling                |   42            42
+  Basic operations        |  286           286
+  Multivariate Particles  |   29            29
+  sigmapoints             |    6             6
+  transform_moments       |    4             4
+  gradient                |    5             5
+  leastsquares            |    4             4
+  misc                    |   60            60
+  mutation                |    1             1
+  outer_product           |    9             9
+  plotting                |   12            12
+  optimize                |    1             1
+  WeightedParticles       |    9             9
+  bymap                   |   24            24
+  forwarddiff             |   22            22
+  deconstruct             |           1      1

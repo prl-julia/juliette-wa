@@ -23,7 +23,7 @@ Test Summary:   | Pass  Total
 static analysis |  126    126
 environment: Test Failed at /home/jack/.julia/packages/Atom/ZeFbA/test/environments.jl:19
   Expression: Atom.project_info() in prjs.projects
-   Evaluated: (name = "Atom", path = "/home/jack/.julia/packages/Atom/ZeFbA/Project.toml") in NamedTuple{(:name, :path),Tuple{String,String}}[(name = "Modia", path = "/home/jack/.julia/packages/Modia/D0Mdu/Project.toml"), (name = "@v1.5", path = "/home/jack/.julia/environments/v1.5/Project.toml"), (name = "jl_EBuIJy", path = "/tmp/jl_EBuIJy/Project.toml")]
+   Evaluated: (name = "Atom", path = "/home/jack/.julia/packages/Atom/ZeFbA/Project.toml") in NamedTuple{(:name, :path),Tuple{String,String}}[(name = "NNlib", path = "/home/jack/.julia/packages/NNlib/FAI3o/Project.toml"), (name = "@v1.5", path = "/home/jack/.julia/environments/v1.5/Project.toml"), (name = "jl_ebwjdR", path = "/tmp/jl_ebwjdR/Project.toml"), (name = "Modia", path = "/home/jack/.julia/packages/Modia/D0Mdu/Project.toml"), (name = "jl_uJT6wO", path = "/tmp/jl_uJT6wO/Project.toml")]
 Stacktrace:
  [1] top-level scope at /home/jack/.julia/packages/Atom/ZeFbA/test/environments.jl:19
  [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115

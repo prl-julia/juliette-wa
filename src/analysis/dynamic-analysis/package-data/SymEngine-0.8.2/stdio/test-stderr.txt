@@ -4,26 +4,27 @@ No Changes to `~/.julia/environments/v1.5/Project.toml`
 No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing SymEngine
-Status `/tmp/jl_z7K67h/Project.toml`
+Status `/tmp/jl_EgbLhy/Project.toml`
   [34da2185] Compat v2.2.1
-  [3cdcf5f2] RecipesBase v0.8.0
-  [276daf66] SpecialFunctions v0.10.3
+  [3cdcf5f2] RecipesBase v0.7.0
+  [276daf66] SpecialFunctions v0.8.0
   [123dc426] SymEngine v0.8.2
   [3428059b] SymEngine_jll v0.6.0+1
   [8f399da3] Libdl
   [37e2e46d] LinearAlgebra
   [8dfed614] Test
-Status `/tmp/jl_z7K67h/Manifest.toml`
+Status `/tmp/jl_EgbLhy/Manifest.toml`
+  [9e28174c] BinDeps v0.8.10
+  [b99e7846] BinaryProvider v0.5.10
   [34da2185] Compat v2.2.1
-  [e66e0078] CompilerSupportLibraries_jll v0.3.3+0
   [781609d7] GMP_jll v6.1.2+5
   [2ce0c516] MPC_jll v1.1.0+0
   [3a97d323] MPFR_jll v4.0.2+2
-  [efe28fd5] OpenSpecFun_jll v0.5.3+3
-  [3cdcf5f2] RecipesBase v0.8.0
-  [276daf66] SpecialFunctions v0.10.3
+  [3cdcf5f2] RecipesBase v0.7.0
+  [276daf66] SpecialFunctions v0.8.0
   [123dc426] SymEngine v0.8.2
   [3428059b] SymEngine_jll v0.6.0+1
+  [30578b45] URIParser v0.4.1
   [2a0f44e3] Base64
   [ade2ca70] Dates
   [8bb1440f] DelimitedFiles

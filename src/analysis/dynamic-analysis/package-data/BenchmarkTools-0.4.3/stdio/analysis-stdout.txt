@@ -1,168 +1,140 @@
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
-Testing Parameters...done (took 2.30523581 seconds)
-Testing Trial/TrialEstimate/TrialRatio/TrialJudgement...done (took 2.763052535 seconds)
-Testing BenchmarkGroup...done (took 11.52350003 seconds)
+Testing Parameters...done (took 0.747726794 seconds)
+Testing Trial/TrialEstimate/TrialRatio/TrialJudgement...done (took 2.998721527 seconds)
+Testing BenchmarkGroup...done (took 11.333471139 seconds)
 Testing execution...(1/3) tuning 10...
-done (took 0.514605475 seconds)
+done (took 0.522043248 seconds)
 (2/3) tuning 5...
-done (took 0.420841487 seconds)
+done (took 0.42541445 seconds)
 (3/3) tuning 20...
-done (took 0.41143397 seconds)
+done (took 0.409688197 seconds)
 (1/3) tuning "sum"...
   (1/3) tuning 10...
-  done (took 1.055819481 seconds)
+  done (took 1.044705491 seconds)
   (2/3) tuning 5...
-  done (took 0.985785706 seconds)
+  done (took 0.974318637 seconds)
   (3/3) tuning 20...
-  done (took 1.211885321 seconds)
-done (took 3.810554264 seconds)
+  done (took 1.180276137 seconds)
+done (took 3.759359566 seconds)
 (2/3) tuning "special"...
   (1/4) tuning "comprehension"...
-  done (took 0.912923773 seconds)
+  done (took 0.918694492 seconds)
   (2/4) tuning "macro"...
-  done (took 1.063178736 seconds)
+  done (took 1.079025653 seconds)
   (3/4) tuning "block"...
-  done (took 0.923311395 seconds)
+  done (took 0.918755298 seconds)
   (4/4) tuning "nothing"...
-  done (took 0.893426705 seconds)
-done (took 4.403854364 seconds)
+  done (took 0.862168529 seconds)
+done (took 4.339710771 seconds)
 (3/3) tuning "sin"...
   (1/3) tuning 10...
-  done (took 0.280385011 seconds)
+  done (took 0.275399977 seconds)
   (2/3) tuning 5...
-  done (took 0.277970151 seconds)
+  done (took 0.275006922 seconds)
   (3/3) tuning 20...
-  done (took 0.277084128 seconds)
-done (took 1.427635802 seconds)
+  done (took 0.278169388 seconds)
+done (took 1.389064204 seconds)
 (1/3) benchmarking "sum"...
   (1/3) benchmarking 10...
-  done (took 1.810750458 seconds)
+  done (took 1.81897639 seconds)
   (2/3) benchmarking 5...
-  done (took 0.997814871 seconds)
+  done (took 1.003045998 seconds)
   (3/3) benchmarking 20...
-  done (took 1.645231209 seconds)
-done (took 5.014820032 seconds)
+  done (took 1.623679778 seconds)
+done (took 5.018309968 seconds)
 (2/3) benchmarking "special"...
   (1/4) benchmarking "comprehension"...
-  done (took 1.909468094 seconds)
+  done (took 1.853368377 seconds)
   (2/4) benchmarking "macro"...
-  done (took 1.831004152 seconds)
+  done (took 1.834159231 seconds)
   (3/4) benchmarking "block"...
-  done (took 1.440456496 seconds)
+  done (took 1.438223196 seconds)
   (4/4) benchmarking "nothing"...
-  done (took 0.821108788 seconds)
-done (took 6.563703411 seconds)
+  done (took 0.76223239 seconds)
+done (took 6.4545518 seconds)
 (3/3) benchmarking "sin"...
   (1/3) benchmarking 10...
-  done (took 0.384692669 seconds)
+  done (took 0.391080342 seconds)
   (2/3) benchmarking 5...
-  done (took 0.331287486 seconds)
+  done (took 0.333283211 seconds)
   (3/3) benchmarking 20...
-  done (took 0.369569397 seconds)
-done (took 1.649786858 seconds)
+  done (took 0.362162245 seconds)
+done (took 1.651928133 seconds)
 (1/3) benchmarking "sum"...
   (1/3) benchmarking 10...
-  done (took 1.212765623 seconds)
+  done (took 1.209742585 seconds)
   (2/3) benchmarking 5...
-  done (took 0.445213701 seconds)
+  done (took 0.445651882 seconds)
   (3/3) benchmarking 20...
-  done (took 1.059423012 seconds)
-done (took 3.32246021 seconds)
+  done (took 1.059048329 seconds)
+done (took 3.30899475 seconds)
 (2/3) benchmarking "special"...
   (1/4) benchmarking "comprehension"...
-  done (took 1.193467209 seconds)
+  done (took 1.195505218 seconds)
   (2/4) benchmarking "macro"...
-  done (took 1.19523105 seconds)
+  done (took 1.194208547 seconds)
   (3/4) benchmarking "block"...
-  done (took 0.847208319 seconds)
+  done (took 0.803466241 seconds)
   (4/4) benchmarking "nothing"...
-  done (took 0.191336565 seconds)
-done (took 3.996851666 seconds)
+  done (took 0.242612954 seconds)
+done (took 4.011549721 seconds)
 (3/3) benchmarking "sin"...
   (1/3) benchmarking 10...
-  done (took 0.387248621 seconds)
+  done (took 0.443050219 seconds)
   (2/3) benchmarking 5...
-  done (took 0.334039271 seconds)
+  done (took 0.389742739 seconds)
   (3/3) benchmarking 20...
-  done (took 0.368653185 seconds)
-done (took 1.671953488 seconds)
+  done (took 0.421635745 seconds)
+done (took 1.929798331 seconds)
 (1/3) benchmarking "sum"...
   (1/3) benchmarking 10...
-  done (took 0.218237652 seconds)
+  done (took 0.275860703 seconds)
   (2/3) benchmarking 5...
-  done (took 0.202207261 seconds)
+  done (took 0.247892568 seconds)
   (3/3) benchmarking 20...
-  done (took 0.200207664 seconds)
-done (took 1.215687438 seconds)
+  done (took 0.248579603 seconds)
+done (took 1.465995136 seconds)
 (2/3) benchmarking "special"...
   (1/4) benchmarking "comprehension"...
-  done (took 0.197137086 seconds)
+  done (took 0.250010835 seconds)
   (2/4) benchmarking "macro"...
-  done (took 0.201122302 seconds)
+  done (took 0.255737529 seconds)
   (3/4) benchmarking "block"...
-  done (took 0.199786059 seconds)
+  done (took 0.251437562 seconds)
   (4/4) benchmarking "nothing"...
-  done (took 0.197718246 seconds)
-done (took 1.371319737 seconds)
+  done (took 0.250073382 seconds)
+done (took 1.66523082 seconds)
 (3/3) benchmarking "sin"...
   (1/3) benchmarking 10...
-  done (took 0.200777313 seconds)
+  done (took 0.252164027 seconds)
   (2/3) benchmarking 5...
-  done (took 0.201635393 seconds)
+  done (took 0.247620621 seconds)
   (3/3) benchmarking 20...
-  done (took 0.200000881 seconds)
-done (took 1.178026401 seconds)
+  done (took 0.250673164 seconds)
+done (took 1.407672605 seconds)
 (1/3) benchmarking 10...
-done (took 0.336416662 seconds)
+done (took 0.335336898 seconds)
 (2/3) benchmarking 5...
-done (took 0.281014371 seconds)
+done (took 0.280446542 seconds)
 (3/3) benchmarking 20...
-done (took 0.314743382 seconds)
+done (took 0.31440173 seconds)
 (1/3) benchmarking 10...
-done (took 0.345201827 seconds)
+done (took 0.334390776 seconds)
 (2/3) benchmarking 5...
-done (took 0.283751913 seconds)
+done (took 0.277918065 seconds)
 (3/3) benchmarking 20...
-done (took 0.316042835 seconds)
+done (took 0.313619506 seconds)
 (1/3) benchmarking 10...
-done (took 0.155842589 seconds)
+done (took 0.136546066 seconds)
 (2/3) benchmarking 5...
-done (took 0.144041769 seconds)
+done (took 0.134168925 seconds)
 (3/3) benchmarking 20...
-done (took 0.143323613 seconds)
-done (took 100.201118054 seconds)
-Testing serialization...Successful (de)serialization: Error During Test at /home/jack/.julia/packages/BenchmarkTools/7aqwe/test/SerializationTests.jl:20
-  Got exception outside of a @test
-  MethodError: no method matching updateAstInfo(::Array{EvalCallInfo,1}, ::Symbol, ::Bool)
-  Closest candidates are:
-    updateAstInfo(::Array{EvalCallInfo,1}, !Matched::Expr, ::Bool) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:227
-  Stacktrace:
-   [1] (::var"#updateTraceAuxillary#59"{Bool})(::Array{EvalCallInfo,1}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:112
-   [2] updateStackTraces(::Dict{Base.StackTraces.StackFrame,StackTraceInfo{Array{EvalCallInfo,1}}}, ::Int64, ::var"#57#61", ::var"#updateTraceAuxillary#59"{Bool}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:191
-   [3] updateFuncMetadata(::Array{OverrideInfo,1}, ::var"#56#60", ::Int64, ::var"#updateEvalInfoWrap#58"{Module}; auxTuple::Tuple{var"#57#61",var"#updateTraceAuxillary#59"{Bool}}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:171
-   [4] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:116
-   [5] recover(::Array{Any,1}) at /home/jack/.julia/packages/BenchmarkTools/7aqwe/src/serialization.jl:25
-   [6] recover(::Array{Any,1}) at /home/jack/.julia/packages/BenchmarkTools/7aqwe/src/serialization.jl:32
-   [7] map!(::typeof(BenchmarkTools.recover), ::Array{Any,1}, ::Array{Any,1}) at ./abstractarray.jl:2155
-   [8] load(::IOStream) at /home/jack/.julia/packages/BenchmarkTools/7aqwe/src/serialization.jl:103
-   [9] #55 at /home/jack/.julia/packages/BenchmarkTools/7aqwe/src/serialization.jl:88 [inlined]
-   [10] open(::BenchmarkTools.var"#55#56"{Tuple{}}, ::String, ::Vararg{String,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at ./io.jl:325
-   [11] open at ./io.jl:323 [inlined]
-   [12] load at /home/jack/.julia/packages/BenchmarkTools/7aqwe/src/serialization.jl:87 [inlined]
-   [13] (::Main.SerializationTests.var"#3#6"{BenchmarkTools.Benchmark{Symbol("##benchmark#362")},BenchmarkTools.Trial})() at /home/jack/.julia/packages/BenchmarkTools/7aqwe/test/SerializationTests.jl:31
-   [14] cd(::Main.SerializationTests.var"#3#6"{BenchmarkTools.Benchmark{Symbol("##benchmark#362")},BenchmarkTools.Trial}, ::String) at ./file.jl:104
-   [15] withtempdir(::Function) at /home/jack/.julia/packages/BenchmarkTools/7aqwe/test/SerializationTests.jl:13
-   [16] top-level scope at /home/jack/.julia/packages/BenchmarkTools/7aqwe/test/SerializationTests.jl:25
-   [17] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [18] top-level scope at /home/jack/.julia/packages/BenchmarkTools/7aqwe/test/SerializationTests.jl:21
-   [19] include(::String) at ./client.jl:457
-   [20] top-level scope at ./timing.jl:233 [inlined]
-   [21] top-level scope at /home/jack/.julia/packages/BenchmarkTools/7aqwe/test/runtests.jl:0
-   [22] include(::String) at ./client.jl:457
-   [23] top-level scope at ./none:12
-   [24] eval(::Module, ::Any) at ./boot.jl:331
-   [25] exec_options(::Base.JLOptions) at ./client.jl:272
-   [26] _start() at ./client.jl:506
-  
-Test Summary:                | Pass  Error  Total
-Successful (de)serialization |    1      1      2
+done (took 0.134064679 seconds)
+done (took 100.165610304 seconds)
+Testing serialization...Test Summary:                | Pass  Total
+Successful (de)serialization |    7      7
+Test Summary:        | Pass  Total
+Deprecated behaviors |   11     11
+Test Summary:  | Pass  Total
+Error checking |    2      2
+done (took 13.463280542 seconds)

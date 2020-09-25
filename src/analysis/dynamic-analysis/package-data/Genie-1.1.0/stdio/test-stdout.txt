@@ -239,77 +239,77 @@ Ready!
 Web Server starting at http://127.0.0.1:8000 
 
 Web Server running at http://127.0.0.1:8000 
-[ Info: 2020-09-23 21:29:11 New controller created at /tmp/jl_qtC4Gi/fullstack_test/app/resources/foo/FooController.jl
-...┌ Error: 2020-09-23 21:29:12 Base.IOError("listen: address already in use (EADDRINUSE)", -98)
+[ Info: 2020-09-25 02:28:00 New controller created at /tmp/jl_imDvpI/fullstack_test/app/resources/foo/FooController.jl
+...┌ Error: 2020-09-25 02:28:00 Base.IOError("listen: address already in use (EADDRINUSE)", -98)
 └ @ Genie.AppServer ~/.julia/packages/Genie/rqHFz/src/AppServer.jl:79
-┌ Warning: 2020-09-23 21:29:12 Sessions folder /tmp/jl_qtC4Gi/fullstack_test/sessions does not exist
+┌ Warning: 2020-09-25 02:28:00 Sessions folder /tmp/jl_imDvpI/fullstack_test/sessions does not exist
 └ @ Genie.FileSession ~/.julia/packages/Genie/rqHFz/src/session_adapters/FileSession.jl:15
-[ Info: 2020-09-23 21:29:12 Creating sessions folder at /tmp/jl_qtC4Gi/fullstack_test/sessions
-[ Info: 2020-09-23 21:29:12 /test 200
+[ Info: 2020-09-25 02:28:00 Creating sessions folder at /tmp/jl_imDvpI/fullstack_test/sessions
+[ Info: 2020-09-25 02:28:01 /test 200
 .
-tests_genie_generators: [ Info: 2020-09-23 21:29:12 Done! New app created at /tmp/jl_yhWAYI
-[ Info: 2020-09-23 21:29:12 Changing active directory to /tmp/jl_yhWAYI
-[ Info: 2020-09-23 21:29:12 Installing app dependencies
-┌ Info: 2020-09-23 21:29:13 Your new Genie app is ready!
+tests_genie_generators: [ Info: 2020-09-25 02:28:01 Done! New app created at /tmp/jl_06sKW5
+[ Info: 2020-09-25 02:28:01 Changing active directory to /tmp/jl_06sKW5
+[ Info: 2020-09-25 02:28:01 Installing app dependencies
+┌ Info: 2020-09-25 02:28:02 Your new Genie app is ready!
 │         Run 
 │ julia> Genie.loadapp() 
 │ to load the app's environment
 │         and then 
 │ julia> up() 
 └ to start the web server on port 8000.
-.[ Info: 2020-09-23 21:29:13 Done! New app created at /tmp/jl_wvw3Cs
-[ Info: 2020-09-23 21:29:13 Changing active directory to /tmp/jl_wvw3Cs
-[ Info: 2020-09-23 21:29:13 Installing app dependencies
-┌ Info: 2020-09-23 21:29:14 Your new Genie app is ready!
+.[ Info: 2020-09-25 02:28:02 Done! New app created at /tmp/jl_mwvLKl
+[ Info: 2020-09-25 02:28:02 Changing active directory to /tmp/jl_mwvLKl
+[ Info: 2020-09-25 02:28:02 Installing app dependencies
+┌ Info: 2020-09-25 02:28:02 Your new Genie app is ready!
 │         Run 
 │ julia> Genie.loadapp() 
 │ to load the app's environment
 │         and then 
 │ julia> up() 
 └ to start the web server on port 8000.
-..[ Info: 2020-09-23 21:29:14 Done! New app created at /tmp/jl_Gvwbze
-[ Info: 2020-09-23 21:29:14 Changing active directory to /tmp/jl_Gvwbze
-[ Info: 2020-09-23 21:29:14 Installing app dependencies
-┌ Info: 2020-09-23 21:29:15 Your new Genie app is ready!
+..[ Info: 2020-09-25 02:28:02 Done! New app created at /tmp/jl_Qcaj0D
+[ Info: 2020-09-25 02:28:02 Changing active directory to /tmp/jl_Qcaj0D
+[ Info: 2020-09-25 02:28:02 Installing app dependencies
+┌ Info: 2020-09-25 02:28:03 Your new Genie app is ready!
 │         Run 
 │ julia> Genie.loadapp() 
 │ to load the app's environment
 │         and then 
 │ julia> up() 
 └ to start the web server on port 8000.
-...[ Info: 2020-09-23 21:29:15 Done! New app created at /tmp/jl_o5OxL2
-[ Info: 2020-09-23 21:29:15 Changing active directory to /tmp/jl_o5OxL2
-[ Info: 2020-09-23 21:29:15 Installing app dependencies
-┌ Info: 2020-09-23 21:29:16 Your new Genie app is ready!
+...[ Info: 2020-09-25 02:28:03 Done! New app created at /tmp/jl_K39QyY
+[ Info: 2020-09-25 02:28:03 Changing active directory to /tmp/jl_K39QyY
+[ Info: 2020-09-25 02:28:03 Installing app dependencies
+┌ Info: 2020-09-25 02:28:04 Your new Genie app is ready!
 │         Run 
 │ julia> Genie.loadapp() 
 │ to load the app's environment
 │         and then 
 │ julia> up() 
 └ to start the web server on port 8000.
-...[ Info: 2020-09-23 21:29:16 New controller created at /tmp/jl_kdkFKU/app/resources/yazoo/YazooController.jl
-..[ Info: 2020-09-23 21:29:16 New KazooController.jl created at /tmp/jl_y5xYLM/app/resources/kazoo/KazooController.jl
-┌ Error: 2020-09-23 21:29:16 UndefVarError(:SearchLight)
+...[ Info: 2020-09-25 02:28:04 New controller created at /tmp/jl_giEP2m/app/resources/yazoo/YazooController.jl
+..[ Info: 2020-09-25 02:28:04 New KazooController.jl created at /tmp/jl_qPKizL/app/resources/kazoo/KazooController.jl
+┌ Error: 2020-09-25 02:28:04 UndefVarError(:SearchLight)
 └ @ Genie ~/.julia/packages/Genie/rqHFz/src/genie_module.jl:39
-┌ Warning: 2020-09-23 21:29:16 Skipping SearchLight
+┌ Warning: 2020-09-25 02:28:04 Skipping SearchLight
 └ @ Genie ~/.julia/packages/Genie/rqHFz/src/genie_module.jl:40
-..[ Info: 2020-09-23 21:29:16 New task created at tasks/VavoomTask.jl
+..[ Info: 2020-09-25 02:28:05 New task created at tasks/VavoomTask.jl
 ...
 tests_html_attributes_rendering: .........................
 tests_html_rendering: ........................
 tests_js_rendering: ....
 tests_json_rendering: .
-tests_markdown_rendering: ...┌ Warning: 2020-09-23 21:29:24 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
+tests_markdown_rendering: ...┌ Warning: 2020-09-25 02:28:13 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
 └ @ string:2
-┌ Warning: 2020-09-23 21:29:24 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
+┌ Warning: 2020-09-25 02:28:13 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
 └ @ string:8
-.┌ Warning: 2020-09-23 21:29:24 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
+.┌ Warning: 2020-09-25 02:28:13 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
 └ @ string:2
-┌ Warning: 2020-09-23 21:29:24 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
+┌ Warning: 2020-09-25 02:28:13 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
 └ @ string:8
-.┌ Warning: 2020-09-23 21:29:28 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
+.┌ Warning: 2020-09-25 02:28:18 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
 └ @ string:2
-┌ Warning: 2020-09-23 21:29:28 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
+┌ Warning: 2020-09-25 02:28:18 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
 └ @ string:8
 .
 tests_router: 

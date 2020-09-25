@@ -1,7 +1,7 @@
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-No Changes to `/tmp/jl_Vpd5Ag/Project.toml`
-No Changes to `/tmp/jl_Vpd5Ag/Manifest.toml`
+No Changes to `/tmp/jl_j2SahB/Project.toml`
+No Changes to `/tmp/jl_j2SahB/Manifest.toml`
 [ Info: Installing ijuliatest kernelspec in /home/jack/.local/share/jupyter/kernels/Yef1rLr4kXKxq9rbEh3m-1.5
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
@@ -11,7 +11,7 @@ No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing IJulia
-Status `/tmp/jl_Vpd5Ag/Project.toml`
+Status `/tmp/jl_j2SahB/Project.toml`
   [8f4d0f93] Conda v1.4.1
   [7073ff75] IJulia v1.21.3
   [682c06a0] JSON v0.21.1
@@ -28,7 +28,7 @@ Status `/tmp/jl_Vpd5Ag/Project.toml`
   [9a3f8284] Random
   [8dfed614] Test
   [cf7118a7] UUIDs
-Status `/tmp/jl_Vpd5Ag/Manifest.toml`
+Status `/tmp/jl_j2SahB/Manifest.toml`
   [8f4d0f93] Conda v1.4.1
   [7073ff75] IJulia v1.21.3
   [682c06a0] JSON v0.21.1

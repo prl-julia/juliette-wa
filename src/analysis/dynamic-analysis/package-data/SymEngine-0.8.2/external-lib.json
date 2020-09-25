@@ -14,20 +14,8 @@
     }
   },
   "invokelatest_info": {
-    "call_count": 5,
+    "call_count": 3,
     "stack_traces": [
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:69",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
       {
         "count": 1,
         "last_call": "__init__() at x86_64-linux-gnu.jl:28",
@@ -63,25 +51,13 @@
             }
           ]
         }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
       }
     ],
     "func_specific_data": {
       "function_names": [
         {
           "function_name": "do_artifact_str",
-          "count": 5
+          "count": 3
         }
       ]
     }

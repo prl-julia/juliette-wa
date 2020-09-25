@@ -1,10 +1,10 @@
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-No Changes to `/tmp/jl_EufqJv/Project.toml`
-No Changes to `/tmp/jl_EufqJv/Manifest.toml`
+No Changes to `/tmp/jl_58ACXf/Project.toml`
+No Changes to `/tmp/jl_58ACXf/Manifest.toml`
 [ Info: Changed working directory to `/home/jack/.julia/packages/Atom/ZeFbA/test/..`
  Activating environment at `~/.julia/packages/Atom/ZeFbA/Project.toml`
- Activating environment at `/tmp/jl_EufqJv/Project.toml`
+ Activating environment at `/tmp/jl_58ACXf/Project.toml`
 ERROR: LoadError: LoadError: Some tests did not pass: 4 passed, 1 failed, 0 errored, 0 broken.
 in expression starting at /home/jack/.julia/packages/Atom/ZeFbA/test/environments.jl:1
 in expression starting at /home/jack/.julia/packages/Atom/ZeFbA/test/runtests.jl:55
@@ -16,7 +16,7 @@ No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Atom
-Status `/tmp/jl_EufqJv/Project.toml`
+Status `/tmp/jl_58ACXf/Project.toml`
   [c52e3926] Atom v0.12.21
   [00ebfdb7] CSTParser v2.5.0
   [53a63b46] CodeTools v0.7.1
@@ -31,11 +31,11 @@ Status `/tmp/jl_EufqJv/Project.toml`
   [aa1ae85d] JuliaInterpreter v0.7.26
   [e5e0dc1b] Juno v0.8.4
   [7c4cb9fa] LNR v0.2.1
-  [50d2b5c4] Lazy v0.15.1
+  [50d2b5c4] Lazy v0.14.0
   [1914dd2f] MacroTools v0.5.5
   [e89f7d12] Media v0.5.0
   [bac558e1] OrderedCollections v1.3.1
-  [ae029012] Requires v1.0.3
+  [ae029012] Requires v0.5.2
   [a2a6695c] TreeViews v0.3.0
   [0f1e0344] WebIO v0.8.14
   [104b5d7c] WebSockets v1.5.2
@@ -49,15 +49,15 @@ Status `/tmp/jl_EufqJv/Project.toml`
   [3fa0cd96] REPL
   [6462fe0b] Sockets
   [8dfed614] Test
-Status `/tmp/jl_EufqJv/Manifest.toml`
+Status `/tmp/jl_58ACXf/Manifest.toml`
   [1520ce14] AbstractTrees v0.3.3
   [bf4720bc] AssetRegistry v0.1.0
   [c52e3926] Atom v0.12.21
   [00ebfdb7] CSTParser v2.5.0
   [53a63b46] CodeTools v0.7.1
   [da1fd8a2] CodeTracking v0.5.12
-  [3da002f7] ColorTypes v0.9.1
-  [5ae59095] Colors v0.11.2
+  [3da002f7] ColorTypes v0.10.9
+  [5ae59095] Colors v0.12.4
   [a80b9123] CommonMark v0.6.4
   [34da2185] Compat v2.2.1
   [a8cc5b0e] Crayons v4.0.4
@@ -67,7 +67,7 @@ Status `/tmp/jl_EufqJv/Manifest.toml`
   [ffbed154] DocStringExtensions v0.8.3
   [e30172f5] Documenter v0.25.2
   [5789e2e9] FileIO v1.4.3
-  [53c48c17] FixedPointNumbers v0.7.1
+  [53c48c17] FixedPointNumbers v0.8.4
   [08572546] FlameGraphs v0.2.4
   [de31a74c] FunctionalCollections v0.5.0
   [fb4132e2] FuzzyCompletions v0.2.3
@@ -80,7 +80,7 @@ Status `/tmp/jl_EufqJv/Manifest.toml`
   [aa1ae85d] JuliaInterpreter v0.7.26
   [e5e0dc1b] Juno v0.8.4
   [7c4cb9fa] LNR v0.2.1
-  [50d2b5c4] Lazy v0.15.1
+  [50d2b5c4] Lazy v0.14.0
   [1d6d02ad] LeftChildRightSiblingTrees v0.1.2
   [1914dd2f] MacroTools v0.5.5
   [739be429] MbedTLS v1.0.2
@@ -91,7 +91,7 @@ Status `/tmp/jl_EufqJv/Manifest.toml`
   [69de0a69] Parsers v1.0.10
   [fa939f87] Pidfile v1.2.0
   [189a3867] Reexport v0.2.0
-  [ae029012] Requires v1.0.3
+  [ae029012] Requires v0.5.2
   [88034a9c] StringDistances v0.8.0
   [0796e94c] Tokenize v0.5.8
   [a2a6695c] TreeViews v0.3.0

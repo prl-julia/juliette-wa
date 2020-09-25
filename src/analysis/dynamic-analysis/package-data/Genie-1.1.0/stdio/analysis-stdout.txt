@@ -82,264 +82,7 @@ Assets paths: Error During Test at /home/jack/.julia/packages/Genie/rqHFz/test/t
   
 =====================================================
 
-tests_advanced_html_rendering: 
-=====================================================
-@foreach macro renders local variables: Error During Test at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:25
-  Got exception outside of a @test
-  MethodError: no method matching updateAstInfo(::Array{EvalCallInfo,1}, ::String, ::Bool)
-  Closest candidates are:
-    updateAstInfo(::Array{EvalCallInfo,1}, !Matched::Expr, ::Bool) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:227
-  Stacktrace:
-   [1] (::var"#updateTraceAuxillary#59"{Bool})(::Array{EvalCallInfo,1}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:112
-   [2] updateStackTraces(::Dict{Base.StackTraces.StackFrame,StackTraceInfo{Array{EvalCallInfo,1}}}, ::Int64, ::var"#57#61", ::var"#updateTraceAuxillary#59"{Bool}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:191
-   [3] updateFuncMetadata(::Array{OverrideInfo,1}, ::var"#56#60", ::Int64, ::var"#updateEvalInfoWrap#58"{Module}; auxTuple::Tuple{var"#57#61",var"#updateTraceAuxillary#59"{Bool}}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:171
-   [4] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:116
-   [5] (::Genie.Renderer.Html.var"#479#485")() at /tmp/jl_genie_build_LwgDXt/GenieViews/1afc1d17c3777d4e2cc2f2dbf12cd10584e1c4af.jl:10
-   [6] normal_element(::Genie.Renderer.Html.var"#479#485", ::String, ::Array{Any,1}, ::Array{Pair{Symbol,Any},1}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:59
-   [7] #ol#159 at ./none:2 [inlined]
-   [8] ol at ./none:2 [inlined]
-   [9] (::Genie.Renderer.Html.var"#478#484")() at /tmp/jl_genie_build_LwgDXt/GenieViews/1afc1d17c3777d4e2cc2f2dbf12cd10584e1c4af.jl:9
-   [10] normal_element at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:59 [inlined]
-   [11] #body#55 at ./none:2 [inlined]
-   [12] body at ./none:2 [inlined]
-   [13] (::Genie.Renderer.Html.var"#477#483")() at /tmp/jl_genie_build_LwgDXt/GenieViews/1afc1d17c3777d4e2cc2f2dbf12cd10584e1c4af.jl:7
-   [14] normal_element at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:59 [inlined]
-   [15] #html#47 at ./none:2 [inlined]
-   [16] html at ./none:2 [inlined]
-   [17] func_60806e0a6a353f6ce3a3546208230a0ad8970fb6() at /tmp/jl_genie_build_LwgDXt/GenieViews/1afc1d17c3777d4e2cc2f2dbf12cd10584e1c4af.jl:6
-   [18] invokelatest(::Any; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:147
-   [19] invokelatest at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:135 [inlined]
-   [20] Genie.Renderer.WebRenderable(::typeof(Genie.Renderer.Html.func_60806e0a6a353f6ce3a3546208230a0ad8970fb6)) at /home/jack/.julia/packages/Genie/rqHFz/src/Renderer.jl:160
-   [21] |>(::Function, ::Type{T} where T) at ./operators.jl:834
-   [22] render(::Type{MIME{Symbol("text/html")}}, ::String; context::Module, layout::Nothing, vars::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:371
-   [23] html(::String; context::Module, status::Int64, headers::Dict{String,String}, layout::Nothing, forceparse::Bool, vars::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:426
-   [24] html(::String) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:423
-   [25] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:14
-   [26] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [27] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:4
-   [28] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:124
-   [29] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
-   [30] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:3
-   [31] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [32] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:3
-   [33] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:124
-   [34] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
-   [35] include(::Function, ::Module, ::String) at ./Base.jl:380
-   [36] include(::Module, ::String) at ./Base.jl:368
-   [37] top-level scope at /home/jack/.julia/packages/TestSetExtensions/lB7xG/src/TestSetExtensions.jl:40
-   [38] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
-   [39] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [40] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
-   [41] include(::String) at ./client.jl:457
-   [42] top-level scope at ./none:12
-   [43] eval(::Module, ::Any) at ./boot.jl:331
-   [44] exec_options(::Base.JLOptions) at ./client.jl:272
-   [45] _start() at ./client.jl:506
-  caused by [exception 1]
-  MethodError: no method matching func_60806e0a6a353f6ce3a3546208230a0ad8970fb6()
-  The applicable method may be too new: running in world age 28096, while current world is 28103.
-  Closest candidates are:
-    func_60806e0a6a353f6ce3a3546208230a0ad8970fb6() at /tmp/jl_genie_build_LwgDXt/GenieViews/1afc1d17c3777d4e2cc2f2dbf12cd10584e1c4af.jl:3 (method too new to be called from this world context.)
-  Stacktrace:
-   [1] Genie.Renderer.WebRenderable(::typeof(Genie.Renderer.Html.func_60806e0a6a353f6ce3a3546208230a0ad8970fb6)) at /home/jack/.julia/packages/Genie/rqHFz/src/Renderer.jl:158
-   [2] |>(::Function, ::Type{T} where T) at ./operators.jl:834
-   [3] render(::Type{MIME{Symbol("text/html")}}, ::String; context::Module, layout::Nothing, vars::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:371
-   [4] html(::String; context::Module, status::Int64, headers::Dict{String,String}, layout::Nothing, forceparse::Bool, vars::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:426
-   [5] html(::String) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:423
-   [6] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:14
-   [7] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [8] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:4
-   [9] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:124
-   [10] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
-   [11] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:3
-   [12] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [13] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:3
-   [14] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:124
-   [15] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
-   [16] include(::Function, ::Module, ::String) at ./Base.jl:380
-   [17] include(::Module, ::String) at ./Base.jl:368
-   [18] top-level scope at /home/jack/.julia/packages/TestSetExtensions/lB7xG/src/TestSetExtensions.jl:40
-   [19] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
-   [20] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [21] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
-   [22] include(::String) at ./client.jl:457
-   [23] top-level scope at ./none:12
-   [24] eval(::Module, ::Any) at ./boot.jl:331
-   [25] exec_options(::Base.JLOptions) at ./client.jl:272
-   [26] _start() at ./client.jl:506
-  
-=====================================================
-.
-=====================================================
-@foreach macro can access view variables: Error During Test at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:25
-  Got exception outside of a @test
-  MethodError: no method matching updateAstInfo(::Array{EvalCallInfo,1}, ::String, ::Bool)
-  Closest candidates are:
-    updateAstInfo(::Array{EvalCallInfo,1}, !Matched::Expr, ::Bool) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:227
-  Stacktrace:
-   [1] (::var"#updateTraceAuxillary#59"{Bool})(::Array{EvalCallInfo,1}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:112
-   [2] updateStackTraces(::Dict{Base.StackTraces.StackFrame,StackTraceInfo{Array{EvalCallInfo,1}}}, ::Int64, ::var"#57#61", ::var"#updateTraceAuxillary#59"{Bool}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:191
-   [3] updateFuncMetadata(::Array{OverrideInfo,1}, ::var"#56#60", ::Int64, ::var"#updateEvalInfoWrap#58"{Module}; auxTuple::Tuple{var"#57#61",var"#updateTraceAuxillary#59"{Bool}}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:171
-   [4] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:116
-   [5] (::Genie.Renderer.Html.var"#503#509")() at /tmp/jl_genie_build_LwgDXt/GenieViews/bd445d77a42af085225d2831c3786033f690b5fa.jl:16
-   [6] normal_element(::Genie.Renderer.Html.var"#503#509", ::String, ::Array{Any,1}, ::Array{Pair{Symbol,Any},1}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:59
-   [7] #ol#159 at ./none:2 [inlined]
-   [8] ol at ./none:2 [inlined]
-   [9] (::Genie.Renderer.Html.var"#502#508")() at /tmp/jl_genie_build_LwgDXt/GenieViews/bd445d77a42af085225d2831c3786033f690b5fa.jl:15
-   [10] normal_element at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:59 [inlined]
-   [11] #body#55 at ./none:2 [inlined]
-   [12] body at ./none:2 [inlined]
-   [13] (::Genie.Renderer.Html.var"#501#507")() at /tmp/jl_genie_build_LwgDXt/GenieViews/bd445d77a42af085225d2831c3786033f690b5fa.jl:13
-   [14] normal_element at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:59 [inlined]
-   [15] #html#47 at ./none:2 [inlined]
-   [16] html at ./none:2 [inlined]
-   [17] func_52117d113074c8c6e4478447384f1847e7203cee() at /tmp/jl_genie_build_LwgDXt/GenieViews/bd445d77a42af085225d2831c3786033f690b5fa.jl:12
-   [18] invokelatest(::Any; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:147
-   [19] invokelatest at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:135 [inlined]
-   [20] Genie.Renderer.WebRenderable(::typeof(Genie.Renderer.Html.func_52117d113074c8c6e4478447384f1847e7203cee)) at /home/jack/.julia/packages/Genie/rqHFz/src/Renderer.jl:160
-   [21] |>(::Function, ::Type{T} where T) at ./operators.jl:834
-   [22] render(::Type{MIME{Symbol("text/html")}}, ::String; context::Module, layout::Nothing, vars::Base.Iterators.Pairs{Symbol,Int64,Tuple{Symbol},NamedTuple{(:x,),Tuple{Int64}}}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:371
-   [23] html(::String; context::Module, status::Int64, headers::Dict{String,String}, layout::Nothing, forceparse::Bool, vars::Base.Iterators.Pairs{Symbol,Int64,Tuple{Symbol},NamedTuple{(:x,),Tuple{Int64}}}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:426
-   [24] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:46
-   [25] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [26] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:36
-   [27] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:124
-   [28] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
-   [29] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:35
-   [30] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [31] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:3
-   [32] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:124
-   [33] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
-   [34] include(::Function, ::Module, ::String) at ./Base.jl:380
-   [35] include(::Module, ::String) at ./Base.jl:368
-   [36] top-level scope at /home/jack/.julia/packages/TestSetExtensions/lB7xG/src/TestSetExtensions.jl:40
-   [37] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
-   [38] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [39] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
-   [40] include(::String) at ./client.jl:457
-   [41] top-level scope at ./none:12
-   [42] eval(::Module, ::Any) at ./boot.jl:331
-   [43] exec_options(::Base.JLOptions) at ./client.jl:272
-   [44] _start() at ./client.jl:506
-  caused by [exception 1]
-  MethodError: no method matching func_52117d113074c8c6e4478447384f1847e7203cee()
-  The applicable method may be too new: running in world age 28116, while current world is 28123.
-  Closest candidates are:
-    func_52117d113074c8c6e4478447384f1847e7203cee() at /tmp/jl_genie_build_LwgDXt/GenieViews/bd445d77a42af085225d2831c3786033f690b5fa.jl:3 (method too new to be called from this world context.)
-  Stacktrace:
-   [1] Genie.Renderer.WebRenderable(::typeof(Genie.Renderer.Html.func_52117d113074c8c6e4478447384f1847e7203cee)) at /home/jack/.julia/packages/Genie/rqHFz/src/Renderer.jl:158
-   [2] |>(::Function, ::Type{T} where T) at ./operators.jl:834
-   [3] render(::Type{MIME{Symbol("text/html")}}, ::String; context::Module, layout::Nothing, vars::Base.Iterators.Pairs{Symbol,Int64,Tuple{Symbol},NamedTuple{(:x,),Tuple{Int64}}}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:371
-   [4] html(::String; context::Module, status::Int64, headers::Dict{String,String}, layout::Nothing, forceparse::Bool, vars::Base.Iterators.Pairs{Symbol,Int64,Tuple{Symbol},NamedTuple{(:x,),Tuple{Int64}}}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:426
-   [5] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:46
-   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [7] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:36
-   [8] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:124
-   [9] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
-   [10] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:35
-   [11] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [12] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:3
-   [13] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:124
-   [14] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
-   [15] include(::Function, ::Module, ::String) at ./Base.jl:380
-   [16] include(::Module, ::String) at ./Base.jl:368
-   [17] top-level scope at /home/jack/.julia/packages/TestSetExtensions/lB7xG/src/TestSetExtensions.jl:40
-   [18] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
-   [19] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [20] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
-   [21] include(::String) at ./client.jl:457
-   [22] top-level scope at ./none:12
-   [23] eval(::Module, ::Any) at ./boot.jl:331
-   [24] exec_options(::Base.JLOptions) at ./client.jl:272
-   [25] _start() at ./client.jl:506
-  
-=====================================================
-
-=====================================================
-@foreach macro can access context variables: Error During Test at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:25
-  Got exception outside of a @test
-  MethodError: no method matching updateAstInfo(::Array{EvalCallInfo,1}, ::String, ::Bool)
-  Closest candidates are:
-    updateAstInfo(::Array{EvalCallInfo,1}, !Matched::Expr, ::Bool) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:227
-  Stacktrace:
-   [1] (::var"#updateTraceAuxillary#59"{Bool})(::Array{EvalCallInfo,1}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:112
-   [2] updateStackTraces(::Dict{Base.StackTraces.StackFrame,StackTraceInfo{Array{EvalCallInfo,1}}}, ::Int64, ::var"#57#61", ::var"#updateTraceAuxillary#59"{Bool}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:191
-   [3] updateFuncMetadata(::Array{OverrideInfo,1}, ::var"#56#60", ::Int64, ::var"#updateEvalInfoWrap#58"{Module}; auxTuple::Tuple{var"#57#61",var"#updateTraceAuxillary#59"{Bool}}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:171
-   [4] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:116
-   [5] (::Main.##260.##264.var"#3#9")() at /tmp/jl_genie_build_LwgDXt/GenieViews/f85e94a36c80bb3762853502bfac086b4364a243.jl:16
-   [6] normal_element(::Main.##260.##264.var"#3#9", ::String, ::Array{Any,1}, ::Array{Pair{Symbol,Any},1}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:59
-   [7] #ol#159 at ./none:2 [inlined]
-   [8] ol at ./none:2 [inlined]
-   [9] (::Main.##260.##264.var"#2#8")() at /tmp/jl_genie_build_LwgDXt/GenieViews/f85e94a36c80bb3762853502bfac086b4364a243.jl:15
-   [10] normal_element at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:59 [inlined]
-   [11] #body#55 at ./none:2 [inlined]
-   [12] body at ./none:2 [inlined]
-   [13] (::Main.##260.##264.var"#1#7")() at /tmp/jl_genie_build_LwgDXt/GenieViews/f85e94a36c80bb3762853502bfac086b4364a243.jl:13
-   [14] normal_element at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:59 [inlined]
-   [15] #html#47 at ./none:2 [inlined]
-   [16] html at ./none:2 [inlined]
-   [17] func_ef2b649ae6e5cce843bee1f134f6a2d8554bf464() at /tmp/jl_genie_build_LwgDXt/GenieViews/f85e94a36c80bb3762853502bfac086b4364a243.jl:12
-   [18] invokelatest(::Any; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:147
-   [19] invokelatest at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:135 [inlined]
-   [20] Genie.Renderer.WebRenderable(::typeof(Main.##260.##264.func_ef2b649ae6e5cce843bee1f134f6a2d8554bf464)) at /home/jack/.julia/packages/Genie/rqHFz/src/Renderer.jl:160
-   [21] |>(::Function, ::Type{T} where T) at ./operators.jl:834
-   [22] render(::Type{MIME{Symbol("text/html")}}, ::String; context::Module, layout::Nothing, vars::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:371
-   [23] html(::String; context::Module, status::Int64, headers::Dict{String,String}, layout::Nothing, forceparse::Bool, vars::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:426
-   [24] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:64
-   [25] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [26] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:52
-   [27] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:124
-   [28] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
-   [29] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:51
-   [30] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [31] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:3
-   [32] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:124
-   [33] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
-   [34] include(::Function, ::Module, ::String) at ./Base.jl:380
-   [35] include(::Module, ::String) at ./Base.jl:368
-   [36] top-level scope at /home/jack/.julia/packages/TestSetExtensions/lB7xG/src/TestSetExtensions.jl:40
-   [37] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
-   [38] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [39] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
-   [40] include(::String) at ./client.jl:457
-   [41] top-level scope at ./none:12
-   [42] eval(::Module, ::Any) at ./boot.jl:331
-   [43] exec_options(::Base.JLOptions) at ./client.jl:272
-   [44] _start() at ./client.jl:506
-  caused by [exception 1]
-  MethodError: no method matching func_ef2b649ae6e5cce843bee1f134f6a2d8554bf464()
-  The applicable method may be too new: running in world age 28126, while current world is 28133.
-  Closest candidates are:
-    func_ef2b649ae6e5cce843bee1f134f6a2d8554bf464() at /tmp/jl_genie_build_LwgDXt/GenieViews/f85e94a36c80bb3762853502bfac086b4364a243.jl:3 (method too new to be called from this world context.)
-  Stacktrace:
-   [1] Genie.Renderer.WebRenderable(::typeof(Main.##260.##264.func_ef2b649ae6e5cce843bee1f134f6a2d8554bf464)) at /home/jack/.julia/packages/Genie/rqHFz/src/Renderer.jl:158
-   [2] |>(::Function, ::Type{T} where T) at ./operators.jl:834
-   [3] render(::Type{MIME{Symbol("text/html")}}, ::String; context::Module, layout::Nothing, vars::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:371
-   [4] html(::String; context::Module, status::Int64, headers::Dict{String,String}, layout::Nothing, forceparse::Bool, vars::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:426
-   [5] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:64
-   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [7] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:52
-   [8] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:124
-   [9] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
-   [10] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:51
-   [11] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [12] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_advanced_html_rendering.jl:3
-   [13] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:124
-   [14] top-level scope at /home/jack/.julia/packages/SafeTestsets/A83XK/src/SafeTestsets.jl:23
-   [15] include(::Function, ::Module, ::String) at ./Base.jl:380
-   [16] include(::Module, ::String) at ./Base.jl:368
-   [17] top-level scope at /home/jack/.julia/packages/TestSetExtensions/lB7xG/src/TestSetExtensions.jl:40
-   [18] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
-   [19] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [20] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/runtests.jl:9
-   [21] include(::String) at ./client.jl:457
-   [22] top-level scope at ./none:12
-   [23] eval(::Module, ::Any) at ./boot.jl:331
-   [24] exec_options(::Base.JLOptions) at ./client.jl:272
-   [25] _start() at ./client.jl:506
-  
-=====================================================
-
+tests_advanced_html_rendering: ...
 tests_advanced_select_rendering: .
 tests_assets_rendering: ...
 tests_basic_rendering: ......................
@@ -474,7 +217,7 @@ Web Server running at http://127.0.0.1:8000
 tests_files_vars_rendering: ..............
 tests_flax_control_flow_rendering: ..
 tests_flax_views_rendering: ......
-tests_fullstack_app: [?25l    Fetching: [>                                        ]  0.0 %    Fetching: [=======>                                 ]  15.1 %    Fetching: [====================>                    ]  49.0 %    Fetching: [===========================>             ]  67.1 %[2K[?25h
+tests_fullstack_app: 
  _____         _
 |   __|___ ___|_|___
 |  |  | -_|   | | -_|
@@ -496,206 +239,117 @@ Ready!
 Web Server starting at http://127.0.0.1:8000 
 
 Web Server running at http://127.0.0.1:8000 
-[ Info: 2020-09-23 21:26:27 New controller created at /tmp/jl_HxjNMD/fullstack_test/app/resources/foo/FooController.jl
-...┌ Error: 2020-09-23 21:26:27 Base.IOError("listen: address already in use (EADDRINUSE)", -98)
+[ Info: 2020-09-25 02:25:06 New controller created at /tmp/jl_DJ6Efs/fullstack_test/app/resources/foo/FooController.jl
+...┌ Error: 2020-09-25 02:25:07 Base.IOError("listen: address already in use (EADDRINUSE)", -98)
 └ @ Genie.AppServer ~/.julia/packages/Genie/rqHFz/src/AppServer.jl:79
-┌ Warning: 2020-09-23 21:26:27 Sessions folder /tmp/jl_HxjNMD/fullstack_test/sessions does not exist
+┌ Warning: 2020-09-25 02:25:07 Sessions folder /tmp/jl_DJ6Efs/fullstack_test/sessions does not exist
 └ @ Genie.FileSession ~/.julia/packages/Genie/rqHFz/src/session_adapters/FileSession.jl:15
-[ Info: 2020-09-23 21:26:27 Creating sessions folder at /tmp/jl_HxjNMD/fullstack_test/sessions
-[ Info: 2020-09-23 21:26:28 /test 200
+[ Info: 2020-09-25 02:25:07 Creating sessions folder at /tmp/jl_DJ6Efs/fullstack_test/sessions
+[ Info: 2020-09-25 02:25:07 /test 200
 .
-tests_genie_generators: [ Info: 2020-09-23 21:26:28 Done! New app created at /tmp/jl_qlEvoX
-[ Info: 2020-09-23 21:26:28 Changing active directory to /tmp/jl_qlEvoX
-[ Info: 2020-09-23 21:26:28 Installing app dependencies
-┌ Info: 2020-09-23 21:26:29 Your new Genie app is ready!
+tests_genie_generators: [ Info: 2020-09-25 02:25:08 Done! New app created at /tmp/jl_9ag4v6
+[ Info: 2020-09-25 02:25:08 Changing active directory to /tmp/jl_9ag4v6
+[ Info: 2020-09-25 02:25:08 Installing app dependencies
+┌ Info: 2020-09-25 02:25:08 Your new Genie app is ready!
 │         Run 
 │ julia> Genie.loadapp() 
 │ to load the app's environment
 │         and then 
 │ julia> up() 
 └ to start the web server on port 8000.
-.[ Info: 2020-09-23 21:26:29 Done! New app created at /tmp/jl_dynvN2
-[ Info: 2020-09-23 21:26:29 Changing active directory to /tmp/jl_dynvN2
-[ Info: 2020-09-23 21:26:29 Installing app dependencies
-┌ Info: 2020-09-23 21:26:30 Your new Genie app is ready!
+.[ Info: 2020-09-25 02:25:09 Done! New app created at /tmp/jl_wLEjAf
+[ Info: 2020-09-25 02:25:09 Changing active directory to /tmp/jl_wLEjAf
+[ Info: 2020-09-25 02:25:09 Installing app dependencies
+┌ Info: 2020-09-25 02:25:09 Your new Genie app is ready!
 │         Run 
 │ julia> Genie.loadapp() 
 │ to load the app's environment
 │         and then 
 │ julia> up() 
 └ to start the web server on port 8000.
-..[ Info: 2020-09-23 21:26:30 Done! New app created at /tmp/jl_8KD56a
-[ Info: 2020-09-23 21:26:30 Changing active directory to /tmp/jl_8KD56a
-[ Info: 2020-09-23 21:26:30 Installing app dependencies
-┌ Info: 2020-09-23 21:26:31 Your new Genie app is ready!
+..[ Info: 2020-09-25 02:25:10 Done! New app created at /tmp/jl_TAQxKr
+[ Info: 2020-09-25 02:25:10 Changing active directory to /tmp/jl_TAQxKr
+[ Info: 2020-09-25 02:25:10 Installing app dependencies
+┌ Info: 2020-09-25 02:25:11 Your new Genie app is ready!
 │         Run 
 │ julia> Genie.loadapp() 
 │ to load the app's environment
 │         and then 
 │ julia> up() 
 └ to start the web server on port 8000.
-...[ Info: 2020-09-23 21:26:31 Done! New app created at /tmp/jl_5mcwem
-[ Info: 2020-09-23 21:26:31 Changing active directory to /tmp/jl_5mcwem
-[ Info: 2020-09-23 21:26:31 Installing app dependencies
-┌ Info: 2020-09-23 21:26:31 Your new Genie app is ready!
+...[ Info: 2020-09-25 02:25:11 Done! New app created at /tmp/jl_SguzAH
+[ Info: 2020-09-25 02:25:11 Changing active directory to /tmp/jl_SguzAH
+[ Info: 2020-09-25 02:25:11 Installing app dependencies
+┌ Info: 2020-09-25 02:25:12 Your new Genie app is ready!
 │         Run 
 │ julia> Genie.loadapp() 
 │ to load the app's environment
 │         and then 
 │ julia> up() 
 └ to start the web server on port 8000.
-...[ Info: 2020-09-23 21:26:32 New controller created at /tmp/jl_eBSigA/app/resources/yazoo/YazooController.jl
-..[ Info: 2020-09-23 21:26:32 New KazooController.jl created at /tmp/jl_9yKjYO/app/resources/kazoo/KazooController.jl
-┌ Error: 2020-09-23 21:26:32 UndefVarError(:SearchLight)
+...[ Info: 2020-09-25 02:25:12 New controller created at /tmp/jl_ZYXcw0/app/resources/yazoo/YazooController.jl
+..[ Info: 2020-09-25 02:25:12 New KazooController.jl created at /tmp/jl_EJMZ9j/app/resources/kazoo/KazooController.jl
+┌ Error: 2020-09-25 02:25:12 UndefVarError(:SearchLight)
 └ @ Genie ~/.julia/packages/Genie/rqHFz/src/genie_module.jl:39
-┌ Warning: 2020-09-23 21:26:32 Skipping SearchLight
+┌ Warning: 2020-09-25 02:25:12 Skipping SearchLight
 └ @ Genie ~/.julia/packages/Genie/rqHFz/src/genie_module.jl:40
-..[ Info: 2020-09-23 21:26:33 New task created at tasks/VavoomTask.jl
+..[ Info: 2020-09-25 02:25:13 New task created at tasks/VavoomTask.jl
 ...
 tests_html_attributes_rendering: .........................
 tests_html_rendering: ........................
 tests_js_rendering: ....
 tests_json_rendering: .
-tests_markdown_rendering: ...┌ Warning: 2020-09-23 21:27:02 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
+tests_markdown_rendering: ...┌ Warning: 2020-09-25 02:25:43 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
 └ @ string:2
-┌ Warning: 2020-09-23 21:27:02 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
+┌ Warning: 2020-09-25 02:25:44 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
 └ @ string:8
-
-=====================================================
-Template markdown rendering: Error During Test at /home/jack/.julia/packages/Genie/rqHFz/test/tests_markdown_rendering.jl:38
-  Test threw exception
-  Expression: (Html.html(filepath("views/view.jl.md"), numbers = [1, 1, 2, 3, 5, 8, 13])).body |> String == "<!DOCTYPE html><html><head></head><body><h1>There are 7</h1><p>-> 1      -> 1      -> 2      -> 3      -> 5      -> 8      -> 13</p></body></html>"
-  LoadError: MethodError: no method matching updateAstInfo(::Array{EvalCallInfo,1}, ::String, ::Bool)
-  Closest candidates are:
-    updateAstInfo(::Array{EvalCallInfo,1}, !Matched::Expr, ::Bool) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:227
-  Stacktrace:
-   [1] (::var"#updateTraceAuxillary#59"{Bool})(::Array{EvalCallInfo,1}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:112
-   [2] updateStackTraces(::Dict{Base.StackTraces.StackFrame,StackTraceInfo{Array{EvalCallInfo,1}}}, ::Int64, ::var"#57#61", ::var"#updateTraceAuxillary#59"{Bool}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:191
-   [3] updateFuncMetadata(::Array{OverrideInfo,1}, ::var"#56#60", ::Int64, ::var"#updateEvalInfoWrap#58"{Module}; auxTuple::Tuple{var"#57#61",var"#updateTraceAuxillary#59"{Bool}}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:171
-   [4] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:116
-   [5] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:830
-   [6] include_string(::Function, ::Module, ::String, ::String) at ./loading.jl:1088
-   [7] include_string at ./loading.jl:1096 [inlined] (repeats 2 times)
-   [8] include_markdown(::String; context::Module) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:211
-   [9] get_template(::String; partial::Bool, context::Module) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:265
-   [10] #render#12 at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:354 [inlined]
-   [11] render(::Type{MIME{Symbol("text/html")}}, ::FilePathsBase.PosixPath; layout::Nothing, context::Module, vars::Base.Iterators.Pairs{Symbol,Array{Int64,1},Tuple{Symbol},NamedTuple{(:numbers,),Tuple{Array{Int64,1}}}}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:381
-   [12] #html#19 at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:463 [inlined]
-   [13] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_markdown_rendering.jl:38
-   [14] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [15] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_markdown_rendering.jl:35
-  in expression starting at string:13
-  
-=====================================================
-┌ Warning: 2020-09-23 21:27:03 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
+.┌ Warning: 2020-09-25 02:25:45 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
 └ @ string:2
-┌ Warning: 2020-09-23 21:27:03 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
+┌ Warning: 2020-09-25 02:25:45 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
 └ @ string:8
-
-=====================================================
-Template markdown rendering: Error During Test at /home/jack/.julia/packages/Genie/rqHFz/test/tests_markdown_rendering.jl:39
-  Test threw exception
-  Expression: (Html.html(filepath("views/view.jl.md"), layout = filepath("views/layout.jl.html"), numbers = [1, 1, 2, 3, 5, 8, 13])).body |> String == "<!DOCTYPE html><html><head></head><body><div><h1>Layout header</h1><section><h1>There are 7</h1><p>-> 1      -> 1      -> 2      -> 3      -> 5      -> 8      -> 13</p></section><footer><h4>Layout footer</h4></footer></div></body></html>"
-  LoadError: MethodError: no method matching updateAstInfo(::Array{EvalCallInfo,1}, ::String, ::Bool)
-  Closest candidates are:
-    updateAstInfo(::Array{EvalCallInfo,1}, !Matched::Expr, ::Bool) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:227
-  Stacktrace:
-   [1] (::var"#updateTraceAuxillary#59"{Bool})(::Array{EvalCallInfo,1}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:112
-   [2] updateStackTraces(::Dict{Base.StackTraces.StackFrame,StackTraceInfo{Array{EvalCallInfo,1}}}, ::Int64, ::var"#57#61", ::var"#updateTraceAuxillary#59"{Bool}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:191
-   [3] updateFuncMetadata(::Array{OverrideInfo,1}, ::var"#56#60", ::Int64, ::var"#updateEvalInfoWrap#58"{Module}; auxTuple::Tuple{var"#57#61",var"#updateTraceAuxillary#59"{Bool}}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:171
-   [4] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:116
-   [5] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:830
-   [6] include_string(::Function, ::Module, ::String, ::String) at ./loading.jl:1088
-   [7] include_string at ./loading.jl:1096 [inlined] (repeats 2 times)
-   [8] include_markdown(::String; context::Module) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:211
-   [9] get_template(::String; partial::Bool, context::Module) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:265
-   [10] render(::FilePathsBase.PosixPath; layout::FilePathsBase.PosixPath, context::Module, vars::Base.Iterators.Pairs{Symbol,Array{Int64,1},Tuple{Symbol},NamedTuple{(:numbers,),Tuple{Array{Int64,1}}}}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:351
-   [11] render(::Type{MIME{Symbol("text/html")}}, ::FilePathsBase.PosixPath; layout::FilePathsBase.PosixPath, context::Module, vars::Base.Iterators.Pairs{Symbol,Array{Int64,1},Tuple{Symbol},NamedTuple{(:numbers,),Tuple{Array{Int64,1}}}}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:381
-   [12] #html#19 at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:463 [inlined]
-   [13] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_markdown_rendering.jl:39
-   [14] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [15] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_markdown_rendering.jl:35
-  in expression starting at string:13
-  
-=====================================================
-┌ Warning: 2020-09-23 21:27:07 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
+.┌ Warning: 2020-09-25 02:25:50 Assignment to `numbers` in soft scope is ambiguous because a global variable by the same name exists: `numbers` will be treated as a new local. Disambiguate by using `local numbers` to suppress this warning or `global numbers` to assign to the existing global variable.
 └ @ string:2
-┌ Warning: 2020-09-23 21:27:07 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
+┌ Warning: 2020-09-25 02:25:50 Assignment to `name` in soft scope is ambiguous because a global variable by the same name exists: `name` will be treated as a new local. Disambiguate by using `local name` to suppress this warning or `global name` to assign to the existing global variable.
 └ @ string:8
-
-=====================================================
-Markdown rendering with embedded variables: Error During Test at /home/jack/.julia/packages/Genie/rqHFz/test/tests_markdown_rendering.jl:47
-  Test threw exception
-  Expression: (Html.html(filepath("views/view-vars.jl.md"))).body |> String == "<!DOCTYPE html><html><head></head><body><h1>There are 7</h1><p>-> 1      -> 1      -> 2      -> 3      -> 5      -> 8      -> 13</p></body></html>"
-  LoadError: MethodError: no method matching updateAstInfo(::Array{EvalCallInfo,1}, ::String, ::Bool)
-  Closest candidates are:
-    updateAstInfo(::Array{EvalCallInfo,1}, !Matched::Expr, ::Bool) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:227
-  Stacktrace:
-   [1] (::var"#updateTraceAuxillary#59"{Bool})(::Array{EvalCallInfo,1}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:112
-   [2] updateStackTraces(::Dict{Base.StackTraces.StackFrame,StackTraceInfo{Array{EvalCallInfo,1}}}, ::Int64, ::var"#57#61", ::var"#updateTraceAuxillary#59"{Bool}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:191
-   [3] updateFuncMetadata(::Array{OverrideInfo,1}, ::var"#56#60", ::Int64, ::var"#updateEvalInfoWrap#58"{Module}; auxTuple::Tuple{var"#57#61",var"#updateTraceAuxillary#59"{Bool}}) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:171
-   [4] eval(::Module, ::Any) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/override-core/function-override.jl:116
-   [5] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:830
-   [6] include_string(::Function, ::Module, ::String, ::String) at ./loading.jl:1088
-   [7] include_string at ./loading.jl:1096 [inlined] (repeats 2 times)
-   [8] include_markdown(::String; context::Module) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:211
-   [9] get_template(::String; partial::Bool, context::Module) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:265
-   [10] #render#12 at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:354 [inlined]
-   [11] render(::Type{MIME{Symbol("text/html")}}, ::FilePathsBase.PosixPath; layout::Nothing, context::Module, vars::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:381
-   [12] #html#19 at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:463 [inlined]
-   [13] html(::FilePathsBase.PosixPath) at /home/jack/.julia/packages/Genie/rqHFz/src/renderers/Html.jl:463
-   [14] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_markdown_rendering.jl:47
-   [15] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
-   [16] top-level scope at /home/jack/.julia/packages/Genie/rqHFz/test/tests_markdown_rendering.jl:44
-  in expression starting at string:13
-  
-=====================================================
-
+.
 tests_router: 
 tests_vars_rendering: ....
 
 
-Test Summary:                                                                                | Pass  Fail  Error  Total
-Genie tests                                                                                  |  226     2      8    236
-  AppServer functionality                                                                    |    8     2            10
-    Start/stop servers                                                                       |    6     2             8
-    Update config when custom startup args                                                   |    2                   2
-  Assets functionality                                                                       |   12                  12
-  Sessions functionality                                                                     |                 1      1
-    Assets paths                                                                             |                 1      1
-  Advanced rendering                                                                         |    1            3      4
-    @foreach macro renders local variables                                                   |                 1      1
-    @foreach macro can not access module variables                                           |    1                   1
-    @foreach macro can access view variables                                                 |                 1      1
-    @foreach macro can access context variables                                              |                 1      1
-  Assets rendering                                                                           |    3                   3
-  Basic rendering                                                                            |   22                  22
-  Caching                                                                                    |    7                   7
-  App Config                                                                                 |    8                   8
-  Content negotiation                                                                        |   61            1     62
-    Response type matches request type                                                       |   24            1     25
-      Not found matches request type -- Content-Type -- custom HTML Genie page               |                 1      1
-      Not found matches request type -- Accept -- custom HTML Genie page                     |    6                   6
-      Not found matches request type -- Content-Type -- custom JSON Genie handler            |    6                   6
-      Not found matches request type -- Accept -- custom JSON Genie handler                  |    6                   6
-      Not found matches request type -- Content-Type -- custom text Genie handler            |    6                   6
-    Not found matches request type -- Content-Type -- unknown content type get same response |    6                   6
-    Not found matches request type -- Accept -- unknown content type get same response       |    6                   6
-    Custom error handler for unknown types                                                   |    9                   9
-    Custom error handler for known types                                                     |    9                   9
-    Order of accept preferences                                                              |    7                   7
-  Files vars rendering                                                                       |   14                  14
-  Control flow rendering                                                                     |    2                   2
-  HTML+Julia rendering                                                                       |    6                   6
-  Fullstack app                                                                              |    4                   4
-  Create new app                                                                             |   16                  16
-  HTML attributes rendering                                                                  |   25                  25
-  HTML rendering                                                                             |   24                  24
-  JS rendering                                                                               |    4                   4
-  JS rendering                                                                               |    1                   1
-  Markdown rendering                                                                         |    3            3      6
-    String markdown rendering                                                                |    3                   3
-    Template markdown rendering                                                              |                 2      2
-    Markdown rendering with embedded variables                                               |                 1      1
-  Router tests                                                                               |                    No tests
-  Vars rendering                                                                             |    4                   4
+Test Summary:                                                                                | Pass  Fail  Error  Broken  Total
+Genie tests                                                                                  |  231     2      2       1    236
+  AppServer functionality                                                                    |    8     2                    10
+    Start/stop servers                                                                       |    6     2                     8
+    Update config when custom startup args                                                   |    2                           2
+  Assets functionality                                                                       |   12                          12
+  Sessions functionality                                                                     |                 1              1
+    Assets paths                                                                             |                 1              1
+  Advanced rendering                                                                         |    3                    1      4
+  Assets rendering                                                                           |    3                           3
+  Basic rendering                                                                            |   22                          22
+  Caching                                                                                    |    7                           7
+  App Config                                                                                 |    8                           8
+  Content negotiation                                                                        |   61            1             62
+    Response type matches request type                                                       |   24            1             25
+      Not found matches request type -- Content-Type -- custom HTML Genie page               |                 1              1
+      Not found matches request type -- Accept -- custom HTML Genie page                     |    6                           6
+      Not found matches request type -- Content-Type -- custom JSON Genie handler            |    6                           6
+      Not found matches request type -- Accept -- custom JSON Genie handler                  |    6                           6
+      Not found matches request type -- Content-Type -- custom text Genie handler            |    6                           6
+    Not found matches request type -- Content-Type -- unknown content type get same response |    6                           6
+    Not found matches request type -- Accept -- unknown content type get same response       |    6                           6
+    Custom error handler for unknown types                                                   |    9                           9
+    Custom error handler for known types                                                     |    9                           9
+    Order of accept preferences                                                              |    7                           7
+  Files vars rendering                                                                       |   14                          14
+  Control flow rendering                                                                     |    2                           2
+  HTML+Julia rendering                                                                       |    6                           6
+  Fullstack app                                                                              |    4                           4
+  Create new app                                                                             |   16                          16
+  HTML attributes rendering                                                                  |   25                          25
+  HTML rendering                                                                             |   24                          24
+  JS rendering                                                                               |    4                           4
+  JS rendering                                                                               |    1                           1
+  Markdown rendering                                                                         |    6                           6
+  Router tests                                                                               |                            No tests
+  Vars rendering                                                                             |    4                           4

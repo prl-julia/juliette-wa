@@ -53,7 +53,7 @@ Stacktrace:
 during initialization of module SymPy
 in expression starting at /home/jack/.julia/packages/Soss/sRBrv/src/symbolic.jl:5
 in expression starting at /home/jack/.julia/packages/Soss/sRBrv/src/Soss.jl:34
-ERROR: LoadError: Failed to precompile Soss [8ce77f84-9b61-11e8-39ff-d17a774bf41c] to /home/jack/.julia/compiled/v1.5/Soss/vXX0U_cf2gZ.ji.
+ERROR: LoadError: Failed to precompile Soss [8ce77f84-9b61-11e8-39ff-d17a774bf41c] to /home/jack/.julia/compiled/v1.5/Soss/vXX0U_IzxD7.ji.
 Stacktrace:
  [1] error(::String) at ./error.jl:33
  [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1290
@@ -69,7 +69,7 @@ No Changes to `~/.julia/environments/v1.5/Project.toml`
 No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Soss
-Status `/tmp/jl_AaOcit/Project.toml`
+Status `/tmp/jl_4iiGbk/Project.toml`
   [0bf59076] AdvancedHMC v0.1.0
   [76274a88] Bijectors v0.4.0
   [163ba53b] DiffResults v0.0.4
@@ -101,7 +101,7 @@ Status `/tmp/jl_AaOcit/Project.toml`
   [9a3f8284] Random
   [10745b16] Statistics
   [8dfed614] Test
-Status `/tmp/jl_AaOcit/Manifest.toml`
+Status `/tmp/jl_4iiGbk/Manifest.toml`
   [398f06c4] AbstractLattices v0.2.1
   [79e6a3ab] Adapt v2.2.0
   [0bf59076] AdvancedHMC v0.1.0

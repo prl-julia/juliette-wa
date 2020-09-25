@@ -1,7 +1,18 @@
 {
   "eval_info": {
-    "call_count": 21,
+    "call_count": 56,
     "stack_traces": [
+      {
+        "count": 33,
+        "last_call": "eval at Distributions.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [top (gen)]": 33
+            }
+          ]
+        }
+      },
       {
         "count": 6,
         "last_call": "top-level scope at functions.jl:15",
@@ -46,6 +57,17 @@
       },
       {
         "count": 2,
+        "last_call": "top-level scope at Suppressor.jl:45 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
         "last_call": "eval at Gadfly.jl:1 [inlined]",
         "auxillary": {
           "ast_heads": [
@@ -74,14 +96,11 @@
       },
       {
         "count": 2,
-        "last_call": "eval at JLD2.jl:1 [inlined]",
+        "last_call": "top-level scope at Suppressor.jl:30 [inlined]",
         "auxillary": {
           "ast_heads": [
             {
-              "include [top]": 2
-            },
-            {
-              "const [top]": 2
+              "= [fun (gen)]": 2
             }
           ]
         }
@@ -95,12 +114,72 @@
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},8],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},20],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},30],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":false,\"inQuote\":true}},36],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},8]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},20],[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},26],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":false,\"inQuote\":true}},36],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":false,\"inQuote\":false}},8],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},66],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},8]]"
     }
   },
   "invokelatest_info": {
-    "call_count": 11,
+    "call_count": 69,
     "stack_traces": [
+      {
+        "count": 20,
+        "last_call": "_pyjlwrap_call(::Function, ::Ptr{PyCall.PyObject_struct}, ::Ptr{PyCall.PyObject_struct}) at callback.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "gcf",
+              "count": 20
+            }
+          ]
+        }
+      },
+      {
+        "count": 19,
+        "last_call": "save(::FileIO.Formatted, ::Any, ::Vararg{Any,N} where N; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:230",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "save",
+              "count": 19
+            }
+          ]
+        }
+      },
+      {
+        "count": 15,
+        "last_call": "load(::FileIO.Formatted, ::Any; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:202",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "load",
+              "count": 15
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": "#3 at require.jl:19 [inlined]",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#2",
+              "count": 1
+            },
+            {
+              "function_name": "#71",
+              "count": 1
+            },
+            {
+              "function_name": "#41",
+              "count": 1
+            },
+            {
+              "function_name": "#4",
+              "count": 1
+            }
+          ]
+        }
+      },
       {
         "count": 1,
         "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:69",
@@ -127,18 +206,6 @@
       },
       {
         "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
         "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
         "auxillary": {
           "function_names": [
@@ -152,18 +219,6 @@
       {
         "count": 1,
         "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:72",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "do_artifact_str",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
         "auxillary": {
           "function_names": [
             {
@@ -232,13 +287,65 @@
             }
           ]
         }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:29",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
       }
     ],
     "func_specific_data": {
       "function_names": [
         {
+          "function_name": "gcf",
+          "count": 20
+        },
+        {
+          "function_name": "save",
+          "count": 19
+        },
+        {
+          "function_name": "load",
+          "count": 15
+        },
+        {
           "function_name": "do_artifact_str",
           "count": 11
+        },
+        {
+          "function_name": "#2",
+          "count": 1
+        },
+        {
+          "function_name": "#71",
+          "count": 1
+        },
+        {
+          "function_name": "#41",
+          "count": 1
+        },
+        {
+          "function_name": "#4",
+          "count": 1
         }
       ]
     }

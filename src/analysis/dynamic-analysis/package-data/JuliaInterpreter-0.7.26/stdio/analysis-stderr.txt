@@ -1,10 +1,8 @@
-#=#=#                                                                         ###############################                                           44.3%######################################################################## 100.0%
-#=#=#                                                                         ###                                                                        5.1%######################################################################## 100.0%
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-Updating `/tmp/jl_ijj3hc/Project.toml`
+Updating `/tmp/jl_MhQoiT/Project.toml`
   [682c06a0] + JSON v0.21.1
-No Changes to `/tmp/jl_ijj3hc/Manifest.toml`
+No Changes to `/tmp/jl_MhQoiT/Manifest.toml`
 ┌ Warning: Assignment to `frame` in soft scope is ambiguous because a global variable by the same name exists: `frame` will be treated as a new local. Disambiguate by using `local frame` to suppress this warning or `global frame` to assign to the existing global variable.
 └ @ ~/.julia/packages/JuliaInterpreter/CPmYX/test/interpret.jl:474
 ┌ Warning: Assignment to `frame` in soft scope is ambiguous because a global variable by the same name exists: `frame` will be treated as a new local. Disambiguate by using `local frame` to suppress this warning or `global frame` to assign to the existing global variable.
@@ -19,9 +17,9 @@ No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing JuliaInterpreter
-Status `/tmp/jl_ijj3hc/Project.toml`
+Status `/tmp/jl_MhQoiT/Project.toml`
   [da1fd8a2] CodeTracking v0.5.12
-  [a93c6f00] DataFrames v0.21.7
+  [a93c6f00] DataFrames v0.20.2
   [aa1ae85d] JuliaInterpreter v0.7.26
   [70df011a] TableReader v0.4.0
   [48a634ad] Tensors v1.4.3
@@ -35,18 +33,18 @@ Status `/tmp/jl_ijj3hc/Project.toml`
   [2f01184e] SparseArrays
   [8dfed614] Test
   [cf7118a7] UUIDs
-Status `/tmp/jl_ijj3hc/Manifest.toml`
-  [324d7699] CategoricalArrays v0.8.3
+Status `/tmp/jl_MhQoiT/Manifest.toml`
+  [324d7699] CategoricalArrays v0.7.7
   [da1fd8a2] CodeTracking v0.5.12
   [ba30903b] CodecXz v0.7.0
   [944b1d66] CodecZlib v0.7.0
   [6b39b394] CodecZstd v0.7.0
   [bbf7d656] CommonSubexpressions v0.3.0
-  [34da2185] Compat v3.16.0
+  [34da2185] Compat v2.2.1
   [e66e0078] CompilerSupportLibraries_jll v0.3.3+0
   [9a962f9c] DataAPI v1.3.0
-  [a93c6f00] DataFrames v0.21.7
-  [864edb3b] DataStructures v0.18.6
+  [a93c6f00] DataFrames v0.20.2
+  [864edb3b] DataStructures v0.17.20
   [e2d170a0] DataValueInterfaces v1.0.0
   [163ba53b] DiffResults v1.0.2
   [b552c78f] DiffRules v1.0.1
@@ -67,7 +65,6 @@ Status `/tmp/jl_ijj3hc/Manifest.toml`
   [a2af1166] SortingAlgorithms v0.3.1
   [276daf66] SpecialFunctions v0.10.3
   [90137ffa] StaticArrays v0.12.4
-  [856f2bd8] StructTypes v1.1.0
   [70df011a] TableReader v0.4.0
   [3783bdb8] TableTraits v1.0.0
   [bd369af6] Tables v1.0.5

@@ -1,6 +1,6 @@
 {
   "eval_info": {
-    "call_count": 3,
+    "call_count": 6,
     "stack_traces": [
       {
         "count": 3,
@@ -20,21 +20,33 @@
         "count": 1,
         "last_call": "(::Genie.Renderer.Html.var\"#479#485\")() at 1afc1d17c3777d4e2cc2f2dbf12cd10584e1c4af.jl:10",
         "auxillary": {
-          "ast_heads": []
+          "ast_heads": [
+            {
+              "value [top (gen)]": 1
+            }
+          ]
         }
       },
       {
         "count": 1,
         "last_call": "(::Genie.Renderer.Html.var\"#503#509\")() at bd445d77a42af085225d2831c3786033f690b5fa.jl:16",
         "auxillary": {
-          "ast_heads": []
+          "ast_heads": [
+            {
+              "value [top (gen)]": 1
+            }
+          ]
         }
       },
       {
         "count": 1,
         "last_call": "(::Main.##260.##264.var\"#3#9\")() at f85e94a36c80bb3762853502bfac086b4364a243.jl:16",
         "auxillary": {
-          "ast_heads": []
+          "ast_heads": [
+            {
+              "value [top (gen)]": 1
+            }
+          ]
         }
       }
     ],
@@ -46,27 +58,27 @@
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},6],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4]]"
     }
   },
   "invokelatest_info": {
-    "call_count": 111,
+    "call_count": 106,
     "stack_traces": [
       {
-        "count": 79,
+        "count": 83,
         "last_call": "include(::Function, ::Module, ::String) at Base.jl:372",
         "auxillary": {
           "function_names": [
             {
               "function_name": "#103",
-              "count": 79
+              "count": 83
             }
           ]
         }
       },
       {
         "count": 15,
-        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::Nothing) at loading.jl:715",
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
         "auxillary": {
           "function_names": [
             {
@@ -77,13 +89,13 @@
         }
       },
       {
-        "count": 14,
+        "count": 5,
         "last_call": "show_backtrace(::IOStream, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
         "auxillary": {
           "function_names": [
             {
               "function_name": "update_stacktrace_lineno!",
-              "count": 14
+              "count": 5
             }
           ]
         }
@@ -117,7 +129,7 @@
       "function_names": [
         {
           "function_name": "#103",
-          "count": 81
+          "count": 85
         },
         {
           "function_name": "watch_package",
@@ -125,7 +137,7 @@
         },
         {
           "function_name": "update_stacktrace_lineno!",
-          "count": 14
+          "count": 5
         }
       ]
     }
