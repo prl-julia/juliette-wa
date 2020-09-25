@@ -4,55 +4,64 @@
     "stack_traces": [
       {
         "count": 29,
-        "last_call": "eval at DiffEqBase.jl:1 [inlined]",
+        "last_call": "eval at ArrayInterface.jl:1 [inlined]",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 29,
-              "ast_head": "block"
+              "function [top]": 404
+            },
+            {
+              "const [top]": 29
+            },
+            {
+              "macrocall [top]": 20
             }
           ]
         }
       },
       {
         "count": 15,
-        "last_call": "eval at ArrayInterface.jl:1 [inlined]",
+        "last_call": "eval at DiffEqBase.jl:1 [inlined]",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 15,
-              "ast_head": "block"
+              "function [top]": 195
+            },
+            {
+              "const [top]": 15
+            },
+            {
+              "struct [top]": 15
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 44,
-          "ast_head": "block"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
         "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},871],[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},29],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},44],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},10]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1198],[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},30],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},88],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},40]]"
     }
   },
   "invokelatest_info": {
-    "call_count": 4,
+    "call_count": 5,
     "stack_traces": [
       {
-        "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:69",
+        "count": 2,
+        "last_call": "#3 at require.jl:19 [inlined]",
         "auxillary": {
           "function_names": [
             {
-              "function_name": "do_artifact_str",
+              "function_name": "#469",
+              "count": 1
+            },
+            {
+              "function_name": "#41",
               "count": 1
             }
           ]
@@ -60,7 +69,7 @@
       },
       {
         "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:69",
         "auxillary": {
           "function_names": [
             {
@@ -99,7 +108,15 @@
       "function_names": [
         {
           "function_name": "do_artifact_str",
-          "count": 4
+          "count": 3
+        },
+        {
+          "function_name": "#469",
+          "count": 1
+        },
+        {
+          "function_name": "#41",
+          "count": 1
         }
       ]
     }

@@ -1,0 +1,35 @@
+{
+  "eval_info": {
+    "call_count": 4,
+    "stack_traces": [
+      {
+        "count": 4,
+        "last_call": "eval at Reduce.jl:2 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [top (gen)]": 4
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},8]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

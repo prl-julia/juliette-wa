@@ -8,20 +8,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 66,
-              "ast_head": "Symbol-NamedTuple"
-            },
-            {
-              "count": 23,
-              "ast_head": "Symbol-Source"
-            },
-            {
-              "count": 6,
-              "ast_head": "Symbol-Sink"
-            },
-            {
-              "count": 3,
-              "ast_head": "Symbol-Array"
+              "variable [top (gen)]": 98
             }
           ]
         }
@@ -32,47 +19,21 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 34,
-              "ast_head": "Symbol-NamedTuple"
-            },
-            {
-              "count": 32,
-              "ast_head": "Symbol-Array"
-            },
-            {
-              "count": 8,
-              "ast_head": "Symbol-Sink"
+              "variable [top (gen)]": 74
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 100,
-          "ast_head": "Symbol-NamedTuple"
-        },
-        {
-          "count": 35,
-          "ast_head": "Symbol-Array"
-        },
-        {
-          "count": 23,
-          "ast_head": "Symbol-Source"
-        },
-        {
-          "count": 14,
-          "ast_head": "Symbol-Sink"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
         "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},172]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},344]]"
     }
   },
   "invokelatest_info": {

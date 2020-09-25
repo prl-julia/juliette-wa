@@ -8,8 +8,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 7,
-              "ast_head": "let"
+              "let [fun (gen)]": 7
             }
           ]
         }
@@ -20,31 +19,21 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "call"
+              "call [top (gen)]": 1
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 7,
-          "ast_head": "let"
-        },
-        {
-          "count": 1,
-          "ast_head": "call"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
         "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"let\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},7],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"let\",\"context\":{\"inFunDef\":false,\"inQuote\":false}},14],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2]]"
     }
   },
   "invokelatest_info": {
@@ -52,7 +41,7 @@
     "stack_traces": [
       {
         "count": 5,
-        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::Nothing) at loading.jl:715",
         "auxillary": {
           "function_names": [
             {

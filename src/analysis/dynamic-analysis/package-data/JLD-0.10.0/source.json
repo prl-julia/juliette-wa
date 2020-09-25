@@ -8,24 +8,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 81,
-              "ast_head": "Int64"
+              "other [top (gen)]": 4
             },
             {
-              "count": 8,
-              "ast_head": "Bool"
-            },
-            {
-              "count": 4,
-              "ast_head": "UInt8"
-            },
-            {
-              "count": 4,
-              "ast_head": "tuple"
-            },
-            {
-              "count": 4,
-              "ast_head": "Float64"
+              "value [top (gen)]": 97
             }
           ]
         }
@@ -36,120 +22,13 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 37,
-              "ast_head": "curly"
+              "curly [top (gen)]": 37
             },
             {
-              "count": 15,
-              "ast_head": "."
+              "other [top (gen)]": 4
             },
             {
-              "count": 4,
-              "ast_head": "where"
-            },
-            {
-              "count": 3,
-              "ast_head": "Symbol-TestType5"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-MyBT"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-EmptyTI"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-EmptyType"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-Vague"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-EmptyII"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-PaddingTest"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-TestType2"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-TypeUnionField"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-MyImmutable2"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-Type"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-EmptyTT"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-TestType7"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-GenericUnionField"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-EmptyIIOtherField"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-MyStruct"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-NALikeType"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-TestType3"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-TestType4"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-EmptyIT"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-TestType8"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-TestType1"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-TestType6"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-ObjRefType"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-TestBenchmarkGroup"
-            },
-            {
-              "count": 1,
-              "ast_head": "Symbol-EmptyImmutable"
+              "variable [top (gen)]": 43
             }
           ]
         }
@@ -160,8 +39,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 6,
-              "ast_head": "block"
+              "variable [top]": 6
+            },
+            {
+              "struct [top]": 6
             }
           ]
         }
@@ -172,8 +53,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "block"
+              "variable [top]": 2
+            },
+            {
+              "other [top]": 2
             }
           ]
         }
@@ -184,8 +67,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "block"
+              "variable [top]": 2
+            },
+            {
+              "struct [top]": 2
             }
           ]
         }
@@ -196,8 +81,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "block"
+              "function [fun]": 1
             }
           ]
         }
@@ -208,8 +92,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "struct"
+              "struct [fun (gen)]": 1
             }
           ]
         }
@@ -220,8 +103,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "macrocall"
+              "macrocall [fun (gen)]": 1
             }
           ]
         }
@@ -232,175 +114,21 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "import"
+              "useimport [top (gen)]": 1
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 81,
-          "ast_head": "Int64"
-        },
-        {
-          "count": 37,
-          "ast_head": "curly"
-        },
-        {
-          "count": 15,
-          "ast_head": "."
-        },
-        {
-          "count": 11,
-          "ast_head": "block"
-        },
-        {
-          "count": 8,
-          "ast_head": "Bool"
-        },
-        {
-          "count": 4,
-          "ast_head": "UInt8"
-        },
-        {
-          "count": 4,
-          "ast_head": "where"
-        },
-        {
-          "count": 4,
-          "ast_head": "tuple"
-        },
-        {
-          "count": 4,
-          "ast_head": "Float64"
-        },
-        {
-          "count": 3,
-          "ast_head": "Symbol-TestType5"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-MyBT"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-EmptyType"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-EmptyTI"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-EmptyII"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-Vague"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-PaddingTest"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-TestType2"
-        },
-        {
-          "count": 1,
-          "ast_head": "macrocall"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-TypeUnionField"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-MyImmutable2"
-        },
-        {
-          "count": 1,
-          "ast_head": "struct"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-Type"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-EmptyTT"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-TestType7"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-GenericUnionField"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-EmptyIIOtherField"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-MyStruct"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-NALikeType"
-        },
-        {
-          "count": 1,
-          "ast_head": "import"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-TestType3"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-TestType4"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-EmptyIT"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-TestType1"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-TestType6"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-ObjRefType"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-TestType8"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-TestBenchmarkGroup"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-EmptyImmutable"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
         "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},8],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},1],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},53],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},1],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},97],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},10],[{\"astHead\":\"curly\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},37]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},16],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},20],[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":false,\"inQuote\":false}},2],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},86],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":false,\"inQuote\":true}},2],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},194],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"curly\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},74],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},16],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":false,\"inQuote\":false}},2]]"
     }
   },
   "invokelatest_info": {

@@ -1,0 +1,15 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+Test Summary:          | Pass  Total
+Communication protocol |   21     21
+Test Summary: | Pass  Total
+Analysis      |   13     13
+Test Summary:       | Pass  Broken  Total
+Explore Expressions |  170       3    173
+Test Summary: | Pass  Broken  Total
+Reactivity    |  229       5    234
+Test Summary:  | Pass  Total
+Notebook Files |   96     96
+Test Summary: | Pass  Total
+Rich output   |   10     10
+Test Summary:     | Pass  Total
+Workspace manager |    2      2

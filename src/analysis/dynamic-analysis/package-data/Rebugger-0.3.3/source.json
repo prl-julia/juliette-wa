@@ -8,12 +8,13 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 16,
-              "ast_head": "block"
+              "call [top]": 16
             },
             {
-              "count": 5,
-              "ast_head": "macrocall"
+              "macrocall [top (gen)]": 5
+            },
+            {
+              "= [top]": 16
             }
           ]
         }
@@ -24,8 +25,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 14,
-              "ast_head": "function"
+              "function [top (gen)]": 14
             }
           ]
         }
@@ -36,8 +36,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "for"
+              "for [top (gen)]": 2
             }
           ]
         }
@@ -48,8 +47,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "block"
+              "function [top]": 1
             }
           ]
         }
@@ -60,8 +58,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "block"
+              "function [top]": 1
             }
           ]
         }
@@ -72,8 +69,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "macrocall"
+              "macrocall [top (gen)]": 1
             }
           ]
         }
@@ -84,8 +80,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "call"
+              "call [top (gen)]": 1
             }
           ]
         }
@@ -96,8 +91,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "macrocall"
+              "macrocall [top (gen)]": 1
             }
           ]
         }
@@ -108,43 +102,21 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "block"
+              "function [top]": 1
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 19,
-          "ast_head": "block"
-        },
-        {
-          "count": 14,
-          "ast_head": "function"
-        },
-        {
-          "count": 7,
-          "ast_head": "macrocall"
-        },
-        {
-          "count": 2,
-          "ast_head": "for"
-        },
-        {
-          "count": 1,
-          "ast_head": "call"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
-        "newFuncCount": 13,
+        "newFuncCount": 0,
         "bodylessFuncCount": 0,
-        "funcRedefCount": 1,
+        "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},17],[{\"astHead\":\"for\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},7],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},17],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},16]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},6],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},14],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"for\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},28],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},32],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},32]]"
     }
   },
   "invokelatest_info": {

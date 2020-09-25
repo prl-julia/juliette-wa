@@ -1,0 +1,10 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+Reduce: A Portable General-Purpose Computer Algebra System
+       3
+(i + x)
+\begin{eqnarray}
+
+{\mathrm{cosh}} \left(e^{i} z\right)/e^{i}
+
+
+\end{eqnarray}

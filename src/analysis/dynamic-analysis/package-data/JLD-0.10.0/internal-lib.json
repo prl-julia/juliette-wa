@@ -8,12 +8,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 3,
-              "ast_head": "="
+              "= [top (gen)]": 3
             },
             {
-              "count": 1,
-              "ast_head": "where"
+              "other [top (gen)]": 1
             }
           ]
         }
@@ -24,48 +22,34 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "call"
+              "call [top (gen)]": 1
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 3,
-          "ast_head": "="
-        },
-        {
-          "count": 1,
-          "ast_head": "call"
-        },
-        {
-          "count": 1,
-          "ast_head": "where"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
         "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},6]]"
     }
   },
   "invokelatest_info": {
-    "call_count": 5965,
+    "call_count": 6042,
     "stack_traces": [
       {
-        "count": 5965,
+        "count": 6042,
         "last_call": "getdict(::Array{UInt64,1}) at Profile.jl:207",
         "auxillary": {
           "function_names": [
             {
               "function_name": "identity",
-              "count": 5965
+              "count": 6042
             }
           ]
         }
@@ -75,7 +59,7 @@
       "function_names": [
         {
           "function_name": "identity",
-          "count": 5965
+          "count": 6042
         }
       ]
     }

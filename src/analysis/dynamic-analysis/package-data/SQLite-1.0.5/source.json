@@ -8,8 +8,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 32,
-              "ast_head": "block"
+              "function [top]": 32
+            },
+            {
+              "other [top]": 32
             }
           ]
         }
@@ -20,31 +22,21 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 3,
-              "ast_head": "function"
+              "-> [top (gen)]": 3
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 32,
-          "ast_head": "block"
-        },
-        {
-          "count": 3,
-          "ast_head": "function"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
-        "newFuncCount": 3,
+        "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},32],[{\"astHead\":\"->\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},32]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},64],[{\"astHead\":\"->\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},6],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},64]]"
     }
   },
   "invokelatest_info": {

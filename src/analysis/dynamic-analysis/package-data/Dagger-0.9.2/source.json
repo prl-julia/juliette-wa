@@ -1,0 +1,69 @@
+{
+  "eval_info": {
+    "call_count": 1,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "get_type(::String) at compute.jl:66",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [top (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 6,
+    "stack_traces": [
+      {
+        "count": 6,
+        "last_call": "get_osproc(::Int64) at processor.jl:147",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#354",
+              "count": 4
+            },
+            {
+              "function_name": "#119",
+              "count": 1
+            },
+            {
+              "function_name": "#128",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "#354",
+          "count": 4
+        },
+        {
+          "function_name": "#119",
+          "count": 1
+        },
+        {
+          "function_name": "#128",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

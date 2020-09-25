@@ -8,35 +8,21 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1913,
-              "ast_head": "UnionAll"
-            },
-            {
-              "count": 1628,
-              "ast_head": "DataType"
+              "value [top (gen)]": 3541
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 1913,
-          "ast_head": "UnionAll"
-        },
-        {
-          "count": 1628,
-          "ast_head": "DataType"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
         "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3541]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},7082]]"
     }
   },
   "invokelatest_info": {
@@ -44,7 +30,7 @@
     "stack_traces": [
       {
         "count": 3,
-        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::Nothing) at loading.jl:715",
         "auxillary": {
           "function_names": [
             {

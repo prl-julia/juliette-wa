@@ -4,63 +4,47 @@
     "stack_traces": [
       {
         "count": 4,
-        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:331",
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:361",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 4,
-              "ast_head": "tuple"
+              "function [top (gen)]": 4
             }
           ]
         }
       },
       {
         "count": 4,
-        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:360",
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:332",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 4,
-              "ast_head": "function"
+              "other [top (gen)]": 4
             }
           ]
         }
       },
       {
         "count": 2,
-        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:330",
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:331",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "where"
+              "other [top (gen)]": 2
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 4,
-          "ast_head": "tuple"
-        },
-        {
-          "count": 4,
-          "ast_head": "function"
-        },
-        {
-          "count": 2,
-          "ast_head": "where"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
-        "newFuncCount": 4,
+        "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},6]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},12],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},8]]"
     }
   },
   "invokelatest_info": {

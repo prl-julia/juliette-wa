@@ -1,0 +1,113 @@
+{
+  "eval_info": {
+    "call_count": 182,
+    "stack_traces": [
+      {
+        "count": 109,
+        "last_call": "#7 at DocTests.jl:220 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top]": 32
+            },
+            {
+              "call [top]": 12
+            },
+            {
+              "other [top (gen)]": 4
+            },
+            {
+              "useimport [top (gen)]": 12
+            },
+            {
+              "variable [top (gen)]": 1
+            },
+            {
+              "macrocall [top]": 14
+            },
+            {
+              "= [top]": 14
+            },
+            {
+              "struct [top]": 2
+            },
+            {
+              "variable [top]": 2
+            },
+            {
+              "other [top]": 108
+            }
+          ]
+        }
+      },
+      {
+        "count": 63,
+        "last_call": "eval_repl(::Documenter.DocTests.MutableMD2CodeBlock, ::Module, ::Dict{Symbol,Any}, ::Documenter.Documents.Document, ::String) at DocTests.jl:222",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [top (gen)]": 63
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": "get_new_sandbox(::Symbol) at Expanders.jl:724",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top (gen)]": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": "get_new_sandbox(::Symbol) at Expanders.jl:722",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top (gen)]": 5
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},64],[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},216],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},20],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},24],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},28],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},134],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},24],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},28]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 40,
+    "stack_traces": [
+      {
+        "count": 40,
+        "last_call": "result_to_string at DocTests.jl:322 [inlined]",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "show",
+              "count": 40
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "show",
+          "count": 40
+        }
+      ]
+    }
+  }
+}

@@ -14,10 +14,28 @@
     }
   },
   "invokelatest_info": {
-    "call_count": 0,
-    "stack_traces": [],
+    "call_count": 1,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
     "func_specific_data": {
-      "function_names": []
+      "function_names": [
+        {
+          "function_name": "do_artifact_str",
+          "count": 1
+        }
+      ]
     }
   }
 }

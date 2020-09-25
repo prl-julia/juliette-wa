@@ -8,27 +8,21 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 27,
-              "ast_head": "function"
+              "function [top (gen)]": 27
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 27,
-          "ast_head": "function"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
-        "newFuncCount": 27,
+        "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},27]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},54]]"
     }
   },
   "invokelatest_info": {

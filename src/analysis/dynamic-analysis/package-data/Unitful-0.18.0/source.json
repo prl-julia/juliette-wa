@@ -8,12 +8,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 45,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 45
             },
             {
-              "count": 45,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 45
             }
           ]
         }
@@ -24,12 +22,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 45,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 45
             },
             {
-              "count": 45,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 45
             }
           ]
         }
@@ -40,12 +36,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 24,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 24
             },
             {
-              "count": 24,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 24
             }
           ]
         }
@@ -56,12 +50,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 24,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 24
             },
             {
-              "count": 24,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 24
             }
           ]
         }
@@ -72,12 +64,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 24,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 24
             },
             {
-              "count": 24,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 24
             }
           ]
         }
@@ -88,12 +78,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 24,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 24
             },
             {
-              "count": 24,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 24
             }
           ]
         }
@@ -104,12 +92,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 18,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 18
             },
             {
-              "count": 18,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 18
             }
           ]
         }
@@ -120,12 +106,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 18,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 18
             },
             {
-              "count": 18,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 18
             }
           ]
         }
@@ -136,12 +120,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 18,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 18
             },
             {
-              "count": 18,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 18
             }
           ]
         }
@@ -152,12 +134,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 18,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 18
             },
             {
-              "count": 18,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 18
             }
           ]
         }
@@ -168,12 +148,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 18,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 18
             },
             {
-              "count": 18,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 18
             }
           ]
         }
@@ -184,12 +162,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 18,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 18
             },
             {
-              "count": 18,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 18
             }
           ]
         }
@@ -200,12 +176,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 9,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 9
             },
             {
-              "count": 9,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 9
             }
           ]
         }
@@ -216,12 +190,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 9,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 9
             },
             {
-              "count": 9,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 9
             }
           ]
         }
@@ -232,12 +204,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 3,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 3
             },
             {
-              "count": 3,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 3
             }
           ]
         }
@@ -248,12 +218,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 3,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 3
             },
             {
-              "count": 3,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 3
             }
           ]
         }
@@ -264,12 +232,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 3,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 3
             },
             {
-              "count": 3,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 3
             }
           ]
         }
@@ -280,12 +246,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 3,
-              "ast_head": "call"
+              "macrocall [top (gen)]": 3
             },
             {
-              "count": 3,
-              "ast_head": "macrocall"
+              "call [top (gen)]": 3
             }
           ]
         }
@@ -296,8 +260,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -308,8 +271,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -320,8 +282,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -332,8 +293,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -344,8 +304,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -356,8 +315,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -368,8 +326,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -380,8 +337,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -392,8 +348,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -404,8 +359,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -416,8 +370,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -428,8 +381,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -440,8 +392,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -452,8 +403,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -464,8 +414,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -476,8 +425,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -488,8 +436,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -500,8 +447,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -512,8 +458,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -524,8 +469,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -536,8 +480,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -548,8 +491,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -560,8 +502,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -572,8 +513,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -584,8 +524,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -596,8 +535,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -608,8 +546,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -620,8 +557,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -632,8 +568,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -644,8 +579,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -656,8 +590,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -668,8 +601,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -680,8 +612,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -692,8 +623,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -704,8 +634,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -716,8 +645,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -728,8 +656,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "call"
+              "call [top (gen)]": 2
             }
           ]
         }
@@ -740,8 +667,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "macrocall"
+              "macrocall [top (gen)]": 1
             }
           ]
         }
@@ -752,8 +678,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "const"
+              "const [top (gen)]": 1
             }
           ]
         }
@@ -764,8 +689,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "const"
+              "const [top (gen)]": 1
             }
           ]
         }
@@ -776,8 +700,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "macrocall"
+              "macrocall [top (gen)]": 1
             }
           ]
         }
@@ -788,8 +711,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "using"
+              "useimport [fun (gen)]": 1
             }
           ]
         }
@@ -800,8 +722,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "macrocall"
+              "macrocall [fun (gen)]": 1
             }
           ]
         }
@@ -812,39 +733,21 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "const"
+              "const [top (gen)]": 1
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 398,
-          "ast_head": "call"
-        },
-        {
-          "count": 327,
-          "ast_head": "macrocall"
-        },
-        {
-          "count": 3,
-          "ast_head": "const"
-        },
-        {
-          "count": 1,
-          "ast_head": "using"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
         "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},1],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},1],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},326],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},398]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},652],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":false,\"inQuote\":false}},2],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},796],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":false,\"inQuote\":false}},2],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},6]]"
     }
   },
   "invokelatest_info": {

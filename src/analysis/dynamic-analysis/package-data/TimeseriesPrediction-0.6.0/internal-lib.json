@@ -8,56 +8,34 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "const"
+              "const [top (gen)]": 1
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 1,
-          "ast_head": "const"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
         "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2]]"
     }
   },
   "invokelatest_info": {
-    "call_count": 38,
+    "call_count": 34,
     "stack_traces": [
       {
-        "count": 35,
+        "count": 33,
         "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
         "auxillary": {
           "function_names": [
             {
               "function_name": "loadpkg",
-              "count": 35
-            }
-          ]
-        }
-      },
-      {
-        "count": 2,
-        "last_call": "foreach at abstractarray.jl:2009 [inlined]",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "#498",
-              "count": 1
-            },
-            {
-              "function_name": "#21",
-              "count": 1
+              "count": 33
             }
           ]
         }
@@ -79,15 +57,7 @@
       "function_names": [
         {
           "function_name": "loadpkg",
-          "count": 36
-        },
-        {
-          "function_name": "#498",
-          "count": 1
-        },
-        {
-          "function_name": "#21",
-          "count": 1
+          "count": 34
         }
       ]
     }

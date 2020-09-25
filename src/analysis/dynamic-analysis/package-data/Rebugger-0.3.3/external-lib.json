@@ -8,8 +8,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 36,
-              "ast_head": "global"
+              "other [top (gen)]": 36
             }
           ]
         }
@@ -20,8 +19,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 26,
-              "ast_head": "const"
+              "const [top (gen)]": 26
             }
           ]
         }
@@ -32,8 +30,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 20,
-              "ast_head": "function"
+              "function [top (gen)]": 20
             }
           ]
         }
@@ -44,8 +41,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 18,
-              "ast_head": "="
+              "= [top (gen)]": 18
             }
           ]
         }
@@ -56,20 +52,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 4,
-              "ast_head": "function"
-            }
-          ]
-        }
-      },
-      {
-        "count": 4,
-        "last_call": "methods_by_execution!(::Any, ::Revise.CodeTrackingMethodInfo, ::Dict{Module,Array{Expr,1}}, ::Module, ::Expr; always_rethrow::Bool, define::Bool, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:skip_include,),Tuple{Bool}}}) at lowered.jl:81",
-        "auxillary": {
-          "ast_heads": [
-            {
-              "count": 4,
-              "ast_head": "block"
+              "function [top (gen)]": 4
             }
           ]
         }
@@ -80,8 +63,21 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 4,
-              "ast_head": "tuple"
+              "other [top (gen)]": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": "methods_by_execution!(::Any, ::Revise.CodeTrackingMethodInfo, ::Dict{Module,Array{Expr,1}}, ::Module, ::Expr; always_rethrow::Bool, define::Bool, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:skip_include,),Tuple{Bool}}}) at lowered.jl:81",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [top]": 3
+            },
+            {
+              "useimport [top]": 1
             }
           ]
         }
@@ -92,51 +88,21 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "module"
+              "module [top (gen)]": 2
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 36,
-          "ast_head": "global"
-        },
-        {
-          "count": 26,
-          "ast_head": "const"
-        },
-        {
-          "count": 24,
-          "ast_head": "function"
-        },
-        {
-          "count": 18,
-          "ast_head": "="
-        },
-        {
-          "count": 4,
-          "ast_head": "block"
-        },
-        {
-          "count": 4,
-          "ast_head": "tuple"
-        },
-        {
-          "count": 2,
-          "ast_head": "module"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
-        "newFuncCount": 4,
-        "bodylessFuncCount": 20,
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},24],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},29],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},40],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},18]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},6],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},80],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},48],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},52],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},36]]"
     }
   },
   "invokelatest_info": {

@@ -1,0 +1,131 @@
+{
+  "eval_info": {
+    "call_count": 203,
+    "stack_traces": [
+      {
+        "count": 121,
+        "last_call": "eval at Franklin.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [top (gen)]": 20
+            },
+            {
+              "variable [top (gen)]": 1
+            },
+            {
+              "value [top (gen)]": 60
+            },
+            {
+              "call [top (gen)]": 40
+            }
+          ]
+        }
+      },
+      {
+        "count": 54,
+        "last_call": "(::Franklin.var\"#77#79\"{Module,Array{Any,1},Int64})() at run.jl:64",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [top (gen)]": 16
+            },
+            {
+              "other [top (gen)]": 4
+            },
+            {
+              "useimport [top (gen)]": 7
+            },
+            {
+              "const [top (gen)]": 1
+            },
+            {
+              "value [top (gen)]": 2
+            },
+            {
+              "macrocall [top (gen)]": 1
+            },
+            {
+              "include [top (gen)]": 1
+            },
+            {
+              "call [top (gen)]": 22
+            }
+          ]
+        }
+      },
+      {
+        "count": 20,
+        "last_call": "resolve_code_block(::SubString{String}) at codeblock.jl:119",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [top]": 20
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": "(::Franklin.var\"#72#74\"{String})() at module.jl:37",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "module [top (gen)]": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "eval(::Expr) at Franklin.jl:1",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at module.jl:14",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "top-level scope at module.jl:21",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [top (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},34],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},124],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},10],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},124],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},14],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},48],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},40],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

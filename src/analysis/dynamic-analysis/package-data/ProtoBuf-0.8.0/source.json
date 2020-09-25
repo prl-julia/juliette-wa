@@ -1,67 +1,14 @@
 {
   "eval_info": {
-    "call_count": 13284,
+    "call_count": 13313,
     "stack_traces": [
       {
-        "count": 13242,
+        "count": 13271,
         "last_call": "eval at ProtoBuf.jl:1 [inlined]",
         "auxillary": {
           "ast_heads": [
             {
-              "count": 7453,
-              "ast_head": "Symbol-read_varint"
-            },
-            {
-              "count": 1498,
-              "ast_head": "Symbol-read_string"
-            },
-            {
-              "count": 1151,
-              "ast_head": "Symbol-write_varint"
-            },
-            {
-              "count": 604,
-              "ast_head": "Symbol-write_fixed"
-            },
-            {
-              "count": 604,
-              "ast_head": "Symbol-read_fixed"
-            },
-            {
-              "count": 455,
-              "ast_head": "Symbol-readproto"
-            },
-            {
-              "count": 400,
-              "ast_head": "Symbol-write_svarint"
-            },
-            {
-              "count": 400,
-              "ast_head": "Symbol-read_svarint"
-            },
-            {
-              "count": 354,
-              "ast_head": "Symbol-writeproto"
-            },
-            {
-              "count": 106,
-              "ast_head": "Symbol-read_bool"
-            },
-            {
-              "count": 106,
-              "ast_head": "Symbol-write_bool"
-            },
-            {
-              "count": 101,
-              "ast_head": "Symbol-write_string"
-            },
-            {
-              "count": 8,
-              "ast_head": "Symbol-read_map"
-            },
-            {
-              "count": 2,
-              "ast_head": "Symbol-read_bytes"
+              "variable [top (gen)]": 13271
             }
           ]
         }
@@ -72,12 +19,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 20,
-              "ast_head": "Symbol-Add"
-            },
-            {
-              "count": 20,
-              "ast_head": "Symbol-Mul"
+              "variable [top (gen)]": 40
             }
           ]
         }
@@ -88,99 +30,24 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "Symbol-ListValue"
+              "curly [top (gen)]": 1
             },
             {
-              "count": 1,
-              "ast_head": "curly"
+              "variable [top (gen)]": 1
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 7453,
-          "ast_head": "Symbol-read_varint"
-        },
-        {
-          "count": 1498,
-          "ast_head": "Symbol-read_string"
-        },
-        {
-          "count": 1151,
-          "ast_head": "Symbol-write_varint"
-        },
-        {
-          "count": 604,
-          "ast_head": "Symbol-write_fixed"
-        },
-        {
-          "count": 604,
-          "ast_head": "Symbol-read_fixed"
-        },
-        {
-          "count": 455,
-          "ast_head": "Symbol-readproto"
-        },
-        {
-          "count": 400,
-          "ast_head": "Symbol-write_svarint"
-        },
-        {
-          "count": 400,
-          "ast_head": "Symbol-read_svarint"
-        },
-        {
-          "count": 354,
-          "ast_head": "Symbol-writeproto"
-        },
-        {
-          "count": 106,
-          "ast_head": "Symbol-read_bool"
-        },
-        {
-          "count": 106,
-          "ast_head": "Symbol-write_bool"
-        },
-        {
-          "count": 101,
-          "ast_head": "Symbol-write_string"
-        },
-        {
-          "count": 20,
-          "ast_head": "Symbol-Mul"
-        },
-        {
-          "count": 20,
-          "ast_head": "Symbol-Add"
-        },
-        {
-          "count": 8,
-          "ast_head": "Symbol-read_map"
-        },
-        {
-          "count": 2,
-          "ast_head": "Symbol-read_bytes"
-        },
-        {
-          "count": 1,
-          "ast_head": "Symbol-ListValue"
-        },
-        {
-          "count": 1,
-          "ast_head": "curly"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
         "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},13283],[{\"astHead\":\"curly\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"curly\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},26624]]"
     }
   },
   "invokelatest_info": {
