@@ -1,7 +1,24 @@
 {
   "eval_info": {
-    "call_count": 79,
+    "call_count": 87,
     "stack_traces": [
+      {
+        "count": 41,
+        "last_call": "eval at DiffEqBase.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top]": 833
+            },
+            {
+              "const [top]": 41
+            },
+            {
+              "struct [top]": 29
+            }
+          ]
+        }
+      },
       {
         "count": 40,
         "last_call": "eval at ArrayInterface.jl:1 [inlined]",
@@ -20,18 +37,15 @@
         }
       },
       {
-        "count": 39,
-        "last_call": "eval at DiffEqBase.jl:1 [inlined]",
+        "count": 6,
+        "last_call": "eval at Latexify.jl:1 [inlined]",
         "auxillary": {
           "ast_heads": [
             {
-              "function [top]": 831
+              "include [top]": 6
             },
             {
-              "const [top]": 39
-            },
-            {
-              "struct [top]": 29
+              "const [top]": 6
             }
           ]
         }
@@ -45,17 +59,21 @@
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2546],[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},58],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},158],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},40]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2550],[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},12],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},174],[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},58],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},40]]"
     }
   },
   "invokelatest_info": {
-    "call_count": 14,
+    "call_count": 19,
     "stack_traces": [
       {
-        "count": 6,
+        "count": 9,
         "last_call": "#3 at require.jl:19 [inlined]",
         "auxillary": {
           "function_names": [
+            {
+              "function_name": "#107",
+              "count": 1
+            },
             {
               "function_name": "#23",
               "count": 1
@@ -73,11 +91,19 @@
               "count": 1
             },
             {
+              "function_name": "#108",
+              "count": 1
+            },
+            {
               "function_name": "#495",
               "count": 1
             },
             {
-              "function_name": "#107",
+              "function_name": "#111",
+              "count": 1
+            },
+            {
+              "function_name": "#525",
               "count": 1
             }
           ]
@@ -98,6 +124,30 @@
       {
         "count": 1,
         "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:69",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:339",
         "auxillary": {
           "function_names": [
             {
@@ -133,7 +183,7 @@
       },
       {
         "count": 1,
-        "last_call": "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
+        "last_call": "__init__() at x86_64-linux-gnu.jl:197",
         "auxillary": {
           "function_names": [
             {
@@ -147,15 +197,23 @@
     "func_specific_data": {
       "function_names": [
         {
+          "function_name": "do_artifact_str",
+          "count": 6
+        },
+        {
           "function_name": "identity",
           "count": 4
         },
         {
-          "function_name": "do_artifact_str",
-          "count": 4
+          "function_name": "#23",
+          "count": 1
         },
         {
-          "function_name": "#23",
+          "function_name": "#35",
+          "count": 1
+        },
+        {
+          "function_name": "#107",
           "count": 1
         },
         {
@@ -167,7 +225,7 @@
           "count": 1
         },
         {
-          "function_name": "#35",
+          "function_name": "#108",
           "count": 1
         },
         {
@@ -175,7 +233,11 @@
           "count": 1
         },
         {
-          "function_name": "#107",
+          "function_name": "#111",
+          "count": 1
+        },
+        {
+          "function_name": "#525",
           "count": 1
         }
       ]

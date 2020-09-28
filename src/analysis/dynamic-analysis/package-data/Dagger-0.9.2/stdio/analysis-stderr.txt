@@ -1,8 +1,8 @@
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-Updating `/tmp/jl_JlFK76/Project.toml`
+Updating `/tmp/jl_xxemiy/Project.toml`
   [682c06a0] + JSON v0.21.1
-Updating `/tmp/jl_JlFK76/Manifest.toml`
+Updating `/tmp/jl_xxemiy/Manifest.toml`
   [682c06a0] + JSON v0.21.1
   [69de0a69] + Parsers v1.0.10
   [ade2ca70] + Dates
@@ -20,13 +20,13 @@ Worker 4 terminated.
 Worker 5 terminated.
 ┌ Warning: Worker 5 died on thunk 3295, rescheduling work
 └ @ Dagger.Sch ~/.julia/packages/Dagger/4Yyj2/src/scheduler.jl:128
-Worker 7 terminated.
-┌ Warning: Worker 7 died on thunk 3301, rescheduling work
-└ @ Dagger.Sch ~/.julia/packages/Dagger/4Yyj2/src/scheduler.jl:128
 Worker 6 terminated.
 ┌ Warning: Worker 6 died on thunk 3299, rescheduling work
 └ @ Dagger.Sch ~/.julia/packages/Dagger/4Yyj2/src/scheduler.jl:128
-┌ Warning: Worker 6 died on thunk 3301, rescheduling work
+Worker 7 terminated.
+┌ Warning: Worker 7 died on thunk 3301, rescheduling work
+└ @ Dagger.Sch ~/.julia/packages/Dagger/4Yyj2/src/scheduler.jl:128
+┌ Warning: Worker 7 died on thunk 3299, rescheduling work
 └ @ Dagger.Sch ~/.julia/packages/Dagger/4Yyj2/src/scheduler.jl:128
 Worker 8 terminated.
 ┌ Warning: Worker 8 died on thunk 3308, rescheduling work
@@ -50,7 +50,7 @@ No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Dagger
-Status `/tmp/jl_JlFK76/Project.toml`
+Status `/tmp/jl_xxemiy/Project.toml`
   [d58978e5] Dagger v0.9.2
   [f9f48841] MemPool v0.3.1
   [2913bbd2] StatsBase v0.32.2
@@ -63,7 +63,7 @@ Status `/tmp/jl_JlFK76/Project.toml`
   [2f01184e] SparseArrays
   [10745b16] Statistics
   [8dfed614] Test
-Status `/tmp/jl_JlFK76/Manifest.toml`
+Status `/tmp/jl_xxemiy/Manifest.toml`
   [d58978e5] Dagger v0.9.2
   [9a962f9c] DataAPI v1.3.0
   [864edb3b] DataStructures v0.17.20

@@ -1,10 +1,11 @@
+#=#=#                                                                         ######                                                                     8.8%######################################################################## 100.0%
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
 No Changes to `~/.julia/environments/v1.5/Project.toml`
 No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Pluto
-Status `/tmp/jl_CnrgRe/Project.toml`
+Status `/tmp/jl_E4L2Hy/Project.toml`
   [cd3eb016] HTTP v0.8.19
   [682c06a0] JSON v0.21.1
   [99f44e22] MsgPack v1.1.0
@@ -20,7 +21,7 @@ Status `/tmp/jl_CnrgRe/Project.toml`
   [6462fe0b] Sockets
   [8dfed614] Test
   [cf7118a7] UUIDs
-Status `/tmp/jl_CnrgRe/Manifest.toml`
+Status `/tmp/jl_E4L2Hy/Manifest.toml`
   [cd3eb016] HTTP v0.8.19
   [83e8ac13] IniFile v0.5.0
   [682c06a0] JSON v0.21.1

@@ -1,0 +1,94 @@
+{
+  "eval_info": {
+    "call_count": 9,
+    "stack_traces": [
+      {
+        "count": 5,
+        "last_call": "func(::Module, ::IRTools.Inner.IR) at eval.jl:17",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top (gen)]": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": "refresh(::typeof(roundtrip)) at dynamo.jl:125",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top]": 6
+            },
+            {
+              "local [top]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "define_typeinf_code2() at reflection.jl:21",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},12],[{\"astHead\":\"local\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},6],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},12]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 3,
+    "stack_traces": [
+      {
+        "count": 3,
+        "last_call": "evalir(::Module, ::IRTools.Inner.IR, ::Any) at eval.jl:24",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##274",
+              "count": 1
+            },
+            {
+              "function_name": "##259",
+              "count": 1
+            },
+            {
+              "function_name": "##258",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "##274",
+          "count": 1
+        },
+        {
+          "function_name": "##259",
+          "count": 1
+        },
+        {
+          "function_name": "##258",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

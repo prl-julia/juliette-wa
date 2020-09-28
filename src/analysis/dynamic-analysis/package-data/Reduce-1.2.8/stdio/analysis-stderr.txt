@@ -3,9 +3,9 @@ WARNING: ignoring conflicting import of Algebra.length into Main
 WARNING: ignoring conflicting import of Algebra.map into Main
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-Updating `/tmp/jl_3Nm1GL/Project.toml`
+Updating `/tmp/jl_ZrCeWa/Project.toml`
   [682c06a0] + JSON v0.21.1
-Updating `/tmp/jl_3Nm1GL/Manifest.toml`
+Updating `/tmp/jl_ZrCeWa/Manifest.toml`
   [682c06a0] + JSON v0.21.1
   [69de0a69] + Parsers v1.0.10
   [ade2ca70] + Dates
@@ -21,7 +21,7 @@ No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Reduce
-Status `/tmp/jl_3Nm1GL/Project.toml`
+Status `/tmp/jl_ZrCeWa/Project.toml`
   [a8e43f4a] AbstractTensors v0.6.2
   [9dda63f9] ForceImport v0.0.3
   [93e0c654] Reduce v1.2.8
@@ -30,13 +30,13 @@ Status `/tmp/jl_3Nm1GL/Project.toml`
   [37e2e46d] LinearAlgebra
   [3fa0cd96] REPL
   [8dfed614] Test
-Status `/tmp/jl_3Nm1GL/Manifest.toml`
+Status `/tmp/jl_ZrCeWa/Manifest.toml`
   [398f06c4] AbstractLattices v0.2.1
   [a8e43f4a] AbstractTensors v0.6.2
   [9dda63f9] ForceImport v0.0.3
   [93e0c654] Reduce v1.2.8
   [b873ce64] ReplMaker v0.2.3
-  [90137ffa] StaticArrays v0.11.1
+  [90137ffa] StaticArrays v0.12.4
   [a4af3ec5] SyntaxTree v1.0.1
   [2a0f44e3] Base64
   [8ba89e20] Distributed

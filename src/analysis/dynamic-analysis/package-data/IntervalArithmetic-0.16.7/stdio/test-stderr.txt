@@ -9,19 +9,19 @@ No Changes to `~/.julia/environments/v1.5/Project.toml`
 No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing IntervalArithmetic
-Status `/tmp/jl_JnAyni/Project.toml`
+Status `/tmp/jl_sSVLjl/Project.toml`
   [96374032] CRlibm v0.8.0
   [fa42c844] FastRounding v0.2.0
   [d1acc4aa] IntervalArithmetic v0.16.7
   [f27b6e38] Polynomials v0.6.1
   [3cdcf5f2] RecipesBase v0.7.0
   [3cc68bcd] SetRounding v0.2.0
-  [90137ffa] StaticArrays v0.11.1
+  [90137ffa] StaticArrays v0.12.4
   [37e2e46d] LinearAlgebra
   [d6f4376e] Markdown
   [9a3f8284] Random
   [8dfed614] Test
-Status `/tmp/jl_JnAyni/Manifest.toml`
+Status `/tmp/jl_sSVLjl/Manifest.toml`
   [96374032] CRlibm v0.8.0
   [90fa49ef] ErrorfreeArithmetic v0.5.2
   [fa42c844] FastRounding v0.2.0
@@ -29,7 +29,7 @@ Status `/tmp/jl_JnAyni/Manifest.toml`
   [f27b6e38] Polynomials v0.6.1
   [3cdcf5f2] RecipesBase v0.7.0
   [3cc68bcd] SetRounding v0.2.0
-  [90137ffa] StaticArrays v0.11.1
+  [90137ffa] StaticArrays v0.12.4
   [2a0f44e3] Base64
   [8ba89e20] Distributed
   [b77e0a4c] InteractiveUtils

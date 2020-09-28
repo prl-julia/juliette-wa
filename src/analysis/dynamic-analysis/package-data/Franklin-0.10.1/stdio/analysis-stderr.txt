@@ -1,8 +1,8 @@
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-Updating `/tmp/jl_evpV3W/Project.toml`
+Updating `/tmp/jl_4BPXQC/Project.toml`
   [682c06a0] + JSON v0.21.1
-No Changes to `/tmp/jl_evpV3W/Manifest.toml`
+No Changes to `/tmp/jl_4BPXQC/Manifest.toml`
 ERROR: LoadError: LoadError: Some tests did not pass: 0 passed, 1 failed, 0 errored, 0 broken.
 in expression starting at /home/jack/.julia/packages/Franklin/deTgm/test/eval/extras.jl:50
 in expression starting at /home/jack/.julia/packages/Franklin/deTgm/test/runtests.jl:55
@@ -14,7 +14,7 @@ No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Franklin
-Status `/tmp/jl_evpV3W/Project.toml`
+Status `/tmp/jl_4BPXQC/Project.toml`
   [a93c6f00] DataFrames v0.20.2
   [864edb3b] DataStructures v0.17.20
   [ffbed154] DocStringExtensions v0.8.3
@@ -36,7 +36,7 @@ Status `/tmp/jl_evpV3W/Project.toml`
   [3fa0cd96] REPL
   [9a3f8284] Random
   [8dfed614] Test
-Status `/tmp/jl_evpV3W/Manifest.toml`
+Status `/tmp/jl_4BPXQC/Manifest.toml`
   [324d7699] CategoricalArrays v0.7.7
   [34da2185] Compat v2.2.1
   [a8cc5b0e] Crayons v4.0.4

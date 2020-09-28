@@ -26,20 +26,20 @@
     }
   },
   "invokelatest_info": {
-    "call_count": 197,
+    "call_count": 228,
     "stack_traces": [
       {
-        "count": 186,
+        "count": 217,
         "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
         "auxillary": {
           "function_names": [
             {
               "function_name": "loadpkg",
-              "count": 102
+              "count": 119
             },
             {
               "function_name": "#58",
-              "count": 84
+              "count": 98
             }
           ]
         }
@@ -77,11 +77,11 @@
       "function_names": [
         {
           "function_name": "loadpkg",
-          "count": 107
+          "count": 124
         },
         {
           "function_name": "#58",
-          "count": 89
+          "count": 103
         },
         {
           "function_name": "identity",

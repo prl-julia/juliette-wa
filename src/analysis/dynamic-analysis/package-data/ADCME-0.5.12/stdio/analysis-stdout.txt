@@ -1,0 +1,221 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+# All requested packages already installed.
+
+/home/jack/bin/julia
+[✔️] Julia version
+[✔️] TensorFlow version
+[✔️] TensorFlow-Probability version
+[✔️] Python executable file
+[✔️] Julia path
+[✘] Dynamic library path (Optional)
+
+[Reason]
+/home/jack/.julia/adcme/lib is not in LD_LIBRARY_PATH. This MAY break custom operator compilation. However, in most cases, ADCME automatic fixes this problem for you.
+
+
+[Instruction]
+Add your dynamic library path path to your environment path, e.g. (Unix systems) 
+
+export LD_LIBRARY_PATH=/home/jack/.julia/adcme/lib:$LD_LIBRARY_PATH
+
+For convenience, you can add the above line to your `~/.bashrc` (Linux or Apple).
+For Windows, you need to add it to PATH instead of LD_LIBRARY_PATH.
+
+[✔️] Memory Address Length =  64
+[✘] Binaries path
+
+[Reason]
+/home/jack/.julia/adcme/bin is not in PATH. This path contains compatible tools such as a GCC compiler, `cmake`, `make`, or any other tools you want to use directly from terminal.
+However, setting the path is NOT a requirement, and ADCME works totally fine without any action.
+
+
+[Instruction]
+(Optional) Add your binary path to your environment path, e.g. (Unix systems) 
+
+export PATH=/home/jack/.julia/adcme/bin:$PATH
+
+For convenience, you can add the above line to your `~/.bashrc` (Linux) or `~/.bash_profile` (Apple).
+For Windows, you need to add it to system environment.
+
+[✘] GPU Support (Optional)
+
+[Reason]
+ADCME is not compiled against GPU.
+
+
+[Instruction]
+If you intend to use GPU, set ENV["GPU"] = 1 and then rebuild ADCME.
+
+Dependency file is located at: /home/jack/.julia/packages/ADCME/PJIHk/src/../deps/deps.jl
+Test Summary:               | Pass  Total
+indexing for rank 3 tensors |    3      3
+Load library operator (with gradient, multiple outputs = true): /home/jack/.julia/packages/ADCME/PJIHk/deps/Plugin/ExtendedNN/build/libExtendedNn.so ==> extended_nn
+Test Summary: | Pass  Total
+fcx           |    4      4
+Test Summary: | Pass  Total
+dropout       |    2      2
+Test Summary:      | Pass  Total
+sparse_constructor |    7      7
+Test Summary:     | Pass  Total
+sparse_arithmetic |    4      4
+Test Summary:  | Pass  Total
+sparse_adjoint |    1      1
+Test Summary: | Pass  Total
+sparse_mul    |    6      6
+Test Summary:    | Pass  Total
+sparse_vcat_hcat |    2      2
+Test Summary:   | Pass  Total
+sparse_indexing |    3      3
+Test Summary: | Pass  Total
+sparse_solve  |    1      1
+k = 1
+k = 2
+k = 3
+k = 4
+k = 5
+k = 6
+k = 7
+k = 8
+k = 9
+k = 10
+v = [0.3548330135258888, 0.81603049948088, 0.38641028701938107, 0.6092199346079479, 0.7896545575386269, 0.9705360824786438, 0.08613487065221359, 0.8812355246775636, 0.17615957495439627, 0.589548990137948]
+Test Summary:    | Pass  Total
+sparse_assembler |    3      3
+Test Summary:       | Pass  Total
+sparse_least_square |    1      1
+Test Summary:  | Pass  Total
+sparse mat mul |    3      3
+Test Summary: | Pass  Total
+spdiag        |    3      3
+Test Summary: | Pass  Total
+spzero        |    2      2
+Test Summary:   | Pass  Total
+sparse indexing |    1      1
+Test Summary: | Pass  Total
+sum           |    3      3
+Test Summary:   | Pass  Total
+dense_to_sparse |    2      2
+Test Summary: | Pass  Total
+spdiagm       |    4      4
+Test Summary: | Pass  Total
+hvcat         |    1      1
+Test Summary: | Pass  Total
+find          |    6      6
+Test Summary:             | Pass  Total
+sparse scatter update add |    2      2
+Test Summary:   | Pass  Total
+constant sparse |    1      1
+Test Summary: | Pass  Total
+get index     |    1      1
+Test Summary:                  | Pass  Total
+sparse_factorization_and_solve |    2      2
+Test Summary:         | Pass  Total
+sparse solver warning |    1      1
+Test Summary:  | Pass  Total
+sparse promote |    6      6
+Test Summary: | Pass  Total
+trisolve      |    1      1
+Test Summary: | Broken  Total
+random        |     47     47
+Test Summary: | Pass  Total
+save and load |    1      1
+Test Summary:   | Pass  Total
+psave and pload |    1      1
+tensorboard --logdir="/tmp/jl_kSJpkS" --port 0
+tensorboard --logdir="/tmp/jl_9htyxn" --port 0
+Test Summary: |
+diary         | No tests
+Test Summary: | Pass  Total
+indexing      |   28     28
+Test Summary: | Pass  Total
+Variables     |    4      4
+Test Summary: | Pass  Total
+tensor        |    2      2
+Test Summary: | Pass  Total
+Hessian       |    2      2
+Test Summary: | Pass  Total
+Jacobian      |    1      1
+Test Summary: | Pass  Total
+gradients_v   |    1      1
+Test Summary:   | Pass  Total
+size and length |    9      9
+Test Summary: | Pass  Total
+copy          |    1      1
+Test Summary: | Pass  Total
+getindex      |    1      1
+Test Summary:     | Pass  Total
+convert_to_tensor |    5      5
+Test Summary: | Pass  Total
+cell          |    2      2
+Test Summary:    | Pass  Total
+special matrices |    2      2
+Test Summary:   | Pass  Total
+ones/zeros like |    2      2
+Test Summary:      | Pass  Total
+gradient_magnitude |    1      1
+Test Summary:        | Pass  Total
+indexing with tensor |    6      6
+Test Summary: | Pass  Total
+ndims         |    4      4
+Test Summary:      | Pass  Total
+gradients_colocate |    1      1
+Test Summary: | Pass  Total
+*             |   27     27
+Test Summary: | Pass  Total
+reshape       |    6      6
+Test Summary:  | Pass  Total
+scatter_update |    9      9
+Test Summary: | Pass  Total
+adjoint       |    4      4
+Test Summary:           | Pass  Total
+scatter_update_pyobject |    9      9
+Test Summary: | Pass  Total
+Operators     |   14     14
+Test Summary:   | Pass  Total
+Other Operators |    1      1
+Test Summary:    | Pass  Total
+Concat and stack |    6      6
+Test Summary: | Pass  Total
+Vectorize     |    5      5
+Test Summary: | Pass  Total
+Solve         |    3      3
+Test Summary: | Pass  Total
+diff          |    3      3
+Test Summary: | Pass  Total
+clip          |    1      1
+Test Summary: | Pass  Total
+map           |    1      1
+Test Summary: | Pass  Total
+diag          |    2      2
+Test Summary: | Pass  Total
+dot           |    3      3
+Test Summary: | Pass  Total
+prod          |    1      1
+Test Summary: | Pass  Total
+findall       |    2      2
+Test Summary: | Pass  Total
+svd           |    1      1
+Test Summary: | Pass  Total
+vector        |    1      1
+Test Summary: | Pass  Total
+repeat        |    6      6
+pmap: Error During Test at /home/jack/.julia/packages/ADCME/PJIHk/test/ops.jl:336
+  Got exception outside of a @test
+  UndefVarError: pmap not defined
+  Stacktrace:
+   [1] top-level scope at /home/jack/.julia/packages/ADCME/PJIHk/test/ops.jl:338
+   [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/jack/.julia/packages/ADCME/PJIHk/test/ops.jl:337
+   [4] include(::String) at ./client.jl:457
+   [5] top-level scope at /home/jack/.julia/packages/ADCME/PJIHk/test/runtests.jl:28
+   [6] include(::String) at ./client.jl:457
+   [7] top-level scope at ./none:12
+   [8] eval(::Module, ::Any) at ./boot.jl:331
+   [9] exec_options(::Base.JLOptions) at ./client.jl:272
+   [10] _start() at ./client.jl:506
+  
+Test Summary: | Error  Total
+pmap          |     1      1

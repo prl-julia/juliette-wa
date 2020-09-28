@@ -40,16 +40,16 @@
     }
   },
   "invokelatest_info": {
-    "call_count": 6042,
+    "call_count": 6089,
     "stack_traces": [
       {
-        "count": 6042,
+        "count": 6089,
         "last_call": "getdict(::Array{UInt64,1}) at Profile.jl:207",
         "auxillary": {
           "function_names": [
             {
               "function_name": "identity",
-              "count": 6042
+              "count": 6089
             }
           ]
         }
@@ -59,7 +59,7 @@
       "function_names": [
         {
           "function_name": "identity",
-          "count": 6042
+          "count": 6089
         }
       ]
     }

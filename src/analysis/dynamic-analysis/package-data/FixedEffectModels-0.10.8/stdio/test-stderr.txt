@@ -7,12 +7,12 @@ No Changes to `~/.julia/environments/v1.5/Project.toml`
 No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing FixedEffectModels
-Status `/tmp/jl_ZyUf1V/Project.toml`
+Status `/tmp/jl_gxSbwZ/Project.toml`
   [336ed68f] CSV v0.6.1
   [861a8166] Combinatorics v0.7.0
   [a93c6f00] DataFrames v0.20.2
-  [31c24e10] Distributions v0.21.9
-  [1a297f60] FillArrays v0.5.0
+  [31c24e10] Distributions v0.21.12
+  [1a297f60] FillArrays v0.8.14
   [9d5cd8c9] FixedEffectModels v0.10.8
   [c8885935] FixedEffects v0.7.3
   [189a3867] Reexport v0.2.0
@@ -24,8 +24,8 @@ Status `/tmp/jl_ZyUf1V/Project.toml`
   [9a3f8284] Random
   [10745b16] Statistics
   [8dfed614] Test
-Status `/tmp/jl_ZyUf1V/Manifest.toml`
-  [621f4979] AbstractFFTs v0.4.1
+Status `/tmp/jl_gxSbwZ/Manifest.toml`
+  [621f4979] AbstractFFTs v0.5.0
   [79e6a3ab] Adapt v1.1.0
   [7d9fca2a] Arpack v0.4.0
   [68821587] Arpack_jll v3.5.0+3
@@ -45,9 +45,9 @@ Status `/tmp/jl_ZyUf1V/Manifest.toml`
   [a93c6f00] DataFrames v0.20.2
   [864edb3b] DataStructures v0.17.20
   [e2d170a0] DataValueInterfaces v1.0.0
-  [31c24e10] Distributions v0.21.9
+  [31c24e10] Distributions v0.21.12
   [48062228] FilePathsBase v0.6.2
-  [1a297f60] FillArrays v0.5.0
+  [1a297f60] FillArrays v0.8.14
   [9d5cd8c9] FixedEffectModels v0.10.8
   [c8885935] FixedEffects v0.7.3
   [0c68f7d7] GPUArrays v2.0.1

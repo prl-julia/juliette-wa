@@ -49,47 +49,47 @@
     }
   },
   "invokelatest_info": {
-    "call_count": 27407,
+    "call_count": 27387,
     "stack_traces": [
       {
-        "count": 9421,
+        "count": 9414,
         "last_call": "message_handler_loop(::Sockets.TCPSocket, ::Sockets.TCPSocket, ::Bool) at process_messages.jl:185",
         "auxillary": {
           "function_names": [
             {
               "function_name": "deserialize_msg",
-              "count": 9421
+              "count": 9414
             }
           ]
         }
       },
       {
-        "count": 9383,
+        "count": 9376,
         "last_call": "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.JoinPGRPMsg, ::Bool) at messages.jl:185",
         "auxillary": {
           "function_names": [
             {
               "function_name": "serialize_msg",
-              "count": 9383
+              "count": 9376
             }
           ]
         }
       },
       {
-        "count": 8594,
+        "count": 8588,
         "last_call": "(::Distributed.var\"#125#126\"{Distributed.ProcessGroup,Distributed.RRID,typeof(Distributed.def_rv_channel)})() at remotecall.jl:175",
         "auxillary": {
           "function_names": [
             {
               "function_name": "def_rv_channel",
-              "count": 8594
+              "count": 8588
             }
           ]
         }
       },
       {
         "count": 8,
-        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::Nothing) at loading.jl:715",
+        "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
         "auxillary": {
           "function_names": [
             {
@@ -116,15 +116,15 @@
       "function_names": [
         {
           "function_name": "deserialize_msg",
-          "count": 9421
+          "count": 9414
         },
         {
           "function_name": "serialize_msg",
-          "count": 9383
+          "count": 9376
         },
         {
           "function_name": "def_rv_channel",
-          "count": 8594
+          "count": 8588
         },
         {
           "function_name": "_require_callback",

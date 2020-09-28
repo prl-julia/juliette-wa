@@ -1,0 +1,99 @@
+{
+  "eval_info": {
+    "call_count": 10,
+    "stack_traces": [
+      {
+        "count": 4,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:361",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top (gen)]": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:332",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [top (gen)]": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:331",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [top (gen)]": 2
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},12],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},8]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 19,
+    "stack_traces": [
+      {
+        "count": 19,
+        "last_call": "bypass_builtins(::JuliaInterpreter.Frame, ::Expr, ::Int64) at interpret.jl:179",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##compiledcall#256",
+              "count": 8
+            },
+            {
+              "function_name": "##compiledcall#255",
+              "count": 5
+            },
+            {
+              "function_name": "##compiledcall#253",
+              "count": 3
+            },
+            {
+              "function_name": "##compiledcall#254",
+              "count": 3
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "##compiledcall#256",
+          "count": 8
+        },
+        {
+          "function_name": "##compiledcall#255",
+          "count": 5
+        },
+        {
+          "function_name": "##compiledcall#253",
+          "count": 3
+        },
+        {
+          "function_name": "##compiledcall#254",
+          "count": 3
+        }
+      ]
+    }
+  }
+}

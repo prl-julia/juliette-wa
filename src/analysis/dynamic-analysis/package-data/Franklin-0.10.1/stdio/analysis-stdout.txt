@@ -1,7 +1,4 @@
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
-✘ Couldn't find highlight.js (``/home/jack/.julia/artifacts/a42f5c72a500a8683c08a5e818d27a104fc9cd5a/bin/node` -e "require('highlight.js')"` failed).
-→ It is required for pre-rendering highlight.js but is not necessary to run Franklin (cf docs).
-→ After installing any missing component, please re-build the package (cf docs).
 UTILS-1
 Test Summary: | Pass  Total
 set_paths!    |    9      9

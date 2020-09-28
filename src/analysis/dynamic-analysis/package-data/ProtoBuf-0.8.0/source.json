@@ -1,14 +1,14 @@
 {
   "eval_info": {
-    "call_count": 13313,
+    "call_count": 13136,
     "stack_traces": [
       {
-        "count": 13271,
+        "count": 13094,
         "last_call": "eval at ProtoBuf.jl:1 [inlined]",
         "auxillary": {
           "ast_heads": [
             {
-              "variable [top (gen)]": 13271
+              "variable [top (gen)]": 13094
             }
           ]
         }
@@ -47,7 +47,7 @@
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"curly\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},26624]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"curly\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},26270]]"
     }
   },
   "invokelatest_info": {

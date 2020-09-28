@@ -348,4 +348,4 @@ Test Summary: | Pass  Total
 PCAEmbedding  |    3      3
 
 Test took total time of:
-227.484 seconds or 3.791 minutes
+207.516 seconds or 3.459 minutes

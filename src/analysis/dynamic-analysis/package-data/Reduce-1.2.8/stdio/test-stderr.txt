@@ -8,7 +8,7 @@ No Changes to `~/.julia/environments/v1.5/Project.toml`
 No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Reduce
-Status `/tmp/jl_Pp9te3/Project.toml`
+Status `/tmp/jl_4fmjzU/Project.toml`
   [a8e43f4a] AbstractTensors v0.6.2
   [9dda63f9] ForceImport v0.0.3
   [93e0c654] Reduce v1.2.8
@@ -17,13 +17,13 @@ Status `/tmp/jl_Pp9te3/Project.toml`
   [37e2e46d] LinearAlgebra
   [3fa0cd96] REPL
   [8dfed614] Test
-Status `/tmp/jl_Pp9te3/Manifest.toml`
+Status `/tmp/jl_4fmjzU/Manifest.toml`
   [398f06c4] AbstractLattices v0.2.1
   [a8e43f4a] AbstractTensors v0.6.2
   [9dda63f9] ForceImport v0.0.3
   [93e0c654] Reduce v1.2.8
   [b873ce64] ReplMaker v0.2.3
-  [90137ffa] StaticArrays v0.11.1
+  [90137ffa] StaticArrays v0.12.4
   [a4af3ec5] SyntaxTree v1.0.1
   [2a0f44e3] Base64
   [8ba89e20] Distributed

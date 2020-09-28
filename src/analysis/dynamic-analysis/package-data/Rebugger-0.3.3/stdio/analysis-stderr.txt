@@ -1,26 +1,8 @@
-WARNING: Method definition transition(Function, REPL.LineEdit.PrefixSearchState, Any) in module LineEdit at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/REPL/src/LineEdit.jl:1726 overwritten in module HeaderREPLs at /home/jack/.julia/packages/HeaderREPLs/xrHVE/src/HeaderREPLs.jl:326.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition activate(REPL.LineEdit.TextInterface, REPL.LineEdit.ModeState, Any, REPL.Terminals.TextTerminal) in module LineEdit at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/REPL/src/LineEdit.jl:2257 overwritten in module HeaderREPLs at /home/jack/.julia/packages/HeaderREPLs/xrHVE/src/HeaderREPLs.jl:381.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition deactivate(REPL.LineEdit.TextInterface, REPL.LineEdit.ModeState, Any, REPL.Terminals.TextTerminal) in module LineEdit at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/REPL/src/LineEdit.jl:2252 overwritten in module HeaderREPLs at /home/jack/.julia/packages/HeaderREPLs/xrHVE/src/HeaderREPLs.jl:395.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition activate(REPL.LineEdit.TextInterface, REPL.LineEdit.ModeState, Any, REPL.Terminals.TextTerminal) in module LineEdit at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/REPL/src/LineEdit.jl:2257 overwritten in module HeaderREPLs at /home/jack/.julia/packages/HeaderREPLs/xrHVE/src/HeaderREPLs.jl:381.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition transition(Function, REPL.LineEdit.PrefixSearchState, Any) in module LineEdit at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/REPL/src/LineEdit.jl:1726 overwritten in module HeaderREPLs at /home/jack/.julia/packages/HeaderREPLs/xrHVE/src/HeaderREPLs.jl:326.
-  ** incremental compilation may be fatally broken for this module **
-
-WARNING: Method definition deactivate(REPL.LineEdit.TextInterface, REPL.LineEdit.ModeState, Any, REPL.Terminals.TextTerminal) in module LineEdit at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/REPL/src/LineEdit.jl:2252 overwritten in module HeaderREPLs at /home/jack/.julia/packages/HeaderREPLs/xrHVE/src/HeaderREPLs.jl:395.
-  ** incremental compilation may be fatally broken for this module **
-
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-Updating `/tmp/jl_YUgT8w/Project.toml`
+Updating `/tmp/jl_1kxdaZ/Project.toml`
   [682c06a0] + JSON v0.21.1
-Updating `/tmp/jl_YUgT8w/Manifest.toml`
+Updating `/tmp/jl_1kxdaZ/Manifest.toml`
   [682c06a0] + JSON v0.21.1
   [69de0a69] + Parsers v1.0.10
   [a63ad114] + Mmap
@@ -39,9 +21,9 @@ No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Rebugger
-┌ Error: Pkg.Resolve.ResolverError("Unsatisfiable requirements detected for package VT100 [7774df62]:\n VT100 [7774df62] log:\n ├─possible versions are: 0.3.0-0.3.2 or uninstalled\n ├─restricted by compatibility requirements with TerminalRegressionTests [98bfdc55] to versions: 0.3.0-0.3.2\n │ └─TerminalRegressionTests [98bfdc55] log:\n │   ├─possible versions are: [0.1.0-0.1.3, 0.2.0] or uninstalled\n │   └─restricted to versions * by an explicit requirement, leaving only versions [0.1.0-0.1.3, 0.2.0]\n └─restricted by compatibility requirements with FixedPointNumbers [53c48c17] to versions: uninstalled — no versions left\n   └─FixedPointNumbers [53c48c17] log:\n     ├─possible versions are: [0.5.0-0.5.3, 0.6.0-0.6.1, 0.7.0-0.7.1, 0.8.0-0.8.4] or uninstalled\n     └─restricted to versions 0.8.4 by an explicit requirement, leaving only versions 0.8.4", nothing)
+┌ Error: Pkg.Resolve.ResolverError("Unsatisfiable requirements detected for package VT100 [7774df62]:\n VT100 [7774df62] log:\n ├─possible versions are: 0.3.0-0.3.2 or uninstalled\n ├─restricted by compatibility requirements with TerminalRegressionTests [98bfdc55] to versions: 0.3.0-0.3.2\n │ └─TerminalRegressionTests [98bfdc55] log:\n │   ├─possible versions are: [0.1.0-0.1.3, 0.2.0] or uninstalled\n │   └─restricted to versions * by an explicit requirement, leaving only versions [0.1.0-0.1.3, 0.2.0]\n └─restricted by compatibility requirements with FixedPointNumbers [53c48c17] to versions: uninstalled — no versions left\n   └─FixedPointNumbers [53c48c17] log:\n     ├─possible versions are: [0.5.0-0.5.3, 0.6.0-0.6.1, 0.7.0-0.7.1, 0.8.0-0.8.4] or uninstalled\n     └─restricted to versions 0.6.1 by an explicit requirement, leaving only versions 0.6.1", nothing)
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1415
-Status `/tmp/jl_YUgT8w/Project.toml`
+Status `/tmp/jl_1kxdaZ/Project.toml`
   [da1fd8a2] CodeTracking v0.5.12
   [5ae59095] Colors v0.9.5
   [54d51984] HeaderREPLs v0.3.0
@@ -54,7 +36,7 @@ Status `/tmp/jl_YUgT8w/Project.toml`
   [3fa0cd96] REPL
   [8dfed614] Test
   [cf7118a7] UUIDs
-Status `/tmp/jl_YUgT8w/Manifest.toml`
+Status `/tmp/jl_1kxdaZ/Manifest.toml`
   [da1fd8a2] CodeTracking v0.5.12
   [3da002f7] ColorTypes v0.7.5
   [5ae59095] Colors v0.9.5

@@ -1,13 +1,10 @@
-┌ Info: 
-│ 
-│     Welcome to Pluto v0.11.14 🎈
-│     Start a notebook server using:
-│ 
-│   julia> Pluto.run()
-│ 
-│     Have a look at the FAQ:
-│     https://github.com/fonsp/Pluto.jl/wiki
-└ 
+   Updating registry at `~/.julia/registries/General`
+  Resolving package versions...
+No Changes to `/tmp/jl_wkd2V9/Project.toml`
+No Changes to `/tmp/jl_wkd2V9/Manifest.toml`
+ERROR: LoadError: LoadError: Some tests did not pass: 214 passed, 3 failed, 12 errored, 5 broken.
+in expression starting at /home/jack/.julia/packages/Pluto/upwxH/test/React.jl:6
+in expression starting at /home/jack/.julia/packages/Pluto/upwxH/test/runtests.jl:6
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
 No Changes to `~/.julia/environments/v1.5/Project.toml`
@@ -16,7 +13,7 @@ No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Pluto
-Status `/tmp/jl_NQgfnK/Project.toml`
+Status `/tmp/jl_wkd2V9/Project.toml`
   [cd3eb016] HTTP v0.8.19
   [682c06a0] JSON v0.21.1
   [99f44e22] MsgPack v1.1.0
@@ -32,7 +29,7 @@ Status `/tmp/jl_NQgfnK/Project.toml`
   [6462fe0b] Sockets
   [8dfed614] Test
   [cf7118a7] UUIDs
-Status `/tmp/jl_NQgfnK/Manifest.toml`
+Status `/tmp/jl_wkd2V9/Manifest.toml`
   [cd3eb016] HTTP v0.8.19
   [83e8ac13] IniFile v0.5.0
   [682c06a0] JSON v0.21.1
@@ -60,7 +57,7 @@ Status `/tmp/jl_NQgfnK/Manifest.toml`
   [8dfed614] Test
   [cf7118a7] UUIDs
   [4ec0a83e] Unicode
-ERROR: LoadError: Package Pluto errored during testing (received signal: HUP)
+ERROR: LoadError: Package Pluto errored during testing
 Stacktrace:
  [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
  [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1566

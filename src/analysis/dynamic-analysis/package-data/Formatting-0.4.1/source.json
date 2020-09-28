@@ -8,12 +8,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 500063,
-              "ast_head": "call"
+              "variable [top (gen)]": 2
             },
             {
-              "count": 2,
-              "ast_head": "Symbol-abs2"
+              "call [top (gen)]": 500063
             }
           ]
         }
@@ -24,8 +22,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 21,
-              "ast_head": "function"
+              "-> [top (gen)]": 21
             }
           ]
         }
@@ -36,8 +33,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 6,
-              "ast_head": "function"
+              "-> [top (gen)]": 6
             }
           ]
         }
@@ -48,8 +44,7 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 2,
-              "ast_head": "function"
+              "-> [top (gen)]": 2
             }
           ]
         }
@@ -60,35 +55,21 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 1,
-              "ast_head": "function"
+              "-> [top (gen)]": 1
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 500063,
-          "ast_head": "call"
-        },
-        {
-          "count": 30,
-          "ast_head": "function"
-        },
-        {
-          "count": 2,
-          "ast_head": "Symbol-abs2"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
-        "newFuncCount": 30,
+        "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"->\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},30],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},500063]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"->\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},60],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},1000126],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4]]"
     }
   },
   "invokelatest_info": {

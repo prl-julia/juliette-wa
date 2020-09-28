@@ -172,8 +172,8 @@ trace1.trace[4] = (SemanticModels.Dubstep.construct, (Main.TraceTest.ODEProblem,
 trace2.trace[4] = (Main.TraceTest.ODEProblem, Main.TraceTest.sir_ode2, [0.99, 0.01, 0.0], (0.0, 200.0), [0.1, 0.05]) => Any[(Core.apply_type, (Main.TraceTest.ODEProblem, typeof(Main.TraceTest.sir_ode2), Array{Float64,1}, Tuple{Float64,Float64}, Array{Float64,1})), (Main.TraceTest.ODEProblem{typeof(Main.TraceTest.sir_ode2),Array{Float64,1},Tuple{Float64,Float64},Array{Float64,1}}, Main.TraceTest.sir_ode2, [0.99, 0.01, 0.0], (0.0, 200.0), [0.1, 0.05]) => Any[(Core.apply_type, (Main.TraceTest.ODEProblem, typeof(Main.TraceTest.sir_ode2), Array{Float64,1}, Tuple{Float64,Float64}, Array{Float64,1})), (convert, typeof(Main.TraceTest.sir_ode2), Main.TraceTest.sir_ode2) => Any[], (convert, Array{Float64,1}, [0.99, 0.01, 0.0]) => Any[(isa, [0.99, 0.01, 0.0], Array{Float64,1}) => Any[]], (convert, Array{Float64,1}, [0.1, 0.05]) => Any[(isa, [0.1, 0.05], Array{Float64,1}) => Any[]]]]
 Test Summary:       | Pass  Total
 Running cassette.jl |    9      9
- 26.920427 seconds (55.45 M allocations: 2.688 GiB, 9.16% gc time)
-  0.000603 seconds (585 allocations: 53.766 KiB)
+ 26.678448 seconds (55.71 M allocations: 2.704 GiB, 9.61% gc time)
+  0.000521 seconds (585 allocations: 53.766 KiB)
 s(100) = [0.4121865100059893, 0.14969919621360972, 0.4381142937804011]
 (traces[i]).factor = 0.0
 Running transform/ode.jl: Error During Test at /home/jack/.julia/packages/SemanticModels/E5F3j/test/runtests.jl:17

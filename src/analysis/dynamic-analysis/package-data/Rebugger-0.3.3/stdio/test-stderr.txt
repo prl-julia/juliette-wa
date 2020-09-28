@@ -23,24 +23,15 @@ Stacktrace:
  [11] top-level scope at none:6
 in expression starting at /home/jack/.julia/packages/Rebugger/ApBeQ/test/interpret_ui.jl:88
 in expression starting at /home/jack/.julia/packages/Rebugger/ApBeQ/test/runtests.jl:6
-┌ Error: Rebugger initialization failed
-│   exception =
-│    EOFError: read end of file
-│    Stacktrace:
-│     [1] wait at ./asyncevent.jl:128 [inlined]
-│     [2] sleep at ./asyncevent.jl:213 [inlined]
-│     [3] rebugrepl_init() at /home/jack/.julia/packages/Rebugger/ApBeQ/src/Rebugger.jl:35
-│     [4] (::Rebugger.var"#35#36")() at /home/jack/.julia/packages/Rebugger/ApBeQ/src/Rebugger.jl:60
-└ @ Rebugger ~/.julia/packages/Rebugger/ApBeQ/src/Rebugger.jl:62
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
 No Changes to `~/.julia/environments/v1.5/Project.toml`
 No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Rebugger
-┌ Error: Pkg.Resolve.ResolverError("Unsatisfiable requirements detected for package VT100 [7774df62]:\n VT100 [7774df62] log:\n ├─possible versions are: 0.3.0-0.3.2 or uninstalled\n ├─restricted by compatibility requirements with TerminalRegressionTests [98bfdc55] to versions: 0.3.0-0.3.2\n │ └─TerminalRegressionTests [98bfdc55] log:\n │   ├─possible versions are: [0.1.0-0.1.3, 0.2.0] or uninstalled\n │   └─restricted to versions * by an explicit requirement, leaving only versions [0.1.0-0.1.3, 0.2.0]\n └─restricted by compatibility requirements with FixedPointNumbers [53c48c17] to versions: uninstalled — no versions left\n   └─FixedPointNumbers [53c48c17] log:\n     ├─possible versions are: [0.5.0-0.5.3, 0.6.0-0.6.1, 0.7.0-0.7.1, 0.8.0-0.8.4] or uninstalled\n     └─restricted to versions 0.8.4 by an explicit requirement, leaving only versions 0.8.4", nothing)
+┌ Error: Pkg.Resolve.ResolverError("Unsatisfiable requirements detected for package VT100 [7774df62]:\n VT100 [7774df62] log:\n ├─possible versions are: 0.3.0-0.3.2 or uninstalled\n ├─restricted by compatibility requirements with TerminalRegressionTests [98bfdc55] to versions: 0.3.0-0.3.2\n │ └─TerminalRegressionTests [98bfdc55] log:\n │   ├─possible versions are: [0.1.0-0.1.3, 0.2.0] or uninstalled\n │   └─restricted to versions * by an explicit requirement, leaving only versions [0.1.0-0.1.3, 0.2.0]\n └─restricted by compatibility requirements with FixedPointNumbers [53c48c17] to versions: uninstalled — no versions left\n   └─FixedPointNumbers [53c48c17] log:\n     ├─possible versions are: [0.5.0-0.5.3, 0.6.0-0.6.1, 0.7.0-0.7.1, 0.8.0-0.8.4] or uninstalled\n     └─restricted to versions 0.6.1 by an explicit requirement, leaving only versions 0.6.1", nothing)
 └ @ Pkg.Operations /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1415
-Status `/tmp/jl_faYKMJ/Project.toml`
+Status `/tmp/jl_ycncS5/Project.toml`
   [da1fd8a2] CodeTracking v0.5.12
   [5ae59095] Colors v0.9.5
   [54d51984] HeaderREPLs v0.3.0
@@ -53,7 +44,7 @@ Status `/tmp/jl_faYKMJ/Project.toml`
   [3fa0cd96] REPL
   [8dfed614] Test
   [cf7118a7] UUIDs
-Status `/tmp/jl_faYKMJ/Manifest.toml`
+Status `/tmp/jl_ycncS5/Manifest.toml`
   [da1fd8a2] CodeTracking v0.5.12
   [3da002f7] ColorTypes v0.7.5
   [5ae59095] Colors v0.9.5

@@ -8,12 +8,10 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 27,
-              "ast_head": "function"
+              "-> [top (gen)]": 27
             },
             {
-              "count": 5,
-              "ast_head": "Tuple{Expr,Expr}"
+              "value [top (gen)]": 5
             }
           ]
         }
@@ -24,88 +22,62 @@
         "auxillary": {
           "ast_heads": [
             {
-              "count": 6,
-              "ast_head": "="
+              "= [top (gen)]": 6
             },
             {
-              "count": 3,
-              "ast_head": "block"
+              "function [top]": 3
             },
             {
-              "count": 3,
-              "ast_head": "macrocall"
+              "useimport [top (gen)]": 1
             },
             {
-              "count": 1,
-              "ast_head": "using"
+              "macrocall [top (gen)]": 3
+            },
+            {
+              "useimport [top]": 6
             }
           ]
         }
       }
     ],
     "func_specific_data": {
-      "ast_heads": [
-        {
-          "count": 27,
-          "ast_head": "function"
-        },
-        {
-          "count": 6,
-          "ast_head": "="
-        },
-        {
-          "count": 5,
-          "ast_head": "Tuple{Expr,Expr}"
-        },
-        {
-          "count": 3,
-          "ast_head": "block"
-        },
-        {
-          "count": 3,
-          "ast_head": "macrocall"
-        },
-        {
-          "count": 1,
-          "ast_head": "using"
-        }
-      ],
+      "ast_heads": [],
       "func_def_types": {
-        "newFuncCount": 27,
+        "newFuncCount": 0,
         "bodylessFuncCount": 0,
         "funcRedefCount": 0,
         "miscCount": 0
       },
-      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},7],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},5],[{\"astHead\":\"->\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},27],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},3],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},6]]"
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},6],[{\"astHead\":\"->\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},54],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},12],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},10],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},6],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},12]]"
     }
   },
   "invokelatest_info": {
-    "call_count": 184,
+    "call_count": 167,
     "stack_traces": [
       {
-        "count": 68,
+        "count": 56,
         "last_call": "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
         "auxillary": {
           "function_names": [
             {
               "function_name": "loadpkg",
-              "count": 48
+              "count": 41
             },
             {
               "function_name": "_require_callback",
-              "count": 20
+              "count": 15
             }
           ]
         }
       },
       {
-        "count": 56,
+        "count": 55,
         "last_call": "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.JoinPGRPMsg, ::Bool) at messages.jl:185",
         "auxillary": {
           "function_names": [
             {
               "function_name": "serialize_msg",
-              "count": 56
+              "count": 55
             }
           ]
         }
@@ -135,30 +107,6 @@
         }
       },
       {
-        "count": 4,
-        "last_call": "foreach at abstractarray.jl:2009 [inlined]",
-        "auxillary": {
-          "function_names": [
-            {
-              "function_name": "#99",
-              "count": 1
-            },
-            {
-              "function_name": "#63",
-              "count": 1
-            },
-            {
-              "function_name": "#498",
-              "count": 1
-            },
-            {
-              "function_name": "#21",
-              "count": 1
-            }
-          ]
-        }
-      },
-      {
         "count": 3,
         "last_call": "require(::Base.PkgId) at loading.jl:931",
         "auxillary": {
@@ -179,11 +127,11 @@
       "function_names": [
         {
           "function_name": "serialize_msg",
-          "count": 56
+          "count": 55
         },
         {
           "function_name": "loadpkg",
-          "count": 50
+          "count": 43
         },
         {
           "function_name": "def_rv_channel",
@@ -195,23 +143,7 @@
         },
         {
           "function_name": "_require_callback",
-          "count": 21
-        },
-        {
-          "function_name": "#99",
-          "count": 1
-        },
-        {
-          "function_name": "#63",
-          "count": 1
-        },
-        {
-          "function_name": "#498",
-          "count": 1
-        },
-        {
-          "function_name": "#21",
-          "count": 1
+          "count": 16
         }
       ]
     }

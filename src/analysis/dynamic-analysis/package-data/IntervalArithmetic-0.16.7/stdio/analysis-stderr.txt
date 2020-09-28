@@ -1,9 +1,9 @@
 WARNING: both IntervalArithmetic and Base export "isdisjoint"; uses of it in module Main must be qualified
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-Updating `/tmp/jl_9jMHsV/Project.toml`
+Updating `/tmp/jl_yMMxcN/Project.toml`
   [682c06a0] + JSON v0.21.1
-Updating `/tmp/jl_9jMHsV/Manifest.toml`
+Updating `/tmp/jl_yMMxcN/Manifest.toml`
   [682c06a0] + JSON v0.21.1
   [69de0a69] + Parsers v1.0.10
   [ade2ca70] + Dates
@@ -22,19 +22,19 @@ No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing IntervalArithmetic
-Status `/tmp/jl_9jMHsV/Project.toml`
+Status `/tmp/jl_yMMxcN/Project.toml`
   [96374032] CRlibm v0.8.0
   [fa42c844] FastRounding v0.2.0
   [d1acc4aa] IntervalArithmetic v0.16.7
   [f27b6e38] Polynomials v0.6.1
   [3cdcf5f2] RecipesBase v0.7.0
   [3cc68bcd] SetRounding v0.2.0
-  [90137ffa] StaticArrays v0.11.1
+  [90137ffa] StaticArrays v0.12.4
   [37e2e46d] LinearAlgebra
   [d6f4376e] Markdown
   [9a3f8284] Random
   [8dfed614] Test
-Status `/tmp/jl_9jMHsV/Manifest.toml`
+Status `/tmp/jl_yMMxcN/Manifest.toml`
   [96374032] CRlibm v0.8.0
   [90fa49ef] ErrorfreeArithmetic v0.5.2
   [fa42c844] FastRounding v0.2.0
@@ -42,7 +42,7 @@ Status `/tmp/jl_9jMHsV/Manifest.toml`
   [f27b6e38] Polynomials v0.6.1
   [3cdcf5f2] RecipesBase v0.7.0
   [3cc68bcd] SetRounding v0.2.0
-  [90137ffa] StaticArrays v0.11.1
+  [90137ffa] StaticArrays v0.12.4
   [2a0f44e3] Base64
   [8ba89e20] Distributed
   [b77e0a4c] InteractiveUtils

@@ -1,0 +1,151 @@
+{
+  "eval_info": {
+    "call_count": 22,
+    "stack_traces": [
+      {
+        "count": 22,
+        "last_call": "eval at ArrayInterface.jl:1 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top]": 362
+            },
+            {
+              "const [top]": 22
+            },
+            {
+              "macrocall [top]": 20
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},724],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},44],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},40]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 9,
+    "stack_traces": [
+      {
+        "count": 3,
+        "last_call": "_pyjlwrap_call(::Function, ::Ptr{PyCall.PyObject_struct}, ::Ptr{PyCall.PyObject_struct}) at callback.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "body",
+              "count": 1
+            },
+            {
+              "function_name": "condition",
+              "count": 1
+            },
+            {
+              "function_name": "#128",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:41",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:152",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-cxx11.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:28",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu-cxx11.jl:30",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": "__init__() at x86_64-linux-gnu.jl:90",
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "do_artifact_str",
+          "count": 6
+        },
+        {
+          "function_name": "body",
+          "count": 1
+        },
+        {
+          "function_name": "condition",
+          "count": 1
+        },
+        {
+          "function_name": "#128",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

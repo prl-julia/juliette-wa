@@ -1,0 +1,35 @@
+{
+  "eval_info": {
+    "call_count": 4290,
+    "stack_traces": [
+      {
+        "count": 4290,
+        "last_call": "#86 at array.jl:0 [inlined]",
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [top (gen)]": 4290
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},8580]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

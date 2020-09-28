@@ -1,4 +1,4 @@
-#=#=#                                                                         ######                                                                     8.8%######################################################################## 100.0%
+#=#=#                                                                         #############                                                             19.1%######################################################################    98.3%######################################################################## 100.0%
 ┌ Warning: Threading tests running in serial
 └ @ Main ~/.julia/packages/Dagger/4Yyj2/test/scheduler.jl:34
 Worker 2 terminated.
@@ -41,7 +41,7 @@ No Changes to `~/.julia/environments/v1.5/Project.toml`
 No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Dagger
-Status `/tmp/jl_WXJcVA/Project.toml`
+Status `/tmp/jl_kqQIgu/Project.toml`
   [d58978e5] Dagger v0.9.2
   [f9f48841] MemPool v0.3.1
   [2913bbd2] StatsBase v0.32.2
@@ -54,7 +54,7 @@ Status `/tmp/jl_WXJcVA/Project.toml`
   [2f01184e] SparseArrays
   [10745b16] Statistics
   [8dfed614] Test
-Status `/tmp/jl_WXJcVA/Manifest.toml`
+Status `/tmp/jl_kqQIgu/Manifest.toml`
   [d58978e5] Dagger v0.9.2
   [9a962f9c] DataAPI v1.3.0
   [864edb3b] DataStructures v0.17.20
