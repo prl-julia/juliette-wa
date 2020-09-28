@@ -1,3 +1,0 @@
-### DYNAMIC ANALYSIS LINE IDENTIFIER ###
-Test Summary: | Pass  Total
-IRTools       |   22     22

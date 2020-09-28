@@ -1,26 +1,0 @@
-#=#=#                                                                         ##                                                                         2.9%##################################                                        48.4%######################################################################## 100.0%
-   Updating registry at `~/.julia/registries/General`
-  Resolving package versions...
-No Changes to `~/.julia/environments/v1.5/Project.toml`
-No Changes to `~/.julia/environments/v1.5/Manifest.toml`
-### DYNAMIC ANALYSIS LINE IDENTIFIER ###
-    Testing Formatting
-Status `/tmp/jl_95UnxK/Project.toml`
-  [59287772] Formatting v0.4.1
-  [de0858da] Printf
-  [9a3f8284] Random
-  [8dfed614] Test
-Status `/tmp/jl_95UnxK/Manifest.toml`
-  [59287772] Formatting v0.4.1
-  [2a0f44e3] Base64
-  [8ba89e20] Distributed
-  [b77e0a4c] InteractiveUtils
-  [56ddb016] Logging
-  [d6f4376e] Markdown
-  [de0858da] Printf
-  [9a3f8284] Random
-  [9e88b42a] Serialization
-  [6462fe0b] Sockets
-  [8dfed614] Test
-  [4ec0a83e] Unicode
-    Testing Formatting tests passed 
