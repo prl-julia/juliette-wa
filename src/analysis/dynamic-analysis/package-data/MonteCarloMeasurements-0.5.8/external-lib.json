@@ -1,0 +1,357 @@
+{
+  "eval_info": {
+    "call_count": 75,
+    "stack_traces": [
+      {
+        "count": 29,
+        "last_call": [
+          "eval at DiffEqBase.jl:1 [inlined]",
+          "(::DiffEqBase.var\"#500#539\")() at require.jl:67",
+          "err(::DiffEqBase.var\"#500#539\", ::Module, ::String) at require.jl:38",
+          "#499 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 783
+            },
+            {
+              "struct [fun]": 29
+            },
+            {
+              "const [fun]": 29
+            }
+          ]
+        }
+      },
+      {
+        "count": 20,
+        "last_call": [
+          "eval at ArrayInterface.jl:1 [inlined]",
+          "(::ArrayInterface.var\"#22#49\")() at require.jl:67",
+          "err(::ArrayInterface.var\"#22#49\", ::Module, ::String) at require.jl:38",
+          "#21 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 360
+            },
+            {
+              "const [fun]": 20
+            },
+            {
+              "macrocall [fun]": 20
+            }
+          ]
+        }
+      },
+      {
+        "count": 9,
+        "last_call": [
+          "eval at DiffEqBase.jl:1 [inlined]",
+          "(::DiffEqBase.var\"#506#545\")() at require.jl:67",
+          "err(::DiffEqBase.var\"#506#545\", ::Module, ::String) at require.jl:38",
+          "#505 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 72
+            },
+            {
+              "const [fun]": 9
+            }
+          ]
+        }
+      },
+      {
+        "count": 7,
+        "last_call": [
+          "eval at ArrayInterface.jl:1 [inlined]",
+          "(::ArrayInterface.var\"#43#70\")() at require.jl:67",
+          "err(::ArrayInterface.var\"#43#70\", ::Module, ::String) at require.jl:38",
+          "#42 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 42
+            },
+            {
+              "const [fun]": 7
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "eval at DiffEqBase.jl:1 [inlined]",
+          "(::DiffEqBase.var\"#497#536\")() at require.jl:67",
+          "err(::DiffEqBase.var\"#497#536\", ::Module, ::String) at require.jl:38",
+          "#496 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 6
+            },
+            {
+              "const [fun]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "eval at ArrayInterface.jl:1 [inlined]",
+          "(::ArrayInterface.var\"#25#52\")() at require.jl:67",
+          "err(::ArrayInterface.var\"#25#52\", ::Module, ::String) at require.jl:38",
+          "#24 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 6
+            },
+            {
+              "const [fun]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at ArrayInterface.jl:1 [inlined]",
+          "(::ArrayInterface.var\"#19#46\")() at require.jl:67",
+          "err(::ArrayInterface.var\"#19#46\", ::Module, ::String) at require.jl:38",
+          "#18 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            },
+            {
+              "const [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at ArrayInterface.jl:1 [inlined]",
+          "(::ArrayInterface.var\"#109#113\")() at require.jl:67",
+          "err(::ArrayInterface.var\"#109#113\", ::Module, ::String) at require.jl:38",
+          "#108 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            },
+            {
+              "const [fun]": 2
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2546],[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},58],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},150],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},40]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 19,
+    "stack_traces": [
+      {
+        "count": 10,
+        "last_call": [
+          "_plot_setup(::Plots.Plot{Plots.GRBackend}, ::Dict{Symbol,Any}, ::Array{Dict{Symbol,Any},1}) at pipeline.jl:215",
+          "_plot!(::Plots.Plot{Plots.GRBackend}, ::Dict{Symbol,Any}, ::Tuple{Particles{Float64,2000}}) at plot.jl:205",
+          "plot(::Particles{Float64,2000}; kw::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at plot.jl:57",
+          "plot at plot.jl:51 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "_create_backend_figure",
+              "count": 10
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "#3 at require.jl:19 [inlined]",
+          "iterate at generator.jl:47 [inlined]",
+          "_collect(::Array{Function,1}, ::Base.Generator{Array{Function,1},Requires.var\"#3#4\"}, ::Base.EltypeUnknown, ::Base.HasShape{1}) at array.jl:699",
+          "collect_similar at array.jl:628 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#23",
+              "count": 1
+            },
+            {
+              "function_name": "#194",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:41",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu-libgfortran4.jl:29",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu-libgfortran4.jl:69",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "_plot_setup(::Plots.Plot{Plots.GRBackend}, ::Dict{Symbol,Any}, ::Array{Dict{Symbol,Any},1}) at pipeline.jl:215",
+          "_plot!(::Plots.Plot{Plots.GRBackend}, ::Dict{Symbol,Any}, ::Tuple{Array{Particles{Float64,2000},1},Array{Particles{Float64,2000},1}}) at plot.jl:205",
+          "plot(::Array{Particles{Float64,2000},1}, ::Vararg{Array{Particles{Float64,2000},1},N} where N; kw::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:points,),Tuple{Bool}}}) at plot.jl:57",
+          "plot at plot.jl:51 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "_create_backend_figure",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "_create_backend_figure",
+          "count": 11
+        },
+        {
+          "function_name": "do_artifact_str",
+          "count": 6
+        },
+        {
+          "function_name": "#23",
+          "count": 1
+        },
+        {
+          "function_name": "#194",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,132 @@
+fatal: error thrown and no exception handler available.
+ErrorException("show(::IO, ::Type{Unprintable}) called")
+error at ./error.jl:33
+show at /home/jack/.julia/packages/PyCall/zqDXB/test/runtests.jl:698
+unknown function (ip: 0x7fe84876eda0)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2214 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2398
+show_datatype at ./show.jl:612
+show at ./show.jl:497
+unknown function (ip: 0x7fe848771dd5)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2214 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2398
+print at ./strings/io.jl:35
+unknown function (ip: 0x7fe84876ef65)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2214 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2398
+print at ./strings/io.jl:46
+unknown function (ip: 0x7fe84876ecfc)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2214 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2398
+show_tuple_as_call at ./show.jl:1788
+show_tuple_as_call at ./show.jl:1755
+unknown function (ip: 0x7fe84876dd14)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2214 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2398
+show_spec_linfo at ./stacktraces.jl:242
+#show#9 at ./stacktraces.jl:253
+show##kw at ./stacktraces.jl:253 [inlined]
+#show_trace_entry#711 at ./errorshow.jl:555
+show_trace_entry##kw at ./errorshow.jl:553
+unknown function (ip: 0x7fe84876cbaa)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2214 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2398
+show_backtrace at ./errorshow.jl:659
+#showerror#688 at ./errorshow.jl:93
+showerror##kw at ./errorshow.jl:88
+unknown function (ip: 0x7fe84a7c1806)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2231 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2398
+show_exception_stack at ./errorshow.jl:737
+display_error at ./client.jl:104
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2231 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2398
+display_error at ./client.jl:106
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2231 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2398
+jl_apply at /buildworker/worker/package_linux64/build/src/julia.h:1690 [inlined]
+do_apply at /buildworker/worker/package_linux64/build/src/builtins.c:655
+jl_f__apply_latest at /buildworker/worker/package_linux64/build/src/builtins.c:705
+#invokelatest#1 at ./essentials.jl:710 [inlined]
+invokelatest at ./essentials.jl:709 [inlined]
+_start at ./client.jl:508
+jfptr__start_43701.clone_1 at /home/jack/apps/julia-1.5.0/lib/julia/sys.so (unknown line)
+_jl_invoke at /buildworker/worker/package_linux64/build/src/gf.c:2214 [inlined]
+jl_apply_generic at /buildworker/worker/package_linux64/build/src/gf.c:2398
+jl_apply at /buildworker/worker/package_linux64/build/ui/../src/julia.h:1690 [inlined]
+true_main at /buildworker/worker/package_linux64/build/ui/repl.c:106
+main at /buildworker/worker/package_linux64/build/ui/repl.c:227
+__libc_start_main at /lib/x86_64-linux-gnu/libc.so.6 (unknown line)
+_start at /home/jack/apps/julia-1.5.0/bin/julia (unknown line)
+   Updating registry at `~/.julia/registries/General`
+  Resolving package versions...
+Updating `/tmp/jl_uTIlO4/Project.toml`
+  [682c06a0] + JSON v0.21.1
+No Changes to `/tmp/jl_uTIlO4/Manifest.toml`
+┌ Info: Python version 3.7.7 from /home/jack/.julia/adcme/lib/libpython3.7m.so.1.0, PYTHONHOME=/home/jack/.julia/adcme:/home/jack/.julia/adcme
+│ ENV[PYTHONPATH]=
+│ ENV[PYTHONHOME]=
+└ ENV[PYTHONEXECUTABLE]=
+[ Info: No virtualenv command. Skipping the test...
+ERROR: show(::IO, ::Type{Unprintable}) called
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] show(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Type{   Updating registry at `~/.julia/registries/General`
+  Resolving package versions...
+No Changes to `~/.julia/environments/v1.5/Project.toml`
+No Changes to `~/.julia/environments/v1.5/Manifest.toml`
+┌ Warning: Pkg.installed() is deprecated
+└ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+    Testing PyCall
+Status `/tmp/jl_uTIlO4/Project.toml`
+  [8f4d0f93] Conda v1.4.1
+  [1914dd2f] MacroTools v0.5.5
+  [438e738f] PyCall v1.91.4
+  [81def892] VersionParsing v1.2.0
+  [ade2ca70] Dates
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [9e88b42a] Serialization
+  [8dfed614] Test
+Status `/tmp/jl_uTIlO4/Manifest.toml`
+  [8f4d0f93] Conda v1.4.1
+  [682c06a0] JSON v0.21.1
+  [1914dd2f] MacroTools v0.5.5
+  [69de0a69] Parsers v1.0.10
+  [438e738f] PyCall v1.91.4
+  [81def892] VersionParsing v1.2.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [de0858da] Printf
+  [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
+  [8dfed614] Test
+  [4ec0a83e] Unicode
+ERROR: LoadError: Package PyCall errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1566
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:328
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:315
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65 [inlined]
+ [11] analyzePkg(::String, ::Nothing) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:14
+ [12] top-level scope at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:17
+ [13] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [14] include(::Module, ::String) at ./Base.jl:368
+ [15] exec_options(::Base.JLOptions) at ./client.jl:296
+ [16] _start() at ./client.jl:506
+in expression starting at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:17

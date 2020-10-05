@@ -1,0 +1,406 @@
+{
+  "eval_info": {
+    "call_count": 6,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": [
+          "(::Main.##260.##264.var\"#3#9\")() at f85e94a36c80bb3762853502bfac086b4364a243.jl:16",
+          "normal_element(::Main.##260.##264.var\"#3#9\", ::String, ::Array{Any,1}, ::Array{Pair{Symbol,Any},1}) at Html.jl:59",
+          "#ol#159 at none:2 [inlined]",
+          "ol at none:2 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Base.jl:39 [inlined]",
+          "main() at FullstackTest.jl:6",
+          "top-level scope at FullstackTest.jl:12",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Base.jl:39 [inlined]",
+          "main() at FullstackTest.jl:11",
+          "top-level scope at FullstackTest.jl:12",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "useimport [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::Genie.Renderer.Html.var\"#479#485\")() at 1afc1d17c3777d4e2cc2f2dbf12cd10584e1c4af.jl:10",
+          "normal_element(::Genie.Renderer.Html.var\"#479#485\", ::String, ::Array{Any,1}, ::Array{Pair{Symbol,Any},1}) at Html.jl:59",
+          "#ol#159 at none:2 [inlined]",
+          "ol at none:2 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::Genie.Renderer.Html.var\"#503#509\")() at bd445d77a42af085225d2831c3786033f690b5fa.jl:16",
+          "normal_element(::Genie.Renderer.Html.var\"#503#509\", ::String, ::Array{Any,1}, ::Array{Pair{Symbol,Any},1}) at Html.jl:59",
+          "#ol#159 at none:2 [inlined]",
+          "ol at none:2 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Base.jl:39 [inlined]",
+          "main() at FullstackTest.jl:10",
+          "top-level scope at FullstackTest.jl:12",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},6],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 105,
+    "stack_traces": [
+      {
+        "count": 46,
+        "last_call": [
+          "include(::Function, ::Module, ::String) at Base.jl:372",
+          "include at Base.jl:368 [inlined]",
+          "parseview(::String; partial::Bool, context::Module) at Html.jl:318",
+          "parseview at Html.jl:305 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#103",
+              "count": 46
+            }
+          ]
+        }
+      },
+      {
+        "count": 22,
+        "last_call": [
+          "include(::Function, ::Module, ::String) at Base.jl:372",
+          "include(::Module, ::String) at Base.jl:368",
+          "top-level scope at TestSetExtensions.jl:40",
+          "top-level scope at runtests.jl:9"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#103",
+              "count": 22
+            }
+          ]
+        }
+      },
+      {
+        "count": 10,
+        "last_call": [
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771",
+          "_require(::Base.PkgId) at loading.jl:1007",
+          "require(::Base.PkgId) at loading.jl:928"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "watch_package",
+              "count": 10
+            }
+          ]
+        }
+      },
+      {
+        "count": 10,
+        "last_call": [
+          "include(::Function, ::Module, ::String) at Base.jl:372",
+          "include at Base.jl:368 [inlined]",
+          "get_template(::String; partial::Bool, context::Module) at Html.jl:273",
+          "get_template at Html.jl:250 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#103",
+              "count": 10
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": [
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "watch_package",
+              "count": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "show_backtrace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
+          "showerror(::Base.GenericIOBuffer{Array{UInt8,1}}, ::HTTP.IOExtras.IOError, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}; backtrace::Bool) at errorshow.jl:93",
+          "(::Base.var\"#showerror##kw\")(::NamedTuple{(:backtrace,),Tuple{Bool}}, ::typeof(showerror), ::Base.GenericIOBuffer{Array{UInt8,1}}, ::HTTP.IOExtras.IOError, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:88",
+          "show_exception_stack(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Any,1}) at errorshow.jl:737"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "update_stacktrace_lineno!",
+              "count": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "include(::Function, ::Module, ::String) at Base.jl:372",
+          "include at Base.jl:368 [inlined]",
+          "include at FullstackTest.jl:1 [inlined]",
+          "main() at FullstackTest.jl:8"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#103",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "include(::Function, ::Module, ::String) at Base.jl:372",
+          "include at Base.jl:368 [inlined]",
+          "(::Genie.Renderer.Json.var\"#2#3\"{Module,FilePathsBase.PosixPath})() at Json.jl:18",
+          "WebRenderable(::Genie.Renderer.Json.var\"#2#3\"{Module,FilePathsBase.PosixPath}, ::Symbol) at Renderer.jl:158"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#103",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "include(::Function, ::Module, ::String) at Base.jl:372",
+          "include at Base.jl:368 [inlined]",
+          "bootstrap(::Module) at App.jl:22",
+          "load(; context::Module) at genie_module.jl:246"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#103",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "include(::String) at client.jl:451",
+          "main() at bootstrap.jl:6",
+          "top-level scope at bootstrap.jl:5",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#103",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "include(::String) at client.jl:451",
+          "top-level scope at Genie.jl:187",
+          "eval(::Module, ::Any) at function-override.jl:133",
+          "loadapp(::String; autostart::Bool) at Genie.jl:186"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#103",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "require(::Base.PkgId) at loading.jl:931",
+          "require(::Module, ::Symbol) at loading.jl:923",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "watch_package",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "show_backtrace(::IOStream, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
+          "record(::ExtendedTestSet{Test.DefaultTestSet}, ::Test.Fail) at TestSetExtensions.jl:104",
+          "do_test(::Test.ExecutionResult, ::Any) at Test.jl:520",
+          "top-level scope at tests_AppServer.jl:14"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "update_stacktrace_lineno!",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "include(::Function, ::Module, ::String) at Base.jl:372",
+          "include at Base.jl:368 [inlined]",
+          "render(::String; context::Module, vars::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol},NamedTuple{(:data,),Tuple{String}}}) at Js.jl:68",
+          "render at Js.jl:55 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#103",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "include(::Function, ::Module, ::String) at Base.jl:372",
+          "include at Base.jl:368 [inlined]",
+          "bootstrap(::Module) at App.jl:23",
+          "load(; context::Module) at genie_module.jl:246"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#103",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "show_backtrace(::IOStream, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
+          "record(::ExtendedTestSet{Test.DefaultTestSet}, ::Test.Fail) at TestSetExtensions.jl:104",
+          "do_test(::Test.ExecutionResult, ::Any) at Test.jl:520",
+          "top-level scope at tests_AppServer.jl:13"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "update_stacktrace_lineno!",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "#103",
+          "count": 85
+        },
+        {
+          "function_name": "watch_package",
+          "count": 15
+        },
+        {
+          "function_name": "update_stacktrace_lineno!",
+          "count": 5
+        }
+      ]
+    }
+  }
+}

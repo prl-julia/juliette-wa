@@ -1,0 +1,1076 @@
+{
+  "eval_info": {
+    "call_count": 2285,
+    "stack_traces": [
+      {
+        "count": 333,
+        "last_call": [
+          "#7 at DocTests.jl:220 [inlined]",
+          "(::Documenter.Utilities.var\"#16#17\"{Documenter.DocTests.var\"#7#8\"{Module},Base.PipeEndpoint,Base.PipeEndpoint,Pipe,Array{UInt8,1}})() at Utilities.jl:563",
+          "with_logstate(::Function, ::Any) at logging.jl:408",
+          "with_logger at logging.jl:514 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "error [fun (gen)]": 3
+            },
+            {
+              "function [fun]": 10
+            },
+            {
+              "struct [fun]": 6
+            },
+            {
+              "include [fun]": 2
+            },
+            {
+              "variable [fun]": 16
+            },
+            {
+              "variable [fun (gen)]": 21
+            },
+            {
+              "other [fun]": 294
+            },
+            {
+              "|> [fun]": 2
+            },
+            {
+              "for [fun]": 4
+            },
+            {
+              "value [fun (gen)]": 2
+            },
+            {
+              "useimport [fun (gen)]": 3
+            },
+            {
+              "macrocall [fun]": 8
+            },
+            {
+              "other [fun (gen)]": 14
+            },
+            {
+              "call [fun]": 206
+            },
+            {
+              "= [fun]": 32
+            }
+          ]
+        }
+      },
+      {
+        "count": 248,
+        "last_call": [
+          "docsxref(::Markdown.Link, ::String, ::Dict{Symbol,Any}, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at CrossReferences.jl:143",
+          "basicxref(::Markdown.Link, ::Dict{Symbol,Any}, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at CrossReferences.jl:52",
+          "xref(::Markdown.Link, ::Dict{Symbol,Any}, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at CrossReferences.jl:44",
+          "#1 at CrossReferences.jl:34 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "curly [fun (gen)]": 248
+            }
+          ]
+        }
+      },
+      {
+        "count": 192,
+        "last_call": [
+          "#15 at Expanders.jl:556 [inlined]",
+          "cd(::Documenter.Expanders.var\"#15#18\"{Module,Expr}, ::String) at file.jl:104",
+          "(::Documenter.Expanders.var\"#14#17\"{Documenter.Documents.Page,Module,Expr})() at Expanders.jl:555",
+          "(::Documenter.Utilities.var\"#16#17\"{Documenter.Expanders.var\"#14#17\"{Documenter.Documents.Page,Module,Expr},Base.PipeEndpoint,Base.PipeEndpoint,Pipe,Array{UInt8,1}})() at Utilities.jl:563"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "struct [fun (gen)]": 6
+            },
+            {
+              "useimport [fun (gen)]": 21
+            },
+            {
+              "macrocall [fun (gen)]": 24
+            },
+            {
+              "call [fun (gen)]": 54
+            },
+            {
+              "other [fun (gen)]": 15
+            },
+            {
+              "variable [fun (gen)]": 6
+            },
+            {
+              "call [fun]": 3
+            },
+            {
+              "function [fun (gen)]": 9
+            },
+            {
+              "for [fun (gen)]": 3
+            },
+            {
+              "= [fun (gen)]": 51
+            }
+          ]
+        }
+      },
+      {
+        "count": 192,
+        "last_call": [
+          "runner(::Type{Documenter.Expanders.ExampleBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:559",
+          "dispatch(::Type{Documenter.Expanders.ExpanderPipeline}, ::Markdown.Code, ::Vararg{Any,N} where N) at Selectors.jl:167",
+          "expand(::Documenter.Documents.Document) at Expanders.jl:42",
+          "runner(::Type{Documenter.Builder.ExpandTemplates}, ::Documenter.Documents.Document) at Builder.jl:214"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 192
+            }
+          ]
+        }
+      },
+      {
+        "count": 188,
+        "last_call": [
+          "eval_repl(::Documenter.DocTests.MutableMD2CodeBlock, ::Module, ::Dict{Symbol,Any}, ::Documenter.Documents.Document, ::String) at DocTests.jl:222",
+          "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:169",
+          "(::Documenter.DocTests.var\"#1#2\"{Documenter.DocTests.DocTestContext})(::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:111",
+          "walk(::Documenter.DocTests.var\"#1#2\"{Documenter.DocTests.DocTestContext}, ::Documenter.Utilities.Markdown2.CodeBlock) at Markdown2.jl:297"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 188
+            }
+          ]
+        }
+      },
+      {
+        "count": 168,
+        "last_call": [
+          "#21 at Expanders.jl:618 [inlined]",
+          "cd(::Documenter.Expanders.var\"#21#24\"{Module}, ::String) at file.jl:104",
+          "(::Documenter.Expanders.var\"#20#23\"{Documenter.Documents.Page,Module})() at Expanders.jl:617",
+          "(::Documenter.Utilities.var\"#16#17\"{Documenter.Expanders.var\"#20#23\"{Documenter.Documents.Page,Module},Base.PipeEndpoint,Base.PipeEndpoint,Pipe,Array{UInt8,1}})() at Utilities.jl:563"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "include [fun]": 6
+            },
+            {
+              "struct [fun]": 6
+            },
+            {
+              "variable [fun]": 12
+            },
+            {
+              "function [fun]": 6
+            },
+            {
+              "variable [fun (gen)]": 6
+            },
+            {
+              "other [fun]": 156
+            },
+            {
+              "useimport [fun (gen)]": 3
+            },
+            {
+              "macrocall [fun]": 12
+            },
+            {
+              "other [fun (gen)]": 3
+            },
+            {
+              "call [fun]": 84
+            },
+            {
+              "= [fun]": 30
+            }
+          ]
+        }
+      },
+      {
+        "count": 135,
+        "last_call": [
+          "get_new_sandbox(::Symbol) at Expanders.jl:723",
+          "#3 at DocTests.jl:127 [inlined]",
+          "get!(::Documenter.DocTests.var\"#3#5\"{Symbol}, ::Dict{Symbol,Any}, ::Symbol) at dict.jl:450",
+          "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:127"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 135
+            }
+          ]
+        }
+      },
+      {
+        "count": 135,
+        "last_call": [
+          "get_new_sandbox(::Symbol) at Expanders.jl:725",
+          "#3 at DocTests.jl:127 [inlined]",
+          "get!(::Documenter.DocTests.var\"#3#5\"{Symbol}, ::Dict{Symbol,Any}, ::Symbol) at dict.jl:450",
+          "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:127"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 135
+            }
+          ]
+        }
+      },
+      {
+        "count": 95,
+        "last_call": [
+          "runner(::Type{Documenter.Expanders.AutoDocsBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:413",
+          "dispatch(::Type{Documenter.Expanders.ExpanderPipeline}, ::Markdown.Code, ::Vararg{Any,N} where N) at Selectors.jl:167",
+          "expand(::Documenter.Documents.Document) at Expanders.jl:42",
+          "runner(::Type{Documenter.Builder.ExpandTemplates}, ::Documenter.Documents.Document) at Builder.jl:214"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 95
+            }
+          ]
+        }
+      },
+      {
+        "count": 90,
+        "last_call": [
+          "runner(::Type{Documenter.Expanders.REPLBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:621",
+          "dispatch(::Type{Documenter.Expanders.ExpanderPipeline}, ::Markdown.Code, ::Vararg{Any,N} where N) at Selectors.jl:167",
+          "expand(::Documenter.Documents.Document) at Expanders.jl:42",
+          "runner(::Type{Documenter.Builder.ExpandTemplates}, ::Documenter.Documents.Document) at Builder.jl:214"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 90
+            }
+          ]
+        }
+      },
+      {
+        "count": 60,
+        "last_call": [
+          "runner(::Type{Documenter.Expanders.AutoDocsBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:380",
+          "dispatch(::Type{Documenter.Expanders.ExpanderPipeline}, ::Markdown.Code, ::Vararg{Any,N} where N) at Selectors.jl:167",
+          "expand(::Documenter.Documents.Document) at Expanders.jl:42",
+          "runner(::Type{Documenter.Builder.ExpandTemplates}, ::Documenter.Documents.Document) at Builder.jl:214"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 6
+            },
+            {
+              "other [fun (gen)]": 54
+            }
+          ]
+        }
+      },
+      {
+        "count": 57,
+        "last_call": [
+          "get_new_sandbox(::Symbol) at Expanders.jl:725",
+          "#13 at Expanders.jl:537 [inlined]",
+          "get!(::Documenter.Expanders.var\"#13#16\"{Symbol}, ::Dict{Symbol,Any}, ::Symbol) at dict.jl:450",
+          "runner(::Type{Documenter.Expanders.ExampleBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:537"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 57
+            }
+          ]
+        }
+      },
+      {
+        "count": 57,
+        "last_call": [
+          "get_new_sandbox(::Symbol) at Expanders.jl:723",
+          "#13 at Expanders.jl:537 [inlined]",
+          "get!(::Documenter.Expanders.var\"#13#16\"{Symbol}, ::Dict{Symbol,Any}, ::Symbol) at dict.jl:450",
+          "runner(::Type{Documenter.Expanders.ExampleBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:537"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 57
+            }
+          ]
+        }
+      },
+      {
+        "count": 50,
+        "last_call": [
+          "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:160",
+          "(::Documenter.DocTests.var\"#1#2\"{Documenter.DocTests.DocTestContext})(::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:111",
+          "walk(::Documenter.DocTests.var\"#1#2\"{Documenter.DocTests.DocTestContext}, ::Documenter.Utilities.Markdown2.CodeBlock) at Markdown2.jl:297",
+          "walk(::Function, ::Array{Documenter.Utilities.Markdown2.MarkdownBlockNode,1}) at Markdown2.jl:306"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 32
+            },
+            {
+              "function [fun (gen)]": 2
+            },
+            {
+              "nothing [fun (gen)]": 9
+            },
+            {
+              "= [fun (gen)]": 7
+            }
+          ]
+        }
+      },
+      {
+        "count": 45,
+        "last_call": [
+          "runner(::Type{Documenter.Expanders.MetaBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:256",
+          "dispatch(::Type{Documenter.Expanders.ExpanderPipeline}, ::Markdown.Code, ::Vararg{Any,N} where N) at Selectors.jl:167",
+          "expand(::Documenter.Documents.Document) at Expanders.jl:42",
+          "runner(::Type{Documenter.Builder.ExpandTemplates}, ::Documenter.Documents.Document) at Builder.jl:214"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "useimport [fun]": 12
+            },
+            {
+              "macrocall [fun (gen)]": 3
+            },
+            {
+              "value [fun (gen)]": 3
+            },
+            {
+              "module [fun]": 3
+            },
+            {
+              "other [fun (gen)]": 16
+            },
+            {
+              "variable [fun (gen)]": 14
+            },
+            {
+              "call [fun]": 3
+            },
+            {
+              "= [fun]": 9
+            }
+          ]
+        }
+      },
+      {
+        "count": 29,
+        "last_call": [
+          "#9 at DocTests.jl:247 [inlined]",
+          "(::Documenter.Utilities.var\"#16#17\"{Documenter.DocTests.var\"#9#10\"{Module,Expr},Base.PipeEndpoint,Base.PipeEndpoint,Pipe,Array{UInt8,1}})() at Utilities.jl:563",
+          "with_logstate(::Function, ::Any) at logging.jl:408",
+          "with_logger at logging.jl:514 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 12
+            },
+            {
+              "other [fun (gen)]": 1
+            },
+            {
+              "for [fun (gen)]": 1
+            },
+            {
+              "function [fun (gen)]": 5
+            },
+            {
+              "error [fun (gen)]": 2
+            },
+            {
+              "= [fun (gen)]": 8
+            }
+          ]
+        }
+      },
+      {
+        "count": 26,
+        "last_call": [
+          "runner(::Type{Documenter.Expanders.DocsBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:307",
+          "dispatch(::Type{Documenter.Expanders.ExpanderPipeline}, ::Markdown.Code, ::Vararg{Any,N} where N) at Selectors.jl:167",
+          "expand(::Documenter.Documents.Document) at Expanders.jl:42",
+          "runner(::Type{Documenter.Builder.ExpandTemplates}, ::Documenter.Documents.Document) at Builder.jl:214"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "curly [fun (gen)]": 26
+            }
+          ]
+        }
+      },
+      {
+        "count": 24,
+        "last_call": [
+          "(::Documenter.Documents.var\"#13#14\"{Module,Dict{Symbol,Any},Expr})() at Documents.jl:477",
+          "cd(::Documenter.Documents.var\"#13#14\"{Module,Dict{Symbol,Any},Expr}, ::String) at file.jl:104",
+          "buildnode(::Type{T} where T, ::Markdown.Code, ::Documenter.Documents.Document, ::Documenter.Documents.Page) at Documents.jl:476",
+          "runner(::Type{Documenter.Expanders.ContentsBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:525"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 9
+            },
+            {
+              "other [fun (gen)]": 15
+            }
+          ]
+        }
+      },
+      {
+        "count": 22,
+        "last_call": [
+          "parse_metablock(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:97",
+          "(::Documenter.DocTests.var\"#1#2\"{Documenter.DocTests.DocTestContext})(::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:113",
+          "walk(::Documenter.DocTests.var\"#1#2\"{Documenter.DocTests.DocTestContext}, ::Documenter.Utilities.Markdown2.CodeBlock) at Markdown2.jl:297",
+          "walk(::Function, ::Array{Documenter.Utilities.Markdown2.MarkdownBlockNode,1}) at Markdown2.jl:306"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            },
+            {
+              "useimport [fun]": 4
+            },
+            {
+              "value [fun (gen)]": 1
+            },
+            {
+              "macrocall [fun (gen)]": 1
+            },
+            {
+              "module [fun]": 1
+            },
+            {
+              "other [fun (gen)]": 6
+            },
+            {
+              "variable [fun (gen)]": 9
+            },
+            {
+              "call [fun]": 1
+            },
+            {
+              "= [fun]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 18,
+        "last_call": [
+          "get_new_sandbox(::Symbol) at Expanders.jl:723",
+          "#25 at Expanders.jl:649 [inlined]",
+          "get!(::Documenter.Expanders.var\"#25#27\"{Symbol}, ::Dict{Symbol,Any}, ::Symbol) at dict.jl:450",
+          "runner(::Type{Documenter.Expanders.SetupBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:649"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 18
+            }
+          ]
+        }
+      },
+      {
+        "count": 18,
+        "last_call": [
+          "get_new_sandbox(::Symbol) at Expanders.jl:725",
+          "#25 at Expanders.jl:649 [inlined]",
+          "get!(::Documenter.Expanders.var\"#25#27\"{Symbol}, ::Dict{Symbol,Any}, ::Symbol) at dict.jl:450",
+          "runner(::Type{Documenter.Expanders.SetupBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:649"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 18
+            }
+          ]
+        }
+      },
+      {
+        "count": 16,
+        "last_call": [
+          "(::Documenter.Expanders.var\"#11#12\"{Markdown.Code,Documenter.Documents.Page,Documenter.Documents.Document,Module})() at Expanders.jl:497",
+          "cd(::Documenter.Expanders.var\"#11#12\"{Markdown.Code,Documenter.Documents.Page,Documenter.Documents.Document,Module}, ::String) at file.jl:104",
+          "runner(::Type{Documenter.Expanders.EvalBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:493",
+          "dispatch(::Type{Documenter.Expanders.ExpanderPipeline}, ::Markdown.Code, ::Vararg{Any,N} where N) at Selectors.jl:167"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "useimport [fun (gen)]": 3
+            },
+            {
+              "call [fun (gen)]": 6
+            },
+            {
+              "variable [fun (gen)]": 4
+            },
+            {
+              "= [fun (gen)]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 16,
+        "last_call": [
+          "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:152",
+          "(::Documenter.DocTests.var\"#1#2\"{Documenter.DocTests.DocTestContext})(::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:111",
+          "walk(::Documenter.DocTests.var\"#1#2\"{Documenter.DocTests.DocTestContext}, ::Documenter.Utilities.Markdown2.CodeBlock) at Markdown2.jl:297",
+          "walk(::Function, ::Array{Documenter.Utilities.Markdown2.MarkdownBlockNode,1}) at Markdown2.jl:306"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 5
+            },
+            {
+              "macrocall [fun (gen)]": 6
+            },
+            {
+              "value [fun (gen)]": 5
+            },
+            {
+              "other [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 15,
+        "last_call": [
+          "docsxref(::Markdown.Link, ::SubString{String}, ::Dict{Symbol,Any}, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at CrossReferences.jl:143",
+          "namedxref(::Markdown.Link, ::Dict{Symbol,Any}, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at CrossReferences.jl:79",
+          "xref(::Markdown.Link, ::Dict{Symbol,Any}, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at CrossReferences.jl:44",
+          "#1 at CrossReferences.jl:34 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "curly [fun (gen)]": 15
+            }
+          ]
+        }
+      },
+      {
+        "count": 15,
+        "last_call": [
+          "get_new_sandbox(::Symbol) at Expanders.jl:725",
+          "#19 at Expanders.jl:605 [inlined]",
+          "get!(::Documenter.Expanders.var\"#19#22\"{Symbol}, ::Dict{Symbol,Any}, ::Symbol) at dict.jl:450",
+          "runner(::Type{Documenter.Expanders.REPLBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:605"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 15
+            }
+          ]
+        }
+      },
+      {
+        "count": 15,
+        "last_call": [
+          "get_new_sandbox(::Symbol) at Expanders.jl:723",
+          "#19 at Expanders.jl:605 [inlined]",
+          "get!(::Documenter.Expanders.var\"#19#22\"{Symbol}, ::Dict{Symbol,Any}, ::Symbol) at dict.jl:450",
+          "runner(::Type{Documenter.Expanders.REPLBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:605"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 15
+            }
+          ]
+        }
+      },
+      {
+        "count": 6,
+        "last_call": [
+          "(::Documenter.Documents.var\"#13#14\"{Module,Dict{Symbol,Any},Expr})() at Documents.jl:477",
+          "cd(::Documenter.Documents.var\"#13#14\"{Module,Dict{Symbol,Any},Expr}, ::String) at file.jl:104",
+          "buildnode(::Type{T} where T, ::Markdown.Code, ::Documenter.Documents.Document, ::Documenter.Documents.Page) at Documents.jl:476",
+          "runner(::Type{Documenter.Expanders.IndexBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:516"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 6
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "eval(::Expr) at Expanders.jl:723",
+          "top-level scope at none:1",
+          "eval(::Module, ::Any) at function-override.jl:133",
+          "#21 at Expanders.jl:618 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "eval(::Expr) at Expanders.jl:723",
+          "top-level scope at none:1",
+          "eval(::Module, ::Any) at function-override.jl:133",
+          "#15 at Expanders.jl:556 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "runner(::Type{Documenter.Expanders.AutoDocsBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:378",
+          "dispatch(::Type{Documenter.Expanders.ExpanderPipeline}, ::Markdown.Code, ::Vararg{Any,N} where N) at Selectors.jl:167",
+          "expand(::Documenter.Documents.Document) at Expanders.jl:42",
+          "runner(::Type{Documenter.Builder.ExpandTemplates}, ::Documenter.Documents.Document) at Builder.jl:214"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "initdocmeta!(::Module) at DocMeta.jl:37",
+          "setdocmeta!(::Module, ::Symbol, ::Symbol; warn::Bool, recursive::Bool) at DocMeta.jl:78",
+          "(::Documenter.DocMeta.var\"#setdocmeta!##kw\")(::NamedTuple{(:warn, :recursive),Tuple{Bool,Bool}}, ::typeof(Documenter.DocMeta.setdocmeta!), ::Module, ::Symbol, ::Symbol) at DocMeta.jl:71",
+          "setdocmeta!(::Module, ::Symbol, ::Symbol; warn::Bool, recursive::Bool) at DocMeta.jl:75"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "test_doctest_fix(::String) at tests.jl:19",
+          "mktempdir(::typeof(Main.DocTestFixTest.test_doctest_fix), ::String; prefix::String) at file.jl:682",
+          "mktempdir(::Function, ::String) at file.jl:680",
+          "top-level scope at tests.jl:39"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "useimport [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "initdocmeta!(::Module) at DocMeta.jl:37",
+          "setdocmeta!(::Module, ::Symbol, ::Expr; warn::Bool, recursive::Bool) at DocMeta.jl:78",
+          "setdocmeta!(::Module, ::Symbol, ::Expr) at DocMeta.jl:71",
+          "top-level scope at doctests.jl:209"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "test_doctest_fix(::String) at tests.jl:24",
+          "mktempdir(::typeof(Main.DocTestFixTest.test_doctest_fix), ::String; prefix::String) at file.jl:682",
+          "mktempdir(::Function, ::String) at file.jl:680",
+          "top-level scope at tests.jl:39"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "useimport [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at Expanders.jl:723",
+          "top-level scope at none:1",
+          "eval(::Module, ::Any) at function-override.jl:133",
+          "#7 at DocTests.jl:220 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "initdocmeta!(::Module) at DocMeta.jl:37",
+          "setdocmeta!(::Module, ::Symbol, ::Symbol; warn::Bool, recursive::Bool) at DocMeta.jl:78",
+          "setdocmeta!(::Module, ::Symbol, ::Symbol) at DocMeta.jl:71",
+          "top-level scope at docmeta.jl:13"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "initdocmeta!(::Module) at DocMeta.jl:37",
+          "setdocmeta!(::Module, ::Symbol, ::Expr; warn::Bool, recursive::Bool) at DocMeta.jl:78",
+          "setdocmeta!(::Module, ::Symbol, ::Expr) at DocMeta.jl:71",
+          "top-level scope at doctestapi.jl:177"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "initdocmeta!(::Module) at DocMeta.jl:37",
+          "setdocmeta!(::Module, ::Symbol, ::Expr; warn::Bool, recursive::Bool) at DocMeta.jl:78",
+          "setdocmeta!(::Module, ::Symbol, ::Expr) at DocMeta.jl:71",
+          "top-level scope at doctestapi.jl:188"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "initdocmeta!(::Module) at DocMeta.jl:37",
+          "setdocmeta!(::Module, ::Symbol, ::Expr; warn::Bool, recursive::Bool) at DocMeta.jl:78",
+          "setdocmeta!(::Module, ::Symbol, ::Expr) at DocMeta.jl:71",
+          "top-level scope at doctestapi.jl:204"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "initdocmeta!(::Module) at DocMeta.jl:37",
+          "setdocmeta!(::Module, ::Symbol, ::Expr; warn::Bool, recursive::Bool) at DocMeta.jl:78",
+          "setdocmeta!(::Module, ::Symbol, ::Expr) at DocMeta.jl:71",
+          "top-level scope at doctestapi.jl:205"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},12],[{\"astHead\":\"error\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},10],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},138],[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},16],[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},24],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},56],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},46],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},158],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},310],[{\"astHead\":\"nothing\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},18],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},900],[{\"astHead\":\"|>\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"->\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},6],[{\"astHead\":\"for\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},8],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},52],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},8],[{\"astHead\":\"for\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},8],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},932],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},32],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},64],[{\"astHead\":\"curly\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},578],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},68],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},40],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},1268],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},594],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},16],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},148]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 568,
+    "stack_traces": [
+      {
+        "count": 120,
+        "last_call": [
+          "result_to_string at DocTests.jl:322 [inlined]",
+          "checkresult(::Module, ::Documenter.DocTests.Result, ::Dict{Symbol,Any}, ::Documenter.Documents.Document) at DocTests.jl:302",
+          "eval_repl(::Documenter.DocTests.MutableMD2CodeBlock, ::Module, ::Dict{Symbol,Any}, ::Documenter.Documents.Document, ::String) at DocTests.jl:231",
+          "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:169"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "show",
+              "count": 120
+            }
+          ]
+        }
+      },
+      {
+        "count": 108,
+        "last_call": [
+          "runner(::Type{Documenter.Expanders.ExampleBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:583",
+          "dispatch(::Type{Documenter.Expanders.ExpanderPipeline}, ::Markdown.Code, ::Vararg{Any,N} where N) at Selectors.jl:167",
+          "expand(::Documenter.Documents.Document) at Expanders.jl:42",
+          "runner(::Type{Documenter.Builder.ExpandTemplates}, ::Documenter.Documents.Document) at Builder.jl:214"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "display_dict",
+              "count": 108
+            }
+          ]
+        }
+      },
+      {
+        "count": 95,
+        "last_call": [
+          "runner(::Type{Documenter.Expanders.AutoDocsBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:413",
+          "dispatch(::Type{Documenter.Expanders.ExpanderPipeline}, ::Markdown.Code, ::Vararg{Any,N} where N) at Selectors.jl:167",
+          "expand(::Documenter.Documents.Document) at Expanders.jl:42",
+          "runner(::Type{Documenter.Builder.ExpandTemplates}, ::Documenter.Documents.Document) at Builder.jl:214"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#7",
+              "count": 86
+            },
+            {
+              "function_name": "#104",
+              "count": 3
+            },
+            {
+              "function_name": "#108",
+              "count": 3
+            },
+            {
+              "function_name": "#112",
+              "count": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 72,
+        "last_call": [
+          "#mdconvert#110 at HTMLWriter.jl:1633 [inlined]",
+          "mdconvert at HTMLWriter.jl:1633 [inlined]",
+          "domify(::Documenter.Writers.HTMLWriter.HTMLContext, ::Documenter.Documents.NavNode, ::Documenter.Documents.MultiOutput) at HTMLWriter.jl:1216",
+          "(::Documenter.Writers.HTMLWriter.var\"#66#67\"{Documenter.Writers.HTMLWriter.HTMLContext,Documenter.Documents.NavNode,Documenter.Documents.Page})(::Markdown.Code) at HTMLWriter.jl:1210"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "mdconvert",
+              "count": 72
+            }
+          ]
+        }
+      },
+      {
+        "count": 67,
+        "last_call": [
+          "#3 at MarkdownWriter.jl:145 [inlined]",
+          "foreach(::Documenter.Writers.MarkdownWriter.var\"#3#4\"{IOStream,MIME{Symbol(\"text/plain\")},Documenter.Documents.Page,Documenter.Documents.Document}, ::Array{Any,1}) at abstractarray.jl:2009",
+          "render(::IOStream, ::MIME{Symbol(\"text/plain\")}, ::Documenter.Documents.MultiOutput, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at MarkdownWriter.jl:145",
+          "(::Documenter.Writers.MarkdownWriter.var\"#1#2\"{Documenter.Documents.Document,MIME{Symbol(\"text/plain\")},Documenter.Documents.Page})(::IOStream) at MarkdownWriter.jl:34"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "render",
+              "count": 67
+            }
+          ]
+        }
+      },
+      {
+        "count": 57,
+        "last_call": [
+          "result_to_string at DocTests.jl:322 [inlined]",
+          "runner(::Type{Documenter.Expanders.REPLBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:625",
+          "dispatch(::Type{Documenter.Expanders.ExpanderPipeline}, ::Markdown.Code, ::Vararg{Any,N} where N) at Selectors.jl:167",
+          "expand(::Documenter.Documents.Document) at Expanders.jl:42"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "show",
+              "count": 57
+            }
+          ]
+        }
+      },
+      {
+        "count": 27,
+        "last_call": [
+          "error_to_string(::IOContext{Base.GenericIOBuffer{Array{UInt8,1}}}, ::DivideError, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at DocTests.jl:335",
+          "checkresult(::Module, ::Documenter.DocTests.Result, ::Dict{Symbol,Any}, ::Documenter.Documents.Document) at DocTests.jl:284",
+          "eval_repl(::Documenter.DocTests.MutableMD2CodeBlock, ::Module, ::Dict{Symbol,Any}, ::Documenter.Documents.Document, ::String) at DocTests.jl:231",
+          "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:169"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "showerror",
+              "count": 27
+            }
+          ]
+        }
+      },
+      {
+        "count": 13,
+        "last_call": [
+          "result_to_string at DocTests.jl:322 [inlined]",
+          "checkresult(::Module, ::Documenter.DocTests.Result, ::Dict{Symbol,Any}, ::Documenter.Documents.Document) at DocTests.jl:302",
+          "eval_script(::Documenter.DocTests.MutableMD2CodeBlock, ::Module, ::Dict{Symbol,Any}, ::Documenter.Documents.Document, ::String) at DocTests.jl:256",
+          "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:171"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "show",
+              "count": 13
+            }
+          ]
+        }
+      },
+      {
+        "count": 6,
+        "last_call": [
+          "error_to_string(::Base.GenericIOBuffer{Array{UInt8,1}}, ::DivideError, ::Array{Any,1}) at DocTests.jl:335",
+          "runner(::Type{Documenter.Expanders.REPLBlocks}, ::Markdown.Code, ::Documenter.Documents.Page, ::Documenter.Documents.Document) at Expanders.jl:627",
+          "dispatch(::Type{Documenter.Expanders.ExpanderPipeline}, ::Markdown.Code, ::Vararg{Any,N} where N) at Selectors.jl:167",
+          "expand(::Documenter.Documents.Document) at Expanders.jl:42"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "showerror",
+              "count": 6
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "error_to_string(::IOContext{Base.GenericIOBuffer{Array{UInt8,1}}}, ::ErrorException, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at DocTests.jl:335",
+          "checkresult(::Module, ::Documenter.DocTests.Result, ::Dict{Symbol,Any}, ::Documenter.Documents.Document) at DocTests.jl:284",
+          "eval_script(::Documenter.DocTests.MutableMD2CodeBlock, ::Module, ::Dict{Symbol,Any}, ::Documenter.Documents.Document, ::String) at DocTests.jl:256",
+          "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:171"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "showerror",
+              "count": 3
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "show",
+          "count": 190
+        },
+        {
+          "function_name": "display_dict",
+          "count": 108
+        },
+        {
+          "function_name": "#7",
+          "count": 86
+        },
+        {
+          "function_name": "mdconvert",
+          "count": 72
+        },
+        {
+          "function_name": "render",
+          "count": 67
+        },
+        {
+          "function_name": "showerror",
+          "count": 36
+        },
+        {
+          "function_name": "#104",
+          "count": 3
+        },
+        {
+          "function_name": "#108",
+          "count": 3
+        },
+        {
+          "function_name": "#112",
+          "count": 3
+        }
+      ]
+    }
+  }
+}

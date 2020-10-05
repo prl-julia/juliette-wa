@@ -1,0 +1,274 @@
+{
+  "eval_info": {
+    "call_count": 12,
+    "stack_traces": [
+      {
+        "count": 7,
+        "last_call": [
+          "eval at SymEngine.jl:1 [inlined]",
+          "_lambdify(::Expr, ::Array{Basic,1}) at subs.jl:156",
+          "lambdify(::Expr, ::Array{Basic,1}) at subs.jl:150",
+          "lambdify(::Basic, ::Array{Any,1}; cse::Bool) at subs.jl:130"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 7
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": [
+          "eval at SymEngine.jl:1 [inlined]",
+          "_lambdify(::Expr, ::Array{Basic,1}) at subs.jl:156",
+          "lambdify(::Expr, ::Array{Basic,1}) at subs.jl:150",
+          "lambdify(::Array{Basic,2}, ::Array{Basic,1}) at subs.jl:121"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at SymEngine.jl:1 [inlined]",
+          "lambdify(::Expr, ::Array{Basic,1}) at subs.jl:147",
+          "lambdify(::Basic, ::Array{Any,1}; cse::Bool) at subs.jl:130",
+          "lambdify at subs.jl:125 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},22]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 12,
+    "stack_traces": [
+      {
+        "count": 5,
+        "last_call": [
+          "(::SymEngine.var\"#28#29\"{SymEngine.var\"###254\"})(::Int64) at subs.jl:159",
+          "top-level scope at runtests.jl:123",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##256",
+              "count": 1
+            },
+            {
+              "function_name": "##258",
+              "count": 1
+            },
+            {
+              "function_name": "##257",
+              "count": 1
+            },
+            {
+              "function_name": "##254",
+              "count": 1
+            },
+            {
+              "function_name": "##255",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymEngine.var\"#28#29\"{SymEngine.var\"###263\"})(::Int64) at subs.jl:159",
+          "top-level scope at runtests.jl:132",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##263",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymEngine.var\"#28#29\"{SymEngine.var\"###262\"})(::Int64) at subs.jl:159",
+          "top-level scope at runtests.jl:131",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##262",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymEngine.var\"#28#29\"{SymEngine.var\"###253\"})(::Int64) at subs.jl:159",
+          "top-level scope at runtests.jl:119",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##253",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu-cxx11.jl:30",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymEngine.var\"#28#29\"{SymEngine.var\"###259\"})(::Int64) at subs.jl:159",
+          "top-level scope at runtests.jl:125",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##259",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymEngine.var\"#28#29\"{SymEngine.var\"###260\"})(::Int64) at subs.jl:159",
+          "top-level scope at runtests.jl:128",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##260",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymEngine.var\"#28#29\"{SymEngine.var\"###261\"})(::Int64) at subs.jl:159",
+          "top-level scope at runtests.jl:129",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##261",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "##261",
+          "count": 1
+        },
+        {
+          "function_name": "##256",
+          "count": 1
+        },
+        {
+          "function_name": "##253",
+          "count": 1
+        },
+        {
+          "function_name": "##258",
+          "count": 1
+        },
+        {
+          "function_name": "##262",
+          "count": 1
+        },
+        {
+          "function_name": "##263",
+          "count": 1
+        },
+        {
+          "function_name": "##257",
+          "count": 1
+        },
+        {
+          "function_name": "do_artifact_str",
+          "count": 1
+        },
+        {
+          "function_name": "##254",
+          "count": 1
+        },
+        {
+          "function_name": "##259",
+          "count": 1
+        },
+        {
+          "function_name": "##260",
+          "count": 1
+        },
+        {
+          "function_name": "##255",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

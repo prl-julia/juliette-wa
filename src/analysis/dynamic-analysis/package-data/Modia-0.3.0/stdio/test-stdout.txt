@@ -1,0 +1,10 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+ 
+Importing ModiaMath Version 0.5.2 (2019-07-10)
+ 
+
+Welcome to Modia - Dynamic Modeling and Simulation with Julia
+Version 0.3.0 (2019-04-07)
+Type "?Modia" for help.
+
+

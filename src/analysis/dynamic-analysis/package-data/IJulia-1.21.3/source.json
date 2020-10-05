@@ -1,0 +1,143 @@
+{
+  "eval_info": {
+    "call_count": 6,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": [
+          "docdict(::String) at handlers.jl:192",
+          "top-level scope at execute_request.jl:14",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at execute_request.jl:13"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "docdict(::String) at handlers.jl:192",
+          "top-level scope at execute_request.jl:13",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at execute_request.jl:13"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "redirect_stderr(::IJulia.IJuliaStdio{IOStream}) at stdio.jl:31",
+          "redirect_stderr(::var\"#100#106\", ::IJulia.IJuliaStdio{IOStream}) at stream.jl:1148",
+          "(::var\"#99#105\")(::String, ::IOStream) at stdio.jl:23",
+          "mktemp(::var\"#99#105\", ::String) at file.jl:659"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "redirect_stdin(::IJulia.IJuliaStdio{IOStream}) at stdio.jl:31",
+          "redirect_stdin(::var\"#102#108\", ::IJulia.IJuliaStdio{IOStream}) at stream.jl:1148",
+          "#101 at stdio.jl:32 [inlined]",
+          "mktemp(::var\"#101#107\", ::String) at file.jl:659"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at inline.jl:5",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at inline.jl:5",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "struct [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "redirect_stdout(::IJulia.IJuliaStdio{IOStream}) at stdio.jl:31",
+          "redirect_stdout(::var\"#98#104\", ::IJulia.IJuliaStdio{IOStream}) at stream.jl:1148",
+          "(::var\"#97#103\")(::String, ::IOStream) at stdio.jl:7",
+          "mktemp(::var\"#97#103\", ::String) at file.jl:659"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},6]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 1,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": [
+          "(::IJulia.var\"#35#36\")(::Base.GenericIOBuffer{Array{UInt8,1}}, ::UndefVarError, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at display.jl:162",
+          "sprint(::Function, ::UndefVarError, ::Vararg{Any,N} where N; context::Nothing, sizehint::Int64) at io.jl:105",
+          "sprint at io.jl:101 [inlined]",
+          "error_content(::UndefVarError, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}; backtrace_top::Symbol, msg::String) at display.jl:162"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "showerror_nobt",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "showerror_nobt",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

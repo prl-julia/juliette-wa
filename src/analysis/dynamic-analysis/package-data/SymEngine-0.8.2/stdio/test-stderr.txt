@@ -1,0 +1,52 @@
+   Updating registry at `~/.julia/registries/General`
+  Resolving package versions...
+No Changes to `~/.julia/environments/v1.5/Project.toml`
+No Changes to `~/.julia/environments/v1.5/Manifest.toml`
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+    Testing SymEngine
+Status `/tmp/jl_o5OUuT/Project.toml`
+  [34da2185] Compat v2.2.1
+  [3cdcf5f2] RecipesBase v0.7.0
+  [276daf66] SpecialFunctions v0.8.0
+  [123dc426] SymEngine v0.8.2
+  [3428059b] SymEngine_jll v0.6.0+1
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [8dfed614] Test
+Status `/tmp/jl_o5OUuT/Manifest.toml`
+  [9e28174c] BinDeps v1.0.1
+  [b99e7846] BinaryProvider v0.5.10
+  [34da2185] Compat v2.2.1
+  [781609d7] GMP_jll v6.1.2+5
+  [2ce0c516] MPC_jll v1.1.0+0
+  [3a97d323] MPFR_jll v4.0.2+2
+  [3cdcf5f2] RecipesBase v0.7.0
+  [276daf66] SpecialFunctions v0.8.0
+  [123dc426] SymEngine v0.8.2
+  [3428059b] SymEngine_jll v0.6.0+1
+  [30578b45] URIParser v0.4.1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+    Testing SymEngine tests passed 

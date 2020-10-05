@@ -1,0 +1,446 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+  1.830368 seconds (4.76 M allocations: 251.460 MiB, 6.07% gc time)
+Basic operations: Error During Test at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:27
+  Got exception outside of a @test
+  UndefVarError: WeightedParticles not defined
+  Stacktrace:
+   [1] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:34
+   [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:28
+   [4] top-level scope at timing.jl:174
+   [5] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:27
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:13
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at ./none:12
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+  2.939681 seconds (5.45 M allocations: 272.080 MiB, 3.95% gc time)
+Multivariate Particles: Error During Test at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:190
+  Got exception outside of a @test
+  UndefVarError: WeightedParticles not defined
+  Stacktrace:
+   [1] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:191
+   [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:191
+   [4] top-level scope at timing.jl:174
+   [5] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:190
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:13
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at ./none:12
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+  0.079513 seconds (2.21 k allocations: 156.133 KiB)
+  3.204873 seconds (7.22 M allocations: 367.038 MiB, 6.48% gc time)
+  5.301878 seconds (5.75 M allocations: 2.076 GiB, 12.61% gc time)
+misc: Test Failed at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:295
+  Expression: MonteCarloMeasurements.particletype(p) == (Float64, 500)
+   Evaluated: Particles{Float64,2000} == (Float64, 500)
+Stacktrace:
+ [1] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:295
+ [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:292
+ [4] top-level scope at timing.jl:174
+ [5] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:291
+ [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:13
+misc: Test Failed at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:296
+  Expression: MonteCarloMeasurements.particletype(typeof(p)) == (Float64, 500)
+   Evaluated: Particles{Float64,2000} == (Float64, 500)
+Stacktrace:
+ [1] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:296
+ [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:292
+ [4] top-level scope at timing.jl:174
+ [5] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:291
+ [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:13
+Particles{Float64,2000}
+ -8.65974e-18 ± 1.0-8.66e-18 ± 1.0
+$-8.66e-18 ± 1.0$
+0.0
+$0.0$
+2-element Array{Particles{Float64,2000},1}:
+ -8.66e-18 ± 1.0
+ -8.66e-18 ± 1.0Particles{Float64,2000}[-8.66e-18 ± 1.0, -8.66e-18 ± 1.0]
+Particles{Float64,2000}[-8.66e-18 ± 1.0, 0.0]
+misc: Error During Test at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:307
+  Test threw exception
+  Expression: Particles{Float64, 500}(p) == p
+  ArgumentError: Cannot convert a particle distribution to a float if not all particles are the same.
+  Stacktrace:
+   [1] convert at /home/jack/.julia/packages/MonteCarloMeasurements/yhiSC/src/particles.jl:290 [inlined]
+   [2] setindex!(::Array{Float64,1}, ::Particles{Float64,2000}, ::Int64) at ./array.jl:847
+   [3] _unsafe_copyto!(::Array{Float64,1}, ::Int64, ::Array{Particles{Float64,2000},1}, ::Int64, ::Int64) at ./array.jl:257
+   [4] unsafe_copyto! at ./array.jl:311 [inlined]
+   [5] _copyto_impl! at ./array.jl:335 [inlined]
+   [6] copyto! at ./array.jl:321 [inlined]
+   [7] copyto! at ./array.jl:347 [inlined]
+   [8] copyto_axcheck! at ./abstractarray.jl:946 [inlined]
+   [9] Array at ./array.jl:562 [inlined]
+   [10] convert at ./array.jl:554 [inlined]
+   [11] Particles at /home/jack/.julia/packages/MonteCarloMeasurements/yhiSC/src/types.jl:18 [inlined]
+   [12] Particles{Float64,500}(::Particles{Float64,2000}) at /home/jack/.julia/packages/MonteCarloMeasurements/yhiSC/src/types.jl:58
+   [13] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:307
+   [14] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [15] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:292
+   [16] top-level scope at timing.jl:174
+   [17] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:291
+   [18] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [19] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:13
+  
+misc: Test Failed at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:310
+  Expression: length(p) == 500
+   Evaluated: 2000 == 500
+Stacktrace:
+ [1] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:310
+ [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:292
+ [4] top-level scope at timing.jl:174
+ [5] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:291
+ [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:13
+misc: Error During Test at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:336
+  Test threw exception
+  Expression: ≈(norm(p), 0, atol = 0.01)
+  Comparison of uncertain values using comparison mode safe failed. Comparison operators are not well defined for uncertain values. Call `unsafe_comparisons(true)` to enable comparison operators for particles using the current reduction function mean. Change this function using `set_comparison_function(f)`. For safety reasons, the default safe comparison function is maximally conservative and tests if the extreme values of the distributions fulfil the comparison operator.
+  Stacktrace:
+   [1] error(::String) at ./error.jl:33
+   [2] _comparison_error() at /home/jack/.julia/packages/MonteCarloMeasurements/yhiSC/src/particles.jl:454
+   [3] safe_comparison(::Particles{Float64,2000}, ::Particles{Float64,2000}, ::typeof(<=)) at /home/jack/.julia/packages/MonteCarloMeasurements/yhiSC/src/particles.jl:428
+   [4] do_comparison(::Particles{Float64,2000}, ::Particles{Float64,2000}, ::typeof(<=)) at /home/jack/.julia/packages/MonteCarloMeasurements/yhiSC/src/particles.jl:440
+   [5] <= at /home/jack/.julia/packages/MonteCarloMeasurements/yhiSC/src/particles.jl:467 [inlined]
+   [6] isapprox(::Particles{Float64,2000}, ::Int64; atol::Float64, rtol::Float64, nans::Bool) at ./floatfuncs.jl:277
+   [7] eval_test(::Expr, ::Expr, ::LineNumberNode, ::Bool) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:258
+   [8] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:336
+   [9] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [10] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:292
+   [11] top-level scope at timing.jl:174
+   [12] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:291
+   [13] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [14] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:13
+  
+misc: Error During Test at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:337
+  Test threw exception
+  Expression: norm(p, Inf) > 0
+  MethodError: norm(::Particles{Float64,2000}, ::Float64) is ambiguous. Candidates:
+    norm(x::AbstractParticles, args...) in MonteCarloMeasurements at /home/jack/.julia/packages/MonteCarloMeasurements/yhiSC/src/particles.jl:522
+    norm(x::Number, p::Real) in LinearAlgebra at /home/jack/apps/julia-1.5.0/share/julia/stdlib/v1.5/LinearAlgebra/src/generic.jl:647
+  Possible fix, define
+    norm(::AbstractParticles, ::Real)
+  Stacktrace:
+   [1] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:337
+   [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:292
+   [4] top-level scope at timing.jl:174
+   [5] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:291
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:13
+  
+misc: Test Failed at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:338
+  Expression: norm(p, 1)
+    Expected: ArgumentError
+      Thrown: MethodError
+Stacktrace:
+ [1] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:338
+ [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:292
+ [4] top-level scope at timing.jl:174
+ [5] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:291
+ [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:13
+isfinite(real(p)) && isfinite(imag(p)) = true
+isfinite(real(p)) && isfinite(imag(p)) = true
+ 14.271225 seconds (25.86 M allocations: 1.297 GiB, 2.53% gc time)
+  0.161402 seconds (359.14 k allocations: 19.351 MiB)
+  0.925329 seconds (2.25 M allocations: 139.272 MiB, 7.16% gc time)
+!=,
+!==,
+rem,
+&,
+*,
++,
+-,
+/,
+//,
+Colon,
+<<,
+>,
+>:,
+>=,
+>>,
+>>>,
+\,
+^,
+accumulate,
+all,
+any,
+asyncmap,
+atan,
+atand,
+axes,
+binomial,
+bitrotate,
+broadcast,
+broadcast!,
+cat,
+circcopy!,
+cld,
+cmp,
+coalesce,
+code_lowered,
+code_typed,
+complex,
+copysign,
+count,
+ctime,
+div,
+divrem,
+eachindex,
+error,
+extrema,
+falses,
+fdio,
+filemode,
+filesize,
+finalizer,
+findnext,
+findprev,
+fld,
+fld1,
+fldmod,
+fldmod1,
+flipsign,
+foldl,
+foldr,
+foreach,
+functionloc,
+gcd,
+gcdx,
+getindex,
+gperm,
+hash,
+hasmethod,
+hcat,
+hvcat,
+hypot,
+in,
+intersect,
+invmod,
+isblockdev,
+ischardev,
+isdir,
+isdisjoint,
+isequal,
+isfifo,
+isfile,
+isless,
+islink,
+ismount,
+ispath,
+issetequal,
+issetgid,
+issetuid,
+issocket,
+issticky,
+issubset,
+iszero,
+iterate,
+join,
+kron,
+lcm,
+ldexp,
+log,
+lpad,
+lstat,
+map,
+mapreduce,
+max,
+maximum,
+methods,
+min,
+minimum,
+minmax,
+mod,
+mod1,
+mtime,
+nextfloat,
+nextpow,
+ntuple,
+oftype,
+ones,
+operm,
+parentmodule,
+prevfloat,
+prevpow,
+print,
+println,
+printstyled,
+prod,
+propertynames,
+range,
+reduce,
+rem,
+rpad,
+setdiff,
+something,
+stat,
+string,
+sum,
+symdiff,
+systemerror,
+task_local_storage,
+trues,
+typeintersect,
+typejoin,
+union,
+unique,
+uperm,
+vcat,
+which,
+widemul,
+xor,
+zip,
+|,
+div,
+in,
+∉,
+∋,
+∌,
+∘,
+intersect,
+union,
+isapprox,
+≉,
+!=,
+!==,
+<=,
+>=,
+issubset,
+⊇,
+⊈,
+⊉,
+⊊,
+⊋,
+xor,
+110.879085 seconds (40.69 M allocations: 2.057 GiB, 0.80% gc time)
+  2.652720 seconds (5.11 M allocations: 385.546 MiB, 5.98% gc time)
+WeightedParticles: Error During Test at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:434
+  Got exception outside of a @test
+  UndefVarError: WeightedParticles not defined
+  Stacktrace:
+   [1] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:436
+   [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [3] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:435
+   [4] top-level scope at timing.jl:174
+   [5] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:434
+   [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [7] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:13
+   [8] include(::String) at ./client.jl:457
+   [9] top-level scope at ./none:12
+   [10] eval(::Module, ::Any) at ./boot.jl:331
+   [11] exec_options(::Base.JLOptions) at ./client.jl:272
+   [12] _start() at ./client.jl:506
+  
+  0.086800 seconds (2.27 k allocations: 157.562 KiB)
+bymap: Error During Test at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:472
+  Test threw exception
+  Expression: MonteCarloMeasurements.Ngetter(Particles(50)) == 50
+  UndefVarError: Ngetter not defined
+  Stacktrace:
+   [1] getproperty(::Module, ::Symbol) at ./Base.jl:26
+   [2] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:472
+   [3] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [4] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:470
+   [5] top-level scope at timing.jl:174
+   [6] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:469
+   [7] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [8] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:13
+  
+bymap: Test Failed at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:473
+  Expression: MonteCarloMeasurements.Ngetter(Particles(30), Particles(10))
+    Expected: ArgumentError
+      Thrown: UndefVarError
+Stacktrace:
+ [1] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:473
+ [2] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [3] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:470
+ [4] top-level scope at timing.jl:174
+ [5] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:469
+ [6] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+ [7] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:13
+bymap: Error During Test at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:476
+  Test threw exception
+  Expression: MonteCarloMeasurements.Ngetter([p, p], p) == 500
+  UndefVarError: Ngetter not defined
+  Stacktrace:
+   [1] getproperty(::Module, ::Symbol) at ./Base.jl:26
+   [2] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:476
+   [3] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [4] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:470
+   [5] top-level scope at timing.jl:174
+   [6] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:469
+   [7] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [8] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:13
+  
+bymap: Error During Test at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:477
+  Test threw exception
+  Expression: MonteCarloMeasurements.Ngetter([p, p]) == 500
+  UndefVarError: Ngetter not defined
+  Stacktrace:
+   [1] getproperty(::Module, ::Symbol) at ./Base.jl:26
+   [2] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:477
+   [3] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [4] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:470
+   [5] top-level scope at timing.jl:174
+   [6] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:469
+   [7] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [8] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:13
+  
+  3.609957 seconds (6.92 M allocations: 356.047 MiB, 2.85% gc time)
+deconstruct: Error During Test at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/test_deconstruct.jl:9
+  Got exception outside of a @test
+  MethodError: no method matching TransferFunction(::Array{ControlSystems.SisoRational{Float64},2}, ::ControlSystems.Continuous, ::Int64, ::Int64)
+  Closest candidates are:
+    TransferFunction(::Array{var"#s1534",2} where var"#s1534"<:ControlSystems.SisoRational, !Matched::Float64, ::Int64, ::Int64) at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/test_deconstruct.jl:6
+    TransferFunction(::Array{S,2}, ::TE) where {TE<:ControlSystems.TimeEvolution, T<:Number, S<:ControlSystems.SisoTf{T}} at /home/jack/.julia/packages/ControlSystems/fDg6j/src/types/TransferFunction.jl:12
+  Stacktrace:
+   [1] replace_particles(::TransferFunction{ControlSystems.Continuous,ControlSystems.SisoRational{StaticParticles{Float64,50}}}, ::MonteCarloMeasurements.var"#151#153", ::MonteCarloMeasurements.var"#152#154") at /home/jack/.julia/packages/MonteCarloMeasurements/yhiSC/src/deconstruct.jl:123
+   [2] build_container at /home/jack/.julia/packages/MonteCarloMeasurements/yhiSC/src/deconstruct.jl:87 [inlined]
+   [3] Workspace(::var"#271#280", ::TransferFunction{ControlSystems.Continuous,ControlSystems.SisoRational{StaticParticles{Float64,50}}}) at /home/jack/.julia/packages/MonteCarloMeasurements/yhiSC/src/deconstruct.jl:327
+   [4] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/test_deconstruct.jl:14
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/test_deconstruct.jl:10
+   [7] include(::String) at ./client.jl:457
+   [8] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:520
+   [9] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [10] top-level scope at /home/jack/.julia/packages/MonteCarloMeasurements/hYwGr/test/runtests.jl:13
+   [11] include(::String) at ./client.jl:457
+   [12] top-level scope at ./none:12
+   [13] eval(::Module, ::Any) at ./boot.jl:331
+   [14] exec_options(::Base.JLOptions) at ./client.jl:272
+   [15] _start() at ./client.jl:506
+  
+Test Summary:             | Pass  Fail  Error  Total
+MonteCarloMeasurements.jl |  182     5     10    197
+  sampling                |   42                  42
+  Basic operations        |    3            1      4
+  Multivariate Particles  |                 1      1
+  sigmapoints             |    6                   6
+  transform_moments       |    4                   4
+  gradient                |    5                   5
+  leastsquares            |    4                   4
+  misc                    |   53     4      3     60
+  mutation                |    1                   1
+  outer_product           |    9                   9
+  plotting                |   12                  12
+  optimize                |    1                   1
+  WeightedParticles       |                 1      1
+  bymap                   |   20     1      3     24
+  forwarddiff             |   22                  22
+  deconstruct             |                 1      1

@@ -1,0 +1,741 @@
+{
+  "eval_info": {
+    "call_count": 85,
+    "stack_traces": [
+      {
+        "count": 20,
+        "last_call": [
+          "eval at ArrayInterface.jl:1 [inlined]",
+          "(::ArrayInterface.var\"#22#49\")() at require.jl:67",
+          "err(::ArrayInterface.var\"#22#49\", ::Module, ::String) at require.jl:38",
+          "#21 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 360
+            },
+            {
+              "const [fun]": 20
+            },
+            {
+              "macrocall [fun]": 20
+            }
+          ]
+        }
+      },
+      {
+        "count": 7,
+        "last_call": [
+          "eval at Distributions.jl:1 [inlined]",
+          "getdistribution(::String, ::String, ::String) at MadsMisc.jl:205",
+          "getparamsmax(::Dict{Any,Any}, ::Array{String,1}) at MadsParameters.jl:181",
+          "getparamsmax(::Dict{Any,Any}) at MadsParameters.jl:197"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 7
+            }
+          ]
+        }
+      },
+      {
+        "count": 7,
+        "last_call": [
+          "eval at ArrayInterface.jl:1 [inlined]",
+          "(::ArrayInterface.var\"#43#70\")() at require.jl:67",
+          "err(::ArrayInterface.var\"#43#70\", ::Module, ::String) at require.jl:38",
+          "#42 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 42
+            },
+            {
+              "const [fun]": 7
+            }
+          ]
+        }
+      },
+      {
+        "count": 7,
+        "last_call": [
+          "eval at Distributions.jl:1 [inlined]",
+          "getdistribution(::String, ::String, ::String) at MadsMisc.jl:205",
+          "getparamsmin(::Dict{Any,Any}, ::Array{String,1}) at MadsParameters.jl:142",
+          "getparamsmin(::Dict{Any,Any}) at MadsParameters.jl:158"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 7
+            }
+          ]
+        }
+      },
+      {
+        "count": 6,
+        "last_call": [
+          "top-level scope at functions.jl:15",
+          "include(::Function, ::Module, ::String) at Base.jl:380",
+          "include at Base.jl:368 [inlined]",
+          "include(::String) at ImageCore.jl:3"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top]": 18
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": [
+          "eval at Distributions.jl:1 [inlined]",
+          "getdistribution(::String, ::String, ::String) at MadsMisc.jl:205",
+          "getparamsinit_min(::Dict{Any,Any}, ::Array{String,1}) at MadsParameters.jl:232",
+          "getparamsinit_min(::Dict{Any,Any}) at MadsParameters.jl:248"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": [
+          "eval at Distributions.jl:1 [inlined]",
+          "getdistribution(::String, ::String, ::String) at MadsMisc.jl:205",
+          "getparamsinit_max(::Dict{Any,Any}, ::Array{String,1}) at MadsParameters.jl:283",
+          "getparamsinit_max(::Dict{Any,Any}) at MadsParameters.jl:299"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "eval at Distributions.jl:1 [inlined]",
+          "getdistribution(::String, ::String, ::String) at MadsMisc.jl:205",
+          "getparamsinit_min(::Dict{Any,Any}, ::Array{String,1}) at MadsParameters.jl:221",
+          "getparamsinit_min(::Dict{Any,Any}) at MadsParameters.jl:248"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "eval at ImageFiltering.jl:1 [inlined]",
+          "(::ImageFiltering.var\"#70#76\")() at require.jl:67",
+          "err(::ImageFiltering.var\"#70#76\", ::Module, ::String) at require.jl:38",
+          "#69 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 6
+            },
+            {
+              "const [fun]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "eval at Distributions.jl:1 [inlined]",
+          "getdistribution(::String, ::String, ::String) at MadsMisc.jl:205",
+          "getparamsinit_max(::Dict{Any,Any}, ::Array{String,1}) at MadsParameters.jl:272",
+          "getparamsinit_max(::Dict{Any,Any}) at MadsParameters.jl:299"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at ArrayInterface.jl:1 [inlined]",
+          "(::ArrayInterface.var\"#19#46\")() at require.jl:67",
+          "err(::ArrayInterface.var\"#19#46\", ::Module, ::String) at require.jl:38",
+          "#18 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            },
+            {
+              "const [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "top-level scope at Suppressor.jl:45 [inlined]",
+          "top-level scope at io.jl:0",
+          "include(::String) at client.jl:457",
+          "top-level scope at timing.jl:233 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [top (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at ImageShow.jl:1 [inlined]",
+          "(::ImageShow.var\"#6#12\")() at require.jl:67",
+          "err(::ImageShow.var\"#6#12\", ::Module, ::String) at require.jl:38",
+          "#5 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun]": 2
+            },
+            {
+              "call [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at ImageFiltering.jl:1 [inlined]",
+          "(::ImageFiltering.var\"#73#79\")() at require.jl:67",
+          "err(::ImageFiltering.var\"#73#79\", ::Module, ::String) at require.jl:38",
+          "#72 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            },
+            {
+              "const [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "top-level scope at Suppressor.jl:30 [inlined]",
+          "top-level scope at io.jl:0",
+          "include(::String) at client.jl:457",
+          "top-level scope at timing.jl:233 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [top (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at Gadfly.jl:1 [inlined]",
+          "(::Gadfly.var\"#4#11\")() at require.jl:67",
+          "err(::Gadfly.var\"#4#11\", ::Module, ::String) at require.jl:38",
+          "#3 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun]": 2
+            },
+            {
+              "call [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at ImageShow.jl:1 [inlined]",
+          "(::ImageShow.var\"#3#9\")() at require.jl:67",
+          "err(::ImageShow.var\"#3#9\", ::Module, ::String) at require.jl:38",
+          "#2 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            },
+            {
+              "const [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at Distributions.jl:1 [inlined]",
+          "getdistribution(::String, ::String, ::String) at MadsMisc.jl:205",
+          "getparamdistributions(::Dict{String,Dict{String,Dict{String,Any}}}; init_dist::Bool) at MadsParameters.jl:681",
+          "getparamdistributions at MadsParameters.jl:664 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at ImageCore.jl:3 [inlined]",
+          "(::ImageCore.var\"#43#46\")() at require.jl:67",
+          "err(::ImageCore.var\"#43#46\", ::Module, ::String) at require.jl:38",
+          "#42 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "include [fun]": 2
+            },
+            {
+              "const [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Distributions.jl:1 [inlined]",
+          "getdistribution(::String, ::String, ::String) at MadsMisc.jl:205",
+          "getparamdistributions(::Dict{String,Dict{String,Dict{String,Any}}}; init_dist::Bool) at MadsParameters.jl:670",
+          "(::Mads.var\"#getparamdistributions##kw\")(::NamedTuple{(:init_dist,),Tuple{Bool}}, ::typeof(Mads.getparamdistributions), ::Dict{String,Dict{String,Dict{String,Any}}}) at MadsParameters.jl:664"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Distributions.jl:1 [inlined]",
+          "getdistribution(::String, ::String, ::String) at MadsMisc.jl:205",
+          "getobsmax(::Dict{String,Dict{String,Dict{String,String}}}, ::Array{String,1}) at MadsObservations.jl:110",
+          "getobsmax(::Dict{String,Dict{String,Dict{String,String}}}) at MadsObservations.jl:128"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Distributions.jl:1 [inlined]",
+          "getdistribution(::String, ::String, ::String) at MadsMisc.jl:205",
+          "getobsmin(::Dict{String,Dict{String,Dict{String,String}}}, ::Array{String,1}) at MadsObservations.jl:110",
+          "getobsmin(::Dict{String,Dict{String,Dict{String,String}}}) at MadsObservations.jl:128"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},828],[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},84],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":false,\"inQuote\":true}},36],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":false,\"inQuote\":false}},8],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},66],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},40],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},8]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 71,
+    "stack_traces": [
+      {
+        "count": 20,
+        "last_call": [
+          "_pyjlwrap_call(::Function, ::Ptr{PyCall.PyObject_struct}, ::Ptr{PyCall.PyObject_struct}) at callback.jl:28",
+          "pyjlwrap_call(::Ptr{PyCall.PyObject_struct}, ::Ptr{PyCall.PyObject_struct}, ::Ptr{PyCall.PyObject_struct}) at callback.jl:49",
+          "macro expansion at exception.jl:93 [inlined]",
+          "#110 at pyfncall.jl:43 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "gcf",
+              "count": 20
+            }
+          ]
+        }
+      },
+      {
+        "count": 19,
+        "last_call": [
+          "save(::FileIO.Formatted, ::Any, ::Vararg{Any,N} where N; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:230",
+          "save at loadsave.jl:214 [inlined]",
+          "#save#17 at loadsave.jl:136 [inlined]",
+          "save at loadsave.jl:136 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "save",
+              "count": 19
+            }
+          ]
+        }
+      },
+      {
+        "count": 12,
+        "last_call": [
+          "load(::FileIO.Formatted, ::Any; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:202",
+          "load at loadsave.jl:184 [inlined]",
+          "#load#14 at loadsave.jl:133 [inlined]",
+          "load(::String, ::String) at loadsave.jl:133"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "load",
+              "count": 12
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": [
+          "#3 at require.jl:19 [inlined]",
+          "iterate at generator.jl:47 [inlined]",
+          "_collect(::Array{Function,1}, ::Base.Generator{Array{Function,1},Requires.var\"#3#4\"}, ::Base.EltypeUnknown, ::Base.HasShape{1}) at array.jl:699",
+          "collect_similar at array.jl:628 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#41",
+              "count": 2
+            },
+            {
+              "function_name": "#2",
+              "count": 1
+            },
+            {
+              "function_name": "#71",
+              "count": 1
+            },
+            {
+              "function_name": "#4",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "load(::FileIO.Formatted, ::Any; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:202",
+          "load at loadsave.jl:184 [inlined]",
+          "#load#14 at loadsave.jl:133 [inlined]",
+          "load at loadsave.jl:133 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "load",
+              "count": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu-libgfortran4.jl:69",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu-libgfortran4.jl:29",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:41",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu-libgfortran4.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:27",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu-libgfortran4-cxx11.jl:61",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu-libgfortran4.jl:72",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "gcf",
+          "count": 20
+        },
+        {
+          "function_name": "save",
+          "count": 19
+        },
+        {
+          "function_name": "load",
+          "count": 15
+        },
+        {
+          "function_name": "do_artifact_str",
+          "count": 12
+        },
+        {
+          "function_name": "#41",
+          "count": 2
+        },
+        {
+          "function_name": "#2",
+          "count": 1
+        },
+        {
+          "function_name": "#71",
+          "count": 1
+        },
+        {
+          "function_name": "#4",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

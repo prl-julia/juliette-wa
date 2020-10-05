@@ -1,0 +1,320 @@
+{
+  "eval_info": {
+    "call_count": 155,
+    "stack_traces": [
+      {
+        "count": 95,
+        "last_call": [
+          "generate_benchmark_definition(::Module, ::Array{Symbol,1}, ::Array{Any,1}, ::Expr, ::Nothing, ::Nothing, ::Parameters) at execution.jl:370",
+          "top-level scope at execution.jl:332",
+          "include(::String) at client.jl:457",
+          "top-level scope at timing.jl:233 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 380
+            },
+            {
+              "call [fun]": 95
+            }
+          ]
+        }
+      },
+      {
+        "count": 15,
+        "last_call": [
+          "generate_benchmark_definition(::Module, ::Array{Symbol,1}, ::Array{Symbol,1}, ::Expr, ::Expr, ::Nothing, ::Parameters) at execution.jl:370",
+          "top-level scope at execution.jl:332",
+          "top-level scope at ExecutionTests.jl:21",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 60
+            },
+            {
+              "call [fun]": 15
+            }
+          ]
+        }
+      },
+      {
+        "count": 15,
+        "last_call": [
+          "generate_benchmark_definition(::Module, ::Array{Symbol,1}, ::Array{Symbol,1}, ::Expr, ::Expr, ::Nothing, ::Parameters) at execution.jl:370",
+          "top-level scope at execution.jl:332",
+          "top-level scope at ExecutionTests.jl:22",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 60
+            },
+            {
+              "call [fun]": 15
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": [
+          "generate_benchmark_definition(::Module, ::Array{Symbol,1}, ::Array{Symbol,1}, ::Expr, ::Expr, ::Nothing, ::Parameters) at execution.jl:370",
+          "macro expansion at execution.jl:332 [inlined]",
+          "(::Main.ExecutionTests.var\"#29#31\")() at ExecutionTests.jl:167",
+          "redirect_stdout(::Main.ExecutionTests.var\"#29#31\", ::IOStream) at stream.jl:1150"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 20
+            },
+            {
+              "call [fun]": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": [
+          "generate_benchmark_definition(::Module, ::Array{Symbol,1}, ::Array{Any,1}, ::Expr, ::Nothing, ::Nothing, ::Parameters) at execution.jl:370",
+          "top-level scope at execution.jl:332",
+          "top-level scope at ExecutionTests.jl:186",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 20
+            },
+            {
+              "call [fun]": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": [
+          "generate_benchmark_definition(::Module, ::Array{Symbol,1}, ::Array{Any,1}, ::Expr, ::Nothing, ::Nothing, ::Parameters) at execution.jl:370",
+          "top-level scope at execution.jl:332",
+          "top-level scope at SerializationTests.jl:21",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 20
+            },
+            {
+              "call [fun]": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": [
+          "generate_benchmark_definition(::Module, ::Array{Symbol,1}, ::Array{Any,1}, ::Expr, ::Nothing, ::Nothing, ::Parameters) at execution.jl:370",
+          "top-level scope at execution.jl:332",
+          "top-level scope at SerializationTests.jl:55",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 20
+            },
+            {
+              "call [fun]": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": [
+          "recover(::Array{Any,1}) at serialization.jl:25",
+          "map!(::typeof(BenchmarkTools.recover), ::Array{Any,1}, ::Array{Any,1}) at abstractarray.jl:2155",
+          "load(::IOStream) at serialization.jl:103",
+          "#60 at serialization.jl:88 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "curly [fun (gen)]": 2
+            },
+            {
+              "variable [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "recover(::Array{Any,1}) at serialization.jl:25",
+          "recover(::Array{Any,1}) at serialization.jl:39",
+          "map!(::typeof(BenchmarkTools.recover), ::Array{Any,1}, ::Array{Any,1}) at abstractarray.jl:2155",
+          "load(::IOStream) at serialization.jl:103"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "recover(::Array{Any,1}) at serialization.jl:25",
+          "recover(::Array{Any,1}) at serialization.jl:32",
+          "map!(::typeof(BenchmarkTools.recover), ::Array{Any,1}, ::Array{Any,1}) at abstractarray.jl:2155",
+          "load(::IOStream) at serialization.jl:103"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 3
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},1160],[{\"astHead\":\"curly\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},16],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},290]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 142,
+    "stack_traces": [
+      {
+        "count": 90,
+        "last_call": [
+          "#run_result#37 at execution.jl:32 [inlined]",
+          "run_result at execution.jl:32 [inlined]",
+          "run(::BenchmarkTools.Benchmark{Symbol(\"##benchmark#288\")}, ::Parameters; progressid::Nothing, nleaves::Float64, ndone::Float64, kwargs::Base.Iterators.Pairs{Symbol,Integer,NTuple{5,Symbol},NamedTuple{(:verbose, :samples, :evals, :gctrial, :gcsample),Tuple{Bool,Int64,Int64,Bool,Bool}}}) at execution.jl:94",
+          "run at execution.jl:94 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "_run",
+              "count": 90
+            }
+          ]
+        }
+      },
+      {
+        "count": 20,
+        "last_call": [
+          "#lineartrial#38 at execution.jl:33 [inlined]",
+          "lineartrial at execution.jl:33 [inlined]",
+          "tune!(::BenchmarkTools.Benchmark{Symbol(\"##benchmark#288\")}, ::Parameters; progressid::Nothing, nleaves::Float64, ndone::Float64, verbose::Bool, pad::String, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at execution.jl:209",
+          "tune! at execution.jl:208 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "_lineartrial",
+              "count": 20
+            }
+          ]
+        }
+      },
+      {
+        "count": 17,
+        "last_call": [
+          "#run_result#37 at execution.jl:32 [inlined]",
+          "run_result at execution.jl:32 [inlined]",
+          "run(::BenchmarkTools.Benchmark{Symbol(\"##benchmark#259\")}, ::Parameters; progressid::Nothing, nleaves::Float64, ndone::Float64, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at execution.jl:94",
+          "run at execution.jl:94 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "_run",
+              "count": 17
+            }
+          ]
+        }
+      },
+      {
+        "count": 13,
+        "last_call": [
+          "#lineartrial#38 at execution.jl:33 [inlined]",
+          "lineartrial at execution.jl:33 [inlined]",
+          "tune!(::BenchmarkTools.Benchmark{Symbol(\"##benchmark#267\")}, ::Parameters; progressid::Base.UUID, nleaves::Int64, ndone::Int64, verbose::Bool, pad::String, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at execution.jl:209",
+          "tune! at execution.jl:208 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "_lineartrial",
+              "count": 13
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "#run_result#37 at execution.jl:32 [inlined]",
+          "run_result at execution.jl:32 [inlined]",
+          "run(::BenchmarkTools.Benchmark{Symbol(\"##benchmark#255\")}, ::Parameters; progressid::Nothing, nleaves::Float64, ndone::Float64, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at execution.jl:94",
+          "run(::BenchmarkTools.Benchmark{Symbol(\"##benchmark#255\")}, ::Parameters) at execution.jl:94"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "_run",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "#run_result#37 at execution.jl:32 [inlined]",
+          "run_result at execution.jl:32 [inlined]",
+          "run_result(::BenchmarkTools.Benchmark{Symbol(\"##benchmark#368\")}) at execution.jl:32",
+          "macro expansion at execution.jl:483 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "_run",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "_run",
+          "count": 109
+        },
+        {
+          "function_name": "_lineartrial",
+          "count": 33
+        }
+      ]
+    }
+  }
+}

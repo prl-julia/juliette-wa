@@ -1,0 +1,95 @@
+{
+  "eval_info": {
+    "call_count": 3,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at misc.jl:3",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at misc.jl:3",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at display.jl:27",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at display.jl:2",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "macro [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at display.jl:21",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at display.jl:2",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"macro\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 2,
+    "stack_traces": [
+      {
+        "count": 2,
+        "last_call": [
+          "min_enabled_level(::Atom.Progress.JunoProgressLogger) at progress.jl:77",
+          "_invoked_min_enabled_level at logging.jl:81 [inlined]",
+          "Base.CoreLogging.LogState(::Atom.Progress.JunoProgressLogger) at logging.jl:386",
+          "with_logger at logging.jl:514 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "min_enabled_level",
+              "count": 2
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "min_enabled_level",
+          "count": 2
+        }
+      ]
+    }
+  }
+}

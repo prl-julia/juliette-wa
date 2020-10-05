@@ -1,0 +1,520 @@
+{
+  "eval_info": {
+    "call_count": 580,
+    "stack_traces": [
+      {
+        "count": 206,
+        "last_call": [
+          "evaluatemadsexpression(::String, ::OrderedCollections.OrderedDict{String,Float64}) at MadsMisc.jl:158",
+          "evaluatemadsexpressions(::Dict{String,Any}, ::OrderedCollections.OrderedDict{String,Float64}) at MadsMisc.jl:178",
+          "(::Mads.var\"#computeconcentrations#165\"{Dict{String,Any},Bool,Int64,Int64,Array{Function,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Bool,1},Array{Array{Float64,N} where N,1},Array{Array{Bool,N} where N,1},Array{Array{Float64,N} where N,1},Array{String,1},Bool})(::OrderedCollections.OrderedDict{String,Float64}) at MadsAnasol.jl:311",
+          "(::Mads.var\"#f_lm#134\"{Mads.var\"#computeconcentrations#165\"{Dict{String,Any},Bool,Int64,Int64,Array{Function,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Bool,1},Array{Array{Float64,N} where N,1},Array{Array{Bool,N} where N,1},Array{Array{Float64,N} where N,1},Array{String,1},Bool},Bool,Array{String,1},Array{Float64,1},Array{Float64,1},Array{String,1},OrderedCollections.OrderedDict{String,Float64}})(::Array{Float64,1}) at MadsLevenbergMarquardt.jl:152"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 206
+            }
+          ]
+        }
+      },
+      {
+        "count": 70,
+        "last_call": [
+          "evaluatemadsexpression(::String, ::OrderedCollections.OrderedDict{String,Float64}) at MadsMisc.jl:158",
+          "evaluatemadsexpressions(::Dict{String,Any}, ::OrderedCollections.OrderedDict{String,Float64}) at MadsMisc.jl:178",
+          "makecomputeconcentrations(::Dict{String,Any}; calczeroweightobs::Bool, calcpredictions::Bool) at MadsAnasol.jl:182",
+          "(::Mads.var\"#makecomputeconcentrations##kw\")(::NamedTuple{(:calczeroweightobs, :calcpredictions),Tuple{Bool,Bool}}, ::typeof(Mads.makecomputeconcentrations), ::Dict{String,Any}) at MadsAnasol.jl:179"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 70
+            }
+          ]
+        }
+      },
+      {
+        "count": 64,
+        "last_call": [
+          "sprintf(::String, ::Vararg{Any,N} where N) at MadsMisc.jl:188",
+          "parsenodenames(::String, ::Int64) at MadsParallel.jl:225",
+          "parsenodenames(::String) at MadsParallel.jl:210",
+          "top-level scope at miscellaneous.jl:167"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "@(s)printf [fun (gen)]": 64
+            }
+          ]
+        }
+      },
+      {
+        "count": 48,
+        "last_call": [
+          "evaluatemadsexpression(::String, ::OrderedCollections.OrderedDict{String,Float64}) at MadsMisc.jl:158",
+          "evaluatemadsexpressions(::Dict{String,Any}, ::OrderedCollections.OrderedDict{String,Float64}) at MadsMisc.jl:178",
+          "(::Mads.var\"#computeconcentrations#165\"{Dict{String,Any},Bool,Float64,Int64,Array{Function,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Bool,1},Array{Array{Float64,N} where N,1},Array{Array{Bool,N} where N,1},Array{Array{Float64,N} where N,1},Array{String,1},Bool})(::OrderedCollections.OrderedDict{String,Float64}) at MadsAnasol.jl:311",
+          "(::Mads.var\"#f_sa#291\"{Mads.var\"#computeconcentrations#165\"{Dict{String,Any},Bool,Float64,Int64,Array{Function,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Bool,1},Array{Array{Float64,N} where N,1},Array{Array{Bool,N} where N,1},Array{Array{Float64,N} where N,1},Array{String,1},Bool},Array{String,1},Array{Float64,1},Array{String,1},OrderedCollections.OrderedDict{String,Float64}})(::Array{Float64,1}) at MadsSenstivityAnalysis.jl:39"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 48
+            }
+          ]
+        }
+      },
+      {
+        "count": 45,
+        "last_call": [
+          "makecomputeconcentrations(::Dict{String,Any}; calczeroweightobs::Bool, calcpredictions::Bool) at MadsAnasol.jl:206",
+          "(::Mads.var\"#makecomputeconcentrations##kw\")(::NamedTuple{(:calczeroweightobs, :calcpredictions),Tuple{Bool,Bool}}, ::typeof(Mads.makecomputeconcentrations), ::Dict{String,Any}) at MadsAnasol.jl:179",
+          "makemadscommandfunction(::Dict{String,Any}; obskeys::Array{String,1}, calczeroweightobs::Bool, calcpredictions::Bool) at MadsFunc.jl:249",
+          "makemadscommandfunction(::Dict{String,Any}) at MadsFunc.jl:62"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 45
+            }
+          ]
+        }
+      },
+      {
+        "count": 32,
+        "last_call": [
+          "evaluatemadsexpression(::String, ::OrderedCollections.OrderedDict{String,Float64}) at MadsMisc.jl:158",
+          "evaluatemadsexpressions(::Dict{String,Any}, ::OrderedCollections.OrderedDict{String,Float64}) at MadsMisc.jl:178",
+          "(::Mads.var\"#computeconcentrations#165\"{Dict{String,Any},Bool,Float64,Int64,Array{Function,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Bool,1},Array{Array{Float64,N} where N,1},Array{Array{Bool,N} where N,1},Array{Array{Float64,N} where N,1},Array{String,1},Bool})(::OrderedCollections.OrderedDict{String,Float64}) at MadsAnasol.jl:311",
+          "(::Mads.var\"#arrayfunction_merge#67\"{Mads.var\"#computeconcentrations#165\"{Dict{String,Any},Bool,Float64,Int64,Array{Function,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Bool,1},Array{Array{Float64,N} where N,1},Array{Array{Bool,N} where N,1},Array{Array{Float64,N} where N,1},Array{String,1},Bool},Array{String,1},OrderedCollections.OrderedDict{String,Float64}})(::Array{Float64,1}) at MadsMisc.jl:19"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 32
+            }
+          ]
+        }
+      },
+      {
+        "count": 27,
+        "last_call": [
+          "eval(::Symbol) at Mads.jl:11",
+          "@tryimport(::LineNumberNode, ::Module, ::Symbol, ::Symbol) at Mads.jl:82",
+          "@tryimport(::LineNumberNode, ::Module, ::Symbol) at Mads.jl:81",
+          "eval(::Module, ::Any) at function-override.jl:133"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 27
+            }
+          ]
+        }
+      },
+      {
+        "count": 9,
+        "last_call": [
+          "functions(::String; shortoutput::Bool, quiet::Bool) at MadsHelp.jl:60",
+          "functions(::String) at MadsHelp.jl:58",
+          "top-level scope at miscellaneous.jl:35",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "import [fun (gen)]": 9
+            }
+          ]
+        }
+      },
+      {
+        "count": 9,
+        "last_call": [
+          "functions(::Symbol, ::String; shortoutput::Bool, quiet::Bool) at MadsHelp.jl:103",
+          "(::Mads.var\"#functions##kw\")(::NamedTuple{(:shortoutput, :quiet),Tuple{Bool,Bool}}, ::typeof(Mads.functions), ::Symbol, ::String) at MadsHelp.jl:97",
+          "functions(::String; shortoutput::Bool, quiet::Bool) at MadsHelp.jl:61",
+          "functions at MadsHelp.jl:58 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 9
+            }
+          ]
+        }
+      },
+      {
+        "count": 9,
+        "last_call": [
+          "functions(::Symbol, ::String; shortoutput::Bool, quiet::Bool) at MadsHelp.jl:103",
+          "(::Mads.var\"#functions##kw\")(::NamedTuple{(:shortoutput, :quiet),Tuple{Bool,Bool}}, ::typeof(Mads.functions), ::Symbol, ::String) at MadsHelp.jl:97",
+          "functions(::String; shortoutput::Bool, quiet::Bool) at MadsHelp.jl:61",
+          "functions(::String) at MadsHelp.jl:58"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 9
+            }
+          ]
+        }
+      },
+      {
+        "count": 9,
+        "last_call": [
+          "functions(::String; shortoutput::Bool, quiet::Bool) at MadsHelp.jl:60",
+          "functions at MadsHelp.jl:58 [inlined]",
+          "(::Mads.var\"#functions##kw\")(::NamedTuple{(:quiet,),Tuple{Bool}}, ::typeof(Mads.functions)) at MadsHelp.jl:58",
+          "top-level scope at miscellaneous.jl:29"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "import [fun (gen)]": 9
+            }
+          ]
+        }
+      },
+      {
+        "count": 9,
+        "last_call": [
+          "status(::String; git::Bool, gitmore::Bool) at MadsPublish.jl:260",
+          "status at MadsPublish.jl:257 [inlined]",
+          "status(; git::Bool, gitmore::Bool) at MadsPublish.jl:253",
+          "status() at MadsPublish.jl:252"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 9
+            }
+          ]
+        }
+      },
+      {
+        "count": 9,
+        "last_call": [
+          "functions(::Symbol, ::Regex; shortoutput::Bool, quiet::Bool) at MadsHelp.jl:69",
+          "(::Mads.var\"#functions##kw\")(::NamedTuple{(:shortoutput, :quiet),Tuple{Bool,Bool}}, ::typeof(Mads.functions), ::Symbol, ::Regex) at MadsHelp.jl:67",
+          "functions(::Regex; shortoutput::Bool, quiet::Bool) at MadsHelp.jl:52",
+          "functions(::Regex) at MadsHelp.jl:49"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 9
+            }
+          ]
+        }
+      },
+      {
+        "count": 9,
+        "last_call": [
+          "functions(::Regex; shortoutput::Bool, quiet::Bool) at MadsHelp.jl:51",
+          "functions(::Regex) at MadsHelp.jl:49",
+          "top-level scope at miscellaneous.jl:36",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "import [fun (gen)]": 9
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "sprintf(::String, ::Vararg{Any,N} where N) at MadsMisc.jl:188",
+          "setnewmadsfilename(::String) at MadsIO.jl:545",
+          "getnextmadsfilename(::String) at MadsIO.jl:585",
+          "top-level scope at filename.jl:22"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "@(s)printf [fun (gen)]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "evaluatemadsexpression(::String, ::OrderedCollections.OrderedDict{String,Float64}) at MadsMisc.jl:158",
+          "evaluatemadsexpressions(::Dict{String,Any}, ::OrderedCollections.OrderedDict{String,Float64}) at MadsMisc.jl:178",
+          "(::Mads.var\"#computeconcentrations#165\"{Dict{String,Any},Bool,Float64,Int64,Array{Function,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Bool,1},Array{Array{Float64,N} where N,1},Array{Array{Bool,N} where N,1},Array{Array{Float64,N} where N,1},Array{String,1},Bool})(::OrderedCollections.OrderedDict{String,Float64}) at MadsAnasol.jl:311",
+          "forward(::Dict{String,Any}, ::OrderedCollections.OrderedDict{String,Float64}; all::Bool, checkpointfrequency::Int64, checkpointfilename::String) at MadsForward.jl:35"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "sprintf(::String, ::Vararg{Any,N} where N) at MadsMisc.jl:188",
+          "setnewmadsfilename(::String) at MadsIO.jl:545",
+          "getnextmadsfilename(::String) at MadsIO.jl:585",
+          "top-level scope at filename.jl:25"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "@(s)printf [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "evaluatemadsexpression(::String, ::OrderedCollections.OrderedDict{String,Float64}) at MadsMisc.jl:158",
+          "evaluatemadsexpressions(::Dict{String,Any}, ::OrderedCollections.OrderedDict{String,Float64}) at MadsMisc.jl:178",
+          "(::Mads.var\"#computeconcentrations#165\"{Dict{String,Any},Bool,Int64,Int64,Array{Function,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Bool,1},Array{Array{Float64,N} where N,1},Array{Array{Bool,N} where N,1},Array{Array{Float64,N} where N,1},Array{String,1},Bool})(::OrderedCollections.OrderedDict{String,Float64}) at MadsAnasol.jl:311",
+          "(::Mads.var\"#computeconcentrations#165\"{Dict{String,Any},Bool,Int64,Int64,Array{Function,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Bool,1},Array{Array{Float64,N} where N,1},Array{Array{Bool,N} where N,1},Array{Array{Float64,N} where N,1},Array{String,1},Bool})() at MadsAnasol.jl:284"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "plotgrid(::Dict{String,Any}, ::Array{Float64,3}; addtitle::Bool, title::String, filename::String, format::String) at MadsPlotPy.jl:10",
+          "plotgrid at MadsPlotPy.jl:5 [inlined]",
+          "plotgrid(::Dict{String,Any}, ::OrderedCollections.OrderedDict{String,Float64}; addtitle::Bool, title::String, filename::String, format::String) at MadsPlotPy.jl:63",
+          "plotgrid at MadsPlotPy.jl:61 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "evaluatemadsexpression(::String, ::OrderedCollections.OrderedDict{String,Float64}) at MadsMisc.jl:158",
+          "evaluatemadsexpressions(::Dict{String,Any}, ::OrderedCollections.OrderedDict{String,Float64}) at MadsMisc.jl:178",
+          "(::Mads.var\"#computeconcentrations#165\"{Dict{String,Any},Bool,Int64,Int64,Array{Function,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Float64,1},Array{Bool,1},Array{Array{Float64,N} where N,1},Array{Array{Bool,N} where N,1},Array{Array{Float64,N} where N,1},Array{String,1},Bool})() at MadsAnasol.jl:283",
+          "top-level scope at runtests.jl:14"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "evaluatemadsexpression(::String, ::OrderedCollections.OrderedDict{String,Float64}) at MadsMisc.jl:158",
+          "evaluatemadsexpressions(::Dict{String,Any}, ::OrderedCollections.OrderedDict{String,Float64}) at MadsMisc.jl:178",
+          "makecomputeconcentrations(::Dict{String,Any}; calczeroweightobs::Bool, calcpredictions::Bool) at MadsAnasol.jl:182",
+          "makecomputeconcentrations(::Dict{String,Any}) at MadsAnasol.jl:179"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at Mads.jl:96",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_require(::Base.PkgId) at loading.jl:1007"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "useimport [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "functions(::Module, ::Regex; shortoutput::Bool, quiet::Bool) at MadsHelp.jl:69",
+          "functions(::Module, ::Regex) at MadsHelp.jl:67",
+          "top-level scope at miscellaneous.jl:38",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at Mads.jl:96",
+          "include(::String) at client.jl:457",
+          "macro expansion at timing.jl:233 [inlined]",
+          "top-level scope at runtests.jl:59"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "useimport [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "makecomputeconcentrations(::Dict{String,Any}; calczeroweightobs::Bool, calcpredictions::Bool) at MadsAnasol.jl:206",
+          "makecomputeconcentrations(::Dict{String,Any}) at MadsAnasol.jl:179",
+          "top-level scope at runtests.jl:13",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "makecomputeconcentrations(::Dict{String,Any}; calczeroweightobs::Bool, calcpredictions::Bool) at MadsAnasol.jl:206",
+          "makecomputeconcentrations(::Dict{String,Any}) at MadsAnasol.jl:179",
+          "top-level scope at runtests.jl:21",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "functions(::Symbol, ::String; shortoutput::Bool, quiet::Bool) at MadsHelp.jl:103",
+          "functions at MadsHelp.jl:97 [inlined]",
+          "functions(::Symbol) at MadsHelp.jl:97",
+          "top-level scope at miscellaneous.jl:34"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Symbol) at Mads.jl:11",
+          "@tryimport(::LineNumberNode, ::Module, ::Symbol, ::Symbol) at Mads.jl:82",
+          "include(::String) at client.jl:457",
+          "macro expansion at timing.jl:233 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "importeverywhere(::String) at MadsFunc.jl:380",
+          "makemadscommandfunction(::Dict{String,Any}; obskeys::Array{String,1}, calczeroweightobs::Bool, calcpredictions::Bool) at MadsFunc.jl:92",
+          "makemadscommandfunction(::Dict{String,Any}) at MadsFunc.jl:62",
+          "makearrayloglikelihood at MadsMisc.jl:128 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "importeverywhere(::String) at MadsFunc.jl:383",
+          "makemadscommandfunction(::Dict{String,Any}; obskeys::Array{String,1}, calczeroweightobs::Bool, calcpredictions::Bool) at MadsFunc.jl:92",
+          "makemadscommandfunction(::Dict{String,Any}) at MadsFunc.jl:62",
+          "makearrayloglikelihood at MadsMisc.jl:128 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "functions(::Module, ::String; shortoutput::Bool, quiet::Bool) at MadsHelp.jl:103",
+          "functions(::Module, ::String) at MadsHelp.jl:97",
+          "top-level scope at miscellaneous.jl:37",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"@(s)printf\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},138],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":false,\"inQuote\":false}},2],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},728],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},226],[{\"astHead\":\"import\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},54],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

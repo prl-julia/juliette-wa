@@ -1,0 +1,107 @@
+{
+  "eval_info": {
+    "call_count": 901,
+    "stack_traces": [
+      {
+        "count": 882,
+        "last_call": [
+          "print_functions_to_extend() at particles.jl:70",
+          "#157 at Test.jl:633 [inlined]",
+          "redirect_stderr(::var\"#157#222\", ::IOStream) at stream.jl:1150",
+          "#156 at Test.jl:632 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 882
+            }
+          ]
+        }
+      },
+      {
+        "count": 8,
+        "last_call": [
+          "top-level scope at forwarddiff.jl:40",
+          "include(::Function, ::Module, ::String) at Base.jl:380",
+          "include at Base.jl:368 [inlined]",
+          "include(::String) at MonteCarloMeasurements.jl:40"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top]": 32
+            }
+          ]
+        }
+      },
+      {
+        "count": 8,
+        "last_call": [
+          "top-level scope at forwarddiff.jl:21",
+          "include(::Function, ::Module, ::String) at Base.jl:380",
+          "include at Base.jl:368 [inlined]",
+          "include(::String) at MonteCarloMeasurements.jl:40"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top (gen)]": 8
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at MonteCarloMeasurements.jl:40 [inlined]",
+          "(::MonteCarloMeasurements.var\"#196#205\")() at require.jl:67",
+          "err(::MonteCarloMeasurements.var\"#196#205\", ::Module, ::String) at require.jl:38",
+          "#195 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "include [fun]": 2
+            },
+            {
+              "const [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "get_buffer_setter(::Tuple{Tuple{Array{Any,1},DataType,Int64,UnionAll},Tuple{Array{Any,1},DataType,Int64,UnionAll}}) at deconstruct.jl:247",
+          "Workspace(::var\"#271#280\", ::TransferFunction{ControlSystems.Continuous,ControlSystems.SisoRational{StaticParticles{Float64,50}}}) at deconstruct.jl:325",
+          "top-level scope at test_deconstruct.jl:14",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":false,\"inQuote\":false}},16],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":false,\"inQuote\":true}},64],[{\"astHead\":\"->\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},1764]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

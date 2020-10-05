@@ -1,0 +1,1141 @@
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:243
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:243
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:243
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:243
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:243
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:243
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:243
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:243
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:243
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:243
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:243
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:243
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:243
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:243
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:254
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:254
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:254
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:254
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:254
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:254
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = populate_py_to_mx_dict() at sympy.jl:254
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:254
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:255
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:255
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:255
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:255
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:255
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:255
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_py_to_mx_dict() at sympy.jl:255
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:255
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = mk_py_to_mx_funcs() at sympy.jl:265
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:265
+┌ Warning: `haskey(o::PyObject, s::Union{Symbol, AbstractString})` is deprecated, use `hasproperty(o, s)` instead.
+│   caller = mk_py_to_mx_funcs() at sympy.jl:265
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:265
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = mk_py_to_mx_funcs() at sympy.jl:266
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:266
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
+│   caller = mk_py_to_mx_funcs() at sympy.jl:266
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:266
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_user_symbol_dict() at sympy.jl:282
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
+│   caller = populate_user_symbol_dict() at sympy.jl:282
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_user_symbol_dict() at sympy.jl:282
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
+│   caller = populate_user_symbol_dict() at sympy.jl:282
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_user_symbol_dict() at sympy.jl:282
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
+│   caller = populate_user_symbol_dict() at sympy.jl:282
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_user_symbol_dict() at sympy.jl:282
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
+│   caller = populate_user_symbol_dict() at sympy.jl:282
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_user_symbol_dict() at sympy.jl:282
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
+│   caller = populate_user_symbol_dict() at sympy.jl:282
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_user_symbol_dict() at sympy.jl:282
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
+│   caller = populate_user_symbol_dict() at sympy.jl:282
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:282
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_mx_to_py_dict() at sympy.jl:473
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_mx_to_py_dict() at sympy.jl:473
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_mx_to_py_dict() at sympy.jl:473
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_mx_to_py_dict() at sympy.jl:473
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_mx_to_py_dict() at sympy.jl:473
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_mx_to_py_dict() at sympy.jl:473
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_mx_to_py_dict() at sympy.jl:473
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_mx_to_py_dict() at sympy.jl:473
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_mx_to_py_dict() at sympy.jl:473
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = populate_mx_to_py_dict() at sympy.jl:473
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:473
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = init_sympy() at sympy.jl:860
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:860
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = init_sympy() at sympy.jl:860
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:860
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = init_sympy() at sympy.jl:861
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:861
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = init_sympy() at sympy.jl:861
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:861
+┌ Warning: `getindex(o::PyObject, s::AbstractString)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o."s"` instead of `o["s"]`.
+│   caller = init_isympy() at sympy.jl:872
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:872
+┌ Warning: For::argb: For called with one argument; between 3 and 4 are expected.
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrapout.jl:29
+┌ Warning: For::argb: For called with five arguments; between 3 and 4 are expected.
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrapout.jl:29
+┌ Warning: Throw flag set, but expression is not throw.
+│   wrapout($(Expr(:escape, :mx))) = True
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrapout.jl:29
+┌ Warning: Throw flag set, but expression is not throw.
+│   wrapout($(Expr(:escape, :mx))) = True
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrapout.jl:29
+┌ Warning: Catch: throw set but expr is 
+│   wrapout($(Expr(:escape, :res))) = Throw(x,u)
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrapout.jl:29
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _sjtopy(::Symbol) at sympy.jl:754
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:754
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = apprules(::Mxpr{:Expand}) at sympy_application.jl:17
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:17
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:399
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:399
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:408
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:408
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:416
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:416
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:422
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:422
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:425
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:425
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:431
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:431
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:412
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:412
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _sjtopy(::Mxpr{:HoldForm}) at sympy.jl:731
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:731
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Sum(::Mxpr{:Sum}, ::Mxpr{:f}, ::Mxpr{:List}) at sympy_application.jl:238
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:238
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:433
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:433
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = pytosj_Function(::PyCall.PyObject, ::PyCall.PyObject) at sympy.jl:349
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:349
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = pytosj_Function(::PyCall.PyObject, ::PyCall.PyObject) at sympy.jl:350
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:350
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = dopowerE(::Mxpr{:Power}, ::Mxpr{:Times}) at math_functions.jl:1380
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/math_functions.jl:1380
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Cos(::Mxpr{:Cos}, ::Mxpr{:Times}) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Cos(::Mxpr{:Cos}, ::Symbol) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = apprules(::Mxpr{:Limit}) at sympy_application.jl:74
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:74
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Sin(::Mxpr{:Sin}, ::Symbol) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _sjtopy(::Mxpr{:DirectedInfinity}) at sympy.jl:556
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:556
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = sjlog(::Mxpr{:Power}) at wrappers.jl:75
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:75
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = sjlog(::Mxpr{:Log}) at wrappers.jl:75
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:75
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:425
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:425
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = dopowerE(::Mxpr{:Power}, ::Symbol) at math_functions.jl:1380
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/math_functions.jl:1380
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = sjlog(::Mxpr{:Plus}) at wrappers.jl:75
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:75
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = sjlog(::Symbol) at wrappers.jl:75
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:75
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = dopowerE(::Mxpr{:Power}, ::Mxpr{:Plus}) at math_functions.jl:1380
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/math_functions.jl:1380
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = dopowerE(::Mxpr{:Power}, ::Mxpr{:Power}) at math_functions.jl:1380
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/math_functions.jl:1380
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Solve(::Mxpr{:Solve}, ::Mxpr{:Plus}, ::Symbol) at sympy_application.jl:492
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:492
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _sjtopy(::Mxpr{:Equal}) at sympy.jl:564
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:564
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Solve(::Mxpr{:Solve}, ::Mxpr{:Equal}, ::Symbol) at sympy_application.jl:492
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:492
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Solve(::Mxpr{:Solve}, ::Mxpr{:List}, ::Mxpr{:List}) at sympy_application.jl:500
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:500
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:417
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:417
+/home/jack/.julia/adcme/lib/python3.7/site-packages/sympy/__init__.py:676: SymPyDeprecationWarning: 
+
+importing sympy.core.containers with 'from sympy import *' has been
+deprecated since SymPy 1.6. Use import sympy.core.containers instead.
+See https://github.com/sympy/sympy/issues/18245 for more info.
+
+  deprecated_since_version="1.6").warn()
+/home/jack/.julia/adcme/lib/python3.7/site-packages/sympy/__init__.py:676: SymPyDeprecationWarning: 
+
+importing sympy.core.numbers with 'from sympy import *' has been
+deprecated since SymPy 1.6. Use import sympy.core.numbers instead. See
+https://github.com/sympy/sympy/issues/18245 for more info.
+
+  deprecated_since_version="1.6").warn()
+/home/jack/.julia/adcme/lib/python3.7/site-packages/sympy/__init__.py:676: SymPyDeprecationWarning: 
+
+importing sympy.logic.boolalg with 'from sympy import *' has been
+deprecated since SymPy 1.6. Use import sympy.logic.boolalg instead.
+See https://github.com/sympy/sympy/issues/18245 for more info.
+
+  deprecated_since_version="1.6").warn()
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:418
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:418
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:419
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:419
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:419
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:419
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = apprules(::Mxpr{:Roots}) at sympy_application.jl:538
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:538
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_JacobiP(::Mxpr{:JacobiP}, ::Int64, ::Int64, ::Int64, ::Symbol) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Sin(::Mxpr{:Sin}, ::Mxpr{:Times}) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _sjtopy(::Rational{Int64}) at sympy.jl:820
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:820
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_DiracDelta(::Mxpr{:DiracDelta}, ::Mxpr{:Plus}) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:DiracDelta}, ::Mxpr{:List}) at sympy_application.jl:103
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_DiracDelta(::Mxpr{:DiracDelta}, ::Int64) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_FactorSquareFree(::Mxpr{:FactorSquareFree}, ::Mxpr{:Plus}) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = apprules(::Mxpr{:Factor}) at sympy_application.jl:17
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:17
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_BellB(::Mxpr{:BellB}, ::Int64) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_BellB(::Mxpr{:BellB}, ::Int64, ::Vararg{Any,N} where N) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Divisors(::Mxpr{:Divisors}, ::Int64) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _sjtopy(::Mxpr{:Pattern}) at sympy.jl:731
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:731
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _sjtopy(::Mxpr{:Blank}) at sympy.jl:731
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:731
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = sjlog(::Mxpr{:Times}) at wrappers.jl:75
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:75
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _sjtopy(::Mxpr{:f}) at sympy.jl:731
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:731
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:f}, ::Symbol) at sympy_application.jl:103
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = (::Symata.var"#151#155")(::PyCall.PyObject) at sympy.jl:371
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:371
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Sum(::Mxpr{:Sum}, ::Mxpr{:Power}, ::Mxpr{:List}) at sympy_application.jl:238
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:238
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Sum(::Mxpr{:Sum}, ::Mxpr{:Times}, ::Mxpr{:List}) at sympy_application.jl:238
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:238
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_BesselI(::Mxpr{:BesselI}, ::Int64, ::Mxpr{:Times}) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Sum(::Mxpr{:Sum}, ::Symbol, ::Mxpr{:List}) at sympy_application.jl:238
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:238
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Zeta(::Mxpr{:Zeta}, ::Int64) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Sum(::Mxpr{:Sum}, ::Mxpr{:Power}, ::Mxpr{:List}, ::Vararg{Mxpr{:List},N} where N) at sympy_application.jl:238
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:238
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = pytosj_less_than(::PyCall.PyObject) at sympy.jl:384
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:384
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = (::Symata.var"#150#154")(::PyCall.PyObject) at sympy.jl:370
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:370
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Abs(::Mxpr{:Abs}, ::Symbol) at math_functions.jl:965
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/math_functions.jl:965
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Integrate(::Mxpr{:Integrate}, ::Symbol, ::Symbol) at sympy_application.jl:103
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Integrate(::Mxpr{:Integrate}, ::Symbol, ::Mxpr{:List}) at sympy_application.jl:103
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Integrate(::Mxpr{:Integrate}, ::Symbol, ::Mxpr{:List}, ::Vararg{Any,N} where N) at sympy_application.jl:103
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Cos(::Mxpr{:Cos}, ::Mxpr{:Plus}) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:Power}, ::Symbol) at sympy_application.jl:103
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Tan(::Mxpr{:Tan}, ::Mxpr{:Plus}) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = sympy_erf(::PyCall.PyObject) at wrappers.jl:36
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:36
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Erfi(::Mxpr{:Erfi}, ::Symbol) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Integrate_kws(::Mxpr{:Integrate}, ::Dict{Any,Any}, ::Mxpr{:Times}, ::Mxpr{:List}) at sympy_application.jl:118
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:118
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = sympy_gamma(::PyCall.PyObject) at wrappers.jl:33
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:33
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:Plus}, ::Symbol) at sympy_application.jl:103
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:Times}, ::Symbol) at sympy_application.jl:103
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:Log}, ::Symbol) at sympy_application.jl:103
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:Log}, ::Mxpr{:List}) at sympy_application.jl:103
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Integrate(::Mxpr{:Integrate}, ::Symbol) at sympy_application.jl:96
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:96
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:Power}, ::Mxpr{:List}) at sympy_application.jl:103
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Integrate(::Mxpr{:Integrate}, ::Mxpr{:Times}, ::Mxpr{:List}) at sympy_application.jl:103
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:103
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = pytosj_greater_than(::PyCall.PyObject) at sympy.jl:384
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:384
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Re(::Mxpr{:Re}, ::Symbol) at none:3
+└ @ Symata ./none:3
+[ Info: Test failed in integral_derivative_test.sj, line 76
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Re(::Mxpr{:Re}, ::Rational{Int64}) at none:3
+└ @ Symata ./none:3
+[ Info: Test failed in integral_derivative_test.sj, line 84
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_MellinTransform(::Mxpr{:MellinTransform}, ::Mxpr{:Power}, ::Vararg{Any,N} where N) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_InverseMellinTransform(::Mxpr{:InverseMellinTransform}, ::Mxpr{:Gamma}, ::Vararg{Any,N} where N) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_InverseMellinTransform(::Mxpr{:InverseMellinTransform}, ::Mxpr{:Power}, ::Vararg{Any,N} where N) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_HeavisideTheta(::Mxpr{:HeavisideTheta}, ::Mxpr{:Plus}) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = macro expansion at sympy.jl:906 [inlined]
+└ @ Core ~/.julia/packages/Symata/1oDeR/src/sympy.jl:906
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = apprules(::Mxpr{:InverseLaplaceTransform}) at sympy_application.jl:182
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:182
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_HeavisideTheta(::Mxpr{:HeavisideTheta}, ::Symbol) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = top-level scope at none:1
+└ @ Core none:1
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:402
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:402
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = apprules(::Mxpr{:FourierTransform}) at sympy_application.jl:206
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:206
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = apprules(::Mxpr{:InverseFourierTransform}) at sympy_application.jl:212
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:212
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_SineTransform(::Mxpr{:SineTransform}, ::Mxpr{:Times}, ::Vararg{Any,N} where N) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_CosineTransform(::Mxpr{:CosineTransform}, ::Mxpr{:Power}, ::Vararg{Any,N} where N) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_HankelTransform(::Mxpr{:HankelTransform}, ::Mxpr{:Power}, ::Vararg{Any,N} where N) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_InverseHankelTransform(::Mxpr{:InverseHankelTransform}, ::Mxpr{:Times}, ::Vararg{Any,N} where N) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = apprules(::Mxpr{:D}) at sympy_application.jl:326
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:326
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_ArcTan(::Mxpr{:ArcTan}, ::Symbol) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_BesselJ(::Mxpr{:BesselJ}, ::Int64, ::Symbol) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Product(::Mxpr{:Product}, ::Symbol, ::Mxpr{:List}) at sympy_application.jl:261
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:261
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Product(::Mxpr{:Product}, ::Symbol, ::Mxpr{:List}, ::Vararg{Mxpr{:List},N} where N) at sympy_application.jl:261
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:261
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:441
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:441
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:441
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:441
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = _pytosj(::PyCall.PyObject) at sympy.jl:445
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy.jl:445
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Product(::Mxpr{:Product}, ::Mxpr{:Factorial}, ::Mxpr{:List}) at sympy_application.jl:261
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:261
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Product(::Mxpr{:Product}, ::Mxpr{:Times}, ::Mxpr{:List}) at sympy_application.jl:261
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/sympy_application.jl:261
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = do_Pochhammer(::Mxpr{:Pochhammer}, ::Int64, ::Vararg{Any,N} where N) at none:3
+└ @ Symata ./none:3
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = sjlog(::Int64) at wrappers.jl:75
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:75
+┌ Warning: `getindex(o::PyObject, s::Symbol)` is deprecated in favor of dot overloading (`getproperty`) so elements should now be accessed as e.g. `o.s` instead of `o[:s]`.
+│   caller = sjlog(::Mxpr{:Equal}) at wrappers.jl:75
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/wrappers.jl:75
+┌ Warning: Symata: Error reading file /home/jack/.julia/packages/Symata/1oDeR/src/../symata_test/list_test.sj, line 379
+└ @ Symata ~/.julia/packages/Symata/1oDeR/src/IO.jl:85
+ERROR: LoadError: There was an error during testing
+in expression starting at /home/jack/.julia/packages/Symata/1oDeR/test/runtests.jl:20
+   Updating registry at `~/.julia/registries/General`
+  Resolving package versions...
+No Changes to `~/.julia/environments/v1.5/Project.toml`
+No Changes to `~/.julia/environments/v1.5/Manifest.toml`
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+    Testing Symata
+Status `/tmp/jl_uxfY12/Project.toml`
+  [861a8166] Combinatorics v0.7.0
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [8f4d0f93] Conda v1.4.1
+  [864edb3b] DataStructures v0.17.20
+  [163ba53b] DiffResults v0.0.4
+  [b552c78f] DiffRules v1.0.1
+  [59287772] Formatting v0.4.1
+  [f6369f11] ForwardDiff v0.10.12
+  [c8e1da08] IterTools v1.3.0
+  [1914dd2f] MacroTools v0.5.5
+  [c03570c3] Memoize v0.3.0
+  [f27b6e38] Polynomials v0.6.1
+  [27ebfcd6] Primes v0.4.0
+  [438e738f] PyCall v1.91.4
+  [1fd47b50] QuadGK v2.4.1
+  [f2b01f46] Roots v0.8.4
+  [276daf66] SpecialFunctions v0.8.0
+  [a906b1d5] Symata v0.4.5
+  [81def892] VersionParsing v1.2.0
+  [ade2ca70] Dates
+  [b77e0a4c] InteractiveUtils
+  [d6f4376e] Markdown
+  [3fa0cd96] REPL
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_uxfY12/Manifest.toml`
+  [9e28174c] BinDeps v1.0.1
+  [b99e7846] BinaryProvider v0.5.10
+  [861a8166] Combinatorics v0.7.0
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v2.2.1
+  [8f4d0f93] Conda v1.4.1
+  [864edb3b] DataStructures v0.17.20
+  [163ba53b] DiffResults v0.0.4
+  [b552c78f] DiffRules v1.0.1
+  [59287772] Formatting v0.4.1
+  [f6369f11] ForwardDiff v0.10.12
+  [c8e1da08] IterTools v1.3.0
+  [682c06a0] JSON v0.21.1
+  [1914dd2f] MacroTools v0.5.5
+  [c03570c3] Memoize v0.3.0
+  [77ba4419] NaNMath v0.3.4
+  [bac558e1] OrderedCollections v1.3.1
+  [69de0a69] Parsers v1.0.10
+  [f27b6e38] Polynomials v0.6.1
+  [27ebfcd6] Primes v0.4.0
+  [438e738f] PyCall v1.91.4
+  [1fd47b50] QuadGK v2.4.1
+  [3cdcf5f2] RecipesBase v0.7.0
+  [f2b01f46] Roots v0.8.4
+  [276daf66] SpecialFunctions v0.8.0
+  [90137ffa] StaticArrays v0.12.4
+  [a906b1d5] Symata v0.4.5
+  [30578b45] URIParser v0.4.1
+  [81def892] VersionParsing v1.2.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+ERROR: LoadError: Package Symata errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1566
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:328
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:315
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65 [inlined]
+ [11] testPkg(::String, ::Nothing) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/test-package.jl:8
+ [12] top-level scope at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/test-package.jl:11
+ [13] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [14] include(::Module, ::String) at ./Base.jl:368
+ [15] exec_options(::Base.JLOptions) at ./client.jl:296
+ [16] _start() at ./client.jl:506
+in expression starting at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/test-package.jl:11

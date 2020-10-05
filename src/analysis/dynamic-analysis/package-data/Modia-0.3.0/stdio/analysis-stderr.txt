@@ -1,0 +1,190 @@
+WARNING: Method definition combine_axes(Any, Any) in module Broadcast at broadcast.jl:484 overwritten in module DiffEqBase at /home/jack/.julia/packages/DiffEqBase/y3Q1t/src/diffeqfastbc.jl:18.
+  ** incremental compilation may be fatally broken for this module **
+
+ERROR: LoadError: LoadError: UndefVarError: initialize_dae! not defined
+Stacktrace:
+ [1] getproperty(::Module, ::Symbol) at ./Base.jl:26
+ [2] top-level scope at /home/jack/.julia/packages/Sundials/0yJ3G/src/common_interface/integrator_utils.jl:151
+ [3] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [4] include at ./Base.jl:368 [inlined]
+ [5] include(::String) at /home/jack/.julia/packages/Sundials/0yJ3G/src/Sundials.jl:3
+ [6] top-level scope at /home/jack/.julia/packages/Sundials/0yJ3G/src/Sundials.jl:71
+ [7] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [8] include(::Module, ::String) at ./Base.jl:368
+ [9] top-level scope at none:2
+ [10] eval at ./boot.jl:331 [inlined]
+ [11] eval(::Expr) at ./client.jl:467
+ [12] top-level scope at ./none:3
+in expression starting at /home/jack/.julia/packages/Sundials/0yJ3G/src/common_interface/integrator_utils.jl:151
+in expression starting at /home/jack/.julia/packages/Sundials/0yJ3G/src/Sundials.jl:71
+ERROR: LoadError: LoadError: LoadError: Failed to precompile Sundials [c3572dad-4567-51f8-b174-8c6c989267f4] to /home/jack/.julia/compiled/v1.5/Sundials/j8Ppj_D5WbT.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1290
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [7] include at ./Base.jl:368 [inlined]
+ [8] include(::String) at /home/jack/.julia/packages/ModiaMath/xaGiR/src/NonlinearEquations/_module.jl:25
+ [9] top-level scope at /home/jack/.julia/packages/ModiaMath/xaGiR/src/NonlinearEquations/_module.jl:35
+ [10] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [11] include at ./Base.jl:368 [inlined]
+ [12] include(::String) at /home/jack/.julia/packages/ModiaMath/xaGiR/src/ModiaMath.jl:60
+ [13] top-level scope at /home/jack/.julia/packages/ModiaMath/xaGiR/src/ModiaMath.jl:142
+ [14] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [15] include(::Module, ::String) at ./Base.jl:368
+ [16] top-level scope at none:2
+ [17] eval at ./boot.jl:331 [inlined]
+ [18] eval(::Expr) at ./client.jl:467
+ [19] top-level scope at ./none:3
+in expression starting at /home/jack/.julia/packages/ModiaMath/xaGiR/src/NonlinearEquations/sundials_kinsol.jl:15
+in expression starting at /home/jack/.julia/packages/ModiaMath/xaGiR/src/NonlinearEquations/_module.jl:35
+in expression starting at /home/jack/.julia/packages/ModiaMath/xaGiR/src/ModiaMath.jl:142
+ERROR: LoadError: Failed to precompile ModiaMath [67ccffd1-116d-535b-ad39-76a8fd0cbf71] to /home/jack/.julia/compiled/v1.5/ModiaMath/4AyMZ_D5WbT.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1290
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [7] include(::Module, ::String) at ./Base.jl:368
+ [8] top-level scope at none:2
+ [9] eval at ./boot.jl:331 [inlined]
+ [10] eval(::Expr) at ./client.jl:467
+ [11] top-level scope at ./none:3
+in expression starting at /home/jack/.julia/packages/Modia/D0Mdu/src/Modia.jl:91
+   Updating registry at `~/.julia/registries/General`
+  Resolving package versions...
+No Changes to `/tmp/jl_safoQB/Project.toml`
+No Changes to `/tmp/jl_safoQB/Manifest.toml`
+ERROR: LoadError: Failed to precompile Modia [cb905087-75eb-5f27-8515-1ce0ec8e839e] to /home/jack/.julia/compiled/v1.5/Modia/CBgbi_D5WbT.ji.
+Stacktrace:
+ [1] error(::String) at ./error.jl:33
+ [2] compilecache(::Base.PkgId, ::String) at ./loading.jl:1290
+ [3] _require(::Base.PkgId) at ./loading.jl:1030
+ [4] require(::Base.PkgId) at ./loading.jl:928
+ [5] require(::Module, ::Symbol) at ./loading.jl:923
+ [6] include(::String) at ./client.jl:457
+ [7] top-level scope at ./none:12
+in expression starting at /home/jack/.julia/packages/Modia/D0Mdu/test/runtests.jl:6
+   Updating registry at `~/.julia/registries/General`
+  Resolving package versions...
+No Changes to `~/.julia/environments/v1.5/Project.toml`
+No Changes to `~/.julia/environments/v1.5/Manifest.toml`
+┌ Warning: Pkg.installed() is deprecated
+└ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+    Testing Modia
+Status `/tmp/jl_safoQB/Project.toml`
+  [864edb3b] DataStructures v0.17.20
+  [682c06a0] JSON v0.21.1
+  [cb905087] Modia v0.3.0
+  [67ccffd1] ModiaMath v0.5.2
+  [90137ffa] StaticArrays v0.12.4
+  [1986cc42] Unitful v0.18.0
+  [ade2ca70] Dates
+  [37e2e46d] LinearAlgebra
+  [d6f4376e] Markdown
+  [de0858da] Printf
+  [2f01184e] SparseArrays
+  [8dfed614] Test
+Status `/tmp/jl_safoQB/Manifest.toml`
+  [4fba245c] ArrayInterface v2.13.3
+  [fa961155] CEnum v0.2.0
+  [324d7699] CategoricalArrays v0.7.7
+  [d360d2e6] ChainRulesCore v0.7.5
+  [34da2185] Compat v2.2.1
+  [e66e0078] CompilerSupportLibraries_jll v0.3.3+0
+  [187b0558] ConstructionBase v1.0.0
+  [adafc99b] CpuId v0.2.2
+  [9a962f9c] DataAPI v1.3.0
+  [a93c6f00] DataFrames v0.20.2
+  [864edb3b] DataStructures v0.17.20
+  [e2d170a0] DataValueInterfaces v1.0.0
+  [2b5f629d] DiffEqBase v6.19.0
+  [ffbed154] DocStringExtensions v0.8.3
+  [069b7b12] FunctionWrappers v1.1.1
+  [41ab1584] InvertedIndices v1.0.0
+  [42fd0dbc] IterativeSolvers v0.8.4
+  [82899510] IteratorInterfaceExtensions v1.0.0
+  [682c06a0] JSON v0.21.1
+  [bdcacae8] LoopVectorization v0.8.26
+  [d00139f3] METIS_jll v5.1.0+4
+  [1914dd2f] MacroTools v0.5.5
+  [e1d29d7a] Missings v0.4.4
+  [cb905087] Modia v0.3.0
+  [67ccffd1] ModiaMath v0.5.2
+  [46d2c3a1] MuladdMacro v0.2.2
+  [6fe1bfb0] OffsetArrays v1.2.1
+  [4536629a] OpenBLAS_jll v0.3.10+0
+  [bac558e1] OrderedCollections v1.3.1
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.10
+  [2dfb63ee] PooledArrays v0.5.3
+  [3cdcf5f2] RecipesBase v0.7.0
+  [731186ca] RecursiveArrayTools v2.7.0
+  [f2c3362d] RecursiveFactorization v0.1.4
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v0.5.2
+  [f2b01f46] Roots v0.8.4
+  [21efa798] SIMDPirates v0.8.25
+  [476501e8] SLEEFPirates v0.5.5
+  [a2af1166] SortingAlgorithms v0.3.1
+  [90137ffa] StaticArrays v0.12.4
+  [bea87d4a] SuiteSparse_jll v5.4.0+9
+  [c3572dad] Sundials v4.1.1
+  [fb77eaff] Sundials_jll v5.2.0+1
+  [3783bdb8] TableTraits v1.0.0
+  [bd369af6] Tables v1.0.5
+  [a2a6695c] TreeViews v0.3.0
+  [3a884ed6] UnPack v1.0.2
+  [1986cc42] Unitful v0.18.0
+  [3d5dd08c] VectorizationBase v0.12.33
+  [700de1a5] ZygoteRules v0.2.0
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [9fa8497b] Future
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [4607b0f0] SuiteSparse
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+ERROR: LoadError: Package Modia errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1566
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:328
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:315
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65 [inlined]
+ [11] analyzePkg(::String, ::Nothing) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:14
+ [12] top-level scope at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:17
+ [13] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [14] include(::Module, ::String) at ./Base.jl:368
+ [15] exec_options(::Base.JLOptions) at ./client.jl:296
+ [16] _start() at ./client.jl:506
+in expression starting at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:17

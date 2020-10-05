@@ -1,0 +1,153 @@
+{
+  "eval_info": {
+    "call_count": 1,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": [
+          "(::Distributed.var\"#155#156\"{Module,Expr})() at task.jl:356"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "if [fun]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"if\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 129,
+    "stack_traces": [
+      {
+        "count": 85,
+        "last_call": [
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 85
+            }
+          ]
+        }
+      },
+      {
+        "count": 40,
+        "last_call": [
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771",
+          "_require(::Base.PkgId) at loading.jl:1007",
+          "require(::Base.PkgId) at loading.jl:928"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 40
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "require(::Base.PkgId) at loading.jl:931",
+          "require(::Module, ::Symbol) at loading.jl:923",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "show_backtrace(::IOStream, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
+          "record(::Test.DefaultTestSet, ::Union{Test.Error, Test.Fail}) at Test.jl:775",
+          "do_test(::Test.ExecutionResult, ::Any) at Test.jl:520",
+          "top-level scope at runtests.jl:72"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "identity",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::Distributed.var\"#125#126\"{Distributed.ProcessGroup,Distributed.RRID,typeof(Distributed.def_rv_channel)})() at remotecall.jl:175",
+          "lock(::Distributed.var\"#125#126\"{Distributed.ProcessGroup,Distributed.RRID,typeof(Distributed.def_rv_channel)}, ::ReentrantLock) at lock.jl:161",
+          "lock at weakkeydict.jl:76 [inlined]",
+          "lookup_ref at remotecall.jl:171 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "def_rv_channel",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "require(::Base.PkgId) at loading.jl:931",
+          "require(::Module, ::Symbol) at loading.jl:923",
+          "include(::String) at client.jl:457",
+          "top-level scope at timing.jl:233 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "loadpkg",
+          "count": 127
+        },
+        {
+          "function_name": "def_rv_channel",
+          "count": 1
+        },
+        {
+          "function_name": "identity",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

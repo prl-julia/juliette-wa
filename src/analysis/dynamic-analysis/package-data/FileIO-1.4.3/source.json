@@ -1,0 +1,376 @@
+{
+  "eval_info": {
+    "call_count": 5,
+    "stack_traces": [
+      {
+        "count": 5,
+        "last_call": [
+          "topimport(::Symbol) at loadsave.jl:13",
+          "checked_import(::Symbol) at loadsave.jl:30",
+          "save(::Formatted, ::Any; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:223",
+          "save at loadsave.jl:214 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "useimport [fun (gen)]": 5
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},10]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 44,
+    "stack_traces": [
+      {
+        "count": 14,
+        "last_call": [
+          "load(::Formatted; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:202",
+          "load at loadsave.jl:184 [inlined]",
+          "#load#14 at loadsave.jl:133 [inlined]",
+          "load(::String) at loadsave.jl:133"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "load",
+              "count": 14
+            }
+          ]
+        }
+      },
+      {
+        "count": 11,
+        "last_call": [
+          "save(::Formatted, ::Any; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:230",
+          "save at loadsave.jl:214 [inlined]",
+          "#save#17 at loadsave.jl:136 [inlined]",
+          "save(::String, ::Nothing) at loadsave.jl:136"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "save",
+              "count": 11
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "loadstreaming(::Formatted; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:202",
+          "loadstreaming at loadsave.jl:184 [inlined]",
+          "#loadstreaming#15 at loadsave.jl:133 [inlined]",
+          "loadstreaming(::String) at loadsave.jl:133"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadstreaming",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "load(::Formatted; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:197",
+          "load at loadsave.jl:184 [inlined]",
+          "#load#14 at loadsave.jl:133 [inlined]",
+          "load(::String) at loadsave.jl:133"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "fileio_load",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "savestreaming(::Formatted; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:230",
+          "savestreaming(::Formatted) at loadsave.jl:214",
+          "invokelatest(::Any, ::Any; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at function-override.jl:156",
+          "invokelatest at function-override.jl:144 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "savestreaming",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "load(::Formatted; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:202",
+          "load(::Formatted) at loadsave.jl:184",
+          "top-level scope at loadsave.jl:218",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "load",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "save(::Formatted, ::Any; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:230",
+          "save at loadsave.jl:214 [inlined]",
+          "#save#17 at loadsave.jl:136 [inlined]",
+          "save at loadsave.jl:136 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "save",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "save(::Formatted, ::Any; options::Base.Iterators.Pairs{Symbol,Array{UInt8,1},Tuple{Symbol},NamedTuple{(:extra,),Tuple{Array{UInt8,1}}}}) at loadsave.jl:230",
+          "save at loadsave.jl:214 [inlined]",
+          "#save#17 at loadsave.jl:136 [inlined]",
+          "(::FileIO.var\"#save##kw\")(::NamedTuple{(:extra,),Tuple{Array{UInt8,1}}}, ::typeof(save), ::String, ::Array{UInt8,1}) at loadsave.jl:136"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "save",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "save(::Type{DataFormat{:PATHERROR}}, ::String, ::String; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:146",
+          "save(::Type{DataFormat{:PATHERROR}}, ::String, ::String) at loadsave.jl:144",
+          "top-level scope at error_handling.jl:19",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "save",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "load(::Formatted; options::Base.Iterators.Pairs{Symbol,Array{UInt8,1},Tuple{Symbol},NamedTuple{(:extra,),Tuple{Array{UInt8,1}}}}) at loadsave.jl:202",
+          "load at loadsave.jl:184 [inlined]",
+          "#load#14 at loadsave.jl:133 [inlined]",
+          "(::FileIO.var\"#load##kw\")(::NamedTuple{(:extra,),Tuple{Array{UInt8,1}}}, ::typeof(load), ::String) at loadsave.jl:133"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "load",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "load(::Formatted; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:202",
+          "load at loadsave.jl:184 [inlined]",
+          "#140 at loadsave.jl:222 [inlined]",
+          "open(::var\"#140#153\", ::File{DataFormat{:DUMMY}}; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at io.jl:325"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "load",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "metadata(::Formatted; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:202",
+          "metadata at loadsave.jl:184 [inlined]",
+          "#metadata#16 at loadsave.jl:133 [inlined]",
+          "metadata(::String) at loadsave.jl:133"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "metadata",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "save(::Type{DataFormat{:AmbigExt2}}, ::String, ::String; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:146",
+          "save(::Type{DataFormat{:AmbigExt2}}, ::String, ::String) at loadsave.jl:144",
+          "top-level scope at loadsave.jl:345",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "save",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "save(::Formatted, ::Any; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:225",
+          "save at loadsave.jl:214 [inlined]",
+          "#save#17 at loadsave.jl:136 [inlined]",
+          "save(::String, ::String) at loadsave.jl:136"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "fileio_save",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "savestreaming(::Formatted; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:230",
+          "savestreaming at loadsave.jl:214 [inlined]",
+          "#savestreaming#18 at loadsave.jl:136 [inlined]",
+          "savestreaming(::String) at loadsave.jl:136"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "savestreaming",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "save(::Formatted, ::Any; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:225",
+          "save(::Formatted, ::Any) at loadsave.jl:214",
+          "invokelatest(::Any, ::Any, ::Vararg{Any,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at function-override.jl:156",
+          "invokelatest at function-override.jl:144 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "fileio_save",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "savestreaming(::Type{DataFormat{:DUMMY}}, ::IOStream; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:152",
+          "savestreaming(::Type{DataFormat{:DUMMY}}, ::IOStream) at loadsave.jl:150",
+          "savestreaming(::Function, ::Any, ::Vararg{Any,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:170",
+          "savestreaming at loadsave.jl:170 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "savestreaming",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "savestreaming(::Type{DataFormat{:DUMMY}}, ::String; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:164",
+          "savestreaming(::Type{DataFormat{:DUMMY}}, ::String) at loadsave.jl:162",
+          "savestreaming(::Function, ::Any, ::Vararg{Any,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at loadsave.jl:170",
+          "savestreaming(::Function, ::Any, ::Any) at loadsave.jl:170"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "savestreaming",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "load",
+          "count": 17
+        },
+        {
+          "function_name": "save",
+          "count": 15
+        },
+        {
+          "function_name": "savestreaming",
+          "count": 5
+        },
+        {
+          "function_name": "fileio_load",
+          "count": 2
+        },
+        {
+          "function_name": "fileio_save",
+          "count": 2
+        },
+        {
+          "function_name": "loadstreaming",
+          "count": 2
+        },
+        {
+          "function_name": "metadata",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

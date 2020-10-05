@@ -1,0 +1,2781 @@
+{
+  "eval_info": {
+    "call_count": 487,
+    "stack_traces": [
+      {
+        "count": 104,
+        "last_call": [
+          "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:332",
+          "optimize!(::Core.CodeInfo, ::Method) at optimize.jl:186",
+          "JuliaInterpreter.FrameCode(::Method, ::Core.CodeInfo; generator::Bool, optimize::Bool) at types.jl:101",
+          "Type at types.jl:100 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 104
+            }
+          ]
+        }
+      },
+      {
+        "count": 102,
+        "last_call": [
+          "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:361",
+          "optimize!(::Core.CodeInfo, ::Method) at optimize.jl:186",
+          "JuliaInterpreter.FrameCode(::Method, ::Core.CodeInfo; generator::Bool, optimize::Bool) at types.jl:101",
+          "Type at types.jl:100 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 102
+            }
+          ]
+        }
+      },
+      {
+        "count": 29,
+        "last_call": [
+          "evaluate_methoddef(::Frame, ::Expr) at interpret.jl:268",
+          "eval_rhs(::Any, ::Frame, ::Expr) at interpret.jl:403",
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:524",
+          "step_expr! at interpret.jl:579 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 29
+            }
+          ]
+        }
+      },
+      {
+        "count": 16,
+        "last_call": [
+          "evaluate_call_recurse!(::Any, ::Frame, ::Expr; enter_generated::Bool) at interpret.jl:210",
+          "evaluate_call_recurse! at interpret.jl:202 [inlined]",
+          "eval_rhs(::Any, ::Frame, ::Expr) at interpret.jl:389",
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:524"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "macrocall [fun (gen)]": 1
+            },
+            {
+              "function [fun (gen)]": 15
+            }
+          ]
+        }
+      },
+      {
+        "count": 15,
+        "last_call": [
+          "do_assignment!(::Frame, ::Any, ::Any) at interpret.jl:352",
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:450",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "next_until!(::Any, ::Any, ::Frame, ::Bool) at commands.jl:95"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [fun (gen)]": 15
+            }
+          ]
+        }
+      },
+      {
+        "count": 14,
+        "last_call": [
+          "eval at JuliaInterpreter.jl:1 [inlined]",
+          "static_eval(::Expr) at utils.jl:696",
+          "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:303",
+          "optimize!(::Core.CodeInfo, ::Method) at optimize.jl:186"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 14
+            }
+          ]
+        }
+      },
+      {
+        "count": 13,
+        "last_call": [
+          "do_assignment!(::Frame, ::Any, ::Any) at interpret.jl:352",
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:450",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "finish!(::Any, ::Frame, ::Bool) at commands.jl:14"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [fun (gen)]": 13
+            }
+          ]
+        }
+      },
+      {
+        "count": 11,
+        "last_call": [
+          "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:331",
+          "optimize!(::Core.CodeInfo, ::Method) at optimize.jl:186",
+          "JuliaInterpreter.FrameCode(::Method, ::Core.CodeInfo; generator::Bool, optimize::Bool) at types.jl:101",
+          "Type at types.jl:100 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 11
+            }
+          ]
+        }
+      },
+      {
+        "count": 10,
+        "last_call": [
+          "do_assignment!(::Frame, ::Any, ::Any) at interpret.jl:352",
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:450",
+          "evaluate_limited!(::Any, ::Frame, ::Int64, ::Bool) at utils.jl:112",
+          "macro expansion at limits.jl:91 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [fun (gen)]": 10
+            }
+          ]
+        }
+      },
+      {
+        "count": 10,
+        "last_call": [
+          "do_assignment!(::Frame, ::Any, ::Any) at interpret.jl:352",
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:450",
+          "evaluate_limited!(::Any, ::Frame, ::Int64, ::Bool) at utils.jl:112",
+          "evaluate_limited! at utils.jl:137 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [fun (gen)]": 10
+            }
+          ]
+        }
+      },
+      {
+        "count": 9,
+        "last_call": [
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:506",
+          "evaluate_limited!(::Any, ::Frame, ::Int64, ::Bool) at utils.jl:112",
+          "macro expansion at limits.jl:91 [inlined]",
+          "macro expansion at Test.jl:1115 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 9
+            }
+          ]
+        }
+      },
+      {
+        "count": 8,
+        "last_call": [
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:492",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "finish!(::Any, ::Frame, ::Bool) at commands.jl:14",
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:501"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 8
+            }
+          ]
+        }
+      },
+      {
+        "count": 8,
+        "last_call": [
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:506",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "next_until!(::Any, ::Any, ::Frame, ::Bool) at commands.jl:91",
+          "through_methoddef_or_done! at commands.jl:147 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 8
+            }
+          ]
+        }
+      },
+      {
+        "count": 8,
+        "last_call": [
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:506",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "finish!(::Any, ::Frame, ::Bool) at commands.jl:14",
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:501"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 8
+            }
+          ]
+        }
+      },
+      {
+        "count": 7,
+        "last_call": [
+          "breakpoint!(::JuliaInterpreter.FrameCode, ::Int64, ::Expr, ::Bool) at breakpoints.jl:246",
+          "add_breakpoint_if_match!(::JuliaInterpreter.FrameCode, ::JuliaInterpreter.BreakpointSignature) at breakpoints.jl:66",
+          "JuliaInterpreter.FrameCode(::Method, ::Core.CodeInfo; generator::Bool, optimize::Bool) at types.jl:124",
+          "Type at types.jl:100 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 7
+            }
+          ]
+        }
+      },
+      {
+        "count": 7,
+        "last_call": [
+          "split_expressions!(::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Expr; extract_docexprs::Bool, filename::Symbol) at construct.jl:447",
+          "(::JuliaInterpreter.var\"#split_expressions!##kw\")(::NamedTuple{(:filename, :extract_docexprs),Tuple{Symbol,Bool}}, ::typeof(JuliaInterpreter.split_expressions!), ::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Expr) at construct.jl:436",
+          "split_expressions!(::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Array{Any,1}; filename::Symbol, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:extract_docexprs,),Tuple{Bool}}}) at construct.jl:486",
+          "split_expressions! at construct.jl:484 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "module [fun (gen)]": 7
+            }
+          ]
+        }
+      },
+      {
+        "count": 7,
+        "last_call": [
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:506",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "finish!(::Any, ::Frame, ::Bool) at commands.jl:14",
+          "finish!(::Frame, ::Bool) at commands.jl:19"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 7
+            }
+          ]
+        }
+      },
+      {
+        "count": 6,
+        "last_call": [
+          "evaluate_foreigncall(::Frame, ::Expr) at interpret.jl:167",
+          "eval_rhs(::Any, ::Frame, ::Expr) at interpret.jl:391",
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:529",
+          "step_expr! at interpret.jl:579 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 6
+            }
+          ]
+        }
+      },
+      {
+        "count": 6,
+        "last_call": [
+          "prepare_thunk(::Module, ::Expr, ::Bool; eval::Bool) at construct.jl:365",
+          "(::JuliaInterpreter.var\"#prepare_thunk##kw\")(::NamedTuple{(:eval,),Tuple{Bool}}, ::typeof(prepare_thunk), ::Module, ::Expr, ::Bool) at construct.jl:357",
+          "prepare_thunk(::Module, ::Expr, ::Bool; eval::Bool) at construct.jl:371",
+          "prepare_thunk at construct.jl:357 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "useimport [fun (gen)]": 1
+            },
+            {
+              "export [fun (gen)]": 2
+            },
+            {
+              "other [fun (gen)]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 6,
+        "last_call": [
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:492",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "next_until!(::Any, ::Any, ::Frame, ::Bool) at commands.jl:95",
+          "through_methoddef_or_done! at commands.jl:147 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 6
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": [
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:506",
+          "evaluate_limited!(::Any, ::Frame, ::Int64, ::Bool) at utils.jl:112",
+          "evaluate_limited! at utils.jl:137 [inlined]",
+          "macro expansion at limits.jl:64 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": [
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:492",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "finish!(::Any, ::Frame, ::Bool) at commands.jl:14",
+          "finish!(::Frame, ::Bool) at commands.jl:19"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": [
+          "breakpoint!(::JuliaInterpreter.FrameCode, ::Int64, ::Expr, ::Bool) at breakpoints.jl:246",
+          "add_breakpoint_if_match!(::JuliaInterpreter.FrameCode, ::JuliaInterpreter.BreakpointSignature) at breakpoints.jl:66",
+          "add_to_existing_framecodes(::JuliaInterpreter.BreakpointSignature) at breakpoints.jl:59",
+          "breakpoint(::typeof(radius2), ::Nothing, ::Int64, ::Expr) at breakpoints.jl:120"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": [
+          "evaluate_foreigncall(::Frame, ::Expr) at interpret.jl:167",
+          "eval_rhs(::Any, ::Frame, ::Expr) at interpret.jl:391",
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:524",
+          "step_expr! at interpret.jl:579 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": [
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:492",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "next_until!(::Any, ::Any, ::Frame, ::Bool) at commands.jl:91",
+          "through_methoddef_or_done! at commands.jl:147 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:506",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "next_until!(::Any, ::Any, ::Frame, ::Bool) at commands.jl:95",
+          "through_methoddef_or_done! at commands.jl:147 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:506",
+          "evaluate_limited!(::Any, ::Frame, ::Int64, ::Bool) at utils.jl:112",
+          "evaluate_limited! at utils.jl:137 [inlined]",
+          "macro expansion at limits.jl:108 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval(::Expr) at JuliaInterpreter.jl:1",
+          "top-level scope at construct.jl:691",
+          "include(::String) at client.jl:457",
+          "top-level scope at runtests.jl:14"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "evaluate_call_recurse!(::Any, ::Frame, ::Expr; enter_generated::Bool) at interpret.jl:210",
+          "evaluate_call_recurse! at interpret.jl:202 [inlined]",
+          "eval_rhs(::Any, ::Frame, ::Expr) at interpret.jl:389",
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:445"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "macrocall [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:506",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "finish!(::Any, ::Frame, ::Bool) at commands.jl:14",
+          "finish_and_return! at commands.jl:29 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at JuliaInterpreter.jl:1 [inlined]",
+          "macro expansion at construct.jl:691 [inlined]",
+          "top-level scope at timing.jl:233 [inlined]",
+          "top-level scope at interpret.jl:0"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:483",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "next_until!(::Any, ::Any, ::Frame, ::Bool) at commands.jl:91",
+          "through_methoddef_or_done! at commands.jl:147 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "useimport [fun (gen)]": 1
+            },
+            {
+              "export [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "maybe_evaluate_builtin(::Frame, ::Expr, ::Bool) at builtins.jl:238",
+          "evaluate_call_recurse!(::Any, ::Frame, ::Expr; enter_generated::Bool) at interpret.jl:205",
+          "evaluate_call_recurse! at interpret.jl:202 [inlined]",
+          "eval_rhs(::Any, ::Frame, ::Expr) at interpret.jl:389"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "breakpoint!(::JuliaInterpreter.FrameCode, ::Int64, ::Expr, ::Bool) at breakpoints.jl:246",
+          "add_breakpoint_if_match!(::JuliaInterpreter.FrameCode, ::JuliaInterpreter.BreakpointFileLocation) at breakpoints.jl:66",
+          "JuliaInterpreter.FrameCode(::Method, ::Core.CodeInfo; generator::Bool, optimize::Bool) at types.jl:126",
+          "Type at types.jl:100 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "do_assignment!(::Frame, ::Any, ::Any) at interpret.jl:352",
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:450",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "next_until!(::Any, ::Any, ::Frame, ::Bool) at commands.jl:91"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:28",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "evaluate_call_recurse!(::Any, ::Frame, ::Expr; enter_generated::Bool) at interpret.jl:210",
+          "evaluate_call_recurse! at interpret.jl:202 [inlined]",
+          "eval_rhs(::Any, ::Frame, ::Expr) at interpret.jl:389",
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:529"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "maybe_evaluate_builtin(::Frame, ::Expr, ::Bool) at builtins.jl:234",
+          "evaluate_call_recurse!(::Any, ::Frame, ::Expr; enter_generated::Bool) at interpret.jl:205",
+          "evaluate_call_recurse! at interpret.jl:202 [inlined]",
+          "eval_rhs(::Any, ::Frame, ::Expr) at interpret.jl:389"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:95",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:56",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:74",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at JuliaInterpreter.jl:1",
+          "top-level scope at construct.jl:691",
+          "top-level scope at interpret.jl:231",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:510",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "finish!(::Any, ::Frame, ::Bool) at commands.jl:14",
+          "finish!(::Frame, ::Bool) at commands.jl:19"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:25",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:42",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "build_compiled_call!(::Expr, ::Function, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:361",
+          "optimize!(::Core.CodeInfo, ::Method) at optimize.jl:179",
+          "JuliaInterpreter.FrameCode(::Method, ::Core.CodeInfo; generator::Bool, optimize::Bool) at types.jl:101",
+          "Type at types.jl:100 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:483",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "next_until!(::Any, ::Any, ::Frame, ::Bool) at commands.jl:95",
+          "through_methoddef_or_done! at commands.jl:147 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "useimport [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:55",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:18",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:510",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "next_until!(::Any, ::Any, ::Frame, ::Bool) at commands.jl:91",
+          "through_methoddef_or_done! at commands.jl:147 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:8",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:98",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:36",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at runtests.jl:10",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12",
+          "eval(::Module, ::Any) at boot.jl:331"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:14",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:85",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "do_assignment!(::Frame, ::Any, ::Any) at interpret.jl:350",
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:450",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "finish!(::Any, ::Frame, ::Bool) at commands.jl:14"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "split_expressions!(::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Expr; extract_docexprs::Bool, filename::String) at construct.jl:447",
+          "(::JuliaInterpreter.var\"#split_expressions!##kw\")(::NamedTuple{(:filename, :extract_docexprs),Tuple{String,Bool}}, ::typeof(JuliaInterpreter.split_expressions!), ::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Expr) at construct.jl:436",
+          "split_expressions!(::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Array{Any,1}; filename::String, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:extract_docexprs,),Tuple{Bool}}}) at construct.jl:486",
+          "(::JuliaInterpreter.var\"#split_expressions!##kw\")(::NamedTuple{(:extract_docexprs, :filename),Tuple{Bool,String}}, ::typeof(JuliaInterpreter.split_expressions!), ::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Array{Any,1}) at construct.jl:484"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "module [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:15",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:41",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:19",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:84",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at toplevel.jl:423",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at toplevel.jl:407",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "useimport [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:96",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at toplevel.jl:385",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at toplevel.jl:364",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:97",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "evaluate_foreigncall(::Frame, ::Expr) at interpret.jl:167",
+          "eval_rhs(::Any, ::Frame, ::Expr) at interpret.jl:391",
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:445",
+          "step_expr! at interpret.jl:579 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:17",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:26",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "breakpoint!(::JuliaInterpreter.FrameCode, ::Int64, ::Expr, ::Bool) at breakpoints.jl:246",
+          "add_breakpoint_if_match!(::JuliaInterpreter.FrameCode, ::JuliaInterpreter.BreakpointFileLocation) at breakpoints.jl:66",
+          "add_to_existing_framecodes(::JuliaInterpreter.BreakpointFileLocation) at breakpoints.jl:59",
+          "breakpoint(::String, ::Int64, ::Expr) at breakpoints.jl:150"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:40",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at JuliaInterpreter.jl:1",
+          "top-level scope at construct.jl:691",
+          "top-level scope at interpret.jl:613",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::var\"#124#127\")(::String) at toplevel.jl:69",
+          "mktempdir(::var\"#124#127\", ::String; prefix::String) at file.jl:682",
+          "mktempdir(::Function, ::String) at file.jl:680",
+          "mktempdir(::Function) at file.jl:680"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "useimport [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:9",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:72",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:73",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "split_expressions!(::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Expr; extract_docexprs::Bool, filename::Symbol) at construct.jl:447",
+          "(::JuliaInterpreter.var\"#split_expressions!##kw\")(::NamedTuple{(:extract_docexprs, :filename),Tuple{Bool,Symbol}}, ::typeof(JuliaInterpreter.split_expressions!), ::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Expr) at construct.jl:436",
+          "split_expressions!(::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Expr; extract_docexprs::Bool, filename::Symbol) at construct.jl:454",
+          "(::JuliaInterpreter.var\"#split_expressions!##kw\")(::NamedTuple{(:filename, :extract_docexprs),Tuple{Symbol,Bool}}, ::typeof(JuliaInterpreter.split_expressions!), ::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Expr) at construct.jl:436"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "module [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:75",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:492",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "finish!(::Any, ::Frame, ::Bool) at commands.jl:14",
+          "finish_and_return! at commands.jl:29 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:54",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:27",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval_code(::Frame, ::Expr) at utils.jl:595",
+          "eval_code(::Frame, ::String) at utils.jl:572",
+          "top-level scope at eval_code.jl:16",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at JuliaInterpreter.jl:1",
+          "top-level scope at construct.jl:691",
+          "top-level scope at interpret.jl:277",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"export\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},6],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},102],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":false,\"inQuote\":false}},2],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},48],[{\"astHead\":\"let\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},58],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},18],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},322],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},10],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},6],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},354],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},48]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 2653,
+    "stack_traces": [
+      {
+        "count": 2227,
+        "last_call": [
+          "bypass_builtins(::Frame, ::Expr, ::Int64) at interpret.jl:179",
+          "evaluate_call_recurse!(::Any, ::Frame, ::Expr; enter_generated::Bool) at interpret.jl:203",
+          "evaluate_call_recurse! at interpret.jl:202 [inlined]",
+          "eval_rhs(::Any, ::Frame, ::Expr) at interpret.jl:389"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##compiledcall#262",
+              "count": 388
+            },
+            {
+              "function_name": "##compiledcall#257",
+              "count": 276
+            },
+            {
+              "function_name": "##compiledcall#253",
+              "count": 198
+            },
+            {
+              "function_name": "##compiledcall#269",
+              "count": 103
+            },
+            {
+              "function_name": "##compiledcall#294",
+              "count": 87
+            },
+            {
+              "function_name": "##compiledcall#261",
+              "count": 83
+            },
+            {
+              "function_name": "##compiledcall#260",
+              "count": 78
+            },
+            {
+              "function_name": "##compiledcall#258",
+              "count": 65
+            },
+            {
+              "function_name": "##compiledcall#256",
+              "count": 64
+            },
+            {
+              "function_name": "##compiledcall#259",
+              "count": 56
+            },
+            {
+              "function_name": "##compiledcall#264",
+              "count": 54
+            },
+            {
+              "function_name": "##compiledcall#263",
+              "count": 53
+            },
+            {
+              "function_name": "##compiledcall#271",
+              "count": 50
+            },
+            {
+              "function_name": "##compiledcall#328",
+              "count": 48
+            },
+            {
+              "function_name": "##compiledcall#329",
+              "count": 48
+            },
+            {
+              "function_name": "##compiledcall#280",
+              "count": 47
+            },
+            {
+              "function_name": "##compiledcall#287",
+              "count": 43
+            },
+            {
+              "function_name": "##compiledcall#272",
+              "count": 38
+            },
+            {
+              "function_name": "##compiledcall#268",
+              "count": 36
+            },
+            {
+              "function_name": "##compiledcall#295",
+              "count": 29
+            },
+            {
+              "function_name": "##compiledcall#254",
+              "count": 26
+            },
+            {
+              "function_name": "##compiledcall#255",
+              "count": 26
+            },
+            {
+              "function_name": "##compiledcall#273",
+              "count": 22
+            },
+            {
+              "function_name": "##compiledcall#509",
+              "count": 18
+            },
+            {
+              "function_name": "##compiledcall#296",
+              "count": 15
+            },
+            {
+              "function_name": "##compiledcall#276",
+              "count": 14
+            },
+            {
+              "function_name": "##compiledcall#297",
+              "count": 14
+            },
+            {
+              "function_name": "##compiledcall#292",
+              "count": 13
+            },
+            {
+              "function_name": "##compiledcall#508",
+              "count": 12
+            },
+            {
+              "function_name": "##compiledcall#320",
+              "count": 11
+            },
+            {
+              "function_name": "##compiledcall#300",
+              "count": 10
+            },
+            {
+              "function_name": "##compiledcall#277",
+              "count": 9
+            },
+            {
+              "function_name": "##compiledcall#289",
+              "count": 8
+            },
+            {
+              "function_name": "##compiledcall#275",
+              "count": 8
+            },
+            {
+              "function_name": "##compiledcall#283",
+              "count": 8
+            },
+            {
+              "function_name": "##compiledcall#312",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#304",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#308",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#507",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#310",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#311",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#306",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#314",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#316",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#307",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#274",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#315",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#309",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#313",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#317",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#305",
+              "count": 5
+            },
+            {
+              "function_name": "##compiledcall#363",
+              "count": 5
+            },
+            {
+              "function_name": "##compiledcall#319",
+              "count": 5
+            },
+            {
+              "function_name": "##compiledcall#362",
+              "count": 5
+            },
+            {
+              "function_name": "##compiledcall#293",
+              "count": 3
+            },
+            {
+              "function_name": "##compiledcall#321",
+              "count": 3
+            },
+            {
+              "function_name": "##compiledcall#323",
+              "count": 2
+            },
+            {
+              "function_name": "##compiledcall#330",
+              "count": 2
+            },
+            {
+              "function_name": "##compiledcall#303",
+              "count": 2
+            },
+            {
+              "function_name": "##compiledcall#338",
+              "count": 2
+            },
+            {
+              "function_name": "##compiledcall#288",
+              "count": 2
+            },
+            {
+              "function_name": "##compiledcall#302",
+              "count": 2
+            },
+            {
+              "function_name": "##compiledcall#339",
+              "count": 2
+            },
+            {
+              "function_name": "##compiledcall#324",
+              "count": 2
+            },
+            {
+              "function_name": "##compiledcall#279",
+              "count": 2
+            },
+            {
+              "function_name": "##compiledcall#318",
+              "count": 2
+            },
+            {
+              "function_name": "##compiledcall#336",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#270",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#364",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#290",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#349",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#337",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#347",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#510",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#291",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#301",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#341",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#299",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#352",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#286",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#343",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#285",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#340",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#351",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#342",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#298",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#344",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#282",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#348",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#365",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#333",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#367",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#284",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#366",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#345",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#350",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#322",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#491",
+              "count": 1
+            },
+            {
+              "function_name": "##compiledcall#335",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 202,
+        "last_call": [
+          "bypass_builtins(::Frame, ::Expr, ::Int64) at interpret.jl:179",
+          "evaluate_call_recurse!(::Any, ::Frame, ::Expr; enter_generated::Bool) at interpret.jl:203",
+          "evaluate_call_recurse! at interpret.jl:202 [inlined]",
+          "#evaluate_call!#66 at interpret.jl:260 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##compiledcall#257",
+              "count": 50
+            },
+            {
+              "function_name": "##compiledcall#262",
+              "count": 38
+            },
+            {
+              "function_name": "##compiledcall#329",
+              "count": 14
+            },
+            {
+              "function_name": "##compiledcall#328",
+              "count": 14
+            },
+            {
+              "function_name": "##compiledcall#259",
+              "count": 12
+            },
+            {
+              "function_name": "##compiledcall#280",
+              "count": 12
+            },
+            {
+              "function_name": "##compiledcall#258",
+              "count": 12
+            },
+            {
+              "function_name": "##compiledcall#260",
+              "count": 12
+            },
+            {
+              "function_name": "##compiledcall#264",
+              "count": 12
+            },
+            {
+              "function_name": "##compiledcall#269",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#509",
+              "count": 6
+            },
+            {
+              "function_name": "##compiledcall#508",
+              "count": 4
+            },
+            {
+              "function_name": "##compiledcall#256",
+              "count": 4
+            },
+            {
+              "function_name": "##compiledcall#253",
+              "count": 2
+            },
+            {
+              "function_name": "##compiledcall#277",
+              "count": 2
+            },
+            {
+              "function_name": "##compiledcall#507",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 169,
+        "last_call": [
+          "evaluate_call_recurse!(::Any, ::Frame, ::Expr; enter_generated::Bool) at interpret.jl:229",
+          "evaluate_call_recurse! at interpret.jl:202 [inlined]",
+          "eval_rhs(::Any, ::Frame, ::Expr) at interpret.jl:389",
+          "step_expr!(::Any, ::Frame, ::Any, ::Bool) at interpret.jl:529"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "objectid",
+              "count": 61
+            },
+            {
+              "function_name": "unsafe_store!",
+              "count": 42
+            },
+            {
+              "function_name": "unlock",
+              "count": 14
+            },
+            {
+              "function_name": "threadid",
+              "count": 14
+            },
+            {
+              "function_name": "lock",
+              "count": 14
+            },
+            {
+              "function_name": "extractelement",
+              "count": 9
+            },
+            {
+              "function_name": "print",
+              "count": 5
+            },
+            {
+              "function_name": "Base.Threads.SpinLock",
+              "count": 3
+            },
+            {
+              "function_name": "disable_sigint",
+              "count": 2
+            },
+            {
+              "function_name": "match",
+              "count": 1
+            },
+            {
+              "function_name": "fmul",
+              "count": 1
+            },
+            {
+              "function_name": "constantvector",
+              "count": 1
+            },
+            {
+              "function_name": "typeinf_code",
+              "count": 1
+            },
+            {
+              "function_name": "flush",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 12,
+        "last_call": [
+          "shouldbreak at breakpoints.jl:185 [inlined]",
+          "finish!(::Any, ::Frame, ::Bool) at commands.jl:16",
+          "finish_and_return! at commands.jl:29 [inlined]",
+          "finish_and_return! at commands.jl:33 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##slotfunction#448",
+              "count": 7
+            },
+            {
+              "function_name": "truecondition",
+              "count": 3
+            },
+            {
+              "function_name": "##slotfunction#490",
+              "count": 1
+            },
+            {
+              "function_name": "##slotfunction#474",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 11,
+        "last_call": [
+          "shouldbreak at breakpoints.jl:185 [inlined]",
+          "evaluate_call_recurse!(::Any, ::Frame, ::Expr; enter_generated::Bool) at interpret.jl:236",
+          "evaluate_call_recurse! at interpret.jl:202 [inlined]",
+          "eval_rhs(::Any, ::Frame, ::Expr) at interpret.jl:389"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "truecondition",
+              "count": 6
+            },
+            {
+              "function_name": "##slotfunction#420",
+              "count": 2
+            },
+            {
+              "function_name": "##slotfunction#408",
+              "count": 2
+            },
+            {
+              "function_name": "##slotfunction#432",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 8,
+        "last_call": [
+          "evaluate_call_recurse!(::Any, ::Frame, ::Expr; enter_generated::Bool) at interpret.jl:229",
+          "evaluate_call_recurse! at interpret.jl:202 [inlined]",
+          "#evaluate_call!#66 at interpret.jl:260 [inlined]",
+          "evaluate_call! at interpret.jl:260 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "objectid",
+              "count": 8
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": [
+          "shouldbreak at breakpoints.jl:185 [inlined]",
+          "finish!(::Any, ::Frame, ::Bool) at commands.jl:16",
+          "finish_and_return!(::Any, ::Frame, ::Bool) at commands.jl:29",
+          "finish_stack!(::Any, ::Frame, ::Bool) at commands.jl:59"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "truecondition",
+              "count": 3
+            },
+            {
+              "function_name": "##slotfunction#448",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "shouldbreak at breakpoints.jl:185 [inlined]",
+          "finish!(::Any, ::Frame, ::Bool) at commands.jl:16",
+          "finish_and_return! at commands.jl:29 [inlined]",
+          "evaluate_call_recurse!(::Any, ::Frame, ::Expr; enter_generated::Bool) at interpret.jl:240"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "truecondition",
+              "count": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "shouldbreak at breakpoints.jl:185 [inlined]",
+          "macro expansion at construct.jl:692 [inlined]",
+          "macro expansion at breakpoints.jl:302 [inlined]",
+          "macro expansion at Test.jl:1115 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "truecondition",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "shouldbreak at breakpoints.jl:185 [inlined]",
+          "macro expansion at construct.jl:692 [inlined]",
+          "macro expansion at breakpoints.jl:315 [inlined]",
+          "macro expansion at Test.jl:1115 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "truecondition",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "shouldbreak at breakpoints.jl:185 [inlined]",
+          "(::var\"#189#190\")(::String, ::IOStream) at breakpoints.jl:414",
+          "mktemp(::var\"#189#190\", ::String) at file.jl:659",
+          "mktemp(::Function) at file.jl:657"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "truecondition",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "shouldbreak(::Frame, ::Int64) at breakpoints.jl:185",
+          "top-level scope at construct.jl:692",
+          "top-level scope at breakpoints.jl:90",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##slotfunction#466",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "shouldbreak at breakpoints.jl:185 [inlined]",
+          "macro expansion at construct.jl:692 [inlined]",
+          "(::var\"#165#169\")(::String, ::IOStream) at breakpoints.jl:251",
+          "mktemp(::var\"#165#169\", ::String) at file.jl:659"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "truecondition",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "shouldbreak at breakpoints.jl:185 [inlined]",
+          "next_until!(::Any, ::Any, ::Frame, ::Bool) at commands.jl:93",
+          "_next_line!(::Any, ::Frame, ::Bool, ::Int64, ::String) at commands.jl:180",
+          "next_line!(::Any, ::Frame, ::Bool) at commands.jl:175"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "truecondition",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "shouldbreak(::Frame, ::Int64) at breakpoints.jl:185",
+          "top-level scope at construct.jl:692",
+          "top-level scope at breakpoints.jl:288",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "truecondition",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "shouldbreak(::Frame, ::Int64) at breakpoints.jl:185",
+          "top-level scope at construct.jl:692",
+          "top-level scope at breakpoints.jl:88",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##slotfunction#461",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "shouldbreak(::Frame, ::Int64) at breakpoints.jl:185",
+          "top-level scope at construct.jl:692",
+          "top-level scope at breakpoints.jl:324",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "truecondition",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "shouldbreak(::Frame, ::Int64) at breakpoints.jl:185",
+          "top-level scope at construct.jl:692",
+          "top-level scope at breakpoints.jl:290",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "truecondition",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "shouldbreak(::Frame, ::Int64) at breakpoints.jl:185",
+          "top-level scope at construct.jl:692",
+          "top-level scope at breakpoints.jl:231",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "truecondition",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "shouldbreak(::Frame, ::Int64) at breakpoints.jl:185",
+          "top-level scope at construct.jl:692",
+          "top-level scope at breakpoints.jl:142",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##slotfunction#503",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "shouldbreak(::Frame, ::Int64) at breakpoints.jl:185",
+          "top-level scope at construct.jl:692",
+          "top-level scope at breakpoints.jl:281",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "truecondition",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "shouldbreak(::Frame, ::Int64) at breakpoints.jl:185",
+          "top-level scope at construct.jl:692",
+          "top-level scope at breakpoints.jl:111",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "truecondition",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "shouldbreak at breakpoints.jl:185 [inlined]",
+          "(::var\"#189#190\")(::String, ::IOStream) at breakpoints.jl:422",
+          "mktemp(::var\"#189#190\", ::String) at file.jl:659",
+          "mktemp(::Function) at file.jl:657"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "truecondition",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "##compiledcall#262",
+          "count": 426
+        },
+        {
+          "function_name": "##compiledcall#257",
+          "count": 326
+        },
+        {
+          "function_name": "##compiledcall#253",
+          "count": 200
+        },
+        {
+          "function_name": "##compiledcall#269",
+          "count": 109
+        },
+        {
+          "function_name": "##compiledcall#260",
+          "count": 90
+        },
+        {
+          "function_name": "##compiledcall#294",
+          "count": 87
+        },
+        {
+          "function_name": "##compiledcall#261",
+          "count": 83
+        },
+        {
+          "function_name": "##compiledcall#258",
+          "count": 77
+        },
+        {
+          "function_name": "objectid",
+          "count": 69
+        },
+        {
+          "function_name": "##compiledcall#256",
+          "count": 68
+        },
+        {
+          "function_name": "##compiledcall#259",
+          "count": 68
+        },
+        {
+          "function_name": "##compiledcall#264",
+          "count": 66
+        },
+        {
+          "function_name": "##compiledcall#328",
+          "count": 62
+        },
+        {
+          "function_name": "##compiledcall#329",
+          "count": 62
+        },
+        {
+          "function_name": "##compiledcall#280",
+          "count": 59
+        },
+        {
+          "function_name": "##compiledcall#263",
+          "count": 53
+        },
+        {
+          "function_name": "##compiledcall#271",
+          "count": 50
+        },
+        {
+          "function_name": "##compiledcall#287",
+          "count": 43
+        },
+        {
+          "function_name": "unsafe_store!",
+          "count": 42
+        },
+        {
+          "function_name": "##compiledcall#272",
+          "count": 38
+        },
+        {
+          "function_name": "##compiledcall#268",
+          "count": 36
+        },
+        {
+          "function_name": "##compiledcall#295",
+          "count": 29
+        },
+        {
+          "function_name": "truecondition",
+          "count": 29
+        },
+        {
+          "function_name": "##compiledcall#254",
+          "count": 26
+        },
+        {
+          "function_name": "##compiledcall#255",
+          "count": 26
+        },
+        {
+          "function_name": "##compiledcall#509",
+          "count": 24
+        },
+        {
+          "function_name": "##compiledcall#273",
+          "count": 22
+        },
+        {
+          "function_name": "##compiledcall#508",
+          "count": 16
+        },
+        {
+          "function_name": "##compiledcall#296",
+          "count": 15
+        },
+        {
+          "function_name": "##compiledcall#276",
+          "count": 14
+        },
+        {
+          "function_name": "unlock",
+          "count": 14
+        },
+        {
+          "function_name": "threadid",
+          "count": 14
+        },
+        {
+          "function_name": "lock",
+          "count": 14
+        },
+        {
+          "function_name": "##compiledcall#297",
+          "count": 14
+        },
+        {
+          "function_name": "##compiledcall#292",
+          "count": 13
+        },
+        {
+          "function_name": "##compiledcall#320",
+          "count": 11
+        },
+        {
+          "function_name": "##compiledcall#277",
+          "count": 11
+        },
+        {
+          "function_name": "##compiledcall#300",
+          "count": 10
+        },
+        {
+          "function_name": "extractelement",
+          "count": 9
+        },
+        {
+          "function_name": "##compiledcall#289",
+          "count": 8
+        },
+        {
+          "function_name": "##compiledcall#507",
+          "count": 8
+        },
+        {
+          "function_name": "##slotfunction#448",
+          "count": 8
+        },
+        {
+          "function_name": "##compiledcall#275",
+          "count": 8
+        },
+        {
+          "function_name": "##compiledcall#283",
+          "count": 8
+        },
+        {
+          "function_name": "##compiledcall#312",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#304",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#308",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#310",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#311",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#306",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#314",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#316",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#307",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#274",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#315",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#309",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#313",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#317",
+          "count": 6
+        },
+        {
+          "function_name": "##compiledcall#305",
+          "count": 5
+        },
+        {
+          "function_name": "##compiledcall#363",
+          "count": 5
+        },
+        {
+          "function_name": "print",
+          "count": 5
+        },
+        {
+          "function_name": "##compiledcall#319",
+          "count": 5
+        },
+        {
+          "function_name": "##compiledcall#362",
+          "count": 5
+        },
+        {
+          "function_name": "Base.Threads.SpinLock",
+          "count": 3
+        },
+        {
+          "function_name": "##compiledcall#293",
+          "count": 3
+        },
+        {
+          "function_name": "##compiledcall#321",
+          "count": 3
+        },
+        {
+          "function_name": "##compiledcall#323",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#330",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#303",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#338",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#288",
+          "count": 2
+        },
+        {
+          "function_name": "##slotfunction#408",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#302",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#339",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#324",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#279",
+          "count": 2
+        },
+        {
+          "function_name": "disable_sigint",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#318",
+          "count": 2
+        },
+        {
+          "function_name": "##slotfunction#420",
+          "count": 2
+        },
+        {
+          "function_name": "##compiledcall#336",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#270",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#364",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#290",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#349",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#337",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#347",
+          "count": 1
+        },
+        {
+          "function_name": "flush",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#510",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#291",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#301",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#341",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#299",
+          "count": 1
+        },
+        {
+          "function_name": "##slotfunction#490",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#352",
+          "count": 1
+        },
+        {
+          "function_name": "##slotfunction#466",
+          "count": 1
+        },
+        {
+          "function_name": "constantvector",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#286",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#343",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#285",
+          "count": 1
+        },
+        {
+          "function_name": "##slotfunction#432",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#340",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#351",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#342",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#298",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#344",
+          "count": 1
+        },
+        {
+          "function_name": "match",
+          "count": 1
+        },
+        {
+          "function_name": "##slotfunction#474",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#282",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#348",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#365",
+          "count": 1
+        },
+        {
+          "function_name": "fmul",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#333",
+          "count": 1
+        },
+        {
+          "function_name": "##slotfunction#461",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#367",
+          "count": 1
+        },
+        {
+          "function_name": "##slotfunction#503",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#284",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#366",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#345",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#350",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#322",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#491",
+          "count": 1
+        },
+        {
+          "function_name": "##compiledcall#335",
+          "count": 1
+        },
+        {
+          "function_name": "typeinf_code",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

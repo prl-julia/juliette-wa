@@ -1,0 +1,149 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+Load PosixPath: Error During Test at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:35
+  Test threw exception
+  Expression: load(joinpath(fp, "file1.pbm")) == "PBMText"
+  MethodError: no method matching splitext(::PosixPath)
+  Closest candidates are:
+    splitext(!Matched::String) at path.jl:194
+    splitext(!Matched::AbstractString) at path.jl:521
+  Stacktrace:
+   [1] query(::PosixPath; checkfile::Bool) at /home/jack/.julia/packages/FileIO/wN5rD/src/query.jl:74
+   [2] query(::PosixPath) at /home/jack/.julia/packages/FileIO/wN5rD/src/query.jl:73
+   [3] load(::PosixPath; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/FileIO/wN5rD/src/loadsave.jl:133
+   [4] load(::PosixPath) at /home/jack/.julia/packages/FileIO/wN5rD/src/loadsave.jl:133
+   [5] macro expansion at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:35 [inlined]
+   [6] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1190 [inlined]
+   [7] top-level scope at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:27
+  
+Load PosixPath: Error During Test at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:36
+  Test threw exception
+  Expression: load(joinpath(fp, "file2.pbm")) == "PBMBinary"
+  MethodError: no method matching splitext(::PosixPath)
+  Closest candidates are:
+    splitext(!Matched::String) at path.jl:194
+    splitext(!Matched::AbstractString) at path.jl:521
+  Stacktrace:
+   [1] query(::PosixPath; checkfile::Bool) at /home/jack/.julia/packages/FileIO/wN5rD/src/query.jl:74
+   [2] query(::PosixPath) at /home/jack/.julia/packages/FileIO/wN5rD/src/query.jl:73
+   [3] load(::PosixPath; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/FileIO/wN5rD/src/loadsave.jl:133
+   [4] load(::PosixPath) at /home/jack/.julia/packages/FileIO/wN5rD/src/loadsave.jl:133
+   [5] macro expansion at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:36 [inlined]
+   [6] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1190 [inlined]
+   [7] top-level scope at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:27
+  
+Load PosixPath: Error During Test at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:39
+  Test threw exception
+  Expression: load(joinpath(fp, "file1.h5")) == "HDF5"
+  MethodError: no method matching splitext(::PosixPath)
+  Closest candidates are:
+    splitext(!Matched::String) at path.jl:194
+    splitext(!Matched::AbstractString) at path.jl:521
+  Stacktrace:
+   [1] query(::PosixPath; checkfile::Bool) at /home/jack/.julia/packages/FileIO/wN5rD/src/query.jl:74
+   [2] query(::PosixPath) at /home/jack/.julia/packages/FileIO/wN5rD/src/query.jl:73
+   [3] load(::PosixPath; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/FileIO/wN5rD/src/loadsave.jl:133
+   [4] load(::PosixPath) at /home/jack/.julia/packages/FileIO/wN5rD/src/loadsave.jl:133
+   [5] macro expansion at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:39 [inlined]
+   [6] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1190 [inlined]
+   [7] top-level scope at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:27
+  
+Load PosixPath: Error During Test at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:46
+  Test threw exception
+  Expression: load(joinpath(fp, "file2.h5")) == "HDF5"
+  MethodError: no method matching splitext(::PosixPath)
+  Closest candidates are:
+    splitext(!Matched::String) at path.jl:194
+    splitext(!Matched::AbstractString) at path.jl:521
+  Stacktrace:
+   [1] query(::PosixPath; checkfile::Bool) at /home/jack/.julia/packages/FileIO/wN5rD/src/query.jl:74
+   [2] query(::PosixPath) at /home/jack/.julia/packages/FileIO/wN5rD/src/query.jl:73
+   [3] load(::PosixPath; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/FileIO/wN5rD/src/loadsave.jl:133
+   [4] load(::PosixPath) at /home/jack/.julia/packages/FileIO/wN5rD/src/loadsave.jl:133
+   [5] macro expansion at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:46 [inlined]
+   [6] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1190 [inlined]
+   [7] top-level scope at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:27
+  
+Load PosixPath: Error During Test at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:48
+  Test threw exception
+  Expression: load(joinpath(fp, "file.jld")) == "JLD"
+  MethodError: no method matching splitext(::PosixPath)
+  Closest candidates are:
+    splitext(!Matched::String) at path.jl:194
+    splitext(!Matched::AbstractString) at path.jl:521
+  Stacktrace:
+   [1] query(::PosixPath; checkfile::Bool) at /home/jack/.julia/packages/FileIO/wN5rD/src/query.jl:74
+   [2] query(::PosixPath) at /home/jack/.julia/packages/FileIO/wN5rD/src/query.jl:73
+   [3] load(::PosixPath; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/FileIO/wN5rD/src/loadsave.jl:133
+   [4] load(::PosixPath) at /home/jack/.julia/packages/FileIO/wN5rD/src/loadsave.jl:133
+   [5] macro expansion at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:48 [inlined]
+   [6] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1190 [inlined]
+   [7] top-level scope at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:27
+  
+Load PosixPath: Error During Test at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:50
+  Test threw exception
+  Expression: load(joinpath(fp, "file.csv.gz")) == "GZIP"
+  MethodError: no method matching splitext(::PosixPath)
+  Closest candidates are:
+    splitext(!Matched::String) at path.jl:194
+    splitext(!Matched::AbstractString) at path.jl:521
+  Stacktrace:
+   [1] query(::PosixPath; checkfile::Bool) at /home/jack/.julia/packages/FileIO/wN5rD/src/query.jl:74
+   [2] query(::PosixPath) at /home/jack/.julia/packages/FileIO/wN5rD/src/query.jl:73
+   [3] load(::PosixPath; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/FileIO/wN5rD/src/loadsave.jl:133
+   [4] load(::PosixPath) at /home/jack/.julia/packages/FileIO/wN5rD/src/loadsave.jl:133
+   [5] macro expansion at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:50 [inlined]
+   [6] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1190 [inlined]
+   [7] top-level scope at /home/jack/.julia/packages/FileIO/wN5rD/test/loadsave.jl:27
+  
+these tests will print warnings: 
+this test will print warnings: 
+All errors:
+===========================================
+1
+===========================================
+2
+===========================================
+Mime save: Error During Test at /home/jack/.julia/packages/FileIO/wN5rD/test/test_mimesave.jl:4
+  Got exception outside of a @test
+  MethodError: no method matching splitext(::PosixPath)
+  Closest candidates are:
+    splitext(!Matched::String) at path.jl:194
+    splitext(!Matched::AbstractString) at path.jl:521
+  Stacktrace:
+   [1] query(::PosixPath; checkfile::Bool) at /home/jack/.julia/packages/FileIO/wN5rD/src/query.jl:74
+   [2] save(::PosixPath, ::MimeSaveTestType; options::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/FileIO/wN5rD/src/loadsave.jl:136
+   [3] save(::PosixPath, ::MimeSaveTestType) at /home/jack/.julia/packages/FileIO/wN5rD/src/loadsave.jl:136
+   [4] top-level scope at /home/jack/.julia/packages/FileIO/wN5rD/test/test_mimesave.jl:38
+   [5] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [6] top-level scope at /home/jack/.julia/packages/FileIO/wN5rD/test/test_mimesave.jl:6
+   [7] include(::String) at ./client.jl:457
+   [8] top-level scope at /home/jack/.julia/packages/FileIO/wN5rD/test/runtests.jl:15
+   [9] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [10] top-level scope at /home/jack/.julia/packages/FileIO/wN5rD/test/runtests.jl:12
+   [11] include(::String) at ./client.jl:457
+   [12] top-level scope at none:6
+   [13] eval(::Module, ::Any) at ./boot.jl:331
+   [14] exec_options(::Base.JLOptions) at ./client.jl:272
+   [15] _start() at ./client.jl:506
+  
+Test Summary:                          | Pass  Error  Total
+FileIO                                 |  165      7    172
+  OS                                   |    4             4
+  DataFormat                           |   16            16
+  streams                              |    5             5
+  query                                |   23            23
+  multiple libs                        |    7             7
+  Querying with String                 |   26            26
+  Querying with PosixPath              |   26            26
+  Format with function for magic bytes |              No tests
+  Load String                          |    7             7
+  Load PosixPath                       |    1      6      7
+  Save                                 |   30            30
+  Overwrite file with bad magic bytes  |    2             2
+  Ambiguous extension                  |    4             4
+  Absent file                          |    1             1
+  Path errors                          |    3             3
+  Not installed                        |    1             1
+  Absent implementation                |    2             2
+  multiple errors                      |    1             1
+  Mime save                            |    5      1      6
