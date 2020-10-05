@@ -61,7 +61,7 @@ function funcMetadataToJson(funcMetadata :: FuncMetadata,
 end
 
 # Convert a dictionary of stack traces to its respective julia json representation
-function stackTracesToJson(stackTraces :: Dict{StackTraces.StackFrame, StackTraceInfo{U}},
+function stackTracesToJson(stackTraces :: Dict{Vector{StackTraces.StackFrame}, StackTraceInfo{U}},
         traceAuxillaryToJson :: Function
     ) where {U}
     sortedDict = sort!(collect(stackTraces), by = pair -> pair.second.count, rev = true)
@@ -69,7 +69,7 @@ function stackTracesToJson(stackTraces :: Dict{StackTraces.StackFrame, StackTrac
         append!([Dict([
             "count" => traceInfo.count,
             "auxillary" => traceAuxillaryToJson(traceInfo.auxillary),
-            "last_call" => string(key)
+            "last_call" => string.(key)
             ])], acc)
     end
     foldr(traceToJson, sortedDict; init = [])

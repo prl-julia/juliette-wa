@@ -48,12 +48,12 @@ StackTraceInfo(funcSpecificData) = StackTraceInfo(0, funcSpecificData)
 # Represents the information collected regarding overriden function calls
 mutable struct FuncMetadata{T, U}
     callCount        :: Count
-    stackTraces      :: Dict{StackTraces.StackFrame, StackTraceInfo{U}}
+    stackTraces      :: Dict{Vector{StackTraces.StackFrame}, StackTraceInfo{U}}
     funcSpecificData :: T
 end
 # Initializes a base representation of function metadata
 FuncMetadata(funcSpecificData;
-        initialTrace=Dict{StackTraces.StackFrame, StackTraceInfo{Nothing}}()
+        initialTrace=Dict{Vector{StackTraces.StackFrame}, StackTraceInfo{Nothing}}()
     ) = FuncMetadata(0, initialTrace, funcSpecificData)
 
 # Represents the information being analyzed when running packages
@@ -69,9 +69,9 @@ end
 OverrideInfo(identifier :: String, functionDataFilter :: Function) =
     OverrideInfo(identifier, functionDataFilter,
         FuncMetadata(EvalInfo(EvalCallInfo[], Vector{EvalCallInfo}(), FuncDefTracker());
-            initialTrace=Dict{StackTraces.StackFrame,StackTraceInfo{AstInfo}}()),
+            initialTrace=Dict{Vector{StackTraces.StackFrame},StackTraceInfo{AstInfo}}()),
         FuncMetadata(InvokeLatestInfo(Dict());
-            initialTrace=Dict{StackTraces.StackFrame,StackTraceInfo{FunctionInfo}}())
+            initialTrace=Dict{Vector{StackTraces.StackFrame},StackTraceInfo{FunctionInfo}}())
     )
 
 ##################################
@@ -104,12 +104,21 @@ overrideCollection = [
 # Overriden Functions
 ########################
 
+function isTopLevel(s::Vector{StackTraces.StackFrame}, startIdx :: Int)
+    idx = startIdx
+    while idx < length(s) && s[idx].func == Symbol("macro expansion")
+        idx += 1
+    end
+    return s[idx].func == Symbol("top-level scope")
+end
+
 # Overrides eval to store metadata about calls to the function
 function Core.eval(m::Module, @nospecialize(e))
-    isTopLevel = stacktrace()[2].func == Symbol("top-level scope")
+    isInFunc = !isTopLevel(stacktrace(), 2)
+    #println("$(getproperty.(stacktrace(), :func)) $isInFunc")
     # aux functions
     updateEvalInfoWrap(evalInfo :: EvalInfo, stackinfo) = updateEvalInfo(evalInfo, e, m, stackinfo)
-    updateTraceAuxillary(astHeads :: AstInfo) = updateAstInfo(astHeads, e, isTopLevel)
+    updateTraceAuxillary(astHeads :: AstInfo) = updateAstInfo(astHeads, e, isInFunc)
     # action
     exprs = extractExprs(e)
     for expr = exprs
@@ -164,27 +173,29 @@ function updateFuncMetadata(
         overrideCollection :: Vector{OverrideInfo}, getFuncMetadata :: Function,
         stackFrameIndex :: Count, updateFuncSpecificData :: Function;
         auxTuple=((() -> nothing), ((aux) -> nothing)) :: Tuple{Function, Function})
+    callingtrace = stacktrace()[stackFrameIndex + 1]
     for overrideInfo = overrideCollection
         metadata = getFuncMetadata(overrideInfo)
-        if overrideInfo.stackFramePredicate(getindex(stacktrace(), stackFrameIndex + 1))
+        if overrideInfo.stackFramePredicate(callingtrace)
             (defaultTraceAuxillary, updateTraceAuxillary) = auxTuple
             updateStackTraces(
                 metadata.stackTraces, stackFrameIndex + 1,
                 defaultTraceAuxillary, updateTraceAuxillary
             )
             metadata.callCount += 1
-            updateFuncSpecificData(metadata.funcSpecificData, getindex(stacktrace(), stackFrameIndex + 1))
+            updateFuncSpecificData(metadata.funcSpecificData, callingtrace)
         end
     end
 end
 
 # Updates the metadata information for a stack trace
 function updateStackTraces(
-        stackTraces :: Dict{StackTraces.StackFrame, StackTraceInfo{U}},
+        stackTraces :: Dict{Vector{StackTraces.StackFrame}, StackTraceInfo{U}},
         stackFrameIndex :: Count,
         defaultTraceAuxillary :: Function, updateTraceAuxillary :: Function
     ) where {U}
-    stackFrame = getindex(stacktrace(), stackFrameIndex + 1)
+    st = stacktrace()
+    stackFrame = st[stackFrameIndex+1:min(length(st),stackFrameIndex+4)]
     defaultStackTraceInfo = StackTraceInfo(defaultTraceAuxillary())
     stackTraceInfo = get!(stackTraces, stackFrame, defaultStackTraceInfo)
     stackTraceInfo.count += 1
