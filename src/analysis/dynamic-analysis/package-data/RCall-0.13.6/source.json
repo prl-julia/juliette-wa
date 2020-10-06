@@ -1,0 +1,104 @@
+{
+  "eval_info": {
+    "call_count": 13,
+    "stack_traces": [
+      {
+        "count": 8,
+        "last_call": [
+          "rcopy(::Type{FormulaTerm}, ::Ptr{LangSxp}) at formula.jl:41",
+          "rcopy(::Ptr{LangSxp}; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{,Tuple{}}}) at default.jl:14",
+          "rcopy at default.jl:9 [inlined]",
+          "#rcopy#24 at default.jl:6 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "@!WAmacro [fun (gen)]": 8
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "repl_eval(::String, ::Base.PipeEndpoint, ::Base.PipeEndpoint) at RPrompt.jl:53",
+          "(::RCall.RPrompt.var\"#4#6\"{LineEditREPL,REPL.LineEdit.Prompt})(::REPL.LineEdit.MIState, ::Base.GenericIOBuffer{Array{UInt8,1}}, ::Bool) at RPrompt.jl:184",
+          "invokelatest(::Any, ::Any, ::Vararg{Any,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{,Tuple{}}}) at function-override.jl:156",
+          "invokelatest at function-override.jl:144 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at namespaces.jl:96",
+          "include(::String) at client.jl:457",
+          "top-level scope at runtests.jl:58",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "useimport [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "rcopy(::Type{FormulaTerm}, ::Ptr{LangSxp}) at formula.jl:41",
+          "rcopy(::Ptr{LangSxp}; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{,Tuple{}}}) at default.jl:14",
+          "rcopy at default.jl:9 [inlined]",
+          "rcopy(::Type{Any}, ::Ptr{LangSxp}) at base.jl:21"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "@!WAmacro [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "rimport(::String, ::Symbol; normalizenames::Bool) at namespaces.jl:41",
+          "rimport at namespaces.jl:22 [inlined]",
+          "rimport(::String) at namespaces.jl:22",
+          "top-level scope at namespaces.jl:72"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"@!WAmacro\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},18],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":false,\"inQuote\":false}},2],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"let\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

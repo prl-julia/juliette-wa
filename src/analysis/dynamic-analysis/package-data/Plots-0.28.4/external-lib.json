@@ -1,0 +1,1127 @@
+{
+  "eval_info": {
+    "call_count": 8,
+    "stack_traces": [
+      {
+        "count": 6,
+        "last_call": [
+          "top-level scope at functions.jl:15",
+          "include(::Function, ::Module, ::String) at Base.jl:380",
+          "include at Base.jl:368 [inlined]",
+          "include(::String) at ImageCore.jl:3"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top]": 18
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at ImageCore.jl:3 [inlined]",
+          "(::ImageCore.var\"#43#46\")() at require.jl:67",
+          "err(::ImageCore.var\"#43#46\", ::Module, ::String) at require.jl:38",
+          "#42 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "include [fun]": 2
+            },
+            {
+              "const [fun]": 2
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":false,\"inQuote\":true}},36],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 62,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:353",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:29",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:90",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:66",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:29",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:29",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:30",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:44",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:75",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "macro expansion at wrapper_generators.jl:49 [inlined]",
+          "__init__() at x86_64-linux-gnu.jl:58",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "get_julia_libpaths",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:46",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:30",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:104",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:44",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:60",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:29",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:32",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:62",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:41",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:29",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:12",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu-cxx11.jl:91",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:90",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "#3 at require.jl:19 [inlined]",
+          "iterate at generator.jl:47 [inlined]",
+          "_collect(::Array{Function,1}, ::Base.Generator{Array{Function,1},Requires.var\"#3#4\"}, ::Base.EltypeUnknown, ::Base.HasShape{1}) at array.jl:699",
+          "collect_similar at array.jl:628 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#41",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:92",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:323",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:13",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:31",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:80",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:29",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:59",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at any.jl:25",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:31",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:31",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:30",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:29",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:30",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:42",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:12",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:135",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:59",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:29",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at any.jl:26",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:32",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:29",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:29",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at any.jl:13",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:30",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:28",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at any.jl:36",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:29",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "do_artifact_str",
+          "count": 60
+        },
+        {
+          "function_name": "get_julia_libpaths",
+          "count": 1
+        },
+        {
+          "function_name": "#41",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

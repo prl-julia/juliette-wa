@@ -1,0 +1,118 @@
+{
+  "eval_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 93,
+    "stack_traces": [
+      {
+        "count": 64,
+        "last_call": [
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 64
+            }
+          ]
+        }
+      },
+      {
+        "count": 24,
+        "last_call": [
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771",
+          "_require(::Base.PkgId) at loading.jl:1007",
+          "require(::Base.PkgId) at loading.jl:928"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 24
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "require(::Base.PkgId) at loading.jl:931",
+          "require(::Module, ::Symbol) at loading.jl:923",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "macro expansion at Artifacts.jl:1068 [inlined]",
+          "find_artifact_dir at ICU_jll.jl:49 [inlined]",
+          "__init__() at x86_64-linux-gnu-cxx11.jl:102",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "macro expansion at Artifacts.jl:1068 [inlined]",
+          "find_artifact_dir at wrapper_generators.jl:15 [inlined]",
+          "__init__() at x86_64-linux-gnu.jl:15",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "loadpkg",
+          "count": 91
+        },
+        {
+          "function_name": "do_artifact_str",
+          "count": 2
+        }
+      ]
+    }
+  }
+}

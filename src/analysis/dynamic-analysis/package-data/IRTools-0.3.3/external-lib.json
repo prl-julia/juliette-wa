@@ -1,0 +1,138 @@
+{
+  "eval_info": {
+    "call_count": 182,
+    "stack_traces": [
+      {
+        "count": 109,
+        "last_call": [
+          "#7 at DocTests.jl:220 [inlined]",
+          "(::Documenter.Utilities.var\"#16#17\"{Documenter.DocTests.var\"#7#8\"{Module},IOStream,IOStream,Pipe,Array{UInt8,1}})() at Utilities.jl:563",
+          "with_logstate(::Function, ::Any) at logging.jl:408",
+          "with_logger at logging.jl:514 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 32
+            },
+            {
+              "struct [fun]": 2
+            },
+            {
+              "useimport [fun (gen)]": 12
+            },
+            {
+              "variable [fun]": 2
+            },
+            {
+              "macrocall [fun]": 14
+            },
+            {
+              "other [fun (gen)]": 4
+            },
+            {
+              "variable [fun (gen)]": 1
+            },
+            {
+              "call [fun]": 12
+            },
+            {
+              "other [fun]": 108
+            },
+            {
+              "= [fun]": 14
+            }
+          ]
+        }
+      },
+      {
+        "count": 63,
+        "last_call": [
+          "eval_repl(::Documenter.DocTests.MutableMD2CodeBlock, ::Module, ::Dict{Symbol,Any}, ::Documenter.Documents.Document, ::String) at DocTests.jl:222",
+          "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:169",
+          "(::Documenter.DocTests.var\"#1#2\"{Documenter.DocTests.DocTestContext})(::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:111",
+          "walk(::Documenter.DocTests.var\"#1#2\"{Documenter.DocTests.DocTestContext}, ::Documenter.Utilities.Markdown2.CodeBlock) at Markdown2.jl:297"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 63
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": [
+          "get_new_sandbox(::Symbol) at Expanders.jl:723",
+          "#3 at DocTests.jl:127 [inlined]",
+          "get!(::Documenter.DocTests.var\"#3#5\"{Symbol}, ::Dict{Symbol,Any}, ::Symbol) at dict.jl:450",
+          "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:127"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": [
+          "get_new_sandbox(::Symbol) at Expanders.jl:725",
+          "#3 at DocTests.jl:127 [inlined]",
+          "get!(::Documenter.DocTests.var\"#3#5\"{Symbol}, ::Dict{Symbol,Any}, ::Symbol) at dict.jl:450",
+          "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:127"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 5
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},64],[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},216],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},20],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},24],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},28],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},134],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},24],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},28]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 40,
+    "stack_traces": [
+      {
+        "count": 40,
+        "last_call": [
+          "result_to_string at DocTests.jl:322 [inlined]",
+          "checkresult(::Module, ::Documenter.DocTests.Result, ::Dict{Symbol,Any}, ::Documenter.Documents.Document) at DocTests.jl:302",
+          "eval_repl(::Documenter.DocTests.MutableMD2CodeBlock, ::Module, ::Dict{Symbol,Any}, ::Documenter.Documents.Document, ::String) at DocTests.jl:231",
+          "doctest(::Documenter.DocTests.DocTestContext, ::Documenter.Utilities.Markdown2.CodeBlock) at DocTests.jl:169"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "show",
+              "count": 40
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "show",
+          "count": 40
+        }
+      ]
+    }
+  }
+}

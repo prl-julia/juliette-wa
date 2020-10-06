@@ -1,0 +1,88 @@
+{
+  "eval_info": {
+    "call_count": 343,
+    "stack_traces": [
+      {
+        "count": 213,
+        "last_call": [
+          "eval at ModelingToolkit.jl:1 [inlined]",
+          "convert(::Type{Expression}, ::Expr) at utils.jl:7",
+          "derivative(::typeof(sin), ::Tuple{Operation}, ::Val{1}) at differentials.jl:109",
+          "derivative(::Operation, ::Int64) at differentials.jl:97"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 213
+            }
+          ]
+        }
+      },
+      {
+        "count": 128,
+        "last_call": [
+          "eval at ModelingToolkit.jl:1 [inlined]",
+          "convert(::Type{Expression}, ::Expr) at utils.jl:7",
+          "_broadcast_getindex_evalf at broadcast.jl:648 [inlined]",
+          "_broadcast_getindex at broadcast.jl:631 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 128
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at system_construction.jl:211",
+          "include(::String) at client.jl:457",
+          "top-level scope at runtests.jl:8",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at ModelingToolkit.jl:1 [inlined]",
+          "convert(::Type{Expression}, ::Expr) at utils.jl:7",
+          "top-level scope at variable_parsing.jl:36",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},682],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":false,\"inQuote\":false}},2]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

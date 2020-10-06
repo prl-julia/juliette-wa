@@ -1,0 +1,56 @@
+{
+  "eval_info": {
+    "call_count": 325,
+    "stack_traces": [
+      {
+        "count": 260,
+        "last_call": [
+          "eval at TimeseriesPrediction.jl:4 [inlined]",
+          "(::TimeseriesPrediction.var\"#44#45\"{SpatioTemporalEmbedding{1,ConstantBoundary{Float64},3},SpatioTemporalEmbedding{1,ConstantBoundary{Float64},3}})(::Symbol) at none:0",
+          "iterate at generator.jl:47 [inlined]",
+          "_all(::typeof(identity), ::Base.Generator{NTuple{5,Symbol},TimeseriesPrediction.var\"#44#45\"{SpatioTemporalEmbedding{1,ConstantBoundary{Float64},3},SpatioTemporalEmbedding{1,ConstantBoundary{Float64},3}}}, ::Colon) at reduce.jl:835"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 260
+            }
+          ]
+        }
+      },
+      {
+        "count": 65,
+        "last_call": [
+          "eval at TimeseriesPrediction.jl:4 [inlined]",
+          "(::TimeseriesPrediction.var\"#44#45\"{SpatioTemporalEmbedding{1,ConstantBoundary{Float64},3},SpatioTemporalEmbedding{1,ConstantBoundary{Float64},3}})(::Symbol) at none:0",
+          "iterate at generator.jl:47 [inlined]",
+          "_all(::typeof(identity), ::Base.Generator{NTuple{5,Symbol},TimeseriesPrediction.var\"#44#45\"{SpatioTemporalEmbedding{1,ConstantBoundary{Float64},3},SpatioTemporalEmbedding{1,ConstantBoundary{Float64},3}}}, ::Colon) at reduce.jl:827"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 65
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},650]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

@@ -1,0 +1,26 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+Reduce: A Portable General-Purpose Computer Algebra System
+       3
+(i + x)
+\begin{eqnarray}
+
+{\mathrm{cosh}} \left(e^{i} z\right)/e^{i}
+
+
+\end{eqnarray}Error During Test at /home/jack/.julia/packages/Reduce/Ery9E/test/runtests.jl:33
+  Test threw exception
+  Expression: length(:(x + y)) |> typeof == Int
+  MethodError: no method matching length(::Expr)
+  Closest candidates are:
+    length(!Matched::Cmd) at process.jl:639
+    length(!Matched::CompositeException) at task.jl:41
+    length(!Matched::Base.MethodList) at reflection.jl:869
+    ...
+  Stacktrace:
+   [1] top-level scope at /home/jack/.julia/packages/Reduce/Ery9E/test/runtests.jl:33
+   [2] include(::String) at ./client.jl:457
+   [3] top-level scope at ./none:12
+   [4] eval(::Module, ::Any) at ./boot.jl:331
+   [5] exec_options(::Base.JLOptions) at ./client.jl:272
+   [6] _start() at ./client.jl:506
+  

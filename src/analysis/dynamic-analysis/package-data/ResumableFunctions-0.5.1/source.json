@@ -1,0 +1,59 @@
+{
+  "eval_info": {
+    "call_count": 21,
+    "stack_traces": [
+      {
+        "count": 14,
+        "last_call": [
+          "get_slots(::Dict{Symbol,Any}, ::Dict{Symbol,Any}, ::Module) at utils.jl:41",
+          "@resumable(::LineNumberNode, ::Module, ::Expr) at macro.jl:29",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "useimport [fun]": 14
+            },
+            {
+              "call [fun]": 14
+            }
+          ]
+        }
+      },
+      {
+        "count": 7,
+        "last_call": [
+          "get_slots(::Dict{Symbol,Any}, ::Dict{Symbol,Any}, ::Module) at utils.jl:40",
+          "@resumable(::LineNumberNode, ::Module, ::Expr) at macro.jl:29",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 7
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},28],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},28],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},14]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

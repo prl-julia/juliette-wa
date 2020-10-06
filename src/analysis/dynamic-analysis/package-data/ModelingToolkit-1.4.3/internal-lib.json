@@ -1,0 +1,574 @@
+{
+  "eval_info": {
+    "call_count": 45,
+    "stack_traces": [
+      {
+        "count": 13,
+        "last_call": [
+          "(::Distributed.var\"#155#156\"{Module,Expr})() at task.jl:356"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 3
+            },
+            {
+              "useimport [fun]": 6
+            },
+            {
+              "useimport [fun (gen)]": 1
+            },
+            {
+              "macrocall [fun (gen)]": 3
+            },
+            {
+              "= [fun (gen)]": 6
+            }
+          ]
+        }
+      },
+      {
+        "count": 12,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "_broadcast_getindex_evalf at broadcast.jl:648 [inlined]",
+          "_broadcast_getindex at broadcast.jl:621 [inlined]",
+          "#19 at broadcast.jl:1046 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 12
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "top-level scope at system_construction.jl:179",
+          "include(::String) at client.jl:457",
+          "top-level scope at runtests.jl:8"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval(::Tuple{Expr,Expr}) at client.jl:467",
+          "map(::typeof(eval), ::Tuple{Tuple{Expr,Expr},Tuple{Expr,Expr}}) at tuple.jl:158",
+          "top-level scope at system_construction.jl:45",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval(::Tuple{Expr,Expr}) at client.jl:467",
+          "map(::typeof(eval), ::Tuple{Tuple{Expr,Expr},Tuple{Expr,Expr}}) at tuple.jl:158",
+          "top-level scope at system_construction.jl:59",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "top-level scope at system_construction.jl:41",
+          "include(::String) at client.jl:457",
+          "top-level scope at runtests.jl:8"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "top-level scope at direct.jl:108",
+          "include(::String) at client.jl:457",
+          "top-level scope at runtests.jl:7"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "top-level scope at direct.jl:79",
+          "include(::String) at client.jl:457",
+          "top-level scope at runtests.jl:7"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "top-level scope at system_construction.jl:119",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at system_construction.jl:90"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "top-level scope at direct.jl:105",
+          "include(::String) at client.jl:457",
+          "top-level scope at runtests.jl:7"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "top-level scope at direct.jl:82",
+          "include(::String) at client.jl:457",
+          "top-level scope at runtests.jl:7"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "top-level scope at system_construction.jl:109",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at system_construction.jl:90"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "top-level scope at system_construction.jl:96",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at system_construction.jl:90"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "top-level scope at system_construction.jl:70",
+          "include(::String) at client.jl:457",
+          "top-level scope at runtests.jl:8"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "top-level scope at system_construction.jl:166",
+          "include(::String) at client.jl:457",
+          "top-level scope at runtests.jl:8"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "top-level scope at system_construction.jl:64",
+          "include(::String) at client.jl:457",
+          "top-level scope at runtests.jl:8"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "top-level scope at system_construction.jl:55",
+          "include(::String) at client.jl:457",
+          "top-level scope at runtests.jl:8"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Tuple{Expr,Expr}) at client.jl:467",
+          "top-level scope at none:1",
+          "eval(::Module, ::Any) at function-override.jl:133",
+          "top-level scope at system_construction.jl:211"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "top-level scope at system_construction.jl:56",
+          "include(::String) at client.jl:457",
+          "top-level scope at runtests.jl:8"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},6],[{\"astHead\":\"->\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},54],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},12],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},10],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},6],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},12]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 167,
+    "stack_traces": [
+      {
+        "count": 35,
+        "last_call": [
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771",
+          "_require(::Base.PkgId) at loading.jl:1007",
+          "require(::Base.PkgId) at loading.jl:928"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 25
+            },
+            {
+              "function_name": "_require_callback",
+              "count": 10
+            }
+          ]
+        }
+      },
+      {
+        "count": 28,
+        "last_call": [
+          "(::Distributed.var\"#125#126\"{Distributed.ProcessGroup,Distributed.RRID,typeof(Distributed.def_rv_channel)})() at remotecall.jl:175",
+          "lock(::Distributed.var\"#125#126\"{Distributed.ProcessGroup,Distributed.RRID,typeof(Distributed.def_rv_channel)}, ::ReentrantLock) at lock.jl:161",
+          "lock at weakkeydict.jl:76 [inlined]",
+          "lookup_ref at remotecall.jl:171 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "def_rv_channel",
+              "count": 28
+            }
+          ]
+        }
+      },
+      {
+        "count": 25,
+        "last_call": [
+          "message_handler_loop(::Sockets.TCPSocket, ::Sockets.TCPSocket, ::Bool) at process_messages.jl:185",
+          "process_tcp_streams(::Sockets.TCPSocket, ::Sockets.TCPSocket, ::Bool) at process_messages.jl:142",
+          "(::Distributed.var\"#99#100\"{Sockets.TCPSocket,Sockets.TCPSocket,Bool})() at task.jl:356"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "deserialize_msg",
+              "count": 25
+            }
+          ]
+        }
+      },
+      {
+        "count": 24,
+        "last_call": [
+          "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.CallMsg{:call_fetch}, ::Bool) at messages.jl:185",
+          "send_msg at messages.jl:134 [inlined]",
+          "remotecall_fetch(::Function, ::Distributed.Worker, ::Distributed.RRID, ::Vararg{Any,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at remotecall.jl:389",
+          "remotecall_fetch(::Function, ::Distributed.Worker, ::Distributed.RRID, ::Vararg{Any,N} where N) at remotecall.jl:386"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "serialize_msg",
+              "count": 24
+            }
+          ]
+        }
+      },
+      {
+        "count": 22,
+        "last_call": [
+          "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.CallMsg{:call}, ::Bool) at messages.jl:185",
+          "send_msg at messages.jl:134 [inlined]",
+          "remotecall(::Function, ::Distributed.Worker, ::Module, ::Vararg{Any,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at remotecall.jl:365",
+          "remotecall(::Function, ::Distributed.Worker, ::Module, ::Vararg{Any,N} where N) at remotecall.jl:364"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "serialize_msg",
+              "count": 22
+            }
+          ]
+        }
+      },
+      {
+        "count": 21,
+        "last_call": [
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 16
+            },
+            {
+              "function_name": "_require_callback",
+              "count": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.RemoteDoMsg, ::Bool) at messages.jl:185",
+          "send_msg(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.RemoteDoMsg) at messages.jl:134",
+          "#remote_do#153 at remotecall.jl:461 [inlined]",
+          "remote_do at remotecall.jl:461 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "serialize_msg",
+              "count": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.CallMsg{:call}, ::Bool) at messages.jl:185",
+          "send_msg at messages.jl:134 [inlined]",
+          "#remotecall#140 at remotecall.jl:365 [inlined]",
+          "remotecall(::Function, ::Distributed.Worker) at remotecall.jl:364"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "serialize_msg",
+              "count": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "require(::Base.PkgId) at loading.jl:931",
+          "require(::Module, ::Symbol) at loading.jl:923",
+          "top-level scope at macros.jl:200",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 1
+            },
+            {
+              "function_name": "_require_callback",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.JoinPGRPMsg, ::Bool) at messages.jl:185",
+          "send_msg_now at messages.jl:130 [inlined]",
+          "create_worker(::Distributed.LocalManager, ::WorkerConfig) at cluster.jl:664",
+          "setup_launched_worker(::Distributed.LocalManager, ::WorkerConfig, ::Array{Int64,1}) at cluster.jl:526"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "serialize_msg",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.CallMsg{:call_fetch}, ::Bool) at messages.jl:185",
+          "send_msg at messages.jl:134 [inlined]",
+          "#remotecall_fetch#143 at remotecall.jl:389 [inlined]",
+          "remotecall_fetch(::Function, ::Distributed.Worker, ::Distributed.RRID) at remotecall.jl:386"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "serialize_msg",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "require(::Base.PkgId) at loading.jl:931",
+          "require(::Module, ::Symbol) at loading.jl:923",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "serialize_msg",
+          "count": 55
+        },
+        {
+          "function_name": "loadpkg",
+          "count": 43
+        },
+        {
+          "function_name": "def_rv_channel",
+          "count": 28
+        },
+        {
+          "function_name": "deserialize_msg",
+          "count": 25
+        },
+        {
+          "function_name": "_require_callback",
+          "count": 16
+        }
+      ]
+    }
+  }
+}

@@ -1,12 +1,15 @@
+#=#=#                                                                         ##########                                                                14.4%######################################################################## 100.0%
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
-Updating `/tmp/jl_O1o4P2/Project.toml`
+Updating `/tmp/jl_DUORAO/Project.toml`
   [682c06a0] + JSON v0.21.1
-Updating `/tmp/jl_O1o4P2/Manifest.toml`
+Updating `/tmp/jl_DUORAO/Manifest.toml`
   [682c06a0] + JSON v0.21.1
   [69de0a69] + Parsers v1.0.10
   [ade2ca70] + Dates
   [a63ad114] + Mmap
+  [de0858da] + Printf
+  [4ec0a83e] + Unicode
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
 No Changes to `~/.julia/environments/v1.5/Project.toml`
@@ -14,23 +17,22 @@ No Changes to `~/.julia/environments/v1.5/Manifest.toml`
 ┌ Warning: Pkg.installed() is deprecated
 └ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
-    Testing Formatting
-Status `/tmp/jl_O1o4P2/Project.toml`
-  [59287772] Formatting v0.4.1
-  [de0858da] Printf
+    Testing ProtoBuf
+Status `/tmp/jl_DUORAO/Project.toml`
+  [3349acd9] ProtoBuf v0.8.0
   [9a3f8284] Random
+  [9e88b42a] Serialization
+  [6462fe0b] Sockets
   [8dfed614] Test
-Status `/tmp/jl_O1o4P2/Manifest.toml`
-  [59287772] Formatting v0.4.1
+Status `/tmp/jl_DUORAO/Manifest.toml`
+  [3349acd9] ProtoBuf v0.8.0
   [2a0f44e3] Base64
   [8ba89e20] Distributed
   [b77e0a4c] InteractiveUtils
   [56ddb016] Logging
   [d6f4376e] Markdown
-  [de0858da] Printf
   [9a3f8284] Random
   [9e88b42a] Serialization
   [6462fe0b] Sockets
   [8dfed614] Test
-  [4ec0a83e] Unicode
-    Testing Formatting tests passed 
+    Testing ProtoBuf tests passed 

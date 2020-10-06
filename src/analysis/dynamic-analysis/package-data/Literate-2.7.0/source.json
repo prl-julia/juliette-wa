@@ -1,0 +1,582 @@
+{
+  "eval_info": {
+    "call_count": 38,
+    "stack_traces": [
+      {
+        "count": 5,
+        "last_call": [
+          "sandbox() at Literate.jl:667",
+          "execute_notebook(::Dict{Any,Any}) at Literate.jl:617",
+          "(::Literate.var\"#34#36\")() at Literate.jl:605",
+          "cd(::Literate.var\"#34#36\", ::String) at file.jl:104"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": [
+          "sandbox() at Literate.jl:664",
+          "execute_notebook(::Dict{Any,Any}) at Literate.jl:617",
+          "(::Literate.var\"#34#36\")() at Literate.jl:605",
+          "cd(::Literate.var\"#34#36\", ::String) at file.jl:104"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:664",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "#142 at runtests.jl:608 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:664",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:execute,),Tuple{Bool}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "markdown at Literate.jl:429 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:667",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "#142 at runtests.jl:608 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:664",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "#145 at runtests.jl:641 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:667",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "#144 at runtests.jl:631 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:664",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,Pair{String,String},Tuple{Symbol},NamedTuple{(:codefence,),Tuple{Pair{String,String}}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "(::var\"#138#151\"{String})() at runtests.jl:682"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:667",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,Function,Tuple{Symbol,Symbol},NamedTuple{(:preprocess, :postprocess),Tuple{var\"#147#160\",var\"#148#161\"}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "(::var\"#138#151\"{String})() at runtests.jl:659"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:667",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:execute,),Tuple{Bool}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "(::var\"#138#151\"{String})() at runtests.jl:727"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:664",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "#146 at runtests.jl:652 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:667",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "#139 at runtests.jl:460 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:664",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "#141 at runtests.jl:598 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:667",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "#146 at runtests.jl:652 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:667",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "#141 at runtests.jl:598 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:664",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:documenter,),Tuple{Bool}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "(::var\"#138#151\"{String})() at runtests.jl:673"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:664",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol},NamedTuple{(:name,),Tuple{String}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "(::var\"#138#151\"{String})() at runtests.jl:689"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:667",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:documenter,),Tuple{Bool}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "(::var\"#138#151\"{String})() at runtests.jl:673"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:667",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "#145 at runtests.jl:641 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:667",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,Pair{String,String},Tuple{Symbol},NamedTuple{(:codefence,),Tuple{Pair{String,String}}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "(::var\"#138#151\"{String})() at runtests.jl:682"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:667",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "#140 at runtests.jl:587 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:664",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "#143 at runtests.jl:620 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:667",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,String,Tuple{Symbol},NamedTuple{(:name,),Tuple{String}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "(::var\"#138#151\"{String})() at runtests.jl:689"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:664",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:execute,),Tuple{Bool}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "(::var\"#138#151\"{String})() at runtests.jl:727"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:667",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:execute,),Tuple{Bool}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "markdown at Literate.jl:429 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:664",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "#140 at runtests.jl:587 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:664",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "#139 at runtests.jl:460 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:667",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "#143 at runtests.jl:620 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:664",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,Function,Tuple{Symbol,Symbol},NamedTuple{(:preprocess, :postprocess),Tuple{var\"#147#160\",var\"#148#161\"}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "(::var\"#138#151\"{String})() at runtests.jl:659"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "sandbox() at Literate.jl:664",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at Literate.jl:433",
+          "markdown at Literate.jl:429 [inlined]",
+          "#144 at runtests.jl:631 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},76]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 25,
+    "stack_traces": [
+      {
+        "count": 19,
+        "last_call": [
+          "execute_notebook(::Dict{Any,Any}) at Literate.jl:644",
+          "(::Literate.var\"#34#36\")() at Literate.jl:605",
+          "cd(::Literate.var\"#34#36\", ::String) at file.jl:104",
+          "jupyter_notebook(::Array{Chunk,1}, ::Dict{String,Any}) at Literate.jl:604"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "display_dict",
+              "count": 19
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "execute_markdown!(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Module, ::String, ::String) at Literate.jl:499",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:execute,),Tuple{Bool}}}) at Literate.jl:463",
+          "markdown at Literate.jl:429 [inlined]",
+          "(::var\"#138#151\"{String})() at runtests.jl:727"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "show",
+              "count": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "#28 at Literate.jl:485 [inlined]",
+          "open(::Literate.var\"#28#29\"{Main.##265.PNG,MIME{Symbol(\"image/png\")}}, ::String, ::Vararg{String,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at io.jl:325",
+          "open(::Function, ::String, ::String) at io.jl:323",
+          "execute_markdown!(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Module, ::String, ::String) at Literate.jl:484"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "show",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "execute_markdown!(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Module, ::String, ::String) at Literate.jl:493",
+          "markdown(::String, ::String; config::Dict{Any,Any}, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:execute,),Tuple{Bool}}}) at Literate.jl:463",
+          "markdown at Literate.jl:429 [inlined]",
+          "(::var\"#138#151\"{String})() at runtests.jl:727"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "show",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "display_dict",
+          "count": 19
+        },
+        {
+          "function_name": "show",
+          "count": 6
+        }
+      ]
+    }
+  }
+}

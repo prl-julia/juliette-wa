@@ -1,26 +1,16 @@
-   Updating registry at `~/.julia/registries/General`
-  Resolving package versions...
-Updating `/tmp/jl_O1o4P2/Project.toml`
-  [682c06a0] + JSON v0.21.1
-Updating `/tmp/jl_O1o4P2/Manifest.toml`
-  [682c06a0] + JSON v0.21.1
-  [69de0a69] + Parsers v1.0.10
-  [ade2ca70] + Dates
-  [a63ad114] + Mmap
+#=#=#                                                                         #                                                                          2.2%################################################                          67.2%######################################################################## 100.0%
    Updating registry at `~/.julia/registries/General`
   Resolving package versions...
 No Changes to `~/.julia/environments/v1.5/Project.toml`
 No Changes to `~/.julia/environments/v1.5/Manifest.toml`
-┌ Warning: Pkg.installed() is deprecated
-└ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
 ### DYNAMIC ANALYSIS LINE IDENTIFIER ###
     Testing Formatting
-Status `/tmp/jl_O1o4P2/Project.toml`
+Status `/tmp/jl_9g5S1h/Project.toml`
   [59287772] Formatting v0.4.1
   [de0858da] Printf
   [9a3f8284] Random
   [8dfed614] Test
-Status `/tmp/jl_O1o4P2/Manifest.toml`
+Status `/tmp/jl_9g5S1h/Manifest.toml`
   [59287772] Formatting v0.4.1
   [2a0f44e3] Base64
   [8ba89e20] Distributed

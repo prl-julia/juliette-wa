@@ -1,0 +1,101 @@
+{
+  "eval_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 89,
+    "stack_traces": [
+      {
+        "count": 56,
+        "last_call": [
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 56
+            }
+          ]
+        }
+      },
+      {
+        "count": 29,
+        "last_call": [
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771",
+          "_require(::Base.PkgId) at loading.jl:1007",
+          "require(::Base.PkgId) at loading.jl:928"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 29
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "require(::Base.PkgId) at loading.jl:931",
+          "require(::Module, ::Symbol) at loading.jl:923",
+          "include(::Function, ::Module, ::String) at Base.jl:380",
+          "include at Base.jl:368 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "loadpkg",
+              "count": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "show_backtrace(::IOStream, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
+          "record(::Test.DefaultTestSet, ::Union{Test.Error, Test.Fail}) at Test.jl:775",
+          "do_test(::Test.ExecutionResult, ::Any) at Test.jl:520",
+          "top-level scope at NNPDEHan_tests.jl:211"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "identity",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "loadpkg",
+          "count": 88
+        },
+        {
+          "function_name": "identity",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,14 +1,14 @@
 #!/bin/bash
 
 PACKAGES_TO_ANALYZE=(
-    "Symata" "MonteCarloMeasurements"
-    "Genie" "JuliaInterpreter"
-    "Documenter" "Mads"
-    "Modia" "Atom" "FileIO"
-    "IJulia" "SymEngine" "Soss"
-    "PyCall" "Weave" "BenchmarkTools"
-    "Formatting"
-    "SymPy" "Pluto"
+    #"Symata" "MonteCarloMeasurements"
+    #"Genie" "JuliaInterpreter"
+    #"Documenter" "Mads"
+    #"Modia" "Atom" "FileIO"
+    #"IJulia" "SymEngine" "Soss"
+    #"PyCall" "Weave" "BenchmarkTools"
+    #"Formatting"
+    #"SymPy" "Pluto"
     "Rebugger" "Yota" "IRTools"
     "Bukdu" "Literate"
     "SemanticModels" "Dagger" "Unitful"

@@ -1,0 +1,815 @@
+{
+  "eval_info": {
+    "call_count": 500095,
+    "stack_traces": [
+      {
+        "count": 200000,
+        "last_call": [
+          "eval at Formatting.jl:1 [inlined]",
+          "sprintf1(::String, ::Int64) at cformat.jl:3",
+          "runtime_int at cformat.jl:53 [inlined]",
+          "top-level scope at timing.jl:174 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 200000
+            }
+          ]
+        }
+      },
+      {
+        "count": 200000,
+        "last_call": [
+          "eval at Formatting.jl:1 [inlined]",
+          "sprintf1(::String, ::Float64) at cformat.jl:3",
+          "runtime_float() at cformat.jl:79",
+          "top-level scope at timing.jl:174 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 200000
+            }
+          ]
+        }
+      },
+      {
+        "count": 60000,
+        "last_call": [
+          "eval at Formatting.jl:1 [inlined]",
+          "sprintf1(::String, ::Float64) at cformat.jl:3",
+          "test_equality() at cformat.jl:22",
+          "top-level scope at timing.jl:174 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 60000
+            }
+          ]
+        }
+      },
+      {
+        "count": 40000,
+        "last_call": [
+          "eval at Formatting.jl:1 [inlined]",
+          "sprintf1(::String, ::Int64) at cformat.jl:3",
+          "test_equality() at cformat.jl:35",
+          "top-level scope at timing.jl:174 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 40000
+            }
+          ]
+        }
+      },
+      {
+        "count": 52,
+        "last_call": [
+          "eval at Formatting.jl:1 [inlined]",
+          "sprintf1(::String, ::Float64) at cformat.jl:3",
+          "format(::Float64; width::Int64, precision::Int64, leftjustified::Bool, zeropadding::Bool, commas::Bool, signed::Bool, positivespace::Bool, stripzeros::Bool, parens::Bool, alternative::Bool, mixedfraction::Bool, mixedfractionsep::String, fractionsep::String, fractionwidth::Int64, tryden::Int64, suffix::String, autoscale::Symbol, conversion::String) at cformat.jl:247",
+          "format at cformat.jl:150 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 52
+            }
+          ]
+        }
+      },
+      {
+        "count": 9,
+        "last_call": [
+          "generate_formatter(::String) at cformat.jl:18",
+          "sprintf1(::String, ::Float64) at cformat.jl:3",
+          "format(::Float64; width::Int64, precision::Int64, leftjustified::Bool, zeropadding::Bool, commas::Bool, signed::Bool, positivespace::Bool, stripzeros::Bool, parens::Bool, alternative::Bool, mixedfraction::Bool, mixedfractionsep::String, fractionsep::String, fractionwidth::Int64, tryden::Int64, suffix::String, autoscale::Symbol, conversion::String) at cformat.jl:247",
+          "format at cformat.jl:150 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 9
+            }
+          ]
+        }
+      },
+      {
+        "count": 6,
+        "last_call": [
+          "generate_formatter(::String) at cformat.jl:18",
+          "sprintf1(::String, ::Float64) at cformat.jl:3",
+          "test_equality() at cformat.jl:22",
+          "top-level scope at timing.jl:174 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 6
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": [
+          "generate_formatter(::String) at cformat.jl:29",
+          "sprintf1(::String, ::Int64) at cformat.jl:3",
+          "format(::Int64; width::Int64, precision::Int64, leftjustified::Bool, zeropadding::Bool, commas::Bool, signed::Bool, positivespace::Bool, stripzeros::Bool, parens::Bool, alternative::Bool, mixedfraction::Bool, mixedfractionsep::String, fractionsep::String, fractionwidth::Int64, tryden::Int64, suffix::String, autoscale::Symbol, conversion::String) at cformat.jl:247",
+          "format at cformat.jl:150 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": [
+          "generate_formatter(::String) at cformat.jl:18",
+          "sprintf1(::String, ::Int64) at cformat.jl:3",
+          "test_equality() at cformat.jl:35",
+          "top-level scope at timing.jl:174 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "eval at Formatting.jl:1 [inlined]",
+          "sprintf1(::String, ::Int64) at cformat.jl:3",
+          "format(::Int64; width::Int64, precision::Int64, leftjustified::Bool, zeropadding::Bool, commas::Bool, signed::Bool, positivespace::Bool, stripzeros::Bool, parens::Bool, alternative::Bool, mixedfraction::Bool, mixedfractionsep::String, fractionsep::String, fractionwidth::Int64, tryden::Int64, suffix::String, autoscale::Symbol, conversion::String) at cformat.jl:247",
+          "format at cformat.jl:150 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Formatting.jl:1 [inlined]",
+          "sprintf1(::String, ::Int64) at cformat.jl:3",
+          "test_commas() at cformat.jl:102",
+          "top-level scope at cformat.jl:188"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "generate_formatter(::String) at cformat.jl:35",
+          "sprintf1(::String, ::Float64) at cformat.jl:3",
+          "test_commas() at cformat.jl:106",
+          "top-level scope at cformat.jl:188"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "generate_formatter(::String) at cformat.jl:29",
+          "sprintf1(::String, ::Int64) at cformat.jl:3",
+          "test_commas() at cformat.jl:100",
+          "top-level scope at cformat.jl:188"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Formatting.jl:1 [inlined]",
+          "sprintf1(::String, ::Float64) at cformat.jl:3",
+          "test_commas() at cformat.jl:104",
+          "top-level scope at cformat.jl:188"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Formatting.jl:1 [inlined]",
+          "make_argspec(::String, ::Int64) at formatexpr.jl:36",
+          "make_formatentry(::String, ::Int64) at formatexpr.jl:72",
+          "FormatExpr(::String) at formatexpr.jl:130"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Formatting.jl:1 [inlined]",
+          "sprintf1(::String, ::Float64) at cformat.jl:3",
+          "test_commas() at cformat.jl:105",
+          "top-level scope at cformat.jl:188"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Formatting.jl:1 [inlined]",
+          "sprintf1(::String, ::Int64) at cformat.jl:3",
+          "test_commas() at cformat.jl:103",
+          "top-level scope at cformat.jl:188"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "generate_formatter(::String) at cformat.jl:39",
+          "sprintf1(::String, ::Float64) at cformat.jl:3",
+          "test_commas() at cformat.jl:104",
+          "top-level scope at cformat.jl:188"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Formatting.jl:1 [inlined]",
+          "make_argspec(::String, ::Int64) at formatexpr.jl:36",
+          "make_formatentry(::String, ::Int64) at formatexpr.jl:69",
+          "FormatExpr(::String) at formatexpr.jl:124"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Formatting.jl:1 [inlined]",
+          "sprintf1(::String, ::Int64) at cformat.jl:3",
+          "test_commas() at cformat.jl:101",
+          "top-level scope at cformat.jl:188"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Formatting.jl:1 [inlined]",
+          "sprintf1(::String, ::Float64) at cformat.jl:3",
+          "test_commas() at cformat.jl:106",
+          "top-level scope at cformat.jl:188"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Formatting.jl:1 [inlined]",
+          "sprintf1(::String, ::Int64) at cformat.jl:3",
+          "test_commas() at cformat.jl:100",
+          "top-level scope at cformat.jl:188"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "generate_formatter(::String) at cformat.jl:39",
+          "test_generate_formatter() at cformat.jl:195",
+          "top-level scope at cformat.jl:201",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "generate_formatter(::String) at cformat.jl:18",
+          "test_generate_formatter() at cformat.jl:192",
+          "top-level scope at cformat.jl:201",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "generate_formatter(::String) at cformat.jl:18",
+          "sprintf1(::String, ::Rational{Int64}) at cformat.jl:3",
+          "format(::Rational{Int64}; width::Int64, precision::Int64, leftjustified::Bool, zeropadding::Bool, commas::Bool, signed::Bool, positivespace::Bool, stripzeros::Bool, parens::Bool, alternative::Bool, mixedfraction::Bool, mixedfractionsep::String, fractionsep::String, fractionwidth::Int64, tryden::Int64, suffix::String, autoscale::Symbol, conversion::String) at cformat.jl:247",
+          "format at cformat.jl:150 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Formatting.jl:1 [inlined]",
+          "sprintf1(::String, ::Float64) at cformat.jl:3",
+          "test_commas() at cformat.jl:107",
+          "top-level scope at cformat.jl:188"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"->\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},60],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},1000126],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 900067,
+    "stack_traces": [
+      {
+        "count": 500045,
+        "last_call": [
+          "(::Formatting.var\"#1#4\")(::Float64) at cformat.jl:19",
+          "top-level scope at none:1",
+          "eval(::Module, ::Any) at function-override.jl:133",
+          "eval at Formatting.jl:1 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#11",
+              "count": 210000
+            },
+            {
+              "function_name": "#25",
+              "count": 210000
+            },
+            {
+              "function_name": "#13",
+              "count": 10014
+            },
+            {
+              "function_name": "#23",
+              "count": 10013
+            },
+            {
+              "function_name": "#19",
+              "count": 10003
+            },
+            {
+              "function_name": "#15",
+              "count": 10001
+            },
+            {
+              "function_name": "#21",
+              "count": 10000
+            },
+            {
+              "function_name": "#17",
+              "count": 10000
+            },
+            {
+              "function_name": "#29",
+              "count": 10000
+            },
+            {
+              "function_name": "#27",
+              "count": 10000
+            },
+            {
+              "function_name": "#37",
+              "count": 5
+            },
+            {
+              "function_name": "#47",
+              "count": 1
+            },
+            {
+              "function_name": "#53",
+              "count": 1
+            },
+            {
+              "function_name": "#43",
+              "count": 1
+            },
+            {
+              "function_name": "#65",
+              "count": 1
+            },
+            {
+              "function_name": "#41",
+              "count": 1
+            },
+            {
+              "function_name": "#45",
+              "count": 1
+            },
+            {
+              "function_name": "#51",
+              "count": 1
+            },
+            {
+              "function_name": "#39",
+              "count": 1
+            },
+            {
+              "function_name": "#49",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 200000,
+        "last_call": [
+          "(::Formatting.var\"#1#4\")(::Int64) at cformat.jl:19",
+          "runtime_int_bypass() at cformat.jl:59",
+          "top-level scope at timing.jl:174 [inlined]",
+          "top-level scope at cformat.jl:0"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#25",
+              "count": 200000
+            }
+          ]
+        }
+      },
+      {
+        "count": 200000,
+        "last_call": [
+          "(::Formatting.var\"#1#4\")(::Float64) at cformat.jl:19",
+          "runtime_float_bypass() at cformat.jl:86",
+          "top-level scope at timing.jl:174 [inlined]",
+          "top-level scope at cformat.jl:0"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#11",
+              "count": 200000
+            }
+          ]
+        }
+      },
+      {
+        "count": 13,
+        "last_call": [
+          "(::Formatting.var\"#2#5\")(::Int64) at cformat.jl:30",
+          "top-level scope at none:1",
+          "eval(::Module, ::Any) at function-override.jl:133",
+          "eval at Formatting.jl:1 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#31",
+              "count": 7
+            },
+            {
+              "function_name": "#63",
+              "count": 2
+            },
+            {
+              "function_name": "#55",
+              "count": 1
+            },
+            {
+              "function_name": "#57",
+              "count": 1
+            },
+            {
+              "function_name": "#59",
+              "count": 1
+            },
+            {
+              "function_name": "#61",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": [
+          "(::Formatting.var\"#3#6\")(::Float64) at cformat.jl:41",
+          "top-level scope at none:1",
+          "eval(::Module, ::Any) at function-override.jl:133",
+          "eval at Formatting.jl:1 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#35",
+              "count": 3
+            },
+            {
+              "function_name": "#33",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::Formatting.var\"#1#4\")(::Float64) at cformat.jl:19",
+          "test_generate_formatter() at cformat.jl:193",
+          "top-level scope at cformat.jl:201",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#67",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::Formatting.var\"#1#4\")(::Irrational{:π}) at cformat.jl:19",
+          "test_generate_formatter() at cformat.jl:194",
+          "top-level scope at cformat.jl:201",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#67",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::Formatting.var\"#2#5\")(::Int64) at cformat.jl:30",
+          "test_generate_formatter() at cformat.jl:198",
+          "top-level scope at cformat.jl:201",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#55",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::Formatting.var\"#3#6\")(::Float64) at cformat.jl:41",
+          "test_generate_formatter() at cformat.jl:196",
+          "top-level scope at cformat.jl:201",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#69",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "#11",
+          "count": 410000
+        },
+        {
+          "function_name": "#25",
+          "count": 410000
+        },
+        {
+          "function_name": "#13",
+          "count": 10014
+        },
+        {
+          "function_name": "#23",
+          "count": 10013
+        },
+        {
+          "function_name": "#19",
+          "count": 10003
+        },
+        {
+          "function_name": "#15",
+          "count": 10001
+        },
+        {
+          "function_name": "#21",
+          "count": 10000
+        },
+        {
+          "function_name": "#17",
+          "count": 10000
+        },
+        {
+          "function_name": "#29",
+          "count": 10000
+        },
+        {
+          "function_name": "#27",
+          "count": 10000
+        },
+        {
+          "function_name": "#31",
+          "count": 7
+        },
+        {
+          "function_name": "#37",
+          "count": 5
+        },
+        {
+          "function_name": "#35",
+          "count": 3
+        },
+        {
+          "function_name": "#67",
+          "count": 2
+        },
+        {
+          "function_name": "#63",
+          "count": 2
+        },
+        {
+          "function_name": "#55",
+          "count": 2
+        },
+        {
+          "function_name": "#33",
+          "count": 2
+        },
+        {
+          "function_name": "#47",
+          "count": 1
+        },
+        {
+          "function_name": "#69",
+          "count": 1
+        },
+        {
+          "function_name": "#57",
+          "count": 1
+        },
+        {
+          "function_name": "#53",
+          "count": 1
+        },
+        {
+          "function_name": "#43",
+          "count": 1
+        },
+        {
+          "function_name": "#65",
+          "count": 1
+        },
+        {
+          "function_name": "#61",
+          "count": 1
+        },
+        {
+          "function_name": "#41",
+          "count": 1
+        },
+        {
+          "function_name": "#59",
+          "count": 1
+        },
+        {
+          "function_name": "#45",
+          "count": 1
+        },
+        {
+          "function_name": "#51",
+          "count": 1
+        },
+        {
+          "function_name": "#39",
+          "count": 1
+        },
+        {
+          "function_name": "#49",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

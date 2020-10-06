@@ -1,0 +1,72 @@
+{
+  "eval_info": {
+    "call_count": 4290,
+    "stack_traces": [
+      {
+        "count": 3201,
+        "last_call": [
+          "#86 at array.jl:0 [inlined]",
+          "iterate at generator.jl:47 [inlined]",
+          "grow_to!(::Array{Any,1}, ::Base.Generator{Base.Iterators.Filter{Yota.var\"#87#89\",Array{Any,1}},Yota.var\"#86#88\"}) at array.jl:747",
+          "collect at array.jl:684 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 3201
+            }
+          ]
+        }
+      },
+      {
+        "count": 903,
+        "last_call": [
+          "#86 at array.jl:0 [inlined]",
+          "iterate at generator.jl:47 [inlined]",
+          "grow_to!(::Array{DataType,1}, ::Base.Generator{Base.Iterators.Filter{Yota.var\"#87#89\",Array{Any,1}},Yota.var\"#86#88\"}, ::Int64) at array.jl:769",
+          "grow_to!(::Array{Any,1}, ::Base.Generator{Base.Iterators.Filter{Yota.var\"#87#89\",Array{Any,1}},Yota.var\"#86#88\"}) at array.jl:751"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 903
+            }
+          ]
+        }
+      },
+      {
+        "count": 186,
+        "last_call": [
+          "#86 at array.jl:0 [inlined]",
+          "iterate at generator.jl:47 [inlined]",
+          "grow_to!(::Array{DataType,1}, ::Base.Generator{Base.Iterators.Filter{Yota.var\"#87#89\",Array{Any,1}},Yota.var\"#86#88\"}, ::Int64) at array.jl:778",
+          "grow_to!(::Array{Any,1}, ::Base.Generator{Base.Iterators.Filter{Yota.var\"#87#89\",Array{Any,1}},Yota.var\"#86#88\"}) at array.jl:751"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 186
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},8580]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

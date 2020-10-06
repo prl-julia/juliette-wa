@@ -1,0 +1,727 @@
+{
+  "eval_info": {
+    "call_count": 43,
+    "stack_traces": [
+      {
+        "count": 10,
+        "last_call": [
+          "method_capture_from_callee(::Method, ::Expr; overwrite::Bool) at debug.jl:474",
+          "method_capture_from_callee at debug.jl:425 [inlined]",
+          "method_capture_from_callee(::Method; kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:overwrite,),Tuple{Bool}}}) at debug.jl:485",
+          "method_capture_from_callee at debug.jl:482 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 10
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:265",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:220",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun]": 2
+            },
+            {
+              "= [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:265",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:258",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun]": 2
+            },
+            {
+              "= [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:265",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:297",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun]": 2
+            },
+            {
+              "= [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:265",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:245",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun]": 2
+            },
+            {
+              "= [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:265",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:232",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun]": 2
+            },
+            {
+              "= [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:265",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:283",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun]": 2
+            },
+            {
+              "= [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:265",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:190",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun]": 2
+            },
+            {
+              "= [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:265",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:270",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun]": 2
+            },
+            {
+              "= [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at edit.jl:162",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at edit.jl:133",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at edit.jl:138",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at edit.jl:133",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:265",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:229",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "macrocall [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "capture_stacktrace(::Module, ::Expr) at debug.jl:201",
+          "(::var\"#97#108\")() at edit.jl:324",
+          "redirect_stderr(::var\"#97#108\", ::IOStream) at stream.jl:1150",
+          "(::var\"#96#107\")(::String, ::IOStream) at edit.jl:323"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:265",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:308",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "macrocall [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "method_capture_from_callee(::Method, ::Expr; overwrite::Bool) at debug.jl:474",
+          "method_capture_from_callee(::Method, ::Expr) at debug.jl:425",
+          "top-level scope at edit.jl:141",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at edit.jl:280",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at edit.jl:180",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "macrocall [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at edit.jl:293",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at edit.jl:180",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "macrocall [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:265",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:199",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "macrocall [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "method_capture_from_callee(::Method, ::Expr; overwrite::Bool) at debug.jl:474",
+          "method_capture_from_callee(::Method, ::Expr) at debug.jl:425",
+          "top-level scope at edit.jl:165",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at edit.jl:155",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at edit.jl:133",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [top]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::var\"#run_insertion#105\")(::String, ::String) at edit.jl:54",
+          "top-level scope at edit.jl:77",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at edit.jl:44"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "for [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "method_capture_from_callee(::Method, ::Expr; overwrite::Bool) at debug.jl:474",
+          "(::Rebugger.var\"#method_capture_from_callee##kw\")(::NamedTuple{(:overwrite,),Tuple{Bool}}, ::typeof(Rebugger.method_capture_from_callee), ::Method, ::Expr) at debug.jl:425",
+          "top-level scope at edit.jl:151",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:265",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:207",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "macrocall [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:265",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:241",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "macrocall [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::var\"#run_insertion#105\")(::String, ::String) at edit.jl:54",
+          "top-level scope at edit.jl:67",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at edit.jl:44"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "for [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "method_capture_from_callee(::Method, ::Expr; overwrite::Bool) at debug.jl:474",
+          "method_capture_from_callee at debug.jl:425 [inlined]",
+          "method_capture_from_callee(::Method; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at debug.jl:485",
+          "method_capture_from_callee(::Method) at debug.jl:482"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},6],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},14],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"for\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},28],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},32],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},32]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 13,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:291",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:207",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##snoop2#260",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:291",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:241",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##kwvarargs2#262",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:291",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:229",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##kwvarargs2#262",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:291",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:297",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##calldo#285",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:291",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:270",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##broadcast#284",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:291",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:232",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##kwvarargs#261",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:291",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:199",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##snoop1#259",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:291",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:220",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##kwvarargs#261",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:291",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:283",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##broadcast#284",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:291",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:190",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##snoop0#258",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:291",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:245",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##HasValue#263",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:291",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:308",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##apply#286",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:291",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186",
+          "top-level scope at edit.jl:258",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##destruct#264",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "##kwvarargs#261",
+          "count": 2
+        },
+        {
+          "function_name": "##kwvarargs2#262",
+          "count": 2
+        },
+        {
+          "function_name": "##broadcast#284",
+          "count": 2
+        },
+        {
+          "function_name": "##snoop2#260",
+          "count": 1
+        },
+        {
+          "function_name": "##destruct#264",
+          "count": 1
+        },
+        {
+          "function_name": "##apply#286",
+          "count": 1
+        },
+        {
+          "function_name": "##calldo#285",
+          "count": 1
+        },
+        {
+          "function_name": "##HasValue#263",
+          "count": 1
+        },
+        {
+          "function_name": "##snoop0#258",
+          "count": 1
+        },
+        {
+          "function_name": "##snoop1#259",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

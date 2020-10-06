@@ -1,0 +1,709 @@
+{
+  "eval_info": {
+    "call_count": 373,
+    "stack_traces": [
+      {
+        "count": 161,
+        "last_call": [
+          "eval at SymPy.jl:26 [inlined]",
+          "import_from(::PyCall.PyObject, ::Nothing; Ms::Tuple{}, typ::Symbol, exclude::Nothing) at utils.jl:289",
+          "import_from(::PyCall.PyObject, ::Nothing) at utils.jl:253",
+          "import_from(::PyCall.PyObject) at utils.jl:253"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "export [fun (gen)]": 161
+            }
+          ]
+        }
+      },
+      {
+        "count": 110,
+        "last_call": [
+          "import_from(::PyCall.PyObject, ::Nothing; Ms::Tuple{}, typ::Symbol, exclude::Nothing) at utils.jl:285",
+          "import_from(::PyCall.PyObject, ::Nothing) at utils.jl:253",
+          "import_from(::PyCall.PyObject) at utils.jl:253",
+          "top-level scope at test-external-module.jl:12"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 110
+            }
+          ]
+        }
+      },
+      {
+        "count": 27,
+        "last_call": [
+          "import_from(::PyCall.PyObject, ::Nothing; Ms::Tuple{}, typ::Symbol, exclude::Nothing) at utils.jl:285",
+          "import_from(::PyCall.PyObject, ::Nothing) at utils.jl:253",
+          "import_from(::PyCall.PyObject) at utils.jl:253",
+          "top-level scope at test-physics.jl:12"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 27
+            }
+          ]
+        }
+      },
+      {
+        "count": 20,
+        "last_call": [
+          "eval at SymPy.jl:26 [inlined]",
+          "lambdify(::Sym, ::Array{Sym,1}; typ::Type{T} where T, fns::Dict{Any,Any}, values::Dict{Any,Any}, use_julia_code::Bool, invoke_latest::Bool) at lambdify.jl:174",
+          "lambdify at lambdify.jl:166 [inlined]",
+          "_broadcast_getindex_evalf at broadcast.jl:648 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 20
+            }
+          ]
+        }
+      },
+      {
+        "count": 13,
+        "last_call": [
+          "import_from(::PyCall.PyObject, ::Nothing; Ms::Tuple{}, typ::Symbol, exclude::Nothing) at utils.jl:285",
+          "import_from(::PyCall.PyObject, ::Nothing) at utils.jl:253",
+          "import_from(::PyCall.PyObject) at utils.jl:253",
+          "top-level scope at test-physics.jl:11"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 13
+            }
+          ]
+        }
+      },
+      {
+        "count": 11,
+        "last_call": [
+          "import_from(::PyCall.PyObject, ::Nothing; Ms::Tuple{}, typ::Symbol, exclude::Nothing) at utils.jl:285",
+          "import_from(::PyCall.PyObject, ::Nothing) at utils.jl:253",
+          "import_from(::PyCall.PyObject) at utils.jl:253",
+          "top-level scope at test-physics.jl:13"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 11
+            }
+          ]
+        }
+      },
+      {
+        "count": 11,
+        "last_call": [
+          "eval at SymPy.jl:26 [inlined]",
+          "lambdify(::Sym, ::Array{Sym,1}; typ::Type{T} where T, fns::Dict{Any,Any}, values::Dict{Any,Any}, use_julia_code::Bool, invoke_latest::Bool) at lambdify.jl:174",
+          "lambdify(::Sym, ::Array{Sym,1}) at lambdify.jl:166",
+          "lambdify(::Sym) at lambdify.jl:166"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 11
+            }
+          ]
+        }
+      },
+      {
+        "count": 8,
+        "last_call": [
+          "import_from(::PyCall.PyObject, ::Nothing; Ms::Tuple{}, typ::Symbol, exclude::Nothing) at utils.jl:274",
+          "import_from(::PyCall.PyObject, ::Nothing) at utils.jl:253",
+          "import_from(::PyCall.PyObject) at utils.jl:253",
+          "top-level scope at test-physics.jl:11"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 8
+            }
+          ]
+        }
+      },
+      {
+        "count": 7,
+        "last_call": [
+          "import_from(::PyCall.PyObject, ::Nothing; Ms::Tuple{}, typ::Symbol, exclude::Nothing) at utils.jl:274",
+          "import_from(::PyCall.PyObject, ::Nothing) at utils.jl:253",
+          "import_from(::PyCall.PyObject) at utils.jl:253",
+          "top-level scope at test-physics.jl:13"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 7
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "import_from(::PyCall.PyObject, ::Tuple{Symbol}; Ms::Tuple{}, typ::Symbol, exclude::Nothing) at utils.jl:285",
+          "(::SymPy.var\"#import_from##kw\")(::NamedTuple{(:typ,),Tuple{Symbol}}, ::typeof(import_from), ::PyCall.PyObject, ::Tuple{Symbol}) at utils.jl:253",
+          "top-level scope at test-physics.jl:45",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at SymPy.jl:26 [inlined]",
+          "lambdify(::Sym, ::Tuple{Sym,Sym}; typ::Type{T} where T, fns::Dict{Any,Any}, values::Dict{Any,Any}, use_julia_code::Bool, invoke_latest::Bool) at lambdify.jl:174",
+          "lambdify(::Sym, ::Tuple{Sym,Sym}) at lambdify.jl:166",
+          "top-level scope at tests.jl:520"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at SymPy.jl:26 [inlined]",
+          "lambdify(::Sym, ::Tuple{Sym}; typ::Type{T} where T, fns::Dict{Any,Any}, values::Dict{Any,Any}, use_julia_code::Bool, invoke_latest::Bool) at lambdify.jl:174",
+          "lambdify(::Sym, ::Tuple{Sym}) at lambdify.jl:166",
+          "(::var\"#D#113\"{PyCall.PyObject})(::var\"#107#114\") at tests.jl:617"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at SymPy.jl:26 [inlined]",
+          "lambdify(::Sym, ::Array{Sym,1}; typ::Type{T} where T, fns::Dict{Any,Any}, values::Dict{Any,Any}, use_julia_code::Bool, invoke_latest::Bool) at lambdify.jl:174",
+          "(::SymPy.var\"#lambdify##kw\")(::NamedTuple{(:use_julia_code,),Tuple{Bool}}, ::typeof(lambdify), ::Sym, ::Array{Sym,1}) at lambdify.jl:166",
+          "(::SymPy.var\"#lambdify##kw\")(::NamedTuple{(:use_julia_code,),Tuple{Bool}}, ::typeof(lambdify), ::Sym) at lambdify.jl:166"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at SymPy.jl:26 [inlined]",
+          "import_from(::PyCall.PyObject, ::Tuple{Symbol}; Ms::Tuple{}, typ::Symbol, exclude::Nothing) at utils.jl:289",
+          "(::SymPy.var\"#import_from##kw\")(::NamedTuple{(:typ,),Tuple{Symbol}}, ::typeof(import_from), ::PyCall.PyObject, ::Tuple{Symbol}) at utils.jl:253",
+          "top-level scope at test-physics.jl:45"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "export [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},354],[{\"astHead\":\"export\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},324],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},68]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 42,
+    "stack_traces": [
+      {
+        "count": 20,
+        "last_call": [
+          "(::SymPy.var\"#89#91\"{SymPy.var\"###261\"})(::Int64) at lambdify.jl:176",
+          "map(::Function, ::Int64) at number.jl:220",
+          "_broadcast_getindex_evalf at broadcast.jl:648 [inlined]",
+          "_broadcast_getindex at broadcast.jl:621 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##261",
+              "count": 1
+            },
+            {
+              "function_name": "##279",
+              "count": 1
+            },
+            {
+              "function_name": "##277",
+              "count": 1
+            },
+            {
+              "function_name": "##268",
+              "count": 1
+            },
+            {
+              "function_name": "##272",
+              "count": 1
+            },
+            {
+              "function_name": "##265",
+              "count": 1
+            },
+            {
+              "function_name": "##275",
+              "count": 1
+            },
+            {
+              "function_name": "##264",
+              "count": 1
+            },
+            {
+              "function_name": "##271",
+              "count": 1
+            },
+            {
+              "function_name": "##274",
+              "count": 1
+            },
+            {
+              "function_name": "##262",
+              "count": 1
+            },
+            {
+              "function_name": "##263",
+              "count": 1
+            },
+            {
+              "function_name": "##270",
+              "count": 1
+            },
+            {
+              "function_name": "##280",
+              "count": 1
+            },
+            {
+              "function_name": "##278",
+              "count": 1
+            },
+            {
+              "function_name": "##267",
+              "count": 1
+            },
+            {
+              "function_name": "##266",
+              "count": 1
+            },
+            {
+              "function_name": "##269",
+              "count": 1
+            },
+            {
+              "function_name": "##273",
+              "count": 1
+            },
+            {
+              "function_name": "##276",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 9,
+        "last_call": [
+          "#89 at lambdify.jl:176 [inlined]",
+          "iterate at generator.jl:47 [inlined]",
+          "collect_to!(::Array{Float64,1}, ::Base.Generator{Array{Float64,1},SymPy.var\"#89#91\"{SymPy.var\"###258\"}}, ::Int64, ::Int64) at array.jl:732",
+          "collect_to_with_first!(::Array{Float64,1}, ::Float64, ::Base.Generator{Array{Float64,1},SymPy.var\"#89#91\"{SymPy.var\"###258\"}}, ::Int64) at array.jl:710"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##258",
+              "count": 9
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymPy.var\"#89#91\"{SymPy.var\"###253\"})(::Int64) at lambdify.jl:176",
+          "top-level scope at tests.jl:50",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at tests.jl:11"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##253",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymPy.var\"#89#91\"{SymPy.var\"###282\"})(::Complex{Float64}) at lambdify.jl:176",
+          "top-level scope at tests.jl:582",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at tests.jl:499"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##282",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymPy.var\"#89#91\"{SymPy.var\"###284\"})(::Int64) at lambdify.jl:176",
+          "top-level scope at tests.jl:619",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at tests.jl:499"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##284",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "#89 at lambdify.jl:176 [inlined]",
+          "iterate at generator.jl:47 [inlined]",
+          "_collect(::Array{Float64,1}, ::Base.Generator{Array{Float64,1},SymPy.var\"#89#91\"{SymPy.var\"###258\"}}, ::Base.EltypeUnknown, ::Base.HasShape{1}) at array.jl:699",
+          "collect_similar(::Array{Float64,1}, ::Base.Generator{Array{Float64,1},SymPy.var\"#89#91\"{SymPy.var\"###258\"}}) at array.jl:628"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##258",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymPy.var\"#89#91\"{SymPy.var\"###260\"})(::Float64) at lambdify.jl:176",
+          "top-level scope at tests.jl:526",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at tests.jl:499"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##260",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymPy.var\"#89#91\"{SymPy.var\"###260\"})(::Float64) at lambdify.jl:176",
+          "top-level scope at tests.jl:525",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at tests.jl:499"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##260",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymPy.var\"#89#91\"{SymPy.var\"###285\"})(::Int64) at lambdify.jl:176",
+          "top-level scope at tests.jl:638",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at tests.jl:499"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##285",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymPy.var\"#89#91\"{SymPy.var\"###257\"})(::Int64, ::Vararg{Int64,N} where N) at lambdify.jl:176",
+          "top-level scope at tests.jl:515",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at tests.jl:499"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##257",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymPy.var\"#89#91\"{SymPy.var\"###281\"})(::Complex{Float64}) at lambdify.jl:176",
+          "top-level scope at tests.jl:580",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at tests.jl:499"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##281",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymPy.var\"#89#91\"{SymPy.var\"###255\"})(::Float64) at lambdify.jl:176",
+          "top-level scope at tests.jl:513",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at tests.jl:499"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##255",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymPy.var\"#89#91\"{SymPy.var\"###283\"})(::Int64) at lambdify.jl:176",
+          "top-level scope at tests.jl:605",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at tests.jl:499"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##283",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymPy.var\"#89#91\"{SymPy.var\"###286\"})(::Int64) at lambdify.jl:176",
+          "top-level scope at tests.jl:678",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at tests.jl:653"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##286",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "(::SymPy.var\"#89#91\"{SymPy.var\"###259\"})(::Int64, ::Vararg{Int64,N} where N) at lambdify.jl:176",
+          "top-level scope at tests.jl:520",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at tests.jl:499"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##259",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "##258",
+          "count": 10
+        },
+        {
+          "function_name": "##260",
+          "count": 2
+        },
+        {
+          "function_name": "##261",
+          "count": 1
+        },
+        {
+          "function_name": "##283",
+          "count": 1
+        },
+        {
+          "function_name": "##279",
+          "count": 1
+        },
+        {
+          "function_name": "##277",
+          "count": 1
+        },
+        {
+          "function_name": "##281",
+          "count": 1
+        },
+        {
+          "function_name": "##253",
+          "count": 1
+        },
+        {
+          "function_name": "##268",
+          "count": 1
+        },
+        {
+          "function_name": "##272",
+          "count": 1
+        },
+        {
+          "function_name": "##265",
+          "count": 1
+        },
+        {
+          "function_name": "##275",
+          "count": 1
+        },
+        {
+          "function_name": "##285",
+          "count": 1
+        },
+        {
+          "function_name": "##264",
+          "count": 1
+        },
+        {
+          "function_name": "##271",
+          "count": 1
+        },
+        {
+          "function_name": "##282",
+          "count": 1
+        },
+        {
+          "function_name": "##274",
+          "count": 1
+        },
+        {
+          "function_name": "##284",
+          "count": 1
+        },
+        {
+          "function_name": "##262",
+          "count": 1
+        },
+        {
+          "function_name": "##263",
+          "count": 1
+        },
+        {
+          "function_name": "##257",
+          "count": 1
+        },
+        {
+          "function_name": "##270",
+          "count": 1
+        },
+        {
+          "function_name": "##286",
+          "count": 1
+        },
+        {
+          "function_name": "##280",
+          "count": 1
+        },
+        {
+          "function_name": "##278",
+          "count": 1
+        },
+        {
+          "function_name": "##267",
+          "count": 1
+        },
+        {
+          "function_name": "##266",
+          "count": 1
+        },
+        {
+          "function_name": "##259",
+          "count": 1
+        },
+        {
+          "function_name": "##269",
+          "count": 1
+        },
+        {
+          "function_name": "##255",
+          "count": 1
+        },
+        {
+          "function_name": "##273",
+          "count": 1
+        },
+        {
+          "function_name": "##276",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

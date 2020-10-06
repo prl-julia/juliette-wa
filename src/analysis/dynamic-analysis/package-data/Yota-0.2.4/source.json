@@ -1,0 +1,161 @@
+{
+  "eval_info": {
+    "call_count": 30,
+    "stack_traces": [
+      {
+        "count": 27,
+        "last_call": [
+          "#compile#126 at compile.jl:183 [inlined]",
+          "compile at compile.jl:182 [inlined]",
+          "compile!(::Tape) at compile.jl:188",
+          "grad(::Function, ::Array{Float64,2}, ::Vararg{Any,N} where N; dynamic::Bool) at grad.jl:316"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 27
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "#compile#126 at compile.jl:183 [inlined]",
+          "compile at compile.jl:182 [inlined]",
+          "simplegrad(::Function, ::Array{Float64,2}, ::Vararg{Any,N} where N) at grad.jl:325",
+          "top-level scope at test_simplegrad.jl:8"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "#compile#126 at compile.jl:183 [inlined]",
+          "compile at compile.jl:182 [inlined]",
+          "transform(::typeof(exp_to_log_tform), ::Function, ::Float64) at transform.jl:19",
+          "top-level scope at test_transform.jl:26"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "#compile#126 at compile.jl:183 [inlined]",
+          "compile at compile.jl:182 [inlined]",
+          "transform(::var\"#129#131\", ::Function, ::Float64) at transform.jl:19",
+          "top-level scope at test_transform.jl:20"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},60]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 203,
+    "stack_traces": [
+      {
+        "count": 201,
+        "last_call": [
+          "play!(::Tape, ::Linear{Float64}, ::Vararg{Any,N} where N; use_compiled::Bool, debug::Bool) at tape.jl:380",
+          "play!(::Tape, ::Linear{Float64}, ::Vararg{Any,N} where N) at tape.jl:375",
+          "grad(::Function, ::Linear{Float64}, ::Vararg{Any,N} where N; dynamic::Bool) at grad.jl:312",
+          "grad(::Function, ::Linear{Float64}, ::Vararg{Any,N} where N) at grad.jl:307"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##tape_fn#285",
+              "count": 100
+            },
+            {
+              "function_name": "##tape_fn#286",
+              "count": 99
+            },
+            {
+              "function_name": "##tape_fn#277",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "play!(::Tape, ::Linear{Float64}, ::Vararg{Any,N} where N; use_compiled::Bool, debug::Bool) at tape.jl:380",
+          "(::Yota.var\"#play!##kw\")(::NamedTuple{(:use_compiled,),Tuple{Bool}}, ::typeof(play!), ::Tape, ::Linear{Float64}, ::Vararg{Any,N} where N) at tape.jl:375",
+          "top-level scope at test_grad.jl:173",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##tape_fn#277",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "play!(::Tape; use_compiled::Bool, debug::Bool) at tape.jl:380",
+          "play!(::Tape) at tape.jl:375",
+          "top-level scope at test_grad.jl:106",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##tape_fn#277",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "##tape_fn#285",
+          "count": 100
+        },
+        {
+          "function_name": "##tape_fn#286",
+          "count": 99
+        },
+        {
+          "function_name": "##tape_fn#277",
+          "count": 4
+        }
+      ]
+    }
+  }
+}

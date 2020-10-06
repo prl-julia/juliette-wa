@@ -1,0 +1,72 @@
+{
+  "eval_info": {
+    "call_count": 3,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "_basefactors(::Module) at Unitful.jl:44",
+          "basefactors_expr(::Module, ::Expr, ::Expr) at user.jl:219",
+          "@prefixed_unit_symbols(::LineNumberNode, ::Module, ::Any, ::Any, ::Any, ::Any) at user.jl:241"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "(::var\"#109#110\")() at none:0",
+          "with_logstate(::Function, ::Any) at logging.jl:408",
+          "with_logger at logging.jl:514 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "top-level scope at runtests.jl:1546",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "module [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

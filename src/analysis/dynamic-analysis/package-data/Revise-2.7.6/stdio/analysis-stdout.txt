@@ -1,0 +1,34 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+Skipping Base.active_repl
+Skipping Base.active_repl_backend
+Revise is currently tracking the following files in ReviseFileNow [top-level]: ["src/ReviseFileNow.jl"]
+extra
+Test Summary: | Pass  Broken  Total
+Revise        |  661       1    662
+Test Summary: | Pass  Total
+Utilities     |    3      3
+Test Summary:      | Pass  Total
+Switching free/dev |  125    125
+Test Summary:                    | Pass  Total
+Broken dependencies (issue #371) |    2      2
+Test Summary:                          | Pass  Total
+Non-jl include_dependency (issue #388) |    4      4
+Test Summary:           | Pass  Total
+New files & Requires.jl |   22     22
+Test Summary: | Pass  Total
+entr          |   16     16
+Test Summary:     | Pass  Total
+entr with modules |    1      1
+Test Summary:       | Pass  Total
+entr with all files |    4      4
+Test Summary: | Pass  Total
+callbacks     |    4      4
+beginning cleanup
+Test Summary: | Pass  Total
+Cleanup       |    1      1
+Test Summary: | Pass  Total
+Backedges     |    9      9
+beginning signatures tests
+10174.617817 seconds (467.19 M allocations: 29.939 GiB, 0.08% gc time)
+Test Summary:   | Pass  Total
+Base signatures |    2      2

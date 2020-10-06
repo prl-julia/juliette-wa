@@ -1,0 +1,79 @@
+{
+  "eval_info": {
+    "call_count": 1,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": [
+          "get_type(::String) at compute.jl:66",
+          "compute(::Context, ::Thunk; options::Nothing) at compute.jl:29",
+          "compute at compute.jl:28 [inlined]",
+          "#compute#135 at darray.jl:243 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 6,
+    "stack_traces": [
+      {
+        "count": 6,
+        "last_call": [
+          "get_osproc(::Int64) at processor.jl:147",
+          "#137 at remotecall.jl:354 [inlined]",
+          "run_work_thunk(::Distributed.var\"#137#138\"{typeof(Dagger.get_osproc),Tuple{Int64},Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}}, ::Bool) at process_messages.jl:79",
+          "remotecall_fetch(::Function, ::Distributed.LocalProcess, ::Int64; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at remotecall.jl:379"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#354",
+              "count": 4
+            },
+            {
+              "function_name": "#119",
+              "count": 1
+            },
+            {
+              "function_name": "#128",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "#354",
+          "count": 4
+        },
+        {
+          "function_name": "#119",
+          "count": 1
+        },
+        {
+          "function_name": "#128",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

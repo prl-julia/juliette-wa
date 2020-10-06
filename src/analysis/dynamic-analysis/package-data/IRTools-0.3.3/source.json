@@ -1,0 +1,204 @@
+{
+  "eval_info": {
+    "call_count": 9,
+    "stack_traces": [
+      {
+        "count": 3,
+        "last_call": [
+          "refresh(::typeof(roundtrip)) at dynamo.jl:125",
+          "top-level scope at compiler.jl:21",
+          "include(::String) at client.jl:457",
+          "top-level scope at runtests.jl:18"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 6
+            },
+            {
+              "local [fun]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "func(::Module, ::IRTools.Inner.IR) at eval.jl:17",
+          "func(::IRTools.Inner.IR) at eval.jl:22",
+          "top-level scope at none:1",
+          "eval(::Module, ::Any) at function-override.jl:133"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "func(::Module, ::IRTools.Inner.IR) at eval.jl:17",
+          "evalir(::Module, ::IRTools.Inner.IR, ::Any, ::Vararg{Any,N} where N) at eval.jl:24",
+          "evalir(::IRTools.Inner.IR, ::Any, ::Any) at eval.jl:25",
+          "top-level scope at compiler.jl:127"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "define_typeinf_code2() at reflection.jl:21",
+          "__init__() at IRTools.jl:37",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "func(::Module, ::IRTools.Inner.IR) at eval.jl:17",
+          "func(::IRTools.Inner.IR) at eval.jl:22",
+          "top-level scope at compiler.jl:142",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "func(::Module, ::IRTools.Inner.IR) at eval.jl:17",
+          "evalir(::Module, ::IRTools.Inner.IR, ::Any) at eval.jl:24",
+          "evalir(::IRTools.Inner.IR, ::Any) at eval.jl:25",
+          "top-level scope at none:1"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "func(::Module, ::IRTools.Inner.IR) at eval.jl:17",
+          "evalir(::Module, ::IRTools.Inner.IR, ::Any) at eval.jl:24",
+          "evalir(::IRTools.Inner.IR, ::Any) at eval.jl:25",
+          "top-level scope at compiler.jl:119"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},12],[{\"astHead\":\"local\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},6],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},12]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 3,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": [
+          "evalir(::Module, ::IRTools.Inner.IR, ::Any, ::Vararg{Any,N} where N) at eval.jl:24",
+          "evalir(::IRTools.Inner.IR, ::Any, ::Any) at eval.jl:25",
+          "top-level scope at compiler.jl:127",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##259",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "evalir(::Module, ::IRTools.Inner.IR, ::Any) at eval.jl:24",
+          "evalir(::IRTools.Inner.IR, ::Any) at eval.jl:25",
+          "top-level scope at none:1",
+          "eval(::Module, ::Any) at function-override.jl:133"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##274",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "evalir(::Module, ::IRTools.Inner.IR, ::Any) at eval.jl:24",
+          "evalir(::IRTools.Inner.IR, ::Any) at eval.jl:25",
+          "top-level scope at compiler.jl:119",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##258",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "##274",
+          "count": 1
+        },
+        {
+          "function_name": "##259",
+          "count": 1
+        },
+        {
+          "function_name": "##258",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

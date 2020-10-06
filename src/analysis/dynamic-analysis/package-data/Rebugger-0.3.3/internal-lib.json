@@ -1,0 +1,208 @@
+{
+  "eval_info": {
+    "call_count": 8,
+    "stack_traces": [
+      {
+        "count": 5,
+        "last_call": [
+          "top-level scope at none:1",
+          "eval(::Module, ::Any) at function-override.jl:133",
+          "stepin(::Base.GenericIOBuffer{Array{UInt8,1}}) at debug.jl:265",
+          "(::var\"#run_stepin#106\")(::String, ::String) at edit.jl:186"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [top (gen)]": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at client.jl:467",
+          "top-level scope at edit.jl:257",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at edit.jl:180"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at none:1",
+          "eval(::Module, ::Any) at function-override.jl:133",
+          "top-level scope at edit.jl:280",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at none:1",
+          "eval(::Module, ::Any) at function-override.jl:133",
+          "top-level scope at edit.jl:293",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "let [top (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"let\",\"context\":{\"inFunDef\":false,\"inQuote\":false}},14],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 11,
+    "stack_traces": [
+      {
+        "count": 5,
+        "last_call": [
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771",
+          "_require(::Base.PkgId) at loading.jl:1007",
+          "require(::Base.PkgId) at loading.jl:928"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "watch_package",
+              "count": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "updated_methodloc(::Method) at methodshow.jl:130",
+          "show(::IOContext{Base.GenericIOBuffer{Array{UInt8,1}}}, ::Method) at methodshow.jl:218",
+          "print(::IOContext{Base.GenericIOBuffer{Array{UInt8,1}}}, ::Method) at io.jl:35",
+          "print(::IOContext{Base.GenericIOBuffer{Array{UInt8,1}}}, ::Method, ::Char) at io.jl:46"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "method_location",
+              "count": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "require(::Base.PkgId) at loading.jl:931",
+          "require(::Module, ::Symbol) at loading.jl:923",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "watch_package",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "require(::Base.PkgId) at loading.jl:931",
+          "require(::Module, ::Symbol) at loading.jl:923",
+          "include(::String) at client.jl:457",
+          "top-level scope at runtests.jl:4"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "watch_package",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "include(::String) at client.jl:451",
+          "top-level scope at runtests.jl:4",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "#103",
+              "count": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "show_backtrace(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:655",
+          "showerror(::Base.GenericIOBuffer{Array{UInt8,1}}, ::ErrorException, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}; backtrace::Bool) at errorshow.jl:93",
+          "(::Base.var\"#showerror##kw\")(::NamedTuple{(:backtrace,),Tuple{Bool}}, ::typeof(showerror), ::Base.GenericIOBuffer{Array{UInt8,1}}, ::ErrorException, ::Array{Union{Ptr{Nothing}, Base.InterpreterIP},1}) at errorshow.jl:88",
+          "show_exception_stack(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Any,1}) at errorshow.jl:737"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "update_stacktrace_lineno!",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "watch_package",
+          "count": 7
+        },
+        {
+          "function_name": "method_location",
+          "count": 2
+        },
+        {
+          "function_name": "#103",
+          "count": 1
+        },
+        {
+          "function_name": "update_stacktrace_lineno!",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

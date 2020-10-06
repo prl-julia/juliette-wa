@@ -1,0 +1,326 @@
+{
+  "eval_info": {
+    "call_count": 205,
+    "stack_traces": [
+      {
+        "count": 54,
+        "last_call": [
+          "(::Franklin.var\"#77#79\"{Module,Array{Any,1},Int64})() at run.jl:64",
+          "redirect_stdout(::Franklin.var\"#77#79\"{Module,Array{Any,1},Int64}, ::IOStream) at stream.jl:1150",
+          "(::Franklin.var\"#76#78\"{Module,String,Array{Any,1},Int64})(::IOStream) at run.jl:60",
+          "open(::Franklin.var\"#76#78\"{Module,String,Array{Any,1},Int64}, ::String, ::Vararg{String,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at io.jl:325"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "include [fun (gen)]": 1
+            },
+            {
+              "useimport [fun (gen)]": 7
+            },
+            {
+              "macrocall [fun (gen)]": 1
+            },
+            {
+              "value [fun (gen)]": 2
+            },
+            {
+              "call [fun (gen)]": 22
+            },
+            {
+              "other [fun (gen)]": 4
+            },
+            {
+              "const [fun (gen)]": 1
+            },
+            {
+              "= [fun (gen)]": 16
+            }
+          ]
+        }
+      },
+      {
+        "count": 49,
+        "last_call": [
+          "eval at Franklin.jl:1 [inlined]",
+          "set_vars!(::OrderedCollections.LittleDict{String,Pair,Array{String,1},Array{Pair,1}}, ::Array{Pair{String,String},1}) at vars.jl:382",
+          "process_mddefs(::Array{Franklin.OCBlock,1}, ::Bool, ::Bool) at mddefs.jl:80",
+          "convert_md(::String, ::Array{Franklin.LxDef,1}; isrecursive::Bool, isinternal::Bool, isconfig::Bool, has_mddefs::Bool, pagevar::Bool, nostripp::Bool) at md.jl:116"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 30
+            },
+            {
+              "other [fun (gen)]": 19
+            }
+          ]
+        }
+      },
+      {
+        "count": 24,
+        "last_call": [
+          "eval at Franklin.jl:1 [inlined]",
+          "set_vars!(::OrderedCollections.LittleDict{String,Pair,Array{String,1},Array{Pair,1}}, ::Array{Pair{String,String},1}) at vars.jl:382",
+          "process_mddefs(::Array{Franklin.OCBlock,1}, ::Bool, ::Bool) at mddefs.jl:75",
+          "convert_md(::String, ::Array{Franklin.LxDef,1}; isrecursive::Bool, isinternal::Bool, isconfig::Bool, has_mddefs::Bool, pagevar::Bool, nostripp::Bool) at md.jl:116"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 22
+            },
+            {
+              "other [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 23,
+        "last_call": [
+          "eval at Franklin.jl:1 [inlined]",
+          "resolve_lxcom(::Franklin.LxCom, ::Array{Franklin.LxDef,1}; inmath::Bool) at latex.jl:33",
+          "resolve_lxcom(::Franklin.LxCom, ::Array{Franklin.LxDef,1}) at latex.jl:11",
+          "convert_block(::Franklin.LxCom, ::Array{Franklin.LxDef,1}) at blocks.jl:44"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 23
+            }
+          ]
+        }
+      },
+      {
+        "count": 19,
+        "last_call": [
+          "resolve_code_block(::SubString{String}) at codeblock.jl:119",
+          "convert_block(::Franklin.OCBlock, ::Array{Franklin.LxDef,1}) at blocks.jl:16",
+          "convert_inter_html(::String, ::Array{Franklin.AbstractBlock,1}, ::Array{Franklin.LxDef,1}) at md.jl:374",
+          "convert_md(::String, ::Array{Franklin.LxDef,1}; isrecursive::Bool, isinternal::Bool, isconfig::Bool, has_mddefs::Bool, pagevar::Bool, nostripp::Bool) at md.jl:159"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun]": 19
+            }
+          ]
+        }
+      },
+      {
+        "count": 17,
+        "last_call": [
+          "eval at Franklin.jl:1 [inlined]",
+          "convert_html_fblock(::Franklin.HFun) at functions.jl:18",
+          "process_html_qblocks(::String, ::Array{Franklin.AbstractBlock,1}, ::Int64, ::Int64) at html.jl:121",
+          "process_html_qblocks(::String, ::Array{Franklin.AbstractBlock,1}) at html.jl:101"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 17
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": [
+          "(::Franklin.var\"#72#74\"{String})() at module.jl:37",
+          "redirect_stderr(::Franklin.var\"#72#74\"{String}, ::IOStream) at stream.jl:1150",
+          "#71 at module.jl:36 [inlined]",
+          "open(::Franklin.var\"#71#73\"{String}, ::String, ::Vararg{String,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at io.jl:325"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "module [fun (gen)]": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "eval at Franklin.jl:1 [inlined]",
+          "set_vars!(::OrderedCollections.LittleDict{String,Pair,Array{String,1},Array{Pair,1}}, ::Array{Pair{String,String},1}) at vars.jl:382",
+          "top-level scope at md-dbb.jl:12",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at Franklin.jl:1 [inlined]",
+          "set_vars!(::OrderedCollections.LittleDict{String,Pair,Array{String,1},Array{Pair,1}}, ::Array{Pair{String,String},1}) at vars.jl:382",
+          "top-level scope at paths_vars.jl:20",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 1
+            },
+            {
+              "variable [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at Franklin.jl:1 [inlined]",
+          "set_vars!(::OrderedCollections.LittleDict{String,Pair,Array{String,1},Array{Pair,1}}, ::Array{Pair{String,String},1}) at vars.jl:382",
+          "process_mddefs(::Array{Franklin.OCBlock,1}, ::Bool, ::Bool) at mddefs.jl:80",
+          "process_mddefs at mddefs.jl:16 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at module.jl:14",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at module.jl:3",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Franklin.jl:1 [inlined]",
+          "set_vars!(::OrderedCollections.LittleDict{String,Pair,Array{String,1},Array{Pair,1}}, ::Array{Pair{String,String},1}) at vars.jl:382",
+          "macro expansion at Suppressor.jl:127 [inlined]",
+          "macro expansion at warnings.jl:6 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Franklin.jl:1 [inlined]",
+          "set_vars!(::OrderedCollections.LittleDict{String,Pair,Array{String,1},Array{Pair,1}}, ::Array{Pair{String,String},1}) at vars.jl:382",
+          "top-level scope at paths_vars.jl:25",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "resolve_code_block(::SubString{String}) at codeblock.jl:119",
+          "macro expansion at codeblock.jl:96 [inlined]",
+          "macro expansion at Test.jl:1115 [inlined]",
+          "top-level scope at codeblock.jl:64"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Franklin.jl:1 [inlined]",
+          "set_vars!(::OrderedCollections.LittleDict{String,Pair,Array{String,1},Array{Pair,1}}, ::Array{Pair{String,String},1}) at vars.jl:382",
+          "top-level scope at paths_vars.jl:29",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "top-level scope at module.jl:21",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at module.jl:3",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [top (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval(::Expr) at Franklin.jl:1",
+          "top-level scope at md-dbb.jl:38",
+          "top-level scope at Test.jl:1115",
+          "top-level scope at md-dbb.jl:38"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},34],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},126],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"include\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},10],[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},124],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},14],[{\"astHead\":\"macrocall\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},50],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},40],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "eval_info": {
+    "call_count": 4,
+    "stack_traces": [
+      {
+        "count": 3,
+        "last_call": [
+          "eval at Reduce.jl:2 [inlined]",
+          "|> at operators.jl:834 [inlined]",
+          "==(::RExpr, ::RExpr) at rexpr.jl:527",
+          "eval_test(::Expr, ::Expr, ::LineNumberNode, ::Bool) at Test.jl:246"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at Reduce.jl:2 [inlined]",
+          "convert(::Type{Int64}, ::RExpr) at rexpr.jl:421",
+          "rcall(::Int64; on::Array{Symbol,1}, off::Array{Symbol,1}) at rexpr.jl:507",
+          "rcall(::Int64) at rexpr.jl:506"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "value [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"value\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},8]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

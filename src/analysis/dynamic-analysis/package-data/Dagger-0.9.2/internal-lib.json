@@ -1,0 +1,286 @@
+{
+  "eval_info": {
+    "call_count": 66,
+    "stack_traces": [
+      {
+        "count": 65,
+        "last_call": [
+          "(::Distributed.var\"#155#156\"{Module,Expr})() at task.jl:356"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "struct [fun]": 52
+            },
+            {
+              "useimport [fun]": 49
+            },
+            {
+              "function [fun]": 343
+            },
+            {
+              "call [fun (gen)]": 3
+            },
+            {
+              "call [fun]": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "@static(::LineNumberNode, ::Module, ::Any) at osutils.jl:19",
+          "include(::String) at client.jl:457",
+          "top-level scope at runtests.jl:11",
+          "include(::String) at client.jl:457"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"struct\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},104],[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},98],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},686],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},8],[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},8]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 27577,
+    "stack_traces": [
+      {
+        "count": 9478,
+        "last_call": [
+          "message_handler_loop(::Sockets.TCPSocket, ::Sockets.TCPSocket, ::Bool) at process_messages.jl:185",
+          "process_tcp_streams(::Sockets.TCPSocket, ::Sockets.TCPSocket, ::Bool) at process_messages.jl:142",
+          "(::Distributed.var\"#99#100\"{Sockets.TCPSocket,Sockets.TCPSocket,Bool})() at task.jl:356"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "deserialize_msg",
+              "count": 9478
+            }
+          ]
+        }
+      },
+      {
+        "count": 8652,
+        "last_call": [
+          "(::Distributed.var\"#125#126\"{Distributed.ProcessGroup,Distributed.RRID,typeof(Distributed.def_rv_channel)})() at remotecall.jl:175",
+          "lock(::Distributed.var\"#125#126\"{Distributed.ProcessGroup,Distributed.RRID,typeof(Distributed.def_rv_channel)}, ::ReentrantLock) at lock.jl:161",
+          "lock at weakkeydict.jl:76 [inlined]",
+          "lookup_ref at remotecall.jl:171 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "def_rv_channel",
+              "count": 8652
+            }
+          ]
+        }
+      },
+      {
+        "count": 5661,
+        "last_call": [
+          "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.CallMsg{:call_fetch}, ::Bool) at messages.jl:185",
+          "send_msg at messages.jl:134 [inlined]",
+          "#remotecall_fetch#143 at remotecall.jl:389 [inlined]",
+          "remotecall_fetch(::Function, ::Distributed.Worker, ::Int64) at remotecall.jl:386"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "serialize_msg",
+              "count": 5661
+            }
+          ]
+        }
+      },
+      {
+        "count": 2976,
+        "last_call": [
+          "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.CallMsg{:call_fetch}, ::Bool) at messages.jl:185",
+          "send_msg at messages.jl:134 [inlined]",
+          "remotecall_fetch(::Function, ::Distributed.Worker, ::Distributed.RRID, ::Vararg{Any,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at remotecall.jl:389",
+          "remotecall_fetch(::Function, ::Distributed.Worker, ::Distributed.RRID, ::Vararg{Any,N} where N) at remotecall.jl:386"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "serialize_msg",
+              "count": 2976
+            }
+          ]
+        }
+      },
+      {
+        "count": 677,
+        "last_call": [
+          "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.ResultMsg, ::Bool) at messages.jl:185",
+          "send_msg_now at messages.jl:130 [inlined]",
+          "send_msg_now(::Sockets.TCPSocket, ::Distributed.MsgHeader, ::Distributed.ResultMsg) at messages.jl:125",
+          "deliver_result(::Sockets.TCPSocket, ::Symbol, ::Distributed.RRID, ::Nothing) at process_messages.jl:111"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "serialize_msg",
+              "count": 677
+            }
+          ]
+        }
+      },
+      {
+        "count": 50,
+        "last_call": [
+          "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.CallMsg{:call}, ::Bool) at messages.jl:185",
+          "send_msg at messages.jl:134 [inlined]",
+          "#remotecall#140 at remotecall.jl:365 [inlined]",
+          "remotecall(::Function, ::Distributed.Worker) at remotecall.jl:364"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "serialize_msg",
+              "count": 50
+            }
+          ]
+        }
+      },
+      {
+        "count": 30,
+        "last_call": [
+          "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.RemoteDoMsg, ::Bool) at messages.jl:185",
+          "send_msg(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.RemoteDoMsg) at messages.jl:134",
+          "#remote_do#153 at remotecall.jl:461 [inlined]",
+          "remote_do at remotecall.jl:461 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "serialize_msg",
+              "count": 30
+            }
+          ]
+        }
+      },
+      {
+        "count": 30,
+        "last_call": [
+          "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.CallMsg{:call}, ::Bool) at messages.jl:185",
+          "send_msg at messages.jl:134 [inlined]",
+          "remotecall(::Function, ::Distributed.Worker, ::Module, ::Vararg{Any,N} where N; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at remotecall.jl:365",
+          "remotecall(::Function, ::Distributed.Worker, ::Module, ::Vararg{Any,N} where N) at remotecall.jl:364"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "serialize_msg",
+              "count": 30
+            }
+          ]
+        }
+      },
+      {
+        "count": 14,
+        "last_call": [
+          "send_msg_(::Distributed.Worker, ::Distributed.MsgHeader, ::Distributed.JoinPGRPMsg, ::Bool) at messages.jl:185",
+          "send_msg_now at messages.jl:130 [inlined]",
+          "create_worker(::Distributed.LocalManager, ::WorkerConfig) at cluster.jl:664",
+          "setup_launched_worker(::Distributed.LocalManager, ::WorkerConfig, ::Array{Int64,1}) at cluster.jl:526"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "serialize_msg",
+              "count": 14
+            }
+          ]
+        }
+      },
+      {
+        "count": 5,
+        "last_call": [
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771",
+          "_require(::Base.PkgId) at loading.jl:1007",
+          "require(::Base.PkgId) at loading.jl:928"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "_require_callback",
+              "count": 5
+            }
+          ]
+        }
+      },
+      {
+        "count": 3,
+        "last_call": [
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:715",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:771"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "_require_callback",
+              "count": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "require(::Base.PkgId) at loading.jl:931",
+          "require(::Module, ::Symbol) at loading.jl:923",
+          "include(::String) at client.jl:457",
+          "top-level scope at none:12"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "_require_callback",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "deserialize_msg",
+          "count": 9478
+        },
+        {
+          "function_name": "serialize_msg",
+          "count": 9438
+        },
+        {
+          "function_name": "def_rv_channel",
+          "count": 8652
+        },
+        {
+          "function_name": "_require_callback",
+          "count": 9
+        }
+      ]
+    }
+  }
+}

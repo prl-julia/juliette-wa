@@ -1,0 +1,271 @@
+{
+  "eval_info": {
+    "call_count": 114,
+    "stack_traces": [
+      {
+        "count": 20,
+        "last_call": [
+          "evaluate_methoddef(::JuliaInterpreter.Frame, ::Expr) at interpret.jl:268",
+          "eval_rhs(::Any, ::JuliaInterpreter.Frame, ::Expr) at interpret.jl:403",
+          "step_expr!(::Any, ::JuliaInterpreter.Frame, ::Any, ::Bool) at interpret.jl:524",
+          "signature(::Any, ::JuliaInterpreter.Frame, ::Any, ::Int64) at packagedef.jl:134"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 20
+            }
+          ]
+        }
+      },
+      {
+        "count": 19,
+        "last_call": [
+          "step_expr!(::Any, ::JuliaInterpreter.Frame, ::Any, ::Bool) at interpret.jl:506",
+          "methods_by_execution!(::Any, ::Revise.CodeTrackingMethodInfo, ::Dict{Module,Array{Expr,1}}, ::JuliaInterpreter.Frame, ::BitArray{1}; define::Bool, skip_include::Bool) at lowered.jl:315",
+          "methods_by_execution! at lowered.jl:115 [inlined]",
+          "methods_by_execution!(::Any, ::Revise.CodeTrackingMethodInfo, ::Dict{Module,Array{Expr,1}}, ::Module, ::Expr; always_rethrow::Bool, define::Bool, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:skip_include,),Tuple{Bool}}}) at lowered.jl:102"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 19
+            }
+          ]
+        }
+      },
+      {
+        "count": 17,
+        "last_call": [
+          "step_expr!(::Any, ::JuliaInterpreter.Frame, ::Any, ::Bool) at interpret.jl:506",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "finish!(::Any, ::JuliaInterpreter.Frame, ::Bool) at commands.jl:14",
+          "step_expr!(::Any, ::JuliaInterpreter.Frame, ::Any, ::Bool) at interpret.jl:501"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 17
+            }
+          ]
+        }
+      },
+      {
+        "count": 17,
+        "last_call": [
+          "do_assignment!(::JuliaInterpreter.Frame, ::Any, ::Any) at interpret.jl:352",
+          "step_expr!(::Any, ::JuliaInterpreter.Frame, ::Any, ::Bool) at interpret.jl:450",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "finish!(::Any, ::JuliaInterpreter.Frame, ::Bool) at commands.jl:14"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [fun (gen)]": 17
+            }
+          ]
+        }
+      },
+      {
+        "count": 17,
+        "last_call": [
+          "step_expr!(::Any, ::JuliaInterpreter.Frame, ::Any, ::Bool) at interpret.jl:492",
+          "step_expr! at interpret.jl:579 [inlined]",
+          "finish!(::Any, ::JuliaInterpreter.Frame, ::Bool) at commands.jl:14",
+          "step_expr!(::Any, ::JuliaInterpreter.Frame, ::Any, ::Bool) at interpret.jl:501"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 17
+            }
+          ]
+        }
+      },
+      {
+        "count": 9,
+        "last_call": [
+          "step_expr!(::Any, ::JuliaInterpreter.Frame, ::Any, ::Bool) at interpret.jl:492",
+          "methods_by_execution!(::Any, ::Revise.CodeTrackingMethodInfo, ::Dict{Module,Array{Expr,1}}, ::JuliaInterpreter.Frame, ::BitArray{1}; define::Bool, skip_include::Bool) at lowered.jl:315",
+          "methods_by_execution! at lowered.jl:115 [inlined]",
+          "methods_by_execution!(::Any, ::Revise.CodeTrackingMethodInfo, ::Dict{Module,Array{Expr,1}}, ::Module, ::Expr; always_rethrow::Bool, define::Bool, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:skip_include,),Tuple{Bool}}}) at lowered.jl:102"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "const [fun (gen)]": 9
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": [
+          "methods_by_execution!(::Any, ::Revise.CodeTrackingMethodInfo, ::Dict{Module,Array{Expr,1}}, ::Module, ::Expr; always_rethrow::Bool, define::Bool, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:skip_include,),Tuple{Bool}}}) at lowered.jl:81",
+          "methods_by_execution! at lowered.jl:70 [inlined]",
+          "#eval_with_signatures#78 at Revise.jl:542 [inlined]",
+          "eval_with_signatures at Revise.jl:540 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "useimport [fun]": 1
+            },
+            {
+              "const [fun]": 3
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": [
+          "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:332",
+          "optimize!(::Core.CodeInfo, ::Method) at optimize.jl:186",
+          "JuliaInterpreter.FrameCode(::Method, ::Core.CodeInfo; generator::Bool, optimize::Bool) at types.jl:101",
+          "Type at types.jl:100 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "other [fun (gen)]": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": [
+          "build_compiled_call!(::Expr, ::Symbol, ::Core.CodeInfo, ::Int64, ::Int64, ::Array{Symbol,1}, ::Module) at optimize.jl:361",
+          "optimize!(::Core.CodeInfo, ::Method) at optimize.jl:186",
+          "JuliaInterpreter.FrameCode(::Method, ::Core.CodeInfo; generator::Bool, optimize::Bool) at types.jl:101",
+          "Type at types.jl:100 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun (gen)]": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "split_expressions!(::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Expr; extract_docexprs::Bool, filename::String) at construct.jl:447",
+          "(::JuliaInterpreter.var\"#split_expressions!##kw\")(::NamedTuple{(:filename, :extract_docexprs),Tuple{String,Bool}}, ::typeof(JuliaInterpreter.split_expressions!), ::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Expr) at construct.jl:436",
+          "split_expressions!(::Array{Tuple{Module,Expr},1}, ::Dict{Module,Array{Expr,1}}, ::Expr, ::Module, ::Array{Any,1}; filename::String, kwargs::Base.Iterators.Pairs{Symbol,Bool,Tuple{Symbol},NamedTuple{(:extract_docexprs,),Tuple{Bool}}}) at construct.jl:486",
+          "split_expressions! at construct.jl:484 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "module [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "do_assignment!(::JuliaInterpreter.Frame, ::Any, ::Any) at interpret.jl:352",
+          "step_expr!(::Any, ::JuliaInterpreter.Frame, ::Any, ::Bool) at interpret.jl:450",
+          "methods_by_execution!(::Any, ::Revise.CodeTrackingMethodInfo, ::Dict{Module,Array{Expr,1}}, ::JuliaInterpreter.Frame, ::BitArray{1}; define::Bool, skip_include::Bool) at lowered.jl:244",
+          "methods_by_execution! at lowered.jl:115 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "= [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"useimport\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},2],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},6],[{\"astHead\":\"module\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},4],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},80],[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},48],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},52],[{\"astHead\":\"=\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},36]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 113,
+    "stack_traces": [
+      {
+        "count": 112,
+        "last_call": [
+          "bypass_builtins(::JuliaInterpreter.Frame, ::Expr, ::Int64) at interpret.jl:179",
+          "evaluate_call_recurse!(::Any, ::JuliaInterpreter.Frame, ::Expr; enter_generated::Bool) at interpret.jl:203",
+          "evaluate_call_recurse! at interpret.jl:202 [inlined]",
+          "eval_rhs(::Any, ::JuliaInterpreter.Frame, ::Expr) at interpret.jl:389"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "##compiledcall#267",
+              "count": 57
+            },
+            {
+              "function_name": "##compiledcall#265",
+              "count": 36
+            },
+            {
+              "function_name": "##compiledcall#266",
+              "count": 12
+            },
+            {
+              "function_name": "##compiledcall#253",
+              "count": 7
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "definition(::Type{Expr}, ::Method) at CodeTracking.jl:248",
+          "definition at CodeTracking.jl:257 [inlined]",
+          "pregenerated_stacktrace(::Array{Base.StackTraces.StackFrame,1}; topname::Symbol) at debug.jl:128",
+          "pregenerated_stacktrace at debug.jl:91 [inlined]"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "get_def",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "##compiledcall#267",
+          "count": 57
+        },
+        {
+          "function_name": "##compiledcall#265",
+          "count": 36
+        },
+        {
+          "function_name": "##compiledcall#266",
+          "count": 12
+        },
+        {
+          "function_name": "##compiledcall#253",
+          "count": 7
+        },
+        {
+          "function_name": "get_def",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

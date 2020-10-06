@@ -1,0 +1,238 @@
+2020-10-06 05:32:03.448455: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-10-06 05:32:03.469859: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2992960000 Hz
+2020-10-06 05:32:03.474236: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5138b30 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-10-06 05:32:03.474306: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+OMP: Info #212: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #210: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 0-31
+OMP: Info #156: KMP_AFFINITY: 32 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #179: KMP_AFFINITY: 32 packages x 1 cores/pkg x 1 threads/core (32 total cores)
+OMP: Info #214: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 0 maps to package 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 1 maps to package 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 2 maps to package 2 
+OMP: Info #171: KMP_AFFINITY: OS proc 3 maps to package 3 
+OMP: Info #171: KMP_AFFINITY: OS proc 4 maps to package 4 
+OMP: Info #171: KMP_AFFINITY: OS proc 5 maps to package 5 
+OMP: Info #171: KMP_AFFINITY: OS proc 6 maps to package 6 
+OMP: Info #171: KMP_AFFINITY: OS proc 7 maps to package 7 
+OMP: Info #171: KMP_AFFINITY: OS proc 8 maps to package 8 
+OMP: Info #171: KMP_AFFINITY: OS proc 9 maps to package 9 
+OMP: Info #171: KMP_AFFINITY: OS proc 10 maps to package 10 
+OMP: Info #171: KMP_AFFINITY: OS proc 11 maps to package 11 
+OMP: Info #171: KMP_AFFINITY: OS proc 12 maps to package 12 
+OMP: Info #171: KMP_AFFINITY: OS proc 13 maps to package 13 
+OMP: Info #171: KMP_AFFINITY: OS proc 14 maps to package 14 
+OMP: Info #171: KMP_AFFINITY: OS proc 15 maps to package 15 
+OMP: Info #171: KMP_AFFINITY: OS proc 16 maps to package 16 
+OMP: Info #171: KMP_AFFINITY: OS proc 17 maps to package 17 
+OMP: Info #171: KMP_AFFINITY: OS proc 18 maps to package 18 
+OMP: Info #171: KMP_AFFINITY: OS proc 19 maps to package 19 
+OMP: Info #171: KMP_AFFINITY: OS proc 20 maps to package 20 
+OMP: Info #171: KMP_AFFINITY: OS proc 21 maps to package 21 
+OMP: Info #171: KMP_AFFINITY: OS proc 22 maps to package 22 
+OMP: Info #171: KMP_AFFINITY: OS proc 23 maps to package 23 
+OMP: Info #171: KMP_AFFINITY: OS proc 24 maps to package 24 
+OMP: Info #171: KMP_AFFINITY: OS proc 25 maps to package 25 
+OMP: Info #171: KMP_AFFINITY: OS proc 26 maps to package 26 
+OMP: Info #171: KMP_AFFINITY: OS proc 27 maps to package 27 
+OMP: Info #171: KMP_AFFINITY: OS proc 28 maps to package 28 
+OMP: Info #171: KMP_AFFINITY: OS proc 29 maps to package 29 
+OMP: Info #171: KMP_AFFINITY: OS proc 30 maps to package 30 
+OMP: Info #171: KMP_AFFINITY: OS proc 31 maps to package 31 
+OMP: Info #250: KMP_AFFINITY: pid 26268 tid 26268 thread 0 bound to OS proc set 0
+2020-10-06 05:32:03.813235: I tensorflow/core/common_runtime/process_util.cc:115] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2020-10-06 05:32:19.926460: I ../SparseAccumulate/Impl.cpp:68] Create a new sparse assembler [Handle ID = 100] with 20 rows and tolerance 0.
+
+2020-10-06 05:32:19.926528: I ../SparseAccumulate/Impl.cpp:69] Current sparse assembler:
+2020-10-06 05:32:19.926534: I ../SparseAccumulate/Impl.cpp:74]  100 |
+2020-10-06 05:32:19.926554: I ../SparseAccumulate/Impl.cpp:82] destroy_sparse_assembler
+2020-10-06 05:32:19.991167: I ../SparseAccumulate/Impl.cpp:68] Create a new sparse assembler [Handle ID = 100] with 5 rows and tolerance 1.
+
+2020-10-06 05:32:19.991232: I ../SparseAccumulate/Impl.cpp:69] Current sparse assembler:
+2020-10-06 05:32:19.991238: I ../SparseAccumulate/Impl.cpp:74]  100 |
+2020-10-06 05:32:19.991284: I ../SparseAccumulate/Impl.cpp:82] destroy_sparse_assembler
+2020-10-06 05:32:20.082629: I ../SparseAccumulate/Impl.cpp:68] Create a new sparse assembler [Handle ID = 100] with 5 rows and tolerance 0.
+
+2020-10-06 05:32:20.082698: I ../SparseAccumulate/Impl.cpp:69] Current sparse assembler:
+2020-10-06 05:32:20.082704: I ../SparseAccumulate/Impl.cpp:74]  100 |
+2020-10-06 05:32:20.082728: I ../SparseAccumulate/Impl.cpp:82] destroy_sparse_assembler
+2020-10-06 05:32:27.189622: I ../SparseFactorizationSolve/Factorization/SparseFactorization.h:32] Factorization: current matrix id= 1, maximum cache size = 999999
+
+2020-10-06 05:32:27.229509: I ../SparseFactorizationSolve/Factorization/SparseFactorization.h:32] Factorization: current matrix id= 2, maximum cache size = 999999
+
+2020-10-06 05:32:27.321702: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at SparseSolver.cpp:139 : Internal: Sparse solver factorization failed.
+2020-10-06 05:32:27.322193: W tensorflow/core/framework/op_kernel.cc:1651] OP_REQUIRES failed at SparseSolver.cpp:139 : Internal: Sparse solver factorization failed.
+OMP: Info #250: KMP_AFFINITY: pid 26268 tid 28928 thread 1 bound to OS proc set 1
+   Updating registry at `~/.julia/registries/General`
+  Resolving package versions...
+Updating `/tmp/jl_gmOlBQ/Project.toml`
+  [682c06a0] + JSON v0.21.1
+No Changes to `/tmp/jl_gmOlBQ/Manifest.toml`
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = \(::SparseTensor, ::PyObject, ::String) at sparse.jl:426
+└ @ ADCME ~/.julia/packages/ADCME/PJIHk/src/sparse.jl:426
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = macro expansion at variable.jl:17 [inlined]
+└ @ Core ~/.julia/packages/ADCME/PJIHk/test/variable.jl:17
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at variable.jl:64
+└ @ Core ~/.julia/packages/ADCME/PJIHk/test/variable.jl:64
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at variable.jl:64
+└ @ Core ~/.julia/packages/ADCME/PJIHk/test/variable.jl:64
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at variable.jl:64
+└ @ Core ~/.julia/packages/ADCME/PJIHk/test/variable.jl:64
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at variable.jl:64
+└ @ Core ~/.julia/packages/ADCME/PJIHk/test/variable.jl:64
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at variable.jl:64
+└ @ Core ~/.julia/packages/ADCME/PJIHk/test/variable.jl:64
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at variable.jl:64
+└ @ Core ~/.julia/packages/ADCME/PJIHk/test/variable.jl:64
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at variable.jl:131
+└ @ Core ~/.julia/packages/ADCME/PJIHk/test/variable.jl:131
+┌ Warning: `getindex(o::PyObject, i::Integer)` is deprecated, use `get(o, i - 1)` instead.
+│   caller = top-level scope at variable.jl:132
+└ @ Core ~/.julia/packages/ADCME/PJIHk/test/variable.jl:132
+WARNING: both ADCME and Distributed export "pmap"; uses of it in module Main must be qualified
+ERROR: LoadError: LoadError: Some tests did not pass: 0 passed, 0 failed, 1 errored, 0 broken.
+in expression starting at /home/jack/.julia/packages/ADCME/PJIHk/test/ops.jl:336
+in expression starting at /home/jack/.julia/packages/ADCME/PJIHk/test/runtests.jl:28
+   Updating registry at `~/.julia/registries/General`
+  Resolving package versions...
+No Changes to `~/.julia/environments/v1.5/Project.toml`
+No Changes to `~/.julia/environments/v1.5/Manifest.toml`
+┌ Warning: Pkg.installed() is deprecated
+└ @ Pkg /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Pkg.jl:554
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+    Testing ADCME
+Status `/tmp/jl_gmOlBQ/Project.toml`
+  [07b341a0] ADCME v0.5.12
+  [631607c0] CMake v1.2.0
+  [7a1cc6ca] FFTW v1.2.4
+  [23992714] MAT v0.8.1
+  [76087f3c] NLopt v0.6.0
+  [429524aa] Optim v0.20.1
+  [438e738f] PyCall v1.91.4
+  [d330b81b] PyPlot v2.9.0
+  [276daf66] SpecialFunctions v0.8.0
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [44cfe95a] Pkg
+  [9a3f8284] Random
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+Status `/tmp/jl_gmOlBQ/Manifest.toml`
+  [07b341a0] ADCME v0.5.12
+  [621f4979] AbstractFFTs v0.5.0
+  [4fba245c] ArrayInterface v2.13.3
+  [9e28174c] BinDeps v1.0.1
+  [b99e7846] BinaryProvider v0.5.10
+  [a74b3585] Blosc v0.7.0
+  [0b7ba130] Blosc_jll v1.14.3+1
+  [e1450e63] BufferedStreams v1.0.0
+  [631607c0] CMake v1.2.0
+  [49dc2e85] Calculus v0.5.1
+  [944b1d66] CodecZlib v0.6.0
+  [3da002f7] ColorTypes v0.9.1
+  [5ae59095] Colors v0.11.2
+  [bbf7d656] CommonSubexpressions v0.3.0
+  [34da2185] Compat v2.2.1
+  [8f4d0f93] Conda v1.4.1
+  [9a962f9c] DataAPI v1.3.0
+  [864edb3b] DataStructures v0.17.20
+  [01453d9d] DiffEqDiffTools v1.7.0
+  [163ba53b] DiffResults v0.0.4
+  [b552c78f] DiffRules v1.0.1
+  [7a1cc6ca] FFTW v1.2.4
+  [f5851436] FFTW_jll v3.3.9+5
+  [1a297f60] FillArrays v0.8.14
+  [53c48c17] FixedPointNumbers v0.6.1
+  [f6369f11] ForwardDiff v0.10.12
+  [f67ccb44] HDF5 v0.13.6
+  [0234f1f7] HDF5_jll v1.10.5+6
+  [1d5cc7b8] IntelOpenMP_jll v2018.0.3+0
+  [682c06a0] JSON v0.21.1
+  [b964fa9f] LaTeXStrings v1.2.0
+  [d3d80556] LineSearches v7.1.0
+  [5ced341a] Lz4_jll v1.9.2+2
+  [23992714] MAT v0.8.1
+  [856f044c] MKL_jll v2020.2.254+0
+  [1914dd2f] MacroTools v0.5.5
+  [fdba3010] MathProgBase v0.7.8
+  [e1d29d7a] Missings v0.4.4
+  [d41bc354] NLSolversBase v7.5.0
+  [76087f3c] NLopt v0.6.0
+  [079eb43e] NLopt_jll v2.6.2+0
+  [77ba4419] NaNMath v0.3.4
+  [429524aa] Optim v0.20.1
+  [bac558e1] OrderedCollections v1.3.1
+  [d96e819e] Parameters v0.12.1
+  [69de0a69] Parsers v1.0.10
+  [85a6dd25] PositiveFactorizations v0.2.3
+  [438e738f] PyCall v1.91.4
+  [d330b81b] PyPlot v2.9.0
+  [189a3867] Reexport v0.2.0
+  [ae029012] Requires v0.5.2
+  [a2af1166] SortingAlgorithms v0.3.1
+  [276daf66] SpecialFunctions v0.8.0
+  [90137ffa] StaticArrays v0.12.4
+  [2913bbd2] StatsBase v0.32.2
+  [3bb67fe8] TranscodingStreams v0.9.5
+  [30578b45] URIParser v0.4.1
+  [3a884ed6] UnPack v1.0.2
+  [81def892] VersionParsing v1.2.0
+  [83775a58] Zlib_jll v1.2.11+16
+  [3161d3a3] Zstd_jll v1.4.5+1
+  [2a0f44e3] Base64
+  [ade2ca70] Dates
+  [8bb1440f] DelimitedFiles
+  [8ba89e20] Distributed
+  [b77e0a4c] InteractiveUtils
+  [76f85450] LibGit2
+  [8f399da3] Libdl
+  [37e2e46d] LinearAlgebra
+  [56ddb016] Logging
+  [d6f4376e] Markdown
+  [a63ad114] Mmap
+  [44cfe95a] Pkg
+  [de0858da] Printf
+  [3fa0cd96] REPL
+  [9a3f8284] Random
+  [ea8e919c] SHA
+  [9e88b42a] Serialization
+  [1a1011a3] SharedArrays
+  [6462fe0b] Sockets
+  [2f01184e] SparseArrays
+  [10745b16] Statistics
+  [8dfed614] Test
+  [cf7118a7] UUIDs
+  [4ec0a83e] Unicode
+ERROR: LoadError: Package ADCME errored during testing
+Stacktrace:
+ [1] pkgerror(::String) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Types.jl:52
+ [2] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, julia_args::Cmd, test_args::Cmd, test_fn::Nothing) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/Operations.jl:1566
+ [3] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}; coverage::Bool, test_fn::Nothing, julia_args::Cmd, test_args::Cmd, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:328
+ [4] test(::Pkg.Types.Context, ::Array{Pkg.Types.PackageSpec,1}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:315
+ [5] #test#61 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [6] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:67 [inlined]
+ [7] #test#60 at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [8] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:66 [inlined]
+ [9] test(::String; kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65
+ [10] test at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Pkg/src/API.jl:65 [inlined]
+ [11] analyzePkg(::String, ::Nothing) at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:14
+ [12] top-level scope at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:17
+ [13] include(::Function, ::Module, ::String) at ./Base.jl:380
+ [14] include(::Module, ::String) at ./Base.jl:368
+ [15] exec_options(::Base.JLOptions) at ./client.jl:296
+ [16] _start() at ./client.jl:506
+in expression starting at /home/jack/workspace/juliette-wa/src/analysis/dynamic-analysis/analyze-package.jl:17

@@ -1,0 +1,43 @@
+{
+  "eval_info": {
+    "call_count": 2,
+    "stack_traces": [
+      {
+        "count": 2,
+        "last_call": [
+          "eval at Plots.jl:1 [inlined]",
+          "(::Plots.var\"#333#366\")() at require.jl:67",
+          "err(::Plots.var\"#333#366\", ::Module, ::String) at require.jl:38",
+          "#332 at require.jl:66 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            },
+            {
+              "const [fun]": 2
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4],[{\"astHead\":\"const\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},4]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "eval_info": {
+    "call_count": 15,
+    "stack_traces": [
+      {
+        "count": 4,
+        "last_call": [
+          "eval at IntervalArithmetic.jl:5 [inlined]",
+          "parse(::Type{IntervalArithmetic.Interval{Float64}}, ::String) at parsing.jl:262",
+          "atomic(::Type{IntervalArithmetic.Interval{Float64}}, ::String) at conversion.jl:75",
+          "@I_str(::LineNumberNode, ::Module, ::Any) at intervals.jl:169"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": [
+          "eval at IntervalArithmetic.jl:5 [inlined]",
+          "parse(::Type{IntervalArithmetic.Interval{Float64}}, ::String) at parsing.jl:204",
+          "atomic(::Type{IntervalArithmetic.Interval{Float64}}, ::String) at conversion.jl:75",
+          "top-level scope at construction.jl:173"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at IntervalArithmetic.jl:5 [inlined]",
+          "parse(::Type{IntervalArithmetic.Interval{Float64}}, ::String) at parsing.jl:262",
+          "atomic(::Type{IntervalArithmetic.Interval{Float64}}, ::String) at conversion.jl:75",
+          "top-level scope at construction.jl:292"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at IntervalArithmetic.jl:5 [inlined]",
+          "parse(::Type{IntervalArithmetic.Interval{Float64}}, ::String) at parsing.jl:262",
+          "atomic(::Type{IntervalArithmetic.Interval{Float64}}, ::String) at conversion.jl:75",
+          "top-level scope at construction.jl:291"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at IntervalArithmetic.jl:5 [inlined]",
+          "parse(::Type{IntervalArithmetic.Interval{BigFloat}}, ::String) at parsing.jl:204",
+          "atomic(::Type{IntervalArithmetic.Interval{BigFloat}}, ::String) at conversion.jl:75",
+          "top-level scope at construction.jl:111"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at IntervalArithmetic.jl:5 [inlined]",
+          "parse(::Type{IntervalArithmetic.Interval{Float64}}, ::String) at parsing.jl:262",
+          "atomic(::Type{IntervalArithmetic.Interval{Float64}}, ::String) at conversion.jl:75",
+          "top-level scope at construction.jl:290"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at IntervalArithmetic.jl:5 [inlined]",
+          "parse(::Type{IntervalArithmetic.Interval{Float64}}, ::String) at parsing.jl:262",
+          "atomic(::Type{IntervalArithmetic.Interval{Float64}}, ::String) at conversion.jl:75",
+          "top-level scope at construction.jl:293"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at IntervalArithmetic.jl:5 [inlined]",
+          "parse(::Type{IntervalArithmetic.Interval{Float64}}, ::String) at parsing.jl:204",
+          "atomic(::Type{IntervalArithmetic.Interval{Float64}}, ::String) at conversion.jl:75",
+          "top-level scope at construction.jl:129"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at IntervalArithmetic.jl:5 [inlined]",
+          "parse(::Type{IntervalArithmetic.Interval{Float64}}, ::String) at parsing.jl:262",
+          "atomic(::Type{IntervalArithmetic.Interval{Float64}}, ::String) at conversion.jl:75",
+          "top-level scope at construction.jl:143"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "call [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"call\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},30]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

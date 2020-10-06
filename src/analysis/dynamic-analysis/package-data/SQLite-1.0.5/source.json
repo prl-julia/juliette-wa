@@ -1,0 +1,323 @@
+{
+  "eval_info": {
+    "call_count": 35,
+    "stack_traces": [
+      {
+        "count": 6,
+        "last_call": [
+          "eval at SQLite.jl:1 [inlined]",
+          "register(::SQLite.DB, ::Int64, ::Function, ::Function; nargs::Int64, name::String, isdeterm::Bool) at UDF.jl:236",
+          "register(::SQLite.DB, ::Int64, ::Function, ::Function) at UDF.jl:232",
+          "register(::SQLite.DB, ::Int64, ::Function) at UDF.jl:232"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 6
+            },
+            {
+              "other [fun]": 6
+            }
+          ]
+        }
+      },
+      {
+        "count": 6,
+        "last_call": [
+          "eval at SQLite.jl:1 [inlined]",
+          "register(::SQLite.DB, ::Int64, ::Function, ::Function; nargs::Int64, name::String, isdeterm::Bool) at UDF.jl:238",
+          "register(::SQLite.DB, ::Int64, ::Function, ::Function) at UDF.jl:232",
+          "register(::SQLite.DB, ::Int64, ::Function) at UDF.jl:232"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 6
+            },
+            {
+              "other [fun]": 6
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at SQLite.jl:1 [inlined]",
+          "register(::SQLite.DB, ::Function; nargs::Int64, name::String, isdeterm::Bool) at UDF.jl:214",
+          "(::SQLite.var\"#register##kw\")(::NamedTuple{(:nargs, :name),Tuple{Int64,String}}, ::typeof(SQLite.register), ::SQLite.DB, ::Function) at UDF.jl:209",
+          "top-level scope at runtests.jl:103"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            },
+            {
+              "other [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at SQLite.jl:1 [inlined]",
+          "register(::SQLite.DB, ::Function; nargs::Int64, name::String, isdeterm::Bool) at UDF.jl:214",
+          "register(::SQLite.DB, ::Function) at UDF.jl:209",
+          "top-level scope at runtests.jl:127"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            },
+            {
+              "other [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at SQLite.jl:1 [inlined]",
+          "register(::SQLite.DB, ::Function; nargs::Int64, name::String, isdeterm::Bool) at UDF.jl:214",
+          "(::SQLite.var\"#register##kw\")(::NamedTuple{(:nargs,),Tuple{Int64}}, ::typeof(SQLite.register), ::SQLite.DB, ::Function) at UDF.jl:209",
+          "top-level scope at runtests.jl:108"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            },
+            {
+              "other [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at SQLite.jl:1 [inlined]",
+          "register(::SQLite.DB, ::Function; nargs::Int64, name::String, isdeterm::Bool) at UDF.jl:214",
+          "(::SQLite.var\"#register##kw\")(::NamedTuple{(:nargs, :name),Tuple{Int64,String}}, ::typeof(SQLite.register), ::SQLite.DB, ::Function) at UDF.jl:209",
+          "top-level scope at runtests.jl:131"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            },
+            {
+              "other [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at SQLite.jl:1 [inlined]",
+          "register(::SQLite.DB, ::Function; nargs::Int64, name::String, isdeterm::Bool) at UDF.jl:214",
+          "register(::SQLite.DB, ::Function) at UDF.jl:209",
+          "top-level scope at runtests.jl:120"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            },
+            {
+              "other [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at SQLite.jl:1 [inlined]",
+          "register(::SQLite.DB, ::Int64, ::Function, ::Function; nargs::Int64, name::String, isdeterm::Bool) at UDF.jl:238",
+          "(::SQLite.var\"#register##kw\")(::NamedTuple{(:name,),Tuple{String}}, ::typeof(SQLite.register), ::SQLite.DB, ::Int64, ::Function, ::Function) at UDF.jl:232",
+          "top-level scope at runtests.jl:144"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            },
+            {
+              "other [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at SQLite.jl:1 [inlined]",
+          "register(::SQLite.DB, ::Function; nargs::Int64, name::String, isdeterm::Bool) at UDF.jl:214",
+          "register(::SQLite.DB, ::Function) at UDF.jl:209",
+          "top-level scope at runtests.jl:135"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            },
+            {
+              "other [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at SQLite.jl:1 [inlined]",
+          "register(::SQLite.DB, ::Function; nargs::Int64, name::String, isdeterm::Bool) at UDF.jl:214",
+          "register(::SQLite.DB, ::Function) at UDF.jl:209",
+          "top-level scope at runtests.jl:115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            },
+            {
+              "other [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at SQLite.jl:1 [inlined]",
+          "register(::SQLite.DB, ::Function; nargs::Int64, name::String, isdeterm::Bool) at UDF.jl:214",
+          "register(::SQLite.DB, ::Function) at UDF.jl:209",
+          "top-level scope at runtests.jl:139"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            },
+            {
+              "other [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at SQLite.jl:1 [inlined]",
+          "register(::SQLite.DB, ::Int64, ::Function, ::Function; nargs::Int64, name::String, isdeterm::Bool) at UDF.jl:236",
+          "(::SQLite.var\"#register##kw\")(::NamedTuple{(:name,),Tuple{String}}, ::typeof(SQLite.register), ::SQLite.DB, ::Int64, ::Function, ::Function) at UDF.jl:232",
+          "top-level scope at runtests.jl:144"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "function [fun]": 2
+            },
+            {
+              "other [fun]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "newidentity() at UDF.jl:227",
+          "register(::SQLite.DB, ::BigInt, ::Function) at UDF.jl:232",
+          "top-level scope at runtests.jl:155",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "newidentity() at UDF.jl:227",
+          "register(::SQLite.DB, ::Point3D{Int64}, ::Function) at UDF.jl:232",
+          "top-level scope at runtests.jl:165",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "newidentity() at UDF.jl:227",
+          "register(::SQLite.DB, ::Int64, ::Function) at UDF.jl:232",
+          "top-level scope at runtests.jl:150",
+          "top-level scope at Test.jl:1115"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "-> [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"function\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},64],[{\"astHead\":\"->\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},6],[{\"astHead\":\"other\",\"context\":{\"inFunDef\":true,\"inQuote\":true}},64]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 1,
+    "stack_traces": [
+      {
+        "count": 1,
+        "last_call": [
+          "__init__() at x86_64-linux-gnu.jl:29",
+          "_include_from_serialized(::String, ::Array{Any,1}) at loading.jl:697",
+          "_require_search_from_serialized(::Base.PkgId, ::String) at loading.jl:782",
+          "_tryrequire_from_serialized(::Base.PkgId, ::UInt64, ::String) at loading.jl:712"
+        ],
+        "auxillary": {
+          "function_names": [
+            {
+              "function_name": "do_artifact_str",
+              "count": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "function_names": [
+        {
+          "function_name": "do_artifact_str",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

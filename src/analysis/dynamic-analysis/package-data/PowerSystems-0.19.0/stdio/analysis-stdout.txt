@@ -1,0 +1,97 @@
+### DYNAMIC ANALYSIS LINE IDENTIFIER ###
+
+test_base_checks: 
+test_branchchecks_testing: 
+test_busnumberchecks: 
+test_constructors: 
+test_cost_functions: 
+test_data: 
+test_dynamic_generator: 
+test_dynamic_inverter: 
+test_generate_structs: 
+test_internal: Test internal values: Error During Test at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/test_internal.jl:46
+  Got exception outside of a @test
+  InfrastructureSystems.DataFormatError("active_power is not defined in /home/jack/.julia/packages/PowerSystems/Ihfxp/src/descriptors/power_system_inputs.json")
+  Stacktrace:
+   [1] _get_field_infos(::PowerSystemTableData, ::PowerSystems.InputCategory, ::Array{Symbol,1}) at /home/jack/.julia/packages/PowerSystems/Ihfxp/src/parsers/power_system_table_data.jl:1027
+   [2] #iterate_rows#261 at /home/jack/.julia/packages/PowerSystems/Ihfxp/src/parsers/power_system_table_data.jl:234 [inlined]
+   [3] iterate_rows at /home/jack/.julia/packages/PowerSystems/Ihfxp/src/parsers/power_system_table_data.jl:233 [inlined]
+   [4] loadzone_csv_parser!(::System, ::PowerSystemTableData) at /home/jack/.julia/packages/PowerSystems/Ihfxp/src/parsers/power_system_table_data.jl:576
+   [5] System(::PowerSystemTableData; forecast_resolution::Hour, time_series_in_memory::Bool, time_series_directory::Nothing, runchecks::Bool, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/PowerSystems/Ihfxp/src/parsers/power_system_table_data.jl:277
+   [6] create_rts_system(::Hour) at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/common.jl:6
+   [7] create_rts_system() at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/common.jl:5
+   [8] top-level scope at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/test_internal.jl:47
+   [9] top-level scope at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115
+   [10] top-level scope at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/test_internal.jl:47
+   [11] include(::String) at ./client.jl:457
+   [12] macro expansion at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/runtests.jl:76 [inlined]
+   [13] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [14] macro expansion at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/runtests.jl:105 [inlined]
+   [15] macro expansion at ./timing.jl:174 [inlined]
+   [16] (::var"#96#99"{ConsoleLogger})(::InfrastructureSystems.FileLogger) at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/runtests.jl:104
+   [17] open_file_logger(::var"#96#99"{ConsoleLogger}, ::String, ::Base.CoreLogging.LogLevel, ::String) at /home/jack/.julia/packages/InfrastructureSystems/uydla/src/utils/logging.jl:133
+   [18] open_file_logger(::Function, ::String, ::Base.CoreLogging.LogLevel) at /home/jack/.julia/packages/InfrastructureSystems/uydla/src/utils/logging.jl:130
+   [19] run_tests() at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/runtests.jl:97
+   [20] top-level scope at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/runtests.jl:116
+   [21] include(::String) at ./client.jl:457
+   [22] top-level scope at ./none:12
+   [23] eval(::Module, ::Any) at ./boot.jl:331
+   [24] exec_options(::Base.JLOptions) at ./client.jl:272
+   [25] _start() at ./client.jl:506
+  
+
+test_network_matrices: Begin PowerSystems tests: Error During Test at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/runtests.jl:104
+  Got exception outside of a @test
+  LoadError: InfrastructureSystems.DataFormatError("active_power is not defined in /home/jack/.julia/packages/PowerSystems/Ihfxp/src/descriptors/power_system_inputs.json")
+  Stacktrace:
+   [1] _get_field_infos(::PowerSystemTableData, ::PowerSystems.InputCategory, ::Array{Symbol,1}) at /home/jack/.julia/packages/PowerSystems/Ihfxp/src/parsers/power_system_table_data.jl:1027
+   [2] #iterate_rows#261 at /home/jack/.julia/packages/PowerSystems/Ihfxp/src/parsers/power_system_table_data.jl:234 [inlined]
+   [3] iterate_rows at /home/jack/.julia/packages/PowerSystems/Ihfxp/src/parsers/power_system_table_data.jl:233 [inlined]
+   [4] loadzone_csv_parser!(::System, ::PowerSystemTableData) at /home/jack/.julia/packages/PowerSystems/Ihfxp/src/parsers/power_system_table_data.jl:576
+   [5] System(::PowerSystemTableData; forecast_resolution::Hour, time_series_in_memory::Bool, time_series_directory::Nothing, runchecks::Bool, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at /home/jack/.julia/packages/PowerSystems/Ihfxp/src/parsers/power_system_table_data.jl:277
+   [6] create_rts_system(::Hour) at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/common.jl:6
+   [7] create_rts_system() at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/common.jl:5
+   [8] top-level scope at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/test_network_matrices.jl:9
+   [9] include(::String) at ./client.jl:457
+   [10] macro expansion at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/runtests.jl:76 [inlined]
+   [11] macro expansion at /buildworker/worker/package_linux64/build/usr/share/julia/stdlib/v1.5/Test/src/Test.jl:1115 [inlined]
+   [12] macro expansion at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/runtests.jl:105 [inlined]
+   [13] macro expansion at ./timing.jl:174 [inlined]
+   [14] (::var"#96#99"{ConsoleLogger})(::InfrastructureSystems.FileLogger) at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/runtests.jl:104
+   [15] open_file_logger(::var"#96#99"{ConsoleLogger}, ::String, ::Base.CoreLogging.LogLevel, ::String) at /home/jack/.julia/packages/InfrastructureSystems/uydla/src/utils/logging.jl:133
+   [16] open_file_logger(::Function, ::String, ::Base.CoreLogging.LogLevel) at /home/jack/.julia/packages/InfrastructureSystems/uydla/src/utils/logging.jl:130
+   [17] run_tests() at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/runtests.jl:97
+   [18] top-level scope at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/runtests.jl:116
+   [19] include(::String) at ./client.jl:457
+   [20] top-level scope at ./none:12
+   [21] eval(::Module, ::Any) at ./boot.jl:331
+   [22] exec_options(::Base.JLOptions) at ./client.jl:272
+   [23] _start() at ./client.jl:506
+  in expression starting at /home/jack/.julia/packages/PowerSystems/Ihfxp/test/test_network_matrices.jl:9
+  
+Test Summary:                           | Pass  Error  Total
+Begin PowerSystems tests                |  104      2    106
+  Test base checks                      |    1             1
+  Time resolution                       |    4             4
+  Angle limits                          |    7             7
+  Check bus index                       |    3             3
+  Test unique bus numbers               |    1             1
+  Bus Constructors                      |    2             2
+  Generation Constructors               |    8             8
+  Source Constructors                   |    1             1
+  Storage Constructors                  |    1             1
+  Load Constructors                     |    5             5
+  Branch Constructors                   |    7             7
+  Service Constructors                  |    2             2
+  Forecast Constructors                 |    6             6
+  TestData                              |    1             1
+  Dynamic Machines                      |    6             6
+  Dynamic Shaft                         |    2             2
+  Dynamic PSS                           |    1             1
+  Dynamic Turbine Governor Constructors |    3             3
+  Dynamic AVR Constructors              |    4             4
+  Dynamic Generators                    |   19            19
+  Inverter Components                   |    8             8
+  Dynamic Inverter                      |    5             5
+  Test generated structs                |    1             1
+  Test internal values                  |           1      1

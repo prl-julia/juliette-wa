@@ -1,0 +1,120 @@
+{
+  "eval_info": {
+    "call_count": 172,
+    "stack_traces": [
+      {
+        "count": 62,
+        "last_call": [
+          "datatype(::Type{T} where T) at DataStreams.jl:465",
+          "stream!(::NamedTuple{(:a, :b, :c, :d),Tuple{Array{Int64,1},Array{String,1},Array{Float64,1},Array{Int64,1}}}, ::DataStreams.Data.Query{0x01,Tuple{DataStreams.Data.QueryColumn{0x01,Int64,1,1,:a,nothing,()},DataStreams.Data.QueryColumn{0x01,String,2,2,:b,nothing,()},DataStreams.Data.QueryColumn{0x01,Float64,3,3,:c,nothing,()},DataStreams.Data.QueryColumn{0x01,Int64,4,4,:d,nothing,()}},(),nothing,nothing}, ::Type{NamedTuple{names,T} where T<:Tuple{Vararg{AbstractArray{S,1} where S,N}} where names where N}; append::Bool, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at query.jl:573",
+          "(::DataStreams.Data.var\"#stream!##kw\")(::NamedTuple{(:append,),Tuple{Bool}}, ::typeof(DataStreams.Data.stream!), ::NamedTuple{(:a, :b, :c, :d),Tuple{Array{Int64,1},Array{String,1},Array{Float64,1},Array{Int64,1}}}, ::DataStreams.Data.Query{0x01,Tuple{DataStreams.Data.QueryColumn{0x01,Int64,1,1,:a,nothing,()},DataStreams.Data.QueryColumn{0x01,String,2,2,:b,nothing,()},DataStreams.Data.QueryColumn{0x01,Float64,3,3,:c,nothing,()},DataStreams.Data.QueryColumn{0x01,Int64,4,4,:d,nothing,()}},(),nothing,nothing}, ::Type{NamedTuple{names,T} where T<:Tuple{Vararg{AbstractArray{S,1} where S,N}} where names where N}) at query.jl:573",
+          "query(::NamedTuple{(:a, :b, :c, :d),Tuple{Array{Int64,1},Array{String,1},Array{Float64,1},Array{Int64,1}}}, ::Array{NamedTuple{(:col,),Tuple{Int64}},1}, ::Type{NamedTuple{names,T} where T<:Tuple{Vararg{AbstractArray{S,1} where S,N}} where names where N}; append::Bool, limit::Nothing, offset::Nothing, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at query.jl:198"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 62
+            }
+          ]
+        }
+      },
+      {
+        "count": 62,
+        "last_call": [
+          "datatype at DataStreams.jl:465 [inlined]",
+          "stream!(::NamedTuple{(:a, :b, :c, :d),Tuple{Array{Int64,1},Array{String,1},Array{Float64,1},Array{Int64,1}}}, ::DataStreams.Data.Query{0x01,Tuple{DataStreams.Data.QueryColumn{0x01,Int64,1,1,:a,nothing,()},DataStreams.Data.QueryColumn{0x01,String,2,2,:b,nothing,()},DataStreams.Data.QueryColumn{0x01,Float64,3,3,:c,nothing,()},DataStreams.Data.QueryColumn{0x01,Int64,4,4,:d,nothing,()}},(),nothing,nothing}, ::Type{NamedTuple{names,T} where T<:Tuple{Vararg{AbstractArray{S,1} where S,N}} where names where N}; append::Bool, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at query.jl:576",
+          "(::DataStreams.Data.var\"#stream!##kw\")(::NamedTuple{(:append,),Tuple{Bool}}, ::typeof(DataStreams.Data.stream!), ::NamedTuple{(:a, :b, :c, :d),Tuple{Array{Int64,1},Array{String,1},Array{Float64,1},Array{Int64,1}}}, ::DataStreams.Data.Query{0x01,Tuple{DataStreams.Data.QueryColumn{0x01,Int64,1,1,:a,nothing,()},DataStreams.Data.QueryColumn{0x01,String,2,2,:b,nothing,()},DataStreams.Data.QueryColumn{0x01,Float64,3,3,:c,nothing,()},DataStreams.Data.QueryColumn{0x01,Int64,4,4,:d,nothing,()}},(),nothing,nothing}, ::Type{NamedTuple{names,T} where T<:Tuple{Vararg{AbstractArray{S,1} where S,N}} where names where N}) at query.jl:573",
+          "query(::NamedTuple{(:a, :b, :c, :d),Tuple{Array{Int64,1},Array{String,1},Array{Float64,1},Array{Int64,1}}}, ::Array{NamedTuple{(:col,),Tuple{Int64}},1}, ::Type{NamedTuple{names,T} where T<:Tuple{Vararg{AbstractArray{S,1} where S,N}} where names where N}; append::Bool, limit::Nothing, offset::Nothing, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at query.jl:198"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 62
+            }
+          ]
+        }
+      },
+      {
+        "count": 16,
+        "last_call": [
+          "datatype at DataStreams.jl:465 [inlined]",
+          "stream!(::Source{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}, ::DataStreams.Data.Query{0x01,Tuple{DataStreams.Data.QueryColumn{0x01,Int64,1,1,:id,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, String},2,2,:firstname,nothing,()},DataStreams.Data.QueryColumn{0x01,String,3,3,:lastname,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, Float64},4,4,:salary,nothing,()},DataStreams.Data.QueryColumn{0x01,Float64,5,5,:rate,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, Date},6,6,:hired,nothing,()},DataStreams.Data.QueryColumn{0x01,DateTime,7,7,:fired,nothing,()}},(),nothing,nothing}, ::Type{Sink}, ::NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}; append::Bool, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at query.jl:576",
+          "(::DataStreams.Data.var\"#stream!##kw\")(::NamedTuple{(:append,),Tuple{Bool}}, ::typeof(DataStreams.Data.stream!), ::Source{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}, ::DataStreams.Data.Query{0x01,Tuple{DataStreams.Data.QueryColumn{0x01,Int64,1,1,:id,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, String},2,2,:firstname,nothing,()},DataStreams.Data.QueryColumn{0x01,String,3,3,:lastname,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, Float64},4,4,:salary,nothing,()},DataStreams.Data.QueryColumn{0x01,Float64,5,5,:rate,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, Date},6,6,:hired,nothing,()},DataStreams.Data.QueryColumn{0x01,DateTime,7,7,:fired,nothing,()}},(),nothing,nothing}, ::Type{Sink}, ::NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}) at query.jl:573",
+          "stream!(::Source{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}, ::Type{Sink}, ::NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}; append::Bool, transforms::Dict{Int64,Function}, filter::Function, columns::Array{Any,1}, actions::Array{Any,1}, limit::Nothing, offset::Nothing, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at query.jl:538"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 16
+            }
+          ]
+        }
+      },
+      {
+        "count": 12,
+        "last_call": [
+          "datatype(::Type{T} where T) at DataStreams.jl:465",
+          "stream!(::Source{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}, ::DataStreams.Data.Query{0x01,Tuple{DataStreams.Data.QueryColumn{0x01,Int64,1,1,:id,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, String},2,2,:firstname,nothing,()},DataStreams.Data.QueryColumn{0x01,String,3,3,:lastname,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, Float64},4,4,:salary,nothing,()},DataStreams.Data.QueryColumn{0x01,Float64,5,5,:rate,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, Date},6,6,:hired,nothing,()},DataStreams.Data.QueryColumn{0x01,DateTime,7,7,:fired,nothing,()}},(),nothing,nothing}, ::Type{Sink}, ::NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}; append::Bool, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at query.jl:573",
+          "(::DataStreams.Data.var\"#stream!##kw\")(::NamedTuple{(:append,),Tuple{Bool}}, ::typeof(DataStreams.Data.stream!), ::Source{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}, ::DataStreams.Data.Query{0x01,Tuple{DataStreams.Data.QueryColumn{0x01,Int64,1,1,:id,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, String},2,2,:firstname,nothing,()},DataStreams.Data.QueryColumn{0x01,String,3,3,:lastname,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, Float64},4,4,:salary,nothing,()},DataStreams.Data.QueryColumn{0x01,Float64,5,5,:rate,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, Date},6,6,:hired,nothing,()},DataStreams.Data.QueryColumn{0x01,DateTime,7,7,:fired,nothing,()}},(),nothing,nothing}, ::Type{Sink}, ::NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}) at query.jl:573",
+          "stream!(::Source{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}, ::Type{Sink}, ::NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}; append::Bool, transforms::Dict{Int64,Function}, filter::Function, columns::Array{Any,1}, actions::Array{Any,1}, limit::Nothing, offset::Nothing, kwargs::Base.Iterators.Pairs{Union{},Union{},Tuple{},NamedTuple{(),Tuple{}}}) at query.jl:538"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 12
+            }
+          ]
+        }
+      },
+      {
+        "count": 12,
+        "last_call": [
+          "datatype at DataStreams.jl:465 [inlined]",
+          "stream!(::Source{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}, ::DataStreams.Data.Query{0x01,Tuple{DataStreams.Data.QueryColumn{0x01,Int64,1,1,:id,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, String},2,2,:firstname,nothing,()},DataStreams.Data.QueryColumn{0x01,String,3,3,:lastname,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, Float64},4,4,:salary,nothing,()},DataStreams.Data.QueryColumn{0x01,Float64,5,5,:rate,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, Date},6,6,:hired,nothing,()},DataStreams.Data.QueryColumn{0x01,DateTime,7,7,:fired,nothing,()}},(),nothing,nothing}, ::Sink{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}; append::Bool) at query.jl:598",
+          "(::DataStreams.Data.var\"#stream!##kw\")(::NamedTuple{(:append,),Tuple{Bool}}, ::typeof(DataStreams.Data.stream!), ::Source{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}, ::DataStreams.Data.Query{0x01,Tuple{DataStreams.Data.QueryColumn{0x01,Int64,1,1,:id,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, String},2,2,:firstname,nothing,()},DataStreams.Data.QueryColumn{0x01,String,3,3,:lastname,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, Float64},4,4,:salary,nothing,()},DataStreams.Data.QueryColumn{0x01,Float64,5,5,:rate,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, Date},6,6,:hired,nothing,()},DataStreams.Data.QueryColumn{0x01,DateTime,7,7,:fired,nothing,()}},(),nothing,nothing}, ::Sink{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}) at query.jl:595",
+          "stream!(::Source{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}, ::Sink{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}; append::Bool, transforms::Dict{Int64,Function}, filter::Function, actions::Array{Any,1}, limit::Nothing, offset::Nothing, columns::Array{Any,1}) at query.jl:569"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 12
+            }
+          ]
+        }
+      },
+      {
+        "count": 8,
+        "last_call": [
+          "datatype at DataStreams.jl:465 [inlined]",
+          "stream!(::Source{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}, ::DataStreams.Data.Query{0x01,Tuple{DataStreams.Data.QueryColumn{0x01,Int64,1,1,:id,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, String},2,2,:firstname,nothing,()},DataStreams.Data.QueryColumn{0x01,String,3,3,:lastname,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, Float64},4,4,:salary,nothing,()},DataStreams.Data.QueryColumn{0x01,Float64,5,5,:rate,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, Date},6,6,:hired,nothing,()},DataStreams.Data.QueryColumn{0x01,DateTime,7,7,:fired,nothing,()}},(),nothing,nothing}, ::Sink{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}; append::Bool) at query.jl:595",
+          "(::DataStreams.Data.var\"#stream!##kw\")(::NamedTuple{(:append,),Tuple{Bool}}, ::typeof(DataStreams.Data.stream!), ::Source{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}, ::DataStreams.Data.Query{0x01,Tuple{DataStreams.Data.QueryColumn{0x01,Int64,1,1,:id,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, String},2,2,:firstname,nothing,()},DataStreams.Data.QueryColumn{0x01,String,3,3,:lastname,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, Float64},4,4,:salary,nothing,()},DataStreams.Data.QueryColumn{0x01,Float64,5,5,:rate,nothing,()},DataStreams.Data.QueryColumn{0x01,Union{Missing, Date},6,6,:hired,nothing,()},DataStreams.Data.QueryColumn{0x01,DateTime,7,7,:fired,nothing,()}},(),nothing,nothing}, ::Sink{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}) at query.jl:595",
+          "stream!(::Source{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}, ::Sink{NamedTuple{(:id, :firstname, :lastname, :salary, :rate, :hired, :fired),Tuple{Array{Int64,1},Array{Union{Missing, String},1},Array{String,1},Array{Union{Missing, Float64},1},Array{Float64,1},Array{Union{Missing, Date},1},Array{DateTime,1}}}}; append::Bool, transforms::Dict{Int64,Function}, filter::Function, actions::Array{Any,1}, limit::Nothing, offset::Nothing, columns::Array{Any,1}) at query.jl:569"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 8
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},344]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}

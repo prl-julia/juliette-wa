@@ -1,0 +1,647 @@
+{
+  "eval_info": {
+    "call_count": 13189,
+    "stack_traces": [
+      {
+        "count": 5000,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "read_field(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMetaAttribs, ::UInt64, ::Nothing) at codec.jl:444",
+          "readproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMeta) at codec.jl:502",
+          "test_repeats() at testcodec.jl:246"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 5000
+            }
+          ]
+        }
+      },
+      {
+        "count": 1105,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "read_field(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestOptional, ::ProtoMetaAttribs, ::UInt64, ::Nothing) at codec.jl:444",
+          "readproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestOptional, ::ProtoMeta) at codec.jl:502",
+          "test_optional() at testcodec.jl:296"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 1105
+            }
+          ]
+        }
+      },
+      {
+        "count": 1000,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Int32, ::ProtoMetaAttribs) at codec.jl:285",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMeta) at codec.jl:371",
+          "test_types() at testcodec.jl:164"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 1000
+            }
+          ]
+        }
+      },
+      {
+        "count": 1000,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "read_field(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMetaAttribs, ::UInt64, ::Nothing) at codec.jl:444",
+          "readproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMeta) at codec.jl:502",
+          "test_types() at testcodec.jl:165"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 1000
+            }
+          ]
+        }
+      },
+      {
+        "count": 1000,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "read_field(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMetaAttribs, ::UInt64, ::Nothing) at codec.jl:444",
+          "readproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMeta) at codec.jl:502",
+          "test_repeats() at testcodec.jl:271"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 1000
+            }
+          ]
+        }
+      },
+      {
+        "count": 910,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "read_field(::Base.GenericIOBuffer{Array{UInt8,1}}, ::ProtoBuf.google.protobuf.Value, ::ProtoMetaAttribs, ::UInt64, ::Nothing) at codec.jl:444",
+          "readproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::ProtoBuf.google.protobuf.Value, ::ProtoMeta) at codec.jl:502",
+          "read_lendelim_obj(::Base.GenericIOBuffer{Array{UInt8,1}}, ::ProtoBuf.google.protobuf.Value, ::ProtoMeta, ::typeof(readproto)) at codec.jl:391"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 910
+            }
+          ]
+        }
+      },
+      {
+        "count": 400,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "read_field(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMetaAttribs, ::UInt64, ::Nothing) at codec.jl:444",
+          "readproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMeta) at codec.jl:502",
+          "test_types() at testcodec.jl:179"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 400
+            }
+          ]
+        }
+      },
+      {
+        "count": 400,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Int32, ::ProtoMetaAttribs) at codec.jl:285",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMeta) at codec.jl:371",
+          "test_types() at testcodec.jl:178"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 400
+            }
+          ]
+        }
+      },
+      {
+        "count": 302,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "read_field(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestNested, ::ProtoMetaAttribs, ::UInt64, ::Nothing) at codec.jl:444",
+          "readproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestNested, ::ProtoMeta) at codec.jl:502",
+          "test_nested() at testcodec.jl:338"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 302
+            }
+          ]
+        }
+      },
+      {
+        "count": 200,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "read_field(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMetaAttribs, ::UInt64, ::Nothing) at codec.jl:444",
+          "readproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMeta) at codec.jl:502",
+          "test_types() at testcodec.jl:216"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 200
+            }
+          ]
+        }
+      },
+      {
+        "count": 200,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Float64, ::ProtoMetaAttribs) at codec.jl:285",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMeta) at codec.jl:371",
+          "test_types() at testcodec.jl:215"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 200
+            }
+          ]
+        }
+      },
+      {
+        "count": 199,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "read_field(::Base.GenericIOBuffer{Array{UInt8,1}}, ::V1, ::ProtoMetaAttribs, ::UInt64, ::Nothing) at codec.jl:444",
+          "readproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::V1, ::ProtoMeta) at codec.jl:502",
+          "readproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::V1) at codec.jl:486"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 199
+            }
+          ]
+        }
+      },
+      {
+        "count": 145,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Int32, ::ProtoMetaAttribs) at codec.jl:285",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::V1, ::ProtoMeta) at codec.jl:371",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::V1) at codec.jl:365"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 145
+            }
+          ]
+        }
+      },
+      {
+        "count": 105,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestStr, ::ProtoMetaAttribs) at codec.jl:272",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestOptional, ::ProtoMeta) at codec.jl:371",
+          "test_optional() at testcodec.jl:294"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 105
+            }
+          ]
+        }
+      },
+      {
+        "count": 102,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMetaAttribs) at codec.jl:272",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestNested, ::ProtoMeta) at codec.jl:371",
+          "test_nested() at testcodec.jl:335"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 102
+            }
+          ]
+        }
+      },
+      {
+        "count": 100,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "read_field(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMetaAttribs, ::UInt64, ::Nothing) at codec.jl:444",
+          "readproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMeta) at codec.jl:502",
+          "test_types() at testcodec.jl:202"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 100
+            }
+          ]
+        }
+      },
+      {
+        "count": 100,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "read_field(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMetaAttribs, ::UInt64, ::Nothing) at codec.jl:444",
+          "readproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMeta) at codec.jl:502",
+          "test_types() at testcodec.jl:228"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 100
+            }
+          ]
+        }
+      },
+      {
+        "count": 100,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "read_field(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMetaAttribs, ::UInt64, ::Nothing) at codec.jl:444",
+          "readproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMeta) at codec.jl:502",
+          "test_repeats() at testcodec.jl:259"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 100
+            }
+          ]
+        }
+      },
+      {
+        "count": 100,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Int64,1}, ::ProtoMetaAttribs) at codec.jl:320",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMeta) at codec.jl:371",
+          "test_repeats() at testcodec.jl:258"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 100
+            }
+          ]
+        }
+      },
+      {
+        "count": 100,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{String,1}, ::ProtoMetaAttribs) at codec.jl:320",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMeta) at codec.jl:371",
+          "test_repeats() at testcodec.jl:270"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 100
+            }
+          ]
+        }
+      },
+      {
+        "count": 100,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Int64,1}, ::ProtoMetaAttribs) at codec.jl:320",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestOptional, ::ProtoMeta) at codec.jl:371",
+          "test_optional() at testcodec.jl:294"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 100
+            }
+          ]
+        }
+      },
+      {
+        "count": 100,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Bool, ::ProtoMetaAttribs) at codec.jl:285",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMeta) at codec.jl:371",
+          "test_types() at testcodec.jl:201"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 100
+            }
+          ]
+        }
+      },
+      {
+        "count": 100,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Main.ProtoBufTestCodec.TestStr,1}, ::ProtoMetaAttribs) at codec.jl:320",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestNested, ::ProtoMeta) at codec.jl:371",
+          "test_nested() at testcodec.jl:335"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 100
+            }
+          ]
+        }
+      },
+      {
+        "count": 100,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Int64,1}, ::ProtoMetaAttribs) at codec.jl:320",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMeta) at codec.jl:371",
+          "test_repeats() at testcodec.jl:245"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 100
+            }
+          ]
+        }
+      },
+      {
+        "count": 58,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Float64, ::ProtoMetaAttribs) at codec.jl:285",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::ProtoBuf.google.protobuf.Value, ::ProtoMeta) at codec.jl:371",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::ProtoBuf.google.protobuf.Value, ::ProtoMetaAttribs) at codec.jl:275"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 58
+            }
+          ]
+        }
+      },
+      {
+        "count": 47,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestStr, ::ProtoMetaAttribs) at codec.jl:272",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestOptional, ::ProtoMeta) at codec.jl:371",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestOptional, ::ProtoMetaAttribs) at codec.jl:275"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 47
+            }
+          ]
+        }
+      },
+      {
+        "count": 45,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{Int64,1}, ::ProtoMetaAttribs) at codec.jl:320",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestOptional, ::ProtoMeta) at codec.jl:371",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestOptional, ::ProtoMetaAttribs) at codec.jl:275"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 45
+            }
+          ]
+        }
+      },
+      {
+        "count": 40,
+        "last_call": [
+          "call_method(::ProtoService, ::MethodDescriptor, ::TestRpcController, ::BinaryOpReq) at svc.jl:74",
+          "process(::TestServer, ::TestRpcChannel) at testsvc.jl:109",
+          "(::var\"#100#101\"{TestServer,TestRpcChannel})() at task.jl:356"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 40
+            }
+          ]
+        }
+      },
+      {
+        "count": 8,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "read_field(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Nothing, ::ProtoMetaAttribs, ::Int64, ::Type{T} where T) at codec.jl:444",
+          "read_map(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Dict{AbstractString,ProtoBuf.google.protobuf.Value}) at codec.jl:429",
+          "read_field(::Base.GenericIOBuffer{Array{UInt8,1}}, ::ProtoBuf.google.protobuf.Struct, ::ProtoMetaAttribs, ::UInt64, ::Nothing) at codec.jl:477"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 8
+            }
+          ]
+        }
+      },
+      {
+        "count": 8,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "read_field(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Nothing, ::ProtoMetaAttribs, ::Int64, ::Type{T} where T) at codec.jl:444",
+          "read_map(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Dict{AbstractString,ProtoBuf.google.protobuf.Value}) at codec.jl:427",
+          "read_field(::Base.GenericIOBuffer{Array{UInt8,1}}, ::ProtoBuf.google.protobuf.Struct, ::ProtoMetaAttribs, ::UInt64, ::Nothing) at codec.jl:477"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 8
+            }
+          ]
+        }
+      },
+      {
+        "count": 4,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Int64, ::ProtoMetaAttribs) at codec.jl:285",
+          "write_map(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Int64, ::Dict{Int64,Int64}) at codec.jl:257",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Dict{Int64,Int64}, ::ProtoMetaAttribs) at codec.jl:304"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 4
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::ProtoBuf.google.protobuf.Value, ::ProtoMetaAttribs) at codec.jl:272",
+          "write_map(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Int64, ::Dict{AbstractString,ProtoBuf.google.protobuf.Value}) at codec.jl:259",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Dict{AbstractString,Any}, ::ProtoMetaAttribs) at codec.jl:304"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{ProtoBuf.google.protobuf.Value,1}, ::ProtoMetaAttribs) at codec.jl:320",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::ProtoBuf.google.protobuf.ListValue, ::ProtoMeta) at codec.jl:371",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::ProtoBuf.google.protobuf.ListValue) at codec.jl:365"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 2,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Int64, ::ProtoMetaAttribs) at codec.jl:285",
+          "write_map(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Int64, ::Dict{Int64,Int64}) at codec.jl:259",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Dict{Int64,Int64}, ::ProtoMetaAttribs) at codec.jl:304"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 2
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "meta(::Type{T} where T, ::Array{Symbol,1}, ::Array{Int64,1}, ::Dict{Symbol,Any}, ::Bool, ::Array{Symbol,1}, ::Dict{Symbol,Symbol}, ::Array{Int64,1}, ::Array{Symbol,1}, ::Dict{Symbol,String}) at codec.jl:569",
+          "meta(::Type{ProtoBuf.google.protobuf.Struct}) at struct_pb.jl:24",
+          "meta(::Type{T} where T, ::Array{Symbol,1}, ::Array{Int64,1}, ::Dict{Symbol,Any}, ::Bool, ::Array{Symbol,1}, ::Dict{Symbol,Symbol}, ::Array{Int64,1}, ::Array{Symbol,1}, ::Dict{Symbol,String}) at codec.jl:579",
+          "meta at struct_pb.jl:38 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "curly [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Float64, ::ProtoMetaAttribs) at codec.jl:285",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::ProtoBuf.google.protobuf.Value, ::ProtoMeta) at codec.jl:371",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Array{ProtoBuf.google.protobuf.Value,1}, ::ProtoMetaAttribs, ::typeof(writeproto)) at codec.jl:350"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Int32, ::ProtoMetaAttribs) at codec.jl:285",
+          "writeproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMeta) at codec.jl:371",
+          "test_types() at testcodec.jl:153"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "eval at ProtoBuf.jl:1 [inlined]",
+          "read_field(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMetaAttribs, ::UInt64, ::Nothing) at codec.jl:444",
+          "readproto(::Base.GenericIOBuffer{Array{UInt8,1}}, ::Main.ProtoBufTestCodec.TestType, ::ProtoMeta) at codec.jl:502",
+          "test_types() at testcodec.jl:154"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 1
+            }
+          ]
+        }
+      },
+      {
+        "count": 1,
+        "last_call": [
+          "meta(::Type{T} where T, ::Array{Symbol,1}, ::Array{Int64,1}, ::Dict{Symbol,Any}, ::Bool, ::Array{Symbol,1}, ::Dict{Symbol,Symbol}, ::Array{Int64,1}, ::Array{Symbol,1}, ::Dict{Symbol,String}) at codec.jl:569",
+          "meta at struct_pb.jl:38 [inlined]",
+          "filled(::ProtoBuf.google.protobuf.Value) at codec.jl:651",
+          "fillunset at codec.jl:631 [inlined]"
+        ],
+        "auxillary": {
+          "ast_heads": [
+            {
+              "variable [fun (gen)]": 1
+            }
+          ]
+        }
+      }
+    ],
+    "func_specific_data": {
+      "ast_heads": [],
+      "func_def_types": {
+        "newFuncCount": 0,
+        "bodylessFuncCount": 0,
+        "funcRedefCount": 0,
+        "miscCount": 0
+      },
+      "func_def_ast_forms": "[[{\"astHead\":\"curly\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},2],[{\"astHead\":\"variable\",\"context\":{\"inFunDef\":true,\"inQuote\":false}},26376]]"
+    }
+  },
+  "invokelatest_info": {
+    "call_count": 0,
+    "stack_traces": [],
+    "func_specific_data": {
+      "function_names": []
+    }
+  }
+}
