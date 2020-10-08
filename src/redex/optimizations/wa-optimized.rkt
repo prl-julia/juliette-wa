@@ -9,15 +9,15 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (define-extended-language WA-opt WA-full
-  (nv ::= x v)                   ; near value
+  (nv ::= x v)                     ; near value
   
-  (Γ ::= ((x τ) ...))            ; environment of types
+  (Γ ::= ((x τ) ...))              ; environment of types
 
   (sig-σ ::= (mdef mname (σ ...))) ; concrete type method signature
   (sig-τ ::= (mdef mname (τ ...))) ; abstract type method signature
   
   (Ω ::= ((sig-τ real) ...))       ; environment of inlined methods
-  (Φ-τ ::= ((sig-τ mname) ...))      ; environment of methods with direct calls
+  (Φ-τ ::= ((sig-τ mname) ...))    ; environment of methods with direct calls
   (Φ ::= ((sig-σ mname) ...))      ; environment of speicialized methods with direct calls
   (opt-err ::= undeclared-var md-err type-err)
   
@@ -363,6 +363,14 @@
   ; Γ ⊢ m(...) = e :: (mtag "m") 
   [----------------------------------------------------- "T-MD"
    (⊢ Γ (mdef mname ((:: x τ_arg) ...) e) (mtag mname))]
+  ; Γ ⊢ (| e |) :: σ, where e :: σ
+  [(⊢ Γ e σ)
+   ------------------------ "T-EvalGlobal"
+   (⊢ Γ (evalg e) σ)]
+  ; Γ ⊢ (| e |)_M :: σ, where e :: σ
+  [(⊢ Γ e σ)
+   ------------------------ "T-EvalLocal"
+   (⊢ Γ (evalt MT e) σ)]
   )
 
 (test-equal (judgment-holds (⊢ () 1 Int64)) #true)
@@ -370,6 +378,7 @@
 (test-equal (judgment-holds (⊢ ((b Bool)) (pcall && b true) Bool)) #true)
 (test-equal (judgment-holds (⊢ ((x String) (y Float64)) (pcall + x 1) Float64)) #false)
 (test-equal (judgment-holds (⊢ () (mdef "test" () 1) (mtag "test"))) #true)
+(test-equal (judgment-holds (⊢ () (evalt 1) Int64)) #true)
 
 ;; ==================================================
 ;; Optimization Judgment for Expression
