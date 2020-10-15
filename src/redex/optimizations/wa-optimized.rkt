@@ -577,7 +577,7 @@
                                •(,func-return1
                                  • ((mdef "new" ((:: x Int64)) (seq nothing x)) • ∅))))) #t)
 
-;; Determines if the optimized method table is a valid optimization
+;; Determines if the optimized method is a valid optimization
 (define-judgment-form WA-opt
   #:mode (wd~~> I I I I)
   #:contract (wd~~> Φ MT MT (sig-σ mname))
@@ -587,7 +587,7 @@
           (getmd MT_P mname_P (σ ...)))
    (~~> ((x σ) ...) Φ (evalt MT e_body)
         (evalt MT_P (subst-n e_Pbody (x_P x) ...)))
-   ------------------------------------------------- "MCallSpec-WD"
+   ------------------------------------------------- "MethodOpt-Valid"
    (wd~~> Φ MT MT_P ((mdef mname (σ ...)) mname_P))]
   )
 
