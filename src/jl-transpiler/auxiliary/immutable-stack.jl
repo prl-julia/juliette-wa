@@ -33,8 +33,8 @@ function pop(stack :: EmptyStack{T})    :: Tuple{T,ImmutableStack{T}} where {T}
 end
 
 # isempty: true if the stack is empty, false otherwise
-isempty(stack :: NonEmptyStack) :: Bool = false
-isempty(stack :: EmptyStack)    :: Bool = true
+Base.isempty(stack :: NonEmptyStack) :: Bool = false
+Base.isempty(stack :: EmptyStack)    :: Bool = true
 
 # findFirst: returns the first item in the stack such that the predicate is
 # true, returns nothing otherwise. Note the predicate is a (item :: T) -> Bool
