@@ -2,6 +2,8 @@ using Test
 
 include("../lib/analysis.jl")
 
+const DEFAULT_ARG_CTX = EvalArgContext(false, false)
+
 @testset "nonVacuous" begin
     @test !nonVacuous(Stat(0, 0))
     @test nonVacuous(Stat(1, 0))
@@ -42,25 +44,31 @@ parseTestFile(fname :: String) = parseJuliaFile(joinpath(@__DIR__, fname))
 end
 
 @testset "argDescr" begin
-    @test argDescr(5) == [EvalCallInfo(:value, false)]
-    @test argDescr(:(const F = 1), true) == [EvalCallInfo(:const, true)]
-    @test argDescr(:(f() = 0)) == [EvalCallInfo(:function, false)]
-    @test argDescr(:(x = 666)) == [EvalCallInfo(:(=), false)]
-    @test argDescr(:(eval(:( f() = 0 ))).args[2], true) == [EvalCallInfo(:function, true)]
+    @test argDescr(5) == [EvalCallInfo(:value, DEFAULT_ARG_CTX)]
+    @test argDescr(:(const F = 1), EvalArgContext(true, false)) == 
+            [EvalCallInfo(:const, EvalArgContext(true, false))]
+    @test argDescr(:(f() = 0)) == [EvalCallInfo(:function, DEFAULT_ARG_CTX)]
+    @test argDescr(:(x = 666)) == [EvalCallInfo(:(=), DEFAULT_ARG_CTX)]
+    @test argDescr(:(eval(:( f() = 0 ))).args[2], DEFAULT_ARG_CTX) == 
+            [EvalCallInfo(:function, EvalArgContext(false, true))]
 end
 
 @testset "getEvalInfo" begin
-    @test getEvalInfo(:(eval(:( f() = 0 )))) == [EvalCallInfo(:function)]
-    @test getEvalInfo(:(eval(:( y = 1 )))) == [EvalCallInfo(:(=))]
-    @test getEvalInfo(:(eval())) == [EvalCallInfo(:nothing)]
-    @test getEvalInfo(:(eval(3))) == [EvalCallInfo(:value)]
-    @test getEvalInfo(:(Core.eval(Main, 3))) == [EvalCallInfo(:value)]
-    @test getEvalInfo(:(@eval y = 1)) == [EvalCallInfo(:(=))]
-    @test getEvalInfo(:(@eval(Main, y = 1))) == [EvalCallInfo(:(=))]
+    @test getEvalInfo(:(eval(:( f() = 0 )))) ==
+        [EvalCallInfo(:function, EvalArgContext(false, true))]
+    @test getEvalInfo(:(eval(:( y = 1 )))) ==
+        [EvalCallInfo(:(=), EvalArgContext(false, true))]
+    @test getEvalInfo(:(eval())) == [EvalCallInfo(:nothing, DEFAULT_ARG_CTX)]
+    @test getEvalInfo(:(eval(3))) == [EvalCallInfo(:value, DEFAULT_ARG_CTX)]
+    @test getEvalInfo(:(Core.eval(Main, 3))) == [EvalCallInfo(:value, DEFAULT_ARG_CTX)]
+    @test getEvalInfo(:(@eval y = 1)) == [EvalCallInfo(:(=), DEFAULT_ARG_CTX)]
+    @test getEvalInfo(:(@eval(Main, y = 1))) == [EvalCallInfo(:(=), DEFAULT_ARG_CTX)]
 end
 
 @testset "gatherEvalInfo" begin
-    @test gatherEvalInfo(:(eval()), true) == [EvalCallInfo(:nothing, true)]
+    @test gatherEvalInfo(:(eval()), EvalArgContext(true, false)) ==
+            [EvalCallInfo(:nothing, EvalArgContext(true, false))]
     @test gatherEvalInfo(:((eval(); @eval 1))) ==
-            [EvalCallInfo(:nothing), EvalCallInfo(:value)]
+            [EvalCallInfo(:nothing, DEFAULT_ARG_CTX),
+             EvalCallInfo(:value, EvalArgContext(false, true))]
 end
