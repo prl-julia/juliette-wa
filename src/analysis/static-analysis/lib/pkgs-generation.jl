@@ -98,12 +98,15 @@ end
 # Dict (pkg info), String → Any
 # Retrieves value of [key] from [pkgInfo] metadata or returns [default]
 function getMetaDataValue(pkgInfo :: Dict, key :: String, default :: Any)
-    if haskey(pkgInfo, "metadata") 
-        metaData = pkgInfo["metadata"]
-        haskey(metaData, key) ? metaData[key] : default
-    else
-        default
-    end
+    # in case the value of the element is `null` in JSON
+    val =
+        if haskey(pkgInfo, "metadata") 
+            metaData = pkgInfo["metadata"]
+            haskey(metaData, key) ? metaData[key] : default
+        else
+            default
+        end
+    val === nothing ? default : val
 end
 
 # Dict (pkg info) → Int
